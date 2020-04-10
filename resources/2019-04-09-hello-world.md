@@ -10,7 +10,7 @@ author-avatar: /images/anton-avatar.png
 location: Turin, Italy
 date-created: 2013-12-27
 date-modified: 2013-12-30
-date-published: 2013-12-27
+date-published:
 headline:
 in-language: en
 keywords: clojure, blogging
@@ -30,13 +30,13 @@ tags:
 
 Start with the basic structure at [example-blog](https://github.com/hashobject/perun/blob/master/example-blog/build.boot)
 
-- `resources/2019-04-09-hello-world.md`
 - `src/site/index.clj`
 - `src/site/post.clj`
 - `src/site/about.clj`
 - `stylesheets`
 - `content/pages`
-- `content/posts`
+- `content/posts/2020-04-09-post1.md`
+- `content/posts/2020-04-10-post2.md`
 
 ## Basic Build Task
 
@@ -50,10 +50,12 @@ Put together the smallest `build` function and `dev` functions.
         (perun/collection :renderer 'site.index/render :page "index.html")))
 ```
 
-The two composed functions:
+The two composed functions are part of a [large assortment of built-in tasks](https://perun.io/guides/built-ins/) offered by Perun.
 
 1. `perun/collection`: Render a collection of entries through the `:renderer` template in the site's index file.
 2. `perun/markdown`: Parse markdown/yaml front matter of the individual files.
+
+These tasks can be mixed and matched together for your needs. You can even mix in your own custom tasks. I'm going to compose the custom `build` task above with two other tasks that will help in the sites develoment:
 
 ```
 (deftask dev []
@@ -62,16 +64,14 @@ The two composed functions:
         (serve :resource-root "public")))
 ```
 
-`build` can be used to build the site to upload. Looking closely, it is just a function that is composed in the`dev`elopment process as `(build)`.
-
-Test it in the webbrowser:
+Note the inclusion of `(build)`. It is sandwiched between `watch` and `serve`. The former watches for any changes to your files and automatically recompiles. The latter serves those files to a web browser.
 
 1. `boot dev`
 2. Load at [localhost](http://localhost:3000/) port 3000.
 
 It should load `index.html` and display the menu and the first entry.
 
-## Customize Post Headers
+## Page Templates
 
 Kill the boot process using `Ctrl-C`.
 
@@ -85,11 +85,16 @@ Kill the boot process using `Ctrl-C`.
 Open `post.clj` and add
 
 ```
+
 [:body
-  [:h1 (:title post)]
-  [:p (:date-published post)]
-  [:div (:content post)]]
+  [:article
+    [:header
+      [:h1 (:title post)]
+      [:p (:date-published post)]]
+    [:main {:role "main"} (:content post)]]]
 ```
+
+A note on [`main`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main) and informative tags.
 
 ## Add a Global Header to the Blog
 

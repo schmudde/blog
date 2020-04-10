@@ -13,6 +13,8 @@
           [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]]
          [:body
           (header global-meta)
-          [:h1 (:title post)]
-          [:p (:date-published post)]
-          [:div (:content post)]]))
+          [:article
+           [:header
+            [:h1 (:title post)]
+            [:p (:date-published post)]]
+           [:main {:role "main"} (:content post)]]]))

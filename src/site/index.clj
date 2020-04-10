@@ -16,11 +16,13 @@
           [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]]
          [:body
           (header global-meta)
-          [:ul
-           [:li [:a {:href "/about.html"} "About Page"]]
-           [:li [:a {:href "/feed.rss"} "RSS"]]
-           [:li [:a {:href "/atom.xml"} "Atom Feed"]]]
-          [:ul.items.columns.small-12
-           (for [post posts]
-             [:li
-              [:a {:href (:permalink post)}(:title post)]])]]))
+          [:nav
+           [:ul
+            [:li [:a {:href "/about.html"} "About Page"]]
+            [:li [:a {:href "/feed.rss"} "RSS"]]
+            [:li [:a {:href "/atom.xml"} "Atom Feed"]]]]
+          [:main
+           [:ul.items.columns.small-12
+            (for [post posts]
+              [:li
+               [:a {:href (:permalink post)}(:title post)]])]]]))
