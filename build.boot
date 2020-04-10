@@ -7,12 +7,7 @@
 
 (require '[clojure.string :as str]
          '[io.perun :as perun]
-         ;;'[site.index :as index-view]
-         ;;'[site.post :as post-view]
-         '[pandeiro.boot-http :refer [serve]]
-         '[site.core :as site])
-
-;; https://perun.io/guides/getting-started/
+         '[pandeiro.boot-http :refer [serve]])
 
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
@@ -64,5 +59,3 @@
   (comp (watch)
         (build)
         (serve :resource-root "public")))
-
-;; (perun/markdown)
