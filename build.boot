@@ -3,11 +3,12 @@
  :resource-paths #{"resources"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
-                 [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]])
+                 [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
+                 [deraen/boot-livereload "0.2.1"]])
 
-(require '[clojure.string :as str]
-         '[io.perun :as perun]
-         '[pandeiro.boot-http :refer [serve]])
+(require '[io.perun :as perun]
+         '[pandeiro.boot-http :refer [serve]]
+         '[deraen.boot-livereload :refer [livereload]])
 
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
@@ -55,7 +56,19 @@
    (target)
    (notify)))
 
-(deftask dev []
+#_(deftask dev []
   (comp (watch)
         (build)
+        (serve :resource-root "public")))
+
+;; https://clojurians-log.clojureverse.org/perun/2016-10-30
+;; boot-reload - live-reload of browser Cljs, HTML, CSS and images (Requires Cljs).
+
+(deftask dev []
+  (comp ;; (repl :server true)
+        (perun/print-meta)
+        (watch)
+        (build)
+        (perun/inject-scripts :scripts #{"js/livereload.js"})
+        (livereload :asset-path "public" :filter #"\.(css|html|js)$")
         (serve :resource-root "public")))
