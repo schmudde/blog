@@ -1,5 +1,5 @@
 (set-env!
- :source-paths #{"src" "stylesheets" "content"}
+ :source-paths #{"src" "content"}
  :resource-paths #{"resources"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
@@ -13,9 +13,12 @@
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/markdown)
-        (perun/render :renderer 'site.post/render)
-        (perun/collection :renderer 'site.index/render :page "index.html")
-        (perun/static :renderer 'site.about/render :page "about.html")))
+        (perun/collection :renderer 'site.index/index-page
+                          :page "index.html")
+        (perun/render :renderer 'site.index/post-page)
+        (perun/static :renderer 'site.about/render
+                      :page "about.html")
+        (target)))
 
 #_(deftask build
   "Build test blog. This task is just for testing different plugins together."
