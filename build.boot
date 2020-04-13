@@ -10,12 +10,21 @@
          '[pandeiro.boot-http :refer [serve]]
          '[deraen.boot-livereload :refer [livereload]])
 
+(defn post? [{:keys [original-path] :as meta}]
+  (some-> original-path (.startsWith "posts/")))
+
+(defn published? [{:keys [date-published] :as meta}]
+  (if date-published true false))
+
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/markdown)
-        (perun/collection :renderer 'site.index/index-page :page "index.html")
-        (perun/render :renderer 'site.index/post-page
-                      :filterer (fn [{:keys [original-path] :as m}] (some-> original-path (.startsWith "posts/"))))
+        (perun/collection :renderer 'site.index/render-index-page :page "index.html"
+                          :filterer published?)
+        (perun/render :renderer 'site.index/render-post-pages :filterer (and post? published?))
+        (perun/tags :renderer 'site.index/render-tag-pages
+                    :filterer post?
+                    :out-dir "public/tags")
         (perun/static :renderer 'site.about/render
                       :page "about.html")
         (target)))

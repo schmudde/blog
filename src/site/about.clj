@@ -6,6 +6,7 @@
 (defn render [{global-meta :meta posts :entries}]
   (html5 {:lang "en" :itemtype "http://schema.org/Blog"}
          (layout/head global-meta)
-         [:body
+         [:body.avenir
           (layout/header global-meta)
-          (layout/render-post { :title "About Me" :content "Born in Moscow in 1821, I was introduced to literature at an early age through fairy tales and legends, and through books by Russian and foreign authors."})]))
+          [:h1.tc "About Me"]
+          [:p.pa4 "Born in Moscow in 1821, I was introduced to literature at an early age through fairy tales and legends, and through books by Russian and foreign authors."]]))

@@ -22,21 +22,40 @@
      [:li.dib.mr2 [:a.link {:href "/about.html" :title "About"} "About"]]
      [:li.dib.mr2 [:a.link {:href "/feed.rss" :title "rss"} "RSS"]]]]])
 
+(defn tags->links [tags]
+  [:span {:class "tags"}
+   (map (fn [tag] [:a.link.mr2 {:href (str "/tags/" tag ".html")} tag]) tags)])
+
 (defn render-post [post]
   [:article
    [:header.tc
     [:h1 (:title post)]
-    [:time (format-date (:date-published post))]]
+    [:div [:time (format-date (:date-published post))]
+     [:span (str ", tags: ")] (tags->links (:tags post))]]
    [:main.ph6.pv4 {:role "main"} (:content post)]])
 
-(defn post-page [{global-meta :meta post :entry}]
+(defn list-posts [posts]
+  [:ul.tc.list.pl0
+   (for [post posts]
+     [:li.pv1
+      [:a.link {:href (:permalink post)}(:title post)]])])
+
+(defn render-post-pages [{global-meta :meta post :entry}]
   (page/html5 {:lang "en" :itemtype "http://schema.org/Blog"}
               (head global-meta post)
               [:body
                (header global-meta)
                (render-post post)]))
 
-(defn index-page [{global-meta :meta collection-meta :entry posts :entries}]
+(defn render-tag-pages [{global-meta :meta post :entry posts :entries}]
+  (page/html5 {:lang "en" :itemtype "http://schema.org/Blog"}
+              (head global-meta post)
+              [:body
+               (header global-meta)
+               [:h1.tc (str "Posts Tagged As \"" (:tag post) "\"" )]
+               (list-posts posts)]))
+
+(defn render-index-page [{global-meta :meta collection-meta :entry posts :entries}]
   (page/html5 {:lang "en" :itemtype "http://schema.org/Blog"}
               (head global-meta)
               [:body.avenir
@@ -44,7 +63,4 @@
                (render-post (first posts))
                [:section.pa4 {:id "old-posts"}
                 [:h2.tc "Old Posts"]
-                [:ul.tc.list.pl0
-                 (for [post posts]
-                   [:li.pv1
-                    [:a.link {:href (:permalink post)}(:title post)]])]]]))
+                (list-posts posts)]]))
