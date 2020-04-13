@@ -8,4 +8,4 @@
          (layout/head global-meta)
          [:body
           (layout/header global-meta)
-          [:p "This is a demonstration of a static page, for content that won't change."]]))
+          (layout/render-post { :title "About Me" :content "Born in Moscow in 1821, I was introduced to literature at an early age through fairy tales and legends, and through books by Russian and foreign authors."})]))

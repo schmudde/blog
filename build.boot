@@ -13,9 +13,9 @@
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/markdown)
-        (perun/collection :renderer 'site.index/index-page
-                          :page "index.html")
-        (perun/render :renderer 'site.index/post-page)
+        (perun/collection :renderer 'site.index/index-page :page "index.html")
+        (perun/render :renderer 'site.index/post-page
+                      :filterer (fn [{:keys [original-path] :as m}] (some-> original-path (.startsWith "posts/"))))
         (perun/static :renderer 'site.about/render
                       :page "about.html")
         (target)))
@@ -69,9 +69,10 @@
 
 (deftask dev []
   (comp ;; (repl :server true)
-        (perun/print-meta)
+
         (watch)
         (build)
+        (perun/print-meta)
         (perun/inject-scripts :scripts #{"js/livereload.js"})
         (livereload :asset-path "public" :filter #"\.(css|html|js)$")
         (serve :resource-root "public")))
