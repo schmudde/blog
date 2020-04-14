@@ -1,6 +1,6 @@
 (ns site.about
   (:require [hiccup.page :refer [html5]]
-            [site.index :as layout]))
+            [site.core :as layout]))
 
 (defn render [{global-meta :meta}]
   (let [page-title "About Me"

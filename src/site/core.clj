@@ -1,4 +1,4 @@
-(ns site.index
+(ns site.core
   (:require [hiccup.page :as page]))
 
 (defn format-date [date]

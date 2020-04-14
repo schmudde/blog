@@ -19,10 +19,10 @@
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/markdown)
-        (perun/collection :renderer 'site.index/render-index-page :page "index.html"
+        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer published?)
-        (perun/render :renderer 'site.index/render-post-pages :filterer (and post? published?))
-        (perun/tags :renderer 'site.index/render-tag-pages
+        (perun/render :renderer 'site.core/render-post-pages :filterer (and post? published?))
+        (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (and post? published?)
                     :out-dir "public/tags")
         (perun/static :renderer 'site.about/render
