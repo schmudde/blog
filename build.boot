@@ -23,62 +23,35 @@
                           :filterer published?)
         (perun/render :renderer 'site.index/render-post-pages :filterer (and post? published?))
         (perun/tags :renderer 'site.index/render-tag-pages
-                    :filterer post?
+                    :filterer (and post? published?)
                     :out-dir "public/tags")
         (perun/static :renderer 'site.about/render
                       :page "about.html")
+        (perun/rss :filterer post?)
         (target)))
 
+;; TODO: how does the CSS move?
+;;           (sift :move {#"martinklepschorg-v2.css" "public/stylesheets/martinklepschorg-v2.css"
+;; #"martinklepschorg-v3.css" "public/stylesheets/martinklepschorg-v3.css"})
 #_(deftask build
   "Build test blog. This task is just for testing different plugins together."
   []
   (comp
-   (perun/global-metadata)
-   (perun/markdown)
-   (perun/draft)
-   (perun/print-meta)
-   (perun/slug)
    (perun/ttr)
    (perun/word-count)
    (perun/build-date)
    (perun/gravatar :source-key :author-email :target-key :author-gravatar)
-   (perun/render :renderer 'io.perun.example.post/render)
-   (perun/collection :renderer 'io.perun.example.index/render :page "index.html")
-   (perun/tags :renderer 'io.perun.example.tags/render)
    (perun/paginate :renderer 'io.perun.example.paginate/render)
-   (perun/assortment :renderer 'io.perun.example.assortment/render
-                     :grouper (fn [entries]
-                                (->> entries
-                                     (mapcat (fn [entry]
-                                               (if-let [kws (:keywords entry)]
-                                                 (map #(-> [% entry]) (str/split kws #"\s*,\s*"))
-                                                 [])))
-                                     (reduce (fn [result [kw entry]]
-                                               (let [path (str kw ".html")]
-                                                 (-> result
-                                                     (update-in [path :entries] conj entry)
-                                                     (assoc-in [path :entry :keyword] kw))))
-                                             {}))))
-   (perun/static :renderer 'io.perun.example.about/render :page "about.html")
-   (perun/inject-scripts :scripts #{"start.js"})
    (perun/sitemap)
-   (perun/rss :description "Hashobject blog")
    (perun/atom-feed :filterer :original)
-   (perun/print-meta)
-   (target)
    (notify)))
 
-#_(deftask dev []
-  (comp (watch)
-        (build)
-        (serve :resource-root "public")))
 
 ;; https://clojurians-log.clojureverse.org/perun/2016-10-30
 ;; boot-reload - live-reload of browser Cljs, HTML, CSS and images (Requires Cljs).
 
 (deftask dev []
   (comp ;; (repl :server true)
-
         (watch)
         (build)
         (perun/print-meta)

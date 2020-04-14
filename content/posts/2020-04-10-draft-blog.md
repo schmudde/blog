@@ -11,9 +11,7 @@ location: Turin, Italy
 date-created: 2013-12-27
 date-modified: 2013-12-30
 date-published:
-headline:
 in-language: en
-keywords: clojure, blogging
 canonical-url: http://schmud.de
 uuid:
 tags:
