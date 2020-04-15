@@ -10,6 +10,9 @@
          '[pandeiro.boot-http :refer [serve]]
          '[deraen.boot-livereload :refer [livereload]])
 
+(defn page? [{:keys [original-path] :as meta}]
+  (some-> original-path (.startsWith "pages/")))
+
 (defn post? [{:keys [original-path] :as meta}]
   (some-> original-path (.startsWith "posts/")))
 
@@ -18,13 +21,17 @@
 
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
-        (perun/markdown)
+        (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
         (perun/collection :renderer 'site.core/render-index-page :page "index.html"
-                          :filterer published?)
-        (perun/render :renderer 'site.core/render-post-pages :filterer (and post? published?))
+                          :filterer (and post? published?))
+        (perun/render :renderer 'site.core/render-post-pages
+                      :filterer (and post? published?))
         (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (and post? published?)
                     :out-dir "public/tags")
+
+        (perun/render :renderer 'site.core/render-post-pages :filterer page?)
+
         (perun/static :renderer 'site.about/render
                       :page "about.html")
         (perun/rss :filterer post?)

@@ -31,6 +31,7 @@
     [:p.dib.mb2 {:id "site-description"} (:description global-meta)]
     [:ul.list.ma0.pa0
      [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
+     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
      [:li.dib.mr2 [:a {:href "/about.html" :title "About"} "About"]]
      [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
 
