@@ -44,10 +44,6 @@
     ]
    [:section "fefe"]])
 
-(comment
-  "https://jez.io/tufte-pandoc-css/" "https://jez.io/tufte-pandoc-css/"
-  "https://github.com/jez/pandoc-sidenote")
-
 (defn render [{global-meta :meta}]
   (let [page-title "About Me"
         content about-template]

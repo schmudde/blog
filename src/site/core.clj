@@ -44,7 +44,7 @@
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
-    [:li.dib.mr2 [:a {:href "/about.html" :title "About"} "About"]]
+    [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
 
 (defn article-template [post]
@@ -53,8 +53,9 @@
    #_[:link {:itemprop "mainEntityOfPage" :href (:canonical-url post)}]
    [:header
     [:h1 {:itemprop "headline"} (:title post)]
-    [:div [:time {:datetime (:date-published post) :pubdate "pubdate" :itemprop "datePublished"} (format-date (:date-published post))]
-     [:span (str ", tags: ")] (tags->links (:tags post))]]
+    (if (= (:type post) "post")
+      [:div [:time {:datetime (:date-published post) :pubdate "pubdate" :itemprop "datePublished"} (format-date (:date-published post))]
+       [:span (str ", tags: ")] (tags->links (:tags post))])]
    [:section {:role "main" :itemprop "articleBody"} (:content post)]])
 
 (defn body-template
@@ -76,8 +77,9 @@
     (body-template global-meta tag content)))
 
 (defn render-index-page [{global-meta :meta collection-meta :entry posts :entries}]
-  (let [content [:div
-                 (article-template (first posts))
+  (let [landing-page-post (assoc (first posts) :type "post")
+        content [:div
+                 (article-template landing-page-post)
                  [:section {:id "old-posts"}
                   [:h2 "Old Posts"]
                   (list-posts posts)]]]

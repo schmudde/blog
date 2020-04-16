@@ -30,21 +30,24 @@
         (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
         (perun/render :renderer 'site.core/render-post-pages
-                      :filterer (apply every-pred [post? published?]))
+                      :filterer (apply every-pred [post? published?])
+                      :meta {:type "post"})
         (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [post? published?])
                     :out-dir "public/tags")
-
-        (perun/render :renderer 'site.core/render-post-pages :filterer page?)
-
-        (perun/static :renderer 'site.about/render
-                      :page "about.html")
-        (perun/rss :filterer post?)
+        (perun/render :renderer 'site.core/render-post-pages
+                      :filterer page?
+                      :meta {:type "page"})
+        #_(perun/static :renderer 'site.about/render
+                      :page "about.html"
+                      :meta {:type "page"})
+        (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))
 
 ;; TODO: how does the CSS move?
 ;;           (sift :move {#"martinklepschorg-v2.css" "public/stylesheets/martinklepschorg-v2.css"
 ;; #"martinklepschorg-v3.css" "public/stylesheets/martinklepschorg-v3.css"})
+
 #_(deftask build
   "Build test blog. This task is just for testing different plugins together."
   []
