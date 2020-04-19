@@ -1,6 +1,6 @@
 (set-env!
- :source-paths #{"src" "content"}
- :resource-paths #{"resources"}
+ :source-paths #{"src"}
+ :resource-paths #{"resources" "content"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [nrepl "0.7.0" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
@@ -44,30 +44,17 @@
         (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))
 
-;; TODO: how does the CSS move?
-;;           (sift :move {#"martinklepschorg-v2.css" "public/stylesheets/martinklepschorg-v2.css"
-;; #"martinklepschorg-v3.css" "public/stylesheets/martinklepschorg-v3.css"})
-
-#_(deftask build
-  "Build test blog. This task is just for testing different plugins together."
-  []
-  (comp
-   (perun/ttr)
-   (perun/word-count)
-   (perun/build-date)
-   (perun/gravatar :source-key :author-email :target-key :author-gravatar)
-   (perun/paginate :renderer 'io.perun.example.paginate/render)
-   (perun/sitemap)
-   (perun/atom-feed :filterer :original)
-   (notify)))
-
-
-;; https://clojurians-log.clojureverse.org/perun/2016-10-30
-;; boot-reload - live-reload of browser Cljs, HTML, CSS and images (Requires Cljs).
+; TODO: add plugins:
+;; - (perun/sitemap :filename "sitemap.xml")
+;; - (perun/ttr)
+;; - (perun/word-count)
+;; - (perun/build-date)
+;; - (perun/paginate :renderer 'io.perun.example.paginate/render)
+;; - (perun/sitemap)
+;; - (perun/atom-feed :filterer :original)
 
 (deftask dev []
-  (comp ;; (repl :server true)
-        (watch)
+  (comp (watch)
         (build)
         (perun/print-meta)
         (perun/inject-scripts :scripts #{"js/livereload.js"})

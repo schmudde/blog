@@ -6,27 +6,39 @@
 
 (defn tags->links [tags]
   [:ul.list.dib.ma0.pa0 {:class "tags"}
-   (map (fn [tag] [:li.dib.mr2 [:a {:href (str "/tags/" tag ".html")} tag]]) tags)])
+   (map (fn [tag] [:li.dib.mr2.f5
+                   #_[:i {:class "fa fa-hashtag"}]
+                   "&nbsp;#"
+                   [:a {:href (str "/tags/" tag ".html")}
+                     tag]]) tags)])
 
 (defn list-posts [posts]
   [:ul.liste
    (for [post posts]
      [:li
-      [:a {:href (:permalink post)}(:title post)]])])
+      [:a {:href (:permalink post)}(:title post)]
+      "&nbsp;"
+      [:time.f5 {:datetime (:date-published post)}
+       (format-date (:date-published post))]])])
 
 (defn head-template [{:keys [site-title base-url author] :as global-meta}
                      {:keys [title canonical-url] :as page-meta}]
   [:head
    [:title site-title (if title (str " | " title))]
    [:meta {:charset "utf-8"}]
-   [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
+   #_[:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
+   [:meta {:http-equiv "Content-Type" :content "text/html"}]
+   [:link {:rel "icon" :href "/favicon.ico" :type "image/x-icon"}]
+   [:link {:rel "stylesheet" :href"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}]
+
+   [:meta {:name "description" :content (or (:description page-meta) (:description global-meta))}]
    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
    [:meta {:name "twitter:card" :content "summary"}]
    [:meta {:name "twitter:creator" :content "@dschmudde"}]
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
-   [:meta {:property "og:description":content (or (:description page-meta) (:description global-meta))}]
+   [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]
      [:meta {:property "og:type":content "website"}])
@@ -47,6 +59,11 @@
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
 
+(defn time-template [time]
+  [:time {:datetime time
+          :pubdate "pubdate"
+          :itemprop "datePublished"} (format-date time)])
+
 (defn article-template [post]
   [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
    [:meta {:itemprop "author" :content "David Schmudde"}]
@@ -54,15 +71,13 @@
    [:header
     [:h1 {:itemprop "headline"} (:title post)]
     (if (= (:type post) "post")
-      [:div [:time {:datetime (:date-published post) :pubdate "pubdate" :itemprop "datePublished"} (format-date (:date-published post))]
-       [:span (str ", tags: ")] (tags->links (:tags post))])]
+      [:div
+       [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
+       (time-template (:date-published post))
+       [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
    [:section {:role "main" :itemprop "articleBody"} (:content post)]
    (if (= (:type post) "page") [:div [:span "Last Updated: "]
-                                [:time {:datetime (:date-published post)
-                                        :pubdate "pubdate"
-                                        :itemprop "datePublished"}
-                                 (format-date (:date-published post))]]
-       )])
+                                (time-template (:date-published post))])])
 
 (defn body-template
   [global-meta page-meta content]

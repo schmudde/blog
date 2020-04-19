@@ -15,9 +15,11 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
+<i class="fa fa-envelope-o"></i><a href="mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;" target="_blank" class="popupShare"> eMail me</a>
+
 I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy. The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
 
-[^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria solar system](/pages/img/peoria.gif) *Map of Peoria's [Community Solar System](http://www.peoriariverfrontmuseum.org/dome-planetarium/community-solar-system), a scale model of the solar system that stretches across Central Illinois. It conceptually terminates at the Little West Crater near the Apollo 11 landing site, which represents the [Alpha Centauri system](https://www.nasa.gov/image-feature/goddard/2016/hubbles-best-image-of-alpha-centauri-a-and-b/).*
+[^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria solar system](/img/about/peoria.gif) *Map of Peoria's [Community Solar System](http://www.peoriariverfrontmuseum.org/dome-planetarium/community-solar-system), a scale model of the solar system that stretches across Central Illinois. It conceptually terminates at the Little West Crater near the Apollo 11 landing site, which represents the [Alpha Centauri system](https://www.nasa.gov/image-feature/goddard/2016/hubbles-best-image-of-alpha-centauri-a-and-b/).*
 
 ## How I Read
 
@@ -29,19 +31,19 @@ eBooks and paper. I'm still looking for an acceptable eInk solution.
 
 I read blogs and periodicals using an RSS/Atom reader, [Feedly](https://feedly.com/). RSS is a much better way to get your news than social media sites. I also use it to keep track of my friend's writings. Here they are, each category is roughly arranged by how often they post.
 
-- **The Art of Living**: [Khurram Naik](https://naik.co), [The Compass Needle](https://compassneedleblog.wordpress.com)
+- **The Art of Living**: [Khurram Naik](https://naik.co), [The Compass Needle](https://compassneedleblog.wordpress.com), [Meanwhile, Back in Peoria](https://www.meanwhilebackinpeoria.com/)
 - **Computing and the Humanities**: [Knowing and Doing](http://www.cs.uni.edu/~wallingf/blog/index.html), [Veit Heller](http://blog.veitheller.de/), [esoteric.codes](https://esoteric.codes), [Modulo Lotus](http://www.modulolotus.net), [Daniel Bachler](http://danielbachler.de/), [John Jacobsen](http://zerolib.com)
 - **Programming**: [Jessitron](https://blog.jessitron.com), [Matt Horan's Blog](https://blog.matthoran.com), [See Spot Code](http://seespotcode.net/)
 - **Music &amp; Art**: [Esthetic Lens](http://www.estheticlens.com), [Martina Della Valle](http://martinadellavalle.blogspot.com/), [Travelogue by Jon Sonnenberg](http://artoftravelogue.blogspot.com/), Sharon Hoyer @ [Streetsblog](https://chi.streetsblog.org/author/sharonhoyer/) and [Newcity Stage](https://www.newcitystage.com/), [Nathan Woleck](https://www.nathanwolek.com), [South Street Dungeon](https://southstreetdungeon.wordpress.com)
 
 ## How I Do My Computing
 
-![](img/ti-angle.png)
+![](/img/about/ti-angle.png)
 
 [^how-i-compute] My family's first computer was a Texas Instruments 99/4a (pictured above).[^ti] My grandparents found one at a drastically reduced price during the home computer wars circa 1984. Computers have be central to my art practice and intellectual discourse ever since. Such a huge part of my life is naturally a part of my biography. Here's how it looks today.
 
 [^how-i-compute]: {-} This entry is inspired by Richard Stallman's *[How I Do My Computing](https://stallman.org/stallman-computing.html)*
-[^ti]: I was quite young so all of my time was spent playing games. It was my introduction to BASIC - every TI booted with the programming language as an option. ![TI Software](img/ti.gif) *Some of the software available for the 99 4/a. From [99er](http://99er.net/).*
+[^ti]: I was quite young so all of my time was spent playing games. It was my introduction to BASIC - every TI booted with the programming language as an option. ![TI Software](/img/about/ti.gif) *Some of the software available for the 99 4/a. From [99er](http://99er.net/).*
 
 ### My Computer
 
@@ -74,7 +76,7 @@ The website is a collection of thoughts that cover tools for thinking, Buddhism,
 - Blogging: [Perun](https://perun.io/)
 - Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
 
-The source code is [here](https://github.com/schmudde/blog).[^tufte]
+<i class="fa fa-code-fork"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
 
 [^tufte]: Special thanks to the tool-makers. [Dave Liepmann](https://www.daveliepmann.com/) for the original Tufte project and Jake Zimmerman's [work with Pandoc](https://jez.io/tufte-pandoc-css/) to ensure these [sidenotes](https://github.com/jez/pandoc-sidenote) display correctly.
 

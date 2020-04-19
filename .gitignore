@@ -1,4 +1,4 @@
 /target
 *.jar
 *.class
-/resources/public/css/*.css
+/resources/public/css/*
