@@ -1,6 +1,6 @@
 ---
-title: About Me
-description: About the Man
+title: About the Author
+description: How I read, how I compute
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -17,10 +17,7 @@ uuid:
 
 I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy. The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
 
-[f](/pages/now.html)
-[f](pages/img/logo.jpg)
-
-[^peoria]: Peoria is a great place. ![](/pages/img/logo.jpg)
+[^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria solar system](/pages/img/peoria.gif) *Map of Peoria's [Community Solar System](http://www.peoriariverfrontmuseum.org/dome-planetarium/community-solar-system), a scale model of the solar system that stretches across Central Illinois. It conceptually terminates at the Little West Crater near the Apollo 11 landing site, which represents the [Alpha Centauri system](https://www.nasa.gov/image-feature/goddard/2016/hubbles-best-image-of-alpha-centauri-a-and-b/).*
 
 ## How I Read
 
@@ -30,40 +27,60 @@ eBooks and paper. I'm still looking for an acceptable eInk solution.
 
 ### With a Little Help From My Friends
 
-I read blogs and periodicals using an RSS/Atom reader, [Feedly](https://feedly.com/). RSS is a much better way to get your news than social media sites. It also helps me keep track of my fascinating friends:
+I read blogs and periodicals using an RSS/Atom reader, [Feedly](https://feedly.com/). RSS is a much better way to get your news than social media sites. I also use it to keep track of my friend's writings. Here they are, each category is roughly arranged by how often they post.
 
 - **The Art of Living**: [Khurram Naik](https://naik.co), [The Compass Needle](https://compassneedleblog.wordpress.com)
 - **Computing and the Humanities**: [Knowing and Doing](http://www.cs.uni.edu/~wallingf/blog/index.html), [Veit Heller](http://blog.veitheller.de/), [esoteric.codes](https://esoteric.codes), [Modulo Lotus](http://www.modulolotus.net), [Daniel Bachler](http://danielbachler.de/), [John Jacobsen](http://zerolib.com)
-- **Programming**: [Jessitron](https://blog.jessitron.com), [See Spot Code](http://seespotcode.net/), [Matt Horan's Blog](https://blog.matthoran.com)
-- **Music &amp; Art**: [Esthetic Lens](http://www.estheticlens.com), [South Street Dungeon](https://southstreetdungeon.wordpress.com), [Travelogue by Jon Sonnenberg](http://artoftravelogue.blogspot.com/), [Nathan Woleck](https://www.nathanwolek.com), Sharon Hoyer @ [Streetsblog](https://chi.streetsblog.org/author/sharonhoyer/) and [Newcity Stage](https://www.newcitystage.com/)
+- **Programming**: [Jessitron](https://blog.jessitron.com), [Matt Horan's Blog](https://blog.matthoran.com), [See Spot Code](http://seespotcode.net/)
+- **Music &amp; Art**: [Esthetic Lens](http://www.estheticlens.com), [Martina Della Valle](http://martinadellavalle.blogspot.com/), [Travelogue by Jon Sonnenberg](http://artoftravelogue.blogspot.com/), Sharon Hoyer @ [Streetsblog](https://chi.streetsblog.org/author/sharonhoyer/) and [Newcity Stage](https://www.newcitystage.com/), [Nathan Woleck](https://www.nathanwolek.com), [South Street Dungeon](https://southstreetdungeon.wordpress.com)
 
 ## How I Do My Computing
 
-Philosophy. [^how-i-compute]
+![](img/ti-angle.png)
 
-[^how-i-compute]: Richard Stallman's *[How I Do My Computing](https://stallman.org/stallman-computing.html)*
+[^how-i-compute] My family's first computer was a Texas Instruments 99/4a (pictured above).[^ti] My grandparents found one at a drastically reduced price during the home computer wars circa 1984. Computers have be central to my art practice and intellectual discourse ever since. Such a huge part of my life is naturally a part of my biography. Here's how it looks today.
+
+[^how-i-compute]: {-} This entry is inspired by Richard Stallman's *[How I Do My Computing](https://stallman.org/stallman-computing.html)*
+[^ti]: I was quite young so all of my time was spent playing games. It was my introduction to BASIC - every TI booted with the programming language as an option. ![TI Software](img/ti.gif) *Some of the software available for the 99 4/a. From [99er](http://99er.net/).*
 
 ### My Computer
 
-Linux
+Hardware concerns have mostly been abstracted away. Most of my decisions are rooted in an effort to source ethical tools. The compromise of ethics and convenience has landed me at a [System 76 Lemur](https://system76.com/laptops/lemur) running the [Pop!_OS](https://system76.com/pop) flavor of Linux.
 
-### My Tools
-
-Emacs. But there is more to it.
-
-### Internet Sites
-
-[Runbox](https://runbox.com) for eMail.
+I use an Apple iPhone as a smartphone. I never owned a tablet.
 
 ### What I Do On My Computer
 
-Text manipulation.
+Most work begins as text. Lots of research and writing - uncovering concepts, having conversations, and connecting ideas. The work manifests on the web as experiences that span text, music, and video.
+
+### My Tools
+
+I live in [Emacs](https://www.gnu.org/software/emacs/) and [Weechat](https://weechat.org/). The vast majority of what I do on my computer is manipulate text. I switched back to text tools a few years ago and I have found that it helps me focus. Since they are built for text input, they are also much faster to use than mouse-driven software. It's simple math: ten digits[^mouse] vs. one pointer.
+
+[^mouse]: Well, nine since the spacebar occupies two thumbs.
+
+**Browser**: Firefox with EFF's [Privacy Badger](https://privacybadger.org/) (desktop), [Brave](https://brave.com/) (mobile), &amp; [EWW](https://www.gnu.org/software/emacs/manual/html_node/eww/index.html) (Emacs) all are set to use [DuckDuckGo](https://duckduckgo.com/) for search.
+
+**eMail**: [Runbox](https://runbox.com) is based in Norway, a country that touts strong privacy regulations. The service is powered by hydroelectricity.
+
+**Messaging**: Weechat gets me to Slack, IRC, Google Chat, [Twitter](https://twitter.com/dschmudde), and [Mastodon](https://mastodon.social/@schmudde). So that's where I spend most of my time. On mobile I prefer Signal, but can also be found on iMessage and Whatsapp.[^social]
+
+[^social]: The prevalence of large proprietary services is fundamentally unethical. My current response is to limit their use and encourage others to move to better solutions.
 
 ### This Website
 
+The website is a collection of thoughts that cover tools for thinking, Buddhism, Lisp, the humanities (art, books, films, dance, and music), information science, mathematics, and history. It was made using:
+
 - Blogging: [Perun](https://perun.io/)
-- Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) [^tufte] &amp; [Tachyons](http://tachyons.io/)
+- Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
+
+The source code is [here](https://github.com/schmudde/blog).[^tufte]
 
 [^tufte]: Special thanks to the tool-makers. [Dave Liepmann](https://www.daveliepmann.com/) for the original Tufte project and Jake Zimmerman's [work with Pandoc](https://jez.io/tufte-pandoc-css/) to ensure these [sidenotes](https://github.com/jez/pandoc-sidenote) display correctly.
 
-The source code is [here](https://github.com/schmudde/blog).
+I stole ideas from:
+
+- [Brutalist Web Design](https://brutalist-web.design/) by David Bryant Copeland
+- [Everyday Information Architecture](https://abookapart.com/products/everyday-information-architecture) by Lisa Maria Marquis
+- [Tom MacWright](https://macwright.org/)
+- [Martin Kavalar](https://nextjournal.com/mk/)

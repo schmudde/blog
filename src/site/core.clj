@@ -56,7 +56,13 @@
     (if (= (:type post) "post")
       [:div [:time {:datetime (:date-published post) :pubdate "pubdate" :itemprop "datePublished"} (format-date (:date-published post))]
        [:span (str ", tags: ")] (tags->links (:tags post))])]
-   [:section {:role "main" :itemprop "articleBody"} (:content post)]])
+   [:section {:role "main" :itemprop "articleBody"} (:content post)]
+   (if (= (:type post) "page") [:div [:span "Last Updated: "]
+                                [:time {:datetime (:date-published post)
+                                        :pubdate "pubdate"
+                                        :itemprop "datePublished"}
+                                 (format-date (:date-published post))]]
+       )])
 
 (defn body-template
   [global-meta page-meta content]

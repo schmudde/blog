@@ -17,4 +17,10 @@ uuid:
 
 ## New
 
+🇮🇹 The Corona Virus in Turin, Italy
+
+- Tracking cases in [Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
+- I built this blog.
+- A secret book project.
+
 My [now page](https://nownownow.com/about).
