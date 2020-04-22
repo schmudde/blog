@@ -7,7 +7,6 @@
 (defn tags->links [tags]
   [:ul.list.dib.ma0.pa0 {:class "tags"}
    (map (fn [tag] [:li.dib.mr2.f5
-                   #_[:i {:class "fa fa-hashtag"}]
                    "&nbsp;#"
                    [:a {:href (str "/tags/" tag ".html")}
                      tag]]) tags)])

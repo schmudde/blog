@@ -19,6 +19,8 @@ uuid:
 
 
 - Looking for contracting work.
+    - I am looking to work in a cross functional environment where I help research techniques and solutions, communicate and coordinate processes, and write some code.
+    - Areas of research include the structure and transmission of information, the social impact of technology, digital art, and the nature of computation.
 - Tracking cases in [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
 - I built this blog.
 - A secret book project.

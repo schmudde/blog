@@ -15,11 +15,13 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
-<i class="fa fa-envelope-o"></i><a href="mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;" target="_blank" class="popupShare"> eMail me</a>
-
 I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy. The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
 
 [^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria solar system](/img/about/peoria.gif) *Map of Peoria's [Community Solar System](http://www.peoriariverfrontmuseum.org/dome-planetarium/community-solar-system), a scale model of the solar system that stretches across Central Illinois. It conceptually terminates at the Little West Crater near the Apollo 11 landing site, which represents the [Alpha Centauri system](https://www.nasa.gov/image-feature/goddard/2016/hubbles-best-image-of-alpha-centauri-a-and-b/).*
+
+My career in informatics spans engineering, education, and art. I have helped others communicate difficult concepts, plan complex systems, and craft innovative products. I am an advocate of Linux, Lisp/Clojure, and Jupyter/Python notebooks. Areas of research include the structure and transmission of information, the social impact of technology, digital art, and the nature of computation.
+
+<i class="fa fa-envelope-o"></i> The internet was built to connect people. [EMail me](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) to talk about methods, ideas, or projects related to what you see on *Beyond the Frame*.
 
 ## How I Read
 
@@ -63,7 +65,7 @@ I live in [Emacs](https://www.gnu.org/software/emacs/) and [Weechat](https://wee
 
 **Browser**: Firefox with EFF's [Privacy Badger](https://privacybadger.org/) (desktop), [Brave](https://brave.com/) (mobile), &amp; [EWW](https://www.gnu.org/software/emacs/manual/html_node/eww/index.html) (Emacs) all are set to use [DuckDuckGo](https://duckduckgo.com/) for search.
 
-**eMail**: [Runbox](https://runbox.com) is based in Norway, a country that touts strong privacy regulations. The service is powered by hydroelectricity.
+**eMail**: [Runbox](https://runbox.com) is based in Norway, a country that touts strong privacy regulations. The service is [powered by hydroelectricity](https://runbox.com/why-runbox/sustainable-services/runbox-is-double-carbon-negative/) and endorsed on [Ethical Consumer](https://www.ethicalconsumer.org/).
 
 **Messaging**: Weechat gets me to Slack, IRC, Google Chat, [Twitter](https://twitter.com/dschmudde), and [Mastodon](https://mastodon.social/@schmudde). So that's where I spend most of my time. On mobile I prefer Signal, but can also be found on iMessage and Whatsapp.[^social]
 
