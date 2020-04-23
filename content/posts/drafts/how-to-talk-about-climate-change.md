@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-08
 date-modified: 2020-04-18
-date-published: 2020-04-18
+date-published:
 in-language: en
 tags:
  - doing

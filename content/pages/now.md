@@ -8,21 +8,37 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2020-04-15
-date-published: 2020-04-15
+date-modified: 2020-04-23
+date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-## New
+I am currently available for contracting.[^now]
 
+- I help cross functional teams develop and coordinate strategies. This includes writing code, analyzing data, and communicating results.
+- I am passionate about Clojure/Lisp and Jupyter/Python notebooks.
+- I am most interested in initiatives that address the social and ethical issues of our time.
 
-- Looking for contracting work.
-    - I am looking to work in a cross functional environment where I help research techniques and solutions, communicate and coordinate processes, and write some code.
-    - Areas of research include the structure and transmission of information, the social impact of technology, digital art, and the nature of computation.
-- Tracking cases in [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
-- I built this blog.
-- A secret book project.
+Find out more about me [here](/pages/about.html) and on [GitHub](https://github.com/schmudde). CV available upon request.
 
-My [now page](https://nownownow.com/about).
+## Projects
+
+I am tracking [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy) using a computational notebook on [Nextjournal](https://nextjournal.com/schmudde/corona-in-italy).
+
+Launching this blog.
+
+Finishing my contribution to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
+
+A secret book project.
+
+## Reading
+
+- *Bach: Music in the Castle of Heaven*
+- *Lankavatara Sutra*
+- *Mindfully Facing Climate Change*
+
+---
+
+[^now]: {-} This *now page* shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about).

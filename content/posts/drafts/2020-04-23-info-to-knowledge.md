@@ -1,6 +1,6 @@
 ---
 title: From Information to Knowledge
-description: The Implications of Information
+description: The implications of information
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-09
 date-modified: 2020-04-09
-date-published: 2020-04-20
+date-published:
 in-language: en
 keywords: information fidelity, information architecture, information science, informatics, computer science
 tags:
@@ -94,14 +94,6 @@ Working with information is good for the mind. Reading broadens horizons. Puzzle
 
 Learning how to work with information is good for the soul. This may be an act of engineering, becoming a better reader, or a meditation practice. It transforms information into knowledge.
 
-This blog looks beyond the edge of the screen
+looks beyond the edge of the screen
 
 endavors to offer tools and perspectives for the post-internet age.
-
----
-
-People exist beyond the edges of the screen.
-
-People need tools to work with information.
-
-Looking beyond the edges of the screen. The implications of information. This includes both story and data equally.
