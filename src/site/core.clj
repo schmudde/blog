@@ -37,6 +37,7 @@
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
+   [:meta {:property "og:image" :content "http://schmud.de/img/btf-logo.png"}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]

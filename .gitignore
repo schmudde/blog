@@ -3,3 +3,4 @@
 *.class
 /resources/public/css/*
 .nrepl-history
+/content/posts/drafts/*

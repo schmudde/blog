@@ -8,16 +8,17 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2020-04-23
+date-modified: 2020-04-24
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy. The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
+I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
 
-[^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria solar system](/img/about/peoria.gif) *Map of Peoria's [Community Solar System](http://www.peoriariverfrontmuseum.org/dome-planetarium/community-solar-system), a scale model of the solar system that stretches across Central Illinois. It conceptually terminates at the Little West Crater near the Apollo 11 landing site, which represents the [Alpha Centauri system](https://www.nasa.gov/image-feature/goddard/2016/hubbles-best-image-of-alpha-centauri-a-and-b/).*
+[^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria skyline](/img/about/peoria.jpeg)
+[^turin]: Turin is a peculiar city in the foothills of the Alps. It is part aristocratic and part post-industrial. The myriad of local businesses are a joy to discover. ![Turin skyline](/img/about/turin.png)
 
 I spent the majority of my life working as an artist, a college professor, and a software engineer. My curiosity drives my research, which focuses on the structure and transmission of information, the social impact of technology, digital art, and the nature of computation.
 
