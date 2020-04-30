@@ -44,7 +44,7 @@
     ]
    [:section "fefe"]])
 
-(defn render [{global-meta :meta}]
+(defn render [{global-meta :meta :as meta}]
   (let [page-title "About Me"
         content about-template]
-    (layout/body-template global-meta page-title content)))
+     (layout/body-template global-meta page-title content)))

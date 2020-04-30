@@ -20,8 +20,14 @@
       [:time.f5 {:datetime (:date-published post)}
        (format-date (:date-published post))]])])
 
+
+(defn extract-image [content]
+  (if content
+    (clojure.string/includes? content "<img src=")))
+
 (defn head-template [{:keys [site-title base-url author] :as global-meta}
-                     {:keys [title canonical-url] :as page-meta}]
+                     {:keys [title canonical-url] :as page-meta}
+                     content]
   [:head
    [:title site-title (if title (str " | " title))]
    [:meta {:charset "utf-8"}]
@@ -37,6 +43,7 @@
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
+   (extract-image content)
    [:meta {:property "og:image" :content "http://schmud.de/img/btf-logo.png"}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
@@ -69,7 +76,8 @@
    [:meta {:itemprop "author" :content "David Schmudde"}]
    #_[:link {:itemprop "mainEntityOfPage" :href (:canonical-url post)}]
    [:header
-    [:h1 {:itemprop "headline"} (:title post)]
+    [:a {:href (:permalink post) :title (:title post)}
+     [:h1 {:itemprop "headline"} (:title post)]]
     (if (= (:type post) "post")
       [:div
        [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
@@ -82,7 +90,7 @@
 (defn body-template
   [global-meta page-meta content]
   (page/html5 {:lang "en" :itemscope "itemscope" :itemtype "http://schema.org/WebPage"}
-              (head-template global-meta page-meta)
+              (head-template global-meta page-meta content)
               [:body
                [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
                [:main {:role "main"} content]]))
