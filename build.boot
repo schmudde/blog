@@ -56,7 +56,7 @@
 (deftask dev []
   (comp (watch)
         (build)
-        (perun/print-meta)
+        #_(perun/print-meta)
         (perun/inject-scripts :scripts #{"js/livereload.js"})
         (livereload :asset-path "public" :filter #"\.(css|html|js)$")
         (serve :resource-root "public")))

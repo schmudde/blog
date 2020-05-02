@@ -20,18 +20,16 @@
       [:time.f5 {:datetime (:date-published post)}
        (format-date (:date-published post))]])])
 
-
 (defn extract-image [content]
-  (if content
-    (clojure.string/includes? content "<img src=")))
+  (when content
+    (when-let [img-tag (re-find #"<img src=\"\/img[\w\d\s\/-]+.[\w\d]+\"" content)]
+      (re-find #"\/img[\w\d\s\/-]+.[\w\d]+" img-tag))))
 
 (defn head-template [{:keys [site-title base-url author] :as global-meta}
-                     {:keys [title canonical-url] :as page-meta}
-                     content]
+                     {:keys [title canonical-url content] :as page-meta}]
   [:head
    [:title site-title (if title (str " | " title))]
    [:meta {:charset "utf-8"}]
-   #_[:meta {:http-equiv "X-UA-Compatible" :content "IE=edge,chrome=1"}]
    [:meta {:http-equiv "Content-Type" :content "text/html"}]
    [:link {:rel "icon" :href "/favicon.ico" :type "image/x-icon"}]
    [:link {:rel "stylesheet" :href"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}]
@@ -43,8 +41,9 @@
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
-   (extract-image content)
-   [:meta {:property "og:image" :content "http://schmud.de/img/btf-logo.png"}]
+   [:meta {:property "og:image" :content (if-let [img-url (extract-image content)]
+                                           (str "http://schmud.de" img-url)
+                                           "http://schmud.de/img/btf-logo.png")}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]
@@ -90,7 +89,7 @@
 (defn body-template
   [global-meta page-meta content]
   (page/html5 {:lang "en" :itemscope "itemscope" :itemtype "http://schema.org/WebPage"}
-              (head-template global-meta page-meta content)
+              (head-template global-meta page-meta)
               [:body
                [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
                [:main {:role "main"} content]]))
@@ -112,16 +111,16 @@
                  [:section {:id "old-posts"}
                   [:h2 "Old Posts"]
                   (list-posts posts)]]]
-    (body-template global-meta nil content)))
+    (body-template global-meta collection-meta content)))
 
 (comment
 
-  (def global-data {:base-url "http://schmud.de/"
+  (def global-data {:base-url "https://schmud.de/"
                     :site-title "Beyond the Frame"
                     :description "The metaphysics of information, art, and narrative"
                     :author "David Schmudde"})
-  (def post-data {:canonical-url "✓" :title "✓" :description "✓" :tags ["tag-a" "tag-b"]})
-  (def tag-data {:canonical-url "✓" :title "✓" :description "✓" :tag "tag-a"})
+  (def post-data {:canonical-url "✓" :title "✓" :description "✓" :tags ["tag-a" "tag-b"] :content "<body><p>lorem ipsum</p><img src=\"/img/test.png\"></body>"})
+  (def tag-data {:canonical-url "✓" :title "✓" :description "✓" :tag "tag-a" :content "<body><p>tags</p></body>"})
 
   (clojure.pprint/pprint (head-template global-data post-data))
 
@@ -132,5 +131,10 @@
   (render-index-page {:meta global-data :entry nil :entries [post-data post-data post-data]})
 
   (spit "temp.html" (render-index-page {:meta global-data :entry nil :entries [post-data post-data post-data]}))
+
+
+  (def xxx "It’s a small world. <img src=\"/img/2020-04-26-ambient-church/live-quadraphonic.jpg\" alt=\"LIVE Quadraphonic album cover\" /><br />")
+  (re-find #"<img src=\"\/img[\w\d\s\/-]+.[\w\d]+\"" xxx)
+  (->> (re-find #"<img src=\"\/img[\w\d\s\/-]+.[\w\d]+\"" xxx) (re-find #"\/img[\w\d\s\/-]+.[\w\d]+"))
 
   )
