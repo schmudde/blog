@@ -49,12 +49,13 @@
      [:meta {:property "og:type":content "article"}]
      [:meta {:property "og:type":content "website"}])
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
-   [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]])
+   [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
+   [:link {:rel "stylesheet" :href "/css/btf.css"}]])
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
    [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
-    [:p.b.ma0.pa0.nowrap.f-headline.washed-red {:itemprop "publisher"} (:site-title global-meta)]
+    [:p.b.ma0.pa0.nowrap.f1.f-5-m.f-6-ns.light-blue {:itemprop "publisher" :class "beyond-the-frame"} (:site-title global-meta)]
     [:p.dib
      [:span.mb2 {:id "site-description" :itemprop "about"} (:description global-meta)]
      [:span.mb2 " by "]
