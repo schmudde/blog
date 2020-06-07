@@ -15,54 +15,6 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
-<style>
-
-.timeline-item {
-	padding: 3em 2em 2em;
-	position: relative;
-	border-left: 2px solid rgba(0, 0, 0, 0.3);
-    width: 55%;
-}
-
-.timeline-item:before {
-		content: attr(data-date-is);
-		position: absolute;
-		left: 2em;
-		top: 1em;
-		display: block;
-	}
-
-.timeline-item:after {
-		width: 10px;
-		height: 10px;
-		display: block;
-		top: 1em;
-		position: absolute;
-		left: -7px;
-		border-radius: 10px;
-		content: '';
-		border: 2px solid rgba(0, 0, 0, 0.3);
-		background: white;
-}
-
-.timeline-item:last-child {
-    border-image: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0.3) 60%,
-                    rgba(0, 0, 0, 0)) 1 100%;
-}
-
-.timeline-item:first-child {
-    border-image: linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.3) 60%,
-                    rgba(0, 0, 0, 0.05)) 1 100%;
-}
-
-</style>
-
-<!-- Timeline by https://codepen.io/NielsVoogt -->
-
 Timeline of Events Discussed on this Blog
 
 <div class="container">
@@ -147,3 +99,5 @@ Musical notation falls short of capturing the composer’s intent, the performer
 </div>
 
 </div>
+
+---

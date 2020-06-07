@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2020-04-24
+date-modified: 2020-06-07
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -84,6 +84,7 @@ The website is a collection of thoughts that cover strategies for #[doing](/tags
 
 - Blogging: [Perun](https://perun.io/)
 - Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
+- Timeline: modified CSS by [Niels Voogt](https://codepen.io/NielsVoogt)
 
 <i class="fa fa-code-fork"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
 

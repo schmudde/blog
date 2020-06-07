@@ -85,7 +85,7 @@
        [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
    [:section {:role "main" :itemprop "articleBody"} (:content post)]
    (if (= (:type post) "page") [:div [:span "Last Updated: "]
-                                (time-template (:date-published post))])])
+                                (time-template (:date-modified post))])])
 
 (defn body-template
   [global-meta page-meta content]
