@@ -29,7 +29,7 @@ I am tracking [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.co
 
 Launching this blog.
 
-Finishing my contribution to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
+I just completed my contribution to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
 
 A secret book project.
 
@@ -37,7 +37,6 @@ A secret book project.
 
 - *Bach: Music in the Castle of Heaven*
 - *Lankavatara Sutra*
-- *Mindfully Facing Climate Change*
 
 ---
 
