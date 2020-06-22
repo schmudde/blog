@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-02
-date-modified: 2020-05-12
+date-modified: 2020-06-08
 date-published: 2020-05-07
 in-language: en
 keywords: COVID-19, privacy, information society
@@ -133,3 +133,15 @@ In contrast, Dunja Mijatovic, the Council of Europe Commissioner for Human Right
 - United Kingdom: "the Guardian newspaper revealed that technology firms processed the confidential personal data of patients without transparency or accountability."
 
 Information is a critical tool to curb the growth of any pandemic. It matters how it's collected.
+
+# Timeline
+
+Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
+
+<div class="timeline-item" date-is='April 10, 2020' machine-date='2020-04-10'>
+
+## Apple and Google Announce Bluetooth Contact Tracing Efforts
+
+Apple and Google decided to bake an automated exposure notification service into their portable devices. The software will enable intra-device information exchange over Bluetooth while keeping each individual’s identity a secret.
+
+</div>

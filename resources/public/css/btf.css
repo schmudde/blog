@@ -27,12 +27,15 @@ html {
 
 /* TIMELINE */
 
+
 .timeline-item {
 	  padding: 3em 2em 2em;
 	  position: relative;
 	  border-left: 2px solid rgba(0, 0, 0, 0.3);
     width: 55%;
 }
+
+
 
 .timeline-item:before {
 		content: attr(data-date-is);
@@ -67,4 +70,11 @@ html {
         to top,
         rgba(0, 0, 0, 0.3) 60%,
         rgba(0, 0, 0, 0.05)) 1 100%;
+}
+
+@media (max-width: 760px) {
+    /* match the media breakpoints of tufte.css */
+    .timeline-item {
+        width: 100%;
+    }
 }

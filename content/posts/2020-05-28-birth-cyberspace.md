@@ -115,3 +115,27 @@ Report Of The Royal Commission Appointed To Inquire Into The Failure Of Atlantic
 
 
 ---
+
+<div class="epigraph">
+> There has been an increasing recognition that information is an asset, a resource, and a commidity with social, economic, and political value. Furthermore, there has been growing concern that international information flow, if misues, could potentially affect individual privacy and national security.
+>
+> <footer>
+> John Rankine, Director of Standards, Product Saftey and Data Security, IBM Corp., *Statement to the United States House of Representatives*, March 10, 1980.
+> </footer>
+</div>
+
+
+By the 1980s the free flow of digital data across international borders was becoming a concern. United States congress held .[^congress]
+
+[^congress]: United States. Congress. House. Committee on Government Operations. Subcommittee on Government Information and Individual Rights., *[International Data Flow : Hearings Before A Subcommittee Of The Committee On Government Operations, House Of Representatives, Ninety-Sixth Congress, Second Session, March 10, 13, 27, And April 21, 1980](/papers/international-data-flow.pdf)*. (Washington D.C., 1980): 3.
+
+
+---
+
+John Rankine, former chair of [American National Standards Institute (ANSI)](https://www.ansi.org/about_ansi/structure_management/board_directors/rankine), and IBM employee of 32 years continues.
+
+> Neither the United States nor European aerospace industries could have progressed as they have without a high degree of information exchange, thus ushering in a whole new era in air transportation. Similar examples exist in the fields of medicine, education, communications, energy, information processing, and consumer services.
+>
+> <footer>
+> John Rankine, Director of Standards, Product Saftey and Data Security, IBM Corp., *Statement to the United States House of Representatives*, March 10, 1980.
+> </footer>

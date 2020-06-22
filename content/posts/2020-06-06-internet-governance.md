@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-06-07
-date-modified: 2020-06-07
+date-modified: 2020-06-08
 date-published: 2020-06-07
 in-language: en
 keywords: internet, governance, conflict resolution
@@ -21,7 +21,7 @@ tags:
 
 The United Nations' Internet Governance Forum (IGF) moderates discussion and publishes guidelines for public and private policy-makers working in cyberspace. Governments, international organizations, businesses, and those representing the interests of civil society are invited to find common ground in a "multi-stakeholder" structure.
 
-The [stakeholders' dialogue on the future of internet governance](https://wetheinternet.org/) was intiated by the United Nations' Secretary-General over four session from June 5th to June 6th. I attended the final session on the 6th. We evaluated [three scenarios for the future of internet governance](/papers/future-internet-gov.pdf) proposed by the *[High-Level Panel on Digital Cooperation](https://digitalcooperation.org/)*.[^high-level] The models are quite abstract. **The models do not address specific issues** such as how to ensure privacy on the internet or how to mitigate the fragmentation of the internet. Rather, they are different **structures to help network citizens work towards more egalitarian solutions**.
+The [stakeholders' dialogue on the future of internet governance](https://wetheinternet.org/) was initiated by the United Nations' Secretary-General over four session from June 5th to June 6th. I attended the final session on the 6th. We evaluated [three scenarios for the future of internet governance](/papers/future-internet-gov.pdf) proposed by the *[High-Level Panel on Digital Cooperation](https://digitalcooperation.org/)*.[^high-level] The models are quite abstract. **The models do not address specific issues** such as how to ensure privacy on the internet or how to mitigate the fragmentation of the internet. Rather, they are different **structures to help network citizens work towards more egalitarian solutions**.
 
 [^high-level]: The panel is concerned about a broad range of issues on the internet. As constituted, the member's top issues include: 1) cybercrime, cyberterrorism, cyberconflict, 2) data ownership and governance, 3) access to the internet and digital technologies, 4) bias and transparency related to algorithms and artificial intelligence, 5) disinformation and online freedom of expression.
 

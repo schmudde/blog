@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-26
-date-modified: 2020-04-27
+date-modified: 2020-06-08
 date-published: 2020-04-27
 in-language: en
 keywords: classical, ambient, music, notation, encoding, time, fidelity
@@ -55,3 +55,15 @@ Compare Pointon's attempt to generalize changes in an electronic sound (above) t
 
 [^bwv-105]: {-} Bach's autograph of an aria in the cantata *Herr, gehe nicht ins Gericht mit deinem Knecht*, BWV 105 via [Wikipedia](https://en.wikipedia.org/wiki/File:Bwv105-wie-zittern.png)
 </figure>
+
+# Timeline
+
+Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
+
+<div class="timeline-item" date-is='1723' machine-date='1723'>
+
+## Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;
+
+Musical notation falls short of capturing the composer’s intent, the performer’s performance, and the audience’s experience. However, it is the reason we have access to the music of Bach and Beethoven. Musical scores embody information that has traveled through the centuries, slowly and subtly mutating along the way.
+
+</div>

@@ -15,13 +15,13 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
-Timeline of Events Discussed on this Blog
+Significant events in the history of information previously covered on [Beyond the Frame](/).
 
 <div class="container">
 
 <div class="timeline-item" date-is='May 19, 2020' machine-date='2020-05-19'>
 
-## Joe Rogan Signs With Spotify
+## Podcaster Joe Rogan Signs With Spotify
 
 Joe Rogan announced an exclusive deal with Spotify that [sent data archivists scrambling](https://www.reddit.com/r/Archiveteam/comments/gmzg5l/joe_rogan_moving_his_show_to_spotify_possible/) to save the media and community discussions surrounding his show on YouTube. The deal is worth more than $100 million according to Anne Steele of The Wall Street Journal, “Spotify Strikes Podcast Deal With Joe Rogan Worth More Than $100 Million.”
 
@@ -70,6 +70,26 @@ An anonymous source posted a conversation between the US Assistant Secretary of 
 
 </div>
 
+<div class="timeline-item" date-is='July 1977' machine-date='1977-07'>
+
+## The Untied States Privacy Protection Study Commission Issues Their Report
+
+The Privacy Protection Study Commission generated 162 recommendations to help protect citizens against the intrusive nature of digital data collection, storage, and dissemination. They found that the Privacy Act of 1974 &ldquo;had not resulted in the general benefits to the public that either its legislative history or the prevailing opinion as to its accomplishments would lead one to expect.&rdquo; These recommendations were never codified into law.
+
+- *[Personal Privacy In An Information Society: Appendix 3: Employment Records](/papers/personal-privacy-in-an-info-society-1977.pdf)*
+- The full report is [here](https://epic.org/privacy/ppsc1977report/).
+
+</div>
+
+<div class="timeline-item" date-is='August 8, 1972' machine-date='1972-08-08'>
+
+## California Constitutional Right of Privacy Amendment
+
+A 1972 amendment to the California Constitution that included the &ldquo;right of privacy among the &lsquo;inalienable&rsquo; rights of all people. The amendment established a legal and enforceable right of privacy for every Californian. Fundamental to this right of privacy is the ability of individuals to control the use, including the sale, of their personal information.&rdquo;
+
+California Legislative Information Website, *Assembly Bill No. 375: Legislative Consunsel's Digest: [Today's Law As Amended](https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201720180AB375&showamends=false)*, 2018.
+
+</div>
 
 <div class="timeline-item" date-is='1969' machine-date='1969'>
 
@@ -85,6 +105,15 @@ Interagency Security Classification Appeals Panel (ISCAP) July 2013 declassifica
 
 </div>
 
+<div class="timeline-item" date-is='April 1968' machine-date='1968-04'>
+
+## &ldquo;The Computer As A Communication Device&rdquo;
+
+&ldquo;First, life will be happier for the on-line individual because the people with whom one interacts most strongly will be selected more by commonality of interests and goals than by accidents of proximity. Second, communication will be more effective and productive, and therefore more enjoyable. Third, much communication and interaction will be with programs and programmed models [...]. And, fourth, there will be plenty of opportunity for everyone to find his calling, for the whole world of information, with all its fields and disciplines, will be open to him.&rdquo;
+
+J.C.R. Licklider and Robert W. Taylor, "The Computer As A Communication Device", *Science And Technology*, April 1968.
+
+</div>
 
 <div class="timeline-item" date-is='1723' machine-date='1723'>
 

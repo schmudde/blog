@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-29
-date-modified: 2020-05-29
+date-modified: 2020-06-20
 date-published: 2020-05-29
 in-language: en
 keywords: misinformation, disinformation, malinformation
@@ -55,8 +55,28 @@ Examples demonstrate how the spread of mis/dis/malinformation could conceivably 
 
 I also found Lim's example of an ACLU **disinfographic** to be interesting. The original informs people of their rights if a US Immigration and Customs Enforcement (ICE) agent knocks on their door. The altered infographic provides potentially damaging advice while sounding legitimate and authoritative.[^aclu-ice]
 
-[^aclu-ice]: The original infographic by the ACLU. ![](/img/2020-05-29-disinformation-strategies/aclu-ice.jpg)
+[^aclu-ice]: The original infographic by the ACLU. ![](/img/2020-05-29-disinformation-strategies/aclu-ice.jpg) The false infographic (see [Disinformation Strategies and Tactics](https://cryptpad.fr/file/#/2/file/e+onWiI-MjVlGMH7vffcV9-d/), slide 9). ![](/img/2020-05-29-disinformation-strategies/aclu-false.png)
 
 We talked a little bit about terminology and tools at the end. Lim told me that Snopes and Wikipedia, while seemingly not effective to combat the growth of mis/dis/malinformation, are used as sources for some algorithms that flag dubious campaigns.
 
 I haven't heard anyone who is particularly optimistic about automated efforts like [IFCN Fact Checking Organizations on WhatsApp](https://faq.whatsapp.com/126787958113983) (which is also used by Facebook). But they will play a role whether we like it or not. The scope of the problem is too large and the incentive structure of shareholder owned social media platforms don't align with more robust solutions.
+
+# Timeline
+
+Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
+
+<div class="timeline-item" date-is='June 27, 2017' machine-date='2017-06-27'>
+
+## NotPetya Malware Appears
+
+The NotPetya malware first appeared in 2017, on the eve of Ukrainian Constitution Day. It affected thousands of systems in over 65 countries. Maersk, the Danish shipping company, lost $300 million in revenues and was forced to replace 4,000 servers. Even still, Ukraine was the malware’s clear target, suffering 80% of all infections.
+
+</div>
+
+<div class="timeline-item" date-is='February 4, 2014' machine-date='2014-02-04'>
+
+## &ldquo;Fuck the EU.&rdquo; Malinformation Effort
+
+An anonymous source posted a conversation between the US Assistant Secretary of State, Victoria Nuland, and the US Ambassador to Ukraine, Geoffrey Pyatt. Amidst all the political banter, one line stood out, &ldquo;Fuck the EU.&rdquo; The leaked audio was a crude effort to sow dissension between the US and its EU allies during a tense moment in Ukraine - a move that would clearly help Russian interests.
+
+</div>
