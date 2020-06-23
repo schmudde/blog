@@ -36,7 +36,7 @@
 
    [:meta {:name "description" :content (or (:description page-meta) (:description global-meta))}]
    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
-   [:meta {:name "twitter:card" :content "summary"}]
+   [:meta {:name "twitter:card" :content "summary_large_image"}]
    [:meta {:name "twitter:creator" :content "@dschmudde"}]
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
    [:meta {:property "og:title" :content (or title site-title)}]

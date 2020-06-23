@@ -113,6 +113,8 @@ Interagency Security Classification Appeals Panel (ISCAP) July 2013 declassifica
 
 J.C.R. Licklider and Robert W. Taylor, "The Computer As A Communication Device", *Science And Technology*, April 1968.
 
+[On the Internet, We Are Either Artists or Bureaucrats](/posts/2020-06-23-internet-community.html)
+
 </div>
 
 <div class="timeline-item" date-is='1723' machine-date='1723'>
