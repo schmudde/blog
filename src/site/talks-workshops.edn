@@ -1,0 +1,268 @@
+{:workshops
+ [{:location "New York City"
+   :date "2017 - 2019"
+   :title "The Internet Lives Here"
+   :subtitle "A Telecom Tour"
+   :synopsis "&quot;The Internet Lives Here&quot; is a multi-site telecommunications tour of Lower Manhattan. Participants explore the relationship between global telecommunications and power. The walk starts at the old AT&T Long Lines building in Tribeca and concludes south of Wall St. at the original ITT Building - spanning the 19th, 20th, and 21st centuries."
+   :link-status false
+   :link ""
+   :link-name ""
+   :media "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
+   :video false
+   :image true
+   }
+  {:location "ClojureBridge New York City"
+   :date "June 3-4, 2017"
+   :title "Workshop Instructor"
+   :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop for Programmers"
+   :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
+   :link-status true
+   :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
+   :link-name "ClojureBridge Event Information"
+   :media "clojurebridge.png"
+   :video false
+   :image true
+   }
+  {:location "New York City Digital Humanities Festival"
+   :date "February 8, 2017"
+   :title "Workshop Instructor"
+   :subtitle "Strategies for Interactive and Immersive Dance"
+   :synopsis "This workshop focuses on strategies for creating cross-domain experiences. We dive deep into visual projection, software, sound, and dance while respecting each medium's idiosyncratic strengths."
+   :link-status true
+   :link "http://dhweek.nycdh.org/event/strategies-for-interactive-and-immersive-dance/"
+   :link-name "NYCDH Workshop Page"
+   :media "nycdh.png"
+   :video false
+   :image true
+   }]
+
+ :conference-talks
+ [{:location "Curry On, London, England"
+   :date "July 15, 2019"
+   :title "Say What You Mean"
+   :subtitle "Exploring Declarative Computation in Art"
+   :synopsis "&quot;Say What You Mean&quot; parallels the production of art with approaches to exploratory programming. 20th century art practices were clearly influenced by the milieu of computational thought. Expressionist artists like Jackson Pollock declared intent with few implementation details in mind. Pollock’s paintings have since been proven fractal in nature. Conceptual artists like Sol LeWitt wrote imperative instructions where &quot;the idea becomes the machine that makes the work.&quot; The results of both artists are computational in nature, but very different in quality. This is partially due to approach. This talk examines creative approaches to exploring unknown or open-ended domains. It emphasizes declarative programming and the tried-and-true techniques of abstraction and composition. Rather than showing a sliver of a sprawling codebase, approaches are illustrated more immediately through computational art. Parallel code examples are written in Clojure."
+     :link-status true
+     :link "https://www.curry-on.org/2019/sessions/say-what-you-mean-exploring-declarative-computation-in-art.html"
+     :link-name "Curry On Profile"
+     :media "https://www.youtube.com/watch?v=HalZfFdWuP4"
+     :video true
+     :image false
+     }
+    {:location "PyCon/PyData, Berlin, Germany"
+     :date "October 10, 2019"
+     :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
+     :subtitle "Don't get bit by misaligned state and output, keep your notebooks running with these functional tips!"
+     :synopsis "This talk will explain functional programming using practical language and provide historical context. Some initial concepts will be demonstrated in Clojure or Julia, but ultimately translated to Python. Further consideration will be given to the impact of immutability, a core concept in the functional style, on creating reproducible notebooks."
+     :link-status true
+     :link "https://de.pycon.org/program/pyconde-f3tczn-dr-schmood-s-notebook-of-python-calisthenics-and-orthodontia-david-schmudde/"
+     :link-name "PyConDE & PyData Profile"
+     :media "https://www.youtube.com/watch?v=BAsL_cbkQDc"
+     :video true
+     :image false
+     }
+    {:location "Society for the History of Technology, Milan, Italy"
+     :date "October 26, 2019"
+     :title "The Emergence of Computational Thinking in Art"
+     :subtitle ""
+     :synopsis "Early computational art provides insight into the nature of creativity and human discovery. Artists created these works before the computer's ubiquity. Many had never even seen a computer. The work exhibits pure computational thinking outside of the engineer or the machine. It suggests a new perspective that has broadly shaped our perception of the world."
+     :link-status true
+     :link "https://www.historyoftechnology.org/wp-content/uploads/2019/10/SHOT-2019-Program_FINAL.pdf"
+     :link-name "SHOT 2019 Program"
+     :media "shot-logo.png"
+     :video false
+     :image true
+     }
+    {:location "Strange Loop, St. Louis, MO"
+     :date "September 27, 2018"
+     :title "Misuser"
+     :subtitle "The Case For a Steady Diet of Creative Misuse in Computing"
+     :synopsis "The software I feature in this talk operated at the edge of digital systems. Artists often behaved like hackers: working off hours, pushing a system beyond its specification, and inventing new possibilities for human interaction along the way. &quot;Misuser&quot; will illustrate the connection between art and engineering, building a framework to examine the value of conventions and what we can learn by working outside of them."
+     :link-status true
+     :link "https://thestrangeloop.com/2018/misuser.html"
+     :link-name "Strange Loop profile"
+     :media "https://www.youtube.com/embed/SU6NvkkF4Xk"
+     :video true
+     :image false
+     }
+    {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
+     :date "May 11, 2017"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://itakeunconf.com/sessions/aesthetics-and-narrative-programming-what-cannot-be-programmed/"
+     :link-name "I T.A.K.E Unconference profile"
+     :media "https://www.youtube.com/embed/loksl7ED0Hg"
+     :video true
+     :image false
+     }
+    {:location "Creative Coding NYC"
+     :date "February 28, 2018"
+     :title "Sound, Motion, Notation"
+     :subtitle "The Work of Channa Horwitz"
+     :synopsis "Channa Horwitz worked on her &quot;Sonakinatography&quot; series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "https://www.youtube.com/embed/yvbKpaN1_7M"
+     :video true
+     :image false
+     }
+    {:location "Clojure/conj, Austin, TX"
+     :date "December 1, 2016"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
+     :link-name "Clojure/conj"
+     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+     :video true
+     :image false
+     }
+    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
+     :date "September 10, 2016"
+     :title "Accidentally Arming a Hacker Revolution"
+     :subtitle "The Role of Commodore and Jack Tramiel"
+     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+     :link-status true
+     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
+     :link-name "Vintage Computer Festival on YouTube"
+     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
+     :video true
+     :image false
+     }
+    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
+     :date "July 7, 2015"
+     :title "Harvesting Human Intelligence"
+     :subtitle "Reframing the Surveillance Discourse"
+     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
+     :link-status true
+     :link "https://digitalegesellschaft.de/2015/07/npa039/"
+     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
+     :media "https://player.vimeo.com/video/132857801"
+     :video true
+     :image false
+     }
+    {:location "History of Digital Cultures at the University of Amsterdam"
+     :date "January 21, 2019"
+     :title "Enabling Digital Anthropology"
+     :subtitle "On Methods and Practices of Digital Archaeology"
+     :synopsis "A lecutre on preserving software and techniques of emulation."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "uva.png"
+     :video false
+     :image true
+     }
+    {:location "Vossius Seminar's History of Knowledge series at the University of Amsterdam"
+     :date "January 22, 2019"
+     :title "Intended Knowledge?"
+     :subtitle ""
+     :synopsis "The act of discovering and displaying digital art created for 20th century computing and telecommunication environments places the character of these systems in stark relief. Most exhibitions require an archeological undertaking and an enormous effort to execute a single artifact from forty years ago. &quot;Intended Knowledge?&quot; examines what computational art archeology can teach us about software engineering and its culture"
+     :link-status true
+     :link "http://vossius.uva.nl/"
+     :link-name "Vossius Center for the History of Humanities and Sciences"
+     :media "uva.png"
+     :video false
+     :image true
+     }
+    {:location "Stored In Memory: The 10th Annual SIGCIS Conference, St. Louis, MO"
+     :date "October 14, 2018"
+     :title "Misuser"
+     :subtitle "Artists Working at the Edge of Computing"
+     :synopsis "The software I feature in this talk operated at the edge of digital systems. Artists often behaved like hackers: working off hours, pushing a system beyond its specification, and inventing new possibilities for human interaction along the way. &quot;Misuser&quot; will illustrate the connection between art and engineering, building a framework to examine the value of conventions and what we can learn by working outside of them."
+     :link-status true
+     :link "http://meetings.sigcis.org/uploads/6/3/6/8/6368912/program_18_final.pdf"
+     :link-name "Stored In Memory Program"
+     :media "sigcis.png"
+     :video false
+     :image true
+     }
+    {:location "RIXC Art Science Festival, Riga, Latvia"
+     :date "October 20, 2017"
+     :title "Manifesting Human Relationships in Art and Technology"
+     :subtitle ""
+     :synopsis "The internet has produced a tangibly interconnected world. In hindsight, its grammar of nodes, edges, and protocols is as organic as natural language. This presentation examines the discovery of packet-switched networks from a mid-century context and reveals the metaphors for human interaction and consciousness baked within; concepts that provide a foundation for discussing post-digital contemporary art."
+     :link-status true
+     :link "http://festival2017.rixc.org/"
+     :link-name "RIXC: Virtualities and Realities"
+     :media "rixc.jpg"
+     :video false
+     :image true
+     }
+    {:location "Society for the History of Technology, Philadelphia, PA"
+     :date "October 28, 2017"
+     :title "Unlikely Harbingers"
+     :subtitle "Office Machinery in the Mainframe Era"
+     :synopsis "This paper focuses on the significance of common mid-century desktop tools through the lens of Commodore Business Machines, a small company with a penchant for international deal-making. Commodore competed with very little capital against much larger players, and in doing so utilized emerging business practices that would come to define today's entrepreneurial climate. Part of a series on &quot;Computers and Futures.&quot;"
+     :link-status true
+     :link "http://sites.library.queensu.ca/transmissions/computers-and-futures/"
+     :link-name "Computers and Futures Retrospective on Transmissions"
+     :media "shot-logo.png"
+     :video false
+     :image true
+     }
+    {:location "Codes & Modes Symposium hosted by Hunter College"
+     :date "March 18, 2017"
+     :title "The Grammar of the Internet"
+     :subtitle ""
+     :synopsis "Cinematic language is robust enough to clearly depict the flow of time through a collection of shots - whether they span centuries, seconds, or instant conceptual leaps. Early experiments in hypertext and interactive media often attempted to reconcile the new mediums by adopting the rules of cinema. This talk nods to the elegance of cinematic grammar and examines an idiosyncratic path forward for interconnected, interactive, nonfiction media."
+     :link-status true
+     :link "http://www.hunterintegratedmedia.org/reframe/speaker-lineup/dschmudde/"
+     :link-name "Codes & Modes profile"
+     :media "hunter-sm.jpg"
+     :video false
+     :image true
+     }
+    {:location "Pecha Kucha, Berlin, Germany"
+     :date "July 8, 2015"
+     :title "Computers & Intimacy"
+     :subtitle "The Story of the Largest Machines and the Smallest Details"
+     :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
+     :link-status true
+     :link "http://pechakucha.de/berlin/player/?event=PK_39_1&position=03&presenter=D.%20Schm%C3%BCdde&presentation=Computers%20&%20Intimacy%20%E2%80%93%20The%20Story%20of%20the%20Largest%20Machines%20and%20the%20Smallest%20Details"
+     :link-name "Pecha Kucha Slides &amp; Audio"
+     :media "intimacy.jpg"
+     :video false
+     :image true
+     }
+    {:location "MFA: Music Composition for the Screen, Chicago, IL"
+     :date "October 2009"
+     :title "Columbia College Chicago"
+     :subtitle "Visiting Lecturer"
+     :desc "<em>Hybrid Scores and Atonality</em>: A master class on the intersection between sound design and traditional notions of composing music for the screen."
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/5545059622"
+     :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
+     :media "ccc.jpg"
+     :video false
+     :image true
+     }
+    {:location "Midwest Independent Film Festival, Chicago, IL"
+     :date "September 2009"
+     :title "Moderator"
+     :subtitle "&quot;Low Budget Filmmaking&quot;"
+     :synopsis "A discussion of low budget filmmaking techniques for independent filmmakers."
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/53206393777"
+     :link-name "D. Schm&uuml;dde: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
+     :media "miff.png"
+     :video false
+     :image true
+     }
+    {:location "Chicago Actors Casting Summit, Chicago, IL"
+     :date "July 2008 &amp; July 2009"
+     :title "Panelist"
+     :subtitle "&quot;Casting in Student Films&quot;"
+     :synopsis "A discussion with actors on the benefits and concerns associated with working on student-run film sets."
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/28430696505"
+     :link-name "D. Schm&uuml;dde: &quot;Reader Question: Student/Actor Expectations&quot;"
+     :media "16x9spacer.gif"
+     :video false
+     :image true
+     }]
+ }
