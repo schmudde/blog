@@ -5,7 +5,9 @@
                  [nrepl "0.7.0" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
                  [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
-                 [deraen/boot-livereload "0.2.1"]])
+                 [deraen/boot-livereload "0.2.1"]
+                 [time-literals "0.1.4"]
+                 [cljc.java-time "0.1.11"]])
 
 (require '[io.perun :as perun]
          '[pandeiro.boot-http :refer [serve]]
@@ -38,8 +40,8 @@
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
-        #_(perun/static :renderer 'site.about/render
-                      :page "about.html"
+        (perun/static :renderer 'site.cv/render
+                      :page "cv.html"
                       :meta {:type "page"})
         (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))

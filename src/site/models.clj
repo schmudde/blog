@@ -2,88 +2,6 @@
 
 ;; IEEE Spectrum talk
 
-(def publications
-  [{:title "Computing For the Masses (chapter from &lsquo;Prophets Of Computing&rsquo;)"
-    :publication "Association for Computing Machinery"
-    :date "2021"}
-   {:title "Chapter on Software Preservation"
-    :publication "PROGRAMme: Research Into the History and Philosophy of Computing"
-    :date "in progress"}
-   {:title "Beyond the Frame"
-    :publication "My independent blog with tens of thousands of readers"
-    :link "https://schmud.de/"
-    ;; :link "http://beyondthefra-me.tumblr.com, 57,000 Subscribers"
-    :date "ongoing"}
-   {:title "The Shape of Intuition"
-    :publication "Nextjournal"
-    :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
-    :date "December 16, 2019"}
-   {:title "How to Version Control Jupyter Notebooks"
-    :publication "Nextjournal"
-    :link "https://news.ycombinator.com/item?id=18740197"
-    :date "December 11, 2018"}
-   {:title "Our Lives, Encoded"
-    :publication "Broken Toilets"
-    ;; shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>
-    :link "http://brokentoilets.org/article/year-twenty-megabytes/"
-    :date "May 20, 2016"}
-   {:title "The Computer Revolution Has Yet to Happen"
-    :publication "Endless Magazine/The Absurdist"
-    :link "https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477"
-    :date "November 24, 2015"}
-   {:title "A Brief History of Machine Personalities"
-    :subtitle "The Character &amp; Ephemera From a Century of Machine Thinking"
-    :publication "Self-Published"
-    :link "https://medium.com/@dschmudde/a-brief-history-of-machine-personalities-f7116c85c2ed"
-    :date "May 15, 2015"}
-   {:title "From Script to Screen: &quot;Five Easy Pieces&quot; - Bobby &amp; Rayette"
-    :publication "The Script Lab"
-    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1228-five-easy-pieces-1970-bobby-a-rayette"
-    :date "July 27, 2011"}
-   {:title "From Script to Screen: &quot;The Matrix&quot; - Lobby Scene"
-    :publication "The Script Lab"
-    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1231-the-matrix-1999-lobby-scene"
-    :date "August 9, 2011"}])
-
-
-(def employment-db
-  {:employers
-   [{:title "Nextjournal"
-     :date "9/2017 - 1/2020"
-     :subtitle "Developer Advocate"
-     :technology "Clojure, ClojureScript, Datomic, Python, R, Docker"
-     :desc "An open science platform for reproducible research using automatically versioned polyglot notebooks."
-     :synopsis "Developed the user group management feature from database calls to front end layout~ Developed user analytics notebooks to set and achieve platform traffic and conversion goals~ Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;, second only to machine learning notebooks~ Worked cross-functionally to enhance user on-boarding~ Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC~ Wrote deep dives into core product concepts, &quot;Computational Environments,&quot; &quot;Transclusions,&quot; and &quot;Remixing&quot; (branching and version control)~ Helped structure and write Nextjournal's documentation~"
-     :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
-     }
-    {:title "Beyond the Frame"
-     :date "1/2005 - 8/2019"
-     :subtitle "Creative Technologist"
-     :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X"
-     :desc "A new media company that produces interactive narrative experiences."
-     :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students~ Negotiated distribution and exhibition agreements for interactive installations, online experiences, and short films~ Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts~ Granted residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin)~ Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014~ Produced documentary pilot, &quot;Souvenir Junk Drawer,&quot; for Soulpancake~ Developed and reviewed feature film scripts for Throughline Films~ Awarded multiple &quot;Best of Festival&quot; distinctions~"
-     }
-    {:title "Penguin Random House"
-     :date "10/2015 - 4/2016"
-     :subtitle "Freelance Developer"
-     :technology "PHP, JavaScript, Wordpress"
-     :synopsis "Developer of high-profile author sites like Arianna Huffington and Carol Burnett as well as imprints like Hogarth Shakespeare for Crown Publishing Group~ Created accurate bids for work with a structured client review and delivery process~ Wrote custom code for Wordpress sites and conformed to corporate security standards~"
-     }
-    {:title "NetGalley"
-     :date "12/2013 - 4/2015"
-     :subtitle "Front End Developer"
-     :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub"
-     :desc "A publishing web site with 40,000+ members and 100K+ uniques/month."
-     :synopsis "Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
-     }
-    {:title "F#"
-     :date "9/2012 - 12/2012"
-     :subtitle "Digital Project Manager/Digital Producer"
-     :technology "Jira, Spotify API"
-     :desc "A digital audio marketing firm."
-     :synopsis "Managed the creation of interactive advertising campaigns~ Led ideation process for wireframe, development, creative, and launch~ Led agile production process that included teams on three continents highlighting cultural awareness, language, and time zone management concerns~ Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify~"
-     }]
-})
 
 (defn generate-markup [position row-position]
   (case position
@@ -109,47 +27,7 @@
 
 
 
-(def faculty
-  [{:location "College of Arts and Letters, Hoboken, NJ"
-    :date "January 2017 - May 2019"
-    :title "Stevens Institute of Technology"
-    :subtitle "Adjunct Professor"
-    :desc ""
-    :synopsis "<small>HSS-371</small> <em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
-    :link-status true
-    :link "http://beyondtheframe.digital/computersandsociety/"
-    :link-name "<em>Computers and Society</em> class website"
-    :media "stevens.png"
-    :video false
-    :image true
-    }
-   {:location "Department of Digital Film and Video, Chicago, IL"
-    :date "January 2006 - January 2012"
-    :title "Illinois Institute of Art"
-    :subtitle "Associate Professor"
-    :desc ""
-    :synopsis "Designed the curriculum for the Bachelor of Audio Engineering~ Core member of faculty committee for senior film portfolio defence~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
-    :link-status false
-    :link ""
-    :link-name ""
-    :media "ai.png"
-    :video false
-    :image true
-    }
-   {:location "Video and Animation Department, Chicago, IL"
-    :date "January 2005 - June 2007"
-    :title "International Academy of Design and Technology"
-    :subtitle "Adjunct Faculty"
-    :desc ""
-    :synopsis "Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
-    :link-status false
-    :link ""
-    :link-name ""
-    :media "iadt.png"
-    :video false
-    :image true
-    }
-   ])
+
 
 
 

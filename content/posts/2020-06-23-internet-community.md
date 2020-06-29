@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-06-23
-date-modified: 2020-06-23
+date-modified: 2020-06-25
 date-published: 2020-06-23
 in-language: en
 keywords: community, social media, licklider
@@ -31,13 +31,13 @@ tags:
 
 ## On Sharing
 
-The other night I was talking to a friend about sharing political opinions on Twitter. As I watch from Italy, the United States is suffering a crisis of conscious as it attempts to navigate a pandemic. Looming in the background is a presidential election in November where disinformation is being spread about the basic mechanisms of democracy - most recently regarding [the legitimacy of mail-in ballots](https://roguerocket.com/2020/05/27/twitter-fact-checks-trump/) - from the very head of the government itself.
+The other night I was talking to a friend about sharing political opinions on Twitter. As I watch from Italy, the United States is suffering a crisis of conscience as it attempts to navigate a pandemic. Looming in the background is a presidential election in November where disinformation is being spread about the basic mechanisms of democracy - most recently regarding [the legitimacy of mail-in ballots](https://roguerocket.com/2020/05/27/twitter-fact-checks-trump/) - from the very head of the government itself.
 
 **I still believe that the best internet is the internet that engenders community and conversation**. A network of thought is like a community of artists. **Each person who shares their small creative act invites a response**. An observed reaction cannot be unseen. The river only flows one way.
 
 The bureaucrat is a slave to the machine. They move information along uncritically. No conversation is desired or necessary; the acts are justified by the process itself.
 
-**The performative aspects of social media** - likes, retweets, and chasing engagement - **are different than the conversational tools of message boards and newsgroups**. "Engagement," as it is called in the analytics dashboard, is cosmetic. It obscures the difference between conflict and conversation
+**The performative aspects of social media** - likes, retweets, and chasing engagement - **are different than the conversational tools of message boards and newsgroups**. "Engagement," as it is called in the analytics dashboard, is cosmetic. It obscures the difference between conflict and conversation.
 
 So my line is simple - I share political opinions online when I feel like I have something to contribute to a conversation. And that's not very often.
 

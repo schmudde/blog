@@ -65,6 +65,7 @@
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/pages/timeline.html" :title "About"} "Timeline"]]
+    [:li.dib.mr2 [:a {:href "/cv.html" :title "CV"} "CV"]]
     [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
 
 (defn time-template [time]
