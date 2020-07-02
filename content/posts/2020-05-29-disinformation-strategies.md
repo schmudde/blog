@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-29
-date-modified: 2020-06-20
+date-modified: 2020-07-02
 date-published: 2020-05-29
 in-language: en
 keywords: misinformation, disinformation, malinformation
@@ -39,11 +39,15 @@ The tactics have only become more refined and the tools easier to use. Non-state
 
 Yesterday, I attended a presentation by [Gabrielle Lim](https://gabriellelim.com/), Researcher at Harvard's Shorenstein Center. She presented [*Disinformation Strategies and Tactics*](https://internetfreedomfestival.org/wiki/index.php/Disinformation_Strategies_and_Tactics) at the [Internet Freedom Festival](https://internetfreedomfestival.org/)'s [Community Knowledge Share](https://internetfreedomfestival.org/wiki/index.php/Community_Knowledge_Share).
 
-Lim was candid about the difficulties facing researchers and policymakers. Even the terms used to study the phenomenon are loosely defined, fluid targets. They range from internet slang like *trolling*, *copypasta*, and *spam* to more formal concepts like *media manipulation*. I found [Mike Kujawski's guide](https://medium.com/@mikekujawski/misinformation-vs-disinformation-vs-mal-information-a2b741410736) helpful:
+Lim was candid about the difficulties facing researchers and policymakers. Even the terms used to study the phenomenon are loosely defined, fluid targets. They range from internet slang like *trolling*, *copypasta*, and *spam* to more formal concepts like *media manipulation*. Claire Wardle and Hossein Derakhshan offer a useful way to categorize this type of information:[^info-disorder]
 
-- **Misinformation**: information that is false, but created or shared with no intent to do harm to any particular individual, group, or organization.
-- **Disinformation**: information that is false and initially disseminated with the intention to do harm to an individual, group, or organization. Its effectiveness depends as much on an actor's capacity to create as much as an audience's receptivity.
-- **Malinformation**: information has basis in reality, but shared with the intention to manipulate and incite.
+[^info-disorder]: Claire Wardle, & Derakhshan, Hossein, Council of Europe, *[Information Disorder: Toward An Interdisciplinary Framework For Research And Policy Making](/papers/report-mal-dis-mis-information-2017.pdf)* (Strasbourg Cedex, 2017).
+
+- **Misinformation**: information that is false, but not created with the intention of causing harm.
+- **Disinformation**: information that is false and deliberately created to harm a person, social group, organisation or country.
+- **Malinformation**: information that is based in reality, but is used to inflict harm on a person, organisation or country.
+
+![](/img/2020-05-29-disinformation-strategies/mis-dis-mal-info-venn-2017.png)
 
 It's unclear if and when governing bodies should enforce rules. For example, just because there is no evidence of God, Lim argued, does not mean we should restrict the claim of its existence.
 

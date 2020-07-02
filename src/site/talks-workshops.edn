@@ -2,43 +2,32 @@
 
 {:workshops
  [{:location "The Internet Lives Here"
-   :geo "New York City, US"
+   :geo "New York, NY, US"
    :date-bgn "#time/year \"2017\""
    :date-end "#time/year \"2019\""
    :title "Telecommunications Tour"
    :synopsis "&quot;The Internet Lives Here&quot; is a multi-site telecommunications tour of Lower Manhattan. Participants explore the relationship between global telecommunications and power. The walk starts at the old AT&T Long Lines building in Tribeca and concludes south of Wall St. at the original ITT Building - spanning the 19th, 20th, and 21st centuries."
-   :link-status false
-   :link ""
-   :link-name ""
-   :media "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
-   :video false
-   :image true
+   :image "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
    }
   {:location "ClojureBridge"
-   :geo "New York City, US"
+   :geo "New York, NY, US"
    :date-bgn "#time/date \"2017-06-03\""
    :date-end "#time/date \"2017-06-04\""
    :title "Advanced Instructor"
    :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop for Programmers"
    :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
-   :link-status true
    :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
    :link-name "ClojureBridge Event Information"
-   :media "clojurebridge.png"
-   :video false
-   :image true
+   :image "clojurebridge.png"
    }
   {:location "Digital Humanities Festival"
-   :geo "New York City, US"
+   :geo "New York, NY, US"
    :date "#time/date \"2017-02-08\""
    :title "Strategies for Interactive and Immersive Dance"
    :synopsis "This workshop focuses on strategies for creating cross-domain experiences. We dive deep into visual projection, software, sound, and dance while respecting each medium's idiosyncratic strengths."
-   :link-status true
    :link "http://dhweek.nycdh.org/event/strategies-for-interactive-and-immersive-dance/"
    :link-name "NYCDH Workshop Page"
-   :media "nycdh.png"
-   :video false
-   :image true
+   :image "nycdh.png"
    }]
 
  :conference-talks

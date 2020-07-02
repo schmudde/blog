@@ -1,10 +1,7 @@
 ;; publications exhibitions honors-grants-awards affiliations education training
 
 {:publications
- [{:title "Computing For the Masses (chapter from &lsquo;Prophets Of Computing&rsquo;)"
-   :publisher "Association for Computing Machinery"
-   :date "#time/year \"2021\""}
-  {:title "Chapter on Software Preservation"
+ [{:title "Chapter on Software Preservation"
    :desc "PROGRAMme: Research Into the History and Philosophy of Computing"
    :date nil}
   {:title "Beyond the Frame"
@@ -12,6 +9,10 @@
    :link "https://schmud.de/"
    ;; :link "http://beyondthefra-me.tumblr.com, 57,000 Subscribers"
    :date nil}
+  {:title "Computing For the Masses"
+   :publication "Prophets Of Computing"
+   :publisher "Association for Computing Machinery"
+   :date "#time/year \"2021\""}
   {:title "The Shape of Intuition"
    :publisher "Nextjournal"
    :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
@@ -21,23 +22,19 @@
    :link "https://news.ycombinator.com/item?id=18740197"
    :date "#time/date \"2018-12-11\""}
   {:title "Our Lives, Encoded"
-   :publisher "Broken Toilets"
+   :publication "Broken Toilets"
    :desc "Shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
    :link "http://brokentoilets.org/article/year-twenty-megabytes/"
    :date "#time/date \"2016-05-20\"" }
   {:title "The Computer Revolution Has Yet to Happen"
-   :publisher "Endless Magazine/The Absurdist"
+   :publication "Endless Magazine/The Absurdist"
    :link "https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477"
    :date "#time/date \"2015-11-24\""}
-  {:title "A Brief History of Machine Personalities"
-   :desc "The Character &amp; Ephemera From a Century of Machine Thinking"
-   :link "https://medium.com/@dschmudde/a-brief-history-of-machine-personalities-f7116c85c2ed"
-   :date "#time/date \"2015-05-15\""}
-  {:title "From Script to Screen: &quot;Five Easy Pieces&quot; - Bobby &amp; Rayette"
+  {:title "From Script to Screen: &lsquo;Five Easy Pieces&rsquo; - Bobby &amp; Rayette"
    :publisher "The Script Lab"
    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1228-five-easy-pieces-1970-bobby-a-rayette"
    :date "#time/date \"2011-07-27\""}
-  {:title "From Script to Screen: &quot;The Matrix&quot; - Lobby Scene"
+  {:title "From Script to Screen: &lsquo;The Matrix&rsquo; - Lobby Scene"
    :publisher "The Script Lab"
    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1231-the-matrix-1999-lobby-scene"
    :date "#time/date \"2011-08-09\""}]
@@ -302,25 +299,29 @@
    :project :jack-and-the-machine
    :date "#time/year \"2015\""
    }
-  {:title "Interactive Co/Lab, Detroit, MI"
+  {:title "Interactive Co/Lab"
+   :geo "Detroit, MI, US"
    :type "Competitive Selection"
    :org "Tribeca Film Institute"
    :date "#time/year \"2016\""
    }
-  {:title "POV Hackathon 9, Chicago, IL"
+  {:title "POV Hackathon 9"
+   :geo "Chicago, IL, US"
    :type "Competitive Selection"
    :org "Public Broadcasting Service (PBS)"
    :highlight true
    :date-bgn "#time/date \"2015-08-15\""
    :date-end "#time/date \"2015-08-16\""
    }
-  {:title "POV Hackathon 7, New York, NY"
+  {:title "POV Hackathon 7"
+   :geo "New York, NY, US"
    :type "Competitive Selection"
    :org "Public Broadcasting Service (PBS)"
    :desc "&ldquo;Chicago Ghosts&rdquo; What happens when a Chicago neighborhood is not only the scene of the 1893 murder of Mayor Carter Harrison, but also nature’s triumph over man’s technological hubris in 2023?Chicago Ghostsexplores the stories we share through great expanses of time and small expanses of space that connect us through the past and the present. Participants: Andrew Ritchie, D. Schmudde, Ziv Schneider"
    :date "#time/year-month \"2014-11\""
    }
   {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
+   :geo "New York, NY, US"
    :type "Film Festival Award"
    :org "Red Hook Film Festival"
    :highlight true
@@ -328,17 +329,20 @@
    :date "#time/year \"2014\""
    }
   {:title "Audience Choice Award: &ldquo;A Simple Reminder&rdquo;"
+   :geo "Online"
    :type "Film Festival Award"
    :org "Digipops Community Film Festival"
    :project :simple-reminder
    :date "#time/year \"2014\""
    }
-  {:title "Tribeca Hacks, New York, NY"
+  {:title "Tribeca Hacks"
+   :geo "New York, NY, US"
    :type "Competitive Selection"
    :org "Tribeca Film Institute"
    :date "#time/year \"2013\""
    }
   {:title "Best Director, Best of Fest: &ldquo;Refuge&rdquo;"
+   :geo "Tempe, AZ, US"
    :type "Film Festival Award"
    :org "Filmstock Film Festival"
    :highlight true
@@ -346,12 +350,14 @@
    :date "#time/year \"2012\""
    }
   {:title "Best Actor: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
+   :geo "Tempe, AZ, US"
    :type "Film Festival Award"
    :org "Filmstock Film Festival"
    :project :assassination-of-chicagos-mayor
    :date "#time/year \"2012\""
    }
   {:title "Best Editing, Best Acting: &ldquo;Refuge&rdquo;"
+   :geo "Online"
    :type "Film Festival Award"
    :org "Beneath the Earth Film Festival"
    :highlight true
@@ -359,16 +365,19 @@
    :date "#time/year \"2012\""
    }
   {:title "Educator of the Year Nomination"
+   :geo "Chicago, IL, US"
    :type "Professional Distinction"
    :org "International Academy of Design and Technology"
    :date "#time/year \"2005\""
    }
   {:title "Program for the Study of the Imagination"
+   :geo "Evanston, IL, US"
    :type "Composition Grant"
    :org "Northwestern University"
    :date "#time/year \"2003\""
    }
   {:title "Interactive Award - The One Show"
+   :geo "Carbondale, IL, US"
    :type "Competitive Showcase (Bronze Placement)"
    :org "One Club"
    :date "#time/year \"1998\""
@@ -379,14 +388,14 @@
      :title "Member"}
     {:org "The FilmShop: A New York Collective of Independent Filmmakers"
      :title "Member"}
-    {:org "Bushwick Film Festival 2013 &amp; 2014"
-     :title "New Media Advisor"}
+    {:org "Bushwick Film Festival"
+     :title "New Media Advisor"
+     :date-bgn "#time/year \"2013\""
+     :date-end "#time/year \"2014\""}
     {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
      :title "Volunteer Media Director and Producer"}
     {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
-     :title "Videography Volunteer"}
-    {:org "The Script Lab"
-     :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"}]
+     :title "Videography Volunteer"}]
 
   :education
   [{:title "Northwestern University"
