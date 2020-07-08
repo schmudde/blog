@@ -1,18 +1,26 @@
 ;; publications exhibitions honors-grants-awards affiliations education training
 
 {:publications
- [{:title "Chapter on Software Preservation"
-   :desc "PROGRAMme: Research Into the History and Philosophy of Computing"
-   :date nil}
-  {:title "Beyond the Frame"
-   :desc "Ongoing independent blog about information with tens of thousands of readers"
+ [{:title "Beyond the Frame"
+   :desc "Independent blog regarding the metaphysics of information, art, and narrative"
    :link "https://schmud.de/"
    ;; :link "http://beyondthefra-me.tumblr.com, 57,000 Subscribers"
-   :date nil}
+   :date-bgn "#time/year \"2011\""
+   :date-end "#time/year \"2020\""
+   :stats "54,909 subscribers, established 2011"}
   {:title "Computing For the Masses"
    :publication "Prophets Of Computing"
    :publisher "Association for Computing Machinery"
-   :date "#time/year \"2021\""}
+   :date "#time/year \"2021\""
+   :editor "Dick Van Lente, Erasmus University"
+   :stats "peer reviewed"}
+  {:title "Untitled Chapter on Software Preservation"
+   :publication "PROGRAMme: Research Into the History and Philosophy of Computing"
+   :publisher nil
+   :desc "The ambition of PROGRAMme is to offer the first coherent analysis and pluralistic understanding of 'program' using a combination of historical insights and philosophical analyses. This allows to retrace the different meanings of 'program' through its own history and, by so doing, to identify and render transparent the different understandings and practices underpinning 'program'. This will make it possible to (re)-construct the fundamentals of 'programs', which liberate rather than restrict its meaning. This project thus requires historical, philosophical and computer science competences and a major challenge will be its interdisciplinarity both methodologically and practically. The aim of this roundtable is to offer a first opportunity to present some of the major challenges, methods insights and/or issues related to 'program' from different perspectives (historical, philosophical, theoretical, formal) and in different (related) contexts (logic, computing hardware, programming languages, software systems)."
+   :date nil
+   :co-authors "Elisabetta Mori and Patricia Falcao"
+   :editor "Liesbeth De Mol, Université de Lille"}
   {:title "The Shape of Intuition"
    :publisher "Nextjournal"
    :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
@@ -20,16 +28,19 @@
   {:title "How to Version Control Jupyter Notebooks"
    :publisher "Nextjournal"
    :link "https://news.ycombinator.com/item?id=18740197"
-   :date "#time/date \"2018-12-11\""}
+   :date "#time/date \"2018-12-11\""
+   :stats "> 50,000 article views"}
   {:title "Our Lives, Encoded"
    :publication "Broken Toilets"
    :desc "Shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
    :link "http://brokentoilets.org/article/year-twenty-megabytes/"
-   :date "#time/date \"2016-05-20\"" }
+   :date "#time/date \"2016-05-20\""
+   :co-authors "Alexander Rakoczy"}
   {:title "The Computer Revolution Has Yet to Happen"
    :publication "Endless Magazine/The Absurdist"
    :link "https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477"
-   :date "#time/date \"2015-11-24\""}
+   :date "#time/date \"2015-11-24\""
+   :stats "> 7,500 article views"}
   {:title "From Script to Screen: &lsquo;Five Easy Pieces&rsquo; - Bobby &amp; Rayette"
    :publisher "The Script Lab"
    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1228-five-easy-pieces-1970-bobby-a-rayette"
@@ -280,7 +291,14 @@
    }]
 
  :honors-grants-awards
- [{:title "Researcher in Residence"
+ [{:title "Ranked in the Top 5% of Unproduced Screenplays"
+   :type "Distinction"
+   :org "The Black List"
+   :project :blue-island
+   :date "#time/year \"2020\""
+   :desc "Since 2005, each December, the Black List releases its annual list, a survey of the most liked unproduced screenplays of that year. The annual lists are aggregated using votes from film executives working in the film industry."
+   }
+  {:title "Researcher in Residence"
    :type "Residency"
    :org "Signal Culture"
    :project :borderless
@@ -410,13 +428,66 @@
     :date-end "#time/year \"2001\""}]
 
   :training
-  [{:title "School of Machines, Making &amp; Make-Believe"
-    :subtitle "Dataism: a class on data science in activism"
-    :date "#time/year \"2020\""}
-   {:title "Sprachsalon, Berlin, Germany"
-    :subtitle "German Language Training"
-    :date "#time/year \"2019\""}
-   {:title "DID Deutsch-Institut"
-    :subtitle "German Language Training"
-    :date "#time/year \"2005\""}]
+ [{:title "Dataism: a Class on Data Science in Activism"
+   :org "School of Machines, Making &amp; Make-Believe"
+   :geo "Berlin, DE"
+   :date "#time/year \"2020\""}
+  {:title "German Language Training"
+   :org "Sprachsalon"
+   :geo "Berlin, DE"
+   :date "#time/year \"2019\""}
+  {:title "German Language Training"
+   :org "DID Deutsch-Institut"
+   :geo "Berlin, DE"
+   :date "#time/year \"2005\""}]
+
+ ;; Movie Talk Show: https://movietalkshow.wixsite.com/movie-talk-show/video-reel
+ :in-the-media
+ [{:title "Software, Art, Augmented Intelligence & Functional Programming"
+   :publication "Mozaic Works"
+   :desc "We had the chance to discuss with David Schmüdde, artist and programmer, passionate about functional programming, and tuned to the humanistic aspects of software development and computers' role in society. We spent one hour discussing many interesting topics: functional programming, the humanistic aspects of programming, creating art with code, augmented intelligence and the future of programming. "
+   :link "https://mozaicworks.com/blog/david-schmudde-software-art-augmented-intelligence-functional-programming-with-alex-bolboaca/"
+   :date "#time/date \"2020-03-18\""
+   :type "video interview"
+   }
+  {:title "Episode 147: David Schmudde"
+   :publication "Cognicast"
+   :link "https://cognitect.com/cognicast/2018/11/20/david-schmudde-cognicast-episode-147"
+   :date "#time/date \"2018-11-27\""
+   :type "podcast interview"
+   }
+  {:title "Strange Loop 3: David Schmudde and the Art of Misuse"
+   :publication "Knowing and Doing by Professor Eugene Wallingford"
+   :link "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2018-09.html#e2018-09-30T18_40_21.htm"
+   :original-work "https://www.youtube.com/watch?v=SU6NvkkF4Xk"
+   :date "#time/date \"2018-09-30\""
+   :type "blog"
+   }
+  {:title "Five Favorites"
+   :publication "Evidence for Policy Design at the Harvard Kennedy School"
+   :desc "Galaxies of information will be accessible once we solve interoperability problems | D. Schmüdde and Alexander Rakoczy on Broken Toilets"
+   :link "http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516"
+   :original-work "http://brokentoilets.org/article/year-twenty-megabytes/"
+   :date "#time/date \"2016-07-05\""
+   :type "blog"
+   }
+  {:title "David Schmudde On The Nonlinear Narrative & Filmmaking"
+   :publication "CineFile"
+   :link "https://www.youtube.com/watch?v=tyl8yDAvtOE"
+   :date "#time/date \"2011-01-11\""
+   :type "video interview"
+   }
+  {:title "Q & A with David Schmudde of Earth Circle Films"
+   :publication "DIY Film"
+   :desc "Chicago DIY Film recently contacted local filmmaker, David Schmudde. Schmudde’s production company, Earth Circle Films, has been creating cutting-edge films, such as the 2010 selection for the Chicago International Film Festival, “Refuge”; and “The Assassination of Chicago’s Mayor.” In this interview, Schmudde discusses collaboration, nonlinear filmmaking, and the pros and cons of making films in Chicago."
+   :link "http://diy-film.com/2011/11/30/q-a-with-david-schmudde-of-earth-circle-films/"
+   :date "#time/date \"2011-11-30\""
+   :type "interview"
+   }
+  {:title "Short Cuts: Illinois Filmmakers at 2010 Chicago International Film Festival"
+   :publication "Hollywood Chicago"
+   :link "https://www.hollywoodchicago.com/news/12231/short-cuts-illinois-filmmakers-at-2010-chicago-international-film-festival"
+   :date "#time/date \"2010-10-21\""
+   :type "blog"
+   }]
 }

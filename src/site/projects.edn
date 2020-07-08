@@ -1,4 +1,7 @@
 ;; TODO add date
+;; TODO: add Memoirs of a body (2017)
+;; TODO: add Funemployed (2014)
+
 
 {:jack-and-the-machine
  {:title "Jack and the Machine"
@@ -9,6 +12,13 @@
   :video "https://player.vimeo.com/video/74458487"
   :technology "Clojure, PHP, JavaScript"
   :desc "Interactive documentary based on the life and times of Jack Tramiel, the founder of Commodore Business Machines."}
+ :blue-island
+ {:title "Blue Island"
+  :synopsis "In order to prove her son's innocence, a single mother attempts to blackmail a businessman she knows to be a criminal."
+  :status "In Development"
+  :link "http://www.jackandthemachine.com"
+  :tags ["narrative" "screenplay"]
+  :desc "Feature Film in development with Throughline Films"}
  :borderless
  {:title "Borderless"
   :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response. A collaboration with artist Kim Burgas."
@@ -17,16 +27,18 @@
   :tags ["installation"]
   :video "https://player.vimeo.com/video/119274499"
   :technology "Clojure, Overtone, Kinect, TSPS, Blackmagic Cinema Camera, portable projection"
-  :desc "Dance installation that consists of a video projection accompanied by soundscapes generated in real-time using data acquired from a Kinect."}
+  :desc "Dance installation that consists of a video projection accompanied by soundscapes generated in real-time using data acquired from a Kinect."
+  :date-bgn "#time/year \"2014\""
+  :date-end "#time/year \"2017\""}
  :rhythm-of-time
  {:title "The Rhythm of Time"
   :synopsis "&ldquo;The Rhythm of Time&rdquo; weaves past and future in musical counterpoint as it explores the life and times of an enigmatic instrumentalist hailing from an unexpected place."
-  :status "New Release"
   :link "http://rhythmoftime.xyz"
   :tags ["documentary" "interactive"]
   :image "rhythm-16x9.jpg"
   :technology "ClojureScript, FigWheel, Quil, JavaScript, Canon 7D, Final Cut X, Logic X"
-  :desc "Interactive documentary on the life and times of enigmatic synthesist Suit & Tie Guy."}
+  :desc "Interactive documentary on the life and times of enigmatic synthesist Suit & Tie Guy."
+  :date "#time/year \"2016\""}
  :distant-apologies
  {:title "Distant Apologies"
   :synopsis "The closer you are, the more difficult it is to say, &quot;I'm sorry.&quot;"
@@ -35,7 +47,8 @@
   :tags ["narrative" "interactive"]
   :video "https://player.vimeo.com/video/160771838"
   :technology "Clojure, Leiningen, Tomcat, Twitter API, Super 8 Kodak Film, Final Cut X, Logic X"
-  :desc "Short film mixes rich NASA archival, original Super 8 footage, and a stream of recent apologies scraped from Twitter."}
+  :desc "Short film mixes rich NASA archival, original Super 8 footage, and a stream of recent apologies scraped from Twitter."
+  :date "#time/year \"2016\""  }
  :assassination-of-chicagos-mayor
  {:title "The Assassination of Chicago's Mayor"
   :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
@@ -43,13 +56,15 @@
   :link "https://indieflix.com/indie-films/the-assassination-of-chicagos-mayor-34358/"
   :tags ["narrative"]
   :video "https://player.vimeo.com/video/30803843"
-  :desc "A police interrogation reenactment of a Chicago Tribune account that uses archival letters written by Patrick Prendergast himself"}
+  :desc "A police interrogation reenactment of a Chicago Tribune account that uses archival letters written by Patrick Prendergast himself"
+  :date "#time/year \"2012\"" }
  :simple-reminder
  {:title "A Simple Reminder"
   :synopsis "The essence of memory - a possessor, a liberator."
   :status "Festival Premier: Filmstock Film Festival 2013"
   :tags ["narrative"]
-  :video "https://player.vimeo.com/video/46622645"}
+  :video "https://player.vimeo.com/video/46622645"
+  :date "#time/year \"2013\""}
  :invisible-majority
  {:title "The Invisible Majority"
   :synopsis "Every single day, people volunteer, search for cures, and engineer leaps in efficiency. Unfortunately, media is often usurped by fearmongers and fundamentalists who spread false conceptions as facts. It is up to us, the majority of us who do good day-in and day-out, to guide the larger narrative."
@@ -61,7 +76,8 @@
   :synopsis "Grant is trapped with his conscious on the long, lonely drive across the American Midwest. As the endless road stretches on, he is confronted by those he has loved and those he has hurt. &ldquo;Refuge&rdquo; is a metaphysical journey to truth, quickly turning the open road into a claustrophobic asylum of haunting self-examination."
   :status "Festival Premier: Chicago International Film Festival 2010; Broadcast Premier: ShortsHD Channel - Dish Network, DirecTV, AT&T"
   :tags ["narrative"]
-  :video "https://player.vimeo.com/video/8247688"}
+  :video "https://player.vimeo.com/video/8247688"
+  :date "#time/year \"2010\""}
  :music-retrospective
  {:title "Schmudde: A Retrospective"
   :synopsis "A Selection of Music Written Between 1998 and 2012."
@@ -81,7 +97,8 @@
   :synopsis "Human-kind is essential. Without us, who would admire the flower? Who would discover new worlds and pay tribute to old ones?"
   :status "Festival Premier: Chicago Filmmakers Short Story Showcase 2011"
   :tags ["documentary"]
-  :video "https://player.vimeo.com/video/34661968"}
+  :video "https://player.vimeo.com/video/34661968"
+  :date "#time/year \"2012\""}
  :elements-winter-2011
  {:title "Elements: Winter 2011"
   :synopsis "The four elements in winter."
@@ -95,11 +112,12 @@
   :tags ["documentary"]
   :video "https://player.vimeo.com/video/15209878"}
  :lucid-dream-ensemble
- {:title "Lucid Dream Ensemble - 3. Red (2003)"
+ {:title "Lucid Dream Ensemble - 3. Red"
   :synopsis "A live digital arts performance ensemble. Performers: Virgil Moorefield: Founder, V-Drums; D. Schm&uuml;dde: Virtual Analog Synthesizers, Analogue Sequencing; Nathan Woleck: Max/MSP, Granular Synthesis; Jeff Weeter: Jitter Visuals."
   :status "Performance Premier: SEAMUS National Conference; Noted Performance: Museum of Contemporary Art in Chicago"
   :tags ["documentary"]
-  :media "https://player.vimeo.com/video/84801854"}
+  :media "https://player.vimeo.com/video/84801854"
+  :date "#time/year \"2003\""}
  :reflections
  {:title "Reflections"
   :synopsis "&ldquo;Continuing to explore human truths in a vox populi format, Ginsburg trains his camera on Chicago citizens to ask &#39;What is freedom?&#39; The answer is always surprising. Like their previous films &#39;Aijo&#39; and &#39;The Year of the Rooster,&#39; narrative elements add suspense and a poignant dimension to the interviews featured on screen.&rdquo; -- Todd Lillethum, August 2009, Programming Director, Chicago Filmmakers"

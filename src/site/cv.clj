@@ -9,6 +9,7 @@
             [cljc.java-time.year :as year]
             [cljc.java-time.year-month :as year-month]))
 
+;; TODO: add interviews and press
 
 (def recognition (-> "src/site/recognition.edn" slurp edn/read-string))
 (def projects (-> "src/site/projects.edn" slurp edn/read-string))
@@ -16,6 +17,12 @@
 (def employment-faculty (-> "src/site/employment-faculty.edn" slurp edn/read-string))
 
 (defn edn->hiccup [strong & rest]
+  [:div [:strong strong " "]
+   (->> rest
+        (map #(into [:span % " "]))
+        (into [:span ]))])
+
+(defn edn->hiccup-work [strong & rest]
   [:div [:strong strong " "]
    (->> rest
         (map #(into [:span % " "]))
@@ -29,15 +36,7 @@
         (map #(into [:span % " "]))
         (into [:span ]))])
 
-#_(defn edn->hiccup [strong & rest]
-  [:div [:strong strong " "]
-   (->> (pop rest)
-        (mapv #(into [:span % ", "]))
-        (#(conj % [:span (last rest) " "]) )
-        (into [:span ]))])
-
-
-(defn edn->hiccup-date [date strong geo title & rest]
+(defn edn->hiccup-start-with-date [date strong geo title & rest]
   [:div
    [:span date " "]
    [:strong strong " "]
@@ -46,6 +45,8 @@
    (->> rest
         (map #(into [:span % " "]))
         (into [:span ]))])
+
+;;;;;;;
 
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
@@ -92,42 +93,49 @@
     [:div
      [:h3 "Conference Presentations"]
      (->> conference-talks
-          (map #(edn->hiccup-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
           (into [:div]))
      [:h3 "Workshops"]
      (->> workshops
-          (map #(edn->hiccup-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
           (into [:div]))]))
 
 (defn projects->hiccup []
   (let [project-data (vals projects)]
     (map #(edn->hiccup (:title %) (:synopsis %)) project-data)))
 
+
 (defn employmee-facutly->hiccup []
   (let [{:keys [employee faculty]} employment-faculty]
     [:div
      [:h2 "Academic Work History"]
      (into [:div ]
-           (map #(edn->hiccup (:title %) (:subtitle %)
-                              (java-time->str (:date-bgn %) (:date-end %))) faculty))
+           (map #(edn->hiccup-work (:title %) (:subtitle %)
+                                   (java-time->str (:date-bgn %) (:date-end %))
+                                   (:desc %) (:geo %) (:synopsis %)) faculty))
      [:h2 "Employment"]
      (into [:div ]
-           (map #(edn->hiccup (:title %) (:subtitle %)
-                              (java-time->str (:date-bgn %) (:date-end %))) employee))]))
+           (map #(edn->hiccup-work (:title %) (:subtitle %)
+                                   (java-time->str (:date-bgn %) (:date-end %))
+                                   (:desc %) (:geo %) (:synopsis %)) employee))]))
 
 (defn recognition->hiccup []
-  (let [{:keys [publications exhibitions honors-grants-awards affiliations education training]} recognition]
+  (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]
     [:div
      [:h3 "Publications"]
-     (into [:div ] (map #(edn->hiccup-pub (:title %) (:publication %) (:publisher %) (java-time->full-date-str (:date %))) publications))
+     (into [:div ] (map #(edn->hiccup-pub (:title %) (:publication %) (:publisher %) (java-time->full-date-str (:date %)) (:stats %)) publications))
      [:h3 "Exhibitions"]
-     (into [:div ] (map #(edn->hiccup-date (java-time->str (:date %)) (:title %) (:geo %) (:project %)) exhibitions))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:title %) (:geo %) (:project %)) exhibitions))
      [:h3 "Honors"]
-     (into [:div ] (map #(edn->hiccup-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) (:type %)) honors-grants-awards))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) (:type %)) honors-grants-awards))
      [:h3 "Education"]
-     (into [:div ] (map #(edn->hiccup-date (java-time->str (:date-end %)) (:title %) (:subtitle %) (:desc %)) education))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:title %) (:subtitle %) (:desc %)) education))
+     [:h3 "Further Training"]
+     (into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
      [:h3 "Affiliations"]
      (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))
+     [:h3 "In the Media"]
+     (into [:div ] (map #(edn->hiccup (:title %) (:publication %) (:type %) (java-time->full-date-str (:date %))) in-the-media))
      ]))
 
 (defn make-cv []
@@ -148,11 +156,12 @@
                      [:main {:role "main"}
                       (make-cv)]])))
 
+(print-cv) ;; TODO: Delete
+
 (defn render [{global-meta :meta :as meta}]
   (let [page-title "Curriculum Vitae"
         content (make-cv)]
     (layout/body-template global-meta page-title content)))
-
 
 (comment
 
@@ -195,7 +204,7 @@
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup-date (java-time->str (or (:date %) (:date-end %))) (:location %)(:geo %) (:title %)))
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %)(:geo %) (:title %)))
          (into [:div])))
 
   (let [{:keys [conference-talks]} talks-workshops]

@@ -34,7 +34,7 @@ When IBM considered the privacy rights of their employees in the mid-1970s, they
 These principles were included as part of 1977's [Report of the Privacy Protection Study Commission](https://epic.org/privacy/ppsc1977report/) to President Jimmy Carter. The report was one of many US digital privacy initiatives in this era:
 
 - A 1972 amendment to the California Constitution that included the &ldquo;right of privacy among the &lsquo;inalienable&rsquo; rights of all people. The amendment established a legal and enforceable right of privacy for every Californian. Fundamental to this right of privacy is the ability of individuals to control the use, including the sale, of their personal information.&rdquo;[^cali]
-- A 1973 report by the United States Department of Health, Education, and Welfare on *Automated Personnel Data Systems, Records, Computers, and the Rights of Citizens*.
+- A 1973 report by the United States Department of Health, Education, and Welfare on *Automated Personnel Data Systems, Records, Computers, and the Rights of Citizens* established the Code of Fair Information Practices.
 - A 1974 national [Privacy Act](https://www.justice.gov/opcl/privacy-act-1974)
 - The 1975 [Church Committee](https://archive.org/details/finalreportofsel01unit), a Senate-lead investigation into US intelligence's unconstitutional spying on American citizens.
 

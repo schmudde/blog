@@ -1,7 +1,10 @@
 ;; employee faculty
 
+;; Consdier this format: “Sound Design for Film” (a.y. 2001/02, DFV-365), “DFV-100 Survey of Film” (a.y. 2001/02, DFV-365), etc...
+
 {:employee
  [{:title "Nextjournal"
+   :geo "Berlin, DE"
    :date-bgn "#time/year-month \"2017-09\""
    :date-end "#time/year-month \"2020-01\""
    :subtitle "Developer Advocate"
@@ -11,6 +14,7 @@
    :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
    }
   {:title "Beyond the Frame"
+   :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2005-01\""
    :date-end "#time/year-month \"2019-08\""
    :subtitle "Creative Technologist"
@@ -19,13 +23,16 @@
    :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students~ Negotiated distribution and exhibition agreements for interactive installations, online experiences, and short films~ Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts~ Granted residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin)~ Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014~ Produced documentary pilot, &quot;Souvenir Junk Drawer,&quot; for Soulpancake~ Developed and reviewed feature film scripts for Throughline Films~ Awarded multiple &quot;Best of Festival&quot; distinctions~"
    }
   {:title "Penguin Random House"
+   :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2015-10\""
    :date-end "#time/year-month \"2016-04\""
    :subtitle "Freelance Developer"
    :technology "PHP, JavaScript, Wordpress"
+   :desc "A multinational conglomerate publishing company."
    :synopsis "Developer of high-profile author sites like Arianna Huffington and Carol Burnett as well as imprints like Hogarth Shakespeare for Crown Publishing Group~ Created accurate bids for work with a structured client review and delivery process~ Wrote custom code for Wordpress sites and conformed to corporate security standards~"
    }
   {:title "NetGalley"
+   :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2013-12\""
    :date-end "#time/year-month \"2015-04\""
    :subtitle "Front End Developer"
@@ -34,6 +41,7 @@
    :synopsis "Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
    }
   {:title "F#"
+   :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2012-09\""
    :date-end "#time/year-month \"2012-12\""
    :subtitle "Digital Project Manager/Digital Producer"
@@ -42,30 +50,33 @@
    :synopsis "Managed the creation of interactive advertising campaigns~ Led ideation process for wireframe, development, creative, and launch~ Led agile production process that included teams on three continents highlighting cultural awareness, language, and time zone management concerns~ Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify~"
    }]
 :faculty
- [{:location "College of Arts and Letters, Hoboken, NJ"
+ [{:title "Stevens Institute of Technology"
+   :subtitle "Adjunct Professor"
+   :desc "College of Arts and Letters"
+   :geo "Hoboken, NJ, US"
    :date-bgn "#time/year-month \"2017-01\""
    :date-end "#time/year-month \"2019-05\""
-   :title "Stevens Institute of Technology"
-   :subtitle "Adjunct Professor"
-   :synopsis "<small>HSS-371</small> <em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
+   :synopsis "Taught 14 week semesters, 5 contact hours a week~ Created syllabus and curriculum for new Cyberspace and National Security class~ <small>HSS-371</small> <em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
    :link "http://beyondtheframe.digital/computersandsociety/"
    :link-name "<em>Computers and Society</em> class website"
    :image "stevens.png"
    }
-  {:location "Department of Digital Film and Video, Chicago, IL"
+  {:title "Illinois Institute of Art"
+   :subtitle "Associate Professor"
+   :geo "Chicago, IL, US"
+   :desc "Department of Digital Film and Video"
    :date-bgn "#time/year-month \"2006-01\""
    :date-end "#time/year-month \"2012-01\""
-   :title "Illinois Institute of Art"
-   :subtitle "Associate Professor"
-   :synopsis "Designed the curriculum for the Bachelor of Audio Engineering~ Core member of faculty committee for senior film portfolio defence~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
+   :synopsis "Taught course load of 2 to 3 classes every quarter~ Lead classroom instruction in all 4 quarters every year with 12-18 contact hours per week~ Designed the curriculum for the Bachelor of Audio Engineering~ Facilitated relationships between the school and the film and advertising industry (e.g. Illinois Institute of Art night at the Midwest Film Festival, arranging guest speakers on campus, introducing students to internships and career opportunities)~ Core member of faculty committee for senior film portfolio defense~ Faculty Advisor: Film Club, Audio Club~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
    :image "ai.png"
    }
-  {:location "Video and Animation Department, Chicago, IL"
+  {:title "International Academy of Design and Technology"
+   :subtitle "Adjunct Faculty"
+   :desc "Video and Animation Department"
+   :geo "Chicago, IL, US"
    :date-bgn "#time/year-month \"2005-01\""
    :date-end "#time/year-month \"2007-06\""
-   :title "International Academy of Design and Technology"
-   :subtitle "Adjunct Faculty"
-   :synopsis "Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
+   :synopsis "Taught freshman to senior across three departments: Video and Animation Production, Web and Multimedia Design, and Game Design~ Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
    :image "iadt.png"
    }
   ]}
