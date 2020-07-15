@@ -1,29 +1,31 @@
 ;; TODO: INTERVIEWS
 
 {:workshops
- [{:location "The Internet Lives Here"
+ [{:institution "The Internet Lives Here"
    :geo "New York, NY, US"
    :date-bgn "#time/year \"2017\""
    :date-end "#time/year \"2019\""
-   :title "Telecommunications Tour"
+   :title "Docent"
+   :desc "Telecommunications Tour"
    :synopsis "&quot;The Internet Lives Here&quot; is a multi-site telecommunications tour of Lower Manhattan. Participants explore the relationship between global telecommunications and power. The walk starts at the old AT&T Long Lines building in Tribeca and concludes south of Wall St. at the original ITT Building - spanning the 19th, 20th, and 21st centuries."
    :image "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
    }
-  {:location "ClojureBridge"
+  {:institution "ClojureBridge"
    :geo "New York, NY, US"
    :date-bgn "#time/date \"2017-06-03\""
    :date-end "#time/date \"2017-06-04\""
    :title "Advanced Instructor"
-   :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop for Programmers"
+   :desc "Fundamentals of Functional Programming and Clojure"
    :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
    :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
    :link-name "ClojureBridge Event Information"
    :image "clojurebridge.png"
    }
-  {:location "Digital Humanities Festival"
+  {:institution "Digital Humanities Festival"
    :geo "New York, NY, US"
    :date "#time/date \"2017-02-08\""
-   :title "Strategies for Interactive and Immersive Dance"
+   :title "Co-Teacher"
+   :desc "Strategies for Interactive and Immersive Dance"
    :synopsis "This workshop focuses on strategies for creating cross-domain experiences. We dive deep into visual projection, software, sound, and dance while respecting each medium's idiosyncratic strengths."
    :link "http://dhweek.nycdh.org/event/strategies-for-interactive-and-immersive-dance/"
    :link-name "NYCDH Workshop Page"
@@ -31,7 +33,7 @@
    }]
 
  :conference-talks
- [{:location "Society for the History of Technology"
+ [{:institution "Society for the History of Technology"
    :geo "Milan, IT"
    :date "#time/date \"2019-10-26\""
    :title "The Emergence of Computational Thinking in Art"
@@ -40,7 +42,7 @@
    :link-name "SHOT 2019 Program"
    :image "shot-logo.png"
    }
-  {:location "PyCon/PyData"
+  {:institution "PyCon/PyData"
    :geo "Berlin, DE"
    :date "#time/date \"2019-10-10\""
    :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
@@ -50,7 +52,7 @@
    :link-name "PyConDE & PyData Profile"
    :video "https://www.youtube.com/watch?v=BAsL_cbkQDc"
    }
-  {:location "Curry On"
+  {:institution "Curry On"
    :geo "London, UK"
    :date "#time/date \"2019-07-15\""
    :title "Say What You Mean"
@@ -60,7 +62,7 @@
    :link-name "Curry On Profile"
    :video "https://www.youtube.com/watch?v=HalZfFdWuP4"
    }
-  {:location "History of Digital Cultures"
+  {:institution "History of Digital Cultures"
    :geo "University of Amsterdam, Amsterdam, NL"
    :date "#time/date \"2019-01-21\""
    :title "Enabling Digital Anthropology"
@@ -68,7 +70,7 @@
    :synopsis "A lecutre on preserving software and techniques of emulation."
    :image "uva.png"
    }
-  {:location "Vossius Seminar's History of Knowledge Series"
+  {:institution "Vossius Seminar's History of Knowledge Series"
    :geo "University of Amsterdam, Amsterdam, NL"
    :date "#time/date \"2019-01-22\""
    :title "Intended Knowledge?"
@@ -77,7 +79,7 @@
    :link-name "Vossius Center for the History of Humanities and Sciences"
    :image "uva.png"
    }
-  {:location "Stored In Memory: The 10th Annual SIGCIS Conference"
+  {:institution "Stored In Memory: The 10th Annual SIGCIS Conference"
    :geo "St. Louis, MO, US"
    :date "#time/date \"2018-10-14\""
    :title "Misuser"
@@ -87,7 +89,7 @@
    :link-name "Stored In Memory Program"
    :image "sigcis.png"
    }
-  {:location "Strange Loop"
+  {:institution "Strange Loop"
    :geo "St. Louis, MO, US"
    :date "#time/date \"2018-09-27\""
    :title "Misuser"
@@ -99,7 +101,7 @@
    }
 
 
-  {:location "Creative Coding NYC"
+  {:institution "Creative Coding NYC"
    :geo "New York, NY, US"
    :date "#time/date \"2018-02-28\""
    :title "Sound, Motion, Notation"
@@ -107,7 +109,7 @@
    :synopsis "Channa Horwitz worked on her &quot;Sonakinatography&quot; series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
    :video "https://www.youtube.com/embed/yvbKpaN1_7M"
    }
-  {:location "Society for the History of Technology"
+  {:institution "Society for the History of Technology"
    :geo "Philadelphia, PA, US"
    :date "#time/date \"2017-10-28\""
    :title "Unlikely Harbingers"
@@ -117,7 +119,7 @@
    :link-name "Computers and Futures Retrospective on Transmissions"
    :image "shot-logo.png"
    }
-  {:location "RIXC Art Science Festival"
+  {:institution "RIXC Art Science Festival"
    :geo "Riga, LV"
    :date "#time/date \"2017-10-20\""
    :title "Manifesting Human Relationships in Art and Technology"
@@ -126,17 +128,17 @@
    :link-name "RIXC: Virtualities and Realities"
    :image "rixc.jpg"
    }
-  {:location "I T.A.K.E Unconference (Keynote)"
+  {:institution "I T.A.K.E Unconference (Keynote)"
    :geo "Bucharest, RO"
    :date "#time/date \"2017-05-11\""
    :title "Aesthetics and Narrative"
    :subtitle "Programming What Cannot Be Programmed"
-   :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+   :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; I explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
    :link "http://itakeunconf.com/sessions/aesthetics-and-narrative-programming-what-cannot-be-programmed/"
    :link-name "I T.A.K.E Unconference profile"
    :video "https://www.youtube.com/embed/loksl7ED0Hg"
    }
-  {:location "Codes & Modes Symposium"
+  {:institution "Codes & Modes Symposium"
    :geo "Hunter College, New York, NY, US"
    :date "#time/date \"2017-03-18\""
    :title "The Grammar of the Internet"
@@ -145,17 +147,17 @@
    :link-name "Codes & Modes profile"
    :image "hunter-sm.jpg"
    }
-  {:location "Clojure/conj"
+  {:institution "Clojure/conj"
    :geo "Austin, TX, US"
    :date "#time/date \"2016-12-01\""
    :title "Aesthetics and Narrative"
    :subtitle "Programming What Cannot Be Programmed"
-   :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+   :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; I explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
    :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
    :link-name "Clojure/conj"
    :video "https://www.youtube.com/embed/UJ1pD-Z6PEY"
    }
-  {:location "Vintage Computer Festival Midwest 11"
+  {:institution "Vintage Computer Festival Midwest 11"
    :geo "Elk Grove, IL, US"
    :date "#time/date \"2016-09-10\""
    :title "Accidentally Arming a Hacker Revolution"
@@ -165,7 +167,7 @@
    :link-name "Vintage Computer Festival on YouTube"
    :video "https://www.youtube.com/embed/1lBaqC6kKEo"
    }
-  {:location "Pecha Kucha"
+  {:institution "Pecha Kucha"
    :geo "Berlin, DE"
    :date "#time/date \"2015-07-08\""
    :title "Computers & Intimacy"
@@ -175,7 +177,7 @@
    :link-name "Pecha Kucha Slides &amp; Audio"
    :image "intimacy.jpg"
    }
-  {:location "C-Base: Home of the Chaos Computer Club"
+  {:institution "C-Base: Home of the Chaos Computer Club"
    :geo "Berlin, DE"
    :date "#time/date \"2015-07-07\""
    :title "Harvesting Human Intelligence"
@@ -185,7 +187,7 @@
    :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
    :video "https://player.vimeo.com/video/132857801"
    }
-  {:location "Music Composition for the Screen"
+  {:institution "Music Composition for the Screen"
    :geo "Columbia College Chicago, Chicago, IL, US"
    :date "#time/year-month \"2009-10\""
    :title "Hybrid Scores and Atonality"
@@ -195,7 +197,7 @@
    :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
    :image "ccc.jpg"
    }
-  {:location "Midwest Independent Film Festival"
+  {:institution "Midwest Independent Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year-month \"2009-09\""
    :title "Low Budget Filmmaking (Moderator)"
@@ -204,7 +206,7 @@
    :link-name "D. Schm&uuml;dde: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
    :image "miff.png"
    }
-  {:location "Chicago Actors Casting Summit"
+  {:institution "Chicago Actors Casting Summit"
    :geo "Chicago, IL, US"
    :date-bgn "#time/year-month \"2008-07\""
    :date-end "#time/year-month \"2009-07\""

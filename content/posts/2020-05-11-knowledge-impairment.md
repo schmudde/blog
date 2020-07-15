@@ -8,14 +8,14 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-11
-date-modified: 2020-05-11
+date-modified: 2020-07-13
 date-published: 2020-05-11
 in-language: en
 keywords: buddhism, relationships, documentary
 tags:
+ - doing
  - personal
  - suchness
- - tools
 ---
 
 <div class="epigraph">

@@ -1,4 +1,4 @@
-;; publications exhibitions honors-grants-awards affiliations education training
+;; publications exhibitions honors-grants-awards affiliations education training in-the-media
 
 {:publications
  [{:title "Beyond the Frame"
@@ -13,23 +13,27 @@
    :publisher "Association for Computing Machinery"
    :date "#time/year \"2021\""
    :editor "Dick Van Lente, Erasmus University"
-   :stats "peer reviewed"}
+   :stats "peer reviewed"
+   :synopsis "This chapter examines the history of mass market information processing devices in the global marketplace leading up to the personal computer. It argues that the machine's consumerist roots are its defining characteristic - rather than a tool for augmented intelligence, computers are tools for consumption."}
   {:title "Untitled Chapter on Software Preservation"
    :publication "PROGRAMme: Research Into the History and Philosophy of Computing"
    :publisher nil
-   :desc "The ambition of PROGRAMme is to offer the first coherent analysis and pluralistic understanding of 'program' using a combination of historical insights and philosophical analyses. This allows to retrace the different meanings of 'program' through its own history and, by so doing, to identify and render transparent the different understandings and practices underpinning 'program'. This will make it possible to (re)-construct the fundamentals of 'programs', which liberate rather than restrict its meaning. This project thus requires historical, philosophical and computer science competences and a major challenge will be its interdisciplinarity both methodologically and practically. The aim of this roundtable is to offer a first opportunity to present some of the major challenges, methods insights and/or issues related to 'program' from different perspectives (historical, philosophical, theoretical, formal) and in different (related) contexts (logic, computing hardware, programming languages, software systems)."
+   :synopsis "The ambition of PROGRAMme is to offer the first coherent analysis and pluralistic understanding of 'program' using a combination of historical insights and philosophical analyses. This allows to retrace the different meanings of 'program' through its own history and, by so doing, to identify and render transparent the different understandings and practices underpinning 'program'. This will make it possible to (re)-construct the fundamentals of 'programs', which liberate rather than restrict its meaning. This project thus requires historical, philosophical and computer science competences and a major challenge will be its interdisciplinarity both methodologically and practically. The aim of this roundtable is to offer a first opportunity to present some of the major challenges, methods insights and/or issues related to 'program' from different perspectives (historical, philosophical, theoretical, formal) and in different (related) contexts (logic, computing hardware, programming languages, software systems)."
    :date nil
    :co-authors "Elisabetta Mori and Patricia Falcao"
    :editor "Liesbeth De Mol, Université de Lille"}
   {:title "The Shape of Intuition"
    :publisher "Nextjournal"
    :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
-   :date "#time/date \"2019-12-16\""}
+   :date "#time/date \"2019-12-16\""
+   :keywords ["computational art" "fractal" "functional programming" "phase" "process music" "recursion"]
+   :synopsis "Jackson Pollock continually asserted his agency in his work. &ldquo;There is no accident,&rdquo; he claimed, &ldquo;I control the flow of paint.&rdquo; Or put more blunty, &ldquo;No chaos, damn it.&rdquo; Pollock's refined technique can now be expressed mathematically. Physical artists like Pollock seem to work subconsciously. They have a sense of the goal, but the path is largely intuitive. A process of &ldquo;feeling out.&rdquo; An empirical look at Pollock's paintings and De Keermaeker's dance suggests that their processes have computational underpinnings. The survey explains the parallel between abstract mathematical concepts and embodied instinct. Artists physically arriving at deep analytical insights hints at the body's role in cognition and computation's presence in the natural world."}
   {:title "How to Version Control Jupyter Notebooks"
    :publisher "Nextjournal"
    :link "https://news.ycombinator.com/item?id=18740197"
    :date "#time/date \"2018-12-11\""
-   :stats "> 50,000 article views"}
+   :stats "> 50,000 views"
+   :synopsis "Originally published as a computational notebook, the article surveys version control solutions for Jupyter notebooks with runnable examples."}
   {:title "Our Lives, Encoded"
    :publication "Broken Toilets"
    :desc "Shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
@@ -40,7 +44,8 @@
    :publication "Endless Magazine/The Absurdist"
    :link "https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477"
    :date "#time/date \"2015-11-24\""
-   :stats "> 7,500 article views"}
+   :stats "> 7,500 reads"
+   :synopsis "The article argues that current computers lack the creative expressivity envisioned by pioneers of the 1970s."}
   {:title "From Script to Screen: &lsquo;Five Easy Pieces&rsquo; - Bobby &amp; Rayette"
    :publisher "The Script Lab"
    :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1228-five-easy-pieces-1970-bobby-a-rayette"
@@ -51,443 +56,445 @@
    :date "#time/date \"2011-08-09\""}]
 
  :exhibitions
- [{:title "Sound And Vision International Film &amp; Technology Festival"
+ [{:institution "Sound And Vision International Film &amp; Technology Festival"
    :geo "Elizabethport, NJ, US"
    :date "#time/year \"2018\""
-   :project "The Rhythm of Time"
+   :title "The Rhythm of Time"
    }
-  {:title "NewFilmmakers"
+  {:institution "NewFilmmakers"
    :geo "New York, NY, US"
    :date "#time/year \"2018\""
-   :project "The Rhythm of Time"
+   :title "The Rhythm of Time"
    }
-  {:title "The Art of Brooklyn Film Festival"
+  {:institution "The Art of Brooklyn Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2018\""
-   :project "The Rhythm of Time"
+   :title "The Rhythm of Time"
    }
-  {:title "Measure, Model, Mix: Computer as Instrument (workshop selection)"
+  {:institution "Measure, Model, Mix: Computer as Instrument (workshop selection)"
    :geo "Philadelphia, PA, US"
    :date "#time/year \"2017\""
-   :project "Jack and the Machine"
+   :title "Jack and the Machine"
    }
-  {:title "Bushwick Film Festival"
+  {:institution "Bushwick Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2017\""
-   :project "Distant Apologies"
+   :title "Distant Apologies"
    }
-  {:title "Blow-Up Arthouse International Film Festival"
+  {:institution "Blow-Up Arthouse International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2017\""
-   :project "Distant Apologies"
+   :title "Distant Apologies"
    }
-  {:title "Blow-Up Arthouse International Film Festival"
+  {:institution "Blow-Up Arthouse International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2017\""
-   :project "The Rhythm of Time"
+   :title "The Rhythm of Time"
    }
-  {:title "YoFiFest Film Festival"
+  {:institution "YoFiFest Film Festival"
    :geo "Yonkers, NY, US"
    :date "#time/year \"2017\""
-   :project "Distant Apologies"
+   :title "Distant Apologies"
    }
-  {:title "Holocenter: Center for the Holographic Arts (installation)"
+  {:institution "Holocenter: Center for the Holographic Arts (installation)"
    :geo "New York, NY, US"
    :date "#time/year \"2017\""
-   :project "Borderless IV"
+   :title "Borderless IV"
    }
-  {:title "Average Art Magazine"
+  {:institution "Average Art Magazine"
    :date "#time/year-month \"2017-08\""
-   :project "Borderless IV"
+   :title "Borderless IV"
    }
-  {:title "Hack && Tell (presentation)"
+  {:institution "Hack && Tell (presentation)"
    :geo "New York, NY, US"
    :date "#time/year \"2016\""
-   :project "The Rhythm of Time"
+   :title "The Rhythm of Time"
    }
-  {:title "Third Shift @ Third Space Gallery (installation)"
+  {:institution "Third Shift @ Third Space Gallery (installation)"
    :geo "Saint John, NB, CA"
    :date "#time/year \"2016\""
-   :project "Borderless IV"
+   :title "Borderless IV"
    }
-  {:title "FUSE @ Livestream Public (performance)"
+  {:institution "FUSE @ Livestream Public (performance)"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
-   :project "Borderless"
+   :title "Borderless"
    }
-  {:title "Music Hall of Williamsburg (performance)"
+  {:institution "Music Hall of Williamsburg (performance)"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
-   :project "Borderless"
+   :title "Borderless"
    :highlight "strong"
    }
-  {:title "ArtStars* Bits & Beats"
+  {:institution "ArtStars* Bits & Beats"
    :geo "Berlin, DE"
    :date "#time/year \"2015\""
-   :project "Jack and the Machine"
+   :title "Jack and the Machine"
    }
-  {:title "310 XNRD (installation)"
+  {:institution "310 XNRD (installation)"
    :geo "London, UK"
    :date "#time/year \"2015\""
-   :project "Borderless"
+   :title "Borderless"
    }
-  {:title "Schusev State Museum of Architecture Now&After Festival (installation)"
+  {:institution "Schusev State Museum of Architecture Now&After Festival (installation)"
    :geo "Moscow, RU"
    :date "#time/year \"2015\""
-   :project "Borderless"
+   :title "Borderless"
    :highlight "strong"
    }
-  {:title "IndieWorks"
+  {:institution "IndieWorks"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    }
-  {:title "Fonlad International Exhibition of Video Art"
+  {:institution "Fonlad International Exhibition of Video Art"
    :geo "Cologne, DE"
    :date "#time/year \"2014\""
-   :project "Borderless"
+   :title "Borderless"
    }
-  {:title "IFP Made in NY Media Center (installation)"
+  {:institution "IFP Made in NY Media Center (installation)"
    :geo "New York, NY, US"
    :date "#time/year \"2014\""
-   :project "Borderless"
+   :title "Borderless"
    }
-  {:title "Red Hook Film Festival"
+  {:institution "Red Hook Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2014\""
-   :project "The Assassination of Chicago’s Mayor"
+   :title "The Assassination of Chicago’s Mayor"
    }
-  {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+  {:institution "ShortsHD Channel - Dish Network, DirecTV, AT&T"
    :geo "Broadcast"
    :date "#time/year \"2014\""
-   :project "The Assassination of Chicago’s Mayor"
+   :title "The Assassination of Chicago’s Mayor"
    :highlight "strong"
    }
-  {:title "IndieFlix"
+  {:institution "IndieFlix"
    :geo "Internet Distribution"
    :date "#time/year \"2014\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:title "Filmstock Film Festival"
+  {:institution "Filmstock Film Festival"
    :geo "UT, US"
    :date "#time/year \"2013\""
-   :project "A Simple Reminder"
+   :title "A Simple Reminder"
    }
-  {:title "Hollyshorts"
+  {:institution "Hollyshorts"
    :geo "New York, NY, US"
    :date "#time/year \"2013\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:title "Filmstock Film Festival"
+  {:institution "Filmstock Film Festival"
    :geo "NM, US"
    :date "#time/year \"2013\""
-   :project "Refuge"
+   :title "Refuge"
    }
-  {:title "Beneath the Earth Film Festival"
+  {:institution "Beneath the Earth Film Festival"
    :geo "Internet Distribution"
    :date "#time/year \"2012\""
-   :project "Refuge"
+   :title "Refuge"
    }
-  {:title "Filmstock Film Festival"
+  {:institution "Filmstock Film Festival"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2012\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    }
-  {:title "Filmstock Film Festival"
+  {:institution "Filmstock Film Festival"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2012\""
-   :project "Refuge"
+   :title "Refuge"
    }
-  {:title "Aesthetica Film Festival"
+  {:institution "Aesthetica Film Festival"
    :geo "York, UK"
    :date "#time/year \"2013\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:title "Hollyshorts"
+  {:institution "Hollyshorts"
    :geo "Los Angeles, CA, US"
    :date "#time/year \"2012\""
-   :project "The Assassination of Chicago's Mayor"
+   :title "The Assassination of Chicago's Mayor"
    }
-  {:title "MoFest"
+  {:institution "MoFest"
    :geo "Chicago, IL, US"
    :date "#time/year \"2012\""
-   :project "Elements • Spring to Summer to Autumn 2011"
+   :title "Elements • Spring to Summer to Autumn 2011"
    }
-  {:title "Chicago Filmmakers Short Story Showcase"
+  {:institution "Chicago Filmmakers Short Story Showcase"
    :geo "Chicago, IL, US"
    :date "#time/year \"2012\""
-   :project "Elements • Spring to Summer to Autumn 2011"
+   :title "Elements • Spring to Summer to Autumn 2011"
    }
-  {:title "Moving Pictures Film Festival"
+  {:institution "Moving Pictures Film Festival"
    :geo "Quincy, IL, US"
    :date "#time/year \"2012\""
-   :project "Refuge"
+   :title "Refuge"
    }
-  {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+  {:institution "ShortsHD Channel - Dish Network, DirecTV, AT&T"
    :geo "Broadcast"
    :date "#time/year \"2011\""
-   :project "Refuge"
+   :title "Refuge"
    :highlight "strong"
    }
-  {:title "Chicago Filmmakers Short Story Film Showcase"
+  {:institution "Chicago Filmmakers Short Story Film Showcase"
    :geo "Chicago, IL, US"
    :date "#time/year \"2011\""
-   :project "Refuge"
+   :title "Refuge"
    }
-  {:title "Chicago International Film Festival"
+  {:institution "Chicago International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2010\""
-   :project "Refuge"
+   :title "Refuge"
    :highlight "strong"
    }
-  {:title "The New Art Film Festival"
+  {:institution "The New Art Film Festival"
    :geo "Champaign-Urbana, IL, US"
    :date "#time/year \"2010\""
-   :project "I am Concrete"
+   :title "I am Concrete"
    }
-  {:title "Chicago Filmmakers"
+  {:institution "Chicago Filmmakers"
    :geo "Chicago, IL, US"
    :date "#time/year \"2008\""
-   :project "Aijo"
+   :title "Aijo"
    }
-  {:title "Georgetown Film Fest"
+  {:institution "Georgetown Film Fest"
    :geo "Washington DC, US"
    :date "#time/year \"2006\""
-   :project "Aijo"
+   :title "Aijo"
    }
-  {:title "S.N.O.B Film Festival"
+  {:institution "S.N.O.B Film Festival"
    :geo "Boston, MA, US"
    :date "#time/year \"2006\""
-   :project "Aijo"
+   :title "Aijo"
    }
-  {:title "River’s Edge International Film Festival"
+  {:institution "River’s Edge International Film Festival"
    :geo "Paducah, KY, US"
    :date "#time/year \"2005\""
-   :project "Year of the Rooster"
+   :title "Year of the Rooster"
    }
-  {:title "Block Museum"
+  {:institution "Block Museum"
    :geo "Evanston, IL, US"
    :date "#time/year-month \"2003-11\""
-   :project "Lucid Dream Ensemble"
+   :title "Lucid Dream Ensemble"
    }
-  {:title "Block Museum"
+  {:institution "Block Museum"
    :geo "Evanston, IL, US"
    :date "#time/year-month \"2003-04\""
-   :project "Lucid Dream Ensemble"
+   :title "Lucid Dream Ensemble"
    }
-  {:title "Chicago Museum of Contemporary Art Version Festival"
+  {:institution "Chicago Museum of Contemporary Art Version Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2003\""
-   :project "Lucid Dream Ensemble"
+   :title "Lucid Dream Ensemble"
    :highlight "strong"
    }
-  {:title "SEAMUS National Conference"
+  {:institution "SEAMUS National Conference"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2003\""
-   :project "Lucid Dream Ensemble"
+   :title "Lucid Dream Ensemble"
    }]
 
  :honors-grants-awards
  [{:title "Ranked in the Top 5% of Unproduced Screenplays"
-   :type "Distinction"
-   :org "The Black List"
+   :desc "Distinction"
+   :institution "The Black List"
    :project :blue-island
    :date "#time/year \"2020\""
-   :desc "Since 2005, each December, the Black List releases its annual list, a survey of the most liked unproduced screenplays of that year. The annual lists are aggregated using votes from film executives working in the film industry."
+   :synopsis "Since 2005, each December, the Black List releases its annual list, a survey of the most liked unproduced screenplays of that year. The annual lists are aggregated using votes from film executives working in the film industry."
    }
   {:title "Researcher in Residence"
-   :type "Residency"
-   :org "Signal Culture"
+   :desc "Residency"
+   :institution "Signal Culture"
    :project :borderless
    :date "#time/year \"2018\""
    }
   {:title "Space:Light Artist Residency"
-   :type "Residency"
-   :org "Holocenter: Center for the Holographic Arts"
+   :desc "Residency"
+   :institution "Holocenter: Center for the Holographic Arts"
    :project :borderless
    :date "#time/year \"2017\""
    }
   {:title "Media Residency Program"
-   :type "New Media Production Grant"
-   :org "Startup Germany, Medienboard"
+   :desc "New Media Production Grant"
+   :institution "Startup Germany, Medienboard"
    :highlight true
    :project :jack-and-the-machine
    :date "#time/year \"2015\""
    }
   {:title "Interactive Co/Lab"
    :geo "Detroit, MI, US"
-   :type "Competitive Selection"
-   :org "Tribeca Film Institute"
+   :desc "Competitive Selection"
+   :institution "Tribeca Film Institute"
    :date "#time/year \"2016\""
    }
   {:title "POV Hackathon 9"
    :geo "Chicago, IL, US"
-   :type "Competitive Selection"
-   :org "Public Broadcasting Service (PBS)"
+   :desc "Competitive Selection"
+   :institution "Public Broadcasting Service (PBS)"
    :highlight true
    :date-bgn "#time/date \"2015-08-15\""
    :date-end "#time/date \"2015-08-16\""
    }
   {:title "POV Hackathon 7"
    :geo "New York, NY, US"
-   :type "Competitive Selection"
-   :org "Public Broadcasting Service (PBS)"
-   :desc "&ldquo;Chicago Ghosts&rdquo; What happens when a Chicago neighborhood is not only the scene of the 1893 murder of Mayor Carter Harrison, but also nature’s triumph over man’s technological hubris in 2023?Chicago Ghostsexplores the stories we share through great expanses of time and small expanses of space that connect us through the past and the present. Participants: Andrew Ritchie, D. Schmudde, Ziv Schneider"
+   :desc "Competitive Selection"
+   :institution "Public Broadcasting Service (PBS)"
+   :synopsis "&ldquo;Chicago Ghosts&rdquo; What happens when a Chicago neighborhood is not only the scene of the 1893 murder of Mayor Carter Harrison, but also nature’s triumph over man’s technological hubris in 2023?Chicago Ghostsexplores the stories we share through great expanses of time and small expanses of space that connect us through the past and the present. Participants: Andrew Ritchie, D. Schmudde, Ziv Schneider"
    :date "#time/year-month \"2014-11\""
    }
   {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
    :geo "New York, NY, US"
-   :type "Film Festival Award"
-   :org "Red Hook Film Festival"
+   :desc "Film Festival Award"
+   :institution "Red Hook Film Festival"
    :highlight true
    :project :assassination-of-chicagos-mayor
    :date "#time/year \"2014\""
    }
   {:title "Audience Choice Award: &ldquo;A Simple Reminder&rdquo;"
    :geo "Online"
-   :type "Film Festival Award"
-   :org "Digipops Community Film Festival"
+   :desc "Film Festival Award"
+   :institution "Digipops Community Film Festival"
    :project :simple-reminder
    :date "#time/year \"2014\""
    }
   {:title "Tribeca Hacks"
    :geo "New York, NY, US"
-   :type "Competitive Selection"
-   :org "Tribeca Film Institute"
+   :desc "Competitive Selection"
+   :institution "Tribeca Film Institute"
    :date "#time/year \"2013\""
    }
   {:title "Best Director, Best of Fest: &ldquo;Refuge&rdquo;"
    :geo "Tempe, AZ, US"
-   :type "Film Festival Award"
-   :org "Filmstock Film Festival"
+   :desc "Film Festival Award"
+   :institution "Filmstock Film Festival"
    :highlight true
    :project :refuge
    :date "#time/year \"2012\""
    }
   {:title "Best Actor: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
    :geo "Tempe, AZ, US"
-   :type "Film Festival Award"
-   :org "Filmstock Film Festival"
+   :desc "Film Festival Award"
+   :institution "Filmstock Film Festival"
    :project :assassination-of-chicagos-mayor
    :date "#time/year \"2012\""
    }
   {:title "Best Editing, Best Acting: &ldquo;Refuge&rdquo;"
    :geo "Online"
-   :type "Film Festival Award"
-   :org "Beneath the Earth Film Festival"
+   :desc "Film Festival Award"
+   :institution "Beneath the Earth Film Festival"
    :highlight true
    :project :refuge
    :date "#time/year \"2012\""
    }
   {:title "Educator of the Year Nomination"
    :geo "Chicago, IL, US"
-   :type "Professional Distinction"
-   :org "International Academy of Design and Technology"
+   :desc "Professional Distinction"
+   :institution "International Academy of Design and Technology"
    :date "#time/year \"2005\""
    }
   {:title "Program for the Study of the Imagination"
    :geo "Evanston, IL, US"
-   :type "Composition Grant"
-   :org "Northwestern University"
+   :desc "Composition Grant"
+   :institution "Northwestern University"
    :date "#time/year \"2003\""
    }
   {:title "Interactive Award - The One Show"
    :geo "Carbondale, IL, US"
-   :type "Competitive Showcase (Bronze Placement)"
-   :org "One Club"
+   :desc "Competitive Showcase (Bronze Placement)"
+   :institution "One Club"
    :date "#time/year \"1998\""
    }]
 
   :affiliations
-   [{:org "Kitchen Table Coders: A Studio for Creative Coding"
+   [{:institution "Kitchen Table Coders: A Studio for Creative Coding"
      :title "Member"}
-    {:org "The FilmShop: A New York Collective of Independent Filmmakers"
+    {:institution "The FilmShop: A New York Collective of Independent Filmmakers"
      :title "Member"}
-    {:org "Bushwick Film Festival"
+    {:institution "Bushwick Film Festival"
      :title "New Media Advisor"
      :date-bgn "#time/year \"2013\""
      :date-end "#time/year \"2014\""}
-    {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
+    {:institution "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
      :title "Volunteer Media Director and Producer"}
-    {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
+    {:institution "&lt;StoryCode&gt;: An Immersive Media Meetup"
      :title "Videography Volunteer"}]
 
   :education
-  [{:title "Northwestern University"
-    :subtitle "Masters in Music (Magna Cum Laude)"
+  [{:institution "Northwestern University"
+    :title "Masters in Music (Magna Cum Laude)"
     :desc "Electroacoustic Performance, Composition, Intermedia Studies"
     :date-bgn "#time/year \"2002\""
     :date-end "#time/year \"2004\""}
-   {:title "University of Northern Iowa"
-    :subtitle "Bachelor of Arts in Computer Science"
+   {:institution "University of Northern Iowa"
+    :title "Bachelor of Arts in Computer Science"
     :desc "Artificial Intelligence, Creative Computing and the Visual Arts"
     :date-bgn "#time/year \"1997\""
     :date-end "#time/year \"2001\""}]
 
   :training
  [{:title "Dataism: a Class on Data Science in Activism"
-   :org "School of Machines, Making &amp; Make-Believe"
+   :institution "School of Machines, Making &amp; Make-Believe"
    :geo "Berlin, DE"
    :date "#time/year \"2020\""}
   {:title "German Language Training"
-   :org "Sprachsalon"
+   :institution "Sprachsalon"
    :geo "Berlin, DE"
    :date "#time/year \"2019\""}
   {:title "German Language Training"
-   :org "DID Deutsch-Institut"
+   :institution "DID Deutsch-Institut"
    :geo "Berlin, DE"
    :date "#time/year \"2005\""}]
 
- ;; Movie Talk Show: https://movietalkshow.wixsite.com/movie-talk-show/video-reel
+ ;; TODO: add Movie Talk Show: https://movietalkshow.wixsite.com/movie-talk-show/video-reel
  :in-the-media
  [{:title "Software, Art, Augmented Intelligence & Functional Programming"
    :publication "Mozaic Works"
-   :desc "We had the chance to discuss with David Schmüdde, artist and programmer, passionate about functional programming, and tuned to the humanistic aspects of software development and computers' role in society. We spent one hour discussing many interesting topics: functional programming, the humanistic aspects of programming, creating art with code, augmented intelligence and the future of programming. "
+   :synopsis "We had the chance to discuss with David Schmüdde, artist and programmer, passionate about functional programming, and tuned to the humanistic aspects of software development and computers' role in society. We spent one hour discussing many interesting topics: functional programming, the humanistic aspects of programming, creating art with code, augmented intelligence and the future of programming. "
    :link "https://mozaicworks.com/blog/david-schmudde-software-art-augmented-intelligence-functional-programming-with-alex-bolboaca/"
    :date "#time/date \"2020-03-18\""
-   :type "video interview"
+   :desc "video interview"
    }
   {:title "Episode 147: David Schmudde"
    :publication "Cognicast"
    :link "https://cognitect.com/cognicast/2018/11/20/david-schmudde-cognicast-episode-147"
    :date "#time/date \"2018-11-27\""
-   :type "podcast interview"
+   :desc "podcast interview"
    }
   {:title "Strange Loop 3: David Schmudde and the Art of Misuse"
-   :publication "Knowing and Doing by Professor Eugene Wallingford"
+   :publication "Knowing and Doing"
+   :editor "Eugene Wallingford, University of Northern Iowa"
    :link "http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2018-09.html#e2018-09-30T18_40_21.htm"
    :original-work "https://www.youtube.com/watch?v=SU6NvkkF4Xk"
    :date "#time/date \"2018-09-30\""
-   :type "blog"
+   :desc "blog"
    }
   {:title "Five Favorites"
-   :publication "Evidence for Policy Design at the Harvard Kennedy School"
-   :desc "Galaxies of information will be accessible once we solve interoperability problems | D. Schmüdde and Alexander Rakoczy on Broken Toilets"
+   :publication "Evidence for Policy Design"
+   :publisher "Harvard Kennedy School"
+   :synopsis "Galaxies of information will be accessible once we solve interoperability problems | D. Schmüdde and Alexander Rakoczy on Broken Toilets"
    :link "http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516"
    :original-work "http://brokentoilets.org/article/year-twenty-megabytes/"
    :date "#time/date \"2016-07-05\""
-   :type "blog"
+   :desc "blog"
    }
   {:title "David Schmudde On The Nonlinear Narrative & Filmmaking"
    :publication "CineFile"
    :link "https://www.youtube.com/watch?v=tyl8yDAvtOE"
    :date "#time/date \"2011-01-11\""
-   :type "video interview"
+   :desc "video interview"
    }
   {:title "Q & A with David Schmudde of Earth Circle Films"
    :publication "DIY Film"
-   :desc "Chicago DIY Film recently contacted local filmmaker, David Schmudde. Schmudde’s production company, Earth Circle Films, has been creating cutting-edge films, such as the 2010 selection for the Chicago International Film Festival, “Refuge”; and “The Assassination of Chicago’s Mayor.” In this interview, Schmudde discusses collaboration, nonlinear filmmaking, and the pros and cons of making films in Chicago."
+   :synopsis "Chicago DIY Film recently contacted local filmmaker, David Schmudde. Schmudde’s production company, Earth Circle Films, has been creating cutting-edge films, such as the 2010 selection for the Chicago International Film Festival, “Refuge”; and “The Assassination of Chicago’s Mayor.” In this interview, Schmudde discusses collaboration, nonlinear filmmaking, and the pros and cons of making films in Chicago."
    :link "http://diy-film.com/2011/11/30/q-a-with-david-schmudde-of-earth-circle-films/"
    :date "#time/date \"2011-11-30\""
-   :type "interview"
+   :desc "interview"
    }
   {:title "Short Cuts: Illinois Filmmakers at 2010 Chicago International Film Festival"
    :publication "Hollywood Chicago"
    :link "https://www.hollywoodchicago.com/news/12231/short-cuts-illinois-filmmakers-at-2010-chicago-international-film-festival"
    :date "#time/date \"2010-10-21\""
-   :type "blog"
+   :desc "blog"
    }]
 }

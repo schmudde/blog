@@ -16,6 +16,47 @@
 (def talks-workshops (-> "src/site/talks-workshops.edn" slurp edn/read-string))
 (def employment-faculty (-> "src/site/employment-faculty.edn" slurp edn/read-string))
 
+;;;;;;;
+
+(defn java-time->str
+  "Given one date, returns a date, given two dates, returns a range"
+  ([date-time ]
+   (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
+     (cond
+       (= (type java-time) java.time.Year) (str (year/get-value java-time))
+       (= (type java-time) java.time.YearMonth) (str (year-month/get-year java-time))
+       (= (type java-time) java.time.LocalDate) (ld/get-year java-time) #_(str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy")))
+       :else java-time)))
+  ([date-time-1 date-time-2]
+   (let [java-time-1 (clojure.edn/read-string {:readers time-read/tags} date-time-1)
+         java-time-2 (clojure.edn/read-string {:readers time-read/tags} date-time-2)]
+     (str (year-month/format java-time-1 (formatter/of-pattern "MMMM yyyy"))
+          " - " (year-month/format java-time-2 (formatter/of-pattern "MMMM yyyy"))
+         ))))
+
+(defn java-time->full-date-str [date-time]
+  (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
+    (cond
+      (= (type java-time) java.time.Year) (str "Upcoming " (year/get-value java-time))
+      (= (type java-time) java.time.LocalDate) (str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy"))))))
+
+;;;;;;;;;;;;;;;;
+
+;; (defprotocol edn->hiccup-output (output [x] "generate x"))
+;; (deftype date-first [date title]
+;;    edn->hiccup-output )
+;;
+
+
+(deftype date-first-display [date])
+(deftype title-first-display [title])
+
+(defmulti table class)
+(defmethod table date-first-display [org]
+  org)
+(defmethod table title-first-display [org]
+  org)
+
 (defn edn->hiccup [strong & rest]
   [:div [:strong strong " "]
    (->> rest
@@ -46,31 +87,7 @@
         (map #(into [:span % " "]))
         (into [:span ]))])
 
-;;;;;;;
-
-(defn java-time->str
-  "Given one date, returns a date, given two dates, returns a range"
-  ([date-time ]
-   (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
-     (cond
-       (= (type java-time) java.time.Year) (str (year/get-value java-time))
-       (= (type java-time) java.time.YearMonth) (str (year-month/get-year java-time))
-       (= (type java-time) java.time.LocalDate) (ld/get-year java-time) #_(str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy")))
-       :else java-time)))
-  ([date-time-1 date-time-2]
-   (let [java-time-1 (clojure.edn/read-string {:readers time-read/tags} date-time-1)
-         java-time-2 (clojure.edn/read-string {:readers time-read/tags} date-time-2)]
-     (str (year-month/format java-time-1 (formatter/of-pattern "MMMM yyyy"))
-          " - " (year-month/format java-time-2 (formatter/of-pattern "MMMM yyyy"))
-         ))))
-
-(defn java-time->full-date-str [date-time]
-  (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
-    (cond
-      (= (type java-time) java.time.Year) (str "Upcoming " (year/get-value java-time))
-      (= (type java-time) java.time.LocalDate) (str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy"))))))
-
-;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
 
 (defn itemize-list [matcher-object points]
   "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."
@@ -88,16 +105,15 @@
 ;;;;;;;;;;;;;;;;
 
 (defn talks-workshops->hiccup []
-  ;; TODO: lead with date
   (let [{:keys [workshops conference-talks]} talks-workshops]
     [:div
-     [:h3 "Conference Presentations"]
+     [:h3 "Conference Presentations"] ;; TODO: switch title from italics to quotes
      (->> conference-talks
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %)))
           (into [:div]))
-     [:h3 "Workshops"]
+     [:h3 "Workshop"]
      (->> workshops
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %) (:geo %) (:title %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %) (:desc %)))
           (into [:div]))]))
 
 (defn projects->hiccup []
@@ -105,17 +121,17 @@
     (map #(edn->hiccup (:title %) (:synopsis %)) project-data)))
 
 
-(defn employmee-facutly->hiccup []
+(defn employment-facutly->hiccup []
   (let [{:keys [employee faculty]} employment-faculty]
     [:div
      [:h2 "Academic Work History"]
      (into [:div ]
-           (map #(edn->hiccup-work (:title %) (:subtitle %)
+           (map #(edn->hiccup-work (:institution %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
                                    (:desc %) (:geo %) (:synopsis %)) faculty))
      [:h2 "Employment"]
      (into [:div ]
-           (map #(edn->hiccup-work (:title %) (:subtitle %)
+           (map #(edn->hiccup-work (:institution %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
                                    (:desc %) (:geo %) (:synopsis %)) employee))]))
 
@@ -125,22 +141,27 @@
      [:h3 "Publications"]
      (into [:div ] (map #(edn->hiccup-pub (:title %) (:publication %) (:publisher %) (java-time->full-date-str (:date %)) (:stats %)) publications))
      [:h3 "Exhibitions"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:title %) (:geo %) (:project %)) exhibitions))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:institution %) (:geo %) (:title %)) exhibitions))
      [:h3 "Honors"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) (:type %)) honors-grants-awards))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:institution %) (:desc %)) honors-grants-awards))
      [:h3 "Education"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:title %) (:subtitle %) (:desc %)) education))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:institution %) (:title %) (:desc %)) education))
      [:h3 "Further Training"]
-     (into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
+     (into [:div ] (map #(edn->hiccup (:tile %) (:institution %) (:geo %) (java-time->str (:date %))) training))
      [:h3 "Affiliations"]
-     (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))
+     (into [:div ] (map #(edn->hiccup (:institution %) (:title %)) affiliations))
      [:h3 "In the Media"]
-     (into [:div ] (map #(edn->hiccup (:title %) (:publication %) (:type %) (java-time->full-date-str (:date %))) in-the-media))
+     (into [:div ] (map #(edn->hiccup (:title %) (:publication %) (:editor %) (:publisher %) (:type %) (java-time->full-date-str (:date %))) in-the-media))
      ]))
+
+
+
+;;;;;;;;;;;;;;;;;;
+
 
 (defn make-cv []
   [:div
-   [:div (employmee-facutly->hiccup)]
+   [:div (employment-facutly->hiccup)]
    [:h2 "Talks &amp; Workshops"]
    [:div (talks-workshops->hiccup)]
    [:h2 "Honors etc.."]
@@ -204,19 +225,19 @@
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:location %)(:geo %) (:title %)))
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %)(:geo %) (:title %)))
          (into [:div])))
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:location %)(:geo %) (:title %)))
+         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:institution %)(:geo %) (:title %)))
          (into [:div])))
 
   (def temp   (let [{:keys [conference-talks]} talks-workshops]
                 (->> conference-talks
                      )))
 
-  (#(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:location %)(:geo %) (:title %)) (first temp))
+  (#(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %)) (first temp))
 
   (->> (pop rest)
        (mapv #(into [:span % ", "]))
