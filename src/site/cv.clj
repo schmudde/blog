@@ -109,11 +109,11 @@
     [:div
      [:h3 "Conference Presentations"] ;; TODO: switch title from italics to quotes
      (->> conference-talks
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %)))
           (into [:div]))
      [:h3 "Workshop"]
      (->> workshops
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %) (:desc %)))
+          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %) (:desc %)))
           (into [:div]))]))
 
 (defn projects->hiccup []
@@ -126,12 +126,12 @@
     [:div
      [:h2 "Academic Work History"]
      (into [:div ]
-           (map #(edn->hiccup-work (:institution %) (:title %)
+           (map #(edn->hiccup-work (:org %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
                                    (:desc %) (:geo %) (:synopsis %)) faculty))
      [:h2 "Employment"]
      (into [:div ]
-           (map #(edn->hiccup-work (:institution %) (:title %)
+           (map #(edn->hiccup-work (:org %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
                                    (:desc %) (:geo %) (:synopsis %)) employee))]))
 
@@ -141,15 +141,15 @@
      [:h3 "Publications"]
      (into [:div ] (map #(edn->hiccup-pub (:title %) (:publication %) (:publisher %) (java-time->full-date-str (:date %)) (:stats %)) publications))
      [:h3 "Exhibitions"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:institution %) (:geo %) (:title %)) exhibitions))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:org %) (:geo %) (:title %)) exhibitions))
      [:h3 "Honors"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:institution %) (:desc %)) honors-grants-awards))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) (:desc %)) honors-grants-awards))
      [:h3 "Education"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:institution %) (:title %) (:desc %)) education))
+     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:org %) (:title %) (:desc %)) education))
      [:h3 "Further Training"]
-     (into [:div ] (map #(edn->hiccup (:tile %) (:institution %) (:geo %) (java-time->str (:date %))) training))
+     (into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
      [:h3 "Affiliations"]
-     (into [:div ] (map #(edn->hiccup (:institution %) (:title %)) affiliations))
+     (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))
      [:h3 "In the Media"]
      (into [:div ] (map #(edn->hiccup (:title %) (:publication %) (:editor %) (:publisher %) (:type %) (java-time->full-date-str (:date %))) in-the-media))
      ]))
@@ -225,19 +225,19 @@
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:institution %)(:geo %) (:title %)))
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
          (into [:div])))
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:institution %)(:geo %) (:title %)))
+         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
          (into [:div])))
 
   (def temp   (let [{:keys [conference-talks]} talks-workshops]
                 (->> conference-talks
                      )))
 
-  (#(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:institution %) (:geo %) (:title %)) (first temp))
+  (#(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %)) (first temp))
 
   (->> (pop rest)
        (mapv #(into [:span % ", "]))

@@ -3,7 +3,7 @@
 ;; Consdier this format: “Sound Design for Film” (a.y. 2001/02, DFV-365), “DFV-100 Survey of Film” (a.y. 2001/02, DFV-365), etc...
 
 {:employee
- [{:institution "Nextjournal"
+ [{:org "Nextjournal"
    :geo "Berlin, DE"
    :date-bgn "#time/year-month \"2017-09\""
    :date-end "#time/year-month \"2020-01\""
@@ -13,7 +13,7 @@
    :synopsis "Developed the user group management feature from database calls to front end layout~ Developed user analytics notebooks to set and achieve platform traffic and conversion goals~ Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;, second only to machine learning notebooks~ Worked cross-functionally to enhance user on-boarding~ Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC~ Wrote deep dives into core product concepts, &quot;Computational Environments,&quot; &quot;Transclusions,&quot; and &quot;Remixing&quot; (branching and version control)~ Helped structure and write Nextjournal's documentation~"
    :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
    }
-  {:institution "Beyond the Frame"
+  {:org "Beyond the Frame"
    :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2005-01\""
    :date-end "#time/year-month \"2019-08\""
@@ -22,7 +22,7 @@
    :desc "A new media company that produces interactive narrative experiences."
    :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students~ Negotiated distribution and exhibition agreements for interactive installations, online experiences, and short films~ Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts~ Granted residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin)~ Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014~ Produced documentary pilot, &quot;Souvenir Junk Drawer,&quot; for Soulpancake~ Developed and reviewed feature film scripts for Throughline Films~ Awarded multiple &quot;Best of Festival&quot; distinctions~"
    }
-  {:institution "Penguin Random House"
+  {:org "Penguin Random House"
    :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2015-10\""
    :date-end "#time/year-month \"2016-04\""
@@ -31,7 +31,7 @@
    :desc "A multinational conglomerate publishing company."
    :synopsis "Developer of high-profile author sites like Arianna Huffington and Carol Burnett as well as imprints like Hogarth Shakespeare for Crown Publishing Group~ Created accurate bids for work with a structured client review and delivery process~ Wrote custom code for Wordpress sites and conformed to corporate security standards~"
    }
-  {:institution "NetGalley"
+  {:org "NetGalley"
    :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2013-12\""
    :date-end "#time/year-month \"2015-04\""
@@ -40,7 +40,7 @@
    :desc "A publishing web site with 40,000+ members and 100K+ uniques/month."
    :synopsis "Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
    }
-  {:institution "F#"
+  {:org "F#"
    :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2012-09\""
    :date-end "#time/year-month \"2012-12\""
@@ -50,7 +50,7 @@
    :synopsis "Managed the creation of interactive advertising campaigns~ Led ideation process for wireframe, development, creative, and launch~ Led agile production process that included teams on three continents highlighting cultural awareness, language, and time zone management concerns~ Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify~"
    }]
 :faculty
- [{:institution "Stevens Institute of Technology"
+ [{:org "Stevens Institute of Technology"
    :title "Adjunct Professor"
    :desc "College of Arts and Letters"
    :geo "Hoboken, NJ, US"
@@ -61,7 +61,7 @@
    :link-name "<em>Computers and Society</em> class website"
    :image "stevens.png"
    }
-  {:institution "Illinois Institute of Art"
+  {:org "Illinois Institute of Art"
    :title "Associate Professor"
    :geo "Chicago, IL, US"
    :desc "Department of Digital Film and Video"
@@ -70,7 +70,7 @@
    :synopsis "Taught course load of 2 to 3 classes every quarter~ Lead classroom instruction in all 4 quarters every year with 12-18 contact hours per week~ Designed the curriculum for the Bachelor of Audio Engineering~ Facilitated relationships between the school and the film and advertising industry (e.g. Illinois Institute of Art night at the Midwest Film Festival, arranging guest speakers on campus, introducing students to internships and career opportunities)~ Core member of faculty committee for senior film portfolio defense~ Faculty Advisor: Film Club, Audio Club~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
    :image "ai.png"
    }
-  {:institution "International Academy of Design and Technology"
+  {:org "International Academy of Design and Technology"
    :title "Adjunct Faculty"
    :desc "Video and Animation Department"
    :geo "Chicago, IL, US"

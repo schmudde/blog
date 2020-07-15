@@ -56,240 +56,240 @@
    :date "#time/date \"2011-08-09\""}]
 
  :exhibitions
- [{:institution "Sound And Vision International Film &amp; Technology Festival"
+ [{:org "Sound And Vision International Film &amp; Technology Festival"
    :geo "Elizabethport, NJ, US"
    :date "#time/year \"2018\""
    :title "The Rhythm of Time"
    }
-  {:institution "NewFilmmakers"
+  {:org "NewFilmmakers"
    :geo "New York, NY, US"
    :date "#time/year \"2018\""
    :title "The Rhythm of Time"
    }
-  {:institution "The Art of Brooklyn Film Festival"
+  {:org "The Art of Brooklyn Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2018\""
    :title "The Rhythm of Time"
    }
-  {:institution "Measure, Model, Mix: Computer as Instrument (workshop selection)"
+  {:org "Measure, Model, Mix: Computer as Instrument (workshop selection)"
    :geo "Philadelphia, PA, US"
    :date "#time/year \"2017\""
    :title "Jack and the Machine"
    }
-  {:institution "Bushwick Film Festival"
+  {:org "Bushwick Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2017\""
    :title "Distant Apologies"
    }
-  {:institution "Blow-Up Arthouse International Film Festival"
+  {:org "Blow-Up Arthouse International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2017\""
    :title "Distant Apologies"
    }
-  {:institution "Blow-Up Arthouse International Film Festival"
+  {:org "Blow-Up Arthouse International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2017\""
    :title "The Rhythm of Time"
    }
-  {:institution "YoFiFest Film Festival"
+  {:org "YoFiFest Film Festival"
    :geo "Yonkers, NY, US"
    :date "#time/year \"2017\""
    :title "Distant Apologies"
    }
-  {:institution "Holocenter: Center for the Holographic Arts (installation)"
+  {:org "Holocenter: Center for the Holographic Arts (installation)"
    :geo "New York, NY, US"
    :date "#time/year \"2017\""
    :title "Borderless IV"
    }
-  {:institution "Average Art Magazine"
+  {:org "Average Art Magazine"
    :date "#time/year-month \"2017-08\""
    :title "Borderless IV"
    }
-  {:institution "Hack && Tell (presentation)"
+  {:org "Hack && Tell (presentation)"
    :geo "New York, NY, US"
    :date "#time/year \"2016\""
    :title "The Rhythm of Time"
    }
-  {:institution "Third Shift @ Third Space Gallery (installation)"
+  {:org "Third Shift @ Third Space Gallery (installation)"
    :geo "Saint John, NB, CA"
    :date "#time/year \"2016\""
    :title "Borderless IV"
    }
-  {:institution "FUSE @ Livestream Public (performance)"
+  {:org "FUSE @ Livestream Public (performance)"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
    :title "Borderless"
    }
-  {:institution "Music Hall of Williamsburg (performance)"
+  {:org "Music Hall of Williamsburg (performance)"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
    :title "Borderless"
    :highlight "strong"
    }
-  {:institution "ArtStars* Bits & Beats"
+  {:org "ArtStars* Bits & Beats"
    :geo "Berlin, DE"
    :date "#time/year \"2015\""
    :title "Jack and the Machine"
    }
-  {:institution "310 XNRD (installation)"
+  {:org "310 XNRD (installation)"
    :geo "London, UK"
    :date "#time/year \"2015\""
    :title "Borderless"
    }
-  {:institution "Schusev State Museum of Architecture Now&After Festival (installation)"
+  {:org "Schusev State Museum of Architecture Now&After Festival (installation)"
    :geo "Moscow, RU"
    :date "#time/year \"2015\""
    :title "Borderless"
    :highlight "strong"
    }
-  {:institution "IndieWorks"
+  {:org "IndieWorks"
    :geo "New York, NY, US"
    :date "#time/year \"2015\""
    :title "The Assassination of Chicago's Mayor"
    }
-  {:institution "Fonlad International Exhibition of Video Art"
+  {:org "Fonlad International Exhibition of Video Art"
    :geo "Cologne, DE"
    :date "#time/year \"2014\""
    :title "Borderless"
    }
-  {:institution "IFP Made in NY Media Center (installation)"
+  {:org "IFP Made in NY Media Center (installation)"
    :geo "New York, NY, US"
    :date "#time/year \"2014\""
    :title "Borderless"
    }
-  {:institution "Red Hook Film Festival"
+  {:org "Red Hook Film Festival"
    :geo "New York, NY, US"
    :date "#time/year \"2014\""
    :title "The Assassination of Chicago’s Mayor"
    }
-  {:institution "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+  {:org "ShortsHD Channel - Dish Network, DirecTV, AT&T"
    :geo "Broadcast"
    :date "#time/year \"2014\""
    :title "The Assassination of Chicago’s Mayor"
    :highlight "strong"
    }
-  {:institution "IndieFlix"
+  {:org "IndieFlix"
    :geo "Internet Distribution"
    :date "#time/year \"2014\""
    :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:institution "Filmstock Film Festival"
+  {:org "Filmstock Film Festival"
    :geo "UT, US"
    :date "#time/year \"2013\""
    :title "A Simple Reminder"
    }
-  {:institution "Hollyshorts"
+  {:org "Hollyshorts"
    :geo "New York, NY, US"
    :date "#time/year \"2013\""
    :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:institution "Filmstock Film Festival"
+  {:org "Filmstock Film Festival"
    :geo "NM, US"
    :date "#time/year \"2013\""
    :title "Refuge"
    }
-  {:institution "Beneath the Earth Film Festival"
+  {:org "Beneath the Earth Film Festival"
    :geo "Internet Distribution"
    :date "#time/year \"2012\""
    :title "Refuge"
    }
-  {:institution "Filmstock Film Festival"
+  {:org "Filmstock Film Festival"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2012\""
    :title "The Assassination of Chicago's Mayor"
    }
-  {:institution "Filmstock Film Festival"
+  {:org "Filmstock Film Festival"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2012\""
    :title "Refuge"
    }
-  {:institution "Aesthetica Film Festival"
+  {:org "Aesthetica Film Festival"
    :geo "York, UK"
    :date "#time/year \"2013\""
    :title "The Assassination of Chicago's Mayor"
    :highlight "strong"
    }
-  {:institution "Hollyshorts"
+  {:org "Hollyshorts"
    :geo "Los Angeles, CA, US"
    :date "#time/year \"2012\""
    :title "The Assassination of Chicago's Mayor"
    }
-  {:institution "MoFest"
+  {:org "MoFest"
    :geo "Chicago, IL, US"
    :date "#time/year \"2012\""
    :title "Elements • Spring to Summer to Autumn 2011"
    }
-  {:institution "Chicago Filmmakers Short Story Showcase"
+  {:org "Chicago Filmmakers Short Story Showcase"
    :geo "Chicago, IL, US"
    :date "#time/year \"2012\""
    :title "Elements • Spring to Summer to Autumn 2011"
    }
-  {:institution "Moving Pictures Film Festival"
+  {:org "Moving Pictures Film Festival"
    :geo "Quincy, IL, US"
    :date "#time/year \"2012\""
    :title "Refuge"
    }
-  {:institution "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+  {:org "ShortsHD Channel - Dish Network, DirecTV, AT&T"
    :geo "Broadcast"
    :date "#time/year \"2011\""
    :title "Refuge"
    :highlight "strong"
    }
-  {:institution "Chicago Filmmakers Short Story Film Showcase"
+  {:org "Chicago Filmmakers Short Story Film Showcase"
    :geo "Chicago, IL, US"
    :date "#time/year \"2011\""
    :title "Refuge"
    }
-  {:institution "Chicago International Film Festival"
+  {:org "Chicago International Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2010\""
    :title "Refuge"
    :highlight "strong"
    }
-  {:institution "The New Art Film Festival"
+  {:org "The New Art Film Festival"
    :geo "Champaign-Urbana, IL, US"
    :date "#time/year \"2010\""
    :title "I am Concrete"
    }
-  {:institution "Chicago Filmmakers"
+  {:org "Chicago Filmmakers"
    :geo "Chicago, IL, US"
    :date "#time/year \"2008\""
    :title "Aijo"
    }
-  {:institution "Georgetown Film Fest"
+  {:org "Georgetown Film Fest"
    :geo "Washington DC, US"
    :date "#time/year \"2006\""
    :title "Aijo"
    }
-  {:institution "S.N.O.B Film Festival"
+  {:org "S.N.O.B Film Festival"
    :geo "Boston, MA, US"
    :date "#time/year \"2006\""
    :title "Aijo"
    }
-  {:institution "River’s Edge International Film Festival"
+  {:org "River’s Edge International Film Festival"
    :geo "Paducah, KY, US"
    :date "#time/year \"2005\""
    :title "Year of the Rooster"
    }
-  {:institution "Block Museum"
+  {:org "Block Museum"
    :geo "Evanston, IL, US"
    :date "#time/year-month \"2003-11\""
    :title "Lucid Dream Ensemble"
    }
-  {:institution "Block Museum"
+  {:org "Block Museum"
    :geo "Evanston, IL, US"
    :date "#time/year-month \"2003-04\""
    :title "Lucid Dream Ensemble"
    }
-  {:institution "Chicago Museum of Contemporary Art Version Festival"
+  {:org "Chicago Museum of Contemporary Art Version Festival"
    :geo "Chicago, IL, US"
    :date "#time/year \"2003\""
    :title "Lucid Dream Ensemble"
    :highlight "strong"
    }
-  {:institution "SEAMUS National Conference"
+  {:org "SEAMUS National Conference"
    :geo "Tempe, AZ, US"
    :date "#time/year \"2003\""
    :title "Lucid Dream Ensemble"
@@ -298,26 +298,26 @@
  :honors-grants-awards
  [{:title "Ranked in the Top 5% of Unproduced Screenplays"
    :desc "Distinction"
-   :institution "The Black List"
+   :org "The Black List"
    :project :blue-island
    :date "#time/year \"2020\""
    :synopsis "Since 2005, each December, the Black List releases its annual list, a survey of the most liked unproduced screenplays of that year. The annual lists are aggregated using votes from film executives working in the film industry."
    }
   {:title "Researcher in Residence"
    :desc "Residency"
-   :institution "Signal Culture"
+   :org "Signal Culture"
    :project :borderless
    :date "#time/year \"2018\""
    }
   {:title "Space:Light Artist Residency"
    :desc "Residency"
-   :institution "Holocenter: Center for the Holographic Arts"
+   :org "Holocenter: Center for the Holographic Arts"
    :project :borderless
    :date "#time/year \"2017\""
    }
   {:title "Media Residency Program"
    :desc "New Media Production Grant"
-   :institution "Startup Germany, Medienboard"
+   :org "Startup Germany, Medienboard"
    :highlight true
    :project :jack-and-the-machine
    :date "#time/year \"2015\""
@@ -325,13 +325,13 @@
   {:title "Interactive Co/Lab"
    :geo "Detroit, MI, US"
    :desc "Competitive Selection"
-   :institution "Tribeca Film Institute"
+   :org "Tribeca Film Institute"
    :date "#time/year \"2016\""
    }
   {:title "POV Hackathon 9"
    :geo "Chicago, IL, US"
    :desc "Competitive Selection"
-   :institution "Public Broadcasting Service (PBS)"
+   :org "Public Broadcasting Service (PBS)"
    :highlight true
    :date-bgn "#time/date \"2015-08-15\""
    :date-end "#time/date \"2015-08-16\""
@@ -339,14 +339,14 @@
   {:title "POV Hackathon 7"
    :geo "New York, NY, US"
    :desc "Competitive Selection"
-   :institution "Public Broadcasting Service (PBS)"
+   :org "Public Broadcasting Service (PBS)"
    :synopsis "&ldquo;Chicago Ghosts&rdquo; What happens when a Chicago neighborhood is not only the scene of the 1893 murder of Mayor Carter Harrison, but also nature’s triumph over man’s technological hubris in 2023?Chicago Ghostsexplores the stories we share through great expanses of time and small expanses of space that connect us through the past and the present. Participants: Andrew Ritchie, D. Schmudde, Ziv Schneider"
    :date "#time/year-month \"2014-11\""
    }
   {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
    :geo "New York, NY, US"
    :desc "Film Festival Award"
-   :institution "Red Hook Film Festival"
+   :org "Red Hook Film Festival"
    :highlight true
    :project :assassination-of-chicagos-mayor
    :date "#time/year \"2014\""
@@ -354,20 +354,20 @@
   {:title "Audience Choice Award: &ldquo;A Simple Reminder&rdquo;"
    :geo "Online"
    :desc "Film Festival Award"
-   :institution "Digipops Community Film Festival"
+   :org "Digipops Community Film Festival"
    :project :simple-reminder
    :date "#time/year \"2014\""
    }
   {:title "Tribeca Hacks"
    :geo "New York, NY, US"
    :desc "Competitive Selection"
-   :institution "Tribeca Film Institute"
+   :org "Tribeca Film Institute"
    :date "#time/year \"2013\""
    }
   {:title "Best Director, Best of Fest: &ldquo;Refuge&rdquo;"
    :geo "Tempe, AZ, US"
    :desc "Film Festival Award"
-   :institution "Filmstock Film Festival"
+   :org "Filmstock Film Festival"
    :highlight true
    :project :refuge
    :date "#time/year \"2012\""
@@ -375,14 +375,14 @@
   {:title "Best Actor: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
    :geo "Tempe, AZ, US"
    :desc "Film Festival Award"
-   :institution "Filmstock Film Festival"
+   :org "Filmstock Film Festival"
    :project :assassination-of-chicagos-mayor
    :date "#time/year \"2012\""
    }
   {:title "Best Editing, Best Acting: &ldquo;Refuge&rdquo;"
    :geo "Online"
    :desc "Film Festival Award"
-   :institution "Beneath the Earth Film Festival"
+   :org "Beneath the Earth Film Festival"
    :highlight true
    :project :refuge
    :date "#time/year \"2012\""
@@ -390,43 +390,43 @@
   {:title "Educator of the Year Nomination"
    :geo "Chicago, IL, US"
    :desc "Professional Distinction"
-   :institution "International Academy of Design and Technology"
+   :org "International Academy of Design and Technology"
    :date "#time/year \"2005\""
    }
   {:title "Program for the Study of the Imagination"
    :geo "Evanston, IL, US"
    :desc "Composition Grant"
-   :institution "Northwestern University"
+   :org "Northwestern University"
    :date "#time/year \"2003\""
    }
   {:title "Interactive Award - The One Show"
    :geo "Carbondale, IL, US"
    :desc "Competitive Showcase (Bronze Placement)"
-   :institution "One Club"
+   :org "One Club"
    :date "#time/year \"1998\""
    }]
 
   :affiliations
-   [{:institution "Kitchen Table Coders: A Studio for Creative Coding"
+   [{:org "Kitchen Table Coders: A Studio for Creative Coding"
      :title "Member"}
-    {:institution "The FilmShop: A New York Collective of Independent Filmmakers"
+    {:org "The FilmShop: A New York Collective of Independent Filmmakers"
      :title "Member"}
-    {:institution "Bushwick Film Festival"
+    {:org "Bushwick Film Festival"
      :title "New Media Advisor"
      :date-bgn "#time/year \"2013\""
      :date-end "#time/year \"2014\""}
-    {:institution "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
+    {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
      :title "Volunteer Media Director and Producer"}
-    {:institution "&lt;StoryCode&gt;: An Immersive Media Meetup"
+    {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
      :title "Videography Volunteer"}]
 
   :education
-  [{:institution "Northwestern University"
+  [{:org "Northwestern University"
     :title "Masters in Music (Magna Cum Laude)"
     :desc "Electroacoustic Performance, Composition, Intermedia Studies"
     :date-bgn "#time/year \"2002\""
     :date-end "#time/year \"2004\""}
-   {:institution "University of Northern Iowa"
+   {:org "University of Northern Iowa"
     :title "Bachelor of Arts in Computer Science"
     :desc "Artificial Intelligence, Creative Computing and the Visual Arts"
     :date-bgn "#time/year \"1997\""
@@ -434,15 +434,15 @@
 
   :training
  [{:title "Dataism: a Class on Data Science in Activism"
-   :institution "School of Machines, Making &amp; Make-Believe"
+   :org "School of Machines, Making &amp; Make-Believe"
    :geo "Berlin, DE"
    :date "#time/year \"2020\""}
   {:title "German Language Training"
-   :institution "Sprachsalon"
+   :org "Sprachsalon"
    :geo "Berlin, DE"
    :date "#time/year \"2019\""}
   {:title "German Language Training"
-   :institution "DID Deutsch-Institut"
+   :org "DID Deutsch-Institut"
    :geo "Berlin, DE"
    :date "#time/year \"2005\""}]
 

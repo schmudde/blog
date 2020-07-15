@@ -1,7 +1,7 @@
 ;; TODO: INTERVIEWS
 
 {:workshops
- [{:institution "The Internet Lives Here"
+ [{:org "The Internet Lives Here"
    :geo "New York, NY, US"
    :date-bgn "#time/year \"2017\""
    :date-end "#time/year \"2019\""
@@ -10,7 +10,7 @@
    :synopsis "&quot;The Internet Lives Here&quot; is a multi-site telecommunications tour of Lower Manhattan. Participants explore the relationship between global telecommunications and power. The walk starts at the old AT&T Long Lines building in Tribeca and concludes south of Wall St. at the original ITT Building - spanning the 19th, 20th, and 21st centuries."
    :image "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
    }
-  {:institution "ClojureBridge"
+  {:org "ClojureBridge"
    :geo "New York, NY, US"
    :date-bgn "#time/date \"2017-06-03\""
    :date-end "#time/date \"2017-06-04\""
@@ -21,7 +21,7 @@
    :link-name "ClojureBridge Event Information"
    :image "clojurebridge.png"
    }
-  {:institution "Digital Humanities Festival"
+  {:org "Digital Humanities Festival"
    :geo "New York, NY, US"
    :date "#time/date \"2017-02-08\""
    :title "Co-Teacher"
@@ -33,7 +33,7 @@
    }]
 
  :conference-talks
- [{:institution "Society for the History of Technology"
+ [{:org "Society for the History of Technology"
    :geo "Milan, IT"
    :date "#time/date \"2019-10-26\""
    :title "The Emergence of Computational Thinking in Art"
@@ -42,7 +42,7 @@
    :link-name "SHOT 2019 Program"
    :image "shot-logo.png"
    }
-  {:institution "PyCon/PyData"
+  {:org "PyCon/PyData"
    :geo "Berlin, DE"
    :date "#time/date \"2019-10-10\""
    :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
@@ -52,7 +52,7 @@
    :link-name "PyConDE & PyData Profile"
    :video "https://www.youtube.com/watch?v=BAsL_cbkQDc"
    }
-  {:institution "Curry On"
+  {:org "Curry On"
    :geo "London, UK"
    :date "#time/date \"2019-07-15\""
    :title "Say What You Mean"
@@ -62,7 +62,7 @@
    :link-name "Curry On Profile"
    :video "https://www.youtube.com/watch?v=HalZfFdWuP4"
    }
-  {:institution "History of Digital Cultures"
+  {:org "History of Digital Cultures"
    :geo "University of Amsterdam, Amsterdam, NL"
    :date "#time/date \"2019-01-21\""
    :title "Enabling Digital Anthropology"
@@ -70,7 +70,7 @@
    :synopsis "A lecutre on preserving software and techniques of emulation."
    :image "uva.png"
    }
-  {:institution "Vossius Seminar's History of Knowledge Series"
+  {:org "Vossius Seminar's History of Knowledge Series"
    :geo "University of Amsterdam, Amsterdam, NL"
    :date "#time/date \"2019-01-22\""
    :title "Intended Knowledge?"
@@ -79,7 +79,7 @@
    :link-name "Vossius Center for the History of Humanities and Sciences"
    :image "uva.png"
    }
-  {:institution "Stored In Memory: The 10th Annual SIGCIS Conference"
+  {:org "Stored In Memory: The 10th Annual SIGCIS Conference"
    :geo "St. Louis, MO, US"
    :date "#time/date \"2018-10-14\""
    :title "Misuser"
@@ -89,7 +89,7 @@
    :link-name "Stored In Memory Program"
    :image "sigcis.png"
    }
-  {:institution "Strange Loop"
+  {:org "Strange Loop"
    :geo "St. Louis, MO, US"
    :date "#time/date \"2018-09-27\""
    :title "Misuser"
@@ -101,7 +101,7 @@
    }
 
 
-  {:institution "Creative Coding NYC"
+  {:org "Creative Coding NYC"
    :geo "New York, NY, US"
    :date "#time/date \"2018-02-28\""
    :title "Sound, Motion, Notation"
@@ -109,7 +109,7 @@
    :synopsis "Channa Horwitz worked on her &quot;Sonakinatography&quot; series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
    :video "https://www.youtube.com/embed/yvbKpaN1_7M"
    }
-  {:institution "Society for the History of Technology"
+  {:org "Society for the History of Technology"
    :geo "Philadelphia, PA, US"
    :date "#time/date \"2017-10-28\""
    :title "Unlikely Harbingers"
@@ -119,7 +119,7 @@
    :link-name "Computers and Futures Retrospective on Transmissions"
    :image "shot-logo.png"
    }
-  {:institution "RIXC Art Science Festival"
+  {:org "RIXC Art Science Festival"
    :geo "Riga, LV"
    :date "#time/date \"2017-10-20\""
    :title "Manifesting Human Relationships in Art and Technology"
@@ -128,7 +128,7 @@
    :link-name "RIXC: Virtualities and Realities"
    :image "rixc.jpg"
    }
-  {:institution "I T.A.K.E Unconference (Keynote)"
+  {:org "I T.A.K.E Unconference (Keynote)"
    :geo "Bucharest, RO"
    :date "#time/date \"2017-05-11\""
    :title "Aesthetics and Narrative"
@@ -138,7 +138,7 @@
    :link-name "I T.A.K.E Unconference profile"
    :video "https://www.youtube.com/embed/loksl7ED0Hg"
    }
-  {:institution "Codes & Modes Symposium"
+  {:org "Codes & Modes Symposium"
    :geo "Hunter College, New York, NY, US"
    :date "#time/date \"2017-03-18\""
    :title "The Grammar of the Internet"
@@ -147,7 +147,7 @@
    :link-name "Codes & Modes profile"
    :image "hunter-sm.jpg"
    }
-  {:institution "Clojure/conj"
+  {:org "Clojure/conj"
    :geo "Austin, TX, US"
    :date "#time/date \"2016-12-01\""
    :title "Aesthetics and Narrative"
@@ -157,7 +157,7 @@
    :link-name "Clojure/conj"
    :video "https://www.youtube.com/embed/UJ1pD-Z6PEY"
    }
-  {:institution "Vintage Computer Festival Midwest 11"
+  {:org "Vintage Computer Festival Midwest 11"
    :geo "Elk Grove, IL, US"
    :date "#time/date \"2016-09-10\""
    :title "Accidentally Arming a Hacker Revolution"
@@ -167,7 +167,7 @@
    :link-name "Vintage Computer Festival on YouTube"
    :video "https://www.youtube.com/embed/1lBaqC6kKEo"
    }
-  {:institution "Pecha Kucha"
+  {:org "Pecha Kucha"
    :geo "Berlin, DE"
    :date "#time/date \"2015-07-08\""
    :title "Computers & Intimacy"
@@ -177,7 +177,7 @@
    :link-name "Pecha Kucha Slides &amp; Audio"
    :image "intimacy.jpg"
    }
-  {:institution "C-Base: Home of the Chaos Computer Club"
+  {:org "C-Base: Home of the Chaos Computer Club"
    :geo "Berlin, DE"
    :date "#time/date \"2015-07-07\""
    :title "Harvesting Human Intelligence"
@@ -187,7 +187,7 @@
    :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
    :video "https://player.vimeo.com/video/132857801"
    }
-  {:institution "Music Composition for the Screen"
+  {:org "Music Composition for the Screen"
    :geo "Columbia College Chicago, Chicago, IL, US"
    :date "#time/year-month \"2009-10\""
    :title "Hybrid Scores and Atonality"
@@ -197,7 +197,7 @@
    :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
    :image "ccc.jpg"
    }
-  {:institution "Midwest Independent Film Festival"
+  {:org "Midwest Independent Film Festival"
    :geo "Chicago, IL, US"
    :date "#time/year-month \"2009-09\""
    :title "Low Budget Filmmaking (Moderator)"
@@ -206,7 +206,7 @@
    :link-name "D. Schm&uuml;dde: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
    :image "miff.png"
    }
-  {:institution "Chicago Actors Casting Summit"
+  {:org "Chicago Actors Casting Summit"
    :geo "Chicago, IL, US"
    :date-bgn "#time/year-month \"2008-07\""
    :date-end "#time/year-month \"2009-07\""
