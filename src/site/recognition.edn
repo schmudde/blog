@@ -5,9 +5,9 @@
    :desc "Independent blog regarding the metaphysics of information, art, and narrative"
    :link "https://schmud.de/"
    ;; :link "http://beyondthefra-me.tumblr.com, 57,000 Subscribers"
-   :date-bgn "#time/year \"2011\""
-   :date-end "#time/year \"2020\""
-   :stats "54,909 subscribers, established 2011"}
+   :date-bgn "#time/year-month \"2011-01\""
+   :date-end "#time/year-month \"2020-12\""
+   :stats "54,909 subscribers"}
   {:title "Computing For the Masses"
    :publication "Prophets Of Computing"
    :publisher "Association for Computing Machinery"

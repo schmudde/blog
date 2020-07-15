@@ -10,7 +10,7 @@
    :title "Developer Advocate"
    :technology "Clojure, ClojureScript, Datomic, Python, R, Docker"
    :desc "An open science platform for reproducible research using automatically versioned polyglot notebooks."
-   :synopsis "Developed the user group management feature from database calls to front end layout~ Developed user analytics notebooks to set and achieve platform traffic and conversion goals~ Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;, second only to machine learning notebooks~ Worked cross-functionally to enhance user on-boarding~ Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC~ Wrote deep dives into core product concepts, &quot;Computational Environments,&quot; &quot;Transclusions,&quot; and &quot;Remixing&quot; (branching and version control)~ Helped structure and write Nextjournal's documentation~"
+   :synopsis "Developed the user group management feature from database calls to front-end layout~ Developed user analytics notebooks to set and achieve platform traffic and conversion goals~ Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;, second only to machine learning notebooks~ Worked cross-functionally to enhance user on-boarding~ Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC~ Wrote deep dives into core product concepts, &quot;Computational Environments,&quot; &quot;Transclusions,&quot; and &quot;Remixing&quot; (branching and version control)~ Helped structure and write Nextjournal's documentation~"
    :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
    }
   {:org "Beyond the Frame"
@@ -35,9 +35,9 @@
    :geo "New York, NY, US"
    :date-bgn "#time/year-month \"2013-12\""
    :date-end "#time/year-month \"2015-04\""
-   :title "Front End Developer"
+   :title "Front-End Developer"
    :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub"
-   :desc "A publishing web site with 40,000+ members and 100K+ uniques/month."
+   :desc "A publishing website with 40,000+ members and 100K+ uniques/month."
    :synopsis "Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
    }
   {:org "F#"

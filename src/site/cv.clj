@@ -9,18 +9,14 @@
             [cljc.java-time.year :as year]
             [cljc.java-time.year-month :as year-month]))
 
-;; TODO: add interviews and press
-
 (def recognition (-> "src/site/recognition.edn" slurp edn/read-string))
 (def projects (-> "src/site/projects.edn" slurp edn/read-string))
 (def talks-workshops (-> "src/site/talks-workshops.edn" slurp edn/read-string))
 (def employment-faculty (-> "src/site/employment-faculty.edn" slurp edn/read-string))
 
-;;;;;;;
-
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
-  ([date-time ]
+  ([date-time]
    (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
      (cond
        (= (type java-time) java.time.Year) (str (year/get-value java-time))
@@ -37,7 +33,7 @@
 (defn java-time->full-date-str [date-time]
   (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
     (cond
-      (= (type java-time) java.time.Year) (str "Upcoming " (year/get-value java-time))
+      (= (type java-time) java.time.Year) (str (year/get-value java-time))
       (= (type java-time) java.time.LocalDate) (str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy"))))))
 
 ;;;;;;;;;;;;;;;;
@@ -45,23 +41,13 @@
 ;; (defprotocol edn->hiccup-output (output [x] "generate x"))
 ;; (deftype date-first [date title]
 ;;    edn->hiccup-output )
-;;
-
-
-(deftype date-first-display [date])
-(deftype title-first-display [title])
-
-(defmulti table class)
-(defmethod table date-first-display [org]
-  org)
-(defmethod table title-first-display [org]
-  org)
 
 (defn edn->hiccup [strong & rest]
   [:div [:strong strong " "]
-   (->> rest
-        (map #(into [:span % " "]))
-        (into [:span ]))])
+   (->> (butlast rest)
+        (map #(into (when %[:span % ", "])))
+        (into [:span ]))
+   [:span (last rest)]])
 
 (defn edn->hiccup-work [strong & rest]
   [:div [:strong strong " "]
@@ -69,23 +55,65 @@
         (map #(into [:span % " "]))
         (into [:span ]))])
 
-(defn edn->hiccup-pub [strong publication & rest]
-  [:div
-   [:strong "&ldquo;" strong "&rdquo; "]
-   [:em publication " "]
-   (->> rest
-        (map #(into [:span % " "]))
-        (into [:span ]))])
-
-(defn edn->hiccup-start-with-date [date strong geo title & rest]
+(defn edn->hiccup-start-with-date [date strong & rest]
   [:div
    [:span date " "]
    [:strong strong " "]
-   [:span geo ", "]
-   [:em title " "]
-   (->> rest
-        (map #(into [:span % " "]))
-        (into [:span ]))])
+   (->> (butlast rest)
+        (map #(into [:span % ", "]))
+        (into [:span ]))
+   [:span (last rest)]])
+
+(defmulti make-table (fn [x] (first x)))
+
+(defmethod make-table :workshops [x]
+  (let [workshops (second x)]
+    (->> workshops
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %) (:desc %)))
+         (into [:div]))))
+
+(defmethod make-table :conference-exhibs [x]
+  (let [presentations (second x)]
+    (->> presentations
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (str "&ldquo;" (:title %) "&rdquo;")))
+         (into [:div]))))
+
+(defmethod make-table :affiliations [x]
+  (let [affiliations (second x)]
+    (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))))
+
+(defmethod make-table :publications [x]
+  (let [publications (second x)]
+    (into [:div ] (map #(edn->hiccup (str "&ldquo;" (:title %) "&rdquo;")
+                                     (when (:co-authors %) (str "with " (:co-authors %)))
+                                     (when (:publication %)
+                                       [:span
+                                        [:em (:publication %)]
+                                        (when (:editor %) (str " ed. by " (:editor %)))])
+                                     (:publisher %)
+                                     (java-time->full-date-str (:date %))
+                                     #_(if (:date %) (java-time->full-date-str (:date %)) (java-time->str (:date-bgn %) (:date-end %)))
+                                     (when (:stats %) (str "(" (:stats %) ")"))) publications))))
+
+(defmethod make-table :in-the-media [x]
+  (let [in-the-media (second x)]
+    (into [:div ] (map #(edn->hiccup
+                         (str "&ldquo;" (:title %) "&rdquo;")
+                         [:span
+                          (:publication %)
+                          (when (or (:editor %) (:publisher %)) (str " by " (or (:editor %) (:publisher %))))
+                          (when (:desc %) (str " (" (:desc %) ")"))]
+                         (java-time->full-date-str (:date %))) in-the-media))))
+
+;; these italicize the final entry. a common interface?
+(defmethod make-table :education [x]
+  (let [education (second x)]
+    (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:org %) (:title %) [:em (:desc %)]) education))))
+
+(defmethod make-table :honors-grants-awards [x]
+  (let [honors (second x)]
+    (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) [:em (:desc %)]) honors))))
+
 
 ;;;;;;;;;;;;;;;;;;;;;
 
@@ -107,14 +135,10 @@
 (defn talks-workshops->hiccup []
   (let [{:keys [workshops conference-talks]} talks-workshops]
     [:div
-     [:h3 "Conference Presentations"] ;; TODO: switch title from italics to quotes
-     (->> conference-talks
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %)))
-          (into [:div]))
-     [:h3 "Workshop"]
-     (->> workshops
-          (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %) (:desc %)))
-          (into [:div]))]))
+     [:h3 "Conference Presentations"]
+     (make-table [:conference-exhibs conference-talks])
+     [:h3 "Workshops"]
+     (make-table [:workshops workshops])]))
 
 (defn projects->hiccup []
   (let [project-data (vals projects)]
@@ -139,25 +163,22 @@
   (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]
     [:div
      [:h3 "Publications"]
-     (into [:div ] (map #(edn->hiccup-pub (:title %) (:publication %) (:publisher %) (java-time->full-date-str (:date %)) (:stats %)) publications))
+     (make-table [:publications publications])
      [:h3 "Exhibitions"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date %)) (:org %) (:geo %) (:title %)) exhibitions))
+     (make-table [:conference-exhibs exhibitions])
      [:h3 "Honors"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) (:desc %)) honors-grants-awards))
+     (make-table [:honors-grants-awards honors-grants-awards])
      [:h3 "Education"]
-     (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (:date-end %)) (:org %) (:title %) (:desc %)) education))
+     (make-table [:education education])
      [:h3 "Further Training"]
      (into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
      [:h3 "Affiliations"]
-     (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))
+     (make-table [:affiliations affiliations])
      [:h3 "In the Media"]
-     (into [:div ] (map #(edn->hiccup (:title %) (:publication %) (:editor %) (:publisher %) (:type %) (java-time->full-date-str (:date %))) in-the-media))
+     (make-table [:in-the-media in-the-media])
      ]))
 
-
-
 ;;;;;;;;;;;;;;;;;;
-
 
 (defn make-cv []
   [:div
@@ -186,10 +207,9 @@
 
 (comment
 
-  (let [{:keys [exhibitions honors-grants-awards affiliations education training]} recognition] (first honors-grants-awards))
-
   (let [{:keys [workshops conference-talks]} talks-workshops] (first conference-talks))
   (keys projects)
+
   (get-in projects [:jack-and-the-machine :title])
 
   (reduce #(str %1 (str [:span %2])) "" '("place" "piece" "past"))
@@ -225,11 +245,6 @@
 
   (let [{:keys [conference-talks]} talks-workshops]
     (->> conference-talks
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
-         (into [:div])))
-
-  (let [{:keys [conference-talks]} talks-workshops]
-    (->> conference-talks
          (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
          (into [:div])))
 
@@ -244,4 +259,5 @@
        (#(conj % [:span (last rest) " "]) )
        (into [:span ]))
 
+  (make-list ((first (employment-faculty :employee)) :synopsis))
   )
