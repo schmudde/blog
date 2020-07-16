@@ -26,9 +26,11 @@
   ([date-time-1 date-time-2]
    (let [java-time-1 (clojure.edn/read-string {:readers time-read/tags} date-time-1)
          java-time-2 (clojure.edn/read-string {:readers time-read/tags} date-time-2)]
-     (str (year-month/format java-time-1 (formatter/of-pattern "MMMM yyyy"))
-          " - " (year-month/format java-time-2 (formatter/of-pattern "MMMM yyyy"))
-         ))))
+     (cond
+       (= (type java-time-1) java.time.Year) (str (year/get-value java-time-1) " - " (year/get-value java-time-2))
+       (= (type java-time-1) java.time.YearMonth) (str (year-month/format java-time-1 (formatter/of-pattern "MMMM yyyy"))
+                                                       " - " (year-month/format java-time-2 (formatter/of-pattern "MMMM yyyy")))
+       :else java-time-1))))
 
 (defn java-time->full-date-str [date-time]
   (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
@@ -60,7 +62,7 @@
    [:span date " "]
    [:strong strong " "]
    (->> (butlast rest)
-        (map #(into [:span % ", "]))
+        (map #(into (when %[:span % ", "])))
         (into [:span ]))
    [:span (last rest)]])
 
@@ -80,7 +82,10 @@
 
 (defmethod make-table :affiliations [x]
   (let [affiliations (second x)]
-    (into [:div ] (map #(edn->hiccup (:org %) (:title %)) affiliations))))
+    (into [:div ] (map #(edn->hiccup (:org %) (:geo %) (:title %)
+                                     (if (:date-bgn %)
+                                       (java-time->str (:date-bgn %) (:date-end %))
+                                       (java-time->str (:date %)))) affiliations))))
 
 (defmethod make-table :publications [x]
   (let [publications (second x)]
@@ -112,7 +117,10 @@
 
 (defmethod make-table :honors-grants-awards [x]
   (let [honors (second x)]
-    (into [:div ] (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:title %) (:org %) [:em (:desc %)]) honors))))
+    (into [:div ] (map #(edn->hiccup-start-with-date
+                         (java-time->str (or (:date %) (:date-end %)))
+                         (:title %) (:org %)
+                         (:geo %) [:em (:desc %)]) honors))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -121,14 +129,12 @@
   "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."
   (let [single-point (re-find matcher-object)]
     (if (some? single-point)
-      (itemize-list matcher-object (str points [:li {:class "qualification"} single-point]))
+      (itemize-list matcher-object (conj points [:li {:class "qualification"} single-point]))
       points)))
 
 (defn make-list [synopsis]
   "I create a HTML list. I expect a string of data delimited by semicolons."
-  [:ul {:class "qualifications"} (itemize-list (re-matcher #"[^~]+" synopsis) "")])
-
-#_(make-list (:synopsis (first (:faculty employment-faculty))))
+  [:span {:class "qualifications"} (itemize-list (re-matcher #"[^~]+" synopsis) [:ul ])])
 
 ;;;;;;;;;;;;;;;;
 
@@ -152,12 +158,12 @@
      (into [:div ]
            (map #(edn->hiccup-work (:org %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
-                                   (:desc %) (:geo %) (:synopsis %)) faculty))
+                                   (:desc %) (:geo %) (make-list (:synopsis %))) faculty))
      [:h2 "Employment"]
      (into [:div ]
            (map #(edn->hiccup-work (:org %) (:title %)
                                    (java-time->str (:date-bgn %) (:date-end %))
-                                   (:desc %) (:geo %) (:synopsis %)) employee))]))
+                                   (:desc %) (:geo %) (make-list (:synopsis %))) employee))]))
 
 (defn recognition->hiccup []
   (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]

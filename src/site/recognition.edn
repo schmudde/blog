@@ -296,7 +296,7 @@
    }]
 
  :honors-grants-awards
- [{:title "Ranked in the Top 5% of Unproduced Screenplays"
+ [{:title "Ranked Top 5% of Screenplays: &ldquo;Blue Island&rdquo;"
    :desc "Distinction"
    :org "The Black List"
    :project :blue-island
@@ -304,29 +304,32 @@
    :synopsis "Since 2005, each December, the Black List releases its annual list, a survey of the most liked unproduced screenplays of that year. The annual lists are aggregated using votes from film executives working in the film industry."
    }
   {:title "Researcher in Residence"
+   :geo "Owego, NY, US"
    :desc "Residency"
    :org "Signal Culture"
    :project :borderless
    :date "#time/year \"2018\""
    }
   {:title "Space:Light Artist Residency"
+   :geo "New York, NY, US"
    :desc "Residency"
    :org "Holocenter: Center for the Holographic Arts"
    :project :borderless
    :date "#time/year \"2017\""
-   }
-  {:title "Media Residency Program"
-   :desc "New Media Production Grant"
-   :org "Startup Germany, Medienboard"
-   :highlight true
-   :project :jack-and-the-machine
-   :date "#time/year \"2015\""
    }
   {:title "Interactive Co/Lab"
    :geo "Detroit, MI, US"
    :desc "Competitive Selection"
    :org "Tribeca Film Institute"
    :date "#time/year \"2016\""
+   }
+  {:title "Media Residency Program"
+   :geo "Berlin, DE"
+   :desc "New Media Production Grant"
+   :org "Startup Germany, Medienboard"
+   :highlight true
+   :project :jack-and-the-machine
+   :date "#time/year \"2015\""
    }
   {:title "POV Hackathon 9"
    :geo "Chicago, IL, US"
@@ -352,7 +355,6 @@
    :date "#time/year \"2014\""
    }
   {:title "Audience Choice Award: &ldquo;A Simple Reminder&rdquo;"
-   :geo "Online"
    :desc "Film Festival Award"
    :org "Digipops Community Film Festival"
    :project :simple-reminder
@@ -380,7 +382,6 @@
    :date "#time/year \"2012\""
    }
   {:title "Best Editing, Best Acting: &ldquo;Refuge&rdquo;"
-   :geo "Online"
    :desc "Film Festival Award"
    :org "Beneath the Earth Film Festival"
    :highlight true
@@ -407,23 +408,43 @@
    }]
 
   :affiliations
-   [{:org "Kitchen Table Coders: A Studio for Creative Coding"
-     :title "Member"}
-    {:org "The FilmShop: A New York Collective of Independent Filmmakers"
-     :title "Member"}
-    {:org "Bushwick Film Festival"
-     :title "New Media Advisor"
-     :date-bgn "#time/year \"2013\""
-     :date-end "#time/year \"2014\""}
-    {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
-     :title "Volunteer Media Director and Producer"}
-    {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
-     :title "Videography Volunteer"}]
+ [{:org "Ruca: A Business Co-Operative"
+   :title "Member"
+   :date "#time/year \"2020\""}
+  {:org "Society for the History of Technology"
+   :title "Member"
+   :date-bgn "#time/year \"2016\""
+   :date-end "#time/year \"2020\""}
+  {:org "Kitchen Table Coders: A Studio for Creative Coding"
+   :title "Member"
+   :date-bgn "#time/year \"2016\""
+   :date-end "#time/year \"2019\""
+   :geo "New York, NY, US"}
+  {:org "The FilmShop: A New York Collective of Independent Filmmakers"
+   :title "Member"
+   :date-bgn "#time/year \"2014\""
+   :date-end "#time/year \"2017\""
+   :geo "New York, NY, US"}
+  {:org "Bushwick Film Festival"
+   :title "New Media Advisor"
+   :date-bgn "#time/year \"2013\""
+   :date-end "#time/year \"2014\""
+   :geo "New York, NY, US"}
+  {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
+   :title "Volunteer Media Director and Producer"
+   :date-bgn "#time/year \"2013\""
+   :date-end "#time/year \"2014\""
+   :geo "Chicago, IL, US"}
+  {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
+   :title "Videography Volunteer"
+   :date-bgn "#time/year \"2013\""
+   :date-end "#time/year \"2014\""
+   :geo "New York, NY, US"}]
 
   :education
   [{:org "Northwestern University"
     :title "Masters in Music (Magna Cum Laude)"
-    :desc "Electroacoustic Performance, Composition, Intermedia Studies"
+    :desc "Thesis: Electroacoustic Interpretations of Popular Music"
     :date-bgn "#time/year \"2002\""
     :date-end "#time/year \"2004\""}
    {:org "University of Northern Iowa"

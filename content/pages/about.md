@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2020-06-07
+date-modified: 2020-07-15
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -80,7 +80,9 @@ I live in [Emacs](https://www.gnu.org/software/emacs/) and [Weechat](https://wee
 
 ### This Website
 
-The website is a collection of thoughts that cover strategies for #[doing](/tags/doing.html), the #[humanities](/tags/humanities.html), #[personal](/tags/personal.html) updates, #[science](/tags/science.html) and informatics, the #[suchness](/tags/suchness.html) of knowledge, and #[tools](/tags/tools.html) for thinking. It was made using:
+*Beyond the Frame* was established on Tumblr in 2011. The service, established in 2007, was experiencing significant growth and featured my humble blog, which made me pretty popular for awhile. I'll import those old posts to this version of the blog in due time.
+
+The current website is a collection of thoughts that cover strategies for #[doing](/tags/doing.html), the #[humanities](/tags/humanities.html), #[personal](/tags/personal.html) updates, #[science](/tags/science.html) and informatics, the #[suchness](/tags/suchness.html) of knowledge, and #[tools](/tags/tools.html) for thinking. It was made using:
 
 - Blogging: [Perun](https://perun.io/)
 - Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)

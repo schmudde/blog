@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2020-06-07
+date-modified: 2020-07-15
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -37,6 +37,8 @@ A secret book project.
 
 - *Bach: Music in the Castle of Heaven*
 - *Lankavatara Sutra*
+
+I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers.
 
 ---
 
