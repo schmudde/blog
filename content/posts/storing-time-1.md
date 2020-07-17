@@ -9,7 +9,6 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-07-14
 date-modified: 2020-07-14
-date-published: 2020-07-14
 in-language: en
 keywords: clojure, time, modeling
 tags:

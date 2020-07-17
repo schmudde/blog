@@ -48,14 +48,14 @@
 ;;    edn->hiccup-output )
 
 (defn edn->hiccup [strong & rest]
-  [:div [:strong strong " "]
+  [:p [:strong strong " "]
    (->> (butlast rest)
         (map #(into (when %[:span % ", "])))
         (into [:span ]))
    [:span (last rest)]])
 
 (defn edn->hiccup-work [title date synopsis & rest]
-  [:div [:span [:strong title] " " date]
+  [:p [:span [:strong title] " " date]
    [:br ]
    (->> (butlast rest)
         (map #(into [:span % ", "]))
@@ -64,7 +64,7 @@
    [:span synopsis]])
 
 (defn edn->hiccup-start-with-date [date strong & rest]
-  [:div
+  [:p
    [:span date " "]
    [:strong strong " "]
    (->> (butlast rest)
@@ -167,6 +167,7 @@
 (defn talks-workshops->hiccup []
   (let [{:keys [workshops conference-talks]} talks-workshops]
     [:div
+     [:h2 "Talks &amp; Workshops"]
      [:h3 "Conference Presentations"]
      (make-table [:conference-exhibs conference-talks])
      [:h3 "Workshops"]
@@ -182,26 +183,28 @@
     [:div
      [:h2 "Academic Work History"]
      (make-table [:employment faculty])
-     [:h2 "Employment"]
+     [:h2 "Further Employment"]
      (make-table [:employment employee])]))
 
 (defn recognition->hiccup []
   (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]
     [:div
+     [:h2 "Publications &amp; Exhibitions"]
      [:h3 "Publications"]
      (make-table [:publications publications])
      [:h3 "Exhibitions"]
      (make-table [:conference-exhibs exhibitions])
-     [:h3 "Honors"]
-     (make-table [:honors-grants-awards honors-grants-awards])
+     [:h2 "Institutional Credentials"]
      [:h3 "Education"]
      (make-table [:education education])
+     [:h3 "Honors &amp; Grants"]
+     (make-table [:honors-grants-awards honors-grants-awards])
+     [:h2 "Appearances in the Media"]
+     (make-table [:in-the-media in-the-media])
+     [:h2 "Affiliations"]
+     (make-table [:affiliations affiliations])
      #_[:h3 "Further Training"]
      #_(into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
-     [:h3 "Affiliations"]
-     (make-table [:affiliations affiliations])
-     [:h3 "Appearances in the Media"]
-     (make-table [:in-the-media in-the-media])
      ]))
 
 ;;;;;;;;;;;;;;;;;;
@@ -209,12 +212,10 @@
 (defn make-cv []
   [:div
    [:div (employment-facutly->hiccup)]
-   [:h2 "Talks &amp; Workshops"]
    [:div (talks-workshops->hiccup)]
-   [:h2 "Honors etc.."]
    [:div (recognition->hiccup)]
-   [:h2 "Projects"]
-   [:div (projects->hiccup)]])
+   #_[:h2 "Projects"]
+   #_[:div (projects->hiccup)]])
 
 (defn print-cv []
   (spit "temp.html"

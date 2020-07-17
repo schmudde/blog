@@ -9,7 +9,6 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-07-15
 date-modified: 2020-07-15
-date-published: 2020-07-15
 in-language: en
 keywords: clojure, edn, java-time, chris marker, cinema, archiving
 tags:

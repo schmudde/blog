@@ -409,6 +409,7 @@
    :date "#time/year \"1998\""
    }]
 
+ ;; TODO: Add SCICLOJ
   :affiliations
  [{:org "Ruca: A Business Co-Operative"
    :title "Member"
