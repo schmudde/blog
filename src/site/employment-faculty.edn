@@ -9,7 +9,7 @@
    :date-end "#time/year-month \"2020-01\""
    :title "Developer Advocate"
    :technology "Clojure, ClojureScript, Datomic, Python, R, Docker"
-   :desc "An open science platform for reproducible research."
+   :desc "an open science platform for reproducible research"
    :synopsis "Developed the user group management feature from database calls to front-end layout~ Developed user analytics notebooks to set and achieve platform traffic and conversion goals~ Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;, second only to machine learning notebooks~ Worked cross-functionally to enhance user on-boarding~ Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC~ Wrote deep dives into core product concepts, &quot;Computational Environments,&quot; &quot;Transclusions,&quot; and &quot;Remixing&quot; (branching and version control)~ Helped structure and write Nextjournal's documentation~"
    :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
    }
@@ -19,7 +19,7 @@
    :date-end "#time/year-month \"2019-08\""
    :title "Creative Technologist"
    :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X"
-   :desc "A new media company creating interactive experiences."
+   :desc "a new media company creating interactive experiences"
    :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students~ Negotiated distribution and exhibition agreements for interactive installations, online experiences, and short films~ Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts~ Granted residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin)~ Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014~ Produced documentary pilot, &quot;Souvenir Junk Drawer,&quot; for Soulpancake~ Developed and reviewed feature film scripts for Throughline Films~ Awarded multiple &quot;Best of Festival&quot; distinctions~"
    }
   {:org "Penguin Random House"
@@ -28,7 +28,7 @@
    :date-end "#time/year-month \"2016-04\""
    :title "Freelance Developer"
    :technology "PHP, JavaScript, Wordpress"
-   :desc "A new media company creating interactive experiences."
+   :desc "a new media company creating interactive experiences"
    :synopsis "Developer of high-profile author sites like Arianna Huffington and Carol Burnett as well as imprints like Hogarth Shakespeare for Crown Publishing Group~ Created accurate bids for work with a structured client review and delivery process~ Wrote custom code for Wordpress sites and conformed to corporate security standards~"
    }
   {:org "NetGalley"
@@ -37,7 +37,7 @@
    :date-end "#time/year-month \"2015-04\""
    :title "Front-End Developer"
    :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub"
-   :desc "A publishing website and community for preprint digital books."
+   :desc "a publishing website and community for preprint digital books"
    :synopsis "40,000+ members and 100K+ uniques/month~ Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
    }
   {:org "F#"
@@ -46,7 +46,7 @@
    :date-end "#time/year-month \"2012-12\""
    :title "Digital Project Manager/Digital Producer"
    :technology "Jira, Spotify API"
-   :desc "A digital audio marketing firm."
+   :desc "a digital audio marketing firm"
    :synopsis "Managed the creation of interactive advertising campaigns~ Led ideation process for wireframe, development, creative, and launch~ Led agile production process that included teams on three continents highlighting cultural awareness, language, and time zone management concerns~ Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify~"
    }]
 :faculty

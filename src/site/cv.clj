@@ -1,5 +1,6 @@
 (ns site.cv
   (:require [clojure.edn :as edn]
+            [clojure.string :as str]
             [hiccup.page :as page]
             [site.core :as layout]
             [cljc.java-time.local-date :as ld]
@@ -13,6 +14,8 @@
 (def projects (-> "src/site/projects.edn" slurp edn/read-string))
 (def talks-workshops (-> "src/site/talks-workshops.edn" slurp edn/read-string))
 (def employment-faculty (-> "src/site/employment-faculty.edn" slurp edn/read-string))
+
+(defn make-quote-str [x] (str "&ldquo;" x "&rdquo;"))
 
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
@@ -51,11 +54,14 @@
         (into [:span ]))
    [:span (last rest)]])
 
-(defn edn->hiccup-work [strong & rest]
-  [:div [:strong strong " "]
-   (->> rest
-        (map #(into [:span % " "]))
-        (into [:span ]))])
+(defn edn->hiccup-work [title date synopsis & rest]
+  [:div [:span [:strong title] " " date]
+   [:br ]
+   (->> (butlast rest)
+        (map #(into [:span % ", "]))
+        (into [:span ]))
+   [:span (last rest)]
+   [:span synopsis]])
 
 (defn edn->hiccup-start-with-date [date strong & rest]
   [:div
@@ -66,7 +72,40 @@
         (into [:span ]))
    [:span (last rest)]])
 
+
+(defn itemize-list [matcher-object points]
+  "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."
+  (let [single-point (re-find matcher-object)]
+    (if (some? single-point)
+      (itemize-list matcher-object (conj points [:li {:class "qualification"} single-point]))
+      points)))
+
+(defn make-list [synopsis]
+  "I create a HTML list. I expect a string of data delimited by semicolons."
+  [:span {:class "qualifications"} (itemize-list (re-matcher #"[^~]+" synopsis) [:ul ])])
+
+(defn list-authors
+  "1. Always add my name.
+   2. If there is more than one author, the data presumably has an 'and' in the string: 'Ineque Sisquana and Sarah Conner': 'Schmudde, David, Ineque Sisquana and Sarah Conner.'
+   3. If there is only one other author, add the 'and': 'Schmudde, David and Alex Smith'.
+  WARNING: if the name contains an 'and' ('AlexANDer'), then this will not work. It really should be a regex."
+  [authors]
+  (if (some? authors)
+    (if (str/includes? authors "and")
+      (str "Schmudde, David, " authors)
+      (str "Schmudde, David and " authors))
+    "Schmudde, David"))
+
+;;;;;;;;;;;;;;;;;;;;;
+
 (defmulti make-table (fn [x] (first x)))
+
+(defmethod make-table :employment [x]
+  (let [employment (second x)]
+    (into [:div ]
+          (map #(edn->hiccup-work (:title %) (java-time->str (:date-bgn %) (:date-end %))
+                                  (make-list (:synopsis %))
+                                  (:org %) (:desc %) (:geo %)) employment))))
 
 (defmethod make-table :workshops [x]
   (let [workshops (second x)]
@@ -77,7 +116,7 @@
 (defmethod make-table :conference-exhibs [x]
   (let [presentations (second x)]
     (->> presentations
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (str "&ldquo;" (:title %) "&rdquo;")))
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (make-quote-str (:title %))))
          (into [:div]))))
 
 (defmethod make-table :affiliations [x]
@@ -88,26 +127,27 @@
                                        (java-time->str (:date %)))) affiliations))))
 
 (defmethod make-table :publications [x]
-  (let [publications (second x)]
-    (into [:div ] (map #(edn->hiccup (str "&ldquo;" (:title %) "&rdquo;")
-                                     (when (:co-authors %) (str "with " (:co-authors %)))
-                                     (when (:publication %)
-                                       [:span
-                                        [:em (:publication %)]
-                                        (when (:editor %) (str " ed. by " (:editor %)))])
-                                     (:publisher %)
-                                     (java-time->full-date-str (:date %))
-                                     #_(if (:date %) (java-time->full-date-str (:date %)) (java-time->str (:date-bgn %) (:date-end %)))
-                                     (when (:stats %) (str "(" (:stats %) ")"))) publications))))
+  (let [publications (second x)
+        title (fn [title editor] (str (make-quote-str title) (when editor (str " in " editor  " (ed)")) ", "))
+        publisher (fn [publisher] (when publisher (str publisher  ", ")))
+        stats (fn [stats] (when stats (str "(" stats ")")))]
+    (into [:ul ] (map #(vector :li (list-authors (:co-authors %)) ", "
+                               (title (:title %) (:editor %))
+                               [:em (:publication %) ", "]
+                               (publisher (:publisher %))
+                               (java-time->full-date-str (:date %)) " "
+                               (stats (:stats %))) publications))))
+
 
 (defmethod make-table :in-the-media [x]
-  (let [in-the-media (second x)]
-    (into [:div ] (map #(edn->hiccup
-                         (str "&ldquo;" (:title %) "&rdquo;")
-                         [:span
-                          (:publication %)
-                          (when (or (:editor %) (:publisher %)) (str " by " (or (:editor %) (:publisher %))))
-                          (when (:desc %) (str " (" (:desc %) ")"))]
+  (let [in-the-media (second x)
+        publication (fn [publication editor publisher desc]
+                      [:span [:em publication]
+                       (when (or editor publisher) (str " by " (or editor publisher)))
+                       (when desc (str " (" desc ")")) ", "])]
+    (into [:ul ] (map #(vector :li
+                         (make-quote-str (:title %)) ", "
+                         (publication (:publication %) (:editor %) (:publisher %) (:desc %))
                          (java-time->full-date-str (:date %))) in-the-media))))
 
 ;; these italicize the final entry. a common interface?
@@ -121,20 +161,6 @@
                          (java-time->str (or (:date %) (:date-end %)))
                          (:title %) (:org %)
                          (:geo %) [:em (:desc %)]) honors))))
-
-
-;;;;;;;;;;;;;;;;;;;;;
-
-(defn itemize-list [matcher-object points]
-  "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."
-  (let [single-point (re-find matcher-object)]
-    (if (some? single-point)
-      (itemize-list matcher-object (conj points [:li {:class "qualification"} single-point]))
-      points)))
-
-(defn make-list [synopsis]
-  "I create a HTML list. I expect a string of data delimited by semicolons."
-  [:span {:class "qualifications"} (itemize-list (re-matcher #"[^~]+" synopsis) [:ul ])])
 
 ;;;;;;;;;;;;;;;;
 
@@ -155,15 +181,9 @@
   (let [{:keys [employee faculty]} employment-faculty]
     [:div
      [:h2 "Academic Work History"]
-     (into [:div ]
-           (map #(edn->hiccup-work (:org %) (:title %)
-                                   (java-time->str (:date-bgn %) (:date-end %))
-                                   (:desc %) (:geo %) (make-list (:synopsis %))) faculty))
+     (make-table [:employment faculty])
      [:h2 "Employment"]
-     (into [:div ]
-           (map #(edn->hiccup-work (:org %) (:title %)
-                                   (java-time->str (:date-bgn %) (:date-end %))
-                                   (:desc %) (:geo %) (make-list (:synopsis %))) employee))]))
+     (make-table [:employment employee])]))
 
 (defn recognition->hiccup []
   (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]
@@ -176,11 +196,11 @@
      (make-table [:honors-grants-awards honors-grants-awards])
      [:h3 "Education"]
      (make-table [:education education])
-     [:h3 "Further Training"]
-     (into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
+     #_[:h3 "Further Training"]
+     #_(into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
      [:h3 "Affiliations"]
      (make-table [:affiliations affiliations])
-     [:h3 "In the Media"]
+     [:h3 "Appearances in the Media"]
      (make-table [:in-the-media in-the-media])
      ]))
 
@@ -203,8 +223,6 @@
                      [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}]
                      [:main {:role "main"}
                       (make-cv)]])))
-
-(print-cv) ;; TODO: Delete
 
 (defn render [{global-meta :meta :as meta}]
   (let [page-title "Curriculum Vitae"
@@ -254,16 +272,21 @@
          (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
          (into [:div])))
 
-  (def temp   (let [{:keys [conference-talks]} talks-workshops]
-                (->> conference-talks
-                     )))
-
-  (#(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %)) (first temp))
-
   (->> (pop rest)
        (mapv #(into [:span % ", "]))
        (#(conj % [:span (last rest) " "]) )
        (into [:span ]))
 
   (make-list ((first (employment-faculty :employee)) :synopsis))
+
+  (#(vector :div (list-authors (:co-authors %))
+            (make-quote-str (:title %))
+            (when (:editor %) (str "in " (:editor %) " (ed), "))
+            [:em (:publication %)]
+            (:publisher %)
+            (java-time->full-date-str (:date %))
+            (when (:stats %) (str "(" (:stats %) ")"))
+            )
+
+   (nth (second (first recognition)) 5))
   )
