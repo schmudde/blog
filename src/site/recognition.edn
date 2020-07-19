@@ -414,13 +414,13 @@
  [{:org "Ruca: A Business Co-Operative"
    :title "Member"
    :date "#time/year \"2020\""}
-  {:org "Society for the History of Technology"
-   :title "Member"
-   :date-bgn "#time/year \"2016\""
-   :date-end "#time/year \"2020\""}
   {:org "Association for Computing Machinery"
    :title "Member"
    :date-bgn "#time/year \"2019\""
+   :date-end "#time/year \"2020\""}
+  {:org "Society for the History of Technology"
+   :title "Member"
+   :date-bgn "#time/year \"2016\""
    :date-end "#time/year \"2020\""}
   {:org "Kitchen Table Coders: A Studio for Creative Coding"
    :title "Member"

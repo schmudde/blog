@@ -7,8 +7,9 @@ author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
-date-created: 2020-07-15
-date-modified: 2020-07-15
+date-created: 2020-07-19
+date-modified: 2020-07-19
+date-published: 2020-07-20
 in-language: en
 keywords: clojure, edn, java-time, chris marker, cinema, archiving
 tags:
@@ -38,6 +39,8 @@ I'll conclude by taking a cursory look at the problems of archiving time in Unix
 
 ## Time Literals
 
+[This section](https://nextjournal.com/schmudde/java-time#time-literals) is can be consumed as runnable notebook on Nextjournal. The notebook also includes more detailed information about Java Time and Joda Time in Clojure.
+
 **Literals**
 
 A *literal* is a form that returns itself when evaluated. For example, the *s-expression* `(+ 3 4)` represents both -
@@ -51,8 +54,10 @@ The results of evaluating two different forms:
 * `(+ 3 4)` ⇒ `7`  (the *s-expression* evaluates to a numeric *literal*)
 
 ```
-(str "Evaluate `3`: " 3 ", Evaluate `(+ 3 4)`: " (+ 3 4))
+(str "Evaluate '3': " 3 ", Evaluate '(+ 3 4)': " (+ 3 4))
 ```
+
+&rArr; `"Evaluate '3': 3, Evaluate '(+ 3 4)': 7"`
 
 Literals go beyond numbers. [They also include](https://clojure.org/reference/reader) strings, characters, `nil`, booleans, keywords, symbolic values (`##Inf` (∞), `##-Inf` (-∞), and `##NaN` (Not a Number)), collections (lists, vectors, maps, and sets), and records (`deftype` and `defrecord`).
 
@@ -64,25 +69,35 @@ Clojure 1.4 introduced custom literals marked by a tag. For example, 1.4 shipped
 #uuid "efea38cd-0db8-4f66-b3ab-c50b4c08d907"
 ```
 
+&rArr; `[java.util.UUID, "0x785d0e2f", "efea38cd-0db8-4f66-b3ab-c50b4c08d907"]`
+
 Clojure reads the literal string first, `"efea38cd-0db8-4f66-b3ab-c50b4c08d907"`, and then invokes the tagged literal function on the string (or whatever literal happens to follow the tag).
 
 In this example, `#uuid` dispatches `java.util.UUID/fromString` on `"efea38cd-0db8-4f66-b3ab-c50b4c08d907".` The generic string is now a meaningful bit of data.
 
 ```
-(= "efea38cd-0db8-4f66-b3ab-c50b4c08d907" (java.util.UUID/fromString "efea38cd-0db8-4f66-b3ab-c50b4c08d907"))
+(= "efea38cd-0db8-4f66-b3ab-c50b4c08d907"
+   (java.util.UUID/fromString "efea38cd-0db8-4f66-b3ab-c50b4c08d907"))
 ```
 
+&rArr; `false`
+
 ```
-(= #uuid "efea38cd-0db8-4f66-b3ab-c50b4c08d907" (java.util.UUID/fromString "efea38cd-0db8-4f66-b3ab-c50b4c08d907"))
+(= #uuid "efea38cd-0db8-4f66-b3ab-c50b4c08d907"
+   (java.util.UUID/fromString "efea38cd-0db8-4f66-b3ab-c50b4c08d907"))
 ```
+
+&rArr; `true`
 
 `#uuid` cannot prefix a string that does not qualify as a valid UUID.
 
 ```
 (try
-  (java.util.UUID/fromString "eefe") ;; #uuid "efefe"
+  (java.util.UUID/fromString "not-a-date") ;; #uuid "not-a-date"
   (catch IllegalArgumentException e (.getMessage e)))
 ```
+
+&rArr; `"Invalid UUID string: not-a-date"`
 
 Tagged literals are like a constructor for an object. But they are succinct and easily read by humans - making them a perfect fit for structured data. They are the "extensible" part of the extensible data notation ([edn](https://github.com/edn-format/edn)) specification.
 
@@ -93,16 +108,25 @@ Edn is a preferred format for serializing and deserializing data. Here's how we 
 Tag a generic date string with `#inst` to generate a `java.util.Date` object:
 
 ```
-(print (type #inst "2020-05-11"))
+(type #inst "2020-05-11")
+```
+
+&rArr; `java.util.Date`
+
+```
 #inst "2020-05-11"
 ```
+
+&rArr; `#inst "2020-05-11T00:00:00.000Z"`
+
 
 Store that information as a string. Later, if is read by a reader that recognizes the `#inst` tag, it will automatically construct a `java.util.Date` object. This happens automatically when reading a string using `clojure.edn`:
 
 ```
-(prn-str #inst "2020-05-11") ; ⇒ "#inst "2020-05-11T00:00:00.000-00:00" "
 (clojure.edn/read-string (prn-str #inst "2020-05-11"))
 ```
+
+&rArr; `#inst "2020-05-11T00:00:00.000Z"`
 
 It is now possible to operate on the date and time information - add days, find the difference between two dates, grab the year, etc....
 
@@ -115,6 +139,8 @@ It is now possible to operate on the date and time information - add days, find 
      (.format (SimpleDateFormat. "yyyy")))
 ```
 
+&rArr; `"2020"`
+
 **But there is a big problem!** We don't want to work with `java.util.Date`, otherwise known as Joda Time. This is where the `time-literals` package comes in handy.
 
 As a reminder, I want to operate on an object like this one so I have access to all the handy date and time functions supplied by `cljc.java-time`:
@@ -122,6 +148,8 @@ As a reminder, I want to operate on an object like this one so I have access to 
 ```
 (ld/now)
 ```
+
+&rArr; `[java.time.LocalDate, "0x61da6671", "2020-07-12"]`
 
 Here are some of the tagged literals supplied by `time-literals`:
 
@@ -150,11 +178,16 @@ Printing the date to a string looks like this:
 time-date-string
 ```
 
+&rArr; `"#time/date "2015-12-11""`
+
+
 Using the `edn/read-string` function with the `#time/date` tag is almost identical to `#inst`. The only difference is the supplied reader: `{:readers time-read-prn/tags}`. This is necessary because Clojure does not have any built-in `#time/date` functionality.
 
 ```
 (clojure.edn/read-string {:readers time-read/tags} time-date-string)
 ```
+
+&rArr; `[java.time.LocalDate, "0x3d6a5fc1", "2015-12-11"]`
 
 The tags make it easy to read a string, December 11, 2015, and add 90 days to generate the result March 10, 2016:
 
@@ -166,6 +199,8 @@ The tags make it easy to read a string, December 11, 2015, and add 90 days to ge
     (ld/format  (formatter/of-pattern "MMMM dd, yyyy")))
 ```
 
+&rArr; `"March 10, 2016"`
+
 If I want to get the year from a tagged literal string pulled off the wire or a file:
 
 ```
@@ -173,6 +208,8 @@ If I want to get the year from a tagged literal string pulled off the wire or a 
      (clojure.edn/read-string {:readers time-read/tags})
      (ld/get-year))
 ```
+
+&rArr; `2011`
 
 ## Archiving Time
 
