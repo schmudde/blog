@@ -43,12 +43,8 @@
 
 ;;;;;;;;;;;;;;;;
 
-;; (defprotocol edn->hiccup-output (output [x] "generate x"))
-;; (deftype date-first [date title]
-;;    edn->hiccup-output )
-
 (defn edn->hiccup [strong & rest]
-  [:p [:strong strong " "]
+  [:p {:class "cv-item"} [:strong strong " "]
    (->> (butlast rest)
         (map #(into (when %[:span % ", "])))
         (into [:span ]))
@@ -64,14 +60,13 @@
    [:span synopsis]])
 
 (defn edn->hiccup-start-with-date [date strong & rest]
-  [:p
+  [:p {:class "cv-item"}
    [:span date " "]
    [:strong strong " "]
    (->> (butlast rest)
         (map #(into (when %[:span % ", "])))
         (into [:span ]))
    [:span (last rest)]])
-
 
 (defn itemize-list [matcher-object points]
   "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."

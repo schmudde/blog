@@ -78,3 +78,11 @@ html {
         width: 100%;
     }
 }
+
+/* CV */
+
+p.cv-item {
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3em;
+}
