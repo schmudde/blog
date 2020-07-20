@@ -1,5 +1,3 @@
-;; TODO: INTERVIEWS
-
 {:workshops
  [{:org "The Internet Lives Here"
    :geo "New York, NY, US"
@@ -99,8 +97,6 @@
    :link-name "Strange Loop profile"
    :video "https://www.youtube.com/embed/SU6NvkkF4Xk"
    }
-
-
   {:org "Creative Coding NYC"
    :geo "New York, NY, US"
    :date "#time/date \"2018-02-28\""

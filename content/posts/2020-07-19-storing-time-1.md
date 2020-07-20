@@ -19,35 +19,39 @@ tags:
 ---
 
 
-Time is a struggle for everyone. Most of us wish we had more time. Managing it can be a challenge. Recording and analysising how we use time is difficult in spite of time's relentless forward march.
+Time is a struggle for everyone. Most of us wish we had more time. Managing it can be a challenge. Recording and analyzing how we use time is difficult in spite of time's steady forward march.
 
-I ran into this issue while updating my curriculum vitae.[^job] Several years ago, I switched to recording professional events in data structures. It was frustring to update my cv, my resume, and my website, at minimum, every time something happened in my life. Consistent data structures means that one source of truth, an edn file in my case,[^edn] can be used to update everything automatically.
+I recently ran problems recording, analyzing, and displaying time when updating my [curriculum vitae](/cv.html).[^job] Several years ago, I switched to recording professional events in data structures. It was frustrating to update my cv, my resume, and my website, at minimum, every time something happened in my professional life. Consistent data structures means that one source of truth, a `.edn` file in my case,[^edn] can be used to update everything automatically.
 
-[^job]: The CV update is part of my ongoing job search. Dear readers, if you know of a position that would benefit from my background - please send me an eMail. Positions I'm looking for: *Digial Humanities Scientist*, *Developer Advocate*, and *Researcher* on the structure and transmission of information over time and space. See [my CV](/cv.html) for my bona fides. I'd also consider a position as a *Clojure programmer*.
+[^job]: The CV update is part of my ongoing job search. Dear readers, if you know of a position that would benefit from my background, please send me an eMail. Positions I'm looking for: *Digital Humanities Scientist*, *Developer Advocate*, and *Researcher* on the structure and transmission of quantitative and qualitative information. See [my CV](/cv.html) for my bona fides. I'd also consider a position as a *Clojure programmer*.
 
 [^edn]: edn is an extensible data notation used to convey values. It is often used where one might use JSON, but it offers several advantages. More at the official [edn readme](https://github.com/edn-format/edn).
 
-I took this as an opportunity to properly encode the various dates I have worked at a job, received awards, or published papers. This sounds trivial, but dates can be a single year, a month and a year, a month, day, and year. They can be displayed in a myriad of different ways, depending on the convetion preferred by a culture, nation, or institution. It can also be useful to calculate spans of time. &ldquo;I worked at this job for 2 years and 8 months,&rdquo; for example.
+I took this as an opportunity to properly record the dates I have worked at a job, received awards, or published papers. This sounds trivial, but dates have a number of tricky edge cases.
 
-I want to record the most precise time and date available about an event in a format that that is:
+- They are commonly recorded as a single year, a month and a year, or a month, day, and year.
+- They can be displayed in a myriad of different ways, depending on the convention preferred by a culture, nation, or institution.
+- It can also be useful to calculate spans of time. For example, &ldquo;I worked at this job for 2 years and 8 months.&rdquo; Time arithmetic can be tricky.
 
-1. **Easy to write and read**: I add and update events in plain text
-2. **Easy to manipulate programmatically**: so I calculate a span of time, overlaps in time, etc&hellip;
-3. **Flexible in how it's displayed**: e.g. display some dates as a year only, display dates with a month name (July) rather than a number (7), etc&hellip;
+In the end, I want to record the most precise time and date available about an event in a format that that is:
 
-*Storing Time* part 1 and part 2 will explore the problems of recording time, working with Java Time, and digital memory and archeology. I have included code where necessary. But there is enough context so non-programmers can understand the complexity of the issue and the scope of the problem.[^y2k]
+1. **Easy to write and read**: add and update events in plain text
+2. **Flexible in how it's displayed**: e.g. display some dates as a year only, display dates with a month name (July) rather than a number (7), etc&hellip;
+3. **Easy to manipulate programmatically**: calculate a span of time, overlaps in time, etc&hellip;
 
-[^y2k]: Most non-programmers probably haven't thought about the issue of computer time since the &ldquo;[Y2K Bug](https://www.howtogeek.com/671087/what-was-the-y2k-bug-and-why-did-it-terrify-the-world/).&rdquo;
+*Storing Time* part 1 and part 2 will explore the problems of recording time, working with Java Time, and digital memory and archaeology. I have included code where necessary. But I have also included enough context so non-programmers can understand the complexity of the issue and the scope of the problem.[^y2k]
+
+[^y2k]: If you're a non-programmer who knows what the &ldquo;[Y2K Bug](https://www.howtogeek.com/671087/what-was-the-y2k-bug-and-why-did-it-terrify-the-world/)&rdquo; was, you have directly thought about this problem.
 
 ## Not All Time is Equal
 
-![](/img/2020-07-15-storing-time/june-cal-royal-psalter-13th-cen.jpg)[^cal]
+![](/img/2020-07-20-storing-time/june-cal-royal-psalter-13th-cen.jpg)[^cal]
 
 [^cal]: {-} &ldquo;This manuscript page from a psalter uses the same format as calendar pages found in a typical book of hours. June is written at the top; the text includes the names of saints and feasts to be celebrated during that month.&rdquo; "[Manuscript Leaf With June Calendar, From A Royal Psalter](https://www.metmuseum.org/art/collection/search/466372)". *The Metropolitan Museum Of Art*, 13th century.
 
-Java Time and its predecessor Joda Time are the workhorses of countless systems around the world. Accounting for leap years and timezones when calculating payroll and coordinating bank transfers is surprisingly difficult. While most programmers agree that it works well enough, the abstraction leaves something to be desired.
+Java Time and Joda Time are the workhorses of countless computer systems around the world. Travel reservations, bank transfers, employee databases - any system that has a time component must deal with basic problems such as months and years of different lengths or places in different time zones. And while most programmers agree that Java/Joda Time works well enough, the abstraction leaves something to be desired.
 
-Take something simple like **adding a month to a date**. The results may be surprising. According to Java:
+Take something simple like **adding a month to a date**. The results may be surprising. According to Java Time:
 
 * March 15, 2015 plus one month is April 15, 2015.
 * March 30, 2015 plus one month is April 30, 2015.
@@ -55,13 +59,13 @@ Take something simple like **adding a month to a date**. The results may be surp
 
 Here is the same logic, written and run in Clojure:[^add-1-month]
 
-[^add-1-month]: These results rely on the `plusMonths` method that works on a Java Time `LocalDate` object. `add-1-month` is a Clojure function that includes the Java Time `plusMonths`. More on this later, but here is the function I'm using: `(defn add-1-month [date] (-> (java.time.LocalDate/parse date) (.plusMonths 1) str))`.
+[^add-1-month]: These results rely on the `plusMonths` method that works on a Java Time `LocalDate` object. I'll go into detail later. For the curious, here is the function I'm using: `(defn add-1-month [date] (-> (java.time.LocalDate/parse date) (.plusMonths 1) str))`.
 
 * `(add-1-month "2015-03-15")` &rArr; `"2015-04-15"`
 * `(add-1-month "2015-03-30")` &rArr; `"2015-04-30"`
 * `(add-1-month "2015-03-31")` &rArr; `"2015-04-30"`
 
-It simultaneously makes sense and is quite troubling. In part because Java uses a function called `plusMonths` and we expect addition to be transitive: <em>a=b &and; b=c &rArr; a=c</em>.
+It both makes sense and feels incorrect. In part because Java uses a method called `plusMonths` and we expect addition to be associative: <em>(2 + 3) + 4 = 2 + (3 + 4)</em>.
 
 1. **If** <em>a = b</em>
 2. **and** <em>b = c</em>
@@ -83,7 +87,7 @@ But can the last assertion really true? Can `March 30` = `March 31` if I add a m
 
 It is true, even though the equation has three distinct elements: `add-1-month`, `"2015-03-30"`, and `"2015-03-31"`. If `(add-1-month "2015-03-30")` is compared to `(add-1-month "2015-03-31")` as two *literal lists of elements*, they are not equal:[^literal]
 
-[^literal]: To take things *literally* in Clojure, they must be quoted. Think about how quotes are used in English. When I claim Martin Luther King Jr. said "I have a dream," I use quotes because I mean it *literally*. Look closely at the code `'(add-1-month "2015-03-30")` and you'll see it is similarly preceeded by a single quote.
+[^literal]: To take things *literally* in Clojure, they must be quoted. Think about how quotes are used in English. When I claim Martin Luther King Jr. said "I have a dream," I use quotes because I mean it *literally*. Look closely at the code `'(add-1-month "2015-03-30")` and you'll see it is similarly preceded by a single quote.
 
 ```
 (= '(add-1-month "2015-03-30") '(add-1-month "2015-03-31"))
@@ -108,11 +112,11 @@ Relativistic time is a real mind-bender with practical consequences. For example
 
 ## The Basics of Java Time (in Clojure)
 
-Coming back to Earth and dealing within the confines of my own lifetime still poses a challenge. When recording the dates of my previous exhibitions, teaching assignments, jobs, and publications, I wanted to a more robust format that will work years into the future. I chose Java Time even if the abstraction is imperfect because it is so ubiquitious. I will be able to store and work with my time data well into the future.[^nextjournal]
+Coming back to Earth and dealing within the confines of my own lifetime still poses a challenge. When recording the dates of my previous exhibitions, teaching assignments, jobs, and publications, I wanted to a more robust format that will work years into the future. I chose Java Time even if the abstraction is imperfect because it is so ubiquitous. I will be able to store and work with my time data well into the future.[^nextjournal]
 
-[^nextjournal]: [This section](https://nextjournal.com/schmudde/java-time#clj-%E2%86%94-cljs-%E2%86%94-edn) is can be consumed as runnable notebook on Nextjournal. The notebook also includes more detailed information about Java Time and Joda Time in Clojure.
+[^nextjournal]: [This section](https://nextjournal.com/schmudde/java-time#clj-%E2%86%94-cljs-%E2%86%94-edn) is also available as a runnable notebook on Nextjournal. The notebook also includes more detailed information about Java Time and Joda Time in Clojure.
 
-The easiest way to work with Java Time across Clojure, ClojreScript, and EDN is [Henry Widd](http://widdindustries.com/)'s `cljc.java-time`.[^interop] Widd dives into the details of Java Time in his talk [Cross Platform DateTime Awesomeness](https://www.youtube.com/watch?v=UFuL-ZDoB2U) at Clojure/north 2019. After adding the library to your `deps.edn` file (currently at `cljc.java-time {:mvn/version "0.1.11"}`), start with a few Java Time `LocalDate` basics.
+The easiest way to work with Java Time across Clojure, ClojureScript, and EDN is [Henry Widd](http://widdindustries.com/)'s `cljc.java-time`.[^interop] Widd dives into the details of Java Time in his talk [Cross Platform DateTime Awesomeness](https://www.youtube.com/watch?v=UFuL-ZDoB2U) at Clojure/north 2019. After adding the library to your `deps.edn` file (currently at `cljc.java-time {:mvn/version "0.1.11"}`), start with a few Java Time `LocalDate` basics.
 
 [^interop]: Along with Widd's `time-literals` library, he provide a way to seamlessly move time data from ClojureScript ↔ Clojure ↔ edn (or any other serialized transmission/storage). This will be important in Part 2 of *Storing Time*.
 
@@ -155,6 +159,4 @@ Therefore: `(ld/get-day-of-week (ld/now))` &rArr; `[java.time.DayOfWeek, "0x3555
 
 &rArr; `"SUNDAY"`
 
-Those are the basics of working with Java Time. Part II will explore the nuances of storing this time in a portable text format, `edn`. It will also look at issues related to stored time when conducting digital archeology and the depiction of time digital time and memory in cinema.
-
-<!-- Now see [Part II](/posts/2020-07-20-storing-time-2.html) of Storing Time. It will cover the depiction of digital time in cinema, more specifics on encoding time in an `edn` file, and issues of stored time when conducting digital archeology. -->
+Those are the basics of working with Java Time. Part II will explore the nuances of storing this time in a portable text format, `edn`. It will also look at issues related to stored time when conducting digital archaeology and the depiction of time digital time and memory in cinema.
