@@ -1,6 +1,6 @@
 ---
 title: Storing Time - Part 2
-description:
+description: "On the difficulties of recording and analyzing time in computer systems."
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
