@@ -1,6 +1,6 @@
 ---
 title: Storing Time - Part 1
-description: "On the difficulties of recording and analyzing time in computer systems."
+description: "How to think about and work with time in digital systems."
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-07-21
-date-modified: 2020-07-21
+date-modified: 2020-07-22
 date-published: 2020-07-21
 in-language: en
 keywords: clojure, time, modeling
@@ -30,7 +30,7 @@ I want to document the most precise time and date available about a professional
 1. **Easy to write and read**: add and update events in a plain text file
 2. **Easy to format**: automatically change a date's display depending on context, calculate and display a span of time, etc&hellip;
 
-Non-programmers probably haven't thought about the problem of recording time on a computer since the [Y2K Bug](https://www.howtogeek.com/671087/what-was-the-y2k-bug-and-why-did-it-terrify-the-world/). *Storing Time* parts 1 and 2 will cover some of the conceptual challenges dealing with storing memory and time on a machine while also including code snippets. I'll be using Java Time and Clojure to read and write time from an `.edn` file.[^edn] Even if that means little to you, I think these blog entries cover concepts of general interest.
+Non-programmers probably haven't thought about the problem of recording time on a computer since the [Y2K Bug](https://www.howtogeek.com/671087/what-was-the-y2k-bug-and-why-did-it-terrify-the-world/). *Storing Time* part 1 and [part 2](/posts/2020-07-22-storing-time-2.html) will cover some of the conceptual challenges dealing with storing memory and time on a machine while also including code snippets. I'll be using Java Time and Clojure to read and write time from an `.edn` file.[^edn] Even if that means little to you, I think these blog entries cover concepts of general interest.
 
 [^edn]: edn is an extensible data notation used to convey values. It is often used where one might use JSON, but it offers several advantages. More at the official [edn readme](https://github.com/edn-format/edn).
 
@@ -86,7 +86,7 @@ Coming back to Earth and dealing within the confines of my own lifetime is enoug
 
 The easiest way to work with Java Time across Clojure and edn is [Henry Widd](http://widdindustries.com/)'s `cljc.java-time`.[^interop] Widd dives into the details of Java Time in his talk [Cross Platform DateTime Awesomeness](https://www.youtube.com/watch?v=UFuL-ZDoB2U) at Clojure/north 2019. Here are a few Java Time/`cljc.java-time` basics.
 
-[^interop]: Along with his `time-literals` library, Widd provides a way to seamlessly move time data from ClojureScript ↔ Clojure ↔ edn (or any other serialized transmission/storage). This will be important in Part 2 of *Storing Time*.
+[^interop]: Along with his `time-literals` library, Widd provides a way to seamlessly move time data from ClojureScript ↔ Clojure ↔ edn (or any other serialized transmission/storage). This will be important in [Part 2 of *Storing Time*](/posts/2020-07-22-storing-time-2.html).
 
 Require `cljc.java-time` and parse a string of numbers formatted as a date:
 
@@ -133,4 +133,4 @@ But working with `"SUNDAY"` as a string requires a component of the `cljc.java-t
 
 &rArr; `"SUNDAY"`
 
-Those are the basics of working with Java Time. Part 2 will detail the nuances of storing and reading this time in an `edn` text document. The second part will also explore time as it relates to the practice of digital research and archaeology.
+Those are the basics of working with Java Time. [Part 2](/posts/2020-07-22-storing-time-2.html) details the nuances of storing and reading timestamps in an `edn` text document while also considering the larger questions of digital memory, information, and archaeology.

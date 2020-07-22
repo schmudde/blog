@@ -51,6 +51,8 @@ Once computers could read paper, money became much faster and easier to move.
 
 Computer automation also made people easier to move. American Airlines concurrently introduced SABRE (Semi-Automated Business Research Environment), making flight reservations instantaneous.
 
+- https://yro.slashdot.org/story/20/07/19/0238242/the-fbi-secretly-used-travel-company-sabre-as-a-global-surveillance-tool?utm_source=rss1.0mainlinkanon&utm_medium=feed
+
 ![](/img/2020-05-28-birth-cyberspace/sabre.jpg)
 
 ## Information Theory

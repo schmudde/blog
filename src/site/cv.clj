@@ -10,38 +10,34 @@
             [cljc.java-time.year :as year]
             [cljc.java-time.year-month :as year-month]))
 
-(def recognition (-> "src/site/recognition.edn" slurp edn/read-string))
-(def projects (-> "src/site/projects.edn" slurp edn/read-string))
-(def talks-workshops (-> "src/site/talks-workshops.edn" slurp edn/read-string))
-(def employment-faculty (-> "src/site/employment-faculty.edn" slurp edn/read-string))
+(def recognition (->> (slurp "src/site/recognition.edn") (clojure.edn/read-string {:readers time-read/tags})))
+(def projects (->> (slurp  "src/site/projects.edn") (clojure.edn/read-string {:readers time-read/tags})))
+(def talks-workshops (->> (slurp "src/site/talks-workshops.edn") (clojure.edn/read-string {:readers time-read/tags})))
+(def employment-faculty (->> (slurp "src/site/employment-faculty.edn") (clojure.edn/read-string {:readers time-read/tags})))
 
 (defn make-quote-str [x] (str "&ldquo;" x "&rdquo;"))
 
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
   ([date-time]
-   (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
-     (cond
-       (= (type java-time) java.time.Year) (str (year/get-value java-time))
-       (= (type java-time) java.time.YearMonth) (str (year-month/get-year java-time))
-       (= (type java-time) java.time.LocalDate) (ld/get-year java-time) #_(str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy")))
-       :else java-time)))
+   (cond
+     (= (type date-time) java.time.Year) (str (year/get-value date-time))
+     (= (type date-time) java.time.YearMonth) (str (year-month/get-year date-time))
+     (= (type date-time) java.time.LocalDate) (ld/get-year date-time) #_(str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy")))
+     :else date-time))
   ([date-time-1 date-time-2]
-   (let [java-time-1 (clojure.edn/read-string {:readers time-read/tags} date-time-1)
-         java-time-2 (clojure.edn/read-string {:readers time-read/tags} date-time-2)]
-     (cond
-       (= (type java-time-1) java.time.Year) (str (year/get-value java-time-1) " - " (year/get-value java-time-2))
-       (= (type java-time-1) java.time.YearMonth) (str (year-month/format java-time-1 (formatter/of-pattern "MMMM yyyy"))
-                                                       " - " (year-month/format java-time-2 (formatter/of-pattern "MMMM yyyy")))
-       :else java-time-1))))
+   (cond
+     (= (type date-time-1) java.time.Year) (str (year/get-value date-time-1) " - " (year/get-value date-time-2))
+     (= (type date-time-1) java.time.YearMonth) (str (year-month/format date-time-1 (formatter/of-pattern "MMMM yyyy"))
+                                                     " - " (year-month/format date-time-2 (formatter/of-pattern "MMMM yyyy")))
+     :else date-time-1)))
 
 (defn java-time->full-date-str [date-time]
-  (let [java-time (clojure.edn/read-string {:readers time-read/tags} date-time)]
-    (cond
-      (= (type java-time) java.time.Year) (str (year/get-value java-time))
-      (= (type java-time) java.time.LocalDate) (str (ld/format java-time (formatter/of-pattern "MMMM dd, yyyy"))))))
+  (cond
+    (= (type date-time) java.time.Year) (str (year/get-value date-time))
+    (= (type date-time) java.time.LocalDate) (str (ld/format date-time (formatter/of-pattern "MMMM dd, yyyy")))))
 
-;;;;;;;;;;;;;;;;
+;;;;;;;;;;;
 
 (defn edn->hiccup [strong & rest]
   [:p {:class "cv-item"} [:strong strong " "]
@@ -263,11 +259,6 @@
   (. java.time.LocalDate parse "2015-02-02") ;; #object[java.time.LocalDate 0x23428e1c "2015-02-02"]
   (data-readers/instant "2020-03-03") ;; (. java.time.Instant parse "2020-03-03")
 
-  (let [{:keys [conference-talks]} talks-workshops]
-    (->> conference-talks
-         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
-         (into [:div])))
-
   (->> (pop rest)
        (mapv #(into [:span % ", "]))
        (#(conj % [:span (last rest) " "]) )
@@ -285,4 +276,10 @@
             )
 
    (nth (second (first recognition)) 5))
+
+  (let [{:keys [employee]} employment-faculty]
+    (->> employee
+         (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
+         (into [:div])))
+
   )
