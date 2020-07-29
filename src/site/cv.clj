@@ -10,12 +10,35 @@
             [cljc.java-time.year :as year]
             [cljc.java-time.year-month :as year-month]))
 
-(def recognition (->> (slurp "src/site/recognition.edn") (clojure.edn/read-string {:readers time-read/tags})))
-(def projects (->> (slurp  "src/site/projects.edn") (clojure.edn/read-string {:readers time-read/tags})))
-(def talks-workshops (->> (slurp "src/site/talks-workshops.edn") (clojure.edn/read-string {:readers time-read/tags})))
-(def employment-faculty (->> (slurp "src/site/employment-faculty.edn") (clojure.edn/read-string {:readers time-read/tags})))
+(def recognition (->> (slurp "src/site/recognition.edn")
+                      (clojure.edn/read-string {:readers time-read/tags})))
+(def projects (->> (slurp  "src/site/projects.edn")
+                   (clojure.edn/read-string {:readers time-read/tags})))
+(def talks-workshops (->> (slurp "src/site/talks-workshops.edn")
+                          (clojure.edn/read-string {:readers time-read/tags})))
+(def employment-faculty (->> (slurp "src/site/employment-faculty.edn")
+                             (clojure.edn/read-string {:readers time-read/tags})))
+(def bio (->> (slurp "src/site/bio.edn")
+              (clojure.edn/read-string)))
 
-(defn make-quote-str [x] (str "&ldquo;" x "&rdquo;"))
+(defn make-quote [x] [:span "&ldquo;" x "&rdquo;"])
+
+(defn make-link
+  ([link-name url]
+   (if url
+     [:a {:href url} link-name]
+     link-name))
+  ([link-name url f]
+   (if url
+     (f [:a {:href url} link-name])
+     (f link-name))))
+
+(defn find-entry [entry coll]
+  (loop [x coll]
+    (if (= (:title (first x)) entry)
+      (first x)
+      (when (seq x)
+        (recur (rest x))))))
 
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
@@ -46,13 +69,15 @@
         (into [:span ]))
    [:span (last rest)]])
 
-(defn edn->hiccup-work [title date synopsis & rest]
+(defn edn->hiccup-work [title date synopsis tech & rest]
   [:p [:span [:strong title] " " date]
    [:br ]
    (->> (butlast rest)
         (map #(into [:span % ", "]))
         (into [:span ]))
    [:span (last rest)]
+   [:br]
+   (when tech [:small "Technology: " tech])
    [:span synopsis]])
 
 (defn edn->hiccup-start-with-date [date strong & rest]
@@ -63,6 +88,16 @@
         (map #(into (when %[:span % ", "])))
         (into [:span ]))
    [:span (last rest)]])
+
+(defn edn->selected-talk [{:keys [highlighted-talks]}]
+  (let [talks (find-entry (first highlighted-talks) (:conference-talks talks-workshops))]
+    [:div
+     [:iframe {:width 560 :height 315
+               :src "https://www.youtube.com/embed/HalZfFdWuP4?controls=0"
+               :allow "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+               :frameborder 0 :allowfullscreen true}]
+     [:p "Selected Talk: " (make-link (:title talks) (:link talks) make-quote) ", " (:org talks) ", " (:geo talks)]]))
+
 
 (defn itemize-list [matcher-object points]
   "I iterate through a java.util.regex.Matcher.find() object and turn each returned string into an HTML list item."
@@ -95,19 +130,22 @@
   (let [employment (second x)]
     (into [:div ]
           (map #(edn->hiccup-work (:title %) (java-time->str (:date-bgn %) (:date-end %))
-                                  (make-list (:synopsis %))
+                                  (make-list (:synopsis %)) (:technology %)
                                   (:org %) (:desc %) (:geo %)) employment))))
 
 (defmethod make-table :workshops [x]
   (let [workshops (second x)]
     (->> workshops
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %) (:desc %)))
+         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (:title %) (make-link (:desc %) (:link %) make-quote)))
          (into [:div]))))
 
 (defmethod make-table :conference-exhibs [x]
   (let [presentations (second x)]
     (->> presentations
-         (map #(edn->hiccup-start-with-date (java-time->str (or (:date %) (:date-end %))) (:org %) (:geo %) (make-quote-str (:title %))))
+         (map #(edn->hiccup-start-with-date
+                (java-time->str (or (:date %) (:date-end %)))
+                (:org %) (:geo %)
+                (make-link (:title %) (:link %) make-quote)))
          (into [:div]))))
 
 (defmethod make-table :affiliations [x]
@@ -119,11 +157,13 @@
 
 (defmethod make-table :publications [x]
   (let [publications (second x)
-        title (fn [title editor] (str (make-quote-str title) (when editor (str " in " editor  " (ed)")) ", "))
+        title (fn [title editor link]
+                [:span (make-link title link make-quote)
+                 (when editor (str " in " editor  " (ed)")) ", "])
         publisher (fn [publisher] (when publisher (str publisher  ", ")))
         stats (fn [stats] (when stats (str "(" stats ")")))]
     (into [:ul ] (map #(vector :li (list-authors (:co-authors %)) ", "
-                               (title (:title %) (:editor %))
+                               (title (:title %) (:editor %) (:link %))
                                [:em (:publication %) ", "]
                                (publisher (:publisher %))
                                (java-time->full-date-str (:date %)) " "
@@ -137,7 +177,7 @@
                        (when (or editor publisher) (str " by " (or editor publisher)))
                        (when desc (str " (" desc ")")) ", "])]
     (into [:ul ] (map #(vector :li
-                         (make-quote-str (:title %)) ", "
+                               (make-link (:title %) (:link %) make-quote) ", "
                          (publication (:publication %) (:editor %) (:publisher %) (:desc %))
                          (java-time->full-date-str (:date %))) in-the-media))))
 
@@ -160,6 +200,8 @@
     [:div
      [:h2 "Talks &amp; Workshops"]
      [:h3 "Conference Presentations"]
+     (edn->selected-talk bio)
+     [:hr]
      (make-table [:conference-exhibs conference-talks])
      [:h3 "Workshops"]
      (make-table [:workshops workshops])]))
@@ -200,8 +242,12 @@
 
 ;;;;;;;;;;;;;;;;;;
 
+(defn make-bio [{:keys [name title cv geo summary highlighted-talks]}]
+  [:header [:div [:h1 name] [:h2 cv] [:h3 title] [:p summary]]])
+
 (defn make-cv []
-  [:div
+  [:article
+   (make-bio bio)
    [:div (employment-facutly->hiccup)]
    [:div (talks-workshops->hiccup)]
    [:div (recognition->hiccup)]
@@ -232,7 +278,13 @@
 
   (reduce (fn [x y] (into [:div x] [:span y])) '("place" "piece" "past"))
 
-  (reduce (fn [x y] (str x " " y)) '("place" "piece" "past" "post"))
+  "Say What You Mean"
+
+  (loop [coll (:conference-talks talks-workshops)]
+    (if (= (:title (first coll)) "Say What You Mean")
+      (first coll)
+      (when (seq coll)
+        (recur (rest coll)))))
 
   (-> "2020-12-02"
       (ld/parse)
@@ -267,7 +319,7 @@
   (make-list ((first (employment-faculty :employee)) :synopsis))
 
   (#(vector :div (list-authors (:co-authors %))
-            (make-quote-str (:title %))
+            (make-quote (:title %))
             (when (:editor %) (str "in " (:editor %) " (ed), "))
             [:em (:publication %)]
             (:publisher %)
@@ -280,6 +332,12 @@
   (let [{:keys [employee]} employment-faculty]
     (->> employee
          (map #(edn->hiccup (java-time->str (or (:date %) (:date-end %))) (:org %)(:geo %) (:title %)))
+         (into [:div])))
+
+
+  (let [{:keys [workshops]} talks-workshops]
+    (->> workshops
+         (map #(edn->hiccup (make-link (:title %) (:link %))))
          (into [:div])))
 
   )

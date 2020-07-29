@@ -461,7 +461,7 @@
     :date-end #time/year "2001"}]
 
   :training
- [{:title "Dataism: a Class on Data Science in Activism"
+ [{:title "Dataism: Understanding Data Science Through Activism"
    :org "School of Machines, Making &amp; Make-Believe"
    :geo "Berlin, DE"
    :date #time/year "2020"}

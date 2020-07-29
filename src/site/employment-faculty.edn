@@ -1,6 +1,7 @@
 ;; employee, faculty
 
 ;; Consdier this format: “Sound Design for Film” (a.y. 2001/02, DFV-365), “DFV-100 Survey of Film” (a.y. 2001/02, DFV-365), etc...
+;; Move non-class activities to a "SELECTED UNIVERSITY SERVICE" section?
 
 {:employee
  [{:org "Nextjournal"

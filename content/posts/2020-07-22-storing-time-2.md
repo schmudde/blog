@@ -55,7 +55,7 @@ Literals return themselves when evaluated.[^nextjournal]
 
 - When `3` is evaluated in Clojure, the system returns `3`.
 - When `"I have a dream"` is evaluated in Clojure, the system returns `"I have a dream"`.
-- When `(+ 3 7)` is evaluated in Clojure, the system returns `7`. `(+ 3 7)` is *not* a literal.
+- When `(+ 3 7)` is evaluated in Clojure, the system returns `10`. `(+ 3 7)` is *not* a literal.
 
 [Clojure literals include](https://clojure.org/reference/reader) numbers (like `7`), strings (like `"I have a dream"`), characters, `nil`, booleans, keywords, symbolic values (`##Inf` (∞), `##-Inf` (-∞), and `##NaN` (Not a Number)), collections (lists, vectors, maps, and sets), and records (`deftype` and `defrecord`).
 
