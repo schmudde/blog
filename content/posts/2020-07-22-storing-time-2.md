@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-07-22
-date-modified: 2020-07-22
+date-modified: 2020-08-04
 date-published: 2020-07-22
 in-language: en
 keywords: clojure, edn, java-time, chris marker, cinema, archiving
@@ -254,7 +254,7 @@ Each entry is placed into an html-like structure for display on this website.
 
 ## Archiving Time
 
-A final note on recording time in digital records. Even the most widely used systems are prone to pitfalls. [Robert Jansma](https://www.linkedin.com/in/robert-jansma-883230a8) explores common problems in his forthcoming master's thesis, *Scoops and Brushes for Software Archaeology: Metadata Dating*.
+A final note on recording time in digital records. Even the most widely used systems are prone to pitfalls. [Robert Jansma](https://www.jansma.io/) explores common problems in his forthcoming master's thesis, *Scoops and Brushes for Software Archaeology: Metadata Dating*.
 
 Jansma developed a metadata dating tool that helps researchers discover trends in a program's use and development. In his thesis, Jansma applies his software to the growth and decline of *De Digitale Stad*, a 1990s Dutch &ldquo;digital city.&rdquo; His software leverages four types of time-related metadata that appear in many Unix systems: birth time, ATime, MTime and CTime. These fields are not traditional date records centered on the birth of Christ, rather they are seconds since the Unix epoch, traditionally 1970-01-01 00:00:00.
 

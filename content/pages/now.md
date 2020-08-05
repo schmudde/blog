@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2020-07-15
+date-modified: 2020-07-29
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -21,7 +21,7 @@ I am currently available for contracting.[^now]
 - I am passionate about Clojure/Lisp and Jupyter/Python notebooks.
 - I am most interested in initiatives that address the social and ethical issues of our time.
 
-Find out more about me [here](/pages/about.html) and on [GitHub](https://github.com/schmudde). CV available upon request.
+Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
 ## Projects
 

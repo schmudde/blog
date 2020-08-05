@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-11
-date-modified: 2020-07-13
+date-modified: 2020-08-05
 date-published: 2020-05-11
 in-language: en
 keywords: buddhism, relationships, documentary
@@ -49,8 +49,8 @@ I watched the fantastic documentary *Notes on Blindness* two nights ago.[^blindn
 
 Humanity is an experience. It is not a truth or an amalgamation of knowledge. Our goal as engineers and artists, caretakers and citizens, is to facilitate the communication of this experience with others.
 
-<figure>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MCWouLeXRsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="iframe-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MCWouLeXRsI" frameborder="0" allowfullscreen></iframe>
 [^blindess-cite]
 </figure>
 

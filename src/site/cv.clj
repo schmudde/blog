@@ -251,8 +251,8 @@
    [:div (employment-facutly->hiccup)]
    [:div (talks-workshops->hiccup)]
    [:div (recognition->hiccup)]
-   #_[:h2 "Projects"]
-   #_[:div (projects->hiccup)]])
+   [:h2 "Projects"]
+   [:div (projects->hiccup)]])
 
 (defn print-cv []
   (spit "temp.html"
@@ -266,6 +266,8 @@
   (let [page-title "Curriculum Vitae"
         content (make-cv)]
     (layout/body-template global-meta page-title content)))
+
+(print-cv)
 
 (comment
 
