@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, Germany
 date-created: 2020-05-30
-date-modified: 2020-08-05
+date-modified: 2020-08-06
 date-published: 2020-08-04
 in-language: en
 keywords: informatics, information theory, computation, STS, Engelbart, Von Neumann, Shannon
@@ -21,9 +21,11 @@ tags:
 
 [^english]: {-} Bill English (image via the [English family](https://www.nytimes.com/2020/07/31/technology/william-english-who-helped-build-the-computer-mouse-dies-at-91.html))
 
-*The Mother of All Demos* (1968) marks the introduction of several seminal computer technologies such as the mouse, hypertext, and the graphical user interface. The person [credited with directing the event](https://www.nytimes.com/2020/07/31/technology/william-english-who-helped-build-the-computer-mouse-dies-at-91.html), Bill English, passed away just two days ago. The demonstration is still striking today because of its breakthrough technologies and dramatic, almost ominous presentation.[^demo-description]
+*The Mother of All Demos* (1968) marks the introduction of several seminal computer technologies such as the mouse, hypertext, and the graphical user interface.[^demo-desc-1] The person [credited with directing the event](https://www.nytimes.com/2020/07/31/technology/william-english-who-helped-build-the-computer-mouse-dies-at-91.html), Bill English, passed away just two days ago.[^demo-desc-2] The demonstration is still striking today because of its breakthrough technologies and dramatic, almost ominous presentation.
 
-[^demo-description]: The presentation was given by Douglas Engelbart during his time at the Augmentation Research Center Lab in SRI International. Engelbart was generally focused on augmenting human intelligence through collaborative tools of knowledge.
+[^demo-desc-1]: The presentation was given by Douglas Engelbart during his time at the Augmentation Research Center Lab in SRI International. Engelbart was generally focused on augmenting human intelligence through collaborative tools of knowledge.
+
+[^demo-desc-2]: As [Alberto González Palomo](https://matracas.org/) pointed out [on Hacker News](https://news.ycombinator.com/item?id=24064902), when Douglas Engelbart detailed the technical hurdles facing *The Mother of All Demos*, he concluded &ldquo;[it worked, and the main reason it worked is because Bill English is a genius](https://www.youtube.com/watch?v=sG3PWet8fDk&t=20m55s).&rdquo; Engelbart describes the challenges of the demo's computer video display in that talk, &ldquo;we leased two microwave lines, up from our laboratory at SRI - up in Menlo Park - so it’s roughly 30 miles. And it took two dish antennas on the roof there, four of them on a truck up on SkyLine, and two on the roof of the conference center.&rdquo; (ACM Conference on the History of Personal Workstations, January 9, 1986.)
 
 <figure class="iframe-wrapper">
 <iframe width="853" height="480" src="https://www.youtube.com/embed/qI8r8D46JOY" frameborder="0" allowfullscreen></iframe>
@@ -38,7 +40,9 @@ Within ten years of their publication, work started on the technologies that for
 
 ## The Programmable Electronic Computer
 
-Von Neumann laid out the three main internal "organs" of a computer in *First Draft of a Report on the EDVAC*:
+Von Neumann laid out the three main internal "organs" of a computer in *First Draft of a Report on the EDVAC*.[^von-neumann]
+
+[^von-neumann]: The report helped popularize the term "Von Neumann architecture" as a way to denote computers that store programs in memory. The term and the original paper are both controversial because they both fail to acknowledge Von Neumann's peers and predecessors. Although this seems to be an accident of history, the influence of Von Neumann's first draft is undeniable.
 
 1. The arithmetic unit
 2. The control unit
@@ -88,7 +92,7 @@ Creating a database for flights and reserved seats was only part of the problem.
 
 Claude Shannon's *A Mathematical Theory of Communication* describes how to systematically encode complex information and deal with its loss when noise is inevitably introduced into its transmission:[^morse]
 
-[^morse]: Digital telecommunications excited for decades before Claude Shannon published his paper. For example, the telegraph relied on a set of pulses known as *Morse Code* to encode and decode letters sent over a distance. The word *tele-graph* literally means *far-writing*; encoding is a requite for speedy communication over a distance.
+[^morse]: Digital telecommunications existed for decades before Claude Shannon published his paper. For example, the telegraph relied on a set of pulses known as *Morse Code* to encode and decode letters sent over a distance. The word *tele-graph* literally means *far-writing*; encoding is a requite for speedy communication over a distance.
 
 ![](/img/2020-08-04-mother-of-mothers/general-com-sys-1948.png)[^bstj]
 
@@ -102,7 +106,7 @@ If noise corrupts the information, the system must know how to correct the error
 
 Information encoded with certain resiliency guarantees can be compressed or broken up before it is sent out. A promise of data integrity means that fragments can addressed from anywhere in the world and ultimately reassembled into a meaningful whole.
 
-Information theory immediately made the movement of people, money, and ideas easier. John Ranke, the former chair of [American National Standards Institute (ANSI)](https://www.ansi.org/about_ansi/structure_management/board_directors/rankine) and an [early actor in the field of digital privacy](/posts/2020-06-15-personal-privacy.html) in the information age, testified about this power to the United States Congress in the 1980s:[^personal-privacy]
+Information theory immediately made the movement of people, money, and ideas easier. John Rankine, the former chair of [American National Standards Institute (ANSI)](https://www.ansi.org/about_ansi/structure_management/board_directors/rankine) and an [early actor in the field of digital privacy](/posts/2020-06-15-personal-privacy.html) in the information age, testified about this power to the United States Congress in the 1980s:[^personal-privacy]
 
 > Neither the United States nor European aerospace industries could have progressed as they have without a high degree of information exchange, thus ushering in a whole new era in air transportation. Similar examples exist in the fields of medicine, education, communications, energy, information processing, and consumer services.
 >
