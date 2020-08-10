@@ -460,19 +460,48 @@
     :date-bgn #time/year "1997"
     :date-end #time/year "2001"}]
 
-  :training
+ :training
  [{:title "Dataism: Understanding Data Science Through Activism"
    :org "School of Machines, Making &amp; Make-Believe"
    :geo "Berlin, DE"
+   :date #time/year "2020"}
+  {:title "Exploring Cyberspace: Network Sniffing and Scanning"
+   :org "Tech Learning Collective"
+   :geo "New York, NY, US"
    :date #time/year "2020"}
   {:title "German Language Training"
    :org "Sprachsalon"
    :geo "Berlin, DE"
    :date #time/year "2019"}
+  {:title "Screenwriting with Dan Conway"
+   :org "Chicago Dramatists"
+   :geo "Chicago, IL, US"
+   :date #time/year "2007"}
+  {:title "Producers Series"
+   :org "Independent Feature Project"
+   :geo "Chicago, IL, US"
+   :date-bgn #time/year "2007"
+   :date-end #time/year "2008"}
+  {:title "Latin American Composition"
+   :org "with Elbio Rodriguez"
+   :geo "Chicago, IL, US"
+   :date-bgn #time/year "2006"
+   :date-end #time/year "2007"}
   {:title "German Language Training"
    :org "DID Deutsch-Institut"
    :geo "Berlin, DE"
-   :date #time/year "2005"}]
+   :date #time/year "2005"}
+  {:title "Ballroom Dance"
+   :org "Brigham Young University"
+   :date-bgn #time/year "2003"
+   :date-end #time/year "2007"
+   :geo "Provo, UT, US"}]
+
+ :community-volunteer
+ [{:org "Bethesda Nursing Home"
+   :title "Dementia Care"
+   :date-bgn #time/year-month "2007-06"
+   :date-end #time/year-month "2007-12"}]
 
  ;; TODO: add Movie Talk Show: https://movietalkshow.wixsite.com/movie-talk-show/video-reel
  :in-the-media

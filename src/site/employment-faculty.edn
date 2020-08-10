@@ -73,11 +73,11 @@
    }
   {:org "International Academy of Design and Technology"
    :title "Adjunct Faculty"
-   :desc "Video and Animation Department"
+   :desc "Web and Multimedia Design"
    :geo "Chicago, IL, US"
    :date-bgn #time/year-month "2005-01"
    :date-end #time/year-month "2007-06"
-   :synopsis "Taught freshman to senior across three departments: Video and Animation Production, Web and Multimedia Design, and Game Design~ Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
+   :synopsis "Taught freshman to senior across three departments: Web & Multimedia Design, Video & Animation Production, and Game Design~ Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
    :image "iadt.png"
    }
   ]}

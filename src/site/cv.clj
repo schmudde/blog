@@ -155,6 +155,13 @@
                                        (java-time->str (:date-bgn %) (:date-end %))
                                        (java-time->str (:date %)))) affiliations))))
 
+(defmethod make-table :training [x]
+  (let [training (second x)]
+    (into [:div ] (map #(edn->hiccup (:title %) (:org %) (:geo %)
+                                     (if (:date-bgn %)
+                                       (java-time->str (:date-bgn %) (:date-end %))
+                                       (java-time->str (:date %)))) training))))
+
 (defmethod make-table :publications [x]
   (let [publications (second x)
         title (fn [title editor link]
@@ -236,8 +243,9 @@
      (make-table [:in-the-media in-the-media])
      [:h2 "Affiliations"]
      (make-table [:affiliations affiliations])
-     #_[:h3 "Further Training"]
-     #_(into [:div ] (map #(edn->hiccup (:tile %) (:org %) (:geo %) (java-time->str (:date %))) training))
+     [:h3 "Further Training"]
+     (make-table [:training training])
+
      ]))
 
 ;;;;;;;;;;;;;;;;;;
@@ -250,9 +258,7 @@
    (make-bio bio)
    [:div (employment-facutly->hiccup)]
    [:div (talks-workshops->hiccup)]
-   [:div (recognition->hiccup)]
-   [:h2 "Projects"]
-   [:div (projects->hiccup)]])
+   [:div (recognition->hiccup)]])
 
 (defn print-cv []
   (spit "temp.html"
