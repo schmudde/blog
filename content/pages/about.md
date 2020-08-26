@@ -15,7 +15,7 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
-I was born in Peoria, Illinois [^peoria] and currently live in Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin, Germany.
+I was born in Peoria, Illinois [^peoria] and currently split time between Berlin, Germany and Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin.
 
 [^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria skyline](/img/about/peoria.jpeg)
 [^turin]: Turin is a peculiar city in the foothills of the Alps. It is part aristocratic and part post-industrial. The myriad of local businesses are a joy to discover. ![Turin skyline](/img/about/turin.png)
@@ -41,7 +41,7 @@ But the vast majority of eBooks are locked down and distributed in a way that is
 I read blogs and periodicals using an RSS/Atom reader, [Feedly](https://feedly.com/). RSS is a much better way to get your news than social media sites. I also use it to keep track of my friend's writings. Here's a list of friends by subject category - each ordered by how often they post.
 
 - **The Art of Living**: [Khurram Naik](https://naik.co), [The Compass Needle](https://compassneedleblog.wordpress.com), [Meanwhile, Back in Peoria](https://www.meanwhilebackinpeoria.com/)
-- **Computing and the Humanities**: [Knowing and Doing](http://www.cs.uni.edu/~wallingf/blog/index.html), [Veit Heller](http://blog.veitheller.de/), [esoteric.codes](https://esoteric.codes), [Modulo Lotus](http://www.modulolotus.net), [Daniel Bachler](http://danielbachler.de/), [John Jacobsen](http://zerolib.com)
+- **Computing and the Humanities**: [Knowing and Doing](http://www.cs.uni.edu/~wallingf/blog/index.html), [Veit Heller](http://blog.veitheller.de/), [esoteric.codes](https://esoteric.codes), [Modulo Lotus](http://www.modulolotus.net), [Daniel Bachler](http://danielbachler.de/), [John Jacobsen](http://zerolib.com), [Ryan Singer](https://m.signalvnoise.com/author/ryan-singer/)
 - **Programming**: [Jessitron](https://blog.jessitron.com), [Matt Horan's Blog](https://blog.matthoran.com), [See Spot Code](http://seespotcode.net/)
 - **Music &amp; Art**: [Esthetic Lens](http://www.estheticlens.com), [Martina Della Valle](http://martinadellavalle.blogspot.com/), [Travelogue by Jon Sonnenberg](http://artoftravelogue.blogspot.com/), Sharon Hoyer @ [Streetsblog](https://chi.streetsblog.org/author/sharonhoyer/) and [Newcity Stage](https://www.newcitystage.com/), [Nathan Woleck](https://www.nathanwolek.com), [South Street Dungeon](https://southstreetdungeon.wordpress.com)
 

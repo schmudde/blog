@@ -6,5 +6,5 @@
  :website "http://schmud.de"
  :phone "917.994.1620"
  :geo "Turin, Italy"
- :summary "I use quantitative and qualitative analysis to improve software products and technology policy. My interdisciplinary background is an asset for teams that need help educating the public about their work, defining the social impact of their technology, and implementing innovative products. I am an advocate of Linux, Lisp/Clojure, and Jupyter/Python notebooks. Areas of research include the structure and transmission of information, the history of technology, digital art, and applied computation."
+ :summary "I use quantitative and qualitative analysis to improve software products and technology policy. My interdisciplinary background is an asset for teams that need help educating the public about their work, defining the social impact of their technology, and implementing innovative products. I am an advocate of Linux, Lisp/Clojure, Jupyter/Python notebooks, and the decentralized web. Areas of research include the structure and transmission of information, the history of technology, digital art, and applied computation."
  :highlighted-talks ["Say What You Mean"]}
