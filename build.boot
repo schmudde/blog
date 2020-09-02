@@ -4,6 +4,7 @@
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [nrepl "0.7.0" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
+                 [javax.xml.bind/jaxb-api "2.3.0"] ;; new requirement after local system update
                  [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
                  [deraen/boot-livereload "0.2.1"]
                  [time-literals "0.1.4"]
