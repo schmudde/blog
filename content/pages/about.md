@@ -22,7 +22,7 @@ I was born in Peoria, Illinois [^peoria] and currently split time between Berlin
 
 I spent the majority of my life working as an artist, a college professor, and a software engineer. My curiosity drives my research, which focuses on the structure and transmission of information, the social impact of technology, digital art, and the nature of computation.
 
-<i class="fa fa-envelope-o"></i> The internet was built to connect people. If what you see on *Beyond the Frame* resonates, please consider my [open invitation to connect](/posts/2020-04-23-open-invite.html) via [eMail](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;). You can also find me on [Mastodon](https://mastodon.social/@schmudde) or [Twitter](https://twitter.com/dschmudde).
+The internet was built to connect people. If what you see on *Beyond the Frame* resonates, please consider my [open invitation to connect](/posts/2020-04-23-open-invite.html) via <i class="fas fa-envelope"></i>  [eMail](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;). You can also find me on <i class="fab fa-mastodon"></i> [Mastodon](https://mastodon.social/@schmudde) or <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/dschmudde).
 
 ## How I Read
 
@@ -88,7 +88,7 @@ The current website is a collection of thoughts that cover strategies for #[doin
 - Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
 - Timeline: modified CSS by [Niels Voogt](https://codepen.io/NielsVoogt)
 
-<i class="fa fa-code-fork"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
+<i class="fab fa-github"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
 
 [^tufte]: Special thanks to the tool-makers: [Dave Liepmann](https://www.daveliepmann.com/) for the original Tufte project and Jake Zimmerman's [work with Pandoc](https://jez.io/tufte-pandoc-css/) to ensure these [sidenotes](https://github.com/jez/pandoc-sidenote) display correctly.
 

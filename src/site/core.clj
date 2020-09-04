@@ -32,7 +32,8 @@
    [:meta {:charset "utf-8"}]
    [:meta {:http-equiv "Content-Type" :content "text/html"}]
    [:link {:rel "icon" :href "/favicon.ico" :type "image/x-icon"}]
-   [:link {:rel "stylesheet" :href"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}]
+   [:link {:rel "stylesheet" :href "/css/fontawesome/all.min.css"}]
+
 
    [:meta {:name "description" :content (or (:description page-meta) (:description global-meta))}]
    [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0, user-scalable=no"}]
@@ -51,6 +52,13 @@
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
    [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
    [:link {:rel "stylesheet" :href "/css/btf.css"}]])
+
+(defn footer-template []
+  [:div
+   [:ul.list.ma0.pa0
+    [:li.dib.mr2 [:a {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me"} [:i {:class "fab fa-twitter"}]]]
+    [:li.dib.mr2 [:a {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me"} [:i {:class "fab fa-github"}]]]
+    ]])
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
@@ -95,7 +103,9 @@
               (head-template global-meta page-meta)
               [:body
                [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
-               [:main {:role "main"} content]]))
+               [:main {:role "main"} content]
+               [:footer {:itemscope "itemscope" :itemtype "https://schema.org/WPFooter"}
+                (footer-template)]]))
 
 (defn render-post-pages [{global-meta :meta post :entry}]
   (let [content [:div (article-template post)]]
