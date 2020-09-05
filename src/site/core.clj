@@ -58,6 +58,8 @@
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me"} [:i {:class "fab fa-twitter"}]]]
     [:li.dib.mr2 [:a {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me"} [:i {:class "fab fa-github"}]]]
+    [:link {:rel "webmention" :href "https://webmention.io/schmud.de/webmention"}]
+    [:link {:rel "pingback" :href "https://webmention.io/schmud.de/xmlrpc"}]
     ]])
 
 (defn header-template [global-meta]
