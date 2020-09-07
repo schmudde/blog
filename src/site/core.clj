@@ -51,15 +51,40 @@
      [:meta {:property "og:type":content "website"}])
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
    [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
-   [:link {:rel "stylesheet" :href "/css/btf.css"}]])
+   [:link {:rel "stylesheet" :href "/css/btf.css"}]
+
+   ;; Webmention
+   [:link {:rel "webmention" :href "https://webmention.io/schmud.de/webmention"}]
+   [:link {:rel "pingback" :href "https://webmention.io/schmud.de/xmlrpc"}]
+
+   ;; IndieAuth
+   [:link {:rel "authorization_endpoint" :href "https://indieauth.com/auth"}]
+   [:link {:rel "token_endpoint" :href "https://tokens.indieauth.com/token"}]
+
+   ;; To use Aperture as your Microsub endpoint. Then use Monocle.p3k.io as a reader.
+   [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
+
+   ])
 
 (defn footer-template []
-  [:div
+  [:div {:class "h-card"}
+   [:article.mw5.center.bg-white.br3.pa3.pa4-ns.mv3.ba.b--black-10
+    [:div.tc
+     [:img.br-100.h4.w4.dib.ba.b--black-05.pa2 {:class "u-photo" :title "avatar" :src "https://s.gravatar.com/avatar/4c272d7a0e4b25c5126a93372d8403b6?s=80"}]
+     [:h1.f3.mb2 [:span {:class "p-name"} "David Schmudde"]]
+     [:h2.f5.fw4.gray.mt0 [:span {:class "p-org"} "Beyond the Frame"]]
+     [:div
+      [:span {:class "p-locality"} "Berlin, "]
+      #_[:span {:class "p-region"} "Berlin"]
+      [:span {:class "p-country-name" :title "Germany"} "DE"]]
+     [:div {:class "p-tel"} "+1 (917) 994-1620"]
+     ]]
+
    [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me"} [:i {:class "fab fa-twitter"}]]]
-    [:li.dib.mr2 [:a {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me"} [:i {:class "fab fa-github"}]]]
-    [:link {:rel "webmention" :href "https://webmention.io/schmud.de/webmention"}]
-    [:link {:rel "pingback" :href "https://webmention.io/schmud.de/xmlrpc"}]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-twitter"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-github"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
     ]])
 
 (defn header-template [global-meta]
@@ -106,7 +131,7 @@
               [:body
                [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
                [:main {:role "main"} content]
-               [:footer {:itemscope "itemscope" :itemtype "https://schema.org/WPFooter"}
+               [:footer.pv4.ph3.ph5-ns.tc {:itemscope "itemscope" :itemtype "https://schema.org/WPFooter"}
                 (footer-template)]]))
 
 (defn render-post-pages [{global-meta :meta post :entry}]
