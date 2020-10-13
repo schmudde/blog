@@ -19,7 +19,7 @@ tags:
 
 ![](/img/2020-08-27-open-source-community/mit-mc.jpg)[^kl10-mc]
 
-[^kl10-mc]: {-} The KL10 PDP-10 at MIT. It ran ITS [from 1975-1988](https://gunkies.org/wiki/Incompatible_Timesharing_System). Photograph by [Lars Brinkhoff](http://lars.nocrew.org/).
+[^kl10-mc]: {-} The KL10 PDP-10 at MIT. It ran ITS [from 1975-1988](https://gunkies.org/wiki/Incompatible_Timesharing_System). Photograph by [Don Hopkins](https://en.wikipedia.org/wiki/Don_Hopkins).
 
 ## Open Collaboration
 
