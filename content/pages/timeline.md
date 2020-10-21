@@ -70,6 +70,20 @@ An anonymous source posted a conversation between the US Assistant Secretary of 
 
 </div>
 
+<div class="timeline-item" date-is='March 1985' machine-date='1985-03'>
+
+## Les Immatériaux
+
+Les Immatériaux was presented at the Centre Pompidou in Paris. It chronicled many of the confluent developments of media, art, theory, and technology. Christiane Paul suggested that the exhibition &ldquo;argued that the immaterial is matter subjected to interaction and conceptual processes,&rdquo;&dagger; highlighting the shrinking gap between our lives in cyberspace and the physical space.
+
+<footer>
+&dagger; Christiane Paul *From Immateriality to Neomateriality* (2015)
+</footer>
+
+[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)
+
+</div>
+
 <div class="timeline-item" date-is='July 1977' machine-date='1977-07'>
 
 ## The Untied States Privacy Protection Study Commission Issues Their Report
@@ -102,6 +116,20 @@ Interagency Security Classification Appeals Panel (ISCAP) July 2013 declassifica
 </footer>
 
 [MLK and &ldquo;Domestic Terrorism&rdquo;](/posts/2020-06-02-mlk.html)
+
+</div>
+
+<div class="timeline-item" date-is='August 2, 1968' machine-date='1968-8-2'>
+
+## Cybernetic Serendipity
+
+[Cybernetic Serendipity](http://dada.compart-bremen.de/item/exhibition/3) was an exhibition of electronic, cybernetic, and computer art curated by Jasia Reichardt, shown at the Institute of Contemporary Arts, London, England. It was organized in three sections:
+
+1. Computer generated work
+2. Cybernetic devices-robots and painting machines
+3. Machines demonstrating the use of computers and the history of cybernetics.
+
+[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)
 
 </div>
 
