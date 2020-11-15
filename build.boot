@@ -47,15 +47,6 @@
         (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))
 
-; TODO: add plugins:
-;; - (perun/sitemap :filename "sitemap.xml")
-;; - (perun/ttr)
-;; - (perun/word-count)
-;; - (perun/build-date)
-;; - (perun/paginate :renderer 'io.perun.example.paginate/render)
-;; - (perun/sitemap)
-;; - (perun/atom-feed :filterer :original)
-
 (deftask dev []
   (comp (watch)
         (build)

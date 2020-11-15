@@ -1,10 +1,10 @@
 #+TITLE: Beyond the Frame
-#+AUTHOR: David Schmudde (clojure and literate/org-babel)
+#+AUTHOR: David Schmudde
 #+EMAIL: d@schmud.de
 #+LANGUAGE: en
 #+PROPERTY: tangle build.boot
 
-This README is also the ~build.boot~ file as a literate document. ~CTRL-c-v-t~ [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]]; Org will process each code block and generate a source file called ~build.boot~.
+This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~CTRL-c-v-t~ [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]]; Org will process each code block and generate a source file called ~build.boot~.
 
 * Non-Clojure Dependences
 
@@ -14,17 +14,9 @@ This README is also the ~build.boot~ file as a literate document. ~CTRL-c-v-t~ [
     - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
 - Tachyons v4.9.1
 
-* Create the Environment
+* The Boot Build File
 
-A few quick notes on the configuration.
-
-- ~:resource-paths #{"resources" "content"}~: I keep my raw files in two places. My original writing is under ~content~ while ~resources~ has all of the necessary images, css, js, etc....
-- ~[deraen/boot-livereload "0.2.1"]~ : [[https://github.com/Deraen/boot-livereload][boot-livereload]] is an important part of any boot flow involving a browser. It reloads the browser when any files are changed.
-
-TODO:
-
-- The ~[javax.xml.bind/jaxb-api "2.3.0"]~ requirement?
-- The two ~time~ requirements?
+** Create the Environment
 
 #+BEGIN_SRC clojure :tangle yes
 (set-env!
@@ -40,13 +32,23 @@ TODO:
                  [cljc.java-time "0.1.11"]])
 #+END_SRC
 
+A few quick notes on the configuration.
+
+- ~:resource-paths #{"resources" "content"}~: I keep my raw files in two places. My original writing is under ~content~ while ~resources~ has all of the necessary images, css, js, etc....
+- ~[deraen/boot-livereload "0.2.1"]~ : [[https://github.com/Deraen/boot-livereload][boot-livereload]] is an important part of any boot flow involving a browser. It reloads the browser when any files are changed.
+
+TODO:
+
+- The ~[javax.xml.bind/jaxb-api "2.3.0"]~ requirement?
+- The two ~time~ requirements?
+
 #+BEGIN_SRC clojure :tangle yes
 (require '[io.perun :as perun]
          '[pandeiro.boot-http :refer [serve]]
          '[deraen.boot-livereload :refer [livereload]])
 #+END_SRC
 
-* Helper Functions
+** Helper Functions
 
 #+BEGIN_SRC clojure :tangle yes
 (defn page? [{:keys [original-path] :as meta}]
@@ -63,7 +65,7 @@ TODO:
   (if date-published true false))
 #+END_SRC
 
-* The Main Build Task
+** The Main Build Task
 
 This is the build task that builds the static site.
 
@@ -104,7 +106,7 @@ The `collection` task renders links to all previous posts to `index.html`. `rend
               :meta {:type "post"})
 #+END_SRC
 
-* The Development Task
+** The Development Task
 
 The ~dev~ task sandwiches the ~build~ function between ~watch~ and ~serve~. The former watches for any changes to your files and automatically recompiles. The latter serves those files to a web browser.
 
