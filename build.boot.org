@@ -1,0 +1,166 @@
+#+TITLE: Beyond the Frame
+#+AUTHOR: David Schmudde (clojure and literate/org-babel)
+#+EMAIL: d@schmud.de
+#+LANGUAGE: en
+#+PROPERTY: tangle build.boot
+
+https://orgmode.org/org.html#Working-With-Source-Code
+
+- ~CTRL-c-v-t~ will tangle code; Org will process each code block below, and generate the source file ~build.boot~.
+
+* Non-Clojure Dependences
+
+* To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
+* Font Awesome v 5.14.0
+    * [Basic Use](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
+    * [Cheatsheet](https://fontawesome.com/cheatsheet)
+* Tachyons v4.9.1
+
+* Create the Environment
+
+A few quick notes on the configuration.
+
+- ~:resource-paths #{"resources" "content"}~: I keep my raw files in two places. My original writing is under ~content~ while ~resources~ has all of the necessary images, css, js, etc....
+- ~[deraen/boot-livereload "0.2.1"]~ : [[https://github.com/Deraen/boot-livereload][boot-livereload]] is an important part of any boot flow involving a browser. It reloads the browser when any files are changed.
+
+TODO:
+
+- The ~[javax.xml.bind/jaxb-api "2.3.0"]~ requirement?
+- The two ~time~ requirements?
+
+#+BEGIN_SRC clojure :tangle yes
+(set-env!
+ :source-paths #{"src"}
+ :resource-paths #{"resources" "content"}
+ :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
+                 [nrepl "0.7.0" :scope "test"]
+                 [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
+                 [javax.xml.bind/jaxb-api "2.3.0"] ;; new requirement after local system update
+                 [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
+                 [deraen/boot-livereload "0.2.1"]
+                 [time-literals "0.1.4"]
+                 [cljc.java-time "0.1.11"]])
+#+END_SRC
+
+#+BEGIN_SRC clojure :tangle yes
+(require '[io.perun :as perun]
+         '[pandeiro.boot-http :refer [serve]]
+         '[deraen.boot-livereload :refer [livereload]])
+#+END_SRC
+
+* Helper Functions
+
+#+BEGIN_SRC clojure :tangle yes
+(defn page? [{:keys [original-path] :as meta}]
+  (if original-path
+    (.startsWith original-path "pages/")
+    false))
+
+(defn post? [{:keys [original-path] :as meta}]
+  (if original-path
+    (.startsWith original-path "posts/")
+    false))
+
+(defn published? [{:keys [date-published] :as meta}]
+  (if date-published true false))
+#+END_SRC
+
+* The Main Build Task
+
+This is the build task that builds the static site.
+
+#+BEGIN_SRC clojure :tangle yes
+(deftask build []
+  (comp (perun/global-metadata :filename "site.base.edn")
+        (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
+        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
+                          :filterer (apply every-pred [post? published?]))
+        (perun/render :renderer 'site.core/render-post-pages
+                      :filterer (apply every-pred [post? published?])
+                      :meta {:type "post"})
+        (perun/tags :renderer 'site.core/render-tag-pages
+                    :filterer (apply every-pred [post? published?])
+                    :out-dir "public/tags")
+        (perun/render :renderer 'site.core/render-post-pages
+                      :filterer page?
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.cv/render
+                      :page "cv.html"
+                      :meta {:type "page"})
+        (perun/rss :filterer (apply every-pred [post? published?]))
+        (target)))
+#+END_SRC
+
+It's complex task, so here are a few details.
+
+This site must render through [[https://pandoc.org/][pandoc]] to render [[https://edwardtufte.github.io/tufte-css/][tufte css]]-style sidenotes from the Markdown source. The `pandoc-sidenote` plugin does the heavy lifting.
+
+The `collection` task renders links to all previous posts to `index.html`. `render` actually does the rendering.
+
+#+BEGIN_SRC clojure :tangle no
+(perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
+(perun/collection :renderer 'site.core/render-index-page :page "index.html"
+                  :filterer (apply every-pred [post? published?]))
+(perun/render :renderer 'site.core/render-post-pages
+              :filterer (apply every-pred [post? published?])
+              :meta {:type "post"})
+#+END_SRC
+
+* The Development Task
+
+The ~dev~ task sandwiches the ~build~ function between ~watch~ and ~serve~. The former watches for any changes to your files and automatically recompiles. The latter serves those files to a web browser.
+
+Perun offers an elegant way to inject the script into every page in the development environment. ~(livereload :asset-path "public" :filter #"\.(css|html|js)$")~ lets ~livereload~ know what to look for, while ~(perun/inject-scripts :scripts #{"js/livereload.js"})~ loads the actual script.
+
+#+BEGIN_SRC clojure :tangle yes
+(deftask dev []
+  (comp (watch)
+        (build)
+        #_(perun/print-meta)
+        (perun/inject-scripts :scripts #{"js/livereload.js"})
+        (livereload :asset-path "public" :filter #"\.(css|html|js)$")
+        (serve :resource-root "public")))
+#+END_SRC
+
+* Appendix
+
+Plugins I would like to add someday:
+
+* ~(perun/sitemap :filename "sitemap.xml")~
+* ~(perun/ttr)~
+* ~(perun/word-count)~
+* ~(perun/build-date)~
+* ~(perun/paginate :renderer 'io.perun.example.paginate/render)~
+* ~(perun/sitemap)~
+* ~(perun/atom-feed :filterer :original)~
+
+(comment
+
+  (published? {:date-published nil})
+  (published? {:date-published "avril 14th"})
+
+  (def path-data [{:original-path "posts/fefe"} {:original-path nil} {:original-path "po"} {:original-path "fee/fefef"} {:original-path "posts/zzz"} ])
+
+  (def pub-data [{:date-published "avril 14th"} {:date-published nil} {:date-published "may 14th"}])
+
+  (def pub-path-data [{:original-path "posts/fefe" :date-published "avril 14th"} {:original-path nil :date-published "date"} {:original-path "po" :date-published "may 14th"} {:original-path "fee/fefef" :date-published nil} {:original-path "posts/zzz" :date-published "may 14th"} ])
+
+  (filter post? path-data)
+  (filter published? pub-path-data)
+  (filterv (and post? published?) pub-path-data)
+  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
+  ;    {:original-path nil, :date-published "date"}
+  ;    {:original-path "po", :date-published "may 14th"}
+  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+  (filter (or post? published?) pub-path-data)
+  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
+  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+
+  (filter (apply every-pred [post? published?]) pub-path-data)
+  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
+  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+
+  (map #(and (post? %) (published? %)) pub-path-data) ; (true false false false true)
+  (map #(or (post? %) (published? %)) pub-path-data) ; (true true true false true)
+
+  )
