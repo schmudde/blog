@@ -4,17 +4,15 @@
 #+LANGUAGE: en
 #+PROPERTY: tangle build.boot
 
-https://orgmode.org/org.html#Working-With-Source-Code
-
-- ~CTRL-c-v-t~ will tangle code; Org will process each code block below, and generate the source file ~build.boot~.
+This README is also the ~build.boot~ file as a literate document. ~CTRL-c-v-t~ [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]]; Org will process each code block and generate a source file called ~build.boot~.
 
 * Non-Clojure Dependences
 
-* To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
-* Font Awesome v 5.14.0
-    * [Basic Use](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
-    * [Cheatsheet](https://fontawesome.com/cheatsheet)
-* Tachyons v4.9.1
+- To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
+- Font Awesome v 5.14.0
+    - [[https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use][Basic Use]]
+    - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
+- Tachyons v4.9.1
 
 * Create the Environment
 
@@ -93,7 +91,7 @@ This is the build task that builds the static site.
 
 It's complex task, so here are a few details.
 
-This site must render through [[https://pandoc.org/][pandoc]] to render [[https://edwardtufte.github.io/tufte-css/][tufte css]]-style sidenotes from the Markdown source. The `pandoc-sidenote` plugin does the heavy lifting.
+This site must render through [[https://pandoc.org/][pandoc]] to render [[https://edwardtufte.github.io/tufte-css/][tufte css]]-style sidenotes from the Markdown source. The ~pandoc-sidenote~ plugin does the heavy lifting.
 
 The `collection` task renders links to all previous posts to `index.html`. `render` actually does the rendering.
 
@@ -126,14 +124,17 @@ Perun offers an elegant way to inject the script into every page in the developm
 
 Plugins I would like to add someday:
 
-* ~(perun/sitemap :filename "sitemap.xml")~
-* ~(perun/ttr)~
-* ~(perun/word-count)~
-* ~(perun/build-date)~
-* ~(perun/paginate :renderer 'io.perun.example.paginate/render)~
-* ~(perun/sitemap)~
-* ~(perun/atom-feed :filterer :original)~
+- ~(perun/sitemap :filename "sitemap.xml")~
+- ~(perun/ttr)~
+- ~(perun/word-count)~
+- ~(perun/build-date)~
+- ~(perun/paginate :renderer 'io.perun.example.paginate/render)~
+- ~(perun/sitemap)~
+- ~(perun/atom-feed :filterer :original)~
 
+* Appendix
+
+#+BEGIN_SRC clojure :tangle yes
 (comment
 
   (published? {:date-published nil})
@@ -164,3 +165,4 @@ Plugins I would like to add someday:
   (map #(or (post? %) (published? %)) pub-path-data) ; (true true true false true)
 
   )
+#+END_SRC
