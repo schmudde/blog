@@ -30,30 +30,29 @@
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
-        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
+        #_(perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
-        (perun/render :renderer 'site.core/render-post-pages
+        #_(perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
-        (perun/tags :renderer 'site.core/render-tag-pages
+        #_(perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [post? published?])
                     :out-dir "public/tags")
-        (perun/render :renderer 'site.core/render-post-pages
+        #_(perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
-        (perun/static :renderer 'site.cv/render
+        #_(perun/static :renderer 'site.cv/render
                       :page "cv.html"
                       :meta {:type "page"})
-        (perun/rss :filterer (apply every-pred [post? published?]))
-        (target)))
+        #_(perun/rss :filterer (apply every-pred [post? published?]))
+        #_(target)))
 
 (deftask dev []
-  (comp (watch)
+  (comp #_(watch)
         (build)
-        #_(perun/print-meta)
-        (perun/inject-scripts :scripts #{"js/livereload.js"})
-        (livereload :asset-path "public" :filter #"\.(css|html|js)$")
-        (serve :resource-root "public")))
+        #_(perun/inject-scripts :scripts #{"js/livereload.js"})
+        #_(livereload :asset-path "public" :filter #"\.(css|html|js)$")
+        #_(serve :resource-root "public")))
 
 (comment
 

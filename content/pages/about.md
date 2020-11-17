@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2020-08-27
+date-modified: 2020-11-16
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -24,17 +24,52 @@ I spent the majority of my life working as an artist, a college professor, and a
 
 The internet was built to connect people. If what you see on *Beyond the Frame* resonates, please consider my [open invitation to connect](/posts/2020-04-23-open-invite.html) via <i class="fas fa-envelope"></i>  [eMail](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;). You can also find me on <i class="fab fa-mastodon"></i> [Mastodon](https://mastodon.social/@schmudde) or <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/dschmudde).
 
+## This Website
+
+*Beyond the Frame* was established on Tumblr in 2011. The service, established in 2007, was experiencing significant growth and featured my humble blog, which made me pretty popular for awhile. I'll import those old posts to this version of the blog in due time.
+
+The current website is a collection of thoughts that cover strategies for #[doing](/tags/doing.html), the #[humanities](/tags/humanities.html), #[personal](/tags/personal.html) updates, #[science](/tags/science.html) and informatics, the #[suchness](/tags/suchness.html) of knowledge, and #[tools](/tags/tools.html) for thinking. It was made using:
+
+- Blogging: [Perun](https://perun.io/)
+- Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
+- Timeline: modified CSS by [Niels Voogt](https://codepen.io/NielsVoogt)
+
+<i class="fab fa-github"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
+
+[^tufte]: Special thanks to the tool-makers: [Dave Liepmann](https://www.daveliepmann.com/) for the original Tufte project and Jake Zimmerman's [work with Pandoc](https://jez.io/tufte-pandoc-css/) to ensure these [sidenotes](https://github.com/jez/pandoc-sidenote) display correctly.
+
+I stole ideas from:
+
+- [Brutalist Web Design](https://brutalist-web.design/) by David Bryant Copeland
+- [Everyday Information Architecture](https://abookapart.com/products/everyday-information-architecture) by Lisa Maria Marquis
+- [Tom MacWright](https://macwright.org/)
+- [Martin Kavalar](https://nextjournal.com/mk/)
+
 ## How I Read
 
-### Books
+Considering buying physical books on [IndieBound](https://www.indiebound.org/).
+
+### [eBooks](#ebooks)
 
 I always have my nose in far too many books. I prefer eBooks because I often search through my highlights. Furthermore, eInk readers are generally lighter and more ergonomic to use with one hand. They are also a joy to read in daylight and in darkness.
 
-But the vast majority of eBooks are locked down and distributed in a way that is hostile to both authors and readers. I'll write more about this in the future. In the meantime, here are a few ethical sources for eBooks:
+But the vast majority of eBooks are locked down and distributed in a way that is hostile to both authors and readers. Here are a few ethical sources for eBooks:
 
-- [Leanpub](https://leanpub.com/) empowers authors and makes the experience joyful for readers.
-- [Standard eBooks](https://standardebooks.org/) embody the care and attention that classic books deserve.
-- [Tricycle](https://tricycle.org/ebooks/) distributes wonderful books on Buddhism.
+[Leanpub](https://leanpub.com/) empowers authors and makes the experience joyful for readers. [eBooks.com](https://www.ebooks.com/) is considered best by [Ethical Consumer](https://www.ethicalconsumer.org/retailers/shopping-guide/booksellers) and offers a [DRM Free seach](https://www.ebooks.com/en-de/drm-free/). [Smashwords](https://www.smashwords.com/) &ldquo;does not publish works containing digital rights management schemes that limit the customer's ability to legally enjoy the author's work.&rdquo;
+
+[Tricycle](https://tricycle.org/ebooks/) distributes wonderful books on Buddhism.
+
+Classic texts: [Standard eBooks](https://standardebooks.org/) embody the care and attention that classic books deserve while [Project Gutenberg](http://www.gutenberg.org/) offers the widest selection.[^gutenberg]
+
+[^gutenberg]: Remember that different countries have different copyright laws. So Project Gutenberg Australia and Project Gutenberg Canada provide different books. The [Free EBook Foundation](https://ebookfoundation.org/) does some interesting work to make Gutenberg a more robust platform.
+
+Technology-specific eBooks: [Trade Pub](https://itsfoss.tradepub.com/category/information-technology-servers-and-linux-server-os/806/) offers free Linux OS books. Unfortunately, O'Reilly [is no longer selling books](https://www.thebookseller.com/futurebook/why-oreilly-media-no-longer-selling-books-online-607871).
+
+There are a few that I'm less familiar with. A few open platforms like [Open Libre](https://openlibra.com/en/collection) and [Open Book Publishers](https://www.openbookpublishers.com/) and other resellers that use a different reader platform.[^bookseller-platform]
+
+[^bookseller-platform]: [Bookshop](https://bookshop.org/) (using Hummingbird) and [River Dog Book Co.](https://riverdogbookco.papertrell.com/) (using [Mymustreads](https://mymustreads.com/)) are two that I've considered but never used.
+
+I recommend avoiding Amazon and Abe Books (which is owned by Amazon). [Rakuten Kobo](https://www.kobo.com/) offers over 5 million DRM-free titles, including both ebooks and audiobooks. But Mozilla has called [their reputation into question](https://foundation.mozilla.org/en/privacynotincluded/products/kobo-ereaders/). The tech advocates claim that Kobo eReaders do not respect user privacy.
 
 ### With a Little Help From My Friends
 
@@ -44,6 +79,8 @@ I read blogs and periodicals using an RSS/Atom reader, [Feedly](https://feedly.c
 - **Computing and the Humanities**: [Knowing and Doing](http://www.cs.uni.edu/~wallingf/blog/index.html), [Veit Heller](http://blog.veitheller.de/), [esoteric.codes](https://esoteric.codes), [Modulo Lotus](http://www.modulolotus.net), [Daniel Bachler](http://danielbachler.de/), [John Jacobsen](http://zerolib.com), [Ryan Singer](https://m.signalvnoise.com/author/ryan-singer/)
 - **Programming**: [Jessitron](https://blog.jessitron.com), [Matt Horan's Blog](https://blog.matthoran.com), [See Spot Code](http://seespotcode.net/)
 - **Music &amp; Art**: [Esthetic Lens](http://www.estheticlens.com), [Martina Della Valle](http://martinadellavalle.blogspot.com/), [Travelogue by Jon Sonnenberg](http://artoftravelogue.blogspot.com/), Sharon Hoyer @ [Streetsblog](https://chi.streetsblog.org/author/sharonhoyer/) and [Newcity Stage](https://www.newcitystage.com/), [Nathan Woleck](https://www.nathanwolek.com), [South Street Dungeon](https://southstreetdungeon.wordpress.com)
+
+I'm currently experimenting with saving all my highlights on [Readwise](https://readwise.io/). I'm enjoying the integration across different platforms so far.
 
 ## How I Do My Computing
 
@@ -77,26 +114,5 @@ I live in [Emacs](https://www.gnu.org/software/emacs/) and [Weechat](https://wee
 **Messaging**: Weechat gets me to Slack, IRC, Google Chat, [Twitter](https://twitter.com/dschmudde), and [Mastodon](https://mastodon.social/@schmudde). So that's where I spend most of my time. On mobile I prefer Signal, but can also be found on iMessage and Whatsapp.[^social]
 
 [^social]: Large proprietary services running on closed protocols introduce a number of concerns. My current response is to limit their use and encourage others to move to better solutions.
-
-### This Website
-
-*Beyond the Frame* was established on Tumblr in 2011. The service, established in 2007, was experiencing significant growth and featured my humble blog, which made me pretty popular for awhile. I'll import those old posts to this version of the blog in due time.
-
-The current website is a collection of thoughts that cover strategies for #[doing](/tags/doing.html), the #[humanities](/tags/humanities.html), #[personal](/tags/personal.html) updates, #[science](/tags/science.html) and informatics, the #[suchness](/tags/suchness.html) of knowledge, and #[tools](/tags/tools.html) for thinking. It was made using:
-
-- Blogging: [Perun](https://perun.io/)
-- Layout: [Tufte CSS](https://edwardtufte.github.io/tufte-css/) &amp; [Tachyons](http://tachyons.io/)
-- Timeline: modified CSS by [Niels Voogt](https://codepen.io/NielsVoogt)
-
-<i class="fab fa-github"></i> The source code is [here](https://github.com/schmudde/blog).[^tufte]
-
-[^tufte]: Special thanks to the tool-makers: [Dave Liepmann](https://www.daveliepmann.com/) for the original Tufte project and Jake Zimmerman's [work with Pandoc](https://jez.io/tufte-pandoc-css/) to ensure these [sidenotes](https://github.com/jez/pandoc-sidenote) display correctly.
-
-I stole ideas from:
-
-- [Brutalist Web Design](https://brutalist-web.design/) by David Bryant Copeland
-- [Everyday Information Architecture](https://abookapart.com/products/everyday-information-architecture) by Lisa Maria Marquis
-- [Tom MacWright](https://macwright.org/)
-- [Martin Kavalar](https://nextjournal.com/mk/)
 
 ---
