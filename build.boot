@@ -1,6 +1,6 @@
 (set-env!
- :source-paths #{"src"}
- :resource-paths #{"resources" "content"}
+ :source-paths #{"src" "content"}
+ :resource-paths #{"resources"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [nrepl "0.7.0" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
@@ -30,29 +30,29 @@
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
-        #_(perun/collection :renderer 'site.core/render-index-page :page "index.html"
+        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
-        #_(perun/render :renderer 'site.core/render-post-pages
+        (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
-        #_(perun/tags :renderer 'site.core/render-tag-pages
+        (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [post? published?])
                     :out-dir "public/tags")
-        #_(perun/render :renderer 'site.core/render-post-pages
+        (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
-        #_(perun/static :renderer 'site.cv/render
+        (perun/static :renderer 'site.cv/render
                       :page "cv.html"
                       :meta {:type "page"})
-        #_(perun/rss :filterer (apply every-pred [post? published?]))
-        #_(target)))
+        (perun/rss :filterer (apply every-pred [post? published?]))
+        (target)))
 
 (deftask dev []
-  (comp #_(watch)
+  (comp (watch)
         (build)
-        #_(perun/inject-scripts :scripts #{"js/livereload.js"})
-        #_(livereload :asset-path "public" :filter #"\.(css|html|js)$")
-        #_(serve :resource-root "public")))
+        (perun/inject-scripts :scripts #{"js/livereload.js"})
+        (livereload :asset-path "public" :filter #"\.(css|html|js)$")
+        (serve :resource-root "public")))
 
 (comment
 

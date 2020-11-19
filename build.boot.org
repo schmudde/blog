@@ -12,10 +12,25 @@ This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~C
 * Non-Clojure Dependences
 
 - To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
-- Font Awesome v 5.14.0
-    - [[https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use][Basic Use]]
-    - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
-- Tachyons v4.9.1
+- CSS
+    - Tufte CSS
+    - Font Awesome v 5.14.0
+        - [[https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use][Basic Use]]
+        - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
+    - Tachyons v4.9.1
+
+** Pandoc
+
+- [[https://github.com/jez/tufte-pandoc-css][Tufte Pandoc CSS]]
+- ~perun/pandoc~ builds the HTML from markdown in Perun.
+    - ~sudo apt install pandoc~
+    - Supports [[https://pandoc.org/MANUAL.html#footnotes][footnotes]], unlinke the default Perun plugin.
+        - The default is equivalent to: ~pandoc 2020-04-11-perun-blog-2.md -f markdown -t html5 -o test.html~
+    - [[https://github.com/jez/pandoc-sidenote][Pandoc Sidenote]] for creating sidenotes rather than footnotes.
+        - Called by ~pandoc --filter pandoc-sidenote~.
+        - In Perun, default ~["-f" "markdown" "-t" "html5"]~ &rarr; ~["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"]~
+        - ~sudo apt-set install pandoc-sidenote~
+    - ~:cmd-opts~ — CMD line options to pass to pandoc, (default ~["-f" "markdown" "-t" "html5"]~, which converts markdown files to html5).
 
 * The Boot Build File
 :PROPERTIES:
@@ -28,8 +43,8 @@ This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~C
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
 (set-env!
- :source-paths #{"src"}
- :resource-paths #{"resources" "content"}
+ :source-paths #{"src" "content"}
+ :resource-paths #{"resources"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [nrepl "0.7.0" :scope "test"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
@@ -83,22 +98,22 @@ TODO: why do all ~css/~ dirs update every time I render, but not the ~*.css~ fil
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
-        #_(perun/collection :renderer 'site.core/render-index-page :page "index.html"
+        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
-        #_(perun/render :renderer 'site.core/render-post-pages
+        (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
-        #_(perun/tags :renderer 'site.core/render-tag-pages
+        (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [post? published?])
                     :out-dir "public/tags")
-        #_(perun/render :renderer 'site.core/render-post-pages
+        (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
-        #_(perun/static :renderer 'site.cv/render
+        (perun/static :renderer 'site.cv/render
                       :page "cv.html"
                       :meta {:type "page"})
-        #_(perun/rss :filterer (apply every-pred [post? published?]))
-        #_(target)))
+        (perun/rss :filterer (apply every-pred [post? published?]))
+        (target)))
 #+END_SRC
 
 It's complex task, so here are a few details.
@@ -124,11 +139,11 @@ Perun offers an elegant way to inject the script into every page in the developm
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
 (deftask dev []
-  (comp #_(watch)
+  (comp (watch)
         (build)
-        #_(perun/inject-scripts :scripts #{"js/livereload.js"})
-        #_(livereload :asset-path "public" :filter #"\.(css|html|js)$")
-        #_(serve :resource-root "public")))
+        (perun/inject-scripts :scripts #{"js/livereload.js"})
+        (livereload :asset-path "public" :filter #"\.(css|html|js)$")
+        (serve :resource-root "public")))
 #+END_SRC
 
 * Appendix
@@ -146,6 +161,8 @@ Plugins I would like to add someday:
 ** TODO Troubleshooting
 
 Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troubleshoot the build process.
+
+~boot --verbose build~
 
 ~boot show -f perun/markdown show -f~: To inspect the files and metadata that is passed from task to task, there are two tasks we can use. The Boot built-in task ~show~ includes a convenient option to display a tree of all files in the fileset. To see how a task changes the fileset, you can use it like this: https://perun.io/guides/getting-started/
 
