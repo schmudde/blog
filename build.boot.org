@@ -3,11 +3,10 @@
 #+EMAIL: d@schmud.de
 #+LANGUAGE: en
 #+STARTUP: align indent fold nodlcheck hidestars oddeven lognotestate
-#+PROPERTY: tangle yargs.clj
 
-https://github.com/limist/literate-clojure-ants/blob/master/literate-ants.org
+This is the code for my blog and personal website, /[[https://schmud.de/][Beyond the Frame]]/.
 
-This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~CTRL-c-v-t~ [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]]; Org will process each code block and generate a source file called ~build.boot~.
+This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
 
 * Non-Clojure Dependences
 
@@ -166,6 +165,8 @@ Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troublesh
 
 ~boot show -f perun/markdown show -f~: To inspect the files and metadata that is passed from task to task, there are two tasks we can use. The Boot built-in task ~show~ includes a convenient option to display a tree of all files in the fileset. To see how a task changes the fileset, you can use it like this: https://perun.io/guides/getting-started/
 
+
+
 ** Comment Log
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
@@ -204,3 +205,4 @@ Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troublesh
 ** Editing Org Mode
 
 - ~<s~ &rarr; ~TAB~: write a code block in a .org file.
+- Clojure + Literate Programming originally inspired by /[[https://github.com/limist/literate-clojure-ants/blob/master/literate-ants.org][Literate Clojure Ants]]/
