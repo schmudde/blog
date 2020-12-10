@@ -6,7 +6,7 @@
 
 This is the code for my blog and personal website, /[[https://schmud.de/][Beyond the Frame]]/.
 
-This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
+This README is also the ~build.boot~ file as a literate [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] document (aka org-babel). ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
 
 * Non-Clojure Dependences
 
@@ -17,6 +17,7 @@ This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~C
         - [[https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use][Basic Use]]
         - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
     - Tachyons v4.9.1
+    - Pandoc
 
 ** Pandoc
 
@@ -32,11 +33,6 @@ This README is also the ~build.boot~ file as a ~literate/org-babel~ document. ~C
     - ~:cmd-opts~ — CMD line options to pass to pandoc, (default ~["-f" "markdown" "-t" "html5"]~, which converts markdown files to html5).
 
 * The Boot Build File
-:PROPERTIES:
-:header-args+: :tangle ~/build.boof
-:tangle: "~/build.boof"
-:END:
-
 
 ** Create the Environment
 

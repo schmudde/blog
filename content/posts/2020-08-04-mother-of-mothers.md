@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, Germany
 date-created: 2020-05-30
-date-modified: 2020-08-06
+date-modified: 2020-12-10
 date-published: 2020-08-04
 in-language: en
 keywords: informatics, information theory, computation, STS, Engelbart, Von Neumann, Shannon
@@ -27,8 +27,10 @@ tags:
 
 [^demo-desc-2]: As [Alberto González Palomo](https://matracas.org/) pointed out [on Hacker News](https://news.ycombinator.com/item?id=24064902), when Douglas Engelbart detailed the technical hurdles facing *The Mother of All Demos*, he concluded &ldquo;[it worked, and the main reason it worked is because Bill English is a genius](https://www.youtube.com/watch?v=sG3PWet8fDk&t=20m55s).&rdquo; Engelbart describes the challenges of the demo's computer video display in that talk, &ldquo;we leased two microwave lines, up from our laboratory at SRI - up in Menlo Park - so it’s roughly 30 miles. And it took two dish antennas on the roof there, four of them on a truck up on SkyLine, and two on the roof of the conference center.&rdquo; (ACM Conference on the History of Personal Workstations, January 9, 1986.)
 
-<figure class="iframe-wrapper">
-<iframe width="853" height="480" src="https://www.youtube.com/embed/qI8r8D46JOY" frameborder="0" allowfullscreen></iframe>
+<figure>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube.com/embed/qI8r8D46JOY" frameborder="0" allowfullscreen></iframe>
+</div>
 </figure>
 
 The demo is almost platonic in its concept of computing; today's remote office runs on collaborative applications that look remarkably similar to what was shown a half-century ago. The tools were built upon two essential foundations: the **programmable electronic computer** and the **transmission of digital information**. No single person came up with these ideas, but two papers arguably bridge the gap from concept to applied engineering:
@@ -132,10 +134,10 @@ IBM transmitted the first data over satellite from New York to France in 1962.[^
 
 Fifty years later, Brian Williams signs off NBC Nightly News by showing live footage from Cairo, Egypt and thanking &ldquo;Telstar, version 12.&rdquo;
 
-<figure class="iframe-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ZqgOiyFiy8?controls=0" frameborder="0" allowfullscreen></iframe>
+<figure>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube.com/embed/2ZqgOiyFiy8?controls=0" frameborder="0" allowfullscreen></iframe>
+<div>
 </figure>
-
-<!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/uKH-GijnAGk?start=1510" frameborder="0" allowfullscreen></iframe> -->
 
 The *Mother of All Demos* is the synthesis of speedy information processing and transmission, conceived in a way to augment human intelligence and aid collaboration over a distance. We stand on the shoulders of giants who stood on the shoulders of giants.

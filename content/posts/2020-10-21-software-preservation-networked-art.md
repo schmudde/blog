@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-10-21
-date-modified: 2020-10-21
+date-modified: 2020-12-10
 date-published: 2020-10-21
 in-language: en
 keywords: art preservation, agre, net.art, oop
@@ -93,8 +93,10 @@ While individual digital artifacts are trivial to reproduce if stored properly, 
 
 Unfortunately, the recording of [the talk](https://youtu.be/3JHZAboV3fo?t=629) was cut a little short. This is what was captured from our session.
 
-<figure class="iframe-wrapper">
-<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/3JHZAboV3fo?start=629" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/3JHZAboV3fo?start=629" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </figure>
 
 ## Recommended Readings

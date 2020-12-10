@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-05-11
-date-modified: 2020-08-05
+date-modified: 2020-12-10
 date-published: 2020-05-11
 in-language: en
 keywords: buddhism, relationships, documentary
@@ -49,9 +49,8 @@ I watched the fantastic documentary *Notes on Blindness* two nights ago.[^blindn
 
 Humanity is an experience. It is not a truth or an amalgamation of knowledge. Our goal as engineers and artists, caretakers and citizens, is to facilitate the communication of this experience with others.
 
-<figure class="iframe-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MCWouLeXRsI" frameborder="0" allowfullscreen></iframe>
-[^blindess-cite]
+<figure>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube.com/embed/MCWouLeXRsI" frameborder="0" allowfullscreen></iframe>
+</div>Trailer: James Spinney and Peter Middleton, *Notes On Blindness*, video (ARTE, Creative England, Impact Partners, 2016).
 </figure>
-
-[^blindess-cite]: {-} Trailer: James Spinney and Peter Middleton, *Notes On Blindness*, video (ARTE, Creative England, Impact Partners, 2016).

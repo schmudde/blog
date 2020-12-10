@@ -411,8 +411,11 @@
 
  ;; TODO: Add SCICLOJ
   :affiliations
- [{:org "Ruca: A Business Co-Operative"
+ [{:org "Ruca: A business co-operative"
    :title "Member"
+   :date #time/year "2020"}
+  {:org "Ampled: An online artist co-operative"
+   :title "Community Member"
    :date #time/year "2020"}
   {:org "Association for Computing Machinery"
    :title "Member"
