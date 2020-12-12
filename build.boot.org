@@ -8,7 +8,7 @@ This is the code for my blog and personal website, /[[https://schmud.de/][Beyond
 
 This README is also the ~build.boot~ file as a literate [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] document (aka org-babel). ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
 
-* Non-Clojure Dependences
+* Non-Clojure Dependencies
 
 - To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
 - CSS
@@ -31,6 +31,37 @@ This README is also the ~build.boot~ file as a literate [[https://orgmode.org/wo
         - In Perun, default ~["-f" "markdown" "-t" "html5"]~ &rarr; ~["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"]~
         - ~sudo apt-set install pandoc-sidenote~
     - ~:cmd-opts~ — CMD line options to pass to pandoc, (default ~["-f" "markdown" "-t" "html5"]~, which converts markdown files to html5).
+
+** Tufte CSS
+
+[[https://www.erikto.com/other/old-blog/embedding-youtube/][Erik]] came up with a great way to embed videos in Tufte and keep them 16x9.
+
+#+BEGIN_SRC html :tangle no
+<figure>
+    <div class="iframe-wrapper">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</figure>
+#+END_SRC
+
+But on mobile it doesn't reach its full width.
+
+#+BEGIN_SRC css :tangle no
+figure {
+    max-width: 90%;
+}
+#+END_SRC
+
+So it can be centered.
+
+#+BEGIN_SRC css :tangle no
+figure {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#+END_SRC
 
 * The Boot Build File
 
@@ -162,6 +193,10 @@ Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troublesh
 ~boot show -f perun/markdown show -f~: To inspect the files and metadata that is passed from task to task, there are two tasks we can use. The Boot built-in task ~show~ includes a convenient option to display a tree of all files in the fileset. To see how a task changes the fileset, you can use it like this: https://perun.io/guides/getting-started/
 
 
+
+** TODO Improvements
+
+- elisp fiction to autocomplete keywords (vs. tags)
 
 ** Comment Log
 
