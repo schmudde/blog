@@ -29,12 +29,15 @@ html {
 
 
 .timeline-item {
-	  padding: 3em 2em 2em;
-	  position: relative;
-	  border-left: 2px solid rgba(0, 0, 0, 0.3);
-    width: 55%;
+     padding: 3em 2em 2em;
+     position: relative;
+     border-left: 2px solid rgba(0, 0, 0, 0.3);
+     width: 100%;
 }
 
+.timeline-time > p {
+    width: 10%;
+}
 
 
 .timeline-item:before {

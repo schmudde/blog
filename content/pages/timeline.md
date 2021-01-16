@@ -19,6 +19,21 @@ Significant events in the history of information previously covered on [Beyond t
 
 <div class="container">
 
+
+<div class="timeline-item" date-is='January 6, 2021' machine-date='2021-01-06'>
+
+## Representative Taylor Greene Spreads QAnon Claims in Congress on the Night of the Capitol Invasion
+
+&ldquo;It’s been proven that these [voting] machines are connected and that they can be hacked.&rdquo;
+
+<footer>
+Representative Marjorie Taylor Greene, Republican of Georgia, joins her colleagues in [spreading misinformation](https://www.nytimes.com/live/2021/01/06/us/fact-check-electoral-certification#its-been-proven-that-these-machines-are-connected-and-that-they-can-be-hacked) on the House floor.
+</footer>
+
+[Truth Storms the Capitol](/posts/2021-01-07-truth-storms-the-capitol.html)
+
+</div>
+
 <div class="timeline-item" date-is='May 19, 2020' machine-date='2020-05-19'>
 
 ## Podcaster Joe Rogan Signs With Spotify
@@ -158,6 +173,37 @@ J.C.R. Licklider and Robert W. Taylor, "The Computer As A Communication Device",
 </div>
 
 
+<div class="timeline-item" date-is='January 26, 1967' machine-date='1967-01-26'>
+
+## J.C.R. Licklider Coins the Term &ldquo;Narrowcasting&rdquo;
+
+&lsquo;The Carnegie Commission Report on Educational Television [...] proposed interconnecting PBS stations via satellite, and a supplementary paper by MIT professor and Internet visionary J.C.R. Licklider outlined several future scenarios for television including one that foresaw a multiplicity of television networks aimed at serving the needs of smaller, specialized audiences. “Here,” stated Licklider, “I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach”&rsquo;
+
+<footer>
+Patrick Parsons, "The Evolution Of The Cable-Satellite Distribution System", *Journal Of Broadcasting & Electronic Media* 47, no. 1 (2003): 1-17, doi:10.1207/s15506878jobem4701_1.
+</footer>
+
+<footer>
+J.C.R. Licklider, "Televistas: Looking Ahead Through Side Windows", *[Public Television: A Program For Action](https://current.org/1967/01/carnegie-i/)*, (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 201-225).
+</footer>
+
+[Truth Storms the Capitol](/posts/2021-01-07-truth-storms-the-capitol.html)
+
+</div>
+
+<div class="timeline-item" date-is='1960' machine-date='1960'>
+
+## David Padwa Co-Founds Basic Systems With Francis Mechner
+
+&ldquo;Firm specialized in educational and curricular technologies as well as the provision of systems integration services in education and training markets. In 1964 Xerox Corporation acquired Basic Systems; continued as division executive at Xerox and Director of Planning for educational markets.&rdquo;
+
+<footer>
+From David Padwa's [Curriculum Vitae](http://www.cuke.com/people/padwa.htm)
+</footer>
+
+[Be Here Now](/posts/2020-12-16-be-here-now.html)
+
+</div>
 
 <div class="timeline-item" date-is='1723' machine-date='1723'>
 ## Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;
