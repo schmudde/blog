@@ -203,12 +203,12 @@ Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troublesh
 lftp uses Transport Layer Security (TLS). So it's essential to first grab the certificate from the FTP server.
 
 #+NAME: certificate
-#+BEGIN_SRC shell :results drawer
+#+BEGIN_SRC shell :results code
 openssl s_client -connect schmud.de:21 -starttls ftp
 #+END_SRC
 
 #+RESULTS: certificate
-:RESULTS:
+#+BEGIN_SRC shell
 CONNECTED(00000003)
 ---
 Certificate chain
@@ -272,18 +272,18 @@ No ALPN negotiated
 SSL-Session:
     Protocol  : TLSv1.2
     Cipher    : ECDHE-RSA-AES256-GCM-SHA384
-    Session-ID: 016EB867451820147236CB4FA527D09049A24F24690D15042BC2ACB870581D5B
+    Session-ID: 39AB8766F1E25D1BAA9861BD34259206E09537F365EAE7998B3615E4E7203D1C
     Session-ID-ctx:
-    Master-Key: C4A094C612F2374781FDFB313A5E9E1F8DB613200F27C5B8C62D6B6A86A5496CC4DBF6F5C67FCE76700EB8C3947362AD
+    Master-Key: 3A146B3FFE9753093BBF712BF46DC8E54CC812AD1A0E07E64E51F5286B58DF0CAF48C53A8EB3B64EF71290A0A8763597
     PSK identity: None
     PSK identity hint: None
     SRP username: None
-    Start Time: 1610881067
+    Start Time: 1610883930
     Timeout   : 7200 (sec)
     Verify return code: 0 (ok)
     Extended master secret: yes
 ---
-:END:
+#+END_SRC
 
 1. I include the certificate chain in a new file called ~mycert.crt~ in the local ~~/.lftp~ folder.
 2. I create a file called ~rc~ in the local ~~/.lftp~ folder and add the lines
@@ -340,4 +340,5 @@ Alternatively, it may be possible to use the Ubuntu certificates in some cases:
     - Run these commands with
         - ~C-c C-c~
         - ~C-c C-o~: results in a separate buffer.
+- ~#+BEGIN_SRC shell :results code~
 - Clojure + Literate Programming originally inspired by /[[https://github.com/limist/literate-clojure-ants/blob/master/literate-ants.org][Literate Clojure Ants]]/
