@@ -285,8 +285,8 @@ SSL-Session:
 ---
 #+END_SRC
 
-1. I include the certificate chain in a new file called ~mycert.crt~ in the local ~~/.lftp~ folder.
-2. I create a file called ~rc~ in the local ~~/.lftp~ folder and add the lines
+1. I include the certificate chain in a new file called ~mycert.crt~ in the local ~/.lftp folder.
+2. I create a file called ~rc~ in the local ~/.lftp folder and add the lines
     - ~set ssl:ca-file "mycert.crt"~
     - ~set ssl:check-hostname no~ (this prevents ~ls: Fatal error: Certificate verification: certificate common name doesn't match requested host name ‘schmud.de’ (60:0A:B2:25:99:3F:24:71:0D:C9:4F:D2:64:CE:D5:82:54:1D:DF:B3)~)
 
@@ -340,5 +340,5 @@ Alternatively, it may be possible to use the Ubuntu certificates in some cases:
     - Run these commands with
         - ~C-c C-c~
         - ~C-c C-o~: results in a separate buffer.
-- ~#+BEGIN_SRC shell :results code~
+- ~#+BEGIN_SRC shell :results code~: the ~#+RESULTS: certificate~ must be as ~:results code~ rather than ~drawer~, otherwise it will not render correctly in GitHub.
 - Clojure + Literate Programming originally inspired by /[[https://github.com/limist/literate-clojure-ants/blob/master/literate-ants.org][Literate Clojure Ants]]/
