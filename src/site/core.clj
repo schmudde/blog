@@ -49,6 +49,7 @@
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]
      [:meta {:property "og:type":content "website"}])
+   [:meta {:name "ahrefs-site-verification" :content "9f4e0e681ebce19d5f7a4a7ddbab899c9fbc893c04144bd69fc950c3ad555dd2"}]
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
    [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
    [:link {:rel "stylesheet" :href "/css/btf.css"}]
