@@ -68,7 +68,7 @@ Yet the internet appears to be an ally as much as an enemy. Misinformation sprea
 
 Some of us respond by indulging in anger and engaging in debates we know are fruitless.[^xkcd] Others of us yield to worry - a form of self-torment. In both cases, we forget why we embarked on this networked society in the first place. It's because we believe that a more literate public is a better public; we believe that a public that communicates is a healthier public.
 
-[^xkcd]: &ldquo;Duty Calls&rdquo;, [XKCD](https://xkcd.com/386/) ![](img/2020-05-18-climate-change/duty-calls.png)
+[^xkcd]: &ldquo;Duty Calls&rdquo;, [XKCD](https://xkcd.com/386/) ![](/img/2020-05-18-climate-change/duty-calls.png)
 
 This may be an erroneous premise. There are no models for what we are building. The information technology itself is fraught with the assumptions made when building the internet. The work of refining the software into a more equanimous form will probably be a project without end.
 

@@ -8,6 +8,9 @@ This is the code for my blog and personal website, /[[https://schmud.de/][Beyond
 
 This README is also the ~build.boot~ file as a literate [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] document (aka org-babel). ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
 
+- To build the website, run ~boot build~.
+- To start a development server, run ~boot dev~.
+
 * Non-Clojure Dependencies
 
 - To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.

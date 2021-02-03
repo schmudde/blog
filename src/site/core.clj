@@ -83,6 +83,7 @@
 
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://mastodon.social/@schmudde" :title "Mastodon Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-mastodon"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-twitter"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-github"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
