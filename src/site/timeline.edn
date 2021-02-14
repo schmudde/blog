@@ -1,0 +1,16 @@
+[{:title "Representative Taylor Greene Spreads QAnon Claims in Congress on the Night of the Capitol Invasion"
+  :geo "Washington D.C., US"
+  :date #time/date "2021-01-06"
+  :desc "&ldquo;It’s been proven that these [voting] machines are connected and that they can be hacked.&rdquo;"
+  :footer "Representative Marjorie Taylor Greene, Republican of Georgia, joins her colleagues in spreading misinformation on the House floor."
+  :link "/posts/2021-01-07-truth-storms-the-capitol.html"
+  :link-name "Truth Storms the Capitol"
+  :image nil}
+{:title "Podcaster Joe Rogan Signs With Spotify"
+ :geo nil
+ :date #time/date "2020-05-19"
+ :desc "Joe Rogan announced an exclusive deal with Spotify that sent data archivists scrambling to save the media and community discussions surrounding his show on YouTube. The deal is worth more than $100 million according to Anne Steele of The Wall Street Journal, &ldquo;Spotify Strikes Podcast Deal With Joe Rogan Worth More Than $100 Million.&rdquo;"
+ :footer nil
+ :link "/posts/2020-05-21-third-way.html"
+ :link-name "Aggregators, Publishers, and the Third Way"
+ :image nil}]

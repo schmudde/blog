@@ -8,20 +8,23 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2020-12-10
+date-modified: 2021-02-14
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-[^now] <i class="fa fa-image"></i> I just launched my art gallery, [Gallery 404](http://netart.today/). The gallery exhibits net.art as it appears today - exclusively specializing in broken artworks.
+[^now] I'm excited to announce my new position as Chief Technology Officer (CTO) at [Yorba](https://yorba.co/). We are building an open digital identity service. More details to come.
 
 [^now]: {-} This *now page* shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-I'm consulting with a team at [Ruca](https://ruca.co/) on an **open digital identity system**. My role as a technical consultant is to provide a cultural, historical, and technological context for their overall strategy. I can't talk much about the project at the moment, but I can say that Ruca's background as a global design cooperative means they have a unique approach to the problem. I'm excited.
+I started a class with the [Virtual School on Internet Governance](https://www.virtualsig.org/) in February. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education. I just finished the first week on internet history, which is centered on the American narrative.
+
 
 ## Projects
+
+<i class="fa fa-image"></i> I continue to curate artworks for [Gallery 404](http://netart.today/). The gallery exhibits net.art as it appears today - exclusively specializing in broken artworks.
 
 My October talk at *[JupyterCon 2020](https://jupytercon.com/)*, "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia", was [published online](https://www.youtube.com/watch?v=__0Pr13PQSc).[^jupytercon]
 
@@ -51,10 +54,11 @@ I'm still working on three book projects.
 
 ## Reading
 
+- *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020)
+- [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
 - *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
-- *The Prophet* by Khalil Gibran (1923)
 
-I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers, *Lankavatara Sutra* (350-400 CE) translated by Red Pine, and *Computation and Human Experience* by Philip E. Agre (1997)
+I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers, *Lankavatara Sutra* (350-400 CE) translated by Red Pine, *The Prophet* by Khalil Gibran (1923), and *Computation and Human Experience* by Philip E. Agre (1997)
 
 ## Recent Memory
 
