@@ -175,6 +175,24 @@ Perun offers an elegant way to inject the script into every page in the developm
         (serve :resource-root "public")))
 #+END_SRC
 
+** Development Environment
+
+There is no nrepl present. The current process:
+
+1. ~boot dev~
+2. Open a project file, ~*.clj~, and ~cider-jack-in~.
+
+Updating the file will update the website.
+
+Customize the jack-in command by tweaking the shell command it runs to include a dev profile.
+
+~C-u M-x cider-jack-in~ to specify the exact command for ~cider-jack-in~. Specifically, add the ~dev~ profile.
+
+I need to customize the command line CIDER uses for cider-jack-in by modifying the following string options:
+
+- ~cider-boot-global-options~: these are passed to the command directly, in first position (e.g., -o to lein enables offline mode).
+- ~cider-boot-parameters~: these are usually task names and their parameters (e.g., dev for launching boot’s dev task instead of the standard repl -s wait).
+
 * Appendix
 
 Plugins I would like to add someday:
@@ -195,6 +213,7 @@ Insert ~(perun/print-meta)~ into the ~(deftask dev [] ...)~ command to troublesh
 
 ~boot show -f perun/markdown show -f~: To inspect the files and metadata that is passed from task to task, there are two tasks we can use. The Boot built-in task ~show~ includes a convenient option to display a tree of all files in the fileset. To see how a task changes the fileset, you can use it like this: https://perun.io/guides/getting-started/
 
+Regular build bug: ~[inject-scripts] - copied unchanged file public/posts/2020-04-29-info-to-knowledge.html~
 
 
 ** TODO Improvements

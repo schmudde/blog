@@ -1,5 +1,6 @@
 (ns site.core
-  (:require [hiccup.page :as page]))
+  (:require [hiccup.page :as page]
+            [site.timeline :as timeline]))
 
 (defn format-date [date]
   (if date (.format (java.text.SimpleDateFormat. "MMMM dd, yyyy") date)))
@@ -98,7 +99,7 @@
      [:span.mb2 " by "]
      [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
    [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
+    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Homeqqqqqqqqqqqqq"]]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/pages/timeline.html" :title "About"} "Timeline"]]
@@ -122,7 +123,10 @@
        [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
        (time-template (:date-published post))
        [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
-   [:section {:role "main" :itemprop "articleBody"} (:content post)]
+   [:section {:role "main" :itemprop "articleBody"} (:content post)
+    [:p "timeline " (timeline/build-timeline (:permalink post))]
+
+    ]
    (if (= (:type post) "page") [:div [:span "Last Updated: "]
                                 (time-template (:date-modified post))])])
 
