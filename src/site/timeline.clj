@@ -5,7 +5,6 @@
             [clojure.string :as str]
 
             [clojure.edn :as edn]
-            [clojure.string :as str]
             [time-literals.read-write :as time-read]))
 
 (def timeline (->> (slurp "src/site/timeline.edn")

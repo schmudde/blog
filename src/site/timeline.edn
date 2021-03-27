@@ -6,11 +6,19 @@
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
-{:title "Podcaster Joe Rogan Signs With Spotify"
- :geo nil
- :date #time/date "2020-05-19"
- :desc "Joe Rogan announced an exclusive deal with Spotify that sent data archivists scrambling to save the media and community discussions surrounding his show on YouTube. The deal is worth more than $100 million according to Anne Steele of The Wall Street Journal, &ldquo;Spotify Strikes Podcast Deal With Joe Rogan Worth More Than $100 Million.&rdquo;"
- :footer nil
- :link "/posts/2020-05-21-third-way.html"
- :link-name "Aggregators, Publishers, and the Third Way"
- :image nil}]
+ {:title "Podcaster Joe Rogan Signs With Spotify"
+  :geo nil
+  :date #time/date "2020-05-19"
+  :desc "Joe Rogan announced an exclusive deal with Spotify that sent data archivists scrambling to save the media and community discussions surrounding his show on YouTube. The deal is worth more than $100 million according to Anne Steele of The Wall Street Journal, &ldquo;Spotify Strikes Podcast Deal With Joe Rogan Worth More Than $100 Million.&rdquo;"
+  :footer nil
+  :link "/posts/2020-05-21-third-way.html"
+  :link-name "Aggregators, Publishers, and the Third Way"
+  :image nil}
+ {:title "Network Solutions Charges for Domain Names"
+  :geo nil
+  :date #time/year-month "1995-09"
+  :desc "NSF allows Network Solutions to begin charging for domain name registration services, which were perviously free for .com, .net, .org, .edu, and .gov top-level domains."
+  :footer nil
+  :link "/posts/2020-30-11-gallery-404.html"
+  :link-name "Gallery 404"
+  :image nil}]

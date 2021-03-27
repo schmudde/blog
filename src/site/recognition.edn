@@ -34,7 +34,7 @@
    :publication "Nextjournal"
    :link "https://news.ycombinator.com/item?id=18740197"
    :date #time/date "2018-12-11"
-   :stats "> 50,000 views"
+   :stats "72,000 unique views (01/2019-01/2021)"
    :synopsis "Originally published as a computational notebook, the article surveys version control solutions for Jupyter notebooks with runnable examples."}
   {:title "Our Lives, Encoded"
    :publication "Broken Toilets"

@@ -17,7 +17,7 @@ uuid:
 
 [^now] I'm excited to announce my new position as Chief Technology Officer (CTO) at [Yorba](https://yorba.co/). We are building an open digital identity service. More details to come.
 
-[^now]: {-} This *now page* shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
+[^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
 I started a class with the [Virtual School on Internet Governance](https://www.virtualsig.org/) in February. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education. I just finished the first week on internet history, which is centered on the American narrative.
 
