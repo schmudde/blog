@@ -18,8 +18,11 @@
 
 (defn index-timeline [timeline]
   (->> timeline
-       (map (juxt #(link->keyword (:link %1)) identity))
+       (map (juxt #(if-let [link (:link %1)]
+                     (link->keyword link)) identity))
+       (filter #(some? (first %1))) ; filter out any entry without an associated article
        (into {})))
+
 
 (index-timeline timeline)
 
