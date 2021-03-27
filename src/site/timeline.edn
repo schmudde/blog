@@ -16,7 +16,7 @@
   :image nil}
  {:title "Apple and Google Announce Bluetooth Contact Tracing Efforts"
   :geo nil
-  :date #time/year-month "2020-04-10"
+  :date #time/date "2020-04-10"
   :desc "Apple and Google decided to bake an automated exposure notification service into their portable devices. The software will enable intra-device information exchange over Bluetooth while keeping each individual’s identity a secret."
   :footer nil
   :link "/posts/2020-05-07-covid-tracking.html"
@@ -24,7 +24,7 @@
   :image nil}
  {:title "NotPetya Malware Appears"
   :geo nil
-  :date #time/year-month "2017-06-27"
+  :date #time/date "2017-06-27"
   :desc "The NotPetya malware first appeared in 2017, on the eve of Ukrainian Constitution Day. It affected thousands of systems in over 65 countries. Maersk, the Danish shipping company, lost $300 million in revenues and was forced to replace 4,000 servers. Even still, Ukraine was the malware’s clear target, suffering 80% of all infections."
   :footer nil
   :link "/posts/2020-05-29-disinformation-strategies.html"
@@ -40,7 +40,7 @@
   :image nil}
  {:title "&ldquo;Fuck the EU.&rdquo; Malinformation Effort"
   :geo nil
-  :date #time/year-month "2014-02-04"
+  :date #time/date "2014-02-04"
   :desc "An anonymous source posted a conversation between the US Assistant Secretary of State, Victoria Nuland, and the US Ambassador to Ukraine, Geoffrey Pyatt. Amidst all the political banter, one line stood out, &ldquo;Fuck the EU.&rdquo; The leaked audio was a crude effort to sow dissension between the US and its EU allies during a tense moment in Ukraine - a move that would clearly help Russian interests."
   :footer nil
   :link "/posts/2020-05-29-disinformation-strategies.html"
@@ -64,7 +64,7 @@
   :image nil}
  {:title "Minitel"
   :geo nil
-  :date #time/year-month "1980-7-15"
+  :date #time/date "1980-07-15"
   :desc "Minitel, a popular public computer network, comes online in France. This network is used to provide online services to the general public."
   :footer nil
   :link "/posts/2020-30-11-gallery-404.html"
@@ -75,16 +75,16 @@
   :date #time/year-month "1977-07"
   :desc "The Privacy Protection Study Commission generated 162 recommendations to help protect citizens against the intrusive nature of digital data collection, storage, and dissemination. They found that the Privacy Act of 1974 &ldquo;had not resulted in the general benefits to the public that either its legislative history or the prevailing opinion as to its accomplishments would lead one to expect.&rdquo; These recommendations were never codified into law."
   :footer "<a href='/papers/personal-privacy-in-an-info-society-1977.pdf'>Personal Privacy In An Information Society: Appendix 3: Employment Records</a>. The full report is <a href='https://epic.org/privacy/ppsc1977report/'>here</a>."
-  :link "/posts/2020-30-11-gallery-404.html"
-  :link-name "Galley 404"
+  :link "/posts/2020-06-15-personal-privacy.html"
+  :link-name "Personal Privacy"
   :image nil}
  {:title "California Constitutional Right of Privacy Amendment"
   :geo nil
-  :date #time/year-month "1972-08-08"
+  :date #time/date "1972-08-08"
   :desc "A 1972 amendment to the California Constitution that included the &ldquo;right of privacy among the &lsquo;inalienable&rsquo; rights of all people. The amendment established a legal and enforceable right of privacy for every Californian. Fundamental to this right of privacy is the ability of individuals to control the use, including the sale, of their personal information.&rdquo;"
   :footer "California Legislative Information Website, *Assembly Bill No. 375: Legislative Consunsel's Digest: <a href='https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201720180AB375&showamends=false'>Today's Law As Amended</a>, 2018."
-  :link nil
-  :link-name nil
+  :link "/posts/2020-06-15-personal-privacy.html"
+  :link-name "Personal Privacy"
   :image nil}
  {:title "Project Minaret at the National Security Agency"
   :geo nil
@@ -96,11 +96,19 @@
   :image nil}
  {:title "The ARPANET"
   :geo nil
-  :date #time/year-month "1969-8-30"
+  :date #time/date "1969-08-30"
   :desc "The ARPANET, an early military computer network, comes online in the United States. The network is used to coordinate information and share computing resources."
   :footer nil
   :link "/posts/2020-30-11-gallery-404.html"
   :link-name "Gallery 404"
+  :image nil}
+ {:title "Cybernetic Serendipity"
+  :geo nil
+  :date #time/date "1968-08-02"
+  :desc "<a href='http://dada.compart-bremen.de/item/exhibition/3'>Cybernetic Serendipity</a> was an exhibition of electronic, cybernetic, and computer art curated by Jasia Reichardt, shown at the Institute of Contemporary Arts, London, England. It was organized in three sections: 1. Computer generated work, 2. Cybernetic devices-robots and painting machines, 3. Machines demonstrating the use of computers and the history of cybernetics."
+  :footer nil
+  :link "/posts/2020-10-21-software-preservation-networked-art.html"
+  :link-name "Software Preservation in Networked Art"
   :image nil}
  {:title "RFC #1: Host Software"
   :geo nil
@@ -109,14 +117,6 @@
   :footer "https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments"
   :link nil
   :link-name nil
-  :image nil}
- {:title "Cybernetic Serendipity"
-  :geo nil
-  :date #time/year-month "1968-8-2"
-  :desc "<a href='http://dada.compart-bremen.de/item/exhibition/3'>Cybernetic Serendipity</a> was an exhibition of electronic, cybernetic, and computer art curated by Jasia Reichardt, shown at the Institute of Contemporary Arts, London, England. It was organized in three sections: 1. Computer generated work, 2. Cybernetic devices-robots and painting machines, 3. Machines demonstrating the use of computers and the history of cybernetics."
-  :footer nil
-  :link "/posts/2020-10-21-software-preservation-networked-art.html"
-  :link-name "Software Preservation in Networked Art"
   :image nil}
  {:title "&ldquo;The Computer As A Communication Device&rdquo;"
   :geo nil
@@ -128,7 +128,7 @@
   :image nil}
  {:title "J.C.R. Licklider Coins the Term &ldquo;Narrowcasting&rdquo;"
   :geo nil
-  :date #time/year-month "1967-01-26"
+  :date #time/date "1967-01-26"
   :desc "&lsquo;The Carnegie Commission Report on Educational Television [...] proposed interconnecting PBS stations via satellite, and a supplementary paper by MIT professor and Internet visionary J.C.R. Licklider outlined several future scenarios for television including one that foresaw a multiplicity of television networks aimed at serving the needs of smaller, specialized audiences. &ldquo;Here,&rdquo; stated Licklider, &ldquo;I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach&ldquo;&rsquo;"
   :footer "Patrick Parsons, 'The Evolution Of The Cable-Satellite Distribution System', *Journal Of Broadcasting & Electronic Media* 47, no. 1 (2003): 1-17, doi:10.1207/s15506878jobem4701_1. J.C.R. Licklider, 'Televistas: Looking Ahead Through Side Windows', *Public Television: A Program For Action*, (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 201-225), https://current.org/1967/01/carnegie-i/."
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
@@ -136,7 +136,7 @@
   :image nil}
  {:title "David Padwa Co-Founds Basic Systems With Francis Mechner"
   :geo nil
-  :date #time/year-month "1960"
+  :date #time/year "1960"
   :desc "&ldquo;Firm specialized in educational and curricular technologies as well as the provision of systems integration services in education and training markets. In 1964 Xerox Corporation acquired Basic Systems; continued as division executive at Xerox and Director of Planning for educational markets.&rdquo;"
   :footer "From David Padwa's <a href='http://www.cuke.com/people/padwa.htm'>Curriculum Vitae</a>"
   :link "/posts/2020-12-16-be-here-now.html"

@@ -46,10 +46,12 @@
     [:div {:class "timeline"}
      (map #(timeline-entry-template (second %1)) timeline-entries)]))
 
-(build-timeline "/posts/2021-01-07-truth-storms-the-capitol.html")
+(comment
+  (build-timeline "/posts/2021-01-07-truth-storms-the-capitol.html")
 
 
-
+  (build-timeline "/posts/2020-06-15-personal-privacy.html")
+  )
 
 ;; TODO:
 ;; - make-links etc... from site.cv
