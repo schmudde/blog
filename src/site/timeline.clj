@@ -1,6 +1,6 @@
 (ns site.timeline
   (:require [hiccup.page :refer [html5]]
-            #_[site.cv :as formatter]
+            [site.time-utils :refer [java-time->str java-time->full-date-str]]
             [clojure.string :as str]
             [site.layout :refer [body-template]]
             [clojure.edn :as edn]
