@@ -2,7 +2,7 @@
   (:require [clojure.edn :as edn]
             [clojure.string :as str]
             [hiccup.page :as page]
-            [site.core :as layout]
+            [site.layout :refer [body-template]]
             [cljc.java-time.local-date :as ld]
             [time-literals.data-readers :as data-readers]
             [time-literals.read-write :as time-read]
@@ -271,7 +271,7 @@
 (defn render [{global-meta :meta :as meta}]
   (let [page-title "Curriculum Vitae"
         content (make-cv)]
-    (layout/body-template global-meta page-title content)))
+    (body-template global-meta page-title content)))
 
 (print-cv)
 

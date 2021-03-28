@@ -1,6 +1,6 @@
 (ns site.about
   (:require [hiccup.page :refer [html5]]
-            [site.core :as layout]))
+            [site.layout :refer [body-template]]))
 
 
 (defn make-sidenote [content id]
@@ -47,4 +47,4 @@
 (defn render [{global-meta :meta :as meta}]
   (let [page-title "About Me"
         content about-template]
-     (layout/body-template global-meta page-title content)))
+     (body-template global-meta page-title content)))
