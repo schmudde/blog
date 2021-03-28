@@ -41,7 +41,7 @@
        [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
    [:section {:role "main" :itemprop "articleBody"} (:content post)
     [:p "timeline "
-     (timeline/build-timeline (:permalink post))]
+     (timeline/make-timeline-for-post (:permalink post))]
 
     ]
    (if (= (:type post) "page") [:div [:span "Last Updated: "]

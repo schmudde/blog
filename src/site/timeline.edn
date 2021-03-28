@@ -33,7 +33,7 @@
  {:title "Bret Victor Publishes &ldquo;What Can a Technologist Do About Climate Change?&rdquo;"
   :geo nil
   :date #time/year-month "2015-11"
-  :desc "Midway through *What Can a Technologist Do About Climate Change?*, Victor opines that public discourse on climate relies on “tips, soundbites, factoids, and emotional rhetoric” rather than “evidence-grounded models.” He suggests a solution for working with and discussing profound problems: better tools for model-driven debate, model-driven reading, and model-driven authoring."
+  :desc "Midway through <em>What Can a Technologist Do About Climate Change?</em>, Victor opines that public discourse on climate relies on “tips, soundbites, factoids, and emotional rhetoric” rather than “evidence-grounded models.” He suggests a solution for working with and discussing profound problems: better tools for model-driven debate, model-driven reading, and model-driven authoring."
   :footer nil
   :link "/posts/2020-05-18-climate-change.html"
   :link-name "Information's Role in Facing Climate Change"
@@ -57,8 +57,8 @@
  {:title "Les Immatériaux"
   :geo nil
   :date #time/year-month "1985-03"
-  :desc "Les Immatériaux was presented at the Centre Pompidou in Paris. It chronicled many of the confluent developments of media, art, theory, and technology. Christiane Paul suggested that the exhibition &ldquo;argued that the immaterial is matter subjected to interaction and conceptual processes,&rdquo;&dagger; highlighting the shrinking gap between our lives in cyberspace and the physical space."
-  :footer "&dagger; Christiane Paul *From Immateriality to Neomateriality* (2015)"
+  :desc "Les Immatériaux was presented at the Centre Pompidou in Paris. It chronicled many of the confluent developments of media, art, theory, and technology. Christiane Paul suggested that the exhibition &ldquo;argued that the immaterial is matter subjected to interaction and conceptual processes,&rdquo; highlighting the shrinking gap between our lives in cyberspace and the physical space."
+  :footer "Christiane Paul <em>From Immateriality to Neomateriality</em> (2015)"
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
@@ -82,7 +82,7 @@
   :geo nil
   :date #time/date "1972-08-08"
   :desc "A 1972 amendment to the California Constitution that included the &ldquo;right of privacy among the &lsquo;inalienable&rsquo; rights of all people. The amendment established a legal and enforceable right of privacy for every Californian. Fundamental to this right of privacy is the ability of individuals to control the use, including the sale, of their personal information.&rdquo;"
-  :footer "California Legislative Information Website, *Assembly Bill No. 375: Legislative Consunsel's Digest: <a href='https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201720180AB375&showamends=false'>Today's Law As Amended</a>, 2018."
+  :footer "California Legislative Information Website, Assembly Bill No. 375: Legislative Consunsel's Digest: <a href='https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201720180AB375&showamends=false'>Today's Law As Amended</a>, 2018."
   :link "/posts/2020-06-15-personal-privacy.html"
   :link-name "Personal Privacy"
   :image nil}
@@ -122,15 +122,15 @@
   :geo nil
   :date #time/year-month "1968-04"
   :desc "&ldquo;First, life will be happier for the on-line individual because the people with whom one interacts most strongly will be selected more by commonality of interests and goals than by accidents of proximity. Second, communication will be more effective and productive, and therefore more enjoyable. Third, much communication and interaction will be with programs and programmed models [...]. And, fourth, there will be plenty of opportunity for everyone to find his calling, for the whole world of information, with all its fields and disciplines, will be open to him.&rdquo;"
-  :footer "J.C.R. Licklider and Robert W. Taylor, 'The Computer As A Communication Device', *Science And Technology*, April 1968."
+  :footer "J.C.R. Licklider and Robert W. Taylor, 'The Computer As A Communication Device', <em>Science And Technology</em>, April 1968."
   :link "/posts/2020-06-23-internet-community.html"
   :link-name "On the Internet, We Are Either Artists or Bureaucrats"
   :image nil}
  {:title "J.C.R. Licklider Coins the Term &ldquo;Narrowcasting&rdquo;"
   :geo nil
   :date #time/date "1967-01-26"
-  :desc "&lsquo;The Carnegie Commission Report on Educational Television [...] proposed interconnecting PBS stations via satellite, and a supplementary paper by MIT professor and Internet visionary J.C.R. Licklider outlined several future scenarios for television including one that foresaw a multiplicity of television networks aimed at serving the needs of smaller, specialized audiences. &ldquo;Here,&rdquo; stated Licklider, &ldquo;I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach&ldquo;&rsquo;"
-  :footer "Patrick Parsons, 'The Evolution Of The Cable-Satellite Distribution System', *Journal Of Broadcasting & Electronic Media* 47, no. 1 (2003): 1-17, doi:10.1207/s15506878jobem4701_1. J.C.R. Licklider, 'Televistas: Looking Ahead Through Side Windows', *Public Television: A Program For Action*, (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 201-225), https://current.org/1967/01/carnegie-i/."
+  :desc "&lsquo;The Carnegie Commission Report on Educational Television [...] proposed interconnecting PBS stations via satellite, and a supplementary paper by MIT professor and Internet visionary J.C.R. Licklider outlined several future scenarios for television including one that foresaw a multiplicity of television networks aimed at serving the needs of smaller, specialized audiences. &ldquo;Here,&rdquo; stated Licklider, &ldquo;I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach&rdquo;&rsquo;"
+  :footer "Patrick Parsons, 'The Evolution Of The Cable-Satellite Distribution System', <em>Journal Of Broadcasting & Electronic Media</em> 47, no. 1 (2003): 1-17, doi:10.1207/s15506878jobem4701_1.<br /> J.C.R. Licklider, 'Televistas: Looking Ahead Through Side Windows', <em>Public Television: A Program For Action</em>, (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 201-225), https://current.org/1967/01/carnegie-i/."
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
@@ -146,7 +146,7 @@
   :geo nil
   :date #time/year "1723"
   :desc "Musical notation falls short of capturing the composer’s intent, the performer’s performance, and the audience’s experience. However, it is the reason we have access to the music of Bach and Beethoven. Musical scores embody information that has traveled through the centuries, slowly and subtly mutating along the way."
-  :footer "From David Padwa's <a href='http://www.cuke.com/people/padwa.htm'>Curriculum Vitae</a>"
+  :footer nil
   :link "/posts/2020-04-26-ambient-church.html"
   :link-name "Notes From the Ambient Church"
   :image "/img/2020-04-26-ambient-church/bwv-105.png"}]

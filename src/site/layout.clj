@@ -80,10 +80,10 @@
      [:span.mb2 " by "]
      [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
    [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
+    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Homezzzzzeeefffffffffffff"]]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
-    [:li.dib.mr2 [:a {:href "/pages/timeline.html" :title "About"} "Timeline"]]
+    [:li.dib.mr2 [:a {:href "/timeline.html" :title "About"} "Timeline"]]
     [:li.dib.mr2 [:a {:href "/cv.html" :title "CV"} "CV"]]
     [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
 

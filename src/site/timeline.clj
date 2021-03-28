@@ -2,7 +2,7 @@
   (:require [hiccup.page :refer [html5]]
             #_[site.cv :as formatter]
             [clojure.string :as str]
-
+            [site.layout :refer [body-template]]
             [clojure.edn :as edn]
             [time-literals.read-write :as time-read]))
 
@@ -22,35 +22,63 @@
        (filter #(some? (first %1))) ; filter out any entry without an associated article
        (group-by #(first %))))
 
+(def ^:private timeline-indexed (index-timeline timeline))
+
+;;;;;;;;;;;;;;;;;;;;;
+
 (defn get-timeline-for-post
   "Returns a vector of maps that correspond to the given permalink (post)"
   [permalink]
   (let [article (link->keyword permalink)]
-     (article (index-timeline timeline)))) ;; TODO: don't build the timeline every time
+     (article timeline-indexed)))
 
-#_(get-timeline-for-post "/posts/2021-01-07-truth-storms-the-capitol.html")
+(defn timeline-entry-footer [desc footer]
+  [:div
+   [:p desc " &dagger;"]
+   [:footer "&dagger; " footer]])
 
 (defn timeline-entry-template
   "In: a single timeline map
    Out: a formatted hiccup vector of timeline elements"
-  [{:keys [date title desc footer]}]
-  [:div {:class "timeline-item" :date-is date :machine-date date}
-   [:h2 title]
-   [:p desc]
-   [:footer footer]])
+  ([{:keys [date title desc footer]}]
+   [:div {:class "timeline-item" :date-is date :machine-date date}
+    [:h2 title]
+    (if footer
+      (timeline-entry-footer desc footer)
+      [:p desc])])
+  ([{:keys [date title desc footer image]} link link-name]
+   [:div {:class "timeline-item" :date-is date :machine-date date}
+    [:h2 title]
+    (if footer
+      (timeline-entry-footer desc footer)
+      [:p desc])
+    (when link
+      [:p "From the article "
+       [:i [:a {:href link :title link-name} link-name]]])]))
 
-(defn build-timeline
+(defn make-timeline-for-post
   "Returns all timeline elements related to a given post, formated and wrapped in a :div tag"
   [permalink]
   (let [timeline-entries (get-timeline-for-post permalink)]
     [:div {:class "timeline"}
      (map #(timeline-entry-template (second %1)) timeline-entries)]))
 
+(defn make-timeline-page []
+  [:div
+   [:h1 "Timeline"]
+   [:div {:class "timeline"}
+    (map #(timeline-entry-template % (:link %) (:link-name %)) timeline)]])
+
+(defn render [{global-meta :meta :as meta}]
+  (let [page-title "Timeline"
+        content (make-timeline-page)]
+    (body-template global-meta page-title content)))
+
+;; Significant events in the history of information previously covered on [Beyond the Frame](/).
+
+
 (comment
-  (build-timeline "/posts/2021-01-07-truth-storms-the-capitol.html")
-
-
-  (build-timeline "/posts/2020-06-15-personal-privacy.html")
+  (make-timeline-for-post "/posts/2021-01-07-truth-storms-the-capitol.html")
   )
 
 ;; TODO:

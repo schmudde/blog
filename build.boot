@@ -44,6 +44,9 @@
         (perun/static :renderer 'site.cv/render
                       :page "cv.html"
                       :meta {:type "page"})
+        (perun/static :renderer 'site.timeline/render
+                      :page "timeline.html"
+                      :meta {:type "page"})
         (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))
 
