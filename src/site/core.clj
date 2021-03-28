@@ -17,7 +17,7 @@
   [:ul.liste
    (for [post posts]
      [:li
-      [:a {:href (:permalink post)}(:title post)]
+      [:a {:href (:permalink post)} (:title post)]
       "&nbsp;"
       [:time.f5 {:datetime (:date-published post)}
        (format-date (:date-published post))]])])
@@ -28,24 +28,27 @@
           :itemprop "datePublished"} (format-date time)])
 
 (defn article-template [post]
-  [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
-   [:meta {:itemprop "author" :content "David Schmudde"}]
-   #_[:link {:itemprop "mainEntityOfPage" :href (:canonical-url post)}]
-   [:header
-    [:a {:href (:permalink post) :title (:title post)}
-     [:h1 {:itemprop "headline"} (:title post)]]
-    (if (= (:type post) "post")
-      [:div
-       [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
-       (time-template (:date-published post))
-       [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
-   [:section {:role "main" :itemprop "articleBody"} (:content post)
-    [:p "timeline "
-     (timeline/make-timeline-for-post (:permalink post))]
-
-    ]
-   (if (= (:type post) "page") [:div [:span "Last Updated: "]
-                                (time-template (:date-modified post))])])
+  (let [timeline (timeline/make-timeline-for-post (:permalink post))]
+    [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
+     [:meta {:itemprop "author" :content "David Schmudde"}]
+     #_[:link {:itemprop "mainEntityOfPage" :href (:canonical-url post)}]
+     [:header
+      [:a {:href (:permalink post) :title (:title post)}
+       [:h1 {:itemprop "headline"} (:title post)]]
+      (if (= (:type post) "post")
+        [:div
+         [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
+         (time-template (:date-published post))
+         [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
+     [:section {:role "main" :itemprop "articleBody"}
+      (:content post)
+      (when timeline
+        [:div
+         [:h1 "Timeline"]
+         [:p "Events from this post have been added to a " [:a {:href "/timeline.html" :title "The history of information"} "timeline"] " of significant events in the history of information."
+          timeline]])]
+     (if (= (:type post) "page") [:div [:span "Last Updated: "]
+                                  (time-template (:date-modified post))])]))
 
 (defn render-post-pages [{global-meta :meta post :entry}]
   (let [content [:div (article-template post)]]

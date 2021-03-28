@@ -93,34 +93,3 @@ Almost all of his writings on a technology-enabled future promise great things f
 In the heyday of 1990s/2000s dotcom fever, I remember some of us raising concerns about society's change from *broadcasting information* to *narrowcasting information*.[^concerns] We asked, "What is the impact of an internet that only connects people with the information they want to know?" Twenty years later, I believe we have our answer.
 
 [^concerns]: It's a pretty quiet group. I'm having trouble citing papers or even forum/usenet posts from the 1990s/early 2000s. If any reader can point me in the right direction, please [contact me](https://schmud.de/pages/about.html).
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='January 6, 2021' machine-date='2021-01-06'>
-
-## Representative Taylor Greene Spreads QAnon Claims in Congress on the Night of the Capitol Invasion
-
-&ldquo;It’s been proven that these [voting] machines are connected and that they can be hacked.&rdquo;
-
-<footer>
-Representative Marjorie Taylor Greene, Republican of Georgia promoting a [baseless QAnon conspiracy theory](https://www.nytimes.com/live/2021/01/06/us/fact-check-electoral-certification#its-been-proven-that-these-machines-are-connected-and-that-they-can-be-hacked).
-</footer>
-</div>
-
-<div class="timeline-item" date-is='January 26, 1967' machine-date='1967-01-26'>
-
-## J.C.R. Licklider Coins the Term &ldquo;Narrowcasting&rdquo;
-
-&lsquo;The Carnegie Commission Report on Educational Television [...] proposed interconnecting PBS stations via satellite, and a supplementary paper by MIT professor and Internet visionary J.C.R. Licklider outlined several future scenarios for television including one that foresaw a multiplicity of television networks aimed at serving the needs of smaller, specialized audiences. “Here,” stated Licklider, “I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach”&rsquo;
-
-<footer>
-Patrick Parsons, "The Evolution Of The Cable-Satellite Distribution System", *Journal Of Broadcasting & Electronic Media* 47, no. 1 (2003): 1-17, doi:10.1207/s15506878jobem4701_1.
-</footer>
-
-<footer>
-J.C.R. Licklider, "Televistas: Looking Ahead Through Side Windows", *[Public Television: A Program For Action](https://current.org/1967/01/carnegie-i/)*, (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 201-225).
-</footer>
-
-</div>

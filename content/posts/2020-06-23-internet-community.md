@@ -68,17 +68,3 @@ At his worst, Licklider was a technocrat. He effectively navigated the military 
 [^levine]: See Yasha Levine on Licklider and Ithiel de Sola Pool's 1969 ARPA Cambridge Project: &ldquo;Once complete, it would allow any intelligence analyst or military planner connected to the ARPANET to upload dossiers, financial transactions, opinion surveys, welfare rolls, criminal record histories, and any other kind of data and to analyze them in all sorts of sophisticated ways: sifting through reams of information to generate predictive models, mapping out social relationships, and running simulations that could predict human behavior.&rdquo; (Yasha Levine, *Surveillance Valley: The Rise Of The Military-Digital Complex* (PublicAffairs, 2018))
 
 This tension is most apparent in Licklider's writing on community. **Building a healthy community that engenders fruitful conversation is a difficult endeavor**. It requires a certain skill and a lot of hard work. Most people who manage book clubs or internet forums do their work unpaid. Their effort is yet another form of labor that no technocratic system can seem to properly compensate or value. **The very linchpin of community building goes unmentioned in Licklider's musings on online communities** - as if the technology itself was the solution. Sadly, Silicon Valley has done little to correct Licklider's oversight sixty years later.
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='April 1968' machine-date='1968-04'>
-
-## &ldquo;The Computer As A Communication Device&rdquo;
-
-&ldquo;First, life will be happier for the on-line individual because the people with whom one interacts most strongly will be selected more by commonality of interests and goals than by accidents of proximity. Second, communication will be more effective and productive, and therefore more enjoyable. Third, much communication and interaction will be with programs and programmed models [...]. And, fourth, there will be plenty of opportunity for everyone to find his calling, for the whole world of information, with all its fields and disciplines, will be open to him.&rdquo;
-
-J.C.R. Licklider and Robert W. Taylor, "The Computer As A Communication Device", *Science And Technology*, April 1968.
-
-</div>

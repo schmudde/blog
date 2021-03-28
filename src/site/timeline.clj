@@ -69,7 +69,9 @@
 
 (defn make-timeline-page []
   [:div
-   [:h1 "Timeline"]
+   [:header
+    [:h1 "Timeline"]
+    [:div "Significant events in the history of information previously covered on " [:a {:href "/" :title "home"} "Beyond the Frame"] "." ]]
    [:div {:class "timeline"}
     (map #(timeline-entry-template % (:link %) (:link-name %)) timeline)]])
 
@@ -77,8 +79,6 @@
   (let [page-title "Timeline"
         content (make-timeline-page)]
     (body-template global-meta page-title content)))
-
-;; Significant events in the history of information previously covered on [Beyond the Frame](/).
 
 
 (comment

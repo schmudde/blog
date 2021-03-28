@@ -64,23 +64,3 @@ I also found Lim's example of an ACLU **disinfographic** to be interesting. The 
 We talked a little bit about terminology and tools at the end. Lim told me that Snopes and Wikipedia, while seemingly not effective to combat the growth of mis/dis/malinformation, are used as sources for some algorithms that flag dubious campaigns.
 
 I haven't heard anyone who is particularly optimistic about automated efforts like [IFCN Fact Checking Organizations on WhatsApp](https://faq.whatsapp.com/126787958113983) (which is also used by Facebook). But they will play a role whether we like it or not. The scope of the problem is too large and the incentive structure of shareholder owned social media platforms don't align with more robust solutions.
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='June 27, 2017' machine-date='2017-06-27'>
-
-## NotPetya Malware Appears
-
-The NotPetya malware first appeared in 2017, on the eve of Ukrainian Constitution Day. It affected thousands of systems in over 65 countries. Maersk, the Danish shipping company, lost $300 million in revenues and was forced to replace 4,000 servers. Even still, Ukraine was the malware’s clear target, suffering 80% of all infections.
-
-</div>
-
-<div class="timeline-item" date-is='February 4, 2014' machine-date='2014-02-04'>
-
-## &ldquo;Fuck the EU.&rdquo; Malinformation Effort
-
-An anonymous source posted a conversation between the US Assistant Secretary of State, Victoria Nuland, and the US Ambassador to Ukraine, Geoffrey Pyatt. Amidst all the political banter, one line stood out, &ldquo;Fuck the EU.&rdquo; The leaked audio was a crude effort to sow dissension between the US and its EU allies during a tense moment in Ukraine - a move that would clearly help Russian interests.
-
-</div>

@@ -86,28 +86,3 @@ After fifty years of experience in digital record keeping and policy making, the
 Special thanks to [Steven Sinofsky](https://twitter.com/stevesi) for his help contextualizing the IBM advertisement.
 
 Also thanks to James W. Cortada, Senior Research Fellow at the University of Minnesota's Charles Babbage Institute. The institute does have an [oral history interview with John Rankine](https://conservancy.umn.edu/handle/11299/107604) but the audio is not publicly available, nor has a transcript been prepared.
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='July 1977' machine-date='1977-07'>
-
-## The Untied States Privacy Protection Study Commission Issues Their Report
-
-The Privacy Protection Study Commission generated 162 recommendations to help protect citizens against the intrusive nature of digital data collection, storage, and dissemination. They found that the Privacy Act of 1974 &ldquo;had not resulted in the general benefits to the public that either its legislative history or the prevailing opinion as to its accomplishments would lead one to expect.&rdquo; These recommendations were never codified into law.
-
-- *[Personal Privacy In An Information Society: Appendix 3: Employment Records](/papers/personal-privacy-in-an-info-society-1977.pdf)*
-- The full report is [here](https://epic.org/privacy/ppsc1977report/).
-
-</div>
-
-<div class="timeline-item" date-is='August 8, 1972' machine-date='1972-08-08'>
-
-## California Constitutional Right of Privacy Amendment
-
-A 1972 amendment to the California Constitution that included the &ldquo;right of privacy among the &lsquo;inalienable&rsquo; rights of all people. The amendment established a legal and enforceable right of privacy for every Californian. Fundamental to this right of privacy is the ability of individuals to control the use, including the sale, of their personal information.&rdquo;
-
-California Legislative Information Website, *Assembly Bill No. 375: Legislative Consunsel's Digest: [Today's Law As Amended](https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=201720180AB375&showamends=false)*, 2018.
-
-</div>

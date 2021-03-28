@@ -80,7 +80,7 @@
      [:span.mb2 " by "]
      [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
    [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Homeffffffffffffffffffffffffff"]]
+    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Homezzzzzzzzzzzzzz"]]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/timeline.html" :title "About"} "Timeline"]]

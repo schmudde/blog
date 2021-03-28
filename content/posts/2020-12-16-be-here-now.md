@@ -81,18 +81,3 @@ Countless studies have attempted to demonstrate the benefits of "oneness." In th
 The reality of a consciousness larger than ourselves is at the root of *Be Here Now.* But rather than establish a God or a single methodology, Ram Dass continually asserts that the ego blinds us to the grand web of connections that pervade our everyday experience. The way to lift the veil is to simply practice living in the moment. Or as Suzuki Roshi is quoted, "a Zen student must learn to waste time conscientiously."[^roshi]
 
 [^roshi]: (Loc. 4728)
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='1960' machine-date='1960'>
-
-## David Padwa Co-Founds Basic Systems With Francis Mechner
-
-&ldquo;1960-1965. Founder and CEO of Basic Systems Inc. Principal offices in Cambridge, New York, Chicago, Pasadena, and Washington, DC. Firm specialized in educational and curricular technologies as well as the provision of systems integration services in education and training markets. In 1964 Xerox Corporation acquired Basic Systems; continued as division executive at Xerox and Director of Planning for educational markets.&rdquo;
-
-<footer>
-From David Padwa's [Curriculum Vitae](http://www.cuke.com/people/padwa.htm)
-</footer>
-</div>

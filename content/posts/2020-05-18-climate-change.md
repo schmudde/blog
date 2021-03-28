@@ -73,15 +73,3 @@ Some of us respond by indulging in anger and engaging in debates we know are fru
 This may be an erroneous premise. There are no models for what we are building. The information technology itself is fraught with the assumptions made when building the internet. The work of refining the software into a more equanimous form will probably be a project without end.
 
 So the tools have yet to prove their worth. But the endeavor is young and the process of turning information into knowledge is long. Only with knowledge (and experience) can wisdom be revealed.
-
-# Timeline
-
-Events from this post have been added to a [timeline](/pages/timeline.html) of significant events in the history of information.
-
-<div class="timeline-item" date-is='November 2015' machine-date='2015-11'>
-
-## Bret Victor Publishes &ldquo;What Can a Technologist Do About Climate Change?&rdquo;
-
-Midway through *What Can a Technologist Do About Climate Change?*, Victor opines that public discourse on climate relies on “tips, soundbites, factoids, and emotional rhetoric” rather than “evidence-grounded models.” He suggests a solution for working with and discussing profound problems: better tools for model-driven debate, model-driven reading, and model-driven authoring.
-
-</div>
