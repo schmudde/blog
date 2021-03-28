@@ -2,7 +2,8 @@
   (:require [cljc.java-time.local-date :as ld]
             [cljc.java-time.format.date-time-formatter :as formatter]
             [cljc.java-time.year :as year]
-            [cljc.java-time.year-month :as year-month]))
+            [cljc.java-time.year-month :as year-month]
+            [time-literals.read-write :as time-read]))
 
 (defn java-time->str
   "Given one date, returns a date, given two dates, returns a range"
@@ -23,6 +24,7 @@
 (defn java-time->full-date-str [date-time]
   (cond
     (= (type date-time) java.time.Year) (str (year/get-value date-time))
+    (= (type date-time) java.time.YearMonth) (str (year-month/format date-time (formatter/of-pattern "MMMM yyyy")))
     (= (type date-time) java.time.LocalDate) (str (ld/format date-time (formatter/of-pattern "MMMM dd, yyyy")))))
 
 (comment
@@ -40,7 +42,9 @@
    (ld/format (clojure.edn/read-string {:readers time-read/tags} "#time/date \"2019-12-16\"")  (formatter/of-pattern "MMMM dd, yyyy"))
    (ld/get-year (clojure.edn/read-string {:readers time-read/tags} "#time/date \"2019-12-16\""))
 
-   (clojure.edn/read-string {:readers time-read/tags} "#time/date \"2011-01-01\"")
+   (->
+    (clojure.edn/read-string {:readers time-read/tags} "#time/date \"2011-01-01\"")
+    java-time->full-date-str)
 
    (clojure.edn/read-string {:readers time-read/tags} (time-read/print-date "2015-02-11"))
 

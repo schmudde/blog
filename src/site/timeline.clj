@@ -6,6 +6,8 @@
             [clojure.edn :as edn]
             [time-literals.read-write :as time-read]))
 
+
+
 (def timeline (->> (slurp "src/site/timeline.edn")
                    (clojure.edn/read-string {:readers time-read/tags})))
 
@@ -41,20 +43,22 @@
   "In: a single timeline map
    Out: a formatted hiccup vector of timeline elements"
   ([{:keys [date title desc footer]}]
-   [:div {:class "timeline-item" :date-is date :machine-date date}
+   [:section {:class "timeline-item" :data-date-is (java-time->full-date-str date) :data-machine-date date}
     [:h2 title]
     (if footer
       (timeline-entry-footer desc footer)
       [:p desc])])
   ([{:keys [date title desc footer image]} link link-name]
-   [:div {:class "timeline-item" :date-is date :machine-date date}
+   [:section {:class "timeline-item" :data-date-is (java-time->full-date-str date) :data-machine-date (str date)}
     [:h2 title]
     (if footer
       (timeline-entry-footer desc footer)
       [:p desc])
     (when link
       [:p "From the article "
-       [:i [:a {:href link :title link-name} link-name]]])]))
+       [:i [:a {:href link :title link-name} link-name]]])
+    [:img {:src image}]
+    ]))
 
 (defn make-timeline-for-post
   "Returns all timeline elements related to a given post, formated and wrapped in a :div tag"

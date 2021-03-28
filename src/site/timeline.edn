@@ -114,7 +114,7 @@
   :geo nil
   :date #time/year-month "1969-04"
   :desc "The first two Request For Comments (RFC) describe how computers and routers (knowns as IMPs) would be used to form a computer network (the ARPANET)."
-  :footer "https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments"
+  :footer "Steve Crocker, 'Today’S Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
   :link nil
   :link-name nil
   :image nil}
