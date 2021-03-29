@@ -35,6 +35,11 @@ html {
      width: 100%;
 }
 
+
+.embedded-timeline {
+    clear:both;
+}
+
 .timeline-time > p {
     width: 10%;
 }

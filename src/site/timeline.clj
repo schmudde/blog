@@ -71,7 +71,7 @@
   [:div
    [:header
     [:h1 "Timeline"]
-    [:div "Significant events in the history of information previously covered on " [:a {:href "/" :title "home"} "Beyond the Frame"] "." ]]
+    [:p "Significant events in the history of information previously covered on " [:a {:href "/" :title "home"} "Beyond the Frame"] "." ]]
    [:div {:class "timeline"}
     (map #(timeline-entry-template % (:link %) (:link-name %)) timeline)]])
 

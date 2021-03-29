@@ -43,7 +43,7 @@
      [:section {:role "main" :itemprop "articleBody"}
       (:content post)
       (when timeline
-        [:div
+        [:div.embedded-timeline
          [:h1 "Timeline"]
          [:p "Events from this post have been added to a " [:a {:href "/timeline.html" :title "The history of information"} "timeline"] " of significant events in the history of information."
           timeline]])]
