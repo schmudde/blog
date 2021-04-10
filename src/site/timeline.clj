@@ -64,8 +64,9 @@
   "Returns all timeline elements related to a given post, formated and wrapped in a :div tag"
   [permalink]
   (let [timeline-entries (get-timeline-for-post permalink)]
-    [:div {:class "timeline"}
-     (map #(timeline-entry-template (second %1)) timeline-entries)]))
+    (when timeline-entries
+      [:div {:class "timeline"}
+       (map #(timeline-entry-template (second %1)) timeline-entries)])))
 
 (defn make-timeline-page []
   [:div

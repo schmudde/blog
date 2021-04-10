@@ -31,7 +31,6 @@
   (let [timeline (timeline/make-timeline-for-post (:permalink post))]
     [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
      [:meta {:itemprop "author" :content "David Schmudde"}]
-     #_[:link {:itemprop "mainEntityOfPage" :href (:canonical-url post)}]
      [:header
       [:a {:href (:permalink post) :title (:title post)}
        [:h1 {:itemprop "headline"} (:title post)]]

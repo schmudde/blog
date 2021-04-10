@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-04-06
 date-modified: 2021-04-06
-date-published: 2021-04-06
+date-published:
 in-language: en
 tags:
  - humanities

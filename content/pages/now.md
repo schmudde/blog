@@ -8,23 +8,41 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2021-02-14
+date-modified: 2021-04-10
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-[^now] I'm excited to announce my new position as Chief Technology Officer (CTO) at [Yorba](https://yorba.co/). We are building an open digital identity service. More details to come.
+[^now]<i class="fa fa-image"></i> I'm excited to share that [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was accepted to this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-I started a class with the [Virtual School on Internet Governance](https://www.virtualsig.org/) in February. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education. I just finished the first week on internet history, which is centered on the American narrative.
+I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://yorba.co/). We are building an open digital identity service. Exciting things to come.
+
+I'm finishing a class with the [Virtual School on Internet Governance](https://www.virtualsig.org/) in February. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education. I just finished the first week on internet history, which is centered on the American narrative.
 
 
 ## Projects
 
-<i class="fa fa-image"></i> I continue to curate artworks for [Gallery 404](http://netart.today/). The gallery exhibits net.art as it appears today - exclusively specializing in broken artworks.
+I'm still working on three book projects.
+
+1. Collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol: [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/). Art will form a cornerstone of our thesis.
+2. Integrating peer review responses to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
+3. A secret book project.
+
+## Reading
+
+- *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020)
+- [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
+- *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
+
+I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers, *Lankavatara Sutra* (350-400 CE) translated by Red Pine, *The Prophet* by Khalil Gibran (1923), and *Computation and Human Experience* by Philip E. Agre (1997)
+
+## Recent Memory
+
+I've been charting & reporting on COVID-19 cases in Turin, Italy for the last year. I started this local effort because our region was often overshadowed by mighty Milan. But the problem has evolved but I recently retired the notebook: [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
 
 My October talk at *[JupyterCon 2020](https://jupytercon.com/)*, "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia", was [published online](https://www.youtube.com/watch?v=__0Pr13PQSc).[^jupytercon]
 
@@ -45,23 +63,5 @@ My other talk at [Nexa Center for Internet &amp; Society at the Polytechnic Univ
 <iframe src="https://www.youtube-nocookie.com/embed/3JHZAboV3fo?start=629" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </figure>
-
-I'm still working on three book projects.
-
-1. Collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol: [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/). Art will form a cornerstone of our thesis.
-2. Revising my contribution to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
-3. A secret book project.
-
-## Reading
-
-- *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020)
-- [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
-- *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
-
-I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers, *Lankavatara Sutra* (350-400 CE) translated by Red Pine, *The Prophet* by Khalil Gibran (1923), and *Computation and Human Experience* by Philip E. Agre (1997)
-
-## Recent Memory
-
-I am tracking [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy) using a computational notebook on [Nextjournal](https://nextjournal.com/schmudde/corona-in-italy).
 
 ---
