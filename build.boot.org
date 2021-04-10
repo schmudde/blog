@@ -232,84 +232,6 @@ lftp uses Transport Layer Security (TLS). So it's essential to first grab the ce
 openssl s_client -connect schmud.de:21 -starttls ftp
 #+END_SRC
 
-#+RESULTS: certificate
-#+BEGIN_SRC shell
-CONNECTED(00000003)
----
-Certificate chain
- 0 s:CN = *.your-server.de
-   i:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = Thawte RSA CA 2018
- 1 s:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = Thawte RSA CA 2018
-   i:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root CA
----
-Server certificate
------BEGIN CERTIFICATE-----
-MIIFdjCCBF6gAwIBAgIQBUEIv4M7OeRqNTjp5cOzyjANBgkqhkiG9w0BAQsFADBc
-MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
-d3cuZGlnaWNlcnQuY29tMRswGQYDVQQDExJUaGF3dGUgUlNBIENBIDIwMTgwHhcN
-MjAxMDIyMDAwMDAwWhcNMjExMTIyMjM1OTU5WjAbMRkwFwYDVQQDDBAqLnlvdXIt
-c2VydmVyLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwMXaeC9V
-jcRqvnkV7+0cBGLE0cGUg5Rt0CMTkGuMl7zRDBKFl/DwPMpgO5pi2HWoxhmbNCCA
-L31Xuii7/JkoiKoN1RAcmM+AJX/kLGswiXgkTXdD+caEKd6E9Ly9701fmY3MAogV
-zXUobj5Av2Rq7DKQbB3j5oqnMlD641EGnuesiVyqyfpnbAtSUjyb4tbGpiOCJ4oY
-8pCD+Y4cjU3Xabtw4Myrzjq/dbopvpqOfSWpFNxi1VGoyVeWaA6I/s65Mh/VekgG
-xbfHtgm7f2qhCufBtNVlumAJtMPj1YwJq5EqXApUw9Qjv+iXbTVqag+VVZDAWhy3
-IThO6LpRRqOrfQIDAQABo4ICczCCAm8wHwYDVR0jBBgwFoAUo8heZVTlMHjBBeoH
-CmpZzLn+3lowHQYDVR0OBBYEFJBBnluj2Dy/MUEDLgS9WHmSQN/LMCsGA1UdEQQk
-MCKCECoueW91ci1zZXJ2ZXIuZGWCDnlvdXItc2VydmVyLmRlMA4GA1UdDwEB/wQE
-AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwTAYDVR0gBEUwQzA3
-BglghkgBhv1sAQIwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQu
-Y29tL0NQUzAIBgZngQwBAgEwbwYIKwYBBQUHAQEEYzBhMCQGCCsGAQUFBzABhhho
-dHRwOi8vc3RhdHVzLnRoYXd0ZS5jb20wOQYIKwYBBQUHMAKGLWh0dHA6Ly9jYWNl
-cnRzLnRoYXd0ZS5jb20vVGhhd3RlUlNBQ0EyMDE4LmNydDAJBgNVHRMEAjAAMIIB
-BQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcA9lyUL9F3MCIUVBgIMJRWjuNNExkzv98M
-LyALzE7xZOMAAAF1T5lokgAABAMASDBGAiEA+rPV1d3ivwQ17s7KeZ3F19l3NlKF
-B/36tKeQ2OmcUggCIQDKwMY0BiYEr9GP8VcgZy0xDMJ7xzYq/ZYv6S8RHLSOdAB2
-AFzcQ5L+5qtFRLFemtRW5hA3+9X6R9yhc5SyXub2xw7KAAABdU+ZaPIAAAQDAEcw
-RQIhAN3qkp0KQHBlc1bAxdIEM5dPV2Mkii6B3U/WM6pda7/4AiAY/tvDVwTGixMX
-aOcxSLzRWoJ01WpF7DaYWKKsOKFjMTANBgkqhkiG9w0BAQsFAAOCAQEAKmUNKW33
-tx57urMHqaI5/Nxn/Hts2B2ZoAQAyrE47z3GFj7A5mfcBkpL2QvRjKF7EFbT4P3I
-OyIpIAoasWuOGHADfZJHpdfQ9zzdOHILHsggADs8BoZ/J8JmkNBin8rsQWPaCqE9
-Dx1J6fK0ik8SsEMzbN5AAfe1qTJa5hOXnjJ8UFrcuY/mWHoLs4qAv7qAj9IptArw
-KUpCBJdMmNEuxJJYVDPoITHFXYuy4/F4DFw+OKw2TsUkkzwsV42W6g8ygerjE+D6
-9ngbPxGsZq2B/ktAt77Dyp+8bype0dOhS7CEMOYItSgila4iafwNqScLG2imumWF
-ZeT0xQQLQK4hJQ==
------END CERTIFICATE-----
-subject=CN = *.your-server.de
-
-issuer=C = US, O = DigiCert Inc, OU = www.digicert.com, CN = Thawte RSA CA 2018
-
----
-No client certificate CA names sent
-Peer signing digest: SHA256
-Peer signature type: RSA-PSS
-Server Temp Key: X25519, 253 bits
----
-SSL handshake has read 3097 bytes and written 404 bytes
-Verification: OK
----
-New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
-Server public key is 2048 bit
-Secure Renegotiation IS supported
-Compression: NONE
-Expansion: NONE
-No ALPN negotiated
-SSL-Session:
-    Protocol  : TLSv1.2
-    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
-    Session-ID: 39AB8766F1E25D1BAA9861BD34259206E09537F365EAE7998B3615E4E7203D1C
-    Session-ID-ctx:
-    Master-Key: 3A146B3FFE9753093BBF712BF46DC8E54CC812AD1A0E07E64E51F5286B58DF0CAF48C53A8EB3B64EF71290A0A8763597
-    PSK identity: None
-    PSK identity hint: None
-    SRP username: None
-    Start Time: 1610883930
-    Timeout   : 7200 (sec)
-    Verify return code: 0 (ok)
-    Extended master secret: yes
----
-#+END_SRC
-
 1. I include the certificate chain in a new file called ~mycert.crt~ in the local ~/.lftp folder.
 2. I create a file called ~rc~ in the local ~/.lftp folder and add the lines
     - ~set ssl:ca-file "mycert.crt"~
@@ -324,6 +246,13 @@ Alternatively, it may be possible to use the Ubuntu certificates in some cases:
 
 - Grab the latest certificates: ~sudo update-ca-certificates~
 - Update the ~/etc/lftp.conf~ by pointing to the certificate file ~set ssl:ca-file "/etc/ssl/certs/ca-certificates.crt"~
+
+Alternatively, alternatively certificate errors can be temporarily suppressed using ~set ssl:verify-certificate false~ at the ~lftp~ prompt
+
+lftp commands include
+
+- ~local ls~: run command locally
+- ~lcd~: local change directory
 
 ** Comment Log
 
