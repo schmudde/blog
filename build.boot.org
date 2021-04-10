@@ -223,6 +223,18 @@ Regular build bug: ~[inject-scripts] - copied unchanged file public/posts/2020-0
 
 - elisp fiction to autocomplete keywords (vs. tags)
 
+Tachyons measures widths using the ~border-box~ model. Tufte uses the ~content-box~ model. I experimented with simply switching the model in my custom css file, ~btf.css~, but [[https://stackoverflow.com/questions/44453391/what-is-the-difference-between-border-box-and-content-box-in-css#44453514][it broke the reflow]] (as expected).
+
+#+BEGIN_SRC css :tangle no
+body {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#+END_SRC
+
+TODO: The ideal solution is to use a [[https://github.com/tachyons-css/generator][custom Tachyons build]].
+
 ** lftp
 
 lftp uses Transport Layer Security (TLS). So it's essential to first grab the certificate from the FTP server.
