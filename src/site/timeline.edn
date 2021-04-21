@@ -46,6 +46,22 @@
   :link "/posts/2020-05-29-disinformation-strategies.html"
   :link-name "Disinformation Strategies and Tactics"
   :image nil}
+ {:title "A Declaration of the Independence of Cyberspace"
+  :geo "Davos, Switzerland"
+  :date #time/date "1996-02-08"
+  :desc "&ldquo;Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather.&rdquo;"
+  :footer "by John Perry Barlow, host at the <a href='https://www.eff.org/cyberspace-independence'>EFF</a>"
+  :link "/posts/identity-trap.html"
+  :link-name "The Identity Trap"
+  :image nil}
+ {:title "The Identity Politics Biennial"
+  :geo "New York City"
+  :date #time/year "1993"
+  :desc "The annual exhibition at the The Whitney Museum of American Art focused explicitly on issues around gender, race, and sexuality for the first time. It was dubbed &ldquo;the identity politics biennial.&rdquo; Identity became a central focus of cultural discourse as internet pioneers promised to emancipate people from their corporeal limitations."
+  :footer nil
+  :link "/posts/identity-trap.html"
+  :link-name "The Identity Trap"
+  :image nil}
  {:title "Network Solutions Charges for Domain Names"
   :geo nil
   :date #time/year-month "1995-09"
@@ -59,8 +75,8 @@
   :date #time/year-month "1987-11"
   :desc "Paul Mockapetris publishes the initial designs for a human-readable Domain Name System that maps network addresses (188.40.28.20) to human-readable names (schmud.de). His design allows the lookup tables required to scale across the entire world."
   :footer "Steve Crocker, 'Today’S Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
-  :link nil
-  :link-name nil
+  :link "/posts/2021-04-20-dog-robot-woman.html"
+  :link-name "Robot Woman"
   :image nil}
  {:title "Les Immatériaux"
   :geo nil
@@ -69,6 +85,14 @@
   :footer "Christiane Paul <em>From Immateriality to Neomateriality</em> (2015)"
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
+  :image nil}
+ {:title "The Finger Protocol (RFC #<a href='https://tools.ietf.org/html/rfc742'>742</a> &amp; #<a href='https://tools.ietf.org/html/rfc1288'>1288</a>)"
+  :geo nil
+  :date #time/date "1977-12-30"
+  :desc "Finger, originally written in 1971, is the granddaddy of status updates. Running `finger dschmud@heartland.bradley.edu` on TCP port 79 &ldquo;return(ed) a friendly, human-oriented status report on a particular person in depth.&rdquo;"
+  :footer "<a href='https://tools.ietf.org/html/rfc742'>742</a>"
+  :link "/posts/2021-04-20-dog-robot-woman.html"
+  :link-name "Dog, Robot, or Woman = $"
   :image nil}
  {:title "Minitel"
   :geo nil

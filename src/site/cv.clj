@@ -102,6 +102,8 @@
 
 (defmulti make-table (fn [x] (first x)))
 
+
+;; TODO: employment-faculty.edu must support {:org Yorba}. If there is no :date-end, use " - Today"
 (defmethod make-table :employment [x]
   (let [employment (second x)]
     (into [:div ]
@@ -249,7 +251,7 @@
         content (make-cv)]
     (body-template global-meta page-title content)))
 
-(print-cv)
+#_(print-cv)
 
 (comment
 

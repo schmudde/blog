@@ -29,10 +29,14 @@
    :link-name "NYCDH Workshop Page"
    :image "nycdh.png"
    }]
-
  :conference-talks
- [
-
+ [{:org "Internet Identity Workshop (Spring)"
+   :geo "Mountain View, CA, US"
+   :date #time/date "2021-04-21"
+   :title "Managing Authorization"
+   :subtitle "Who Has What Access?"
+   :synopsis "Helping people understand and manage authorization by building better user experiences."
+   }
   {:org "Nexa Center for Internet &amp; Society at the Polytechnic University of Turin"
    :geo "Turin, IT"
    :date #time/date "2020-10-14"
@@ -43,7 +47,6 @@
    :link-name "133&deg; Mercoled&igrave; di Nexa"
    :video "https://youtu.be/3JHZAboV3fo?t=629"
    }
-
   {:org "JupyterCon"
    :geo "Online"
    :date #time/date "2020-10-15"
