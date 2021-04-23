@@ -1,10 +1,10 @@
 #!/bin/bash
 # Renme
 
-echo What is the old post name?
+echo What is the old post name? e.g. 2021-04-20-dog-robot-woman
 read old_post
 
-echo What is the new post name?
+echo What is the new post name? e.g. 2021-04-22-identity-through-time
 read new_post
 
 printf "\n"
