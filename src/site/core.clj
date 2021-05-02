@@ -49,6 +49,10 @@
      (if (= (:type post) "page") [:div [:span "Last Updated: "]
                                   (time-template (:date-modified post))])]))
 
+(defn render-book-pages [{global-meta :meta book-review :entry}]
+  (let [content [:div (article-template book-review)]]
+    (body-template global-meta book-review content)))
+
 (defn render-post-pages [{global-meta :meta post :entry}]
   (let [content [:div (article-template post)]]
     (body-template global-meta post content)))

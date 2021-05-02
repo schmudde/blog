@@ -24,6 +24,11 @@
     (.startsWith original-path "posts/")
     false))
 
+(defn book? [{:keys [original-path] :as meta}]
+  (if original-path
+    (.startsWith original-path "books/")
+    false))
+
 (defn published? [{:keys [date-published] :as meta}]
   (if date-published true false))
 
@@ -32,9 +37,14 @@
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
         (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
+        (perun/collection :renderer 'site.core/render-index-page :page "books.html"
+                          :filterer (apply every-pred [book? published?]))
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
+        (perun/render :renderer 'site.core/render-book-pages
+                      :filterer (apply every-pred [book? published?])
+                      :meta {:type "book"})
         (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [post? published?])
                     :out-dir "public/tags")

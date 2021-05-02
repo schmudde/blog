@@ -1,6 +1,6 @@
 ---
 title: An Identity Through Time
-description: blank
+description: From port 79 and citizen's band radio to facebook.com, some lessons learned about digital identity from the time-traveling Outlander.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -8,26 +8,23 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-04-22
-date-modified: 2021-04-22
+date-modified: 2021-04-23
 date-published: 2021-04-22
 in-language: en
-keywords: identity,
+keywords: identity, dns, did, sts, computerhistory
 tags:
  - humanities
  - suchness
 ---
 
 
-
-<figure class="fullwidth">
-![CompuServe Information Manager 1.0 screenshot](/img/2021-04-22-id-through-time/compuserve-span.png) [CompuServe Information Manager 1.0](https://winworldpc.com/product/compuserve-information-manager/1x-dos) (November 20, 1989)
-</figure>
-
 Decade after decade our identity becomes increasingly integrated with computer systems. It is at the core of our life on the internet. This systematization will have radical effects on society on par with the emergence of artificial intelligence.
 
 Much of what is useful about our identity is paradoxically formed by other people. This includes everything from reputation to certification. Our identity and the benefits it bestows is more fragile than it appears. A change in your reputation can ripple through the fabric society; a new credential can open new doors but an ad hominem attack can close countless others.
 
-A trip through time on the public networks will reveal the evolution of priorities when capturing our lives in data. This could be done with any identity, but I chose to focus on the history of the best-selling author [Diana Gabaldon](https://en.wikipedia.org/wiki/Diana_Gabaldon). The story starts on July 20, 1988 when she was known as `76530,523` and continues to the present day.
+A trip through time on the public networks will reveal the evolution of priorities when capturing our lives in data. This could be done with any identity, but I chose to focus on the history of the best-selling author [Diana Gabaldon](https://en.wikipedia.org/wiki/Diana_Gabaldon).[^outlander] The story starts on July 20, 1988 when she was known as `76530,523` and continues to the present day.
+
+[^outlander]: Diana Gabaldon's best known work is probably *Outlander* (1991). It was adapted for television on Starz in 2014. ![Outlander](/img/2021-04-22-id-through-time/Outlander-1st-ed-1991.jpg)
 
 Identity archaeology peels back the historical layers of the internet - sort of the Triassic, Jurassic, and Cretaceous periods of cyberspace. Humble beginnings have brought about social credit scores in China and pervasive systems of surveillance capitalism in the West. A little perspective will help project what is on the horizon and how it can be met with the most ethical and humanitarian approaches.
 
@@ -109,6 +106,10 @@ To: Margaret J. Campbell 73367,1267
 >
 > <footer>-- Diana</footer>
 
+<figure class="fullwidth">
+![CompuServe Information Manager 1.0 screenshot](/img/2021-04-22-id-through-time/compuserve-span.png) [CompuServe Information Manager 1.0](https://winworldpc.com/product/compuserve-information-manager/1x-dos) (November 20, 1989)
+</figure>
+
 CompuServe's identifiers were only usable within the CompuServe system at first. This changed the year after Gabaldon's post. CompuServe IDs could be addressed on the internet using the `compuserve.com` domain (e.g. `76530.523@compuserve.com`).[^compuserve-cost]
 
 [^compuserve-cost]: Cost must be considered when calling something "broadly public." I'll provide 1994 numbers to give some sense of the cost. CompuServe was $8.95/month for unlimited use of the standard services. Incoming Internet electronic mail, including spam, cost $0.15 per item. Other services ranged from $4.80 to as much as $22.80 an hour, for use of "extended" services. (Lewis, Peter H. “[The Compuserve Edge: Delicate Data Balance](https://www.nytimes.com/1994/11/29/science/personal-computers-the-compuserve-edge-delicate-data-balance.html).” *The New York Times*, November 29, 1994, sec. Science.)
@@ -134,6 +135,12 @@ Gabaldon had established her presence on the World Wide Web by 1997 at `http://w
 Domain names are the quietly powerful and permissive identity engine of the internet. `dianagabaldon.com` first appeared in 2001 as an anti-abortion website showing graphic imagery.[^domain-cost] It's almost certain that the author was not involved; the original owners were attempting to leverage the identity of a New York Times best-selling author to spread their message. Records from the Internet Archive show that Diana Gabaldon took over the domain in 2002 redirected the domain to her university website at `http://www.cco.caltech.edu/~gatti/gabaldon/gabaldon.html` (HTTP 302).
 
 [^domain-cost]: Most domain names are relatively affordable today. But `.com` domain names were originally free, reflecting the values held by early internet citizens. Only 1151 `.com` domains were registered by [October 1990](https://www.iaps.com/internet-history-october-1990.html). Registration happened through an [eMail form](https://web.archive.org/web/20081202111346/https://w2.eff.org/Net_culture/Net_info/Technical/Registration/domain.template) to the InterNIC Domain Registrar. When InterNIC became a private company, Network Solutions in 1995, it became [$100 for two years](https://mashable.com/2014/03/10/domain-names-history/?europe=true). By 2000, some domain names were as inexpensive as [$9.99/year](https://web.archive.org/web/20001018000039/http://namebargain.com:80/).
+
+<figure>
+![The original `dianagabaldon.com` webpage](/img/2021-04-22-id-through-time/dianagabaldon-2001.png)[^gabaldon-website-2001]
+</figure>
+
+[^gabaldon-website-2001]: {-} The original `dianagabaldon.com` [webpage](https://web.archive.org/web/20010223214830/http://www.dianagabaldon.com/) (2001)
 
 Having a memorable name to host your online identity has become incredibly valuable. Tens of millions of dollars have been spent to control a domain name.[^voice.com]
 
