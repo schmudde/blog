@@ -8,13 +8,15 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Peoria, IL
 date-created: 2021-01-07
-date-modified: 2021-01-11
+date-modified: 2021-08-09
 date-published: 2021-01-07
 in-language: en
 keywords: italy, war, turin
 tags:
  - review
 ---
+
+by Caroline Moorehead, published 2019
 
 This book chronicles the Partisan effort in Piedmont. Much of it takes place during the chaotic civil war after Rome fell to the Allies. Mussolini had established a base of operations in Salò. Germans were attempting to hold the Gothic line and exploit the valuable industrial resources of the North. The Allies had established a government in the South as the ousted Italian monarchs vied to power. While Partisans with divergent postwar political aims fought for an Italy free of fascism after 20 years of oppression.
 
