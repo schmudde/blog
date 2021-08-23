@@ -6,39 +6,45 @@ author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Turin, Italy
+location: Berlin, DE
 date-created: 2020-04-15
-date-modified: 2021-04-10
+date-modified: 2021-08-23
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-[^now]<i class="fa fa-image"></i> I'm excited to share that [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was accepted to this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
+
+
+[^now] I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private pre-alpha and we're looking to hire people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://yorba.co/). We are building an open digital identity service. Exciting things to come.
+I had the pleasure of being interviewed by [Sara Hurley](https://www.sarahurley.art/) on 18/August. The topic was “The Art of Up-Cycling Digital Debris” as part of her on-going *Art of Future* conversation series.
 
-I'm finishing a class with the [Virtual School on Internet Governance](https://www.virtualsig.org/) in February. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education. I just finished the first week on internet history, which is centered on the American narrative.
+<i class="fa fa-image"></i> [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was presented as part of this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
 
+I completed my coursework in the [Virtual School on Internet Governance](https://www.virtualsig.org/) a few months ago. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education.
+
+I completed my contribution to Dick Van Lente's [*Prophets of Computing: Visions of Society Transformed
+by Computing*](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing. Now it's in the hands of [ACM and Morgan & Claypool Publishers](http://books.acm.org/). It should be out early next year.
 
 ## Projects
 
-I'm still working on three book projects.
+I'm still working on two other book projects.
 
 1. Collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol: [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/). Art will form a cornerstone of our thesis.
-2. Integrating peer review responses to Dick Van Lente's [*Prophets of Computing* book](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing.
-3. A secret book project.
+2. A secret book project.
 
 ## Reading
 
-- *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020)
+- *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021)
+- *Essays in Idleness* by Yoshida Kenkō (1332)
 - [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
 - *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
 
-I just finished [*81 Little Lions*](https://senseis.xmp.net/?81LittleLions) by Immanuel de Villers, *Lankavatara Sutra* (350-400 CE) translated by Red Pine, *The Prophet* by Khalil Gibran (1923), and *Computation and Human Experience* by Philip E. Agre (1997)
+I just finished *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)) and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
 
 ## Recent Memory
 

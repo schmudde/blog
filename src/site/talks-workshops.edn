@@ -30,7 +30,15 @@
    :image "nycdh.png"
    }]
  :conference-talks
- [{:org "Internet Identity Workshop (Spring)"
+ [{:org "Art of Future"
+   :geo "Online"
+   :date #time/date "2021-08-18"
+   :title "The Art of Up-Cycling Digital Debris"
+   :subtitle "Interview by Sara Hurley"
+   :link "https://www.clubhouse.com/event/PAD9vQOZ"
+   :link-name "Art of Future"
+   }
+  {:org "Internet Identity Workshop (Spring)"
    :geo "Mountain View, CA, US"
    :date #time/date "2021-04-21"
    :title "Managing Authorization"
