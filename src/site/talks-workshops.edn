@@ -30,7 +30,13 @@
    :image "nycdh.png"
    }]
  :conference-talks
- [{:org "Art of Future"
+ [{:org "PROGRAMme Research Into the History and Philosophy of Computing"
+   :geo "Bertinoro, IT"
+   :date #time/date "2021-09-14"
+   :title "Liveness"
+   :subtitle "Programs as Performance"
+   }
+  {:org "Art of Future"
    :geo "Online"
    :date #time/date "2021-08-18"
    :title "The Art of Up-Cycling Digital Debris"

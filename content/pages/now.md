@@ -6,16 +6,14 @@ author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Berlin, DE
+location: Turin, IT
 date-created: 2020-04-15
-date-modified: 2021-08-23
+date-modified: 2021-10-06
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
-
-
 
 [^now] I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private pre-alpha and we're looking to hire people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
 
@@ -39,12 +37,10 @@ I'm still working on two other book projects.
 
 ## Reading
 
-- *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021)
-- *Essays in Idleness* by Yoshida Kenkō (1332)
 - [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
 - *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
 
-I just finished *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)) and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
+I just finished *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021, [reviewed here](/posts/2021-09-07-fix-my-code.html)), *Essays in Idleness* by Yoshida Kenkō (1332), *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)), and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
 
 ## Recent Memory
 

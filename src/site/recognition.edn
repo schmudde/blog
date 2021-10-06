@@ -17,12 +17,12 @@
    :co-authors "Elisabetta Mori and Patricia Falcao"
    :editor "Liesbeth De Mol"
    :stats "forthcoming"}
-  {:title "Computing For the Masses"
+  {:title "Microcomputers For the Masses"
    :publication "Prophets Of Computing"
    :publisher "ACM Books/Morgan &amp; Claypool, New York, NY"
-   :date #time/year "2021"
+   :date #time/year "2022"
    :editor "Dick Van Lente"
-   :stats "peer reviewed, in print"
+   :stats "peer reviewed"
    :synopsis "This chapter examines the history of mass market information processing devices in the global marketplace leading up to the personal computer. It argues that the machine's consumerist roots are its defining characteristic - rather than a tool for augmented intelligence, computers are tools for consumption."}
   {:title "The Shape of Intuition"
    :publication "Nextjournal"
@@ -58,7 +58,12 @@
    :date #time/date "2011-08-09"}]
 
  :exhibitions
- [{:org "Sound And Vision International Film &amp; Technology Festival"
+ [{:org "xCoAx"
+   :geo "Graz, AU/Online"
+   :date #time/year "2021"
+   :title "Gallery 404"
+   }
+  {:org "Sound And Vision International Film &amp; Technology Festival"
    :geo "Elizabethport, NJ, US"
    :date #time/year "2018"
    :title "The Rhythm of Time"

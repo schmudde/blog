@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, DE
 date-created: 2021-09-03
-date-modified: 2021-09-07
+date-modified: 2021-10-06
 date-published: 2021-09-07
 in-language: en
 keywords: software preservation, net.art, digital art, engineering, programming
@@ -28,7 +28,7 @@ Interest in interactive digital art paralleled the growth of the internet throug
 
 [^netart]: net.art is artwork that is made for the internet. net.art experiences happen in cyberspace - an ephemeral place between machines. See [About Gallery 404](http://www.netart.today/pages/about.html) for more historical context.
 
-1999 also marked the third version of Cornelia Sollfrank's *Net Art Generator* (NAG). This particular work is the focus of a new book by Cornelia Sollfrank and Winnie Soon titled *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)*.[^fix-my-code] The artist (Sollfrank) and the programmer (Soon) confront issues of authenticity and ownership through a series of insightful conversations as they update the NAG's code for the 21st century.
+1999 also marked the third version of Cornelia Sollfrank's *Net Art Generator* (NAG). This particular work is the focus of a new book by Cornelia Sollfrank and Winnie Soon titled *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)*.[^fix-my-code] The artist (Sollfrank) and the creative technologist and coder (Soon) confront issues of authenticity and ownership through a series of insightful conversations as they update the NAG's code for the 21st century.
 
 [^fix-my-code]: Sollfrank, Cornelia and Winnie Soon, *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)*, EECLECTIC, 2021.<br /> !["Fix My Code" cove](/img/2021-09-07-fix-my-code/fix-my-code.jpg)
 
@@ -84,7 +84,7 @@ Building software is a bounded process in theory. But in practice, keeping softw
 
 Software-based artworks are a perfect place to apply this type of thinking. Cultural objects offer value that beguile bean counters; their only explicit value is in the communal activity around them. Cultural objects are things we must all care for if we want them to endure.
 
-Today ZKM is caring for the NAG.[^nag-2008] But some software preservationists see a future where care is a distributed resource. It can be seen in the preservation of [video games](https://archive.org/details/classicpcgames), [operating systems](https://github.com/PDP-10/its), and [activity on internet protocols](https://www.usenetarchives.com). Cultural objects on the internet are our inheritance. It is up to us to maintain them.[^archive-team]
+Today ZKM is caring for a custom server that can host the NAG.[^nag-2008] The software remains free and is maintained by a handful of dedicated individuals. But some software preservationists see a future where care is a distributed resource. It can be seen in the preservation of [video games](https://archive.org/details/classicpcgames), [operating systems](https://github.com/PDP-10/its), and [activity on internet protocols](https://www.usenetarchives.com). Cultural objects on the internet are our inheritance. It is up to us to maintain them.[^archive-team]
 
 [^nag-2008]: ![The NAG at ZKM](/img/2021-09-07-fix-my-code/MM_00134_sollfrank_nag-kunstmaschine_001.jpg)<br /> The "Net Art Generator" exhibited at ZKM in 2008. The server and its logs were presented in a wooden box as part of a larger presentation of the work. (Photo: Nina Pieroth)
 
@@ -108,7 +108,7 @@ This was supposed to be the era of the egalitarian internet - a network that bri
 
 [^dog]: &ldquo;On the Internet, nobody knows you're a dog.&rdquo; Anonymity on the 1990s internet represented a disembodied utopia where people could be whoever they wanted, enjoy the free exchange of ideas, and equal access to opportunities. What mattered was the amount of personal initiative and the quality of the individual output. ![On the Internet, nobody knows you're a dog.](/img/2021-09-07-fix-my-code/nobody-knows-youre-a-dog.jpg)
 
-Compare this to the tactics of information warfare from the early 21st century. On the open internet, the goal was to restrict the flow of information rather than flood the network with poor information. This strategy is captured in an interview between Sollfrank and a hacker named Sopht in the [July/August 2000 issue](http://archive.neural.it/init/default/show/2338) of *ArtByte*.[^artbyte]
+Compare this to the tactics of information warfare from the early 21st century. On the open internet, the goal was to restrict the flow of information rather than flood the network with poor information. This strategy is captured in an interview between Sollfrank and an artificial hacker named S0pht in the [July/August 2000 issue](http://archive.neural.it/init/default/show/2338) of *ArtByte*.[^artbyte]
 
 > Power and its representations are no longer located in the real world but have been shifted onto the Net. That's why the resistance against power has also got to take place within the Net. [...] So that's what I do, a kind of electronic civil disobedience. What it's about is blocking the flow of information.
 
