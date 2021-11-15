@@ -6,7 +6,7 @@ author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Berlin, DE
+location: Berlin, Germany
 date-created: 2019-12-25
 date-modified: 2021-08-09
 date-published: 2019-12-25

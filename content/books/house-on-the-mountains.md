@@ -6,7 +6,7 @@ author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Peoria, IL
+location: Peoria, IL, United States
 date-created: 2021-01-07
 date-modified: 2021-08-09
 date-published: 2021-01-07

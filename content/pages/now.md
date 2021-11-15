@@ -6,7 +6,7 @@ author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Turin, IT
+location: Turin, Italy
 date-created: 2020-04-15
 date-modified: 2021-10-06
 date-published: 2020-04-23

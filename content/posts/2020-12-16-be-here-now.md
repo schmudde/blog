@@ -11,10 +11,11 @@ date-created: 2020-12-15
 date-modified: 2021-01-11
 date-published: 2020-12-16
 in-language: en
-keywords: buddhism, oneness, atari, zen, psychedelics, book review
+keywords: buddhism, oneness, atari, zen, psychedelics
 tags:
  - personal
  - suchness
+ - review
 ---
 
 
