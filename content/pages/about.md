@@ -51,7 +51,7 @@ Considering buying physical books on [IndieBound](https://www.indiebound.org/).
 
 ### [eBooks](#ebooks)
 
-I always have my nose in far too many books. I prefer eBooks because I often search through my highlights. Furthermore, eInk readers are generally lighter and more ergonomic to use with one hand. They are easy on the eyes even with the sun overhead or in the depth of midnight.
+I always have my nose in far too many books. I prefer eBooks because I often search through my highlights. Furthermore, e-ink readers are generally lighter and more ergonomic to use with one hand. They are easy on the eyes even with the sun overhead or in the depth of midnight.
 
 Unfortunately the vast majority of eBooks are locked down and distributed in a way that is hostile to both authors and readers. I have compiled an array of ethical sources. Please consider these the first stop for any eBook purchases.
 

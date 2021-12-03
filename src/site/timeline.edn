@@ -46,6 +46,13 @@
   :link "/posts/2020-05-29-disinformation-strategies.html"
   :link-name "Disinformation Strategies and Tactics"
   :image nil}
+ {:title "Amazon Removes Purchased Copies of '1984'"
+  :date #time/date "2009-07-17"
+  :desc "&ldquo;Justin Gawronski, a 17-year-old from the Detroit area, was reading &lsquo;1984&rsquo; on his Kindle for a summer assignment and lost all his notes and annotations when the file vanished. &lsquo;They didn’t just take a book back, they stole my work,&rsquo; he said.&rdquo;"
+  :footer "<a href='https://www.nytimes.com/2009/07/18/technology/companies/18amazon.html'>Amazon Erases Orwell Books From Kindle</a>"
+  :link "/posts/2021-12-01-eink.html"
+  :link-name "How Ebooks Have Poisoned Electronic Ink"
+  :image nil}
  {:title "Facebook Introduces Targeted Ads"
   :geo "New York City, NY, US"
   :date #time/date "2007-11-06"

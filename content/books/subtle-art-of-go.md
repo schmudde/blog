@@ -8,10 +8,10 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, Germany
 date-created: 2021-08-29
-date-modified: 2021-08-29
+date-modified: 2021-11-26
 date-published: 2021-08-30
 in-language: en
-keywords: go, oulipo, constraints, literature, mathematics
+keywords: go, oulipo, perec, lusson, roubaud
 tags:
  - review
 ---

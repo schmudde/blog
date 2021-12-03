@@ -1,6 +1,6 @@
 ---
 title: Everyday Information Architecture
-description: Everyday Information Architecture favors case studies over an exploration of the methodology that informs good decision making.
+description: Everyday Information Architecture favors case studies over a deep dive into the methodology behind good decision making.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
