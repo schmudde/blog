@@ -46,6 +46,8 @@
    ;; To use Aperture as your Microsub endpoint. Then use Monocle.p3k.io as a reader.
    [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
 
+   [:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
+
    ])
 
 
@@ -85,7 +87,7 @@
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
     [:li.dib.mr2 [:a {:href "/timeline.html" :title "About"} "Timeline"]]
     [:li.dib.mr2 [:a {:href "/cv.html" :title "CV"} "CV"]]
-    [:li.dib.mr2 [:a {:href "/feed.rss" :title "rss"} "RSS"]]]])
+    [:li.dib.mr2 [:a {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]])
 
 
 (defn body-template
