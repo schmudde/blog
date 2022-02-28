@@ -200,6 +200,13 @@
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
+ {:title "The First Message Is Sent Using the Moscow–Washington Hotline"
+  :geo "Washington D.C., US"
+  :date #time/date "1963-08-30"
+  :desc "The first text is sent from the United States to Russia over the Moscow–Washington hotline: &ldquo;THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG'S BACK 1234567890&rdquo;. The June 1963 Hot Line Agreement represents the first time the two nations took action to avert an accidental nuclear war."
+  :link "/posts/2022-02-25-info-warfare-without-limits.html"
+  :link-name "Information Warfare Is Without Limits and So Are Its Consequences"
+  :image nil}
  {:title "David Padwa Co-Founds Basic Systems With Francis Mechner"
   :geo nil
   :date #time/year "1960"

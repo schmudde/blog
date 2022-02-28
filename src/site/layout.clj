@@ -47,6 +47,7 @@
    [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
 
    [:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
+   [:script {:src "/js/twitter-website-tag-code-snippet.js"}]
 
    ])
 
@@ -55,7 +56,8 @@
   [:div {:class "h-card"}
    [:article.mw5.center.bg-white.br3.pa3.pa4-ns.mv3.ba.b--black-10
     [:div.tc
-     [:img.br-100.h4.w4.dib.ba.b--black-05.pa2 {:class "u-photo" :title "avatar" :src "https://s.gravatar.com/avatar/4c272d7a0e4b25c5126a93372d8403b6?s=80"}]
+     [:img.br-100.h4.w4.dib.ba.b--black-05.pa2 {:class "u-photo" :title "avatar" :src "https://s.gravatar.com/avatar/4c272d7a0e4b25c51
+26a93372d8403b6?s=80"}]
      [:h1.f3.mb2 [:span {:class "p-name"} "David Schmudde"]]
      [:h2.f5.fw4.gray.mt0 [:span {:class "p-org"} "Beyond the Frame"]]
      [:div
@@ -66,11 +68,11 @@
      ]]
 
    [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
-    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://mastodon.social/@schmudde" :title "Mastodon Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-mastodon"}]]]
-    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-twitter"}]]]
-    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-github"}]]]
-    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3 {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://mastodon.social/@schmudde" :title "Mastodon Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-mastodon"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-twitter"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-github"}]]]
+    [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
     ]])
 
 (defn header-template [global-meta]
