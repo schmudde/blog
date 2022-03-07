@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2020-11-16
+date-modified: 2022-03-06
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -53,27 +53,13 @@ Considering buying physical books on [IndieBound](https://www.indiebound.org/).
 
 I always have my nose in far too many books. I prefer eBooks because I often search through my highlights. Furthermore, e-ink readers are generally lighter and more ergonomic to use with one hand. They are easy on the eyes even with the sun overhead or in the depth of midnight.
 
-Unfortunately the vast majority of eBooks are locked down and distributed in a way that is hostile to both authors and readers. I have compiled an array of ethical sources. Please consider these the first stop for any eBook purchases.
+Unfortunately the vast majority of eBooks are locked down and distributed in a way that is hostile to both authors and readers. I have compiled an array of ethical sources.[^ethical] Please consider these the first stop for any eBook purchases.
 
-[Leanpub](https://leanpub.com/) empowers authors and makes the experience joyful for readers. [eBooks.com](https://www.ebooks.com/) is considered best by [Ethical Consumer](https://www.ethicalconsumer.org/retailers/shopping-guide/booksellers) and offers a [DRM Free seach](https://www.ebooks.com/en-de/drm-free/). [Smashwords](https://www.smashwords.com/) &ldquo;does not publish works containing digital rights management schemes that limit the customer's ability to legally enjoy the author's work.&rdquo;
+[^ethical]: [Leanpub](https://leanpub.com/) empowers authors and makes the experience joyful for readers. [eBooks.com](https://www.ebooks.com/) is considered best by [Ethical Consumer](https://www.ethicalconsumer.org/retailers/shopping-guide/booksellers) and offers a [DRM Free seach](https://www.ebooks.com/en-de/drm-free/). [Smashwords](https://www.smashwords.com/) &ldquo;does not publish works containing digital rights management schemes that limit the customer's ability to legally enjoy the author's work.&rdquo; [Tricycle](https://tricycle.org/ebooks/) distributes wonderful books on Buddhism. I have two sources for classic texts. [Standard eBooks](https://standardebooks.org/) embodies the care and attention that classic books deserve while [Project Gutenberg](http://www.gutenberg.org/) offers the widest selection. The [Free EBook Foundation](https://ebookfoundation.org/) does some interesting work to make Gutenberg a more robust platform. For books on programming and computing, two publishers are distributing beautiful DRM-free eBooks: [Manning](https://www.manning.com/) and [The Pragmatic Programmer](https://pragprog.com/). Unfortunately, O'Reilly, once a trail-blazing publisher in tech, [is no longer selling books](https://www.thebookseller.com/futurebook/why-oreilly-media-no-longer-selling-books-online-607871). I'm not familiar with open platforms like [Open Libre](https://openlibra.com/en/collection) and [Open Book Publishers](https://www.openbookpublishers.com/), but they look promising.
 
-[Tricycle](https://tricycle.org/ebooks/) distributes wonderful books on Buddhism.
+I go into much more detail and offer more recommendations in my post *[How Ebooks Have Poisoned Electronic Ink](/posts/2021-12-01-eink.html)*. I'd love to hear people's feedback on where they buy eBooks on the web.[^bookseller-platform]
 
-I have two sources for classic texts. [Standard eBooks](https://standardebooks.org/) embodies the care and attention that classic books deserve while [Project Gutenberg](http://www.gutenberg.org/) offers the widest selection.[^gutenberg]
-
-[^gutenberg]: Remember that different countries have different copyright laws. So Project Gutenberg Australia and Project Gutenberg Canada provide different books. The [Free EBook Foundation](https://ebookfoundation.org/) does some interesting work to make Gutenberg a more robust platform.
-
-For books on programming and computing, two publishers are distributing beautiful DRM-free eBooks: [Manning](https://www.manning.com/) and [The Pragmatic Programmer](https://pragprog.com/). Unfortunately, O'Reilly, once a trail-blazing publisher in tech, [is no longer selling books](https://www.thebookseller.com/futurebook/why-oreilly-media-no-longer-selling-books-online-607871). I'm not familiar with open platforms like [Open Libre](https://openlibra.com/en/collection) and [Open Book Publishers](https://www.openbookpublishers.com/), but they look promising.
-
-Certain titles from [Arc Manor](http://www.arcmanor.com/) are available directly from the publisher and ethically sold.  For example, I bought a Robert Heinlein book from one of their imprints, [Phoenix Pick](http://www.phoenixpick.com/home.htm). In fact, ethical eBooks are available when buying direct from many publishers, such as [Ring of Fire Press](https://ringoffirepress.com), and authors, such as [Cory Doctorow](https://craphound.com/).
-
-I generally check the author's site before I buy a book in hopes I can pay them directly for their work.
-
-I recommend avoiding Amazon and Abe Books (which is owned by Amazon). [Rakuten Kobo](https://www.kobo.com/) offers over 5 million DRM-free titles, including both ebooks and audiobooks. But Mozilla has called [their reputation into question](https://foundation.mozilla.org/en/privacynotincluded/products/kobo-ereaders/). The tech advocates claim that Kobo eReaders do not respect user privacy.
-
-I'd love to hear people's feedback on any other book storefronts on the web.[^bookseller-platform]
-
-[^bookseller-platform]: [Bookshop](https://bookshop.org/) (using Hummingbird) and [River Dog Book Co.](https://riverdogbookco.papertrell.com/) (using [Mymustreads](https://mymustreads.com/)) are two storefronts with alternative readers that I've considered but never used.
+[^bookseller-platform]: I generally check the author's site before I buy a book in hopes I can pay them directly for their work. [Bookshop](https://bookshop.org/) (using Hummingbird) and [River Dog Book Co.](https://riverdogbookco.papertrell.com/) (using [Mymustreads](https://mymustreads.com/)) are two storefronts with alternative readers that I've considered but never used.
 
 ### With a Little Help From My Friends
 

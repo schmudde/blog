@@ -15,11 +15,11 @@
      :else date-time))
   ([date-time-1 date-time-2]
    (cond
+     (string? date-time-2) (str (year-month/format date-time-1 (formatter/of-pattern "MMMM yyyy")) " - " date-time-2)
      (= (type date-time-1) java.time.Year) (str (year/get-value date-time-1) " - " (year/get-value date-time-2))
      (= (type date-time-1) java.time.YearMonth) (str (year-month/format date-time-1 (formatter/of-pattern "MMMM yyyy"))
                                                      " - " (year-month/format date-time-2 (formatter/of-pattern "MMMM yyyy")))
      :else date-time-1)))
-
 
 (defn java-time->full-date-str [date-time]
   (cond

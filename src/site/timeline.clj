@@ -47,13 +47,13 @@
     [:h2 title]
     (if footer
       (timeline-entry-footer desc footer)
-      [:p desc])])
+      [:div [:p desc]])])
   ([{:keys [date title desc footer image]} link link-name]
    [:section {:class "timeline-item" :data-date-is (java-time->full-date-str date) :data-machine-date (str date)}
     [:h2 title]
     (if footer
       (timeline-entry-footer desc footer)
-      [:p desc])
+      [:div [:p desc]])
     (when link
       [:p "From the article "
        [:i [:a {:href link :title link-name} link-name]]])

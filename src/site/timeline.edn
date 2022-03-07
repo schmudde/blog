@@ -23,7 +23,7 @@
   :link-name "The State of COVID-19 Exposure Notifications"
   :image nil}
  {:title "NotPetya Malware Appears"
-  :geo nil
+  :geo "Ukraine"
   :date #time/date "2017-06-27"
   :desc "The NotPetya malware first appeared in 2017, on the eve of Ukrainian Constitution Day. It affected thousands of systems in over 65 countries. Maersk, the Danish shipping company, lost $300 million in revenues and was forced to replace 4,000 servers. Even still, Ukraine was the malware’s clear target, suffering 80% of all infections."
   :footer nil
@@ -120,14 +120,6 @@
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
- {:title "The Finger Protocol (RFCs #742 &amp; #1288)"
-  :geo nil
-  :date #time/date "1977-12-30"
-  :desc "Finger, originally written in 1971, is the granddaddy of status updates. Running <code>finger dschmud@heartland.bradley.edu</code> on TCP port 79 &ldquo;return(ed) a friendly, human-oriented status report on a particular person in depth.&rdquo;"
-  :footer "RFC #<a href='https://tools.ietf.org/html/rfc742'>742: NAME/FINGER</a>"
-  :link "/posts/2021-04-22-id-through-time.html"
-  :link-name "An Identity Through Time"
-  :image nil}
  {:title "Minitel"
   :geo nil
   :date #time/date "1980-07-15"
@@ -135,6 +127,14 @@
   :footer nil
   :link "/posts/2020-30-11-gallery-404.html"
   :link-name "Galley 404"
+  :image nil}
+ {:title "The Finger Protocol (RFCs #742 &amp; #1288)"
+  :geo nil
+  :date #time/date "1977-12-30"
+  :desc "Finger, originally written in 1971, is the granddaddy of status updates. Running <code>finger dschmud@heartland.bradley.edu</code> on TCP port 79 &ldquo;return(ed) a friendly, human-oriented status report on a particular person in depth.&rdquo;"
+  :footer "RFC #<a href='https://tools.ietf.org/html/rfc742'>742: NAME/FINGER</a>"
+  :link "/posts/2021-04-22-id-through-time.html"
+  :link-name "An Identity Through Time"
   :image nil}
  {:title "The United States Privacy Protection Study Commission Issues Their Report"
   :geo nil
@@ -152,6 +152,12 @@
   :link "/posts/2020-06-15-personal-privacy.html"
   :link-name "Personal Privacy"
   :image nil}
+ {:title "The First Ebook is Uploaded"
+  :geo "Urbana–Champaign, IL, US"
+  :date #time/date "1971-07-04"
+  :desc "Michael S. Hart founded Project Gutenberg when he uploaded a copy of the United States Declaration of Independence to the ARPANET. It was the first text of its type to be shared on the fledgling computer network."
+  :link "/posts/2021-12-01-eink.html"
+  :link-name "How Ebooks Have Poisoned Electronic Ink"}
  {:title "Project Minaret at the National Security Agency"
   :geo nil
   :date #time/year "1969"
@@ -168,14 +174,6 @@
   :link "/posts/2020-30-11-gallery-404.html"
   :link-name "Gallery 404"
   :image nil}
- {:title "Cybernetic Serendipity"
-  :geo nil
-  :date #time/date "1968-08-02"
-  :desc "<a href='http://dada.compart-bremen.de/item/exhibition/3'>Cybernetic Serendipity</a> was an exhibition of electronic, cybernetic, and computer art curated by Jasia Reichardt, shown at the Institute of Contemporary Arts, London, England. It was organized in three sections: 1. Computer generated work, 2. Cybernetic devices-robots and painting machines, 3. Machines demonstrating the use of computers and the history of cybernetics."
-  :footer nil
-  :link "/posts/2020-10-21-software-preservation-networked-art.html"
-  :link-name "Software Preservation in Networked Art"
-  :image nil}
  {:title "RFC #1: Host Software"
   :geo nil
   :date #time/year-month "1969-04"
@@ -183,6 +181,14 @@
   :footer "Steve Crocker, 'Today’S Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
   :link nil
   :link-name nil
+  :image nil}
+{:title "Cybernetic Serendipity"
+  :geo nil
+  :date #time/date "1968-08-02"
+  :desc "<a href='http://dada.compart-bremen.de/item/exhibition/3'>Cybernetic Serendipity</a> was an exhibition of electronic, cybernetic, and computer art curated by Jasia Reichardt, shown at the Institute of Contemporary Arts, London, England. It was organized in three sections: 1. Computer generated work, 2. Cybernetic devices-robots and painting machines, 3. Machines demonstrating the use of computers and the history of cybernetics."
+  :footer nil
+  :link "/posts/2020-10-21-software-preservation-networked-art.html"
+  :link-name "Software Preservation in Networked Art"
   :image nil}
  {:title "&ldquo;The Computer As A Communication Device&rdquo;"
   :geo nil

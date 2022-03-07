@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2022-02-25
-date-modified: 2022-02-26
+date-modified: 2022-03-06
 date-published: 2022-02-25
 in-language: en
 keywords: ukraine, cyberwar, langdonWinner, notpetya, nuclear
@@ -36,7 +36,7 @@ Other hegemonic nations undoubtedly deploy similar tactics. But Russia's strateg
 
 Taking the attack on Ukraine as an eight year conflict illustrates the current state of warfare. No pre-internet technology ever allowed such unabated aggression across national borders. It is unclear how nations can and should respond to this aggression.
 
-The essence of information warfare makes the conditions of fighting wars even worse. Information warfare intentionally amplifies the background noise of misinformation, disinformation, and malinformation. This is not only a tremendous barrier for peace, it is the foundation of disaster.[^hotline]
+The essence of information warfare makes the conditions of fighting wars even worse. Information warfare intentionally amplifies the background noise of [misinformation, disinformation, and malinformation](/posts/2020-05-29-disinformation-strategies.html). This is not only a tremendous barrier for peace, it is the foundation of disaster.[^hotline]
 
 [^hotline]: The Moscow–Washington hotline embodies the need for clear communication between nuclear-armed states. Established in 1963, the hotline remains text-only as a way to reduce misunderstandings in communication. ![Moscow-Washington teletype hotline, 1967 at the LBJ Presidential Library.](/img/2022-02-25-info-warfare-without-limits/itt-intelex-teletype.jpg) [Moscow-Washington teletype hotline](https://en.wikipedia.org/wiki/File:ITT_Intelex_Teletype_L015.jpg), Jim Kuhn <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span>
 
@@ -50,7 +50,7 @@ Viktor Yanukovych was swept out of power on February 22, 2014 after a months-lon
 
 [^coup]: This claim is bolstered by demonstrable [American meddling in Ukraine's politics](https://www.cato.org/commentary/americas-ukraine-hypocrisy) leading up to the election.
 
-Western interests were sharply divided at the time. As I detailed in my post *[Disinformation Strategies and Tactics](https://schmud.de/posts/2020-05-29-disinformation-strategies.html)* (2020), Russia made several attempts to exploit this division:
+Western interests were sharply divided at the time. As I detailed in my post *[Disinformation Strategies and Tactics](/posts/2020-05-29-disinformation-strategies.html)* (2020), Russia made several attempts to exploit this division:
 
 > On February 4, 2014, an anonymous source [posted a private conversation](https://www.youtube.com/watch?v=MSxaa-67yGM#t=89) between the US Assistant Secretary of State, Victoria Nuland, and the US Ambassador to Ukraine, Geoffrey Pyatt. Amidst all the political banter, one line stood out, &ldquo;Fuck the EU.&rdquo;
 

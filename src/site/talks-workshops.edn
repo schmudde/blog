@@ -30,7 +30,14 @@
    :image "nycdh.png"
    }]
  :conference-talks
- [{:org "PROGRAMme Research Into the History and Philosophy of Computing"
+ [{:org "Internet Identity Workshop (Spring)"
+   :geo "Mountain View, CA, US"
+   :date #time/date "2021-10-13"
+   :title "Strategies For Bridging to Next-Generation Identity Systems"
+   :subtitle "(from the bottom up)"
+   :synopsis "How can we deploy next-generation technology from first principles in way that brings businesses, governments, and individuals along for the ride?"
+   }
+  {:org "PROGRAMme Research Into the History and Philosophy of Computing"
    :geo "Bertinoro, IT"
    :date #time/date "2021-09-14"
    :title "Liveness"

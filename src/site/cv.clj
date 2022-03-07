@@ -105,9 +105,12 @@
 
 ;; TODO: employment-faculty.edu must support {:org Yorba}. If there is no :date-end, use " - Today"
 (defmethod make-table :employment [x]
-  (let [employment (second x)]
+  (let [employment (second x)
+        date #(if (:date-end %)
+                (java-time->str (:date-bgn %) (:date-end %))
+                (java-time->str (:date-bgn %)))]
     (into [:div ]
-          (map #(edn->hiccup-work (:title %) (java-time->str (:date-bgn %) (:date-end %))
+          (map #(edn->hiccup-work (:title %) (date %)
                                   (make-list (:synopsis %)) (:technology %)
                                   (:org %) (:desc %) (:geo %)) employment))))
 
