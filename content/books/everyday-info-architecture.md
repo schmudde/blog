@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-11-15
-date-modified: 2021-11-15
+date-modified: 2022-03-11
 date-published: 2021-11-15
 in-language: en
 keywords: information architecture, sequences, findability, Wurman, LATCH
@@ -94,7 +94,7 @@ When designing an effective architecture, Martin asks the reader to answer two q
 
 Rather than sketch a portrait of some imaginary readers of my blog, I'll offer up some analytics. *Beyond the Frame* saw roughly 22,000 unique visitors in 2021, down from 32,000 unique visitors in 2020. Those people mostly came from Hacker News, Reddit, Twitter, an [IndieWeb](https://indieweb.org/) profile page, and Metafilter.
 
-These are mostly news aggregation sites, so it shouldn't be a surprise that "[The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html)" and "[MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html)" were the top performers - both articles referred to current events. They provided additional context and analysis that couldn't be found in major publications.
+These are mostly news aggregation sites, so it shouldn't be a surprise that "[The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html)" and "[MLK and 'Domestic Terrorism'](https://schmud.de/posts/2020-06-02-mlk.html)" were the top performers - both articles referred to current events. They provided additional context and analysis that couldn't be found in major publications.
 
 "[Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html)" and "[Be Here Now](https://schmud.de/posts/2020-12-16-be-here-now.html)" came from more abstract prompts. [Julian Shapiro](https://www.julian.com/guide/write/intro) manages to articulate the way abstract motivations connect with audiences: "Does writing this article get a weight off your chest?", "Do you obsess over the topic and want others to geek out on it too?", etc....
 
