@@ -64,7 +64,7 @@ Martin notes that categorization is fundamentally different than ordering by loc
 
 *Beyond the Frame* uses two tools for creating categories:
 
-1. A strict set of tags: #doing, the #humanities, #personal updates, #science and informatics, the #suchness of knowledge, and #tools for thinking.
+1. A strict set of tags: #doing, the #sts, #personal updates, #informatics, the #suchness of knowledge, and #tools for thinking.
 2. A post-specific set of keywords. These keywords will proliferate endlessly as I add new posts.
 
 I chose this tag and keyword system as a way to organize my thoughts. It could be criticized by the author of *Everyday Information Architecture* for not considering the needs of the readers or the strategic goals of *Beyond the Frame* as a general information resource. Lisa Maria Martin thinks about information architecture much like a designer thinks of user experience. She asks about who is on the site and what they're trying to accomplish. She even suggests vague and unanswerable questions, such as asking what users care about. *Everyday Information Architecture* doesn't actually explore the latter question seriously. But this is the sort of hand waving occasionally found in this book.
@@ -73,18 +73,18 @@ I chose this tag and keyword system as a way to organize my thoughts. It could b
 
 Hierarchies are a more abstract tool for ordering than location, letter, or time. For example, I can create a hierarchy by listing the top five most-read posts on *Beyond the Frame*, from the most popular to the least popular:
 
-1. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html) #humanities, #science
-2. [MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html) #humanities, #suchness
+1. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html) #sts, #informatics
+2. [MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html) #sts, #suchness
 3. [Be Here Now](https://schmud.de/posts/2020-12-16-be-here-now.html) #personal, #suchness, #review
-4. [Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html) #humanities, #suchness, #review
-5. [Truth Storms the Capitol](https://schmud.de/posts/2021-01-07-truth-storms-the-capitol.html): #humanities
+4. [Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html) #sts, #suchness, #review
+5. [Truth Storms the Capitol](https://schmud.de/posts/2021-01-07-truth-storms-the-capitol.html): #sts
 
 This is an ordered sequence. The associated collection of tags (category labels) can also be sequenced by popularity:
 
-1. #humanities
+1. #sts
 2. #suchness
 3. #review
-4. #science, #personal
+4. #informatics, #personal
 
 Nested categories can turn these flat hierarchies into multi-dimensional affairs. For example, posts tags as #suchness offer a bevy of keywords: classical, ambient, music, notation, encoding, time, fidelity, information fidelity, computational art, information theory, myths, buddhism, relationships, documentary, oneness, atari, zen, psychedelics, etc...[^keywords]
 
@@ -98,8 +98,9 @@ These are mostly news aggregation sites, so it shouldn't be a surprise that "[Th
 
 "[Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html)" and "[Be Here Now](https://schmud.de/posts/2020-12-16-be-here-now.html)" came from more abstract prompts. [Julian Shapiro](https://www.julian.com/guide/write/intro) manages to articulate the way abstract motivations connect with audiences: "Does writing this article get a weight off your chest?", "Do you obsess over the topic and want others to geek out on it too?", etc....
 
-"Fix My Code" and "Be Here Now" are likely read by people who want passionately argued, well-researched articles on narrowly focused subjects. Hierarchy helps these people discover other articles with similar motivations, as Martin points out. #humanities is probably too broad to be effective. Changing the tag to #sts (or #ScienceAndTechnologyStudies) would offer a meaningful narrowing. #humanities may be more inclusive, but #sts offers more clarity and specificity.[^labeling] This is the sort of clear thinking that *Everyday Information Architecture* helps enable.
+"Fix My Code" and "Be Here Now" are likely read by people who want passionately argued, well-researched articles on narrowly focused subjects. Hierarchy helps these people discover other articles with similar motivations, as Martin points out. ~~#humanities is probably too broad to be effective. Changing the tag to #sts (or #ScienceAndTechnologyStudies) would offer a meaningful narrowing. #humanities may be more inclusive, but #sts offers more clarity and specificity.~~[^updates][^labeling] This is the sort of clear thinking that *Everyday Information Architecture* helps enable.
 
+[^updates]: Tags have been updated since this review was written. #science is now #informatics and #humanities is now #sts.
 [^labeling]: Martin specifies four qualities for labeling: clarity, specificity, inclusively, and consistency.
 
 ### Canonical Listings, Mnemonics and Randomness

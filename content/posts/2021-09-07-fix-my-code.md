@@ -13,7 +13,7 @@ date-published: 2021-09-07
 in-language: en
 keywords: software preservation, net.art, digital art, engineering, programming
 tags:
- - humanities
+ - sts
  - suchness
  - review
 ---

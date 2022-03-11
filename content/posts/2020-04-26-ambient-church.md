@@ -13,7 +13,7 @@ date-published: 2020-04-27
 in-language: en
 keywords: classical, ambient, music, notation, encoding, time, fidelity
 tags:
- - humanities
+ - sts
  - suchness
 ---
 

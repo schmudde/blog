@@ -14,7 +14,7 @@ in-language: en
 keywords: information fidelity, information architecture, information science, informatics, computer science
 tags:
  - personal
- - science
+ - informatics
  - suchness
 ---
 

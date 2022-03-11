@@ -13,7 +13,7 @@ date-published: 2020-05-19
 in-language: en
 keywords: climate change, misinformation, better documents
 tags:
- - science
+ - informatics
  - suchness
  - tools
 ---

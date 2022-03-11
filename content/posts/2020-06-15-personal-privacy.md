@@ -13,8 +13,8 @@ date-published: 2020-06-15
 in-language: en
 keywords: policy, privacy, advertising
 tags:
- - humanities
- - science
+ - sts
+ - informatics
 ---
 
 

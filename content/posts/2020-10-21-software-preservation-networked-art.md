@@ -14,9 +14,9 @@ in-language: en
 keywords: art preservation, agre, net.art, oop
 tags:
  - doing
- - humanities
+ - sts
  - personal
- - science
+ - informatics
 ---
 
 ![](/img/2020-10-21-software-preservation-networked-art/nexa-logo.png)

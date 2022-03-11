@@ -13,7 +13,7 @@ date-published: 2021-01-07
 in-language: en
 keywords: narrowcasting, congress, information society, disinformation, malinformation, misinformation
 tags:
- - humanities
+ - sts
 ---
 
 

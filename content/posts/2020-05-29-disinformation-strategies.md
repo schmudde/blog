@@ -13,7 +13,7 @@ date-published: 2020-05-29
 in-language: en
 keywords: misinformation, disinformation, malinformation
 tags:
- - science
+ - informatics
 ---
 
 <figure class="fullwidth">

@@ -12,7 +12,7 @@ date-modified: 2021-04-21
 date-published:
 in-language: en
 tags:
- - humanities
+ - sts
 ---
 
 Leaving no one behind.

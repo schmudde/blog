@@ -13,8 +13,8 @@ date-published: 2020-06-07
 in-language: en
 keywords: internet, governance, conflict resolution
 tags:
- - humanities
- - science
+ - sts
+ - informatics
 ---
 
 ![](/img/2020-06-06-internet-gov/igflogo.png)

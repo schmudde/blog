@@ -13,7 +13,7 @@ date-published: 2022-02-25
 in-language: en
 keywords: ukraine, cyberwar, langdonWinner, notpetya, nuclear
 tags:
- - humanities
+ - sts
 ---
 
 <figure>

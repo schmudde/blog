@@ -13,9 +13,9 @@ date-published: 2020-04-23
 in-language: en
 tags:
  - doing
- - humanities
+ - sts
  - personal
- - science
+ - informatics
  - suchness
  - tools
 ---

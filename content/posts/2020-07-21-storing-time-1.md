@@ -14,7 +14,7 @@ in-language: en
 keywords: clojure, time, modeling
 tags:
  - doing
- - science
+ - informatics
  - personal
 ---
 

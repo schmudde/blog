@@ -13,8 +13,8 @@ date-published: 2020-08-04
 in-language: en
 keywords: informatics, information theory, computation, STS, Engelbart, Von Neumann, Shannon
 tags:
- - humanities
- - science
+ - sts
+ - informatics
 ---
 
 ![](/img/2020-08-04-mother-of-mothers/bill-english.jpg)[^english]

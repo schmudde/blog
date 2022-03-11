@@ -16,11 +16,11 @@ canonical-url: http://schmud.de
 
 Thanks for reading *Beyond the Frame*. Please do peruse some of the most popular posts:
 
-- "[The Mothers of the Mother of All Demos](../posts/2020-08-04-mother-of-mothers.html)" <small>#humanities, #science</small>
-- "[MLK and “Domestic Terrorism”](../posts/2020-06-02-mlk.html)" <small>#humanities, #suchness</small>
+- "[The Mothers of the Mother of All Demos](../posts/2020-08-04-mother-of-mothers.html)" <small>#sts, #informatics</small>
+- "[MLK and “Domestic Terrorism”](../posts/2020-06-02-mlk.html)" <small>#sts, #suchness</small>
 - "[Be Here Now](../posts/2020-12-16-be-here-now.html)" <small>#personal, #suchness, #review</small>
-- "[Fix My Code](../posts/2021-09-07-fix-my-code.html)" <small>#humanities, #suchness, #review</small>
-- "[Truth Storms the Capitol](../posts/2021-01-07-truth-storms-the-capitol.html)" <small> #humanities</small>
+- "[Fix My Code](../posts/2021-09-07-fix-my-code.html)" <small>#sts, #suchness, #review</small>
+- "[Truth Storms the Capitol](../posts/2021-01-07-truth-storms-the-capitol.html)" <small> #sts</small>
 
 And follow along here:
 

@@ -13,7 +13,7 @@ date-published: 2021-04-22
 in-language: en
 keywords: identity, dns, did, sts, computerhistory
 tags:
- - humanities
+ - sts
  - suchness
 ---
 

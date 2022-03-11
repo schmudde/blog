@@ -13,7 +13,7 @@ date-published: 2020-05-07
 in-language: en
 keywords: COVID-19, privacy, information society
 tags:
- - science
+ - informatics
  - tools
 ---
 

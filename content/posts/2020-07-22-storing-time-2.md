@@ -14,7 +14,7 @@ in-language: en
 keywords: clojure, edn, java-time, chris marker, cinema, archiving
 tags:
  - doing
- - science
+ - informatics
  - tools
 ---
 
