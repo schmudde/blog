@@ -24,12 +24,16 @@
     (.startsWith original-path "posts/")
     false))
 
-(defn book? [{:keys [original-path] :as meta}]
+(defn book?
+  "In: {:original-path \"books\"}"
+  [{:keys [original-path] :as meta}]
   (if original-path
     (.startsWith original-path "books/")
     false))
 
-(defn published? [{:keys [date-published] :as meta}]
+(defn published?
+  "In: {:date-published \"yes\"}"
+  [{:keys [date-published] :as meta}]
   (if date-published true false))
 
 (deftask build []
@@ -46,7 +50,7 @@
                       :filterer (apply every-pred [book? published?])
                       :meta {:type "book"})
         (perun/tags :renderer 'site.core/render-tag-pages
-                    :filterer (apply every-pred [post? published?])
+                    :filterer (apply every-pred [(some-fn book? post?) published?])
                     :out-dir "public/tags")
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?

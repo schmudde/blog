@@ -14,7 +14,7 @@
                      tag]]) tags)])
 
 (defn list-posts [posts]
-  [:ul.liste
+  [:ul.list
    (for [post posts]
      [:li
       [:a {:href (:permalink post)} (:title post)]
@@ -57,9 +57,20 @@
   (let [content [:div (article-template post)]]
     (body-template global-meta post content)))
 
+(def tag-definitions
+  {:doing "Implementation Details"
+   :sts "Science and Technology Studies"
+   :personal "My Experiences and Comrades"
+   :informatics "Informatics and Computer Science"
+   :suchness "The Essence of Living"
+   :tools "Useful Software"
+   :review "Book Reviews"})
+
 (defn render-tag-pages [{global-meta :meta tag :entry posts :entries}]
-  (let [tag (assoc tag :title (str "Posts Tagged With \"" (:tag tag) "\""))
-        content [:div [:h1.tc (str "Posts Tagged As \"" (:tag tag) "\"" )]
+  (let [;;tag (assoc tag :title (str "Posts Tagged With \"" (:tag tag) "\""))
+        content [:div
+                 [:h1.tc (str "Posts Tagged As \"" (:tag tag) "\"" )]
+                 [:h2.tc ((keyword (:tag tag)) tag-definitions)]
                  (list-posts posts)]]
     (body-template global-meta tag content)))
 
