@@ -8,11 +8,12 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, Germany
 date-created: 2021-09-03
-date-modified: 2021-10-06
+date-modified: 2022-03-28
 date-published: 2021-09-07
 in-language: en
 keywords: software preservation, net.art, digital art, engineering, programming
 tags:
+ - informatics
  - sts
  - suchness
  - review

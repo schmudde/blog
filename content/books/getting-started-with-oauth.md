@@ -8,11 +8,12 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Seattle, USA
 date-created: 2022-03-11
-date-modified: 2022-03-11
+date-modified: 2022-03-28
 date-published: 2022-03-25
 in-language: en
 keywords: oauth
 tags:
+ - informatics
  - review
  - tools
 ---
