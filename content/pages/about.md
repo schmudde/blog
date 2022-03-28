@@ -8,12 +8,16 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2022-03-11
+date-modified: 2022-03-27
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
+
+See my [Curriculum Vitae](/cv.html) for an overview of my professional interests.
+
+## Background
 
 I was born in Peoria, Illinois [^peoria] and currently split time between Berlin, Germany and Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin.
 

@@ -42,8 +42,6 @@ If you're not quite sure what you're signing up for, here are the top five most-
 <div class="f5"><i class="fa fa-calendar mr2"></i> January 07, 2021</div>
 <div class="f5"><i class="fa fa-tags mr2"></i> #sts</div>
 
-
-
 Expect six to twelve posts a year.[^tos] What I lacks in quantity is make up for in quality.
 
 [^tos]: eMail subscriptions are beholden to ConvertKit's [Terms of Service](https://convertkit.com/terms).

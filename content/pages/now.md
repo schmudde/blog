@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2021-10-06
+date-modified: 2022-03-27
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -19,7 +19,23 @@ uuid:
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-I had the pleasure of being interviewed by [Sara Hurley](https://www.sarahurley.art/) on 18/August. The topic was “The Art of Up-Cycling Digital Debris” as part of her on-going *Art of Future* conversation series.
+I made several improvements to *Beyond the Frame* in March 2022. I have narrowed the tags to better reflect the blog's focus; I changed #science to [#informatics](/tags/informatics.html) (Informatics and Computer Science) and #humanities to [#sts](/tags/sts.html) (Science and Technology Studies). The [Subscribe](/pages/feeds.html) page now includes a list of the most popular posts on this blog:
+
+1. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html)
+<div class="f5"><i class="fa fa-calendar mr2"></i> August 04, 2020</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #sts, #informatics</div>
+2. [MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html)
+<div class="f5"><i class="fa fa-calendar mr2"></i> June 02, 2020</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #sts, #suchness</div>
+3. [Be Here Now](https://schmud.de/posts/2020-12-16-be-here-now.html)
+<div class="f5"><i class="fa fa-calendar mr2"></i> December 16, 2020</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #personal, #suchness, #review</div>
+4. [Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html)
+<div class="f5"><i class="fa fa-calendar mr2"></i> September 07, 2021</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #sts, #suchness, #review</div>
+5. [Truth Storms the Capitol](https://schmud.de/posts/2021-01-07-truth-storms-the-capitol.html)
+<div class="f5"><i class="fa fa-calendar mr2"></i> January 07, 2021</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #sts</div>
 
 <i class="fa fa-image"></i> [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was presented as part of this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
 
@@ -37,10 +53,9 @@ I'm still working on two other book projects.
 
 ## Reading
 
-- [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
-- *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015)
+[*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
 
-I just finished *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021, [reviewed here](/posts/2021-09-07-fix-my-code.html)), *Essays in Idleness* by Yoshida Kenkō (1332), *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)), and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
+I just finished *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021, [reviewed here](/posts/2021-09-07-fix-my-code.html)), *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015), *Essays in Idleness* by Yoshida Kenkō (1332), *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)), and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
 
 ## Recent Memory
 
