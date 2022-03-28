@@ -51,7 +51,7 @@ I stole ideas from:
 
 ## How I Read
 
-Considering buying physical books on [IndieBound](https://www.indiebound.org/).
+Consider buying physical books on [IndieBound](https://www.indiebound.org/).
 
 ### [eBooks](#ebooks)
 

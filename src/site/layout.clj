@@ -87,8 +87,8 @@
     [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
-    [:li.dib.mr2 [:a {:href "/timeline.html" :title "About"} "Timeline"]]
-    [:li.dib.mr2 [:a {:href "/cv.html" :title "CV"} "CV"]]
+    [:li.dib.mr2 [:a {:href "/previous-entries.html" :title "Previous Entries in Beyond the Frame"} "Previous Entries"]]
+    [:li.dib.mr2 [:a {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]
     [:li.dib.mr2 [:a {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]])
 
 

@@ -1,3 +1,6 @@
+;; DO NOT EDIT
+;; This file is tangled from README.org.
+
 (set-env!
  :source-paths #{"src" "content"}
  :resource-paths #{"resources"}
@@ -61,6 +64,9 @@
         (perun/static :renderer 'site.timeline/render
                       :page "timeline.html"
                       :meta {:type "page"})
+        (perun/collection :renderer 'site.previous-entries/render
+                          :page "previous-entries.html"
+                          :filterer (apply every-pred [(some-fn book? post?) published?]))
         (perun/rss :filterer (apply every-pred [post? published?]))
         (target)))
 

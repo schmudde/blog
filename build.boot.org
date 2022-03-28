@@ -71,6 +71,9 @@ figure {
 ** Create the Environment
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
+;; DO NOT EDIT
+;; This file is tangled from README.org.
+
 (set-env!
  :source-paths #{"src" "content"}
  :resource-paths #{"resources"}
@@ -105,23 +108,27 @@ TODO:
 Is it a blog post, a webpage, or a book review? Has it been published?
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
-(defn page? [{:keys [original-path] :as meta}]
-  (if original-path
-    (.startsWith original-path "pages/")
-    false))
+  (defn page? [{:keys [original-path] :as meta}]
+    (if original-path
+      (.startsWith original-path "pages/")
+      false))
 
-(defn post? [{:keys [original-path] :as meta}]
-  (if original-path
-    (.startsWith original-path "posts/")
-    false))
+  (defn post? [{:keys [original-path] :as meta}]
+    (if original-path
+      (.startsWith original-path "posts/")
+      false))
 
-(defn book? [{:keys [original-path] :as meta}]
-  (if original-path
-    (.startsWith original-path "books/")
-    false))
+  (defn book?
+    "In: {:original-path \"books\"}"
+    [{:keys [original-path] :as meta}]
+    (if original-path
+      (.startsWith original-path "books/")
+      false))
 
-(defn published? [{:keys [date-published] :as meta}]
-  (if date-published true false))
+  (defn published?
+    "In: {:date-published \"yes\"}"
+    [{:keys [date-published] :as meta}]
+    (if date-published true false))
 #+END_SRC
 
 ** The Main Build Task
@@ -131,33 +138,36 @@ This is the build task that builds the static site.
 TODO: why do all ~css/~ dirs update every time I render, but not the ~*.css~ files
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
-(deftask build []
-  (comp (perun/global-metadata :filename "site.base.edn")
-        (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
-        (perun/collection :renderer 'site.core/render-index-page :page "index.html"
-                          :filterer (apply every-pred [post? published?]))
-        (perun/collection :renderer 'site.core/render-index-page :page "books.html"
-                          :filterer (apply every-pred [book? published?]))
-        (perun/render :renderer 'site.core/render-post-pages
-                      :filterer (apply every-pred [post? published?])
-                      :meta {:type "post"})
-        (perun/render :renderer 'site.core/render-book-pages
-                      :filterer (apply every-pred [book? published?])
-                      :meta {:type "book"})
-        (perun/tags :renderer 'site.core/render-tag-pages
-                    :filterer (apply every-pred [post? published?])
-                    :out-dir "public/tags")
-        (perun/render :renderer 'site.core/render-post-pages
-                      :filterer page?
-                      :meta {:type "page"})
-        (perun/static :renderer 'site.cv/render
-                      :page "cv.html"
-                      :meta {:type "page"})
-        (perun/static :renderer 'site.timeline/render
-                      :page "timeline.html"
-                      :meta {:type "page"})
-        (perun/rss :filterer (apply every-pred [post? published?]))
-        (target)))
+  (deftask build []
+    (comp (perun/global-metadata :filename "site.base.edn")
+          (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
+          (perun/collection :renderer 'site.core/render-index-page :page "index.html"
+                            :filterer (apply every-pred [post? published?]))
+          (perun/collection :renderer 'site.core/render-index-page :page "books.html"
+                            :filterer (apply every-pred [book? published?]))
+          (perun/render :renderer 'site.core/render-post-pages
+                        :filterer (apply every-pred [post? published?])
+                        :meta {:type "post"})
+          (perun/render :renderer 'site.core/render-book-pages
+                        :filterer (apply every-pred [book? published?])
+                        :meta {:type "book"})
+          (perun/tags :renderer 'site.core/render-tag-pages
+                      :filterer (apply every-pred [(some-fn book? post?) published?])
+                      :out-dir "public/tags")
+          (perun/render :renderer 'site.core/render-post-pages
+                        :filterer page?
+                        :meta {:type "page"})
+          (perun/static :renderer 'site.cv/render
+                        :page "cv.html"
+                        :meta {:type "page"})
+          (perun/static :renderer 'site.timeline/render
+                        :page "timeline.html"
+                        :meta {:type "page"})
+          (perun/collection :renderer 'site.previous-entries/render
+                            :page "previous-entries.html"
+                            :filterer (apply every-pred [(some-fn book? post?) published?]))
+          (perun/rss :filterer (apply every-pred [post? published?]))
+          (target)))
 #+END_SRC
 
 It's complex task, so I broke out a few details below.

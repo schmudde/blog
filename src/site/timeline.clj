@@ -85,8 +85,3 @@
 (comment
   (make-timeline-for-post "/posts/2021-01-07-truth-storms-the-capitol.html")
   )
-
-;; TODO:
-;; - make-links etc... from site.cv
-;; - output timeline.html
-;; - slurp in the edn on the main page build and add timeline elements to the end of a page if the :link matches the filename (e.g. 2021-01-07-truth-storms-the-capitol.html)
