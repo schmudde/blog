@@ -34,6 +34,13 @@
     (.startsWith original-path "books/")
     false))
 
+(defn clojure?
+  "In: {:original-path \"clojure\"}"
+  [{:keys [original-path] :as meta}]
+  (if original-path
+    (.startsWith original-path "clojure/")
+    false))
+
 (defn published?
   "In: {:date-published \"yes\"}"
   [{:keys [date-published] :as meta}]
@@ -46,14 +53,19 @@
                           :filterer (apply every-pred [post? published?]))
         (perun/collection :renderer 'site.core/render-index-page :page "books.html"
                           :filterer (apply every-pred [book? published?]))
+        (perun/collection :renderer 'site.core/render-clj-index-page :page "clojure.html"
+                          :filterer (apply every-pred [clojure? published?]))
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
         (perun/render :renderer 'site.core/render-book-pages
                       :filterer (apply every-pred [book? published?])
                       :meta {:type "book"})
+        (perun/render :renderer 'site.core/render-clojure-pages
+                      :filterer (apply every-pred [clojure? published?])
+                      :meta {:type "clojure"})
         (perun/tags :renderer 'site.core/render-tag-pages
-                    :filterer (apply every-pred [(some-fn book? post?) published?])
+                    :filterer (apply every-pred [(some-fn book? post? clojure?) published?])
                     :out-dir "public/tags")
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?

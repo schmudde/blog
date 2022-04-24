@@ -1,6 +1,6 @@
 ---
 title: Information Warfare Is Without Limits and So Are Its Consequences
-description: If we fail to see the last eight years as anything less than eight years of continuous war, we fail to take the theater of cyberspace seriously.
+description: If we fail to see the last eight years as anything less than eight years of continuous war, we fail to understand the politics of cyberspace.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2022-02-25
-date-modified: 2022-03-06
+date-modified: 2022-04-23
 date-published: 2022-02-25
 in-language: en
 keywords: ukraine, cyberwar, langdonWinner, notpetya, nuclear
@@ -142,12 +142,22 @@ This class of folks are essentially autocrats. They *must* be heard. They *must*
 
 If your nation aspires to a political system without a trace of autocracy, removing nuclear technology is the only choice. That's the radical vision the Ukrainians embraced in 1994; they remain one of the few nuclear nations to ever give up their armaments.
 
-As Ukraine attempted to shed its 20th century legacy, it was sucked into a 21st century conflict. Most of the fighting over the last eight years of the Russo-Ukraine War has happened in cyberspace.[^estonia]
+As Ukraine attempted to shed its 20th century legacy, the country was sucked into a 21st century conflict; most of the fighting over the last eight years of the Russo-Ukraine War has happened in cyberspace.[^estonia]
 
 [^estonia]: This parallels the Estonian push into cyberspace. Partially due to the geopolitical tensions of being an ex-Soviet state, Estonia created an advanced e-state and [become a leader in cybersecurity](https://icds.ee/en/how-estonia-uses-cybersecurity-to-strengthen-its-position-in-nato/).
 
-The future has arrived and Ukraine is paving the way. If we fail to see the last eight years as anything less than eight years of continuous war, we fail to take the theater of cyberspace seriously.
+The attacks have only intensified since the start of the 2022 invasion. The release of malwares in Ukraine such as [Foxblade](https://threatpost.com/microsoft-ukraine-foxblade-trojan-hours-before-russian-invasion/178702/) and [HermeticWiper](https://www.eset.com/int/about/newsroom/press-releases/research/eset-research-ukraine-hit-by-destructive-attacks-before-and-during-the-russian-invasion-with-hermet/) seemed to intentionally coincide with the initial onslaught. Since then, [at least 100 additional malware deployments](https://www.ictsecuritymagazine.com/articoli/cyber-attacchi-escalation-tra-russia-e-ucraina-negli-ultimi-anni/) have been detected across a variety of Ukrainian industries. This includes [at least two additional cyberattacks on Ukraine's power grid](https://www.technologyreview.com/2022/04/12/1049586/russian-hackers-tried-to-bring-down-ukraines-power-grid-to-help-the-invasion/).[^industroyer] The news outlet [KyivPost](https://twitter.com/KyivPost/status/1496775905192161280) reports "constant cyberattacks" as government websites have struggled to stay online.
 
-Politicians must take technology more seriously. A cyberweapon's blast radius can encompass the entire world and the fallout can manifest in an incredible loss of life. Conversely, technologists must recognize the politics embodied by their technologies.[^web3-2] And we must all swim in more diverse political waters if we hope to defeat autocratic power and build a lasting peace.
+[^industroyer]: The malware used in 2022 was a variation of the malware used in the 2016 power grid attack. The original was called *Industroyer* and the 2022 version was deemed *Industroyer2*.
 
-[^web3-2]: For example, a myopic Web3 that only seeks to recreate capitalist constructions in cyberspace will only recreate today's issues in a different form.
+Mykhailo Fedorov, Ukrainian deputy minister and minister for digital transformation, has launched an online [hacker recruitment effort](https://twitter.com/FedorovMykhailo/status/1497642156076511233) in response. [The official Telegram group](https://t.me/itarmyofukraine2022) has swelled to more than 280,000 volunteers and the initiative has organized an array of defensive and offensive missions.
+
+Independent hacking groups have also initiated a handful of attacks within Russia and Belarus. Notable among the subsequent [bank leaks](https://twitter.com/YourAnonNews/status/1498141037138780161) and [train shutdowns](https://twitter.com/cpartisans/status/1497930273425661958), Anonymous [took control of several Russian television channels](https://twitter.com/YourAnonNews/status/1500613013510008836) like Russia 24, Channel One, and Moscow 24 to broadcast footage of the war in Ukraine.
+
+War is chaotic and cyberwar intensifies the chaos. The combatants can come from anywhere while a cyberweapon's origin and blast radius is indeterminate. Like a nuclear bomb, the fallout from conflict can easily spread across national borders and stoke global hostilities.
+
+Technologists must help politicians and society-at-large understand what is at stake. The first step is acknowledging the politics embedded within our technologies.[^embedded] If we hope to clearly express our intentions, we must understand the medium through which they travel. And if our intention is a lasting peace, we must eliminate the tools of autocratic power.
+
+[^embedded]: For example, a myopic Web3 that only seeks to recreate capitalist constructions in cyberspace will only recreate today’s issues in a different form.
+
+*The final five paragraphs of this entry was updated on 23/April/2022 to better reflect the ongoing war in Ukraine.*

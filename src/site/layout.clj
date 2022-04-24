@@ -85,10 +85,12 @@
      [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
+    [:li.dib.mr2 [:a {:href "/previous-entries.html" :title "Previous Entries in Beyond the Frame"} "Writing"]]
+    [:li.dib.mr2 [:a {:href "/clojure.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
+    [:li.dib.mr2 [:a {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]
+    [:li.dib.mr2 "|"]
     [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
     [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
-    [:li.dib.mr2 [:a {:href "/previous-entries.html" :title "Previous Entries in Beyond the Frame"} "Previous Entries"]]
-    [:li.dib.mr2 [:a {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]
     [:li.dib.mr2 [:a {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]])
 
 
