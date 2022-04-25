@@ -24,6 +24,10 @@ body {
 
 }
 
+article {
+	padding: 3rem 0 0 0;
+}
+
 .beyond-the-frame {
     z-index: -1;
     position: relative;

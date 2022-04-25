@@ -22,6 +22,19 @@
       [:time.f5 {:datetime (:date-published post)}
        (format-date (:date-published post))]])])
 
+(defn list-posts-with-metadata [posts]
+  [:ul.list.pl0
+   (for [post posts]
+     [:li.mb4
+      [:strong [:a {:href (:permalink post)} (:title post)]]
+      [:div.pl2
+       [:span.f5 [:i.fa.fa-calendar.mr2]
+        [:time {:datetime (:date-published post)}
+         (format-date (:date-published post))]]
+       "&nbsp;"
+       [:span.f5 "&nbsp;" [:i.fa.fa-tags.mr2] (tags->links (:tags post))]]
+      [:div.pl2.db.lh-copy.measure (:description post)]])])
+
 (defn make-snippet [content]
   (let [matcher (re-matcher #"<p>(.*?)</p>" content)]
     (str (first (re-find matcher))
@@ -77,10 +90,6 @@
   (let [content [:div (article-template book-review)]]
     (body-template global-meta book-review content)))
 
-#_(defn render-clojure-pages [{global-meta :meta clojure :entry}]
-  (let [content [:div (article-template clojure)]]
-    (body-template global-meta clojure content)))
-
 (defn render-post-pages [{global-meta :meta post :entry}]
   (let [content [:div (article-template post)]]
     (body-template global-meta post content)))
@@ -92,15 +101,25 @@
    :informatics "Informatics and Computer Science"
    :suchness "The Essence of Living"
    :tools "Useful Software"
-   :review "Book Reviews"})
+   :review "Book Reviews"
+   :clojure "Clojure Tutorials and Programs"})
+
 
 (defn render-tag-pages [{global-meta :meta tag :entry posts :entries}]
-  (let [;;tag (assoc tag :title (str "Posts Tagged With \"" (:tag tag) "\""))
-        content [:div
-                 [:h1.tc (str "Posts Tagged As \"" (:tag tag) "\"" )]
+  (let [num-of-posts (count posts)
+        first-half (+ (quot num-of-posts 2) (rem num-of-posts 2))
+        content [:div.cf
+                 [:h1.tc (str "Posts Tagged As #" (:tag tag) )]
                  [:h2.tc ((keyword (:tag tag)) tag-definitions)]
-                 (list-posts posts)]]
+                 [:div.pv3
+                  [:section.ph1.fl.w-100.w-50-ns
+                   [:div
+                    (list-posts-with-metadata (take first-half posts))]]
+                  [:section.ph1.fl.w-100.w-50-ns
+                   [:div
+                    (list-posts-with-metadata (drop first-half posts))]]]]]
     (body-template global-meta tag content)))
+
 
 (defn render-programs-index-page [{global-meta :meta collection-meta :entry posts :entries}]
   (let [landing-page-post (assoc (first posts) :type "post")
@@ -108,7 +127,7 @@
                  (article-template-abbreviated landing-page-post)
                  [:section {:id "old-posts"}
                   [:h2 "Other Posts"]
-                  (list-posts posts)]]]
+                  (list-posts-with-metadata posts)]]]
     (body-template global-meta collection-meta content)))
 
 (defn render-index-page [{global-meta :meta collection-meta :entry posts :entries}]
@@ -129,9 +148,32 @@
   (def post-data {:canonical-url "✓" :title "✓" :description "✓" :tags ["tag-a" "tag-b"] :cotnent "<body><p>lorem ipsum</p><img src=\"/img/test.png\"></body>"})
   (def tag-data {:canonical-url "✓" :title "✓" :description "✓" :tag "tag-a" :content "<body><p>tags</p></body>"})
 
+  (->> (prn-str #inst "2020-05-11")
+       (clojure.edn/read-string)
+       (.format (java.text.SimpleDateFormat. "yyyy")))
+
   (render-post-pages {:meta global-data :entry post-data})
 
-  (render-tag-pages {:meta global-data :entry tag-data})
+  (render-tag-pages {:meta global-data :entry tag-data :entries [{:permalink "http"
+                                                                  :title "Post 1"
+                                                                  :date-published (->> (prn-str #inst "2022-05-11")
+                                                                                       (clojure.edn/read-string))
+                                                                  :tags ["tag-a"]
+                                                                  :description "The first post"}
+                                                                 {:permalink "http"
+                                                                  :title "Post 2"
+                                                                  :date-published (->> (prn-str #inst "2020-05-11")
+                                                                                       (clojure.edn/read-string))
+                                                                  :tags ["tag-a"]
+                                                                  :description "The second post"}
+                                                                 {:permalink "http"
+                                                                  :title "Post 2"
+                                                                  :date-published (->> (prn-str #inst "2020-05-11")
+                                                                                       (clojure.edn/read-string))
+                                                                  :tags ["tag-a"]
+                                                                  :description "The second post"}
+                                                                 ]})
+
 
   (render-index-page {:meta global-data :entry nil :entries [post-data post-data post-data]})
 
@@ -143,6 +185,5 @@
   (->> (re-find #"<img src=\"\/img[\w\d\s\/-]+.[\w\d]+\"" xxx) (re-find #"\/img[\w\d\s\/-]+.[\w\d]+"))
 
   (re-find (re-pattern "<p>(.*?)</p>")
-         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>")
-  )
+           "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"))

@@ -11,11 +11,12 @@ date-created: 2020-07-21
 date-modified: 2020-07-22
 date-published: 2020-07-21
 in-language: en
-keywords: clojure, time, modeling
+keywords: time, modeling
 tags:
  - doing
  - informatics
  - personal
+ - clojure
 ---
 
 

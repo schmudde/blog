@@ -11,11 +11,12 @@ date-created: 2020-07-22
 date-modified: 2020-08-04
 date-published: 2020-07-22
 in-language: en
-keywords: clojure, edn, java-time, chris marker, cinema, archiving
+keywords: edn, java-time, chris marker, cinema, archiving
 tags:
  - doing
  - informatics
  - tools
+ - clojure
 ---
 
 ![](/img/2020-07-20-storing-time/owl-0.png)[^level-five]

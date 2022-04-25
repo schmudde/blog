@@ -29,7 +29,10 @@
     [:section.ph3.fl.w-100.w-50-ns
      [:h2 "Book Reviews"]
      [:div
-      (list-posts-temp (filter #(= (:type %) "book") posts))]]]])
+      (list-posts-temp (filter #(= (:type %) "book") posts))]
+     [:h2 "Clojure Tutorials"]
+     [:div
+      (list-posts-temp (filter #(= (:type %) "program") posts))]]]])
 
 (defn render [{global-meta :meta collection-meta :entry posts :entries}]
   (let [page-title "Previous Entries"

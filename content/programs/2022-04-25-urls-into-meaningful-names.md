@@ -8,8 +8,8 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-12-01
-date-modified: 2022-04-24
-date-published: 2022-04-24
+date-modified: 2022-04-25
+date-published: 2022-04-25
 in-language: en
 keywords: dns, apache, java
 tags:
@@ -17,9 +17,9 @@ tags:
 ---
 
 
-![](/img/2022-04-24-urls-into-meaningful-names/tree-cover.png)
+![](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
 
-URLs are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
+RLs are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
 
 The following examples explore the domain name system using Clojure. The goal is to derive meaningful information about a resource owner's identity from any URL. For example, the URLs [`http://wikipedia.org/wiki/Peoria`](http://wikipedia.org/wiki/Peoria) and [`https://en.wikipedia.org/wiki/Peoria`](https://en.wikipedia.org/wiki/Peoria) look different but they both resolve to the same document and they are both managed by the Wikimedia Foundation. They do not pass the threshold of being meaningfully different.
 
@@ -35,10 +35,9 @@ First, create the Clojure namespace with the requisite libraries. Java's URI lib
             [clojure.edn :as edn]))
 ```
 
-;; With that out of the way, it's time for some exploration.
+With that out of the way, it's time for some exploration.
 
-Domain Names Explained
-----------------------
+## Domain Names Explained
 
 ### The URL
 
@@ -70,8 +69,7 @@ This identification is what we're after. Who is the owner of this resource? It t
 
 Depending on your purpose, subdomain distinctions may be significant.  Some further understainding of domain name is necessary before moving on.
 
-The Root Domain, the Top Level Domain, and the Subdomain
---------------------------------------------------------
+## The Root Domain, the Top Level Domain, and the Subdomain
 
 ### The Root Domain and Subdomains
 
@@ -131,8 +129,7 @@ Add a protocol to the subdomains and the gTLD to form a URL:
 
 A URL ≠ a domain name.
 
-Getting the Domain Name
------------------------
+## Getting the Domain Name
 
 ### Parsing URLs
 
@@ -264,9 +261,7 @@ Significant subdomains are retained:
 
 `(remove-subdomain-prefix "www.news.chevrolet.gm.com")` &rArr; `"chevrolet.gm.com"`
 
-
-Getting a Meaningful Identifier
--------------------------------
+## Getting a Meaningful Identifier
 
 Put it all together to get meaningful domain names from any URL.
 
@@ -286,5 +281,3 @@ Put it all together to get meaningful domain names from any URL.
 `(get-host "http://schmudde.tumblr.com/")` &rArr; `"schmudde.tumblr.com"`
 
 I believe that the `get-host` function makes the right trade offs when considering the stated goals. The next step could be to turn these domain name rules into reusable Clojure specs. Check out Conan Cook's [*A spec for URLs in Clojure*](https://conan.is/blogging/a-spec-for-urls-in-clojure.html) and associated [generators](https://gist.github.com/conan/2edca210999b96ad26d38c1ee96dfe40) for a good introduction.
-
-Most of my work deals with identity and time in computing systems. See my posts [*Storing Time - Part 1*](https://schmud.de/posts/2020-07-21-storing-time-1.html) and [*Storing Time - Part 2*](https://schmud.de/posts/2020-07-22-storing-time-2.html) for a deep dive into computational memory and recording time in Clojure and Java. Thanks for reading!

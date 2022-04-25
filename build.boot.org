@@ -177,7 +177,7 @@ TODO: why do all ~css/~ dirs update every time I render, but not the ~*.css~ fil
                         :meta {:type "page"})
           (perun/collection :renderer 'site.previous-entries/render
                             :page "previous-entries.html"
-                            :filterer (apply every-pred [(some-fn book? post?) published?]))
+                            :filterer (apply every-pred [(some-fn book? post? program?) published?]))
           (perun/rss :filterer (apply every-pred [post? published?]))
           (target)))
 #+END_SRC
