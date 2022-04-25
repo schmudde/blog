@@ -34,11 +34,11 @@
     (.startsWith original-path "books/")
     false))
 
-(defn clojure?
-  "In: {:original-path \"clojure\"}"
+(defn program?
+  "In: {:original-path \"programs\"}"
   [{:keys [original-path] :as meta}]
   (if original-path
-    (.startsWith original-path "clojure/")
+    (.startsWith original-path "programs/")
     false))
 
 (defn published?
@@ -53,19 +53,19 @@
                           :filterer (apply every-pred [post? published?]))
         (perun/collection :renderer 'site.core/render-index-page :page "books.html"
                           :filterer (apply every-pred [book? published?]))
-        (perun/collection :renderer 'site.core/render-clj-index-page :page "clojure.html"
-                          :filterer (apply every-pred [clojure? published?]))
+        (perun/collection :renderer 'site.core/render-programs-index-page :page "programs.html"
+                          :filterer (apply every-pred [program? published?]))
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
         (perun/render :renderer 'site.core/render-book-pages
                       :filterer (apply every-pred [book? published?])
                       :meta {:type "book"})
-        (perun/render :renderer 'site.core/render-clojure-pages
-                      :filterer (apply every-pred [clojure? published?])
-                      :meta {:type "clojure"})
+        (perun/render :renderer 'site.core/render-post-pages
+                      :filterer (apply every-pred [program? published?])
+                      :meta {:type "program"})
         (perun/tags :renderer 'site.core/render-tag-pages
-                    :filterer (apply every-pred [(some-fn book? post? clojure?) published?])
+                    :filterer (apply every-pred [(some-fn book? post? program?) published?])
                     :out-dir "public/tags")
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?

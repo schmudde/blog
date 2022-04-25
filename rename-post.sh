@@ -7,12 +7,15 @@ read old_post
 echo What is the new post name? e.g. 2021-04-22-identity-through-time
 read new_post
 
+echo Where is the old post located? e.g. posts, books, programs
+read location
+
 printf "\n"
 
-mv content/posts/$old_post.md content/posts/$new_post.md
+mv content/$location/$old_post.md content/$location/$new_post.md
 mv resources/public/img/$old_post resources/public/img/$new_post
 
-ls content/posts/$new_post.md
+ls content/$location/$new_post.md
 ls resources/public/img/$new_post
 
 printf "\n"

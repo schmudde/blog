@@ -77,7 +77,7 @@
   (let [content [:div (article-template book-review)]]
     (body-template global-meta book-review content)))
 
-(defn render-clojure-pages [{global-meta :meta clojure :entry}]
+#_(defn render-clojure-pages [{global-meta :meta clojure :entry}]
   (let [content [:div (article-template clojure)]]
     (body-template global-meta clojure content)))
 
@@ -102,7 +102,7 @@
                  (list-posts posts)]]
     (body-template global-meta tag content)))
 
-(defn render-clj-index-page [{global-meta :meta collection-meta :entry posts :entries}]
+(defn render-programs-index-page [{global-meta :meta collection-meta :entry posts :entries}]
   (let [landing-page-post (assoc (first posts) :type "post")
         content [:div
                  (article-template-abbreviated landing-page-post)
