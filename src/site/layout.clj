@@ -1,6 +1,9 @@
 (ns site.layout
   (:require [hiccup.page :as page]))
 
+(def analytics [:script {:data-goatcounter "https://beyondtheframe.goatcounter.com/count"
+                         :async true :src "//gc.zgo.at/count.js"}])
+
 (defn extract-image [content]
   (when content
     (when-let [img-tag (re-find #"<img src=\"\/img[\w\d\s\/-]+.[\w\d]+\"" content)]
@@ -102,7 +105,8 @@
                [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
                [:main {:role "main"} content]
                [:footer.pv4.ph3.ph5-ns.tc {:itemscope "itemscope" :itemtype "https://schema.org/WPFooter"}
-                (footer-template)]]))
+                (footer-template)]
+               analytics]))
 
 (comment
 

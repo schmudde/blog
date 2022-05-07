@@ -8,18 +8,24 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2022-04-23
+date-modified: 2022-05-07
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-[^now] I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private pre-alpha and we're looking to hire people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
+[^now] *[La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)](https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/)*, the Italian translation of my essay *[Information Warfare Is Without Limits and So Are Its Consequences](https://schmud.de/posts/2022-02-25-info-warfare-without-limits.html)*, has been published by the magazine Q Code! This is an exciting development; I'd like to thank my translator as well as the co-director [Christian Elia](https://twitter.com/eliachr).[^q-code]
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-I made several improvements to *Beyond the Frame* in March 2022. I have narrowed the tags to better reflect the blog's focus; I changed #science to [#informatics](/tags/informatics.html) (Informatics and Computer Science) and #humanities to [#sts](/tags/sts.html) (Science and Technology Studies). The [Subscribe](/pages/feeds.html) page now includes a list of the most popular posts on this blog:
+[^q-code]: ![Screen shot of "La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze"](/img/2022-02-25-info-warfare-without-limits/q-code.png) [*La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)*](https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/) in Q Code Mag
+
+I'm currently collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol: [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/). The preservation of software-based art will form a cornerstone of our thesis.[^preservation]
+
+[^preservation]:I covered some of these ideas in my presentation at the [Nexa Center for Internet &amp; Society at the Polytechnic University of Turin](https://nexa.polito.it/mercoledi-133). The video and all related details can be found in *[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)* on Beyond the Frame.
+
+I made several improvements to *Beyond the Frame* in May 2022. I have narrowed the tags to better reflect the blog's focus; I changed #science to [#informatics](/tags/informatics.html) (Informatics and Computer Science) and #humanities to [#sts](/tags/sts.html) (Science and Technology Studies). The site has also seen improvements to the menu and an addition section dedicated to Clojure. The [Subscribe](/pages/feeds.html) page now includes a list of the most popular posts on this blog:
 
 1. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html)
 <div class="f5"><i class="fa fa-calendar mr2"></i> August 04, 2020</div>
@@ -37,29 +43,26 @@ I made several improvements to *Beyond the Frame* in March 2022. I have narrowed
 <div class="f5"><i class="fa fa-calendar mr2"></i> January 07, 2021</div>
 <div class="f5"><i class="fa fa-tags mr2"></i> #sts</div>
 
-<i class="fa fa-image"></i> [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was presented as part of this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
+Finally, I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private pre-alpha and we're looking to hire people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
 
-I completed my coursework in the [Virtual School on Internet Governance](https://www.virtualsig.org/) a few months ago. The administrator is Glenn McKnight (Canada) and Alfredo Calderon (Puerto Rico) is the Dean of Education.
+## Reading
+
+I recently finished
+
+- *[Nineteen Eighty-Four](/books/1984.html)* by George Orwell (1949)
+- *[Getting Started with OAuth 2.0](/books/getting-started-with-oauth.html)* by Ryan Boyd (2012)
+- *[Essays in Idleness](/books/essays-on-idleness.html)* by Yoshida Kenkō (~1319-1331)
+
+I'm still working through [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978) and several others.
+
+## Recent Memory
+
+<i class="fa fa-image"></i> [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was presented as part of this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
 
 I completed my contribution to Dick Van Lente's [*Prophets of Computing: Visions of Society Transformed
 by Computing*](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing. Now it's in the hands of [ACM and Morgan & Claypool Publishers](http://books.acm.org/). It should be out early next year.
 
-## Projects
-
-I'm still working on two other book projects.
-
-1. Collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol: [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/). Art will form a cornerstone of our thesis.
-2. A secret book project.
-
-## Reading
-
-[*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
-
-I just finished *[Fix My Code](https://eeclectic.de/produkt/fix-my-code/)* by Cornelia Sollfrank and Winnie Soon (2021, [reviewed here](/posts/2021-09-07-fix-my-code.html)), *Bach: Music in the Castle of Heaven* by John Eliot Gardiner (2015), *Essays in Idleness* by Yoshida Kenkō (1332), *A House in the Mountains: The Women Who Liberated Italy from Fascism* by Caroline Moorehead (2020, [reviewed here](/books/house-on-the-mountains.html)), and *Double Star* by Robert A. Heinlein (1956, [reviewed here](/books/double-star.html)).
-
-## Recent Memory
-
-I've been charting & reporting on COVID-19 cases in Turin, Italy for the last year. I started this local effort because our region was often overshadowed by mighty Milan. But the problem has evolved but I recently retired the notebook: [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
+I was charting & reporting on COVID-19 cases in Turin, Italy for the last year. I started this local effort because our region was often overshadowed by mighty Milan. But the problem has evolved but I recently retired the notebook: [🇮🇹 The Corona Virus in Turin, Italy](https://nextjournal.com/schmudde/corona-in-italy).
 
 My October talk at *[JupyterCon 2020](https://jupytercon.com/)*, "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia", was [published online](https://www.youtube.com/watch?v=__0Pr13PQSc).[^jupytercon]
 
@@ -68,16 +71,6 @@ My October talk at *[JupyterCon 2020](https://jupytercon.com/)*, "Dr. Schmood's 
 <figure>
 <div class="iframe-wrapper">
 <iframe src="https://www.youtube-nocookie.com/embed/__0Pr13PQSc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</figure>
-
-My other talk at [Nexa Center for Internet &amp; Society at the Polytechnic University of Turin](https://nexa.polito.it/mercoledi-133), "Software Preservation in Networked Art", was also recently published. I talk more about the experience in "[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)" on *Beyond the Frame*.[^networked-art]
-
-[^networked-art]: Abstract: Art became increasingly abstract and conceptual throughout the 1900s, concluding the century in complete ephemerally on the internet. A brief survey of net art from the 1990s and early 2000s will demonstrate the subsequent challenges faced by many curators and preservationists. Their struggles with the absence of the art object typifies the difficulties of preserving our shared digital heritage. In this way, artists are forced to engage questions that progress-oriented scientists and engineers tend to ignore. The seminar will address the existential questions, current best practices, and future technologies that may help to combat the generational loss of information.
-
-<figure>
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/3JHZAboV3fo?start=629" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </figure>
 

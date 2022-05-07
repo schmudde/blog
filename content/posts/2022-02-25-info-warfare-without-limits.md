@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2022-02-25
-date-modified: 2022-04-23
+date-modified: 2022-05-07
 date-published: 2022-02-25
 in-language: en
 keywords: ukraine, cyberwar, langdonWinner, notpetya, nuclear
@@ -22,7 +22,9 @@ tags:
 
 [^kuindzhi]: The Dnieper river connects Russia and Ukraine. It originates west of Moscow, runs through Kyiv, and pours into the Black Sea.
 
-Russia has been at continuous war with Ukraine since 2014. The years between Russia's initial invasion in Crimea and yesterday's expansion were filled with relentless cyberwarfare. These attacks have inflicted suffering far beyond the boundaries of the network. Much like the [Stuxnet virus](https://en.wikipedia.org/wiki/Stuxnet) deployed by Israel and the United States in Iran, these attacks cause physical harm and in the case of Russia's incursion, have resulted in the deaths of innocent Ukrainians.
+Russia has been at continuous war with Ukraine since 2014.[^q-code] The years between Russia's initial invasion in Crimea and yesterday's expansion were filled with relentless cyberwarfare. These attacks have inflicted suffering far beyond the boundaries of the network. Much like the [Stuxnet virus](https://en.wikipedia.org/wiki/Stuxnet) deployed by Israel and the United States in Iran, these attacks cause physical harm and in the case of Russia's incursion, have resulted in the deaths of innocent Ukrainians.
+
+[^q-code]: An Italian version of this essay was also published by the magazine Q Code as [*La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)*](https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/). ![Screen shot of "La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)"](/img/2022-02-25-info-warfare-without-limits/q-code.png)
 
 Russia's actions are inline with the [Makarov/Gerasimov approach to conflict](https://inmoscowsshadows.wordpress.com/2014/07/06/the-gerasimov-doctrine-and-russian-non-linear-war/). Valery Gerasimov, the chief of the general staff of the Russian Federation armed forces, described warfare as a spectrum of theaters in 2013. The theaters extend beyond land, sea, and air. They include terror, propaganda, economic coercion, and cyberwarfare.
 

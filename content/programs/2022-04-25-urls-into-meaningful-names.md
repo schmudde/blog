@@ -1,6 +1,6 @@
 ---
 title: Turning URLs Into Meaningful Names Using Clojure
-description: URLs are globally unique names, but the flexibility of the subdomain assignment makes turning them into meaningful identifiers tricky. Here are some practical solutions using Clojure.
+description: URLs are wonderful. They are both human readable and globally unique. But they can take some massaging before they're useful. Here are some practical tips using Clojure.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -19,7 +19,7 @@ tags:
 
 ![](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
 
-RLs are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
+URLs are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
 
 The following examples explore the domain name system using Clojure. The goal is to derive meaningful information about a resource owner's identity from any URL. For example, the URLs [`http://wikipedia.org/wiki/Peoria`](http://wikipedia.org/wiki/Peoria) and [`https://en.wikipedia.org/wiki/Peoria`](https://en.wikipedia.org/wiki/Peoria) look different but they both resolve to the same document and they are both managed by the Wikimedia Foundation. They do not pass the threshold of being meaningfully different.
 
