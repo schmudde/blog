@@ -35,11 +35,9 @@
     false))
 
 (defn program?
-  "In: {:original-path \"programs\"}"
-  [{:keys [original-path] :as meta}]
-  (if original-path
-    (.startsWith original-path "programs/")
-    false))
+  [{:keys [tags original-path] :as meta}]
+  (when (some #(= "clojure" %) tags)
+    true))
 
 (defn published?
   "In: {:date-published \"yes\"}"

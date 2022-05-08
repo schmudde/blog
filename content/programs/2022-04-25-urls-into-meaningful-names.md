@@ -17,7 +17,7 @@ tags:
 ---
 
 
-![A computer with a graph of information flying through the air.](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
+![](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
 
 URLs (Uniform Resource Locators) are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
 

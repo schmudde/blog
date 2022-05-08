@@ -107,6 +107,9 @@ TODO:
 
 Is it a blog post, a webpage, or a book review? Has it been published?
 
+- ~post?~ and ~book?~ is based on the path.
+- ~program?~ pulls from ~posts~, ~books~, and ~programs~ but only selects things tagged ~#clojure~.
+
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
   (defn page? [{:keys [original-path] :as meta}]
     (if original-path
@@ -126,11 +129,9 @@ Is it a blog post, a webpage, or a book review? Has it been published?
       false))
 
   (defn program?
-    "In: {:original-path \"programs\"}"
-    [{:keys [original-path] :as meta}]
-    (if original-path
-      (.startsWith original-path "programs/")
-      false))
+    [{:keys [tags original-path] :as meta}]
+    (when (some #(= "clojure" %) tags)
+      true))
 
   (defn published?
     "In: {:date-published \"yes\"}"
