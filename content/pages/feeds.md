@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Peoria, IL
 date-created: 2022-01-02
-date-modified: 2022-03-11
+date-modified: 2022-05-08
 date-published: 2022-01-02
 in-language: en
 canonical-url: http://schmud.de
@@ -16,7 +16,9 @@ canonical-url: http://schmud.de
 
 Thanks for reading *Beyond the Frame*. There are several ways to stay abreast of new posts:
 
-- <i class="fas fa-rss"></i> <a href="/feed.rss">RSS</a> is my favorite.
+- <i class="fas fa-rss"></i> <a href="/feed.rss">RSS</a> is my favorite. There are two feeds:
+    - All <a href="/feed.rss">essays</a> on Beyond the Frame
+    - All <a href="/btf-clojure-feed.rss">Clojure posts</a> on Beyond the Frame
 - <i class="fab fa-mastodon"></i> [Mastodon](https://mastodon.social/@schmudde)
 - <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/dschmudde)
 - <i class="fas fa-envelope"></i> *Beyond the Frame* is also available as a newsletter. Sign up using this form:

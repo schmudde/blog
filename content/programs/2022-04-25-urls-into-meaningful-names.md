@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-12-01
-date-modified: 2022-04-25
+date-modified: 2022-05-08
 date-published: 2022-04-25
 in-language: en
 keywords: dns, apache, java
@@ -17,11 +17,13 @@ tags:
 ---
 
 
-![](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
+![A computer with a graph of information flying through the air.](/img/2022-04-25-urls-into-meaningful-names/tree-cover.png)
 
-URLs are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
+URLs (Uniform Resource Locators) are wonderful to work with because they are structured, human meaningful, globally unique identifiers. But they do have a few thorny edge cases.
 
-The following examples explore the domain name system using Clojure. The goal is to derive meaningful information about a resource owner's identity from any URL. For example, the URLs [`http://wikipedia.org/wiki/Peoria`](http://wikipedia.org/wiki/Peoria) and [`https://en.wikipedia.org/wiki/Peoria`](https://en.wikipedia.org/wiki/Peoria) look different but they both resolve to the same document and they are both managed by the Wikimedia Foundation. They do not pass the threshold of being meaningfully different.
+The following examples explore the domain name system using Clojure. The goal is to derive meaningful information about a resource owner's identity from any URL.[^uri] For example, the URLs [`http://wikipedia.org/wiki/Peoria`](http://wikipedia.org/wiki/Peoria) and [`https://en.wikipedia.org/wiki/Peoria`](https://en.wikipedia.org/wiki/Peoria) look different but they both resolve to the same document and they are both managed by the Wikimedia Foundation. They do not pass the threshold of being meaningfully different.
+
+[^uri]: There is some confusion about the usage of URI (Uniform Resource Identifier), URN (Uniform Resource Name), and URL. The large browser makers (WHATWG - Apple, Google, Mozilla, Microsoft) [have a clear opinion on this](https://url.spec.whatwg.org/#goals): "Standardize on the term URL. URI and IRI are just confusing. In practice a single algorithm is used for both so keeping them distinct is not helping anyone."
 
 There is some subjectivity in this analysis. The exploration in this article goes all the way back to 1987 in an effort to automatically determine the unique identity of a domain's owner. The work primarily relies on two libraries, the [Apache Commons Validator API](https://commons.apache.org/proper/commons-validator/) and Java's [Uniform Resource Identifier (URI)](https://docs.oracle.com/javase/7/docs/api/java/net/URI.html) reference. The latter is our parser while the former is, unsurprisingly, our validator.
 
@@ -41,7 +43,9 @@ With that out of the way, it's time for some exploration.
 
 ### The URL
 
-A Uniform Resource Locator (URL) is the addresse of a unique resource on the web. A URL can be validated using the `.isValid` [method](https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html).  It's easy to create a custom function in Clojure.
+A URL[^url-uri] is the addresse of a unique resource on the web. A URL can be validated using the `.isValid` [method](https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html).  It's easy to create a custom function in Clojure.
+
+[^url-uri]: The URL is technically a URI that includes the network protocol (e.g. HTTP, HTTPS, FTP). Thus [a URI is the super-set of the URL](https://danielmiessler.com/study/difference-between-uri-url/). To complete the trifecta, a URI is also a super-set of the URN. The URN is simply the specific naming scheme for an artifact. A book's [ISBN](https://en.wikipedia.org/wiki/ISBN) is a common example of a URN: `978-3-16-148410-0`. The URN schema is valuable because it encodes information like the country, publisher, and title.
 
 ```
 (defn url? [url]

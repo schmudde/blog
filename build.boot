@@ -78,8 +78,10 @@
                       :meta {:type "page"})
         (perun/collection :renderer 'site.previous-entries/render
                           :page "previous-entries.html"
-                          :filterer (apply every-pred [(some-fn book? post?) published?]))
+                          :filterer (apply every-pred [(some-fn book? post? program?) published?]))
         (perun/rss :filterer (apply every-pred [post? published?]))
+        (perun/rss :site-title "Beyond the Frame: Clojure" :description "Essays about the Clojure programming language"
+                   :filterer (apply every-pred [program? published?]) :filename "btf-clojure-feed.rss")
         (target)))
 
 (deftask dev []
