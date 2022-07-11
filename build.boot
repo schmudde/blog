@@ -35,6 +35,14 @@
     false))
 
 (defn program?
+  "In: {:original-path \"programs\"}"
+  [{:keys [original-path] :as meta}]
+  (if original-path
+    (.startsWith original-path "programs/")
+    false))
+
+(defn tagged-clojure?
+  "Note: an essay tagged #clojure could exist in /books, /posts, /program"
   [{:keys [tags original-path] :as meta}]
   (when (some #(= "clojure" %) tags)
     true))
@@ -52,7 +60,8 @@
         (perun/collection :renderer 'site.core/render-index-page :page "books.html"
                           :filterer (apply every-pred [book? published?]))
         (perun/collection :renderer 'site.core/render-programs-index-page :page "programs.html"
-                          :filterer (apply every-pred [program? published?]))
+                          :filterer (apply every-pred [tagged-clojure? published?]))
+
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [post? published?])
                       :meta {:type "post"})
@@ -62,9 +71,11 @@
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer (apply every-pred [program? published?])
                       :meta {:type "program"})
+
         (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [(some-fn book? post? program?) published?])
                     :out-dir "public/tags")
+
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
@@ -79,7 +90,7 @@
                           :filterer (apply every-pred [(some-fn book? post? program?) published?]))
         (perun/rss :filterer (apply every-pred [post? published?]))
         (perun/rss :site-title "Beyond the Frame: Clojure" :description "Essays about the Clojure programming language"
-                   :filterer (apply every-pred [program? published?]) :filename "btf-clojure-feed.rss")
+                   :filterer (apply every-pred [tagged-clojure? published?]) :filename "btf-clojure-feed.rss")
         (target)))
 
 (deftask dev []

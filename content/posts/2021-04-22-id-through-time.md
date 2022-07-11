@@ -8,10 +8,10 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-04-22
-date-modified: 2021-04-23
+date-modified: 2022-05-14
 date-published: 2021-04-22
 in-language: en
-keywords: identity, dns, did, sts, computerhistory
+keywords: identity, dns, did, computerhistory, earnest
 tags:
  - sts
  - suchness
@@ -184,4 +184,4 @@ As the resolution of the medium increases, so does the power of our online ident
 
 Our digital proxies will be granted credentials that impact the privileges of our physical bodies. Locating and authenticating our digital proxy are the essential mechanisms in this process. Today it is largely done through DNS and username/password pairs. Tomorrow it will likely done by a unique address with no central assignment body and a key.
 
-The next two posts will grapple the assumptions and political bias in identity while finally looking at some of the specific emergent technologies.
+This has grave political and humanitarian consequences, which will be explored in the forthcoming post, *The Identity Trap*. Subscribe to the **Beyond the Frame** <i class="fas fa-rss"></i> <a href="/feed.rss">RSS</a> or mailing list to make sure you don't miss the next update.

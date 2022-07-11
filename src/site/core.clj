@@ -120,14 +120,17 @@
                     (list-posts-with-metadata (drop first-half posts))]]]]]
     (body-template global-meta tag content)))
 
-
 (defn render-programs-index-page [{global-meta :meta collection-meta :entry posts :entries}]
   (let [landing-page-post (assoc (first posts) :type "post")
         content [:div
                  (article-template-abbreviated landing-page-post)
                  [:section {:id "old-posts"}
-                  [:h2 "Other Posts"]
-                  (list-posts-with-metadata posts)]]]
+                  [:h2 "Other Posts About Clojure"]
+                  [:p [:i.fas.fa-rss]
+                   "&nbsp; Subscribe to the "
+                   [:a {:href "/btf-clojure-feed.rss"} "RSS feed "]
+                   "for the latest on Clojure"]
+                  [:div (list-posts-with-metadata posts)]]]]
     (body-template global-meta collection-meta content)))
 
 (defn render-index-page [{global-meta :meta collection-meta :entry posts :entries}]

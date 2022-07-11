@@ -27,12 +27,15 @@
      [:div
       (list-posts-temp (filter #(= (:type %) "post") posts))]]
     [:section.ph3.fl.w-100.w-50-ns
+     [:h2 "Clojure Tutorials"]
+     [:p [:i.fas.fa-rss]
+      "&nbsp; The Clojure "
+      [:a {:href "/btf-clojure-feed.rss"} "RSS feed "]]
+     [:div
+      (list-posts-temp (filter #(= (:type %) "program") posts))]
      [:h2 "Book Reviews"]
      [:div
-      (list-posts-temp (filter #(= (:type %) "book") posts))]
-     [:h2 "Clojure Tutorials"]
-     [:div
-      (list-posts-temp (filter #(= (:type %) "program") posts))]]]])
+      (list-posts-temp (filter #(= (:type %) "book") posts))]]]])
 
 (defn render [{global-meta :meta collection-meta :entry posts :entries}]
   (let [page-title "Previous Entries"
