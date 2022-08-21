@@ -71,20 +71,21 @@ figure {
 ** Create the Environment
 
 #+BEGIN_SRC clojure :tangle yes :tangle build.boot
-;; DO NOT EDIT
-;; This file is tangled from README.org.
+  ;; DO NOT EDIT
+  ;; This file is tangled from README.org.
 
-(set-env!
- :source-paths #{"src" "content"}
- :resource-paths #{"resources"}
- :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
-                 [nrepl "0.7.0" :scope "test"]
-                 [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
-                 [javax.xml.bind/jaxb-api "2.3.0"] ;; new requirement after local system update
-                 [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
-                 [deraen/boot-livereload "0.2.1"]
-                 [time-literals "0.1.4"]
-                 [cljc.java-time "0.1.11"]])
+  (set-env!
+   :source-paths #{"src" "content"}
+   :resource-paths #{"resources"}
+   :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
+                   [nrepl "0.7.0" :scope "test"]
+                   [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
+                   [javax.xml.bind/jaxb-api "2.3.0"] ;; new requirement after local system update
+                   [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
+                   [deraen/boot-livereload "0.2.1"]
+                   [time-literals "0.1.4"]
+                   [ring/ring-mock "0.4.0"]
+                   [cljc.java-time "0.1.11"]])
 #+END_SRC
 
 A few quick notes on the configuration.
@@ -230,14 +231,14 @@ Perun offers an elegant way to inject the script into every page in the developm
 
 There is no nrepl present. The current process:
 
-1. ~boot dev~
+1. ~boot dev~ or ~boot dev repl~ if you want a REPL.
 2. Open a project file, ~*.clj~, and ~cider-jack-in~.
 
 Updating the file will update the website.
 
 Customize the jack-in command by tweaking the shell command it runs to include a dev profile.
 
-~C-u M-x cider-jack-in~ to specify the exact command for ~cider-jack-in~. Specifically, add the ~dev~ profile.
+~C-u M-x cider-jack-in~ to specify the exact command for ~cider-jack-in~. Specifically, add the ~dev~ profile. The current Cider Boot Parameters look like this: ~repl -s -b localhost wait~. Just prefix the ~dev~ command and run: ~dev repl -s -b localhost wait~.
 
 I need to customize the command line CIDER uses for cider-jack-in by modifying the following string options:
 

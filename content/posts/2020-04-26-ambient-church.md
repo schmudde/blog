@@ -51,7 +51,7 @@ No standard for notating electro-acoustic instruments exist. Performances that i
 Compare Pointon's attempt to generalize changes in an electronic sound (above) to music written in Bach's own hand (below). The music from 1975 more recent, but the notes written in 1723 look and sound much more familiar.
 
 <figure>
-![](/img/2020-04-26-ambient-church/bwv-105.png)[^bwv-105]
+![](/img/2020-04-26-ambient-church/bwv-105.jpg)[^bwv-105]
 
 [^bwv-105]: {-} Bach's autograph of an aria in the cantata *Herr, gehe nicht ins Gericht mit deinem Knecht*, BWV 105 via [Wikipedia](https://en.wikipedia.org/wiki/File:Bwv105-wie-zittern.png)
 </figure>

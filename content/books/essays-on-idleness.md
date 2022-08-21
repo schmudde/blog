@@ -31,7 +31,7 @@ Speaking of Chinese exports, I enjoy the game of Go immensely. Kenkō makes seve
 
 > [A holy man once declared] those who devote themselves day in day out to playing go or sugoroku are committing a sin more heinous than the Four Transgressions or the Five Wickednesses.
 
-Kenkō is quoted more than once in another book I happened to read and review this year, [*A Short Treatise Inviting the Reader to Discover the Subtle Art of Go*](books/subtle-art-of-go.html). That text was written by French Oulipo luminaries Pierre Lusson, Georges Perec, and Jacques Roubaud in 1969. *Essays on Idleness* has certainly made its way around the world.
+Kenkō is quoted more than once in another book I happened to read and review this year, [*A Short Treatise Inviting the Reader to Discover the Subtle Art of Go*](subtle-art-of-go.html). That text was written by French Oulipo luminaries Pierre Lusson, Georges Perec, and Jacques Roubaud in 1969. *Essays on Idleness* has certainly made its way around the world.
 
 *Essays in Idleness* started to plant roots over the course of my reading. I began to enjoy Kenkō’s observations. I even adopted his style in my own practice of journaling. Our reasons for writing seem to run parallel:
 

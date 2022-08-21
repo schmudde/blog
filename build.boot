@@ -11,6 +11,7 @@
                  [pandeiro/boot-http "0.8.3" :exclusions [org.clojure/clojure]]
                  [deraen/boot-livereload "0.2.1"]
                  [time-literals "0.1.4"]
+                 [ring/ring-mock "0.4.0"]
                  [cljc.java-time "0.1.11"]])
 
 (require '[io.perun :as perun]

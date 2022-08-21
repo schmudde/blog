@@ -1,7 +1,8 @@
 (ns site.core
   (:require [hiccup.page :as page]
             [site.layout :refer [body-template]]
-            [site.timeline :as timeline]))
+            [site.timeline :as timeline]
+            [ring.mock.request :as mock]))
 
 (defn format-date [date]
   (if date (.format (java.text.SimpleDateFormat. "MMMM dd, yyyy") date)))
@@ -143,6 +144,8 @@
     (body-template global-meta collection-meta content)))
 
 (comment
+
+
 
   (def global-data {:base-url "https://schmud.de/"
                     :site-title "Beyond the Frame"
