@@ -89,7 +89,7 @@
   :link-name nil ;;"The Identity Trap"
   :image nil}
  {:title "The Identity Politics Biennial"
-  :geo "New York City"
+  :geo "New York City, NY, US"
   :date #time/year "1993"
   :desc "The annual exhibition at the The Whitney Museum of American Art focused explicitly on issues around gender, race, and sexuality for the first time. It was dubbed &ldquo;the identity politics biennial.&rdquo; Identity became a central focus of cultural discourse as internet pioneers promised to emancipate people from their corporeal limitations."
   :footer nil
@@ -120,6 +120,14 @@
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
+ {:title "Do Artifacts Have Politics?"
+  :geo nil
+  :date #time/year "1980"
+  :desc "&ldquo;It is obvious that technologies can be used in ways that enhance the power, authority, and privilege of some over others, for example, the use of television to sell a candidate. [...] But we usually do not stop to inquire whether a given device might have been designed and built in such a way that it produces a set of consequences logically and temporally prior to any of its professed uses.&rdquo;"
+  :footer "Langdon Winner <em>Do Artifacts Have Politics?</em> (1980)"
+  :link "/posts/2022-07-12.html"
+  :link-name "Advertising and the Consumer Computer"
+  :image nil}
  {:title "Minitel"
   :geo nil
   :date #time/date "1980-07-15"
@@ -135,6 +143,13 @@
   :footer "RFC #<a href='https://tools.ietf.org/html/rfc742'>742: NAME/FINGER</a>"
   :link "/posts/2021-04-22-id-through-time.html"
   :link-name "An Identity Through Time"
+  :image nil}
+ {:title "Radio Shack announces the TRS-80."
+  :geo "New York City, NY, US"
+  :date #time/date "1977-08-03"
+  :desc "The TRS-80 benefited from Radio Shack's tremendous distribution advantage over 1977's other two debuting consumer computers - the Commodore PET 2001 and the Apple II."
+  :link "/books/to-catch-mouse-make-noise-like-cheese.html"
+  :link-name "To Catch a Mouse Make a Noise Like a Cheese"
   :image nil}
  {:title "The United States Privacy Protection Study Commission Issues Their Report"
   :geo nil
