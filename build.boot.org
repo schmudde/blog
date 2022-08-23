@@ -238,7 +238,7 @@ Updating the file will update the website.
 
 Customize the jack-in command by tweaking the shell command it runs to include a dev profile.
 
-~C-u M-x cider-jack-in~ to specify the exact command for ~cider-jack-in~. Specifically, add the ~dev~ profile. The current Cider Boot Parameters look like this: ~repl -s -b localhost wait~. Just prefix the ~dev~ command and run: ~dev repl -s -b localhost wait~.
+~C-u M-x cider-jack-in~ to specify the exact command for ~cider-jack-in~. Specifically, add the ~dev~ profile. The current Cider Boot Parameters look like this: ~repl -s -b localhost wait~. Just prefix the ~dev~ command and run: ~dev repl -s -b localhost wait~. But refresh-on-save does not seem to work.
 
 I need to customize the command line CIDER uses for cider-jack-in by modifying the following string options:
 

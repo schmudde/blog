@@ -145,6 +145,10 @@
 
 (comment
 
+  (mock/request :get "http://localhost:3000/")
+
+  {:protocol "HTTP/1.1", :server-port 3000, :server-name "localhost", :remote-addr "127.0.0.1", :uri "/", :scheme :http, :request-method :get, :headers {"host" "localhost:3000"}}
+
 
 
   (def global-data {:base-url "https://schmud.de/"
