@@ -17,7 +17,7 @@ tags:
 ---
 
 <figure class="fullwidth">
-![More TRS-80 computers have been sold than any other micro-computer (1978)](/img/2022-07-12/trs-80-sm.png)"More TRS-80 computers have been sold than any other micro-computer ever ever ever ever ever ever" ~ TRS 80 [Microcomputer Catalog](https://www.radioshackcatalogs.com/) (1978)
+![More TRS-80 computers have been sold than any other micro-computer (1978)](/img/2022-08-23-the-consumer-computer/trs-80-sm.png)"More TRS-80 computers have been sold than any other micro-computer ever ever ever ever ever ever" ~ TRS 80 [Microcomputer Catalog](https://www.radioshackcatalogs.com/) (1978)
 </figure>
 
 **When the personal computer went from being a "bicycle for the mind" to a surveilled shopping mall.**

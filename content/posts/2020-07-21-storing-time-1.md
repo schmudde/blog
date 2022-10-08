@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-07-21
-date-modified: 2020-07-22
+date-modified: 2022-10-08
 date-published: 2020-07-21
 in-language: en
 keywords: time, modeling
@@ -22,9 +22,7 @@ tags:
 
 Several years ago, I got frustrated with updating my resume, my [curriculum vitae](/cv.html), and my website every time something happened in my professional life. I decided to move all the information into generic data structures and wrote a program to generate all the requisite outputs - various resume formats, different webpages, etc&hellip;.
 
-My current job search[^job] motivated me to finally wrangle a problem that I had been putting off for a while - properly recording and displaying dates. This may sound trivial, but dates present a number of tricky edge cases. They need to be displayed in different formats in different contexts, spans of time need to be calculated, and there are inconsistencies in how they are recorded.
-
-[^job]: If you know of a position that would benefit from my background, please send me an eMail. Positions I'm looking for: *Digital Humanities Scientist*, *Developer Advocate*, and *Researcher* on the structure and transmission of quantitative and qualitative information. See [my CV](/cv.html) for my bona fides. I'd also consider a position as a *Clojure programmer*.
+My current job search motivated me to finally wrangle a problem that I had been putting off for a while - properly recording and displaying dates. This may sound trivial, but dates present a number of tricky edge cases. They need to be displayed in different formats in different contexts, spans of time need to be calculated, and there are inconsistencies in how they are recorded.
 
 I want to document the most precise time and date available about a professional event in a format that is:
 
