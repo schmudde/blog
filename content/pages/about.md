@@ -19,7 +19,7 @@ See my [Curriculum Vitae](/cv.html) for an overview of my professional interests
 
 ## Background
 
-I was born in Peoria, Illinois [^peoria] and currently split time between Berlin, Germany and Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin.
+I was born in Peoria, Illinois[^peoria] and currently split time between Berlin, Germany and Turin, Italy.[^turin] The interim years were spent in Iowa &rarr; Chicago &rarr; New York City &rarr; Berlin.
 
 [^peoria]: Peoria is situated in the Illinois River Valley. The hilly landscape is beautiful and the Rust Belt vibes are strong. ![Peoria skyline](/img/about/peoria.jpeg)
 [^turin]: Turin is a peculiar city in the foothills of the Alps. It is part aristocratic and part post-industrial. The myriad of local businesses are a joy to discover. ![Turin skyline](/img/about/turin.png)

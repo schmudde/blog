@@ -96,7 +96,7 @@
     (body-template global-meta post content)))
 
 (def tag-definitions
-  {:doing "Implementation Details"
+  {:doing "Implementation Details and Useful Ideas"
    :sts "Science and Technology Studies"
    :personal "My Experiences and Comrades"
    :informatics "Informatics and Computer Science"

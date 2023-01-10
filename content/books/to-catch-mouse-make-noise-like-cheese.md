@@ -1,6 +1,6 @@
 ---
 title: To Catch a Mouse Make a Noise Like a Cheese
-description: The Adman Who Launched 1,000 Computers When No One Else Could
+description: The adman who launched 1,000 computers when no one else could
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de

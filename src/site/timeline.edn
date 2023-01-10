@@ -73,12 +73,28 @@
   :desc "ArtByte was a glossy magazine dedicated to covering net.art and many other forms of digital art. It was distributed across the United States until it ceased publication in 2001."
   :link "/posts/2021-09-07-fix-my-code.html"
   :link-name "Fix My Code"}
+
+ {:title "Framework for Global Electronic Commerce"
+  :geo "Washington D.C., US"
+  :date #time/date "1997-07-01"
+  :desc "&ldquo;For electronic commerce to flourish, the private sector must continue to lead. Innovation, expanded services, broader participation, and lower prices will arise in a market-driven arena, not in an environment that operates as a regulated industry.&rdquo;"
+  :footer "~ <a href='https://clintonwhitehouse4.archives.gov/WH/New/Commerce/read.html'>A Presidental Directive</a> by Bill Clinton"
+  :link "/posts/2022-11-22-a-different-internet.html"
+  :link-name "A Different Internet"
+  :image nil}
  {:title "The Net Art Generator by Cornelia Sollfrank"
   :date #time/year "1997"
   :desc "&ldquo;A smart artist makes the machine do the work! The net.art generator is a computer program which collects and recombines material from the Internet to create a new website or a new image. The WWW-interface of the easy-to-use program requires the user to enter a title which then functions as the search term, and to enter a name as author. The resulting images and websites are stored online in an archive from where recent results can be downloaded.&rdquo;"
   :footer "<a href='https://net.art-generator.com/about.html'>net.art generator: What it is and where it comes from</a>"
   :link "/posts/2021-09-07-fix-my-code.html"
   :link-name "Fix My Code"
+  :image nil}
+ {:title "Italian Law Protecting Citizens Regarding the Processing of Personal Data"
+  :geo "Rome, Italy"
+  :date #time/date "1996-12-31"
+  :desc "<a href='https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/28335'>Article 30</a> establishes The Italian Data Protection Authority. Stefano Rodotà is named the first president. Rodotà believed that privacy protected the dignity of the person - an essential part of a functioning free society."
+  :link "/posts/2022-11-22-a-different-internet.html"
+  :link-name "A Different Internet"
   :image nil}
  {:title "A Declaration of the Independence of Cyberspace"
   :geo "Davos, Switzerland"
@@ -88,14 +104,6 @@
   :link nil ;; "/posts/identity-trap.html"
   :link-name nil ;;"The Identity Trap"
   :image nil}
- {:title "The Identity Politics Biennial"
-  :geo "New York City, NY, US"
-  :date #time/year "1993"
-  :desc "The annual exhibition at the The Whitney Museum of American Art focused explicitly on issues around gender, race, and sexuality for the first time. It was dubbed &ldquo;the identity politics biennial.&rdquo; Identity became a central focus of cultural discourse as internet pioneers promised to emancipate people from their corporeal limitations."
-  :footer nil
-  :link nil ;; "/posts/identity-trap.html"
-  :link-name nil ;; "The Identity Trap"
-  :image nil}
  {:title "Network Solutions Charges for Domain Names"
   :geo nil
   :date #time/year-month "1995-09"
@@ -103,6 +111,14 @@
   :footer nil
   :link "/posts/2020-30-11-gallery-404.html"
   :link-name "Gallery 404"
+  :image nil}
+ {:title "The Identity Politics Biennial"
+  :geo "New York City, NY, US"
+  :date #time/year "1993"
+  :desc "The annual exhibition at the The Whitney Museum of American Art focused explicitly on issues around gender, race, and sexuality for the first time. It was dubbed &ldquo;the identity politics biennial.&rdquo; Identity became a central focus of cultural discourse as internet pioneers promised to emancipate people from their corporeal limitations."
+  :footer nil
+  :link nil ;; "/posts/identity-trap.html"
+  :link-name nil ;; "The Identity Trap"
   :image nil}
  {:title "The Domain Name System is Standarized (RFCs #1034 &amp; #1035)"
   :geo nil
