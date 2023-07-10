@@ -1,6 +1,6 @@
 ---
 title: Internet For the People
-description: tbd
+description: Tarnoff pens a breezy read while offering profound observations on contemporary digital life.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -8,25 +8,25 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Peoria, IL, United States
 date-created: 2022-12-19
-date-modified: 2022-12-19
-date-published: 2022-12-19
+date-modified: 2023-01-16
 book-author: Ben Tarnoff
 book-published: 2022
-book-isbn: 00
+book-isbn: 9781839762024
 in-language: en
 keywords: gdpr, governance
 tags:
  - review
 ---
 
-*[Internet for the People: The Fight for Our Digital Future](https://www.versobooks.com/books/3927-internet-for-the-people)* y Ben Tarnoff (2022)[^cover]
+by Ben Tarnoff (2022)[^cover]
+
+Buy *Internet for the People: The Fight for Our Digital Future* [directly from Verso Books](https://www.versobooks.com/books/3927-internet-for-the-people).
 
 [^cover]: {-} !["Internet for the People" book cover](/img/2022-12-05-different-internet/internet-for-the-people-cover.jpg)
 
-
 Today's internet is largely shaped by a dialog between two ideas. One position considers personal data as a form of property, The opposing position considers personal data as an extension of the self. The latter grants inalienable rights because a person's dignity - traditionally manifested in our bodies or certain rights of expression and privacy - cannot be negotiated, bought, or sold.
 
-The principled stance has largely lost out. Conventional wisdom holds that data can be considered a form of property. Even those that oppose personal data held hostage on corporate systems believe that that the solution is private property in another form. Why is the status quo so widely accepted and why is the solution the same system but in another form? After all, the internet itself was created with public money and owned by the public. The network is radically different in its founding.
+The principled stance has largely lost out to the idea that data is a form of property held by the servers where it resides. Even those that oppose personal data held hostage on corporate systems believe that that the solution is private property in another form. Why is the status quo so widely accepted and why is the solution the same system but in another form? After all, the internet itself was created with public money and owned by the public. Today's network is radically different from the one founded decades ago.
 
 # Context
 
@@ -73,4 +73,4 @@ These so-called platforms are engineered to drive purchases. We have no right to
 
 [^chester]: This is the completely predictable outcome of Clinton's policies. Tarnoff cites activist Jeffrey Chester warning of "a virtual electronic shopping mall" overtaking the public internet as far back as 1993.
 
-Tarnoff's book is succinct and clear-sighted. It's the rare book that offers a breezy read while also suggesting profound ideas.
+Tarnoff's book is succinct and clear-sighted. It's the rare book that offers a breezy read while also positing profound observations on contemporary digital life.

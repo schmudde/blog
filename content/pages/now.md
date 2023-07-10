@@ -1,51 +1,67 @@
 ---
-title: What I'm Working on Right Now
+title: What I’m Working on Right Now
 description: My /now Page
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
 author-github: schmudde
 author-twitter: dschmudde
-location: Bertinoro, Italy
+location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2022-10-08
+date-modified: 2023-07-10
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
 uuid:
 ---
 
-[^now]Hello from Bertinoro, Italy! I'm here working with the brilliant folks on the [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/) project. I'm specifically collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol. The preservation of software-based art will form a cornerstone of our thesis.[^preservation]
+## The Gift Shop at Gallery 404
+
+[^now]A [gift shop](http://www.netart.today/pages/gift-shop.html) was recently added to [Gallery 404](http://www.netart.today).[^gallery-404] I'm very excited about this development. From the [press release](http://www.netart.today/pages/press-release.html):
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
+[^gallery-404]: Gallery 404 is a gallery that exhibits net.art as it appears today. It deals exclusively in broken art. See my announcement of [its launch in 2020](/posts/2020-30-11-gallery-404.md).
+
+> Gallery 404, an online art gallery dealing exclusively in broken net.art artworks, has opened a gift shop spotlighting the significance of the digital commons. The shop features a handpicked selection of multimedia works that use permissive licenses.
+
+> The creative commons play a vital role in preserving our shared culture. As such, the online shop is offering visitors a carefully curated collection of extremely non-rare and fully intact artifacts by artists and scientists such as Trent Reznor (Nine Inch Nails), A. A. Milne (Winnie the Pooh), Amos Kennedy, and the team responsible for putting people on the moon.
+
+Visit the [Gallery 404 gift shop](http://www.netart.today/pages/gift-shop.html) and take a look around!
+
+## PROGRAMme
+
+I was recently in Lille, France in June working with the brilliant folks on the [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/) project. I'm specifically collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol. The preservation of software-based art will form a cornerstone of our thesis.[^preservation]
+
 [^preservation]:I covered some of these ideas in my presentation at the [Nexa Center for Internet &amp; Society at the Polytechnic University of Turin](https://nexa.polito.it/mercoledi-133). The video and all related details can be found in *[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)* on Beyond the Frame.
 
-Speaking of publishing, I saw the first pre-prints of Dick Van Lente's [*Prophets of Computing: Visions of Society Transformed
-by Computing*](https://sites.library.queensu.ca/transmissions/computers-and-futures/). My chapter is on Commodore's growth during the mainframe era and its subsequent contributions to personal computing. The [ACM and Morgan & Claypool Publishers](http://books.acm.org/) have done a great job. It should be out early next year.
+## *Prophets of Computing*
 
-The recently published post *[How the Consumer Computer is Consuming Computing](https://schmud.de/posts/2022-08-23-the-consumer-computer.html)* became the most popular post on Beyond the Frame by far. It was featured on the [front page of Hacker News](https://news.ycombinator.com/item?id=32636101), the [Redecentralize Digest](https://redecentralize.org/redigest/2022/kthxbye/), and Ghostery's [Privacy Digest 17/22](https://www.ghostery.com/privacy-digest/editions/20220909).
+My contribution to *Prophets of Computing: Visions of Society Transformed by Computing*, "[Microcomputers for the Masses. Jack Tramiel and Commodore](https://doi.org/10.1145/3548585.3548589)" was published earlier this year. The physical copy boasts an elegant layout and a fine attention to detail by the book's editor, Dick Van Lente.[^prophets-cover] My chapter examines the history of mass market information processing devices in the global marketplace leading up to the personal computer. It argues that the machine's consumerist roots are its defining characteristic - rather than a tool for augmented intelligence, computers are tools for consumption.
 
-Beyond the Frame has always been concerned with software preservation. [Museums Without Walls](https://www.museusemparedes.com/en/noticia/museums-without-walls-conference-exhibition/) selected [Gallery 404](http://www.netart.today/) - an online gallery curated by your humble author - for exhibition at this year's conference.
+[^prophets-cover]: {-} ![Cover of "Prophets of Computing: Visions of Society Transformed by Computing"](/img/book-covers/prophets-cover.png) *[Prophets of Computing: Visions of Society Transformed by Computing](https://books.acm.org/titles#tab2048)*, ACM Books/Morgan & Claypool, New York, NY, 2022
 
-*[La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)](https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/)*, the Italian translation of my essay *[Information Warfare Is Without Limits and So Are Its Consequences](https://schmud.de/posts/2022-02-25-info-warfare-without-limits.html)*, has been published by the magazine Q Code! This is an exciting development; I'd like to thank my translator as well as the co-director [Christian Elia](https://twitter.com/eliachr).[^q-code]
+Big thanks to Dr. Van Lente and the publisher [ACM Books/Morgan & Claypool](http://books.acm.org/). I'm halfway through the book and I can say that Dr. Van Lente put something special together. The book is available to purchase on the [Morgan & Claypool website](https://www.morganclaypoolpublishers.com/catalog_Orig/product_info.php?cPath=24&products_id=1725).
 
-[^q-code]: ![Screen shot of "La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze"](/img/2022-02-25-info-warfare-without-limits/q-code.png) [*La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)*](https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/) in Q Code Mag
+## Yorba
 
-Finally, I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private pre-alpha and we're looking to hire people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
+Also, I'm currently working as Chief Technology Officer (CTO) at [Yorba](https://www.yorba.co/). We are building an open digital identity service. It is currently in private beta and we're looking to work with people interested in Self-Sovereign Identity, Clojure, and decentralized storage. <i class="fas fa-envelope"></i>  [Get in touch](mailto:&#100;&#064;&#115;&#099;&#104;&#109;&#117;&#100;&#046;&#100;&#101;) if that describes you or someone you know.
 
 ## Reading
 
-I recently finished *[To Catch a Mouse Make a Noise Like a Cheese](https://schmud.de/books/to-catch-mouse-make-noise-like-cheese.html)* by Lewis Kornfeld (1983).
+My reading list is overflowing, as usual. I just finished *The Shapeless Unease: A Year of Not Sleeping* by Samantha Harvey (2020), which I thought was fantastic. Here are a few titles I'm currently working through:
 
-I'm still working through [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978) and several others.
+- [*Artforum*](https://www.ndbooks.com/book/artforum/) by César Aira (2020)
+- *Venice and the Anthropocene: An Ecocritical Guide* edited by Cristina Baldacci, Shaul Bassi, Lucio De Capitani and Pietro Daniel Omodeo Foreword by Serenella Iovino
+- [*Data and Reality*](https://www.bkent.net/Doc/darxrp.htm) by William Kent (1978)
+- The classic *An Introduction to Information Theory: Symbols, Signals and Noise* by John Robinson Pierce (1961)
+- [*The Timeless Way of Building*](https://en.wikipedia.org/wiki/The_Timeless_Way_of_Building) by Christopher Alexander (1979)
+- *[Prophets of Computing: Visions of Society Transformed by Computing](https://books.acm.org/titles#tab2048)* edited by Dick Van Lente (2022)
+
+Up next on the stack, *The Consolations of Philosophy* by Alain de Botton (2000). A recommendation by my friend, [Khurram Naik](https://jelly.mdhv.io/v1/star.gif?pid=KrupPNut8EQGOaNmOwbjXgIS7Iyz&src=mh&evt=hi).
 
 ## Recent Memory
 
-Attended Ink and Switch's *Summit 010 Berlin* and Strange Loop 2022. Both experiences were filled with brilliant folks.
-
-![David Schmudde at Ink and Switch's "Summit 010" Berlin](https://www.inkandswitch.com/summit-010-berlin/static/summit-010-berlin-unconf-23.jpg)
-
-<i class="fa fa-image"></i> [Gallery 404](http://netart.today/), a gallery dealing exclusively in broken digital artworks curated by yours truly, was presented as part of this year's [xCoAx](https://xcoax.org/), the *9th Conference on Computation, Communication, Aesthetics & X*. Read more about Gallery 404 [here](http://www.netart.today/pages/about.html).
+The recently published post *[How the Consumer Computer is Consuming Computing](https://schmud.de/posts/2022-08-23-the-consumer-computer.html)* became the most popular post on Beyond the Frame by far. It was featured on the [front page of Hacker News](https://news.ycombinator.com/item?id=32636101), the [Redecentralize Digest](https://redecentralize.org/redigest/2022/kthxbye/), and Ghostery's [Privacy Digest 17/22](https://www.ghostery.com/privacy-digest/editions/20220909).
 
 ---

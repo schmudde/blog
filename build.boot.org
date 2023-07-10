@@ -8,19 +8,23 @@ This is the code for my blog and personal website, /[[https://schmud.de/][Beyond
 
 This README is also the ~build.boot~ file as a literate [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] document (aka org-babel). ~CTRL-c-v-t~ in Emacs [[https://orgmode.org/org.html#Working-With-Source-Code][will tangle code]] and generate the ~build.boot~.
 
+- Install
+    - [[https://github.com/boot-clj/boot#install][boot]]
+    - Pandoc and pandoc-sidenote: ~sudo apt-get install pandoc~, ~sudo apt-get install pandoc-sidenote~
 - To build the website, run ~boot build~.
 - To start a development server, run ~boot dev~.
 
 * Non-Clojure Dependencies
 
 - To run [[https://github.com/Deraen/boot-livereload][boot-livereload]] a JavaScript file named ~livereload.js~ must be saved under ~resources/js/livereload.js~. More information is available from the [[http://livereload.com/browser/script-tag/][LiveReload website]], but the script is pretty simple: ~document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')~.
-- CSS
-    - Tufte CSS
+- Install CSS
+    - [[https://raw.githubusercontent.com/edwardtufte/tufte-css/gh-pages/tufte.min.css][Tufte CSS v1.8.0]]: ~/resources/public/css/tufte.min.css~
+    - [[https://github.com/edwardtufte/et-book/tree/gh-pages/et-book][ET Book]]: ~/resources/public/css/et-book/*~
+    - [[https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css][Tachyons v4.12.0]]: ~/resources/public/css/tachyons.min.css~
+- Included CSS
     - Font Awesome v 5.14.0
         - [[https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use][Basic Use]]
         - [[https://fontawesome.com/cheatsheet][Cheatsheet]]
-    - Tachyons v4.9.1
-    - Pandoc
 
 ** Pandoc
 
@@ -65,6 +69,28 @@ figure {
     margin-right: auto;
 }
 #+END_SRC
+
+The latest tufte.css, "1.8.0", adds support for dark mode. I don't want to deal with that so I'm sticking with "1.7.2".
+
+https://github.com/edwardtufte/tufte-css/commit/957e9c6dc3646ab1847ebe41fdb853e59ecf8579
+
+#+begin_src css :tangle no
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+#+end_src
 
 * The Boot Build File
 

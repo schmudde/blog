@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-16
-date-modified: 2022-03-27
+date-modified: 2023-02-11
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -87,7 +87,7 @@ I'm currently experimenting with saving all my highlights on [Readwise](https://
 
 ### My Computer
 
-Most of my hardware decisions are rooted in an effort to source ethical tools. The compromise between ethics and practicality landed me at a [System 76 Lemur](https://system76.com/laptops/lemur) running the [Pop!_OS](https://system76.com/pop) flavor of Linux.
+Most of my hardware decisions are rooted in an effort to source ethical tools. The compromise between ethics and practicality landed me at a [Hewlett Packard Dev One](https://hpdevone.com/) running the [Pop!_OS](https://system76.com/pop) flavor of Linux. I'm very happy with both.
 
 I use an Apple iPhone as a smartphone. I never owned a tablet.
 

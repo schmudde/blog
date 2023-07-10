@@ -6,7 +6,7 @@
    :link "https://schmud.de/"
    ;; :link "http://beyondthefra-me.tumblr.com, 57,000 Subscribers"
    :date-bgn #time/year-month "2011-01"
-   :date-end #time/year-month "2020-12"
+   :date-end #time/year-month "2023-02"
    :stats "54,909 subscribers"
    :publication "Independent blog examining the metaphysics of information, art, and narrative"}
   {:title "Untitled Chapter on Software Preservation"
@@ -17,13 +17,18 @@
    :co-authors "Elisabetta Mori and Patricia Falcao"
    :editor "Liesbeth De Mol"
    :stats "forthcoming"}
-  {:title "Microcomputers For the Masses"
-   :publication "Prophets Of Computing"
+  {:title "Microcomputers for the Masses"
+   :publication "Prophets of Computing: Visions of Society Transformed by Computing"
    :publisher "ACM Books/Morgan &amp; Claypool, New York, NY"
-   :date #time/year "2022"
+   :link "https://www.morganclaypoolpublishers.com/catalog_Orig/product_info.php?cPath=24&products_id=1725"
+   :date #time/date "2022-12-14"
    :editor "Dick Van Lente"
    :stats "peer reviewed"
    :synopsis "This chapter examines the history of mass market information processing devices in the global marketplace leading up to the personal computer. It argues that the machine's consumerist roots are its defining characteristic - rather than a tool for augmented intelligence, computers are tools for consumption."}
+  {:title "La guerra dell’informazione è senza limiti (e senza limiti sono le conseguenze)"
+   :publication "Q Code Mag"
+   :link "https://www.qcodemag.it/interventi/la-guerra-dellinformazione-e-senza-limiti-e-senza-limiti-sono-le-conseguenze/"
+   :date #time/date "2022-05-02"}
   {:title "The Shape of Intuition"
    :publication "Nextjournal"
    :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
@@ -58,10 +63,23 @@
    :date #time/date "2011-08-09"}]
 
  :exhibitions
- [{:org "xCoAx"
+ [{:org "Museums Without Walls"
+   :geo "Queen’s University, Kingston, ON, Canada"
+   :date #time/year-month "2022-08"
+   :title "Gallery 404"
+   :link "https://www.museusemparedes.com/en/noticia/museums-without-walls-conference-exhibition/"
+   }
+  {:org "xCoAx: 9th Conference on Computation, Communication, Aesthetics & X"
    :geo "Graz, AU/Online"
    :date #time/year "2021"
    :title "Gallery 404"
+   :link "https://2021.xcoax.org/exhibition/"
+   }
+  {:org "Gallery 404 (curator, ongoing)"
+   :geo "Online Museum of Broken net.art"
+   :date #time/year "2021"
+   :title "Gallery 404"
+   :link "http://www.netart.today/"
    }
   {:org "Sound And Vision International Film &amp; Technology Festival"
    :geo "Elizabethport, NJ, US"
