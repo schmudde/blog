@@ -1,0 +1,10 @@
+
+
+
+# Removed 7/july/2023
+
+Beyond the Frame has always been concerned with software preservation. [Museums Without Walls](https://www.museusemparedes.com/en/noticia/museums-without-walls-conference-exhibition/) selected [Gallery 404](http://www.netart.today/) - an online gallery curated by your humble author - for exhibition at this year's conference.
+
+I was recently in Bertinoro, Italy working with the brilliant folks on the [PROGRAMme Research Into the History and Philosophy of Computing](https://programme.hypotheses.org/) project. I'm specifically collaborating on an untitled chapter on software preservation with Elisabetta Mori and Patricia Falcao for an edition edited by Liesbeth De Mol. The preservation of software-based art will form a cornerstone of our thesis.[^preservation]
+
+[^preservation]:I covered some of these ideas in my presentation at the [Nexa Center for Internet &amp; Society at the Polytechnic University of Turin](https://nexa.polito.it/mercoledi-133). The video and all related details can be found in *[Software Preservation in Networked Art](/posts/2020-10-21-software-preservation-networked-art.html)* on Beyond the Frame.
