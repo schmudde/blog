@@ -79,7 +79,7 @@
   :date #time/date "1997-07-01"
   :desc "&ldquo;For electronic commerce to flourish, the private sector must continue to lead. Innovation, expanded services, broader participation, and lower prices will arise in a market-driven arena, not in an environment that operates as a regulated industry.&rdquo;"
   :footer "~ <a href='https://clintonwhitehouse4.archives.gov/WH/New/Commerce/read.html'>A Presidental Directive</a> by Bill Clinton"
-  :link "/posts/2022-11-22-a-different-internet.html"
+  :link "/posts/2022-12-05-different-internet.html"
   :link-name "A Different Internet"
   :image nil}
  {:title "The Net Art Generator by Cornelia Sollfrank"
@@ -93,14 +93,14 @@
   :geo "Rome, Italy"
   :date #time/date "1996-12-31"
   :desc "<a href='https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/28335'>Article 30</a> establishes The Italian Data Protection Authority. Stefano Rodotà is named the first president. Rodotà believed that privacy protected the dignity of the person - an essential part of a functioning free society."
-  :link "/posts/2022-11-22-a-different-internet.html"
+  :link "/posts/2022-12-05-different-internet.html"
   :link-name "A Different Internet"
   :image nil}
  {:title "A Declaration of the Independence of Cyberspace"
   :geo "Davos, Switzerland"
   :date #time/date "1996-02-08"
   :desc "&ldquo;Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather.&rdquo;"
-  :footer "by John Perry Barlow, host at the <a href='https://www.eff.org/cyberspace-independence'>EFF</a>"
+  :footer "by John Perry Barlow, hosted at the <a href='https://www.eff.org/cyberspace-independence'>EFF</a>"
   :link nil ;; "/posts/identity-trap.html"
   :link-name nil ;;"The Identity Trap"
   :image nil}
@@ -141,8 +141,8 @@
   :date #time/year "1980"
   :desc "&ldquo;It is obvious that technologies can be used in ways that enhance the power, authority, and privilege of some over others, for example, the use of television to sell a candidate. [...] But we usually do not stop to inquire whether a given device might have been designed and built in such a way that it produces a set of consequences logically and temporally prior to any of its professed uses.&rdquo;"
   :footer "Langdon Winner <em>Do Artifacts Have Politics?</em> (1980)"
-  :link "/posts/2022-07-12.html"
-  :link-name "Advertising and the Consumer Computer"
+  :link "/posts/2022-08-23-the-consumer-computer.html"
+  :link-name "How the Consumer Computer is Consuming Computing"
   :image nil}
  {:title "Minitel"
   :geo nil
@@ -209,7 +209,7 @@
   :geo nil
   :date #time/year-month "1969-04"
   :desc "The first two Request For Comments (RFC) describe how computers and routers (knowns as IMPs) would be used to form a computer network (the ARPANET)."
-  :footer "Steve Crocker, 'Today’S Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
+  :footer "Steve Crocker, 'Today’s Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
   :link nil
   :link-name nil
   :image nil}
@@ -260,6 +260,14 @@
   :link "/books/1984.html"
   :link-name "&ldquo;Nineteen Eighty-Four&rdquo;"
   :image nil}
+ {:title "Bombing of the Amsterdam Population Registery"
+  :geo "Amsterdam, Netherlands"
+  :date #time/date "1943-03-27"
+  :desc "Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and Dr. Frieda Belinfante, orchestrated a bombing of the Amsterdam Population Registry on Saturday, March 27, 1943. Their goal was to inhibit the Nazi's ability to track and deplort Jews and other targets of terror. The operation managed to destroy over 15% of the records but many of the particpants were later captured and executed by the Nazis."
+  :footer "From &ldquo;The Resistance attacks the population register of Amsterdam&rdquot; https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/"
+  :link "/posts/2022-07-23-data-bad-dea.html"
+  :link-name "What If Data Is a Bad Idea?"
+  :image "/img/2023-05-08-data-is-a-bad-idea/amsterdam-registry.jpg"}
  {:title "Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;"
   :geo nil
   :date #time/year "1723"

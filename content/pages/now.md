@@ -21,7 +21,7 @@ uuid:
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
-[^gallery-404]: Gallery 404 is a gallery that exhibits net.art as it appears today. It deals exclusively in broken art. See my announcement of [its launch in 2020](/posts/2020-30-11-gallery-404.md).
+[^gallery-404]: Gallery 404 is a gallery that exhibits net.art as it appears today. It deals exclusively in broken art. See my announcement of [its launch in 2020](/posts/2020-30-11-gallery-404.html).
 
 > Gallery 404, an online art gallery dealing exclusively in broken net.art artworks, has opened a gift shop spotlighting the significance of the digital commons. The shop features a handpicked selection of multimedia works that use permissive licenses.
 
