@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2023-04-30
 date-modified: 2023-04-30
-date-published:
+date-published: 2023-05-30
 in-language: en
 keywords: kay, hickey, clojure
 tags:
@@ -34,46 +34,47 @@ tags:
 
 The discussion between Alan Kay and Rich Hickey, two esteemed computer scientists, opened with this provocative question from Kay. It immediately derailed the conversation - like a physicist asking, "What if gravity is a bad idea?"[^kay]
 
-[^kay]: Kay has made a career out of challenging fundamental assumptions. One of his Most famous quotes, "A shift in perspective is worth xx IQ points," embodies his guiding wisdom.![Alan Kay by Jean Baptiste](/img/2023-05-08-data-is-a-bad-idea/kay.jpg) <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>Alan Kay by Jean Baptiste</span>
+[^kay]: Kay has made a career out of challenging conventional wisdom. Perhaps this is best embodied by one of [his most famous quotes](https://www.folklore.org/StoryView.py?project=Macintosh&story=Creative_Think.txt), "A shift in perspective is worth 80 IQ points." ![Alan Kay by Jean Baptiste](/img/2023-05-08-data-is-a-bad-idea/kay.jpg) <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>Alan Kay by Jean Baptiste</span>
 
-But I think there is something to this question about data. Before diving into the technical details, it's worth setting the stage by considering the political dimensions of data.
+But I think there is something to this question about data. Many may premise the discussion on technical details. I'll get to those soon enough. The idiosyncratic political dimension of data must be the first consideration because it informs everything that follows.
 
-Data is an objectifying force. This characteristic is an asset when describing inert phenomenon such as the composition of soil or the properties of various metals. These are things we can act upon without ethical considerations.
+# Data Is an Objectifying Force
+
+The objectifying power of data is an asset when describing inert phenomenon such as the composition of soil or the properties of various metals. We can act upon these things without direct ethical considerations.
 
 In the natural world there is a distinction between **intelligent actors** and those things they **act upon**. But data cannot inherently express this distinction; a database that tracks widget production can also store information about the people who buy those widgets.
 
-Databases turn actors - who are often human beings - into things to be acted upon. This is where data is definitely a bad idea. Not in the sense that Kay likely intended, but this tension underlies the technology since the Hollerith machine was first used to automate the population census in the 19th century.[^census]
+Databases turn actors - who are often human beings - into things to be acted upon. This is where data can quickly become a bad idea. Not in the sense that Kay likely intended, but it has been a facet of data centers since the dawn of automated census calculations in the 19th century.[^census]
 
-[^census]: Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and Dr. [Frieda Belinfante](https://www.ushmm.org/collections/the-museums-collections/curators-corner/the-frieda-belinfante-collection), orchestrated [a bombing of the Amsterdam Population Registry](https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/") on Saturday, March 27, 1943. Their goal was to inhibit the Nazi's ability to track and deplort Jews and other targets of terror. The operation managed to destroy over 15% of the records but many of the particpants were later captured and executed by the Nazis (top). Noted privacy advocate and lawyer Lau Mazirel was a member of the Dutch resistance. (below)![](/img/2023-05-08-data-is-a-bad-idea/amsterdam-registry.jpg) Amsterdam public registry (28 March 1943) <span property="license"><a class="link no-tufte-underline" href="https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/" rel="license">[<i class="fab fa-creative-commons-pd-alt"></i>Amsterdam City Archives</a>]</span>![](/img/2023-05-08-data-is-a-bad-idea/lau-mazirel.jpg) Lau Mazirel (1907-1974) <span property="license">[<a class="link no-tufte-underline" href="https://www.vn.nl/lau-mazirel-streed-tegen-de-maatschappelijke-comedie/" rel="license">Collectie Van Gennep / IISG</a>]</span>
+[^census]: Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and [Dr. Frieda Belinfante](https://www.ushmm.org/collections/the-museums-collections/curators-corner/the-frieda-belinfante-collection), orchestrated [a bombing of the Amsterdam Population Registry](https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/) on Saturday, March 27, 1943. Their goal was to inhibit the Nazi's ability to track and deport Jews and other targets of terror. The operation managed to destroy over 15% of the records (top image). Many of the participants were later captured and executed by the Nazis. Noted privacy advocate and lawyer Lau Mazirel was a member of the Dutch resistance (bottom image). ![](/img/2023-05-08-data-is-a-bad-idea/amsterdam-registry.jpg) Amsterdam public registry (28 March 1943) <span property="license"><a class="link no-tufte-underline" href="https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/" rel="license">[<i class="fab fa-creative-commons-pd-alt"></i>Amsterdam City Archives</a>]</span>![](/img/2023-05-08-data-is-a-bad-idea/lau-mazirel.jpg) Lau Mazirel (1907-1974) <span property="license">[<a class="link no-tufte-underline" href="https://www.vn.nl/lau-mazirel-streed-tegen-de-maatschappelijke-comedie/" rel="license">Collectie Van Gennep / IISG</a>]</span>
 
-Representing human beings is hard. If you manage personal data and you're not struggling, you're not doing your job. While the underlying tension likely unresolvable, the rest of this
-article will consider what concepts and tools are available to help mediate this problem. By the end of the article we may be able to answer Kay's question in the case of human identity and expression - which is, after all, why we use computers.
+# Data Is a Centrifugal Force
 
-# What Kay Was Actually Saying
+Data processing is the lifeblood of large bureaucracies. As previously discussed in the article *[Personal Privacy](posts/2020-06-15-personal-privacy.html)*, efforts to mitigate the reach of data collection efforts in democratic nations goes back decades. Consent is the latest fashion. It's the idea that drives those cookie popups on websites; you are granted agency every time you make a choice about which cookies are placed on your machine.
 
-Granting agency to an intelligent actor mitigates the objectifying nature of data. For better or for worse, this conceit is what drives "cookie consent" popups on websites; you are granted agency every time you make a choice about which cookies are placed on your machine.
+Most people find these popups annoying; we don't want to negotiate every time we encounter a new website. We're used to social structures where consent is often implicit even with people you don't know. But data is simply too brittle to capture all the nuance that is communicated in simple human interactions.
 
-In practice we don't want to negotiate every time we encounter a new website. But the brittleness of data requires necessitates a strict protocol agreed upon in advance. Kay's notion of ambassadors[^ambassadors] are an advanced technology that would enable negotiation between two wholly independent automatons. Even if they don't use the same protocol; even if the presentation of the information is novel.
+Alan Kay took note of how everything from simple organisms to complex societies negotiate in novel situations. It lead him to propose an abstract concept of ambassadors[^ambassadors] in computer science. Ambassadors might like to follow a protocol, but it isn't required. They act on behalf of a larger autonomous entity. And when two ambassadors meet, both entities they represent retain their autonomy.
 
-Both actors can preserve independence and agency if they initiate communication through ambassadors. Although many natural systems are this adaptive, ambassadors are difficult to implement in practice. How could *data* be this flexible? How could *data* bring the requisite context along for the ride?[^data] This is what Kay was likely gesturing towards when he mused that data may be a bad idea.
+[^ambassadors]: Alan Kay is really thinking about objects interacting on a network. Currently, all network interactions follow explicit protocols. Objects of the future, Kay believes, must be able to negotiate the exchange of data even if they come from completely unknown sources. As Kay noted in the conversation with Hickey, "For important negotiations we don't send telegrams, we send ambassadors."
 
-[^ambassadors]: Alan Kay is really thinking about objects interacting on a network. Currently, all network interactions  follow explicit protocols. Objects of the future, Kay believes, must be able to negotiate the exchange of data even if they come from completely unknown sources. in Eric Normand
+How could *data* be this flexible? How could *data* bring the requisite context along for the ride?[^data] This is what Kay was likely gesturing towards when he mused that data may be a bad idea.
 
 [^data]: Usually data relies on the medium to provide context. The medium is the protocol. I can send you data through a perfect medium with perfect fidelity and all you receive is noise. Indeed - all data is noise unless you know how to interpret it.
 
-It's fitting that Kay used a political term, ambassador, to position his idea. Few technologists are ready to grapple with the inherent political dimensions of their work. Data has a political dimension when amassed in large volumes that enables centralized control. I'm not sure if the centrifugal nature of data is "bad" or "good" but it is undoubtedly political.
+Efforts to implement ambassadors haven't gotten very far. Data still seems to work best in aggregate. It continues to be sucked into the private warehouses of powerful organizations, further entrenching their power. I'm not here to say that this centrifugal force is "bad" or "good," but it's undoubtedly political.
 
-Creating digital ambassadors addresses some of these core political issues of data. I'm not aware of anyone who has built a viable solution, including Key himself. However, new technologies have emerged that put us in a better position to address the political dimensions of data. These technologies don't focus on markets, like so many Web3[^web3] solutions, they focus on people.
+Rather than chase after this hazy idea of an ambassador, I'll spend the rest of our time exploring concrete ways to expand our notion of data. I'll specifically work with the idea of using data to represent human identity. My focus will mostly be on the familiar HTTP protocol. Lots of interesting work is happening on peer-to-peer protocols, but I've found much of the last ~10 years of venture-backed, market-centric crypto solutions to be misguided.[^web3] This is an examination of what it would take to build a more human-centric arrangement by going back to the fundamentals of data - where it lives, how it moves, and what it means.
 
 [^web3]: Most so-called Web3 efforts attempt to graft a marketplace on top of data to decentralize this power structure. But few have an answer for the tendency of marketplaces to consolidate power. Combined with the political dimension of raw data and the proven power of network effects, this can  only lead to an unbelievable consolidation of power. For those who are not in power, data will seem like a bad idea.
 
 # Data and Identity
 
-Identity is a natural place to start when talking about people. This discussion assumes two premises: 1) data is naturally reductive due to the nature of the medium and 2) identity is almost always held in systems far outside the reach of the people they identify.
+Identity is a natural place to start when talking about people. The following discussion is based on two observations: 1) data naturally reduces complex conceptions of identity into coarse representations and 2) data about identity is generally held in systems far away from the people they identify.
 
-The second point is a natural result of the centrifugal force of data. But if we alter our relationship to data from "far" (in your warehouse) to "near" (in my hand) and "dead" (jealously hoarded in private warehouses)  to "living" (flowing through the commons), data could exhibit different political dimensions and be more expressive. A network of databases and data interpreters make data multi-dimensional, like the people the data is attempting to describe.
+The second point is a result of the centrifugal force of data. But we can resist this inertia by changing the physical characteristics of data - from "far" (in your warehouse) to "near" (in my hand) and "dead" (jealously hoarded on private property) to "living" (flowing through the commons), data could exhibit different political dimensions and become more expressive.
 
-Philip Agre enumerated five characteristics of data that will help us achieve this repositioning. So-called "Living Data," must exhibit 1. a sense of *ownership*, 2. *error bars*, 3. *sensitivity*, 4. *dependency*, and 5. *semantics*. Although he originally wrote this in the early 1990s,[^agre] it took some time for technology and policy to catch up. I'm going to break down each are using more contempory context and terminology:
+Philip Agre enumerated five characteristics of data that will help us achieve this repositioning. So-called "Living Data," must exhibit 1. a sense of *ownership*, 2. *error bars*, 3. *sensitivity*, 4. *dependency*, and 5. *semantics*. Although he originally wrote this in the early 1990s,[^agre] it took some time for technology and policy to catch up. I'm going to break down each are using more contemporary context and terminology:
 
 [^agre]: (November 1, 1994, https://www.wired.com/1994/11/agre-if-2/)
 
@@ -83,7 +84,7 @@ Philip Agre enumerated five characteristics of data that will help us achieve th
 4. Auditability: what data and processes were used to generate this data (dependencies)?
 5. Semantics: what does this raw data represent?
 
-Each one of these could constitute its own blog post. Their viability is due to a confluence of cultural priorities, technologies, and policy. I'll mostly gesture to the technologies. Link out if you want to know more.
+Each one of these could constitute its own blog post. Their viability is due to a confluence of cultural priorities, technologies, and policy. I'll mostly gesture to the technologies. Follow the hyperlinks if you want to know more.
 
 ## 1. Provenance and Agency
 
@@ -95,13 +96,13 @@ Each one of these could constitute its own blog post. Their viability is due to 
 ></footer>
 </div>
 
-Initiatives such as [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) (VC) and the [Content Authenticity Initiative](https://contentauthenticity.org/) (CAI) both provide certain guarantees about the veracity of data. VCs are data that can be verified by the original issuer. CAI is supported by companies like Adobe[^flash] because they're looking to provide  provenance and attribution for media content like images.
+Initiatives such as [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) (VC) and the [Content Authenticity Initiative](https://contentauthenticity.org/) (CAI) both provide certain guarantees about the veracity of data. VCs are data that can be verified by the original issuer. CAI is supported by companies like Adobe[^flash] because they're looking to provide  provenance and attribution for rich media.
 
-[^flash]: Adobe's existing Digital Rights Management (DRM) is used to [treat customers who buy books like criminals](https://hbr.org/2015/11/the-weird-rules-governing-what-we-download). Furthermore, when the company purchased Flash (via Macromedia), they inherited an ecosystem that contained countless digital cultural artifacts. When they discontinued the technology, the only responsible subsequent step would have been to open-source the entire project so [these artifacts could be maintained](/posts/2021-09-07-fix-my-code.html). Adobe has failed to demonstrate the vision or the leadership when dealing with cultural issues.
+[^flash]: Adobe's existing Digital Rights Management (DRM) is used to [treat customers](https://hbr.org/2015/11/the-weird-rules-governing-what-we-download) who buy books [like criminals](posts/2021-12-01-eink.html). Furthermore, when the company purchased Flash (via Macromedia), they inherited an ecosystem that sustained countless digital cultural artifacts. When they discontinued the technology, the only responsible step would have been to subsequently open-source the entire project so [these artifacts could be maintained](posts/2021-09-07-fix-my-code.html). Adobe has failed to demonstrate vision or leadership when dealing with cultural issues.
 
-Ownership and usage rights are conventional methods that support the concept of property. Many futurists, especially those in Web3, want to apply property rights to aspects of our identity. Any attempts to commodify self-hood is an egregious misapplication of technology. Not only is it ethically dubious, it's technologically incoherent. As [Adrian Gropper](https://spectrum.ieee.org/privacy-entrepreneur-adrian-gropper) points out, "control doesn't scale." Individuals simply do not have the time or expertise to manage a portfolio of online personas or a single persona that discloses only essential information to a portfolio of clients.
+Ownership and usage rights conventionally support the concept of property. Many futurists, especially those in Web3, want to apply property rights to aspects of our identity. Any attempts to commodify self-hood is an egregious misapplication of technology. Not only is it ethically dubious, it's technologically incoherent. As [Adrian Gropper](https://spectrum.ieee.org/privacy-entrepreneur-adrian-gropper) points out, "control doesn't scale." Individuals simply do not have the time or expertise to manage a portfolio of online personas or a single persona that discloses only essential information to a portfolio of clients.
 
-In some sense, we have ownership over the organs in our body, but I thankfully don't have conscious control over their management. If I had that burden I would certainly need to outsource that information to a (profit-seeking) entity that manages my body's data so I could focus on something else. This is not a path towards serenity and sovereignty.
+In some sense we have ownership over the organs in our body but I thankfully don't have conscious control over their management. I would need to outsource the burden of "personal organ management" to an outside entity if I wanted to get anything else done. This is not a path towards serenity and sovereignty.
 
 <div class="epigraph">
 > What are we allowed to do with it?
@@ -111,11 +112,13 @@ In some sense, we have ownership over the organs in our body, but I thankfully d
 ></footer>
 </div>
 
-Permissions are a time-tested way to express property rights. In computing, they have been around as long as multi-user operating systems. Cloud filesystems like Dropbox and Google Docs have made these coarse permissions an everyday affair. TODO: image of Google Drive permissions error.
+Permissions are a time-tested way to express property rights. In computing, they have been around as long as multi-user operating systems. Cloud filesystems like Dropbox and Google Docs have made these coarse permissions an everyday affair.[^google-sheets]
 
-A website's non-negotiable Terms of Service is also a set of permissions. They dictate what a service is allowed to do with an individual's data and how an individual is allow to access their data. Companies are heavily incentivized to retrain the control so it's unlikely that collective legal action will do much to improve this relationship.
+[^google-sheets]: The ubiquitous Google Sheets permissions error: ![A Google Drive permission error](/img/2023-05-08-data-is-a-bad-idea/google-sheets.png)<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span>
 
-Technologists can build a practical foundation that separates the data from the service. This approach changes what a customer or citizen has in hand when they enter into a legal agreement with a service and creates market opportunities for competitors. [Solid](https://www.w3.org/community/solid/) and [Web Native File System](https://github.com/wnfs-wg) (WNFS) provide such infrastructure. Solid, in particular, offers an open standard for application interoperability[^RDF] while the data remains on personal filestore.[^filesystem-database]
+A website's non-negotiable Terms of Service is also a set of permissions. They dictate what an organization is allowed to do with an individual's data and the access rights one has to their own data. I'm doubtful that individual or collective legal action can do much to alter the disproportionate power held by organizations that set these Terms of Service. They hold both the means of computation and the data to compute.
+
+But technologists are attempting to build infrastructure that separates these two concerns. This approach changes what a customer or citizen has in hand when they enter into a legal contract with a service and creates market opportunities for competitors. [Solid](https://www.w3.org/community/solid/) and [Web Native File System](https://github.com/wnfs-wg) (WNFS) provide such infrastructure. Solid, in particular, offers an open standard for application interoperability[^RDF] while a person's data remains on their personal filestore.[^filesystem-database]
 
 [^RDF]: Solid supports [RDF](https://www.xml.com/pub/a/2001/01/24/rdf.html), which offers an open way to link data. The web-wide aspirations have fallen short, but RDF is used successfully in many important projects.
 
@@ -123,7 +126,7 @@ Technologists can build a practical foundation that separates the data from the 
 
 VCs break out of the filesystem model and allow fine-grained sharing and revocation of permissions. Think of an ID that hides all the details about yourself except for the fact that you are under retirement age. At any point before you retire, you may no longer allow a company to make this inquiry.
 
-Of course, none of these options address Gropper's axiom that "control doesn't scale." It's likely that any practical solution will require a separation between the computation service, the data store, and the user interface which allows certain expert administration of certain aspects of personal data.[^ai]
+These options do not address Gropper's axiom that "control doesn't scale." It's likely that any practical solution will require a separation between the computation service, the data store, and the user interface which allows certain expert administration of certain aspects of personal data.[^ai]
 
 [^ai]: Expert administration could also be a personal AI that lives on a person's local device. Or it could be a data collective that provides expert management.
 
@@ -153,11 +156,13 @@ Both examples establish a “triangle of trust.“ You don't need to trust me th
 ></footer>
 </div>
 
-This is the hard one. Think of a spreadsheet. Data flows through formulas - when a person changes a number at cell A9, the new value propagates through the sheet, updating any referent along the way in real time.
+This is the hard one. Think of a spreadsheet where data flows through the various cells to arrive at an answer. Update one number in the spreadsheet and the dependent cells update automatically.
 
-For this to work, the data must have meaningful semantics. "3 more than 29" is 32. But "3 more days from January 29" is February 1. The semantics make two cells or two computers interoperable. [TODO: Alan Kay ambassadors]
+For this to work, the data must have meaningful semantics. "3 more than 29" is 32. But "3 more days from January 29" is February 1. The semantics make two cells or two computers interoperable. Anything short of these clear semantics would require one of Alan Kay's hypothetical ambassadors.
 
-The referent must also be findable (with an address like A9) and available. That's a lot of requirements!
+All data in the flow must have an address so it can be found. And resilient software would need a contingency plan in the event that data moves or goes missing.
+
+That's a lot of requirements!
 
 File systems like WNFS and Dropbox don't have a standard way of discovering data or notifying changes. VCs and OAuth/OIDC are discoverable with a so-called '.well-known' endpoint. Solid folks are working on a Webhook (v 0.2.0) standard to serve updates to linked data over REST.
 
@@ -179,11 +184,11 @@ Immutability simply means that data can never change. The most famous implementa
 
 [^ipfs]: IPFS CAS is also an important immutable technology. Omitted only for the sake of brevity.
 
-Blockchains are tamper-evident. If a malicious change is made, the error will show up in an audit. Verifiable Credentials are [tamper-evident](https://www.w3.org/TR/vc-data-model/). Solid is working on the same guarantees through a non-repudiation service.
+Fraud is a kind of "intentional error." Immutable data will provide a record of changes in any audit, thus making blockchains tamper-evident. VCs are [also tamper-evident](https://www.w3.org/TR/vc-data-model/); claims made by a person holding a credential can be revoked. Revocation provides essential coverage for both errors made in earnest and malicious fraud.
 
-Revocation provides important coverage for both errors made in earnest and data manipulated to intentionally mislead people.
+Solid does not work with immutable data, but folks are working on similar guarantees through a non-repudiation service.
 
-Other services after a history for auditing , but do not promise valid (non-tampered) changes. Think about the record of changes on a text file on Dropbox or Google Docs. WNFS offers file and directory versioning (TODO: without timestamps?) as well.
+Other services after a history for auditing but do not promise valid (non-tampered) changes. Think about the record of changes on a text file on Dropbox or Google Docs. WNFS offers file and directory versioning but it functions quite differently than a record of changes on Google Docs.
 
 ## 5. Semantics
 
@@ -195,24 +200,26 @@ Other services after a history for auditing , but do not promise valid (non-tamp
 ></footer>
 </div>
 
-This is really about supporting a protocol with semantics. The aforementioned RDF is a perfect fit here. And protocols such as Solid and SPARQL provide advanced transport methods. Since we're talking about IDs in this article, a widely adopted technology like OpenID Connect also fits the bill using [scopes](https://auth0.com/docs/get-started/apis/scopes/openid-connect-scopes).
+This issue is the culmination of all the others. Data cannot even flow between two computers if they do not understand each other. The most primitive file system metaphors like Dropbox and WNFS use file extensions and MIME types to understand what they are sending and receiving. Solid supports files and also RDF for greater expressivity. At this very moment, basic identity information is exchanged all around the internet using OpenID Connect [scopes](https://auth0.com/docs/get-started/apis/scopes/openid-connect-scopes).
 
-VCs also support semantic information while there are many solutions for exchanging meaningful files from WNFS to Dropbox.
+Semantics have a major drawback: [they have to be widely agreed upon](https://people.well.com/user/doctorow/metacrap.htm). Widely-adopted semantic vocabularies are usually refined by a small group of experts until a rough consensus is reached. The method can be seen in contra-distinction to *tags*. Tags also provide meaning to data but they are formed organically by a large group of people generating a large number of tags. Trends emerge over time and provide meaning to the information being tagged.
 
-Semantics have a drawback: [they have to be widely agreed upon](https://people.well.com/user/doctorow/metacrap.htm). Semantic vocabularies are largely developed like protocols. A small group of experts refine the vocabulary until a rough concensus  is reached and it is released to the pubic. Tagging, or the other hand, also describes in formation foot from
-the bottom-up.
+These tags can lose their meaning in different cultural contexts or on different platforms - `#meta` might imply something different on Flicker than it means on Facebook. But machine learning has flattened these differences. Using existing data sets, algorithms can identify similar non-tagged data across the internet.[^machine-learning]
 
-Tagging can also be seen as a way to form widely distributed meaning. Sharing has been difficult across cultural and platform boundaries (think Pinboard vs Mastodon vs Flickr) but machine learning has changed the game on this casual tagging. Using the data sets, algorithms can also identify similar non-tagged data across the internet.[^machine-learning]
+[^machine-learning]: The black box model of machine learning is particularly insidious here. Like vocabularies and tagging, any solution will have implicit biases but machine learning offers none of the transparency afforded to other methods of structuring and describing information.
 
-[^machine-learning]: The black box model of machine learning is particularly insidious here. Like vocabularies and tagging, any solution will have implicit biases but machine learning offers none of the transparency afforded to other methods of structuring
-and describing information.
+# Control Does Not Scale
 
-# Conclusion
+It's not possible nor desirable to provide each person a simulacrum of their identity online. People don't want to manage their own data any more than (they want to manage their own servers)[TODO: Moxie Marlinspike Link]. But large data centers are political artifacts[^winner] that necessitate a political response. This response depends on how we situate identity data in our lives - close to home, separate from the processes that compute it.
 
-These attributes would allow data to live closer to the person it is intended to represent; they would make data more expressive - allowing us to be our own ambassadors and participate in a powerful commons.
+[^winner]: &ldquo;Conventional wisdom posits technology as a neutral force that can be wielded for "evil" or for "good." But as Langdon Winner has pointed out, technologies can fundamentally embody explicit political arrangements.&rdquo; from *[How the Consumer Computer is Consuming Computing](posts/2022-08-23-the-consumer-computer.md)*.
 
-There are many Solutions not described in this article. Philip Agree mentions an ill-fated "intelligent agent" solution from the 1990s called [Telescript](http://www.datarover.com/Telescript/Whitepapers/wp4/whitepaper-4.html). Indeed, there are folks who are working on agent solutions today. Their focus on intention rather than data may even be closer to Kay's ambassadors.
+This arrangement is easier said than done. Data must have some sense of authenticity to be useful, it must have some contextual meaning to be shared, and it must leave room for error if it is to be alive. Agre outlines these principles but their technological implementation is unclear.[^telescript]
 
-Hickey struggled to seriously entertain the line of inquiry. "How could date be a bad idea?" he mused. But my recent struggles with personal data have caused me to take it quite seriously.
+[^telescript]: There are many solutions not described in this article. Philip Agree mentions an ill-fated "intelligent agent" solution from the 1990s called [Telescript](http://www.datarover.com/Telescript/Whitepapers/wp4/whitepaper-4.html). Indeed, there are folks who are working on agent solutions today. Their focus on intention rather than data may even be closer to Kay's ambassadors.
 
-As this article shows, data-oriented solutions are both complex and fail to capture important aspects of identity. Perhaps data is a bad idea and agents inspired by biological systems are a good idea. But data is currently the most practical idea.
+Any real political response will require more than introducing shiny new tech. For example, consider all the institutional support needed to manage a currency in your country. And then remember that a person's identity is infinitely more complex than any financial abstraction.
+
+It may seem insurmountable, but the alternative is a single dominate political vision where only one form of data management exists: large data centers filled with coarse data points and countless assumptions about what that data says about who we are. This is a bad idea.
+
+It's probably not the bad idea that Kay had in mind when he was talking to Hickey, but the computer science is inseparable from the political science in this case.

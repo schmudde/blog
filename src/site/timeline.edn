@@ -265,7 +265,7 @@
   :date #time/date "1943-03-27"
   :desc "Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and Dr. Frieda Belinfante, orchestrated a bombing of the Amsterdam Population Registry on Saturday, March 27, 1943. Their goal was to inhibit the Nazi's ability to track and deplort Jews and other targets of terror. The operation managed to destroy over 15% of the records but many of the particpants were later captured and executed by the Nazis."
   :footer "From &ldquo;The Resistance attacks the population register of Amsterdam&rdquot; https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/"
-  :link "/posts/2022-07-23-data-bad-dea.html"
+  :link "/posts/2023-05-08-data-is-a-bad-idea.md"
   :link-name "What If Data Is a Bad Idea?"
   :image "/img/2023-05-08-data-is-a-bad-idea/amsterdam-registry.jpg"}
  {:title "Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;"
