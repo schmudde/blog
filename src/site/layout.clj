@@ -69,7 +69,7 @@
       [:span {:class "p-country-name" :title "Germany"} "DE"]]
      [:div {:class "p-tel"} "+1 (917) 994-1620"]
      ]]
-
+   ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://mastodon.social/@schmudde" :title "Mastodon Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-mastodon"}]]]
@@ -80,22 +80,21 @@
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
-   [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
-    [:p.b.ma0.pa0.nowrap.f1.f-5-m.f-6-ns.light-blue {:itemprop "publisher" :class "beyond-the-frame"} (:site-title global-meta)]
-    [:p.dib
-     [:span.mb2 {:id "site-description" :itemprop "about"} (:description global-meta)]
-     [:span.mb2 " by "]
-     [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
-   [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
-    [:li.dib.mr2 [:a {:href "/previous-entries.html" :title "Previous Entries in Beyond the Frame"} "Posts"]]
-    [:li.dib.mr2 [:a {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
-    [:li.dib.mr2 [:a {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]
-    [:li.dib.mr2 "|"]
-    [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
-    [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
-    [:li.dib.mr2 [:a {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]])
-
+   [:header.flex.items-center.justify-start {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
+    [:ul.list.ma0.pa0.btf-font
+     ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
+     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
+     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
+     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
+    [:a.link.no-tufte-underline {:href "/"}
+     [:div.dib.v-mid.pl4 {:itemprop "publisher"}
+      [:p.f1.tr.btf-font "BEYOND"]
+      [:p.f1.tr.btf-font "THE FRAME"]]
+     [:img.logo.dib.v-mid.pr4 {:src "/img/btf-logo.svg"}]]
+    [:ul.list.ma0.pa0.btf-font
+     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
+     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
+     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]])
 
 (defn body-template
   [global-meta page-meta content]
