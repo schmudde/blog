@@ -42,43 +42,15 @@ article {
 	padding: 3rem 0 0 0;
 }
 
+/* ******** */
+/*  header  */
+
 .beyond-the-frame {
-    z-index: -1;
-    position: relative;
-    top: 12px;
-    color: #fffff8;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #96ccff;
+
 }
 
 
-
-@media screen and (max-width: 30em) {
-    .beyond-the-frame {
-        top: 0px;
-        color: #96ccff;
-        -webkit-text-stroke-width: 0;
-        /* -webkit-text-stroke-color: #96ccff; */
-    }
-
-    .logo {
-        padding-left: 1rem;
-        width: 30px;
-    }
-}
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-    .logo {
-        padding-left: 2rem;
-        width: 80px;
-    }
-}
-
-.logo {
-    padding-left: 2rem;
-    width: 120px;
-}
-
+/* ******** */
 /* TIMELINE */
 
 .timeline-item {

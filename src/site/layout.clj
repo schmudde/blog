@@ -28,7 +28,7 @@
    [:meta {:property "og:author" :content author}]
    [:meta {:property "og:image" :content (if-let [img-url (extract-image content)]
                                            (str "http://schmud.de" img-url)
-                                           "http://schmud.de/img/btf-logo.png")}]
+                                           "http://schmud.de/img/btf-logo.svg")}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]
@@ -80,21 +80,23 @@
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
-   [:header.flex.items-center.justify-start {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
-    [:ul.list.ma0.pa0.btf-font
+   [:header.flex.items-center.justify-start.pt4 {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
+    [:div.flex.flex-wrap.items-center
+     [:ul.list.ma0.pa0.btf-font
      ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
-     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
-     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
-     [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
-    [:a.link.no-tufte-underline {:href "/"}
-     [:div.dib.v-mid.pl4 {:itemprop "publisher"}
-      [:p.f1.tr.btf-font "BEYOND"]
-      [:p.f1.tr.btf-font "THE FRAME"]]
-     [:img.logo.dib.v-mid.pr4 {:src "/img/btf-logo.svg"}]]
-    [:ul.list.ma0.pa0.btf-font
-     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
-     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
-     [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]])
+      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
+      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
+      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
+     [:a.link.no-tufte-underline {:href "/"}
+      [:span.flex.items-center.ph4
+       [:div.flex.flex-column {:itemprop "publisher"}
+        [:span.f1.tr.btf-font.db "Beyond"]
+        [:span.f1.tr.btf-font.db "the Frame"]]
+       [:img.logo.v-mid.pl4.w4.h4 {:src "/img/btf-logo.svg"}]]]
+     [:ul.list.ma0.pa0.btf-font
+      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
+      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
+      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]]])
 
 (defn body-template
   [global-meta page-meta content]
