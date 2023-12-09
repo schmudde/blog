@@ -100,12 +100,14 @@
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
-   [:header.flex.items-center.justify-start.pt4 {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
+   [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
 
-    [:div.flex.flex-wrap
-     [:dev.flex.flex-column.flex-row-ns.w-100.w-auto-ns.items-center
+
+    [:div.flex.flex-wrap.pt4
+     [:div.flex.flex-column.flex-row-ns.items-center.center.mh0-ns
+      [:div.dn-ns.db [:img.logo.v-mid.pl4.w4.h4.pb4 {:src "/img/btf-logo.svg"}]]
       [:ul.list.ma0.pa0.btf-font
-      ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
+       ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
        [:li.mr3-ns.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
@@ -116,11 +118,11 @@
        [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]
 
       [:a.link.no-tufte-underline {:href "/"}
-       [:span.flex.items-center.ph4
-        [:div.flex.flex-column {:itemprop "publisher"}
-         [:span.f1.tr.btf-font.db "Beyond"]
-         [:span.f1.tr.btf-font.db "the Frame"]]
-        [:img.logo.v-mid.pl4.w4.h4 {:src "/img/btf-logo.svg"}]]]]]]])
+       [:span.flex.items-center.ph4-ns
+        [:div.flex.flex-column-ns.flex-row {:itemprop "publisher"}
+         [:span.f1-ns.f2.tr.btf-font "Beyond"]
+         [:span.f1-ns.f2.tr.btf-font "&nbsp;the Frame"]]
+        [:img.logo.v-mid.pl4.w4-ns.h4-ns.dn.db-ns {:src "/img/btf-logo.svg"}]]]]]]])
 
 (defn body-template
   [global-meta page-meta content]
