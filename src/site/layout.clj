@@ -78,46 +78,27 @@
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
     ]])
 
-#_(defn header-template [global-meta]
-  [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
-   [:header.flex.items-center.justify-start.pt4 {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
-    [:div.flex.flex-wrap.items-center
-     [:ul.list.ma0.pa0.btf-font
-     ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
-      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
-      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
-      [:li.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
-     [:a.link.no-tufte-underline {:href "/"}
-      [:span.flex.items-center.ph4
-       [:div.flex.flex-column {:itemprop "publisher"}
-        [:span.f1.tr.btf-font.db "Beyond"]
-        [:span.f1.tr.btf-font.db "the Frame"]]
-       [:img.logo.v-mid.pl4.w4.h4 {:src "/img/btf-logo.svg"}]]]
-     [:ul.list.ma0.pa0.btf-font
-      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
-      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
-      [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]]])
-
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
    [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
 
-
     [:div.flex.flex-wrap.pt4
-     [:div.flex.flex-column.flex-row-ns.items-center.center.mh0-ns
-      [:div.dn-ns.db [:img.logo.v-mid.pl4.w4.h4.pb4 {:src "/img/btf-logo.svg"}]]
-      [:ul.list.ma0.pa0.btf-font
-       ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
-       [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
-       [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
-       [:li.mr3-ns.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
-
-      [:ul.list.ma0.ph0.pt0.pb0-ns.pb4.btf-font
-       [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
-       [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
-       [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]
-
+     [:div.flex.flex-column.flex-row-ns.items-center.center.mh0-ns ;; column on small, row on ns
       [:a.link.no-tufte-underline {:href "/"}
+       [:div.dn-ns.db [:img.logo.v-mid.w4.h4.pb4 {:src "/img/btf-logo.svg"}]]] ;; hide on ns
+      [:div.flex.flex-column.flex-row-l ;; column on small/medium, row on large
+       [:ul.list.ma0.pa0.btf-font
+        ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
+        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
+        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
+        [:li.mr3-ns.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
+
+       [:ul.list.ma0.ph0.pt0.pb0-ns.pb4.btf-font
+        [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
+        [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
+        [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]
+
+      [:a.link.no-tufte-underline {:href "/"} ;; inherits row on ns
        [:span.flex.items-center.ph4-ns
         [:div.flex.flex-column-ns.flex-row {:itemprop "publisher"}
          [:span.f1-ns.f2.tr.btf-font "Beyond"]

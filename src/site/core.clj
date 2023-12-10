@@ -10,9 +10,8 @@
 (defn tags->links [tags]
   [:ul.list.dib.ma0.pa0 {:class "tags"}
    (map (fn [tag] [:li.dib.mr2.f5
-                   "&nbsp;#"
-                   [:a {:href (str "/tags/" tag ".html")}
-                     tag]]) tags)])
+                   [:a.link.dim.no-tufte-underline {:href (str "/tags/" tag ".html")}
+                    (str "&nbsp;#" tag)]]) tags)])
 
 (defn list-posts [posts]
   [:ul.list
@@ -53,9 +52,9 @@
      [:meta {:itemprop "author" :content "David Schmudde"}]
      [:header
       [:a {:href (:permalink post) :title (:title post)}
-       [:h1 {:itemprop "headline"} (:title post)]]
+       [:h1.btf-font {:itemprop "headline"} (:title post)]]
       (if (= (:type post) "post")
-        [:div
+        [:div.btf-font
          [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
          (time-template (:date-published post))
          [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
