@@ -61,6 +61,12 @@
   :link "/posts/2021-04-22-id-through-time.html"
   :link-name "An Identity Through Time"
   :image nil}
+{:title "Walter Murch Edits &ldquo;Cold Mountain&rdquo; on an Off-the-Shelf Macintosh G4"
+  :geo nil
+  :date #time/year "2003"
+ :desc "<em>Cold Mountain</em> was not the first digitally edited feature film. But the $80 million picture was the first of its size to be cut on Apple's Final Cut Pro and off-the-shelf Power Mac G4s. It was subsequently nominated for seven academy awards including Best Film Editing."
+  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link-name "Untangling Non-Linearity"}
  {:title "The Dot-Com Bubble Peaks"
   :geo "New York City, NY, US"
   :date #time/date "2000-03-10"
@@ -73,7 +79,6 @@
   :desc "ArtByte was a glossy magazine dedicated to covering net.art and many other forms of digital art. It was distributed across the United States until it ceased publication in 2001."
   :link "/posts/2021-09-07-fix-my-code.html"
   :link-name "Fix My Code"}
-
  {:title "Framework for Global Electronic Commerce"
   :geo "Washington D.C., US"
   :date #time/date "1997-07-01"
@@ -209,7 +214,7 @@
   :geo nil
   :date #time/year-month "1969-04"
   :desc "The first two Request For Comments (RFC) describe how computers and routers (knowns as IMPs) would be used to form a computer network (the ARPANET)."
-  :footer "Steve Crocker, 'Today’s Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
+  :footer "Steve Crocker, '<a href='https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments'>Today’s Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments</a>', IEEE Spectrum, 2020."
   :link nil
   :link-name nil
   :image nil}
@@ -237,6 +242,14 @@
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
+{:title "Ted Nelson Introduces the Term &ldquo;Hypertext&rdquo;"
+  :geo "Cleveland, Ohio, US"
+  :date #time/date "1965-08-24"
+  :desc "The foundation of today's World Wide Web was introduced to the public in &ldquo;Complex information processing: a file structure for the complex, the changing and the indeterminate.&rdquo; Nelson explains, &ldquo;Let me introduce the word &lsquo;hypertext&rsquo; to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper.&rdquo; He would continue to refine the concept for several decades."
+  :footer "T. H. Nelson. &ldquo;<a href='https://doi.org/10.1145/800197.806036'>Complex information processing: a file structure for the complex, the changing and the indeterminate.</a>&rdquo; <em>In Proceedings of the 1965 20th national conference (ACM '65)</em>. (Association for Computing Machinery, New York, NY, USA, 1965), 84–100."
+  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link-name "Untangling Non-Linearity"
+  :image "/img/2024-01-15-untangling-non-linearity/hypertext-linked-lists.png"}
  {:title "The First Message Is Sent Using the Moscow–Washington Hotline"
   :geo "Washington D.C., US"
   :date #time/date "1963-08-30"
@@ -251,6 +264,13 @@
   :footer "From David Padwa's <a href='http://www.cuke.com/people/padwa.htm'>Curriculum Vitae</a>"
   :link "/posts/2020-12-16-be-here-now.html"
   :link-name "Be Here Now"
+  :image nil}
+{:title "Logic Theorist Presented at the Dartmouth Summer Research Project on Artificial Intelligence (AI)"
+  :geo "Hanover, New Hampshire, US"
+  :date #time/year "1956"
+  :desc "Cliff Shaw, along with Allen Newell and Herbert Simon, developed the Information Processing Language (IPL) to implement Logic Theorist, as existing languages lacked the capabilities for solving abstract problems like the mathematical proofs in Whitehead and Russell's <em>Principia Mathematica</em>. A major innovation in IPL was the linked list, a dynamic memory allocation technique crucial for AI and a foundational element in John McCarthy's LISt Processing language (LISP)."
+  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link-name "Untangling Non-Linearity"
   :image nil}
  {:title "George Orwell Publishes &ldquo;Nineteen Eighty-Four&rdquo;"
   :geo nil
