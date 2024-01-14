@@ -28,7 +28,7 @@
    [:meta {:property "og:author" :content author}]
    [:meta {:property "og:image" :content (if-let [img-url (extract-image content)]
                                            (str "http://schmud.de" img-url)
-                                           "http://schmud.de/img/btf-logo.png")}]
+                                           "http://schmud.de/img/btf-logo.svg")}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
      [:meta {:property "og:type":content "article"}]
@@ -69,7 +69,7 @@
       [:span {:class "p-country-name" :title "Germany"} "DE"]]
      [:div {:class "p-tel"} "+1 (917) 994-1620"]
      ]]
-
+   ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
    [:ul.list.ma0.pa0
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://schmud.de/" :title "Personal Website" :class "u-url"} [:i {:class "fa fa-home"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://mastodon.social/@schmudde" :title "Mastodon Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-mastodon"}]]]
@@ -81,21 +81,29 @@
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}
    [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"}
-    [:p.b.ma0.pa0.nowrap.f1.f-5-m.f-6-ns.light-blue {:itemprop "publisher" :class "beyond-the-frame"} (:site-title global-meta)]
-    [:p.dib
-     [:span.mb2 {:id "site-description" :itemprop "about"} (:description global-meta)]
-     [:span.mb2 " by "]
-     [:span.mb2 {:itemprop "author"} (:author global-meta)]]]
-   [:ul.list.ma0.pa0
-    [:li.dib.mr2 [:a {:href "/" :title "Home"} "Home"]]
-    [:li.dib.mr2 [:a {:href "/previous-entries.html" :title "Previous Entries in Beyond the Frame"} "Posts"]]
-    [:li.dib.mr2 [:a {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
-    [:li.dib.mr2 [:a {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]
-    [:li.dib.mr2 "|"]
-    [:li.dib.mr2 [:a {:href "/pages/about.html" :title "About"} "About"]]
-    [:li.dib.mr2 [:a {:href "/pages/now.html" :title "Now Page"} "Now"]]
-    [:li.dib.mr2 [:a {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]])
 
+    [:div.flex.flex-wrap.pt4
+     [:div.flex.flex-column.flex-row-ns.items-center.center.mh0-ns ;; column on small, row on ns
+      [:a.link.no-tufte-underline {:href "/"}
+       [:div.dn-ns.db [:img.logo.v-mid.w4.h4.pb4 {:src "/img/btf-logo.svg"}]]] ;; hide on ns
+      [:div.flex.flex-column.flex-row-l ;; column on small/medium, row on large
+       [:ul.list.ma0.pa0.btf-font
+        ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
+        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/previous-entries.html" :title "Posts in Beyond the Frame"} "Posts"]]
+        [:li.mr3.di.b [:a.link.dim.no-tufte-underline {:href "/programs.html" :title "Posts About the Clojure Programming Language"} "Clojure"]]
+        [:li.mr3-ns.mr2.di.b [:a.link.dim.no-tufte-underline {:href "/timeline.html" :title "Significant Dates in the History of Information"} "Timeline"]]]
+
+       [:ul.list.ma0.ph0.pt0.pb0-ns.pb4.btf-font
+        [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
+        [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
+        [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]
+
+      [:a.link.no-tufte-underline {:href "/"} ;; inherits row on ns
+       [:span.flex.items-center.ph4-ns
+        [:div.flex.flex-column-ns.flex-row {:itemprop "publisher"}
+         [:span.f1-ns.f2.tr.btf-font "Beyond"]
+         [:span.f1-ns.f2.tr.btf-font "&nbsp;the Frame"]]
+        [:img.logo.v-mid.pl4.w4-ns.h4-ns.dn.db-ns {:src "/img/btf-logo.svg"}]]]]]]])
 
 (defn body-template
   [global-meta page-meta content]

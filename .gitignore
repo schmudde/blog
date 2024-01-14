@@ -6,6 +6,9 @@
 /resources/public/css/tufte.min.css
 .nrepl-history
 .nrepl-port
+.lsp
+.env
+.clj-kondo
 /content/posts/drafts/*
 temp.html
 /font-awesome-v5-cheatsheet.pdf
