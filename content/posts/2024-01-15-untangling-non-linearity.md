@@ -8,10 +8,10 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2024-01-07
-date-modified: 2024-01-15
-date-published: 2024-01-15
+date-modified: 2024-01-23
+date-published: 2024-01-23
 in-language: en
-keywords: ii, generativeArt
+keywords: linkedLists, generativeArt
 tags:
  - sts
  - informatics
@@ -43,7 +43,7 @@ When algorithms are combined with data, something empirical can be said about th
 
 ## Linking Ideas
 
-The earliest forays into artificial intelligence by Allen Newell, Cliff Shaw, and Herbert A. Simon studied the way in which a machine could autonomously create inferences between statements. They created the Information Processing Language (IPL) in the mid-1950s tackle this problem. The language's flexibility laid the foundation to a collection of heuristics that became known as Logic Theorist - a software built to solve mathematical proofs.[^logic-theorist] Not only was this the first time a non-human ever successfully performed such a task, Logic Theorist even came up with novel solutions and refinements to existing proofs.[^logic-theorist-2]
+The earliest forays into artificial intelligence by Allen Newell, Cliff Shaw, and Herbert A. Simon studied the way in which a machine could autonomously create inferences between statements. They created the Information Processing Language (IPL) in the mid-1950s to tackle this problem. The language's flexibility laid the foundation to a collection of heuristics that became known as Logic Theorist - a software built to solve mathematical proofs.[^logic-theorist] Not only was this the first time a non-human ever successfully performed such a task, Logic Theorist even came up with novel solutions and refinements to existing proofs.[^logic-theorist-2]
 
 [^logic-theorist]: The JOHNNIAC computer, named after John von Neumann, ran Logic Theorist. The software successfully used heuristic methods to prove 38 of the first 52 theorems in *Principia Mathematica*, a significant feat considering the impracticality of trying every possible proof among trillions of options.
 
@@ -69,7 +69,7 @@ Linked information pervades the production and consumption of media today. Filmm
 
 [^cold-mountain]: !["The Coldest Mountain" film poster](/img/2024-01-15-untangling-non-linearity/cold-mountain.jpg)
 
-[^murch-filmography]: [Select Cuts by Walter Murch](https://web.archive.org/web/20090304025924/http://www.apple.com/pro/profiles/murch/index2.html): “The Rain People” (1969), sound montage and re-recording mixer &sect; “The Godfather” (1972), supervising sound editor &sect; “American Graffiti” (1973), sound montage and re-recording mixer &sect; “The Conversation” (1974), film and sound editing &sect; “Julia” (1977), film editor &sect; “Apocalypse Now” (1979), film editor, sound design and re-recording mixer; Oscar nomination for picture editing; Oscar for sound editing &sect; “The Unbearable Lightness of Being” (1987), supervising film editor &sect; “The English Patient” (1996), film editor and re-recording mixer; first editor ever awarded Oscars for film and sound editing in same picture &sect; “Touch of Evil” (1998), restoration film editing and sound &sect; “The Talented Mr. Ripley” (1999), editor and re-recording mixer &sect; “Apocalypse Now Redux” (2001), film editor and re-recording mixer
+[^murch-filmography]: [Select Cuts by Walter Murch](https://web.archive.org/web/20090304025924/http://www.apple.com/pro/profiles/murch/index2.html): “The Rain People” (1969), sound montage &sect; “The Godfather” (1972), supervising sound editor &sect; “American Graffiti” (1973), sound montage &sect; “The Conversation” (1974), film and sound editing &sect; “Julia” (1977), film editor &sect; “Apocalypse Now” (1979), film editor, sound design; Oscar nomination for picture editing; Oscar for sound editing &sect; “The Unbearable Lightness of Being” (1987), supervising film editor &sect; “The English Patient” (1996), film editor; first editor ever awarded Oscars for film and sound editing in same picture &sect; “Touch of Evil” (1998), restoration film editing and sound &sect; “The Talented Mr. Ripley” (1999), editor &sect; “Apocalypse Now Redux” (2001), film editor
 
 First, let's set a few baseline number to understand what we're talking about when a team edits a film like *Cold Mountain*. Murch estimates[^murch-interview-1] that they
 
@@ -93,7 +93,7 @@ This act of moving through film strips *sequentially*, frame-by-frame, relented 
 
 The significance of the digital technique is how trivial an edit can be made - dramatically lowering the cost of experimentation. Much like Logic Theorist a half-century earlier, Murch can easily try different routes to optimize a 5 hour long rough cut into a 2.5 hour long final cut.[^ai-psychology]
 
-[^ai-psychology]: In fact, Newell and Simon's work fueled hope that a new field of computational psychology would emerge. Logic Theorist and the their subsequent General Problem Solver allowed a person to observe the exact steps an autonomous being used to solve a problem. They hoped that these techniques would provide insights into how an artist made art, for example. As computer scientist Philip Agre observed in *Computation and Human Experience*, &ldquo;In one of the papers in that volume Newell and Simon pursued the input-output matching view of computational theorizing, comparing the operation of the General Problem Solver (GPS) program step by step against the reports of an experimental subject. This was an extraordinary advance in psychological method: computer programming had made it imaginable to explain singular events, not just statistical averages over large populations.&rdquo;
+[^ai-psychology]: In fact, Newell and Simon's work fueled hope that a new field of computational psychology would emerge. Logic Theorist and their subsequent General Problem Solver software allowed a person to observe the exact steps an autonomous being used to solve a problem. They hoped that these techniques would provide insights into how an artist made art, for example. As computer scientist Philip Agre observed in *Computation and Human Experience*, &ldquo;In one of the papers in that volume Newell and Simon pursued the input-output matching view of computational theorizing, comparing the operation of the General Problem Solver (GPS) program step by step against the reports of an experimental subject. This was an extraordinary advance in psychological method: computer programming had made it imaginable to explain singular events, not just statistical averages over large populations.&rdquo;
 
 But 113 hours of film is *a lot* of data. Especially 20 years ago when Murch cut *Cold Mountain* on far less powerful machines than we have today. The trick is that the computer didn't have to move footage around. It simply needed to link to files and add start and stop times as metadata. Here are the same three clips edited on a non-linear system:
 
@@ -131,7 +131,7 @@ Herein lies the drawback to all this instantaneous, linked data. It doesn't easi
 
 *Beyond the Frame* was always a place for me to link together disparate ideas. The blogging medium works well because it is faster to publish than a book or a magazine article. And yet I have to refine my ideas because they do, indeed, get published.
 
-I don't make major edits to any text after a piece goes out on the World Wide Web. That includes [the last time](/posts/archive/5334225085.html) I mentioned Murch in 2011 on *Beyond the Frame*. But I do update the style.[^old-header] Some readers may have noticed that the header design and logo[^license] has changed for 2024.
+My interests and priorities change over time. But the links between old ideas and new endeavors only deepen. The last time I mentioned Murch on *Beyond the Frame* was [over 10 years ago](/posts/archive/5334225085.html) in a completely different context. New perspectives provide fertile ground for new connections. That's why I'm always thinking about how to improve the structure of information in this blog and refine its presentation;[^old-header] some readers may have noticed that the header design and logo[^license] has changed for 2024.
 
 Last year I contracted Torinese designer [Alma Gianarro](https://almagianarro.com/) to come up with something that referenced the boxes and arrows of a linked list. When she showed me her initial concepts, I was surprised to see how much they reminded me of early computational art by Vera Molnár and Frieder Nake. So we took the theme and ran with it.
 

@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Milwaukee, WI, USA
 date-created: 2023-01-16
-date-modified: 2023-01-16
+date-modified: 2024-01-22
 date-published: 2023-01-23
 in-language: en
 keywords: tresor, neubauten, meditation, dresen, internet
@@ -21,7 +21,7 @@ A few highlights from 2022. As I wrote my journal in July 2022, "Paradise is a c
 
 I give preference for creative work released in the last year. But in exceptional cases I may mention something older.
 
-# Book
+# Books
 
 *[Internet For the People](https://www.versobooks.com/books/3927-internet-for-the-people)* by Ben Tarnoff (2022)[^internet-for-the-people]
 
@@ -35,7 +35,7 @@ Ben offers a vision for the future internet with a different set of ground rules
 
 The German film *[Rabiye Kurnaz Vs. George W. Bush](<https://deadline.com/2022/02/review-rabiye-kurnaz-vs-george-w-bush-berlin-film-festival-1234932367/>)* (cinema, Germany, 2022) by Andreas Dresen was the most adept portrayal of a significant real world event I've seen since *The Big Short*. The playful cultural stereotypes (“Germans are smart but slow…” “Do you know the saying ‘start it like a Turk but finish it like a German’?”) were incredibly popular with the audience at the [Freiluftkino Friedrichsain](https://www.freiluftkino-friedrichshain.de/) in Berlin.
 
-# Travel
+# Travels
 
 ![*Grand Teton National Park*, David Schmudde <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span>](/img/taste-of-2022/grand-teton-1.jpg)
 
@@ -43,9 +43,9 @@ The Grand Teton mountains jet out of the flat Wyoming terrain to pierce the stat
 
 The winter brings a lunar landscape to the Great Plains and crossing the mountains in the dead of night to reach Idaho was a driving experience. The rest of that trip in the United States included places like Provo, UT, Yellowstone, Missoula, MT, and Seattle WA. Other 2022 stateside visits included New York City, Chicago, St. Louis, and my hometown of Peoria, IL.
 
-I occasionally left my home in Turin, Italy to ramble around the country - Bardonecchia, Udine, Lake Como, Elba Island, Siena, Florence, Gran Paradiso, Bertinoro, Santa Margherita, and Parragi - and parts of Europe: Lisbon, PR, Lille, FR, Crete, GR, and my spiritual home on this continent, Berlin, DR.
+I occasionally left my home in Turin, Italy to ramble around the country - Bardonecchia, Udine, Lake Como, Elba Island, Siena, Florence, Gran Paradiso, Bertinoro, Santa Margherita, and Paraggi - and parts of Europe: Lisbon, PR, Lille, FR, Crete, GR, and my spiritual home on this continent, Berlin, DR.
 
-# Exhibition
+# Exhibitions
 
 The [Tresor 31](https://31.tresorberlin.com/) exhibition ended up being my personal highlight in 2022.[^tresor] I feel connected to the culture of electronic music in Berlin and was even a visitor to the original Tresor in 2002. The top floor of Tresor 31 was a striking recreation of this space. Speaking of 2002, I also visited the recently-reopened Neue Gallerie in Berlin for the first time in twenty years.
 
@@ -55,7 +55,7 @@ I also had the opportunity to view [13 original illustrations by Leonardo da Vin
 
 ![*Leonardo da Vinci's workbook*, David Schmudde <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span>](/img/taste-of-2022/davinci.jpg)
 
-# Essay
+# Essays
 
 Two essays related to my digital identity work at Yorba struck me.
 
@@ -103,7 +103,7 @@ Some of my favorite new music from this year.
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2696004660/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://synthicide.bandcamp.com/album/normal-bias">Normal Bias by Normal Bias</a></iframe>
 
-# Podcast
+# Podcasts
 
 *[Frances Fukuyama: Trajectory Without Teleology](https://www.dailyevolver.com/2022/05/frances-fukuyama-trajectory-without-teleology/)*
 
