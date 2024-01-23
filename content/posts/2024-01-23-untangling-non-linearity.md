@@ -11,12 +11,11 @@ date-created: 2024-01-07
 date-modified: 2024-01-23
 date-published: 2024-01-23
 in-language: en
-keywords: linkedLists, generativeArt
+keywords: LinkedLists, GenerativeArt, hypertext, editing, film
 tags:
  - sts
  - informatics
 ---
-
 
 <figure>
 ![*Achsenparalleler Polygonzug* Frieder Nake (1965)](/img/2024-01-23-untangling-non-linearity/Nake1965AchsenparallelerPolygonzug.jpg) Frieder Nake *[Achsenparalleler Polygonzug](https://dam.org/museum/artists_ui/artists/nake-frieder/compart-er56/)* (1965) photo credit: DAM projects GmbH.
@@ -99,7 +98,11 @@ But 113 hours of film is *a lot* of data. Especially 20 years ago when Murch cut
 
 ![](/img/2024-01-23-untangling-non-linearity/nle.svg)
 
-This diagram looks more complex than the traditional edits above. But all of this detail is automatically happening under the hood. So a film editor doesn't have to think about these things. But let's take a peek and get the gist of what's actually happening.
+This diagram looks more complex than the traditional edits above. But all this detail is simply structured data linked together - something that computers are extremely proficient at manipulating. A good user interface can turn this complexity into an elegant tool for people to use.
+
+While he was working on hypertext in the 1960s, Ted Nelson "came to see that the issues I was facing for electronic documents were not algorithms but data structure."[^nelson-2] So let's dive into the linked data structure and see what makes it so effective.
+
+[^nelson-2]: Byron Reese, “[50 Years Ago Today the Word ‘Hypertext’ Was Introduced](https://web.archive.org/web/20220810135947/https://old.gigaom.com/2015/08/24/hypertext-50/),” *GigaOm*, August 24, 2015.
 
 ## Linked Lists
 
@@ -125,18 +128,18 @@ It's simply less work.[^tradeoffs] Less work and more flexibility affords experi
 
 > When you actually had to make the cut physically on film, you naturally tended to think more about what you were about to do. [...] When I was in grade school they made us write our essays in ink for the same reason. Pencil was too easy to erase. The other “missing” advantage to linear editing was the natural integration of repeatedly scanning through rolls of film to get to a shot you wanted. Inevitably, before you ever got there, you found something that was better than what you had in mind. With random access, you immediately get what you want. Which may not be what you need.
 
-Herein lies the drawback to all this instantaneous, linked data. It doesn't easily provide information. And depending on the editor who presents it to us, we may get what we want, but not what we need.
+Herein lies the drawback to all this instantaneous, linked data. It doesn't easily provide context for our information. Especially if the arrow only points one way.
 
 ## Going Beyond the Frame
 
 *Beyond the Frame* was always a place for me to link together disparate ideas. The blogging medium works well because it is faster to publish than a book or a magazine article. And yet I have to refine my ideas because they do, indeed, get published.
 
-My interests and priorities change over time. But the links between old ideas and new endeavors only deepen. The last time I mentioned Murch on *Beyond the Frame* was [over 10 years ago](/posts/archive/5334225085.html) in a completely different context. New perspectives provide fertile ground for new connections. That's why I'm always thinking about how to improve the structure of information in this blog and refine its presentation;[^old-header] some readers may have noticed that the header design and logo[^license] has changed for 2024.
+My interests and priorities change over time. But the links between old ideas and new endeavors only deepen. The last time I mentioned Murch on *Beyond the Frame* was [over 10 years ago](/posts/archive/5334225085.html) in a completely different context. New perspectives provide fertile ground for new connections. That's why I'm always thinking about how to improve the structure of information in this blog and refine its presentation.[^old-header] For instance, some readers may have noticed that the header design and logo[^license] has changed for 2024.
+
+[^old-header]:![Composition, time dilation, and an opportunity for the sublime and the serendipitous](/img/2024-01-23-untangling-non-linearity/old-btf-header.png) At one point, Beyond the Frame focused squarely on [new media](https://artfilemagazine.com/what-is-new-media-art/); computation was backgrounded. Back then the slogan was "composition, time dilation, and an opportunity for the sublime and the serendipitous." But now I'd say that computation is the central theme and culture is the connective tissue.
 
 Last year I contracted Torinese designer [Alma Gianarro](https://almagianarro.com/) to come up with something that referenced the boxes and arrows of a linked list. When she showed me her initial concepts, I was surprised to see how much they reminded me of early computational art by Vera Molnár and Frieder Nake. So we took the theme and ran with it.
 
-[^old-header]:![Composition, time dilation, and an opportunity for the sublime and the serendipitous](/img/2024-01-23-untangling-non-linearity/old-btf-header.png) At one point, Beyond the Frame focused squarely on [new media](https://artfilemagazine.com/what-is-new-media-art/); computation was backgrounded. Over time computation became the central theme and culture became the connective tissue. The slogan was "composition, time dilation, and an opportunity for the sublime and the serendipitous."
-
 [^license]: ![Logo For Beyond the Frame](/img/btf-logo.svg)The new Beyond the Frame logo, a work-for-hire by [Alma Gianarro](https://almagianarro.com/).<span property="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://schmud.de/img/btf-logo.svg">The Beyond the Frame Logo</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://schmud.de">Alma Gianarro</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="no-tufte-underline">CC BY-SA 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;<i class="fab fa-creative-commons-sa"></i></a></span>
 
-The connection to early digital art was unintentional. As mentioned earlier, this type of art relies heavily on generative processes that don't immediately reflect the themes I wanted to embody in the logo. But then I realized that Alma's design surfaced the link between [culture](/tags/sts.html) and [technology](/tags/informatics.html) that runs through my life and this blog. From computation to composition and fractals to film - all disciplines intersect at some point.
+The connection to early digital art was unintentional. As mentioned earlier, this type of art relies heavily on algorithmic processes that don't immediately reflect the themes I wanted to embody in the logo. But then I realized that Alma's design surfaced the link between [culture](/tags/sts.html) and [technology](/tags/informatics.html) that runs through my life and this blog. From computation to composition and from fractals to film - all disciplines intersect at some point.
