@@ -65,7 +65,7 @@
   :geo nil
   :date #time/year "2003"
  :desc "<em>Cold Mountain</em> was not the first digitally edited feature film. But the $80 million picture was the first of its size to be cut on Apple's Final Cut Pro and off-the-shelf Power Mac G4s. It was subsequently nominated for seven academy awards including Best Film Editing."
-  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link "/posts/2024-01-23-untangling-non-linearity.html"
   :link-name "Untangling Non-Linearity"}
  {:title "The Dot-Com Bubble Peaks"
   :geo "New York City, NY, US"
@@ -247,9 +247,9 @@
   :date #time/date "1965-08-24"
   :desc "The foundation of today's World Wide Web was introduced to the public in &ldquo;Complex information processing: a file structure for the complex, the changing and the indeterminate.&rdquo; Nelson explains, &ldquo;Let me introduce the word &lsquo;hypertext&rsquo; to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper.&rdquo; He would continue to refine the concept for several decades."
   :footer "T. H. Nelson. &ldquo;<a href='https://doi.org/10.1145/800197.806036'>Complex information processing: a file structure for the complex, the changing and the indeterminate.</a>&rdquo; <em>In Proceedings of the 1965 20th national conference (ACM '65)</em>. (Association for Computing Machinery, New York, NY, USA, 1965), 84–100."
-  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link "/posts/2024-01-23-untangling-non-linearity.html"
   :link-name "Untangling Non-Linearity"
-  :image "/img/2024-01-15-untangling-non-linearity/hypertext-linked-lists.png"}
+  :image "/img/2024-01-23-untangling-non-linearity/hypertext-linked-lists.png"}
  {:title "The First Message Is Sent Using the Moscow–Washington Hotline"
   :geo "Washington D.C., US"
   :date #time/date "1963-08-30"
@@ -269,7 +269,7 @@
   :geo "Hanover, New Hampshire, US"
   :date #time/year "1956"
   :desc "Cliff Shaw, along with Allen Newell and Herbert Simon, developed the Information Processing Language (IPL) to implement Logic Theorist, as existing languages lacked the capabilities for solving abstract problems like the mathematical proofs in Whitehead and Russell's <em>Principia Mathematica</em>. A major innovation in IPL was the linked list, a dynamic memory allocation technique crucial for AI and a foundational element in John McCarthy's LISt Processing language (LISP)."
-  :link "/posts/2024-01-15-untangling-non-linearity.html"
+  :link "/posts/2024-01-23-untangling-non-linearity.html"
   :link-name "Untangling Non-Linearity"
   :image nil}
  {:title "George Orwell Publishes &ldquo;Nineteen Eighty-Four&rdquo;"

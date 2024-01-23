@@ -1,6 +1,3 @@
-;; DO NOT EDIT
-;; This file is tangled from README.org.
-
 (set-env!
  :source-paths #{"src" "content"}
  :resource-paths #{"resources"}
@@ -27,6 +24,10 @@
   (if original-path
     (.startsWith original-path "posts/")
     false))
+
+(defn archive? [{:keys [original-path] :as meta}]
+  (when original-path
+    (clojure.string/includes? original-path "archive")))
 
 (defn book?
   "In: {:original-path \"books\"}"
@@ -89,7 +90,7 @@
         (perun/collection :renderer 'site.previous-entries/render
                           :page "previous-entries.html"
                           :filterer (apply every-pred [(some-fn book? post? program?) published?]))
-        (perun/rss :filterer (apply every-pred [post? published?]))
+        (perun/rss :filterer (apply every-pred [post? published? #((comp not archive?) %)]))
         (perun/rss :site-title "Beyond the Frame: Clojure" :description "Essays about the Clojure programming language"
                    :filterer (apply every-pred [tagged-clojure? published?]) :filename "btf-clojure-feed.rss")
         (target)))
@@ -115,17 +116,17 @@
   (filter post? path-data)
   (filter published? pub-path-data)
   (filterv (and post? published?) pub-path-data)
-  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
-  ;    {:original-path nil, :date-published "date"}
-  ;    {:original-path "po", :date-published "may 14th"}
-  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+
+
+
+
   (filter (or post? published?) pub-path-data)
-  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
-  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+
+
 
   (filter (apply every-pred [post? published?]) pub-path-data)
-  ; > ({:original-path "posts/fefe", :date-published "avril 14th"}
-  ;    {:original-path "posts/zzz", :date-published "may 14th"})
+
+
 
   (map #(and (post? %) (published? %)) pub-path-data) ; (true false false false true)
   (map #(or (post? %) (published? %)) pub-path-data) ; (true true true false true)
