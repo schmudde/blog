@@ -1,6 +1,6 @@
 ---
-title: Beyond the Frame Feeds
-description: The various ways to subscribe to Beyond the Frame
+title: Subscribe to Beyond the Frame
+description: The various ways to stay up to date with Beyond the Frame
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -8,22 +8,42 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Peoria, IL
 date-created: 2022-01-02
-date-modified: 2022-05-08
+date-modified: 2024-02-17
 date-published: 2022-01-02
 in-language: en
 canonical-url: http://schmud.de
 ---
 
-Thanks for reading *Beyond the Frame*. There are several ways to stay abreast of new posts:
+
+<figure>
+![](/img/feeds/v-mail.jpg)[^v-mail]<br /><span property="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a href="https://creativecommons.org/public-domain/" target="_blank" rel="license noopener noreferrer" class="no-tufte-underline"><i class="fab fa-creative-commons-pd-alt"></i></a></span>
+</figure>
+
+[^v-mail]: {-} *[V-Mail](https://www.loc.gov/pictures/item/2017696446/)* (Feb 1943): The image depicts "V-mail" which is being "inspected for flaws on an enlarging 'reader' at the Pentagon building, Washington, D.C. V-mail is available to and from the armed forces stationed outside the United States. It is only 1/65th the weight of ordinary mail and saves ninety-eight percent of the cargo space required for ordinary letters. 1,600 letters can be placed on a roll of film little larger than a pack of cigarettes."
+
+## <span class="fas fa-envelope"></span>&nbsp;eMail
+
+<p><script async data-uid="6bb8abca74" src="https://schmudde.ck.page/6bb8abca74/index.js"></script></p>
+
+The newsletter is low traffic - about 4-5 eMails a year.
+
+---
+
+## <span class="fas fa-globe"></span>&nbsp;Web
+
+Or follow *Beyond the Frame* around the web:
 
 - <i class="fas fa-rss"></i> <a href="/feed.rss">RSS</a> is my favorite. There are two feeds:
     - All <a href="/feed.rss">essays</a> on Beyond the Frame
     - All <a href="/btf-clojure-feed.rss">Clojure posts</a> on Beyond the Frame
 - <i class="fab fa-mastodon"></i> [Mastodon](https://mastodon.social/@schmudde)
-- <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/dschmudde)
-- <i class="fas fa-envelope"></i> *Beyond the Frame* is also available as a newsletter. Sign up using this form:
+- <i class="fab fa-twitter"></i> [Xwitter](https://x.com/dschmudde)
 
-<script async data-uid="6bb8abca74" src="https://schmudde.ck.page/6bb8abca74/index.js"></script>
+---
+
+![**Lynne Cohen** *Computer School, Pittsburgh* (1980)](/img/feeds/computer-lab.png)
+
+## <span class="fa fa-pen"></span>&nbsp;Greatest Hits
 
 If you're not quite sure what you're signing up for, here are the top five most-read posts on *Beyond the Frame*:
 

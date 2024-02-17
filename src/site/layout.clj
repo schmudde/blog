@@ -49,8 +49,14 @@
    ;; To use Aperture as your Microsub endpoint. Then use Monocle.p3k.io as a reader.
    [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
 
+   ;; Convert Kit
    [:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
-   [:script {:src "/js/twitter-website-tag-code-snippet.js"}]
+   ;; Twitter
+   #_[:script {:src "/js/twitter-website-tag-code-snippet.js"}]
+
+   ;; Mexa Pixel Code
+   [:script "!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod?  n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1448753142394531'); fbq('track', 'PageView');"]
+   [:noscript [:img {:height 1 :width 1 :style "display:none" :src "https://www.facebook.com/tr?id=1448753142394531&ev=PageView&noscript=1"}]]
 
    ])
 
@@ -59,14 +65,12 @@
   [:div {:class "h-card"}
    [:article.mw5.center.bg-white.br3.pa3.pa4-ns.mv3.ba.b--black-10
     [:div.tc
-     [:img.br-100.h4.w4.dib.ba.b--black-05.pa2 {:class "u-photo" :title "avatar" :src "https://s.gravatar.com/avatar/4c272d7a0e4b25c51
-26a93372d8403b6?s=80"}]
+     [:img.br-100.h4.w4.dib.ba.b--black-05.pa2 {:class "u-photo" :title "avatar" :src "https://s.gravatar.com/avatar/4c272d7a0e4b25c5126a93372d8403b6?s=80"}]
      [:h1.f3.mb2 [:span {:class "p-name"} "David Schmudde"]]
      [:h2.f5.fw4.gray.mt0 [:span {:class "p-org"} "Beyond the Frame"]]
      [:div
-      [:span {:class "p-locality"} "Berlin, "]
-      #_[:span {:class "p-region"} "Berlin"]
-      [:span {:class "p-country-name" :title "Germany"} "DE"]]
+      [:span {:class "p-locality"} "Turin, "]
+      [:span {:class "p-country-name" :title "Italy"} "IT"]]
      [:div {:class "p-tel"} "+1 (917) 994-1620"]
      ]]
    ;; `no-tufte-underline`: https://github.com/edwardtufte/tufte-css/issues/137
@@ -96,7 +100,7 @@
        [:ul.list.ma0.ph0.pt0.pb0-ns.pb4.btf-font
         [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/about.html" :title "About"} "About"]]
         [:li.di.mr3.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/now.html" :title "Now Page"} "Now"]]
-        [:li.di.mr2.btf-font.b [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]
+        [:li.di.mr2.btf-font.fw9 [:a.link.dim.no-tufte-underline {:href "/pages/feeds.html" :title "Subscribe"} "Subscribe"]]]]
 
       [:a.link.no-tufte-underline {:href "/"} ;; inherits row on ns
        [:span.flex.items-center.ph4-ns
