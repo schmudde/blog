@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-26
-date-modified: 2020-06-08
+date-modified: 2024-04-10
 date-published: 2020-04-27
 in-language: en
 keywords: classical, ambient, music, notation, encoding, time, fidelity
@@ -23,7 +23,7 @@ tags:
 [^church]: {-} Suzanne Ciani in Quadraphonic Sound at Ambient Church, August 03, 2018
 </figure>
 
-A favorite blog of mine, *On An Overgrown Path* by Bob Shingleton, published an article entitled "[Classical music must break through the electronic glass ceiling](https://www.overgrownpath.com/2020/03/classical-music-must-break-through.html)." He cites an [Ambient Church](https://ambient.church/) show I attended with good friend [ryan_project](https://twitter.com/ryan_project).[^ciani] The Suzanne Ciani peformance[^quadraphonic] blurred the line between electronic and classical music and featured striking projection-mapped visuals (pictured above).
+A favorite blog of mine, *On An Overgrown Path* by Bob Shingleton, published an article entitled "[Classical music must break through the electronic glass ceiling](https://www.overgrownpath.com/2020/03/classical-music-must-break-through.html)." He cites an [Ambient Church](https://ambient.church/) show I attended with good friend [ryan_project](https://github.com/ryandeshon).[^ciani] The Suzanne Ciani peformance[^quadraphonic] blurred the line between electronic and classical music and featured striking projection-mapped visuals (pictured above).
 
 [^ciani]: August 03, 2018: [Suzanne Ciani](https://www.sevwave.com/bio) in Quadraphonic Sound, Sarah Davachi
 [^quadraphonic]: Ciani performed in support of her album [*LIVE Quadraphonic*](http://www.cykik.com/quad/ciani). It was distributed with a small device that decoded the record's quadraphonic image. The release marks Ciani's first solo Buchla performance in 40 years; it was performed using a Buchla 200e. The next year I happened to bump into an engineer who worked on the decoder at a Brooklyn bar named *Mood Ring*. It's a small world. ![LIVE Quadraphonic album cover](/img/2020-04-26-ambient-church/live-quadraphonic.jpg)
@@ -55,3 +55,11 @@ Compare Pointon's attempt to generalize changes in an electronic sound (above) t
 
 [^bwv-105]: {-} Bach's autograph of an aria in the cantata *Herr, gehe nicht ins Gericht mit deinem Knecht*, BWV 105 via [Wikipedia](https://en.wikipedia.org/wiki/File:Bwv105-wie-zittern.png)
 </figure>
+
+---
+
+*Update March, 10, 2024*: Bob Shingleton of *On An Overgrown Path* recently responded to this post in "[There is no right reaction to great music](https://www.overgrownpath.com/2024/03/there-is-no-right-reaction-to-great.html)."
+
+Shingleton was prompted by the oversight of Matangi Quartet's 2022 album *[Ruins and Remains](https://ecmrecords.com/product/ruins-and-remains-wolfert-brederode-matangi-quartet-joost-lijbaart/)* in the classical music press; he suggests that the album's "guardedly hopeful" tone may have caused the omission. Furthermore, *Ruins and Remains*' blend of jazz and contemporary classical is a line normally not crossed in the world of symphony halls and churches. The same is true for any blending of electronics and classical I mentioned in *Notes From the Ambient Church*. Such conventions stifle what is acceptable in the classical music world and might explain why the genre [struggles to engage a new young audience](https://www.overgrownpath.com/2019/07/classical-music-must-beware-of-new.html).
+
+But I also suggest that this inflexibility might be in the DNA of contemporary classical music - whose medium isn't the concert hall, it's notes on a page. Written music is how the genre has been transmitted through the centuries and a hundred years of recorded music isn't going to move these deeply-rooted foundations. Yet more evidence that Marshall McLuhan was right, the medium is the message.
