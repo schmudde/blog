@@ -198,14 +198,13 @@
   (let [project-data (vals projects)]
     (map #(edn->hiccup (:title %) (:synopsis %)) project-data)))
 
-
 (defn employment-facutly->hiccup []
   (let [{:keys [employee faculty]} employment-faculty]
     [:div
-     [:h2 "Academic Work History"]
-     (make-table [:employment faculty])
-     [:h2 "Further Employment"]
-     (make-table [:employment employee])]))
+     [:h2 "Experience"]
+     (make-table [:employment employee])
+     [:h2 "Academic Experience"]
+     (make-table [:employment faculty])]))
 
 (defn recognition->hiccup []
   (let [{:keys [publications exhibitions honors-grants-awards affiliations education training in-the-media]} recognition]
