@@ -52,9 +52,6 @@
    ;; Convert Kit "Grove Form"
    #_[:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
 
-   ;; Matomo
-   [:script
-    "var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://beyond-the-frame.matomo.cloud/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='https://cdn.matomo.cloud/beyond-the-frame.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);\n  })();"]
 
    ;; Twitter
    #_[:script {:src "/js/twitter-website-tag-code-snippet.js"}]
@@ -62,6 +59,21 @@
    ;; Meta Pixel Code
    [:script "!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod?  n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1448753142394531'); fbq('track', 'PageView');"]
    [:noscript [:img {:height 1 :width 1 :style "display:none" :src "https://www.facebook.com/tr?id=1448753142394531&ev=PageView&noscript=1"}]]
+
+   ;; Matomo
+   [:script
+      "var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u='https://beyond-the-frame.matomo.cloud/';
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/beyond-the-frame.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();"
+
+    ]
 
    ])
 
