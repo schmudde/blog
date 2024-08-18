@@ -280,14 +280,14 @@
   :link "/books/1984.html"
   :link-name "&ldquo;Nineteen Eighty-Four&rdquo;"
   :image nil}
- {:title "Bombing of the Amsterdam Population Registery"
+ {:title "Bombing of the Amsterdam Population Registry"
   :geo "Amsterdam, Netherlands"
   :date #time/date "1943-03-27"
-  :desc "Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and Dr. Frieda Belinfante, orchestrated a bombing of the Amsterdam Population Registry on Saturday, March 27, 1943. Their goal was to inhibit the Nazi's ability to track and deplort Jews and other targets of terror. The operation managed to destroy over 15% of the records but many of the particpants were later captured and executed by the Nazis."
-  :footer "From &ldquo;The Resistance attacks the population register of Amsterdam&rdquot; https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/"
-  :link "/posts/2023-05-08-data-is-a-bad-idea.md"
+  :desc "Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and Dr. Frieda Belinfante, orchestrated a bombing of the Amsterdam Population Registry. Their goal was to inhibit the Nazi's ability to track and deport Jews and other targets of terror. The operation managed to destroy over 15% of the records but many of the participants were later captured and executed by the Nazis."
+  :footer "Anne Frank House. &ldquo;<a href='https://www.annefrank.org/en/timeline/128/the-resistance-attacks-the-population-register-of-amsterdam/'>The Resistance attacks the population register of Amsterdam</a>.&rdquo; Accessed August 18, 2024."
+  :link "/posts/2024-08-18-data-is-a-bad-idea.html"
   :link-name "What If Data Is a Bad Idea?"
-  :image "/img/2023-05-08-data-is-a-bad-idea/amsterdam-registry.jpg"}
+  :image nil}  ;;"/img/2024-08-18-data-is-a-bad-idea/amsterdam-registry.jpg"
  {:title "Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;"
   :geo nil
   :date #time/year "1723"

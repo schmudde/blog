@@ -30,7 +30,13 @@
    :image "nycdh.png"
    }]
  :conference-talks
- [{:org "Internet Identity Workshop (Spring)"
+ [{:org "xCoAx"
+   :geo "Treviso, Italy"
+   :date #time/date "2024-07-12"
+   :title "Between Chaos and Order"
+   :synopsis nil
+   }
+  {:org "Internet Identity Workshop (Spring)"
    :geo "Mountain View, CA, US"
    :date #time/date "2021-10-13"
    :title "Strategies For Bridging to Next-Generation Identity Systems"
@@ -93,7 +99,7 @@
    :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
    :subtitle "Don't get bit by misaligned state and output, keep your notebooks running with these functional tips!"
    :synopsis "This talk will explain functional programming using practical language and provide historical context. Some initial concepts will be demonstrated in Clojure or Julia, but ultimately translated to Python. Further consideration will be given to the impact of immutability, a core concept in the functional style, on creating reproducible notebooks."
-   :link "https://de.pycon.org/program/pyconde-f3tczn-dr-schmood-s-notebook-of-python-calisthenics-and-orthodontia-david-schmudde/"
+   :link "https://www.youtube.com/watch?v=BAsL_cbkQDc"
    :link-name "PyConDE & PyData Profile"
    :video "https://www.youtube.com/watch?v=BAsL_cbkQDc"
    }

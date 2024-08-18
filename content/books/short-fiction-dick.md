@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Milan, Italy
 date-created: 2023-11-18
 date-modified: 2023-11-18
-date-published:
+date-published: 2024-08-18
 book-author: Philip K. Dick
 book-published: 2015-06-10
 book-publisher: Standard Ebooks
