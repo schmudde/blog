@@ -15,17 +15,27 @@ canonical-url: http://schmud.de
 uuid:
 ---
 
-## [School of Machines, Making & Make-Believe](https://www.schoolofma.org/programs/p/10-years-yay) at Kunstquartier Bethanien in Berlin, Germany
+## [School of Machines, Making & Make-Believe](https://www.schoolofma.org/programs/p/10-years-yay) in Berlin, Germany
 
-[^now] The exhibition featured Gallery 404's latest extension, *The net.art Restoration Project*, https://www.netart.today/pages/restoration-project.html
+[^now] The exhibition at Kunstquartier Bethanien featured Gallery 404's latest extension, *The net.art Restoration Project of Gallery 404*.
+
+*The net.art Restoration Project of Gallery 404* presents a vision of what semi-automated cultural preservation might look like. The visitor helps train five screen net.art experience guides visitors through the restoration of a digital artwork from the 1990s. It outsources the difficult labor of restoration to machines to provide dubious results. Machines that moderate our experience of the present today will inevitably mediate our relationship to the past and profoundly impact our understanding of the future. Try it [here](https://www.netart.today/pages/restoration-project.html).
+
+The exhibition runs throughout August.
 
 [^now]: {-} This [*now page*](https://nownownow.com/p/j9Ul) shares what's occupying my time at the moment. If you have your own website, you might want to [create one as well](https://nownownow.com/about). Learn more [about me](/pages/about.html) or read my [CV](/cv.html).
 
+![*The net.art Restoration Project*](/img/now/net-art-restoration-schoolofma.jpg)
+
 ## [xCoAx 2024](https://2024.xcoax.org/) at Fabrica in Treviso, Italy
 
-I presented *Between Chaos and Order* at the 12th Conference on Computation, Communication, Aesthetics & X.
+I presented *Between Chaos and Order* at the **12th Conference on Computation, Communication, Aesthetics & X** in July.[^xcoax] The abstract:
 
-Abstract: "Between Chaos and Order" delves into the relationship between cryptography and computation, highlighting the place between input and output - the space of computation. Here the dual meaning of “code” is on full display. As *source code* facilitating clarity and order and as a *secret code* meant to feign chaos. In both cases the resulting artifacts have a certain aesthetic sensibility that is only clear through their specific cultural context. This is demonstrated through an examination of three computational artifacts: Edgar Allan Poe’s "The Gold Bug," Alan Turing’s notebook on cracking the Enigma machine, and the Electronic Frontier Foundation’s publication "Cracking DES." Each object is appraised through the lens of Information Aesthetics as a method of piercing through the technical ingenuity to examine each as an act of human expression. Along the way, this essay asserts the value of certain practices when considering computation as a cultural resource worthy of examination and preservation. July 12, 2024
+[^xcoax]: ![xCoAx logo](/img/now/x24xFt.png) xCoAx 2024
+
+> "Between Chaos and Order" delves into the relationship between cryptography and computation, highlighting the place between input and output - the space of computation. Here the dual meaning of “code” is on full display. As *source code* facilitating clarity and order and as a *secret code* meant to feign chaos. In both cases the resulting artifacts have a certain aesthetic sensibility that is only clear through their specific cultural context. This is demonstrated through an examination of three computational artifacts: Edgar Allan Poe’s "The Gold Bug," Alan Turing’s notebook on cracking the Enigma machine, and the Electronic Frontier Foundation’s publication "Cracking DES." Each object is appraised through the lens of Information Aesthetics as a method of piercing through the technical ingenuity to examine each as an act of human expression. Along the way, this essay asserts the value of certain practices when considering computation as a cultural resource worthy of examination and preservation.
+
+![Presenting at xCoAx](/img/now/xcoax-24.jpg)
 
 ## Yorba
 
@@ -38,6 +48,8 @@ We're looking to work with people interested in Self-Sovereign Identity, Clojure
 There have been several updates to *Beyond the Frame*. First off, you'll notice the new logo[^license] in the upper right-hand corner. That logo was introduced in a new essay called "[Untangling Non-Linearity](/posts/2024-01-23-untangling-non-linearity.html)." This essay considers the direct and indirect impact of the humble linked list on culture and computation.[^linked-list]
 
 [^linked-list]: For those of you new to the concept, the linked list is a way to associate data in computer memory. The incredible flexibility of this simple concept is part of a zeitgeist that spans everything from films edited by Walter Murch, the dawn of Artificial Intelligence, and even the World Wide Web's hyperlink.
+
+The newest entries are "[What If Data Is a Bad Idea?](/posts/2024-08-18-data-is-a-bad-idea.html)" and a review of a collection of [Philip K. Dick short stories](/books/short-fiction-dick.html).
 
 [^license]: ![Logo For Beyond the Frame](/img/btf-logo.svg) The new Beyond the Frame logo, a work-for-hire by [Alma Gianarro](<https://almagianarro.com>). <small><span property="license" xmlns:cc="<http://creativecommons.org/ns>#" xmlns:dct="<http://purl.org/dc/terms/>"><a property="dct:title" rel="cc:attributionURL" href="![img](https://schmud.de/img/btf-logo.svg)">The Beyond the Frame Logo</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="<https://schmud.de>">Alma Gianarro</a> is licensed under <a href="<http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1>" target="_blank" rel="license noopener noreferrer" class="no-tufte-underline">CC BY-SA 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;<i class="fab fa-creative-commons-sa"></i></a></span></small>
 

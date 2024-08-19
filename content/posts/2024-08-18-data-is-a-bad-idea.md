@@ -21,8 +21,8 @@ tags:
 
 
 <figure class="fullwidth">
-![](/img/2024-08-18-data-is-a-bad-idea/floppy-header-2.png)<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.5/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-zero"></i></a> [Software, Erweiterte Diagnose](https://www.si.edu/object/software-erweiterte-diagnose:nmah_1281092), [Software, IBM DOS Version 1.10](https://www.si.edu/object/software-ibm-dos-version-110:nmah_1281122)
-</span>
+![](/img/2024-08-18-data-is-a-bad-idea/floppy-header-2.png)<small><span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.5/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-zero"></i></a> [Software, Erweiterte Diagnose](https://www.si.edu/object/software-erweiterte-diagnose:nmah_1281092), [Software, IBM DOS Version 1.10](https://www.si.edu/object/software-ibm-dos-version-110:nmah_1281122)
+</span></small>
 </figure>
 
 <div class="epigraph">
@@ -35,7 +35,7 @@ tags:
 
 Several years ago, esteemed computer scientist Alan Kay participated in an Ask Me Anything on Hacker News. Kay always sparks interesting conversation and I was happy to see Rich Hickey, a practitioner held in equally high regard, join the thread. The dialogue was kicked off by Kay's provocative musing on the legitimacy of data; not just *some* data, but the *idea* of data itself.[^kay] It was a bit like a physicist asking, "What if gravity is a bad idea?"
 
-[^kay]: Kay has made a career out of challenging conventional wisdom. Perhaps this is best embodied by one of [his most famous quotes](https://www.folklore.org/StoryView.py?project=Macintosh&story=Creative_Think.txt), "A shift in perspective is worth 80 IQ points." ![Alan Kay by Jean Baptiste](/img/2024-08-18-data-is-a-bad-idea/kay.jpg) <span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>Alan Kay by Jean Baptiste</span>
+[^kay]: Kay has made a career out of challenging conventional wisdom. Perhaps this is best embodied by one of [his most famous quotes](https://www.folklore.org/StoryView.py?project=Macintosh&story=Creative_Think.txt), "A shift in perspective is worth 80 IQ points." ![Alan Kay by Jean Baptiste](/img/2024-08-18-data-is-a-bad-idea/kay.jpg)<small><span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>Alan Kay by Jean Baptiste</span></small>
 
 Kay and Hickey largely talked past each other and never really got to engage the question. But I think it's one worth exploring. Not only in the technical dimensions of data, but also in the inescapable political dimensions of its automation.
 
@@ -124,7 +124,7 @@ For example, we have "ownership" over the organs in our body, but we thankfully 
 
 Permissions are a time-tested way to express property rights. In computing, they have been around as long as multi-user operating systems. Cloud filesystems like Dropbox and Google Docs have made these coarse permissions an everyday affair.[^google-sheets]
 
-[^google-sheets]: The ubiquitous Google Sheets permissions error: ![A Google Drive permission error](/img/2024-08-18-data-is-a-bad-idea/google-sheets.png)<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span>
+[^google-sheets]: The ubiquitous Google Sheets permissions error: ![A Google Drive permission error](/img/2024-08-18-data-is-a-bad-idea/google-sheets.png)<small><span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span></small>
 
 A website's non-negotiable Terms of Service is also a set of permissions. They dictate what a website is allowed to do with a person's data and they also dictate what a person is allowed to do with the data once it's in the system. This power imbalance stems from the fact that 1. the website holds both the means of computation and the data to compute and 2. a person using a website often has neither.
 

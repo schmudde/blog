@@ -52,7 +52,7 @@ Dick doesn't show much cognitive empathy or intellectual understanding of any en
 
 [^variable-man.jpg]: ![*Variable Man* cover](/img/book-covers/variable-man.jpg) <br /> *[The Variable Man and Other Stories](https://www.isfdb.org/cgi-bin/pl.cgi?49319)* (1957)
 
-The stories lose track of their humanity again and again. It's even more of a shame because Dick is clearly a stronger writer than a contemporary like Robert Heinlein.[^heinlein] The agony of death by immolation is written in dramatic prose:
+The stories lose track of their humanity again and again. It's even more of a shame because Dick is clearly a stronger writer than a contemporary like [Robert Heinlein](double-star.html).[^heinlein] The agony of death by immolation is written in dramatic prose:
 
 [^heinlein]: I reviewed his book *[Double Star](double-star.html)* last year. "No insights into the unique nature of interplanetary politics. No speculation on the future of slide rules and solar system-spanning mainframes. No digging into the motivations or shortcomings of Rog or Dak."
 
