@@ -48,7 +48,7 @@ Many of the example API calls in the book are not very helpful. And some are now
 
 But the author's expertise is never in question. Specific insights remain valuable. For example:
 
-> When implementing OAuth 2.0, calling any APIs, or using a library, you should verify that it properly handles SSL/TLS certificate chain validation by doing the following things: Checking that the hostname on the certificate returned by the server matches the hostname in the URL being accessed verifying each certificate in the chain properly chains up to a valid and trusted certificate authority (CA) Ensuring that the certificate authority bundle on your server is secure and not able to be modified by potential
+> When implementing OAuth 2.0, calling any APIs, or using a library, you should verify that it properly handles SSL/TLS certificate chain validation by doing the following things: Checking that the hostname on the certificate returned by the server matches the hostname in the URL being accessed; Verifying each certificate in the chain properly chains up to a valid and trusted certificate authority (CA); Ensuring that the certificate authority bundle on your server is secure and not able to be modified by potential attackers.
 
 and
 
@@ -56,7 +56,7 @@ and
 
 Ryan Boyd deftly explains the reason the OAuth spec calls for both long-lived access tokens and short-lived refresh tokens. An access token is sent to an API along with a request for some information. That API service might have access to several different scopes of information - a person's calendar, their eMail inbox, etc... - but use only one access token. If the API service is compromised, the "blast radius" of this access token can encompass quite a bit of information.
 
-However, the access token expires relatively quickly and will become worthless when it does. The refresh token provides a way for the service to provide continuous access to the API; it permits the service to issue a new access token. If the attacker only has one-time access, the refresh token won't be useful in a different context.
+However, the access token expires relatively quickly and will become worthless when it does. The refresh token provides a way for the service to provide continuous access to the API; it permits the service to issue a new access token. If the attacker only has one-time access, the access token won't be useful in a different context.
 
 There is another benefit to these short-lived access tokens. Boyd points out that many implementations forgo checking OAuth every time an access token is used to grab a resource.[^oauth-tip] It is faster to cache an access token in the system and verify it against a encrypted access token string sent in an HTTP request. If the system administrators are not careful, this can lead to inconsistencies in the system if a user revokes an access token using OAuth. Programmers should be careful to guard against this, but if a mistake does happen, the access token will expire and another one will not be issued.
 
