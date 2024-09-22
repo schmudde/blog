@@ -35,9 +35,9 @@ Advertising companies like Facebook, Twitter, and Google are powerful enough to 
 
 # The Truth
 
-Yesterday's insurrection grabbed headlines worldwide, but the people were already in the building before the mob arrived. Members of Congress and the President of the United States explicitly sympathize with the insurrectionists.[^disinformation] The shared convictions run so deep that some lawmakers continued to recklessly promote [misinformation](https://schmud.de/posts/2020-05-29-disinformation-strategies.html) after an unprecedented day of violence.
+Yesterday's insurrection grabbed headlines worldwide, but the people were already in the building before the mob arrived. Members of Congress and the President of the United States explicitly sympathize with the insurrectionists.[^disinformation] The shared convictions run so deep that some lawmakers continued to recklessly promote [misinformation](/posts/2020-05-29-disinformation-strategies.html) after an unprecedented day of violence.
 
-[^disinformation]: The President mostly peddles *malinformation* to his supporters while many in Congress support his efforts by spreading *misinformation*. The differences are subtle but important. I outline them in [*Disinformation Strategies and Tactics*](https://schmud.de/posts/2020-05-29-disinformation-strategies.html).
+[^disinformation]: The President mostly peddles *malinformation* to his supporters while many in Congress support his efforts by spreading *misinformation*. The differences are subtle but important. I outline them in [*Disinformation Strategies and Tactics*](/posts/2020-05-29-disinformation-strategies.html).
 
 Here is a small selection of highlights from the New York Times' fact-checking of the [ Congressional Debate on Ratifying the Election Results](https://www.nytimes.com/live/2021/01/06/us/fact-check-electoral-certification). This debate happened after the day's chaos.
 
@@ -72,21 +72,21 @@ Even before the insurrectionists entered the Capitol Building, their advocates w
 
 # Narrowcasting
 
-If we live in an "information society" and we get our information from the "information superhighway," then [misinformation, malinformation, and disinformation](https://schmud.de/posts/2020-05-29-disinformation-strategies.html) are just different parts of the landscape we must accept.
+If we live in an "information society" and we get our information from the "information superhighway," then [misinformation, malinformation, and disinformation](/posts/2020-05-29-disinformation-strategies.html) are just different parts of the landscape we must accept.
 
 When we invent a technology, we also invent its related disaster, as Paul Virilio so eloquently illustrated. You can't have a car crash without first inventing a car.
 
 The people who stormed the Capitol were armed with Truth. They entered with ease because the Truth was already inside the building. This is the disaster of the internet. More specifically, it is the disaster of a type of communication that the internet enables called "narrowcasting."
 
-The term "narrowcasting" was coined by none other than J.C.R. Licklider in 1967. [As previously mentioned on *Beyond the Frame*](https://schmud.de/posts/2020-06-23-internet-community.html), Licklider is a considered a visionary founder of the internet.[^licklider-1] But when he coined narrowcasting, he was ruminating on the educational possibilities of satellite television.[^licklider-2]
+The term "narrowcasting" was coined by none other than J.C.R. Licklider in 1967. [As previously mentioned on *Beyond the Frame*](/posts/2020-06-23-internet-community.html), Licklider is a considered a visionary founder of the internet.[^licklider-1] But when he coined narrowcasting, he was ruminating on the educational possibilities of satellite television.[^licklider-2]
 
-[^licklider-1]: ![Ben Shneiderman, [*J.C.R. Licklider*](https://computerhistory.org/blog/computer-pioneers-photos-from-the-field/?key=computer-pioneers-photos-from-the-field), image, 1979.](/img/2020-06-23-internet-community/licklider-shneiderman-1979.jpg) J.C.R. Licklider (above). From &ldquo;[On the Internet, We Are Either Artists or Bureaucrats](https://schmud.de/posts/2020-06-23-internet-community.html)&rdquo; - &ldquo;At his best, Licklider was an imaginative manager who empowered creative individuals across computing. [...] At his worst, Licklider was a technocrat. He effectively navigated the military bureaucracies of the Cold War by promising predictive models using complex data to bolster counterinsurgency efforts at home and around the world.&rdquo;
+[^licklider-1]: ![Ben Shneiderman, [*J.C.R. Licklider*](https://computerhistory.org/blog/computer-pioneers-photos-from-the-field/?key=computer-pioneers-photos-from-the-field), image, 1979.](/img/2020-06-23-internet-community/licklider-shneiderman-1979.jpg) J.C.R. Licklider (above). From &ldquo;[On the Internet, We Are Either Artists or Bureaucrats](/posts/2020-06-23-internet-community.html)&rdquo; - &ldquo;At his best, Licklider was an imaginative manager who empowered creative individuals across computing. [...] At his worst, Licklider was a technocrat. He effectively navigated the military bureaucracies of the Cold War by promising predictive models using complex data to bolster counterinsurgency efforts at home and around the world.&rdquo;
 
 [^licklider-2]: J.C.R. Licklider, "Televistas: Looking Ahead Through Side Windows", [*Public Television: A Program For Action*](https://current.org/1967/01/carnegie-i/), (New York: Carnegie Commission on Educational Television, January 26, 1967) (pp. 212).
 
 > I should like to coin the term ‘narrowcasting,’ using it to emphasize the rejection or dissolution of the constraints imposed by commitment to a monolithic mass-appeal, broadcast approach.
 
-His utopic vision outlined a variety of television networks that served the needs of specialized audiences. It is a fine vision with many benefits. But the problem is that Licklider was [a technocrat](https://schmud.de/posts/2020-06-23-internet-community.html) and a salesman. He couldn't talk about the car crash - he couldn't even talk about the seat belt - because everything was in service of raising the money to build a car.
+His utopic vision outlined a variety of television networks that served the needs of specialized audiences. It is a fine vision with many benefits. But the problem is that Licklider was [a technocrat](/posts/2020-06-23-internet-community.html) and a salesman. He couldn't talk about the car crash - he couldn't even talk about the seat belt - because everything was in service of raising the money to build a car.
 
 Almost all of his writings on a technology-enabled future promise great things for humankind. They rarely mention possible drawbacks, let alone the impact of information technology on something as fragile as a democracy.
 

@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Berlin, Germany
 date-created: 2024-04-30
-date-modified: 2024-08-18
+date-modified: 2024-09-22
 date-published: 2024-08-18
 in-language: en
 keywords: kay, hickey, clojure, database, digitalIdentity, livingData
@@ -55,10 +55,9 @@ Kay was likely gesturing to a different reason data might be a bad idea. I'll ad
 
 [^census]: Orchestrated by Dutch resistance members, including Willem Arondéus, Gerrit van der Veen, and [Dr. Frieda Belinfante](https://www.ushmm.org/collections/the-museums-collections/curators-corner/the-frieda-belinfante-collection), their goal was to inhibit the Nazi's ability to track and deport Jews and other targets of terror. The operation managed to destroy over 15% of the records. Many of the participants were later captured and executed by the Nazis. Noted privacy advocate and lawyer Lau Mazirel was also a member of the Dutch resistance. ![Lau Mazirel](/img/2024-08-18-data-is-a-bad-idea/lau-mazirel.jpg)<small>Lau Mazirel (1907-1974) <span property="license"><a class="link no-tufte-underline" href="https://www.vn.nl/lau-mazirel-streed-tegen-de-maatschappelijke-comedie/" rel="license">Collectie Van Gennep / IISG</a></span></small>
 
-
 ## Data Is a Centrifugal Force
 
-Data processing is the lifeblood of large bureaucracies. As previously discussed in the article *[Personal Privacy](posts/2020-06-15-personal-privacy.html)*, efforts to mitigate the reach of data collection in democratic nations goes back decades. *Consent* is the latest fashion. It's the idea that drives those cookie popups on websites; a person is granted agency every time they make a choice about which cookies are placed on their machine.
+Data processing is the lifeblood of large bureaucracies. As previously discussed in the article *[Personal Privacy](/posts/2020-06-15-personal-privacy.html)*, efforts to mitigate the reach of data collection in democratic nations goes back decades. *Consent* is the latest fashion. It's the idea that drives those cookie popups on websites; a person is granted agency every time they make a choice about which cookies are placed on their machine.
 
 Most people find these popups annoying. We don't want to negotiate every time we encounter a new website. We're used to social structures where consent is provided implicitly. A look of the eye and unspoken social contracts are the norm. But data is too brittle to capture this kind of nuance.
 
@@ -108,7 +107,7 @@ Each one of these could constitute its own blog post. Their viability today is d
 
 Initiatives such as [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) (VC) and the [Content Authenticity Initiative](https://contentauthenticity.org/) (CAI) both provide certain guarantees about the veracity of data. VCs are data that can be verified by the original issuer. CAI is supported by companies like Adobe[^flash] because they're looking to provide provenance and attribution for rich media.
 
-[^flash]: Adobe's existing Digital Rights Management (DRM) is used to [treat customers](https://hbr.org/2015/11/the-weird-rules-governing-what-we-download) who buy books [like criminals](posts/2021-12-01-eink.html). Furthermore, when the company purchased Flash (via Macromedia), they inherited an ecosystem that sustained countless digital cultural artifacts. When they discontinued the technology, the only responsible step would have been to subsequently open-source the entire project so [these artifacts could be maintained](posts/2021-09-07-fix-my-code.html). Adobe has failed to demonstrate vision or leadership when dealing with cultural issues so I'm skeptical of CAI.
+[^flash]: Adobe's existing Digital Rights Management (DRM) is used to [treat customers](https://hbr.org/2015/11/the-weird-rules-governing-what-we-download) who buy books [like criminals](/posts/2021-12-01-eink.html). Furthermore, when the company purchased Flash (via Macromedia), they inherited an ecosystem that sustained countless digital cultural artifacts. When they discontinued the technology, the only responsible step would have been to subsequently open-source the entire project so [these artifacts could be maintained](/posts/2021-09-07-fix-my-code.html). Adobe has failed to demonstrate vision or leadership when dealing with cultural issues so I'm skeptical of CAI.
 
 Verifiability and ownership can undoubtedly be useful. But ownership is a slippery slope. Many futurists, especially those in Web3, want to apply property rights to aspects of our identity. Any attempts to commodify self-hood is an egregious misapplication of technology. Not only is it ethically dubious, it's technologically incoherent. As health technologist [Adrian Gropper](https://spectrum.ieee.org/privacy-entrepreneur-adrian-gropper) points out, "control doesn't scale." Individuals simply do not have the time or expertise to manage a portfolio of online personas or a single persona that discloses only essential information to a portfolio of clients.
 
@@ -220,7 +219,7 @@ These tags can lose their meaning in different cultural contexts or on different
 
 It's not possible nor desirable to provide each person a simulacrum of their identity online. People don't want to manage their own data any more than [they want to run their own servers](https://moxie.org/2022/01/07/web3-first-impressions.html). But large data centers are political artifacts[^winner] that necessitate both political and technological responses. This response depends on how we situate identity data in our lives. Data is ideally close to home, separate from the processes that compute it. But it is often far away and embedded in the software we use.
 
-[^winner]: &lsquo;Conventional wisdom posits technology as a neutral force that can be wielded for &ldquo;evil&rdquo; or for &ldquo;good.&rdquo; But as Langdon Winner has pointed out, technologies can fundamentally embody explicit political arrangements.&rsquo; ~ *[How the Consumer Computer is Consuming Computing](posts/2022-08-23-the-consumer-computer.md)*.
+[^winner]: &lsquo;Conventional wisdom posits technology as a neutral force that can be wielded for &ldquo;evil&rdquo; or for &ldquo;good.&rdquo; But as Langdon Winner has pointed out, technologies can fundamentally embody explicit political arrangements.&rsquo; ~ *[How the Consumer Computer is Consuming Computing](/posts/2022-08-23-the-consumer-computer.html)*.
 
 Resituating data is easier said than done. Data must have some sense of authenticity to be useful, it must have some contextual meaning to be shared, and it must leave room for error if it is to be alive. Agre's principles are clear but the road to implementation is not.[^telescript]
 

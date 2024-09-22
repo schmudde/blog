@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2024-08-18
+date-modified: 2024-09-22
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -51,7 +51,7 @@ There have been several updates to *Beyond the Frame*. First off, you'll notice 
 
 The newest entries are "[What If Data Is a Bad Idea?](/posts/2024-08-18-data-is-a-bad-idea.html)" and a review of a collection of [Philip K. Dick short stories](/books/short-fiction-dick.html).
 
-[^license]: ![Logo For Beyond the Frame](/img/btf-logo.svg) The new Beyond the Frame logo, a work-for-hire by [Alma Gianarro](<https://almagianarro.com>). <small><span property="license" xmlns:cc="<http://creativecommons.org/ns>#" xmlns:dct="<http://purl.org/dc/terms/>"><a property="dct:title" rel="cc:attributionURL" href="![img](https://schmud.de/img/btf-logo.svg)">The Beyond the Frame Logo</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="<https://schmud.de>">Alma Gianarro</a> is licensed under <a href="<http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1>" target="_blank" rel="license noopener noreferrer" class="no-tufte-underline">CC BY-SA 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;<i class="fab fa-creative-commons-sa"></i></a></span></small>
+[^license]: ![Logo For Beyond the Frame](/img/btf-logo.svg) The new Beyond the Frame logo. <small><span property="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://schmud.de/img/btf-logo.svg">The Beyond the Frame Logo</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://almagianarro.com/">Alma Gianarro</a> is licensed by <span property="dcterms:rightsHolder">Beyond the Frame</span> under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="no-tufte-underline">CC BY-SA 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;<i class="fab fa-creative-commons-sa"></i></a></span></small>
 
 ## Reading
 
