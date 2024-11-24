@@ -38,7 +38,7 @@ Dick explores a prototype of *Blade Runner*[^blade-runner] in *Second Variety*.[
 
 [^blade-runner]: aka *[Do Androids Dream of Electric Sheep?](https://en.wikipedia.org/wiki/Do_Androids_Dream_of_Electric_Sheep%3F)*
 
-[^second-variety.jpg]: ![*Second Variety* cover](/img/book-covers/second-variety.jpg) <br /> *[Second Variety](https://www.isfdb.org/cgi-bin/pl.cgi?359086)* (1991)
+[^second-variety.jpg]: ![*Second Variety* cover](/img/book-covers/second-variety.jpg) <br /><small>*[Second Variety](https://www.isfdb.org/cgi-bin/pl.cgi?359086)* (1991)</small>
 
 The Wub and allusions to *Blade Runner* are among the collection's few highlights. As mentioned, story after story is set with the backdrop of epic war. Intercontinental conflict (The Cold War), inter-planetary conflict, and inter-galactic conflict - clashes of civilizations where the enemies are caricatures of complex conscious beings. As the three varieties of androids take over the Soviet state, one presumably American character makes a quintessential observation about his enemy:
 
@@ -50,7 +50,7 @@ Dick doesn't show much cognitive empathy or intellectual understanding of any en
 
 *[The Variable Man](https://www.isfdb.org/cgi-bin/title.cgi?58261)*[^variable-man.jpg] may be the worst offender of the bunch. It's an interesting enough premise. But human life doesn't prove to be worth much in a war of civilizations. Countless lives are lost on the front when a weapon goes awry but that pales in comparison with a surprise leap in technology. As the leader Margaret Duffe explains, "We have lost the war, but this is not a day of defeat. It is a day of victory. The most incredible victory."
 
-[^variable-man.jpg]: ![*Variable Man* cover](/img/book-covers/variable-man.jpg) <br /> *[The Variable Man and Other Stories](https://www.isfdb.org/cgi-bin/pl.cgi?49319)* (1957)
+[^variable-man.jpg]: ![*Variable Man* cover](/img/book-covers/variable-man.jpg) <br /><small>*[The Variable Man and Other Stories](https://www.isfdb.org/cgi-bin/pl.cgi?49319)* (1957)</small>
 
 The stories lose track of their humanity again and again. It's even more of a shame because Dick is clearly a stronger writer than a contemporary like [Robert Heinlein](double-star.html).[^heinlein] The agony of death by immolation is written in dramatic prose:
 
