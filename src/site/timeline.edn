@@ -46,6 +46,13 @@
   :link "/posts/2020-05-29-disinformation-strategies.html"
   :link-name "Disinformation Strategies and Tactics"
   :image nil}
+ {:title "A classified spacecraft called PAN is launched into a geostationary orbit."
+  :date #time/date "2009-09-08"
+  :geo "Cape Canaveral, Florida"
+  :desc "&ldquo;PAN is unique among classified American satellites because, while it is discussed by contractors and appears on military launch schedules, it is not publicly 'claimed' by any intelligence or military agency. Space analysts have speculated [...] that PAN may act as a communications relay for armed CIA Predator and Reaper drones operating in Pakistan and Afghanistan.&rdquo;"
+  :footer "<a href='https://openlibrary.org/books/OL12338972M/I_Could_Tell_You_but_Then_You_Would_Have_to_Be_Destroyed_by_Me'>I Could Tell You But Then You Would Have to be Destroyed by Me</a>"
+  :link "/books/i-could-tell-you-but-then.html"
+  :link-name "I Could Tell You But Then You Would Have to be Destroyed by Me"}
  {:title "Amazon Removes Purchased Copies of '1984'"
   :date #time/date "2009-07-17"
   :desc "&ldquo;Justin Gawronski, a 17-year-old from the Detroit area, was reading &lsquo;1984&rsquo; on his Kindle for a summer assignment and lost all his notes and annotations when the file vanished. &lsquo;They didn’t just take a book back, they stole my work,&rsquo; he said.&rdquo;"
