@@ -52,11 +52,14 @@ The surprise of the year was Lovatraxx playing at Radio Blackout in May. It seem
 
 I also had the privilege of Robert Henke orchestrating an incredible audio/visual live performance on 1980s Commodore hardware in Milan. Henke has a virtuosic understanding of the medium of electronic music. The limitations imposed by the hardware created a unique canvas that was unlike any other performance I've ever seen.
 
-<figure class="aspect-ratio aspect-ratio--16x9">
+<figure>
+<div class="aspect-ratio aspect-ratio--16x9">
   <video controls class="aspect-ratio--object" preload="metadata" loading="lazy">
-    <source src="/img/taste-of-2024/henke.mov" type="video/mp4">
+    <source src="/img/taste-of-2024/henke.m4v" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+</div>
+<figcaption><span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Robert Henke at Giardino della Triennale, Milan, Italy </span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://schmud.de">David Schmudde</a> is licensed under <a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span></figcaption>
 </figure>
 
 ### New Music
@@ -96,6 +99,19 @@ Beyond the legends there are also:
 ## Travels
 
 Obviously there was less travel with a newborn. But I still managed a visit to Berlin, Peoria, and Chicago and Frassinetto, Sardegna, Savona, Treviso, and Udine in Italy.
+
+One of the highlights was summiting Mount Coglians (2,780 m/9,120 ft) in Northeast Italy.
+
+<figure>
+<div class="aspect-ratio aspect-ratio--16x9">
+  <video controls class="aspect-ratio--object" preload="metadata" loading="lazy">
+    <source src="/img/taste-of-2024/coglians.m4v" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<figcaption><span xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Hiking Coglians</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://schmud.de">David Schmudde</a> is licensed under <a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0&nbsp;<i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span></figcaption>
+</figure>
+
 
 ## Podcasts
 
