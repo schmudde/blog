@@ -46,7 +46,7 @@
   :link "/posts/2020-05-29-disinformation-strategies.html"
   :link-name "Disinformation Strategies and Tactics"
   :image nil}
- {:title "A classified spacecraft called PAN is launched into a geostationary orbit."
+ {:title "A classified satellite called PAN is launched into a geostationary orbit."
   :date #time/date "2009-09-08"
   :geo "Cape Canaveral, Florida"
   :desc "&ldquo;PAN is unique among classified American satellites because, while it is discussed by contractors and appears on military launch schedules, it is not publicly 'claimed' by any intelligence or military agency. Space analysts have speculated [...] that PAN may act as a communications relay for armed CIA Predator and Reaper drones operating in Pakistan and Afghanistan.&rdquo;"
