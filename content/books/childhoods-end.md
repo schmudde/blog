@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Arthur C. Clarke, published 1953
+<small>by Arthur C. Clarke, published 1953</small>
 
 Arthur C. Clarke's prose is uneven, but his stories always have their moments of inspiring beauty and profound concepts.
 

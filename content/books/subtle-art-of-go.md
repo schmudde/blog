@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Pierre Lusson, Georges Perec, Jacques Roubaud, published 1969
+<small>by Pierre Lusson, Georges Perec, Jacques Roubaud, published 1969</small>
 
 Translation and introduction by Peter Consenstein
 

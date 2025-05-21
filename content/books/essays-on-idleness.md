@@ -17,7 +17,7 @@ tags:
  - suchness
 ---
 
-by Yoshida Kenkō (~1319-1331)
+<small>by Yoshida Kenkō, published ~1319-1331</small>
 
 **A modest book that changed the way I write.**
 

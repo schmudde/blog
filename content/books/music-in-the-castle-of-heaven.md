@@ -17,7 +17,7 @@ tags:
  - suchness
 ---
 
-by John Eliot Gardiner (2013)
+<small>by John Eliot Gardiner, published 2013</small>
 
 Judged solely on the virtues of the author's ability to transfer his experience as a musician to the page, this is a superb book. It is essentially a summary of Bach's prodigious cantata cycles, the St. John Passion, the St. Matthew Passion, and the B minor Mass. John Eliot Gardiner knows these works intimately, and it shows.
 

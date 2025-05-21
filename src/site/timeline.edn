@@ -148,7 +148,7 @@
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
- {:title "VDT"
+ #_{:title "VDT"
   :geo nil
   :date #time/year "1982"
   :desc "Tom Juravich sings about the toll of early data entry jobs, anticipating the rise of bossware and the invisible labor systems that now train LLMs in his song VDT (Video Display Terminal). The song calls for labor rights that would never come to fruition, &ldquo;If you ever spent hours behind a VDT, you'd know that no one needs a union more than me.&rdquo;"
@@ -257,7 +257,7 @@
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
- {:title "All Watched Over by Machines of Loving Grace"
+ #_{:title "All Watched Over by Machines of Loving Grace"
   :geo "Pasadena, California, USA"
   :date #time/year-month "1967-01"
   :desc "Richard Brautigan pens a poem envisioning a future where technology and nature exist in perfect, effortless harmony. Its ambiguous tone—half utopian dream, half warning—captures the early hopes and anxieties of the coming cybernetic age."
@@ -311,6 +311,14 @@
   :link "/posts/2024-08-18-data-is-a-bad-idea.html"
   :link-name "What If Data Is a Bad Idea?"
   :image nil}  ;;"/img/2024-08-18-data-is-a-bad-idea/amsterdam-registry.jpg"
+{:title "Venice Establishes a Baseline For Sea Level Rise"
+  :geo "Venice, Italy"
+  :date #time/year "1897"
+  :desc "&ldquo;The centimetres are calculated from the tidal zero of the Punta della Salute survey station on the Giudecca canal, a point established by convention in 1897 at the mean sea level at the time. Today, the point is always underwater. It cannot be seen, but every Venetian is mentally connected to it.&rdquo;"
+  :footer "&ldquo;The Tide Forecast Center of Venice&rdquo; Stefano Liberti (p. 194 of &ldquo;Venice and the Anthropocene&rdquo;)"
+  :link "/books/venice-anthropocene.html"
+  :link-name "Venice and the Anthropocene"
+  :image "/img/book-covers/venice-antropocene-sea-level-1.png"}
  {:title "Bach Writes &ldquo;Herr, gehe nicht ins Gericht mit deinem Knecht&rdquo;"
   :geo nil
   :date #time/year "1723"

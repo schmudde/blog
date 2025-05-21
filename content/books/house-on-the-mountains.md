@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Caroline Moorehead, published 2019
+<small>by Caroline Moorehead, published 2019</small>
 
 This book chronicles the Partisan effort in Piedmont. Much of it takes place during the chaotic civil war after Rome fell to the Allies. Mussolini had established a base of operations in Salò. Germans were attempting to hold the Gothic line and exploit the valuable industrial resources of the North. The Allies had established a government in the South as the ousted Italian monarchs vied to power. While Partisans with divergent postwar political aims fought for an Italy free of fascism after 20 years of oppression.
 

@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Doc Searls, published 2012
+<small>by Doc Searls, published 2012</small>
 
 Find it in the [Open Library](https://openlibrary.org/books/OL25163077M/The_intention_economy)
 

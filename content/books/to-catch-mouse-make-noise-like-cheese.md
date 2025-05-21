@@ -19,7 +19,7 @@ tags:
  - review
 ---
 
-by Lewis Kornfeld (1983)[^cover]
+<small>by Lewis Kornfeld, published 1983</small>[^cover]
 
 **The Adman Who Launched 1,000 Computers When No One Else Could**
 

@@ -18,7 +18,7 @@ tags:
  - tools
 ---
 
-by Ryan Boyd (2012)
+<small>by Ryan Boyd, published 2012</small>
 
 **This is a fine cookbook, but you won't learn how to cook.**
 

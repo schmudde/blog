@@ -20,7 +20,7 @@ tags:
  - review
 ---
 
-by Philip K. Dick, published, 1953-1957 &amp; 2015[^cover]
+<small>by Philip K. Dick, published 1953-1957 &amp; 2015</small>[^cover]
 
 [^cover]: {-} ![*Short Fiction* Book Cover](/img/book-covers/short-fiction-dick.avif) <br /> Ebooks by Standard Ebooks are free (i.e. there is no copyright and they cost nothing). Having read several Standard Ebook editions, I can confirm that they are a wonderful resource. I [donate every month](https://standardebooks.org/donate) to help sustain the project. You should also consider perusing their site, selecting a book, and seeing what you think!
 

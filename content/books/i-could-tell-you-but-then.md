@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Trevor Paglen[^cover][^paglen], published 2008
+<small>by Trevor Paglen, published 2008</small>[^cover][^paglen]
 
 [^cover]: {-} ![*I Could Tell You But Then You Would Have to be Destroyed by Me* book cover](/img/book-covers/i-could-tell-you-but-then/book-cover.jpg)
 [^paglen]: Pageln is a contemporary artist with an impressive breadth of work. From his [website](https://paglen.studio/bio/): "Paglen has launched an artwork into distant orbit around Earth in collaboration with Creative Time and MIT, contributed research and cinematography to the Academy Award-winning film Citizenfour, and created a radioactive public sculpture for the exclusion zone in Fukushima, Japan."

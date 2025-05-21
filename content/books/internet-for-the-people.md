@@ -18,7 +18,7 @@ tags:
  - review
 ---
 
-by Ben Tarnoff (2022)[^cover]
+<small>by Ben Tarnoff, published 2022</small>[^cover]
 
 Buy *Internet for the People: The Fight for Our Digital Future* [directly from Verso Books](https://www.versobooks.com/books/3927-internet-for-the-people).
 

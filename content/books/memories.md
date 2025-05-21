@@ -18,7 +18,7 @@ tags:
  - personal
 ---
 
-by Lucy Schmudde, published 2023[^cover]
+<small>by Lucy Schmudde, published 2023</small>[^cover]
 
 [^cover]: {-} ![](/img/2024-11-17-memories/cover.jpg)<small>*Memories* by Lucy Schmudde&nbsp;<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/4.0/deed.en" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a></span></small>
 

@@ -16,7 +16,7 @@ tags:
  - review
 ---
 
-by Robert A. Heinlein, published 1956
+<small>by Robert A. Heinlein, published 1956</small>
 
 This is my first time reading Heinlein. I was naturally curious what this noted author had to offer. When I discovered that Phoenix Pick sells [a selection of his novels](http://www.phoenixpick.com/catbot.htm) in an ethical ePub format, I had the perfect excuse to dive in.[^epub]
 

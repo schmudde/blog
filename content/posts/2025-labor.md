@@ -1,6 +1,6 @@
 ---
-title: The Future of Knowledge Work and Programming
-description: tbd
+title: There Is No Temple for Engineers
+description: How will we resist the crisis they are promising?
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -9,9 +9,9 @@ author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2025-04-26
 date-modified: 2025-04-26
-date-published: 2025-04-26
+date-published:
 in-language: en
-keywords: peoria, labor
+keywords: peoria, unions, paulgraham, llm
 tags:
  - sts
  - doing
@@ -20,21 +20,22 @@ tags:
 ---
 
 <figure class="fullwidth">
-![](/img/2025-labor/82747536007-033129-labortemple-02.png)<small><span property="license"><i class="far fa-copyright"></i> "[Demolition begins on Labor Temple in downtown Peoria](https://eu.pjstar.com/picture-gallery/news/2025/03/31/demolition-begins-on-labor-temple-in-downtown-peoria/82746411007/)." *The Peoria Journal Star*, Mar. 31, 2025</span></small>
+![](/img/2025-labor/82747536007-033129-labortemple-02.png)<small>"[Demolition begins on Labor Temple in downtown Peoria](https://eu.pjstar.com/picture-gallery/news/2025/03/31/demolition-begins-on-labor-temple-in-downtown-peoria/82746411007/)." *The Peoria Journal Star*, Mar. 31, 2025
+&nbsp;(<span property="license"><i class="far fa-copyright"></i>&nbsp;The Peoria Journal Star</span>)</small>
 </figure>
 
 
 Several weeks ago, demolition began on the Labor Temple in Peoria, Illinois. The images are darkly poetic: a Caterpillar excavator tears down the [AFL-CIO](https://aflcio.org/) Labor Temple three decades after the company broke the back of its labor union once and for all. In the ensuing years, Caterpillar moved thousands of jobs away from the region and ultimately relocated its historic world headquarters to Texas. The demolition will make space to expand the nearby men's shelter. One can assume that the beds will be filled with people looking for work.
 
 <figure>
-![](/img/2025-labor/82747534007-033129-labortemple-03.png)<small><span property="license"><i class="far fa-copyright"></i> "[Demolition begins on Labor Temple in downtown Peoria](https://eu.pjstar.com/picture-gallery/news/2025/03/31/demolition-begins-on-labor-temple-in-downtown-peoria/82746411007/)." *The Peoria Journal Star*, Mar. 31, 2025</span></small>
+![](/img/2025-labor/82747534007-033129-labortemple-03.png)<small>"[Demolition begins on Labor Temple in downtown Peoria](https://eu.pjstar.com/picture-gallery/news/2025/03/31/demolition-begins-on-labor-temple-in-downtown-peoria/82746411007/)." *The Peoria Journal Star*, Mar. 31, 2025&nbsp;(<span property="license"><i class="far fa-copyright"></i>&nbsp;The Peoria Journal Star</span>)</small>
 </figure>
 
 The folks most heavily invested in Large Language Models (LLMs) like what they see. Bill Gates [predicts that](https://www.youtube.com/watch?v=Iq1yfTbrWyw) "AI will replace humans for most things," which is okay because "we weren't born to do jobs." Just as automation helped gut labor in the 1980s and hollowed out Rust Belt cities like Peoria, Meta CEO Mark Zuckerberg is proudly pursuing a 21st century equivalent. He [plans to introduce AIs](https://www.youtube.com/watch?v=7k1ehaE0bdU&t=4s) that can do the job of a "mid-level engineer" *this year* which coincides with an announced 5% cut in the Facebook workforce.
 
 It doesn't matter whether or not these prognostications are accurate, it's the bleakly detached way that these men are pitching this outcome as the happy path. The logical end is that we no longer work and live our lives *[All Watched Over By Machines of Loving Grace](https://allpoetry.com/All-Watched-Over-By-Machines-Of-Loving-Grace)* (1967) in the cybernetic utopia. But those in Silicon Valley have already sold that vision many years ago. And the reality they created is one where my wife on WhatsApp/Android cannot send my parents on iMessage/iPhone a message over an open, publicly-built (and funded) protocol. It's a reality where the objective productivity gains these tools have provided have lead to the same (or more) working hours and stagnant wages. Why should we believe that these people won't simply capture more power with more powerful technology? Which is the more likely outcome: cybernetic utopia or more of the same?
 
-Labor unions were once a way to push back on this power. But they seem to have fallen victim to a version of Clayton Christensen's [Disruptive Innovation Theory](https://www.christenseninstitute.org/theory/disruptive-innovation/): even unions that recognized the twin threat of a globalized workforce and automation could do nothing about it. Take, for example, Tom Juravich's song *VDT* (~1989) about someone working a Video Display Terminal (a 1980s computer terminal) where he sings, "If you ever spent hours behind a VDT, you'd know that no one needs a union more than me."[^juravich] Data entry was very difficult to automate but very easy to offshore. Today's LLMs were enhanced by the work of people [making ~$1 an hour in Kenya](https://slate.com/technology/2023/05/openai-chatgpt-training-kenya-traumatic.html) by slogging through and labeling the most vile textual content imaginable so you don't have to. It's a decades-old pattern common in Silicon Valley: before we automate, we offshore.[^women-work]
+Labor unions were once a way to push back on this power. But they seem to have fallen victim to a version of Clayton Christensen's [Disruptive Innovation Theory](https://www.christenseninstitute.org/theory/disruptive-innovation/): even unions that recognized the twin threat of a globalized workforce and automation could do nothing about it. Take, for example, Tom Juravich's song *VDT* (1989) about someone working a Video Display Terminal (a 1980s computer terminal) where he sings, "If you ever spent hours behind a VDT, you'd know that no one needs a union more than me."[^juravich] Data entry was very difficult to automate but very easy to offshore. Today's LLMs were enhanced by the work of people [making ~$1 an hour in Kenya](https://slate.com/technology/2023/05/openai-chatgpt-training-kenya-traumatic.html) by slogging through and labeling the most vile textual content imaginable so you don't have to. It's a decades-old pattern common in Silicon Valley: before we automate, we offshore.[^women-work]
 
 [^juravich]: Juravich also predicts the now ubiquitous [Bossware](https://en.wikipedia.org/wiki/Bossware), "And the boss couldn't test my productivity, punching up my number on his VDT." See more on [Classic Labor Songs](https://folkways.si.edu/classic-labor-songs-from-folkways/american-folk-struggle-protest/music/album/smithsonian) from Smithsonian Folkways.
 
@@ -47,11 +48,10 @@ Labor unions were once a way to push back on this power. But they seem to have f
     Your browser does not support the audio tag.
   </audio>
 </div>
-<figcaption style="clear: none;">
-<small><span property="license"><i class="far fa-copyright"></i> *VDT* Tom Juravich</span></small>
+<small>*VDT* (<span property="license"><i class="far fa-copyright"></i>&nbsp;Tom Juravich 1989</span>)</small>
 </figure>
 
-## The Union of Engineers
+## Engineering Solidarity
 
 Until recently, white collar labor wasn't subject to the same pressures of blue collar labor. Blue collar workers built and maintained complex physical systems while white collar jobs focused on the management of abstract systems. This is sometimes oddly called "knowledge work." Building software can be a little bit of both. Some experience it as punching through assigned tickets and gluing off-the-shelf parts together. Others have a high degree of autonomy and work creatively. In either case, programming has been resistant to unionization. The exceptions are largely one-off efforts like the [Mapbox Union](https://www.mapboxworkersunion.org/). The leadership of Mapbox, a software company providing custom maps, [stymied the union effort](https://joinreboot.org/p/nearest-neighbors)[^mapbox] by leaning into Silicon Valley tropes - the union would "make it harder for us to innovate" and claiming that "the campaign had caused the company to lose a round of funding."
 
@@ -73,7 +73,7 @@ Most people with the title of "engineer" have been resistant to unions. Take the
 
 [^international-union]: My grandfather was actually pointing a tension both sides had with the international union. Caterpillar had its problems with the UAW, but so did the local Peoria worker. "In 1994, following the victimizations of dozens of workers, the UAW was forced to sanction another official strike by more than 10,000 Caterpillar workers, still working without a contract since 1991. This time the walkout lasted for a record 17 months. Caterpillar responded by mobilizing management strikebreakers to maintain production. For its part, the UAW isolated the Caterpillar workers again, refusing to mobilize support from workers at Deere, Case, or at the plants of the Detroit automakers. As a consequence, the strike steadily weakened, with thousands of strikers disgusted with the treachery of the UAW returning to work. Many strikers lost their homes, cars and life savings. Marriages broke up and the stress sent some to early graves. The UAW again called off the strike, despite an overwhelming vote by Caterpillar workers to reject management's concession demands." ~ "[Class Struggle at Caterpillar: Lessons From the Past](https://www.wsws.org/en/articles/2023/03/10/cate-m10.html)"
 
-## Knowledge Luddites or Knowledge Solidarity
+## Knowledge Luddites
 
 It's tempting to draw the lines of alignment based on the *type* of work: so-called knowledge work vs. physical labor. My grandfather was an engineer at a time when the majority of engineers ended up in management[^noble] and a more technical approach to managing was becoming more popular.[^taylorism] But this is not a "natural" dividing line. Teachers are knowledge workers by any definition and yet they have historically struggled to earn a fair wage.[^teachers-union] Engineers might be the builders of the civilization, but teachers are the ones who ensure that civilization continues from one generation to the next. LLMs promise to situate engineers in the exact same position. Not because they are guaranteed to replace 100% of the work, but because they cut off the engineer's path to management.[^zitron]
 
@@ -100,32 +100,35 @@ While the organizers understood this, they were not able to communicate it to th
 
 [^vote]: The Federal [National Labor Relations Board](https://www.nlrb.gov/case/13-RC-021802) reported the tallied vote on May 15, 2008. Out of 211 eligible voters, 202 votes were cast: 44 votes for the labor union and 158 against.
 
-The union efforts at Mapbox and The Illinois Institute of Art crystalized structural issues within the organization. There are certain things people doing the work know that management cannot. These efforts sought to push the organization as a whole - and unresponsive management - in a better direction.
+Both the union efforts at Mapbox and The Illinois Institute of Art were spurred by disagreements between the people doing the work and those who mange them. Organizing a union in an era of job mobility is a strange thing: one must care enough about the work they do and the company they work for to dedicate years of their individual life to the collective effort.
 
-There is nothing quite like the feeling of doing work that you know is valued, that you feel contributes to something greater than yourself. That's what I found beautiful about having a "labor temple" in downtown Peoria. It was built by people who fought to have their work valued, and that cause was in itself greater than any one person. This being part of a whole is the quintessence of the labor movement: both the individual drop of water and the ocean wave are separate and distinct entities. But paradoxically, they are inseparable. The wave cannot exist if all the drops are pulled apart.
+Any collective effort ebbs and flows like waves in the ocean; the Labor Temple in downtown Peoria was intended to provide a solid foundation and embody the grand aspiration that work is more than doing your job.
 
-The internet was conceived in part as a tool to come together for collective action. But what we got were algorithmic intermediaries explicitly designed to meet KPIs that created shareholder value.[^groupon]
+## DIWO
 
-[^groupon]: I watched first-hand how a Chicago collective action  startup called "the Tipping Point" pivoted to a coupon site called "Groupon," to become the fastest growing business in history.
+Some may think the monument and the movement is antiquated in the internet age. After all, the internet was conceived, in part, as a tool to collaborate in a information society. But what we ended up building was [a shopping mall](posts/2022-12-05-different-internet.html) with algorithmic intermediaries explicitly designed to meet KPIs to maximize shareholder value.[^groupon]
 
-LLMs are the next intermediary. This time the shareholder valve is even more apparent, hence the wild speculative money thrown at this technology. It promises to get rid of workers - the wave becomes individual droplets of water.
+[^groupon]: ![](/img/2025-labor/andrew-mason-forbes-august-2010.jpg)I watched first-hand how a Chicago collective action startup called "The Point" pivoted to a coupon site called "Groupon," to become [the fastest growing business in history](https://www.forbes.com/forbes/2010/0830/entrepreneurs-groupon-facebook-twitter-next-web-phenom.html). It is just one example of a pivot from the town square to the shopping mall.<br/><small>Image: Groupon CEO Andrew Mason on the cover of Forbes&nbsp;(<span property="license"><a class="link no-tufte-underline" href="https://www.forbes.com" rel="license"><i class="far fa-copyright"></i>&nbsp;</a>Forbes Magazine</span>)</small>
 
-What does it mean to resist the future they're offering? First, we must [misuse the technology](https://youtu.be/SU6NvkkF4Xk)[^maim] itself as a form of sabotage and interrogation. Second, we must ensure that our systems of government reflect human values that resonate with ecological systems rather than subjugate. This project is ambivalent to the evolution of LLM technology. It trusts that the principles guide the outcome. But we must build these systems, and build them together. For the latter to happen, they cannot be abstract.
+LLMs are the next intermediary. This time the shareholder value is even more apparent, hence the wild speculative money thrown at this technology. The stated promise is to further reduce the wave to its individual droplets of water.
+
+What does it mean to resist the future they're offering? First, we must [misuse the technology](https://youtu.be/SU6NvkkF4Xk)[^maim] itself as a form of sabotage and interrogation. Second, we must ensure that our systems of government reflect human values that resonate with ecological systems rather than subjugate them. These principles are ambivalent to the evolution of LLM technology - no one knows its true potential. But we must build forms of resistance, and build them together.
 
 [^maim]: "We now need a coherent superintelligence strategy to navigate a new period of transformative change. We introduce the concept of Mutual Assured AI Malfunction (MAIM): a deterrence regime resembling nuclear mutual assured destruction (MAD) where any state’s aggressive bid for unilateral AI dominance is met with preventive sabotage by rivals." ~ *[Superintelligence Strategy](https://www.nationalsecurity.ai/)*
 
-Venture Capitalist Paul Graham seemingly agrees; he implores people that [building is the important "thing to do"](https://paulgraham.com/do.html) in your life. "So what should one do? One should help people, and take care of the world. Those two are obvious. But is there anything else? When I ask that, the answer that pops up is *Make good new things*." But the entire essay on *What to Do* focuses on the individual - not the things we do together. And if we dig into the people actually doing the work, we see this spirit.[^meta-2] Rather than DIY, the arts organization Furtherfield suggested DIWO, Do It With Others, as a subversion of the DIY mentality. And the more I look at how folks with power hope to shape the world with LLMs, the more I agree with the DIWO approach:[^diwo]
+Venture Capitalist Paul Graham seemingly agrees; he implores people that [building is the important "thing to do"](https://paulgraham.com/do.html) in your life. "So what should one do? One should help people, and take care of the world. Those two are obvious. But is there anything else? When I ask that, the answer that pops up is *Make good new things*." But the entire essay on *What to Do* focuses on the individual - not the things we do together.
 
-[^meta-2]: Even at Meta - where Zuckerberg promises to automate programming jobs and eliminate positions, [the culture is that](https://newsletter.manager.dev/p/being-an-engineering-manager-at-meta) "managers do not manage a team. At Meta, managers support a team."
+Rather than DIY, the arts organization Furtherfield[^furtherfield] suggested DIWO, Do It With Others, as a subversion of the DIY mentality. And the more I look at how folks with power hope to shape the world with LLMs, the more I agree with the DIWO approach:[^diwo]
 
 > The role of the artist today has to be to push back at existing infrastructures, claim agency and share the tools with others to reclaim, shape and hack these contexts in which culture is created.
 
+[^furtherfield]: ![](/img/2025-labor/furtherfield.svg)<small>Furtherfield Logo&nbsp;(<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>&nbsp;[Furtherfield](https://www.furtherfield.org/about-us/contact/)</span>)</small>
 [^diwo]: "[Can Art Do Technology and Social Change?](http://www.axisweb.org/dlForum.aspx?ESSAYID=18115)" Ruth Catlow. October 2010.
 
-This has become a necessary strategy for conserving digital cultural artifacts that would otherwise be abandoned and rot away within months if not years. As we explored in "[Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html)":
+This has become a necessary strategy for conserving digital cultural artifacts that would otherwise be abandoned and rot away within months if not years. As we explored in "[Fix My Code](posts/2021-09-07-fix-my-code.html)":
 
 > But some software preservationists see a future where care is a distributed resource. It can be seen in the preservation of [video games](https://archive.org/details/classicpcgames), [operating systems](https://github.com/PDP-10/its), and [activity on internet protocols](https://www.usenetarchives.com). Cultural objects on the internet are our inheritance. It is up to us to maintain them.
 
-Building and preserving our common culture - this is the fabric of our individual humanity. Just as consciousness separates us from animals, the byproducts of working in concert may separate us from LLMs. This is the legacy of labor - not only their sacrifice for eight hour workday/five days a week, safety standards, child labor laws, retirement plans, and a legal framework for collective bargaining - but the culture that they created. Removing this physical memory from our lives risks extinguishing the culture. As Mike Everett, unionist and former president of the Labor Temple Association, [warned in 2009](https://www.peoriamagazine.com/archive/ibi_article/2009/peoria-labor-temple/):
+Building and preserving our common culture - this is the fabric of our individual humanity. Just as consciousness separates us from animals, the byproducts of working in concert may separate us from LLMs. This is the legacy of labor - not only their sacrifice for eight hour workday/five days a week, safety standards, child labor laws, retirement plans, and a legal framework for collective bargaining - but the culture that they created. Removing its physical memory from our lives risks extinguishing the culture. As Mike Everett, unionist and former president of the Labor Temple Association, [warned in 2009](https://www.peoriamagazine.com/archive/ibi_article/2009/peoria-labor-temple/):
 
 > There are only about 60 labor temples [in the United States] left. […] This is really the anchor of the labor movement, and we would never really realize the value of the building until it was gone, and then it would be too late.

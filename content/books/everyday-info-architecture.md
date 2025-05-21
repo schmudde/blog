@@ -18,7 +18,7 @@ tags:
  - tools
 ---
 
-by Lisa Maria Martin (2019)
+<small>by Lisa Maria Martin, published 2019</small>
 
 Find it on [A Book Apart](https://abookapart.com/products/everyday-information-architecture)
 

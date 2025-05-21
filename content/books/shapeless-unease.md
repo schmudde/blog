@@ -20,7 +20,7 @@ tags:
  - suchness
 ---
 
-by Samantha Harvey (2020)[^cover]
+<small>by Samantha Harvey, published 2020</small>[^cover]
 
 **A novel of disorienting time dilation where days and nights coalesce into a maddening blur.**
 
