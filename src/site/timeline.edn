@@ -148,12 +148,12 @@
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
- #_{:title "VDT"
+{:title "VDT"
   :geo nil
   :date #time/year "1982"
   :desc "Tom Juravich sings about the toll of early data entry jobs, anticipating the rise of bossware and the invisible labor systems that now train LLMs in his song VDT (Video Display Terminal). The song calls for labor rights that would never come to fruition, &ldquo;If you ever spent hours behind a VDT, you'd know that no one needs a union more than me.&rdquo;"
   :footer "Tom Juravich <em>VDT</em>"
-  :link "/posts/2025-labor.html"
+  :link "/posts/2025-07-15-engineering-end-of-work.html"
   :link-name "The Future of Knowledge Work"
   :image nil}
  {:title "Do Artifacts Have Politics?"
@@ -257,12 +257,12 @@
   :link "/posts/2021-01-07-truth-storms-the-capitol.html"
   :link-name "Truth Storms the Capitol"
   :image nil}
- #_{:title "All Watched Over by Machines of Loving Grace"
+{:title "All Watched Over by Machines of Loving Grace"
   :geo "Pasadena, California, USA"
   :date #time/year-month "1967-01"
   :desc "Richard Brautigan pens a poem envisioning a future where technology and nature exist in perfect, effortless harmony. Its ambiguous tone—half utopian dream, half warning—captures the early hopes and anxieties of the coming cybernetic age."
   :footer nil
-  :link "/posts/2025-labor.html"
+  :link "/posts/2025-07-15-engineering-end-of-work.html"
   :link-name "The Future of Knowledge Work"
   :image nil}
 {:title "Ted Nelson Introduces the Term &ldquo;Hypertext&rdquo;"
