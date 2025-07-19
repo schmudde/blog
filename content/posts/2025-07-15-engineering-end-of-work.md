@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2025-07-15
-date-modified: 2025-07-15
+date-modified: 2025-07-19
 date-published: 2025-07-15
 in-language: en
 keywords: peoria, unions, paulgraham, llm, ai, labor
@@ -126,7 +126,7 @@ Rather than DIY, the arts organization Furtherfield[^furtherfield] suggested DIW
 > The role of the artist today has to be to push back at existing infrastructures, claim agency and share the tools with others to reclaim, shape and hack these contexts in which culture is created.
 
 [^furtherfield]: ![](/img/2025-07-15-engineering-end-of-work/furtherfield.svg)<small>Furtherfield Logo&nbsp;(<span property="license"><a class="link no-tufte-underline" href="https://creativecommons.org/licenses/by/2.0/" rel="license"><i class="fab fa-creative-commons"></i>&nbsp;<i class="fab fa-creative-commons-by"></i></a>&nbsp;[Furtherfield](https://www.furtherfield.org/about-us/contact/)</span>)</small>
-[^diwo]: "[Can Art Do Technology and Social Change?](http://www.axisweb.org/dlForum.aspx?ESSAYID=18115)" Ruth Catlow. October 2010.
+[^diwo]: "[Can Art Do Technology and Social Change?](https://web.archive.org/web/20240523023305/https://www.furtherfield.org/can-art-do-technology-and-social-change/)" Ruth Catlow. November 2010.
 
 This has become a necessary strategy for conserving digital cultural artifacts that would otherwise be abandoned and rot away within years if not months. As we explored in "[Fix My Code](/posts/2021-09-07-fix-my-code.html)":
 
