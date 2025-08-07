@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Peoria, IL
 date-created: 2022-01-02
-date-modified: 2024-02-17
+date-modified: 2025-08-06
 date-published: 2022-01-02
 in-language: en
 canonical-url: http://schmud.de
@@ -25,7 +25,7 @@ canonical-url: http://schmud.de
 
 <p><script async data-uid="6bb8abca74" src="https://schmudde.ck.page/6bb8abca74/index.js"></script></p>
 
-The newsletter is low traffic - about 4-5 eMails a year.
+The newsletter is low traffic - about five to seven eMails a year.
 
 ---
 
@@ -47,26 +47,22 @@ Or follow *Beyond the Frame* around the web:
 
 If you're not quite sure what you're signing up for, here are the top five most-read posts on *Beyond the Frame*:
 
-
-1. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html)
+1. [Untangling Non-Linearity](https://schmud.de/posts/2024-01-23-untangling-non-linearity.html): How the simple link became the foundation for artificial intelligence and all dynamic media.
+<div class="f5"><i class="fa fa-calendar mr2"></i>January 23, 2024</div>
+<div class="f5"><i class="fa fa-tags mr2"></i> #sts, #informatics, #filmmaking</div>
+2. [The Mothers of the Mother of All Demos](https://schmud.de/posts/2020-08-04-mother-of-mothers.html): Bill English was part of a team that revolutionized computing. A look at the shoulders they stood on.
 <div class="f5"><i class="fa fa-calendar mr2"></i> August 04, 2020</div>
 <div class="f5"><i class="fa fa-tags mr2"></i> #sts, #informatics</div>
-2. [MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html)
+3. [MLK and “Domestic Terrorism”](https://schmud.de/posts/2020-06-02-mlk.html): The narrative can change, but we must overcome the disinformation and fear that has overtaken the United States.
 <div class="f5"><i class="fa fa-calendar mr2"></i> June 02, 2020</div>
 <div class="f5"><i class="fa fa-tags mr2"></i> #sts, #suchness</div>
-3. [Be Here Now](https://schmud.de/posts/2020-12-16-be-here-now.html)
-<div class="f5"><i class="fa fa-calendar mr2"></i> December 16, 2020</div>
-<div class="f5"><i class="fa fa-tags mr2"></i> #personal, #suchness, #review</div>
-4. [Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html)
+4. [Fix My Code](https://schmud.de/posts/2021-09-07-fix-my-code.html): Engineering alone can't fix what's wrong with the internet.
 <div class="f5"><i class="fa fa-calendar mr2"></i> September 07, 2021</div>
 <div class="f5"><i class="fa fa-tags mr2"></i> #sts, #suchness, #review</div>
-5. [Truth Storms the Capitol](https://schmud.de/posts/2021-01-07-truth-storms-the-capitol.html)
-<div class="f5"><i class="fa fa-calendar mr2"></i> January 07, 2021</div>
-<div class="f5"><i class="fa fa-tags mr2"></i> #sts</div>
 
-Expect six to twelve posts a year.[^tos] What I lacks in quantity is make up for in quality.
+Expect four to six posts a year.[^tos] Lesser quantity &rarr; higher quality.
 
-[^tos]: eMail subscriptions are beholden to ConvertKit's [Terms of Service](https://convertkit.com/terms).
+[^tos]: eMail subscriptions are beholden to Kit's [Terms of Service](https://kit.com/terms).
 
 <br />
 
