@@ -24,3 +24,7 @@ cd content/posts
 
 echo 'New post name:'$new_post
 echo 'Old post name:' $old_post
+
+printf "\n"
+
+echo !! Do not forget to update the link directories in your post and timeline.edn !!

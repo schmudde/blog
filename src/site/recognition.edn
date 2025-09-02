@@ -17,6 +17,11 @@
    :co-authors "Elisabetta Mori and Patricia Falcao"
    :editor "Liesbeth De Mol"
    :stats "forthcoming"}
+  {:title "Intermediaries in Network-based Ecosystems"
+   :publication "MyData Matters"
+   :link "https://mydata.org/2025/07/04/intermediaries-in-network-based-ecosystems/"
+   :date #time/date "2025-07-04"
+   :synopsis "Towards building healthy network-based ecosystems - the opportunities for emerging data intermediaries are at an inflection point in history."}
   {:title "Microcomputers for the Masses"
    :publication "Prophets of Computing: Visions of Society Transformed by Computing"
    :publisher "ACM Books/Morgan &amp; Claypool, New York, NY"
@@ -67,7 +72,7 @@
    :geo "Berlin, Germany"
    :date #time/year-month "2024-08"
    :title "The net.art Restoration Project of Gallery 404"
-   :link "https://www.schoolofma.org/programs/p/10-years-yay"
+   :link "https://www.schoolofma.org/news/10yearanniversaryopening"
    }
   {:org "Museums Without Walls"
    :geo "Queen’s University, Kingston, ON, Canada"

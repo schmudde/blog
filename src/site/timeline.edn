@@ -137,8 +137,8 @@
   :date #time/year-month "1987-11"
   :desc "Paul Mockapetris publishes the initial designs for a human-readable Domain Name System that maps network addresses (188.40.28.20) to human-readable names (schmud.de). His design allows the lookup tables required to scale across the entire world."
   :footer "Steve Crocker, 'Today’S Internet Still Relies On An ARPANET-Era Protocol: The Request For Comments', IEEE Spectrum, 2020, https://spectrum.ieee.org/tech-history/cyberspace/todays-internet-still-relies-on-an-arpanetera-protocol-the-request-for-comments."
-  :link "/posts/2021-04-22-id-through-time.html"
-  :link-name "An Identity Through Time"
+  :link "/programs/2022-04-25-urls-into-meaningful-names.html"
+  :link-name "Turning URLs Into Meaningful Names Using Clojure"
   :image nil}
  {:title "Les Immatériaux"
   :geo nil
@@ -311,7 +311,15 @@
   :link "/posts/2024-08-18-data-is-a-bad-idea.html"
   :link-name "What If Data Is a Bad Idea?"
   :image nil}  ;;"/img/2024-08-18-data-is-a-bad-idea/amsterdam-registry.jpg"
-{:title "Venice Establishes a Baseline For Sea Level Rise"
+{:title "Mundaneum"
+  :geo "Brussels, Belgium"
+  :date #time/year "1910"
+  :desc "Created by Paul Otlet, a founding father of information science, and Henri La Fontaine, the 1913 Nobel Peace Prize laureate, the Mundaneum was conceived as &ldquo;one universal body of documentation, as an encyclopedic survey of human knowledge, as an enormous intellectual warehouse of books, documents, catalogues and scientific objects.&rdquo; Otlet would go on to describe ways that one could search and send information through virtual communities using the Mundaneum."
+  :footer "Quote from a 1914 pamphlet in English which describes the intention of Mundaneum via <a href='https://web.archive.org/web/20051227184732/http://people.lis.uiuc.edu/~wrayward/otlet/xanadu.htm'>W. Boyd Rayward </a>"
+  :link "/programs/2025-09-02-wikidata-mundaneum.html"
+  :link-name "Wikidata and Mundaneum - The Triumph of the Commons"
+  :image nil}
+ {:title "Venice Establishes a Baseline For Sea Level Rise"
   :geo "Venice, Italy"
   :date #time/year "1897"
   :desc "&ldquo;The centimetres are calculated from the tidal zero of the Punta della Salute survey station on the Giudecca canal, a point established by convention in 1897 at the mean sea level at the time. Today, the point is always underwater. It cannot be seen, but every Venetian is mentally connected to it.&rdquo;"

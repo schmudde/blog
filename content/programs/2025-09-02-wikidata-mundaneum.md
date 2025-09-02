@@ -1,6 +1,6 @@
 ---
 title: Wikidata and Mundaneum - The Triumph of the Commons
-description: tbd
+description: Using Clojure to query and classify the world's knowledge.
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
@@ -9,7 +9,7 @@ author-twitter: dschmudde
 location: Udine, Italy
 date-created: 2025-08-27
 date-modified: 2025-08-27
-date-published: 2025-08-27
+date-published: 2025-09-02
 in-language: en
 keywords: wikidata
 tags:
@@ -18,10 +18,9 @@ tags:
 ---
 
 <figure class="fullwidth">
-![](/img/2025-08-27-wikidata-mundaneum/otlet-mundaneum.webp)<figcaption><small>"[From the Mundaneum to the Internet](https://www.altaplana.be/en/dictionary/mundaneum-a-l-internet)." François Schuiten. Stamp: 38,15 mm x 48,75 mm. Block: 90 mm x 125 mm, January 16, 2010.
+![](/img/2025-09-02-wikidata-mundaneum/otlet-mundaneum.webp)<figcaption><small>"[From the Mundaneum to the Internet](https://www.altaplana.be/en/dictionary/mundaneum-a-l-internet)." François Schuiten. Stamp: 38,15 mm x 48,75 mm. Block: 90 mm x 125 mm, January 16, 2010.
 &nbsp;(<span property="license"><i class="far fa-copyright"></i>&nbsp;?</span>)</small></figcaption>
 </figure>
-
 
 [Wikidata](https://www.wikidata.org/) is an incredible source of data. The project is powered by open access principles; any human or machine can read and edit its knowledge base. This means that sites as large as Wikipedia or as small as your personal homepage can rely on this global repository of information.
 
@@ -39,7 +38,7 @@ This guide uses Mundaneum and Clojure to automatically classify businesses on th
 
 The scope of this problem is tremendous. The internet hosts at least [1.5 billion websites](https://www.internetlivestats.com/total-number-of-websites/). Even identifying and categorizing a small fraction of these sites using Wikidata means sifting through nearly [100 billion distinct items](https://www.wikidata.org/wiki/Special:Statistics).[^yorba] Those are some big numbers, so let's get started.
 
-[^yorba]: [Yorba](https://yorba.co/) illustrates the practical application of this endeavor. We help our customers manage their relationship to organizations online; there are too many requests for our attention, our data, and our money. Meaningful and consistent names and categories for the relationships Yorba discovers are table stakes and Wikidata is an important tool in that effort.
+[^yorba]: ![](/img/about/yorba-logo-bg-black.png) [Yorba](https://yorba.co/) illustrates the practical application of this endeavor. We help our customers manage their relationship to organizations online; there are too many requests for our attention, our data, and our money. Meaningful and consistent names and categories for the relationships Yorba discovers are table stakes and Wikidata is an important tool in that effort.
 
 # Categorizing Information
 
@@ -115,7 +114,7 @@ This is everything needed to start a Video Games category. The query will `selec
 
 Oh no, zero results! That's because all the video game companies in Wikidata are actually an instance of one of the subclasses of the *video game company* property. Updating the command from `(wdt :instance-of)` to `(cat ~(wdt :instance-of) (* ~(wdt :subclass-of)))` will yield more results when the query is run again.
 
-As described above, an asterisk before a path element returns "zero or more of this element." `(* ~(wdt :subclass-of))` will return the subclass of `~(wdt :instance-of)`. And it will return any subclass of a subclass of an `~(wdt :instance-of)`. And it will return any subclass of a subclass of a subclass of an `~(wdt :instance-of)`. And so on until it exhausts all subclasses.[^documentation]
+As described above, an asterisk before a path element returns "zero or more of this element." `(* ~(wdt :subclass-of))` will return the item itself and the subclass of `~(wdt :instance-of)`. And it will return any subclass of a subclass of an `~(wdt :instance-of)`. And it will return any subclass of a subclass of a subclass of an `~(wdt :instance-of)`. And so on until it exhausts all subclasses.[^documentation]
 
 [^documentation]: This is called [Querying a Class Tree](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries#Querying_a_class_tree). For more information about chaining property paths (indicated by the slash `/` in SPARQL), see [the Property Paths documentation](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial#Property_paths).
 
@@ -200,7 +199,7 @@ In other words, count the number of assertions made about every video game compa
 
 [Nintendo](https://www.nintendo.com/us/regionselector/) ends up being the most significant item at the time of this writing, followed by [Electronic Arts](https://www.ea.com).[^logos]
 
-[^logos]: ![](http://commons.wikimedia.org/wiki/Special:FilePath/Nintendo.svg)  ![](http://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20Arts%202020.svg)
+[^logos]: This approach is really a measurement of "editor attention" and not necessarily correlative with actual cultural prominence. ![](http://commons.wikimedia.org/wiki/Special:FilePath/Nintendo.svg)<br />![](http://commons.wikimedia.org/wiki/Special:FilePath/Electronic%20Arts%202020.svg)<small>Corporate logos stored on Wikidata&nbsp;(<span property="license"><i class="far fa-copyright"></i>&nbsp;Respective copyright holders</span>)</small>
 
 Counting all the assertions associated with an entity is tricky. `[?wikidataId ?predicate ?object]` sets the stage. It says to query the universe of all subject/predicate/objects. The next line, `[?wikidataId (cat ~(wdt :instance-of) (* ~(wdt :subclass-of))) ~(entity "video game company")]`, narrows the query to all items which are an instance of *video game company* or one of its subclasses.
 
@@ -219,7 +218,7 @@ Let's look at counting query results in another way. Wikidata asserts that the v
     | :object | :wd/Q4830453 | :objectLabel | business             |
     | :object | :wd/Q6881511 | :objectLabel | enterprise           |
 
-So this is one type of assertion, the `(wdt :instance-of)` predicate, used to make 4 **statements**. There are 691 statements related to "Sega," the video game developer.[^family-name] Each of these have some kind of unique combination of predicate and object associated with the subject (which is Sega).
+So this is one type of assertion, the `(wdt :instance-of)` predicate, used to make 4 **statements**. There are 691 statements (e.g. total [triples](https://en.wikipedia.org/wiki/Semantic_triple)) related to "Sega," the video game developer.[^family-name] Each of these have some kind of unique combination of predicate and object associated with the subject (which is Sega).
 
 [^family-name]: `(entity "Sega" (wdt :instance-of) (entity "family name"))` is "more popular" with > 1,000 associated statements across all languages but only 28 distinct predicates (i.e. `:distinct? true`).
 
@@ -231,7 +230,7 @@ So this is one type of assertion, the `(wdt :instance-of)` predicate, used to ma
 
 &rArr; `:count 691`
 
-Diving deeper, we can see that Sega has 267 unique predicates.
+Diving deeper, we can see that Sega has 267 unique properties.
 
     (let [sega (entity "Sega" (wdt :instance-of) (entity "video game developer"))]
       (query `{:select [[(count ?predicate :distinct? true) ?count]]
@@ -243,9 +242,10 @@ So we can see that the ranking query must start with `[?wikidataId ?predicate ?o
 
 Rank-by-count is an imperfect system, but it can be useful to sort out the top two or three synonymous item names in larger categories. For example, Apple is a *[business](https://www.wikidata.org/wiki/Q4830453)*. While I know I don't mean the fruit, "Apple" could indicate a business that manufactures computers or the business that makes records because *[record label](https://www.wikidata.org/wiki/Q18127)* is a subclass of *business*.
 
-Odds are that most people are talking about the computer manufacturer when they are talking about a business named Apple.[^record-label] Ranking codifies this probability.
+Odds are that most people are talking about the computer manufacturer when they are talking about a business named Apple. Ranking codifies this probability.[^record-label]
 
-[^record-label]: TODO: add apple records
+[^record-label]: Consider a myriad of other businesses named Apple, including one notable record label. ![](/img/2025-09-02-wikidata-mundaneum/Beatles-first-singles-1000x600.jpg)<small>*[Hey Jude](https://www.udiscovermusic.com/stories/d-day-for-apple-records/)*. The Beatles (August 26, 1968)
+&nbsp;(<span property="license"><i class="far fa-copyright"></i> Apple Records</span>)</small>
 
 # Reusable Functions
 ## Querying Classes
@@ -328,9 +328,9 @@ Lookup by URL is possible.
 
 # On Names
 
-It should be obvious that company names and URLs vary immensely. "Roblox", "Roblox Corporation", "<http://www.roblox.com>", and "<https://roblox.com>" might all be synonymous to us humans but a machine will not be so forgiving. Wikidata does offer `alt` labels[^alt] which have some Natural Language Processing capabilities. But that's beyond the scope of this lengthy blog post.
+It should be obvious that company names and URLs vary immensely. "Roblox", "Roblox Corporation", "<http://www.roblox.com>", and "<https://roblox.com>" might all be synonymous to us humans but a machine will not be so forgiving. Wikidata does offer `alt` labels[^alt] which have some Natural Language Processing capabilities. But that's beyond the scope of this already lengthy blog post.
 
-[^alt]: `:skos/altLabel` ([Simple Knowledge Organization System](https://www.w3.org/TR/skos-primer/)) is an alternative lexical label for a resource. The schema is found at <http://www.w3.org/2004/02/skos/core>. It is an application of the [Resource Description Framework](http://www.w3.org/RDF/) (seen here as `:rdfs/label`, <http://www.w3.org/2000/01/rdf-schema>).
+[^alt]: `:skos/altLabel` ([Simple Knowledge Organization System](https://www.w3.org/TR/skos-primer/)) is an alternative lexical label for a resource - synonyms, abbreviations, or variant spellings. The canonical human-readable name of an entity is exposed as `rdfs:label`, defined by [RDF Schema](http://www.w3.org/2000/01/rdf-schema), while `skos:altLabel` supplements it with additional terms. Both are [RDF properties](http://www.w3.org/RDF/), and together they support multilingual and flexible matching.
 
 The most robust solution would classify by domain name. Domain names offer the most consistent, globally unique identifier. Generating quality domain names from URLs is beyond the scope of this article, but I offer a complete tutorial in *[Turning URLs Into Meaningful Names Using Clojure](https://schmud.de/programs/2022-04-25-urls-into-meaningful-names.html)*. The addition of a `:domain` keyword and other meaningful top-level categories like Travel, Finance, Education, Shopping, and Health would lay the foundation for a robust website classification service.
 

@@ -36,8 +36,10 @@
       [:div.pl2.db.lh-copy.measure (:description post)]])])
 
 (defn make-snippet [content]
-  (let [matcher (re-matcher #"<p>(.*?)</p>" content)]
-    (str (first (re-find matcher))
+  (let [matcher (re-matcher #"<p>(.*?)</p>" content)
+        fig-matcher (re-matcher #"(?s)<figure(.*?)</figure>" content)]
+    (str (first (re-find fig-matcher))
+         (first (re-find matcher))
          (first (re-find matcher))
          (first (re-find matcher)))))
 
@@ -53,7 +55,7 @@
      [:header
       [:a {:href (:permalink post) :title (:title post)}
        [:h1.btf-font {:itemprop "headline"} (:title post)]]
-      (if (= (:type post) "post")
+      (when (= (:type post) "post")
         [:div.btf-font
          [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
          (time-template (:date-published post))
@@ -65,26 +67,24 @@
          [:h1 "Timeline"]
          [:p "Events from this post have been added to a " [:a {:href "/timeline.html" :title "The history of information"} "timeline"] " of significant events in the history of information."
           timeline]])]
-     (if (= (:type post) "page") [:div [:span "Last Updated: "]
+     (when (= (:type post) "page") [:div [:span "Last Updated: "]
                                   (time-template (:date-modified post))])]))
 
 (defn article-template-abbreviated [post]
-  (let [timeline (timeline/make-timeline-for-post (:permalink post))]
-    [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
-     [:meta {:itemprop "author" :content "David Schmudde"}]
-     [:header
-      [:a {:href (:permalink post) :title (:title post)}
-       [:h1 {:itemprop "headline"} (:title post)]]
-      (if (= (:type post) "post")
-        [:div
-         [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
-         (time-template (:date-published post))
-         [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
-     [:section {:role "main" :itemprop "articleBody"}
-      (make-snippet (:content post))
-      [:p "..."]
-      [:p "Read the complete post," [:a {:href (:permalink post) :title (:title post)} [:i (:title post)]] " &rarr;"
-       ]]]))
+  [:article {:itemscope "itemscope" :itemtype "http://schema.org/BlogPosting"}
+   [:meta {:itemprop "author" :content "David Schmudde"}]
+   [:header
+    [:a {:href (:permalink post) :title (:title post)}
+     [:h1 {:itemprop "headline"} (:title post)]]
+    (when (= (:type post) "post")
+      [:div
+       [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"
+       (time-template (:date-published post))
+       [:span.ml4 [:i {:class "fa fa-tags"}] "&nbsp;"] (tags->links (:tags post))])]
+   [:section {:role "main" :itemprop "articleBody"}
+    (make-snippet (:content post))
+    [:p "..."]
+    [:p "Read the complete post, " [:a {:href (:permalink post) :title (:title post)} [:i (:title post)]] " &rarr;"]]])
 
 (defn render-book-pages [{global-meta :meta book-review :entry}]
   (let [content [:div (article-template book-review)]]

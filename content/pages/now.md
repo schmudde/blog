@@ -64,13 +64,11 @@ I'm currently juggling these books, amoungst a few others:
 
 ## Recent Memory
 
-### [School of Machines, Making & Make-Believe](https://www.schoolofma.org/programs/p/10-years-yay) in Berlin, Germany (2024)
+### [School of Machines, Making & Make-Believe](https://www.schoolofma.org/news/10yearanniversaryopening) in Berlin, Germany (2024)
 
-[^now] The exhibition at Kunstquartier Bethanien featured Gallery 404's latest extension, *The net.art Restoration Project of Gallery 404*.
+The exhibition at Kunstquartier Bethanien featured Gallery 404's latest extension, *The net.art Restoration Project of Gallery 404*.
 
 *The net.art Restoration Project of Gallery 404* presents a vision of what semi-automated cultural preservation might look like. The visitor helps train five screen net.art experience guides visitors through the restoration of a digital artwork from the 1990s. It outsources the difficult labor of restoration to machines to provide dubious results. Machines that moderate our experience of the present today will inevitably mediate our relationship to the past and profoundly impact our understanding of the future. Try it [here](https://www.netart.today/pages/restoration-project.html).
-
-The exhibition runs throughout August.
 
 ![*The net.art Restoration Project*](/img/now/net-art-restoration-schoolofma.jpg)
 
