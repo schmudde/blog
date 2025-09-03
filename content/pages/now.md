@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2020-04-15
-date-modified: 2025-09-01
+date-modified: 2025-09-03
 date-published: 2020-04-23
 in-language: en
 canonical-url: http://schmud.de
@@ -25,8 +25,8 @@ I’m wrapping up *Windows into Windows*, an architectual installation for a lar
 
 *Windows into Windows* features a series of historical paintings that mediate the outside world through windows. The images themselves are displayed within computer operating system windows - another mediation. The entire experience is mediated by the distinct visual properties of the WÔL LED screen. The exhibition is a reflection of our increasingly mediated reality.
 
-[^windows]: ![](/img/now/catel-1824.jpg)<figcaption><small>*[A View of Naples through a Window](https://www.clevelandart.org/art/1994.198)* Franz Ludwig Catel (1824)
-&nbsp;<span property="license">(<a class="link no-tufte-underline" href="https://www.clevelandart.org/art/1994.198" rel="license"><i class="fab fa-creative-commons-pd-alt"></i>&nbsp;The Cleveland Museum of Art</a>)</span></small></figcaption>
+[^windows]: ![](/img/now/catel-1824.jpg)<small>*[A View of Naples through a Window](https://www.clevelandart.org/art/1994.198)* Franz Ludwig Catel (1824)
+&nbsp;<span property="license">(<a class="link no-tufte-underline" href="https://www.clevelandart.org/art/1994.198" rel="license"><i class="fab fa-creative-commons-pd-alt"></i>&nbsp;The Cleveland Museum of Art</a>)</span></small>
 
 ## Yorba: Account Lifecycles
 

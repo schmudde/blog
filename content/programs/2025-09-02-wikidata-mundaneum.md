@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Udine, Italy
 date-created: 2025-08-27
-date-modified: 2025-08-27
+date-modified: 2025-09-03
 date-published: 2025-09-02
 in-language: en
 keywords: wikidata
@@ -36,7 +36,10 @@ This guide uses Mundaneum and Clojure to automatically classify businesses on th
 
 [^getting-started]: If you are new to SPARQL or Mundaneum, the [README](https://github.com/jackrusher/mundaneum) offers an entertaining raison d'être and the getting started.
 
-The scope of this problem is tremendous. The internet hosts at least [1.5 billion websites](https://www.internetlivestats.com/total-number-of-websites/). Even identifying and categorizing a small fraction of these sites using Wikidata means sifting through nearly [100 billion distinct items](https://www.wikidata.org/wiki/Special:Statistics).[^yorba] Those are some big numbers, so let's get started.
+The scope of this problem is tremendous. The internet hosts at least [1.5 billion websites](https://www.internetlivestats.com/total-number-of-websites/). Even identifying and categorizing a small fraction of these sites using Wikidata means sifting through nearly [100 million distinct items](https://www.wikidata.org/wiki/Special:Statistics).[^items] Those are some big numbers, so let's get started.[^yorba]
+
+[^items]: McDowell, Zachary J., Matthew A. Vetter. &ldquo;[The Realienation of the Commons: Wikidata and the Ethics of 'Free' Data](https://ijoc.org/index.php/ijoc/article/view/20807).&rdquo; *International Journal of Communication*. Vol 18 (2024).
+
 
 [^yorba]: ![](/img/about/yorba-logo-bg-black.png) [Yorba](https://yorba.co/) illustrates the practical application of this endeavor. We help our customers manage their relationship to organizations online; there are too many requests for our attention, our data, and our money. Meaningful and consistent names and categories for the relationships Yorba discovers are table stakes and Wikidata is an important tool in that effort.
 
