@@ -1,4 +1,10 @@
-[{:title "Representative Taylor Greene Spreads QAnon Claims in Congress on the Night of the Capitol Invasion"
+[{:title "The Nepalese Gen Z Revolution"
+  :geo "Kathmandu, Nepal"
+  :date #time/date "2025-09-04"
+  :desc "From the rooftop of my hotel in Kathmandu, I watched as the city burn - luxury towers, courts, and data centers consumed by flames - an uprising ignited by a government social-media ban and fueled by fury at corruption and the unchecked power of global tech."
+  :link "/posts/2025-09-18-signs-in-the-fire-kathmandu.html"
+  :link-name "Signals in the Fire"}
+ {:title "Representative Taylor Greene Spreads QAnon Claims in Congress on the Night of the Capitol Invasion"
   :geo "Washington D.C., US"
   :date #time/date "2021-01-06"
   :desc "&ldquo;It’s been proven that these [voting] machines are connected and that they can be hacked.&rdquo;"
@@ -30,6 +36,13 @@
   :link "/posts/2020-05-29-disinformation-strategies.html"
   :link-name "Disinformation Strategies and Tactics"
   :image nil}
+ {:title "The Rohingya Genocide"
+  :geo "Myanmar"
+  :date #time/year "2017"
+ :desc "Anti-Rohingya hate speech spread unchecked on Facebook for months, helping to whip up a violent frenzy in the country. The UN described the campaign against the Rohingya as a &ldquo;textbook example of ethnic cleansing&rdquo; in August of 2017."
+  :footer "~ <a href='https://news.un.org/en/story/2017/09/564622-un-human-rights-chief-points-textbook-example-ethnic-cleansing-myanmar'>UN human rights chief points to 'textbook example of ethnic cleansing' in Myanmar </a>"
+  :link "/posts/2025-09-18-signs-in-the-fire-kathmandu.html"
+  :link-name "Signals in the Fire"}
  {:title "Bret Victor Publishes &ldquo;What Can a Technologist Do About Climate Change?&rdquo;"
   :geo nil
   :date #time/year-month "2015-11"
@@ -116,6 +129,13 @@
   :link nil ;; "/posts/identity-trap.html"
   :link-name nil ;;"The Identity Trap"
   :image nil}
+ {:title "Section 230 Passes as Part of the Telecommunications Act of 1996"
+  :geo "Washington D.C., US"
+  :date #time/date "1996-01-03"
+  :desc "&ldquo;Section 230 exempts for-profit Social Media companies from liability for distributing user content that damages other individuals and editing or censuring user content in the spirit of a Good Samaritan.&rdquo;"
+  :link "/posts/2025-09-18-signs-in-the-fire-kathmandu.html"
+  :link-name "Signals in the Fire"
+  :footer "~ <a href='https://comradity.substack.com/p/understanding-section-230'>Understanding Section 230</a>"}
  {:title "Network Solutions Charges for Domain Names"
   :geo nil
   :date #time/year-month "1995-09"
