@@ -8,7 +8,7 @@ author-github: schmudde
 author-twitter: dschmudde
 location: Turin, Italy
 date-created: 2021-04-22
-date-modified: 2022-05-14
+date-modified: 2025-12-29
 date-published: 2021-04-22
 in-language: en
 keywords: identity, dns, did, computerhistory, earnest
@@ -20,7 +20,7 @@ tags:
 
 Decade after decade our identity becomes increasingly integrated with computer systems. It is at the core of our life on the internet. This systematization will have radical effects on society on par with the emergence of artificial intelligence.
 
-Much of what is useful about our identity is paradoxically formed by other people. This includes everything from reputation to certification. Our identity and the benefits it bestows is more fragile than it appears. A change in your reputation can ripple through the fabric society; a new credential can open new doors but an ad hominem attack can close countless others.
+Much of what is useful about our identity is paradoxically formed by other people. This includes everything from reputation to certification. Our identity and the benefits it bestows is more fragile than it appears. A change in your reputation can ripple through the fabric of society; a new credential can open new doors but an ad hominem attack can close countless others.
 
 A trip through time on the public networks will reveal the evolution of priorities when capturing our lives in data. This could be done with any identity, but I chose to focus on the history of the best-selling author [Diana Gabaldon](https://en.wikipedia.org/wiki/Diana_Gabaldon).[^outlander] The story starts on July 20, 1988 when she was known as `76530,523` and continues to the present day.
 
@@ -170,7 +170,7 @@ Second, the internet's original anonymity was due, in part, to its lack of state
 
 [^jones]:&ldquo;The web was designed to be navigated by information, not host, using links to move through the network. As the first website describes on its “Dos and Don’ts” page: “There are no sessions between client and server. The client may retain state, (i.e. it knows which path it has followed) but the server may not. Each time a link is followed, a connection with the server is established, the request made, the server’s response sent back and the connection closed. Therefore there is no way that the server should know what it did with a client before the current request” (Implementation Guidelines, 1992).&rdquo; Jones, Meg Leta; Ackermann, Kevin (2020). Practicing privacy on other networks: network structures, economic arrangements, and identity strategies before cookies. Internet Histories, (), 1–19. doi:10.1080/24701475.2020.1747344
 
-Advertising networks had an incredible incentive to remember your every move for analysis. The actions you take provides deep insights into who you are. Better insights into identity are incredibly valuable to marketers attempting to sell you products.
+Advertising networks had an incentive to remember your every move for analysis. The actions you take provides deep insights into who you are. Better insights into identity are incredibly valuable to marketers attempting to sell you products.
 
 ## What's Next
 
