@@ -124,7 +124,8 @@
 
       [:a.link.no-tufte-underline {:href "/"} ;; inherits row on ns
        [:span.flex.items-center.ph4-ns
-        [:div.flex.flex-column-ns.flex-row {:itemprop "publisher"}
+        [:div.flex.flex-column-ns.flex-row {:itemprop "publisher" :itemscope "itemscope" :itemtype "https://schema.org/Organization"}
+         [:meta {:itemprop "name" :content "Beyond the Frame"}]
          [:span.f1-ns.f2.tr.btf-font "Beyond"]
          [:span.f1-ns.f2.tr.btf-font "&nbsp;the Frame"]]
         [:img.logo.v-mid.pl4.w4-ns.h4-ns.dn.db-ns {:src "/img/btf-logo.svg"}]]]]]]])
@@ -134,7 +135,7 @@
   (page/html5 {:lang "en" :itemscope "itemscope" :itemtype "http://schema.org/WebPage"}
               (head-template global-meta page-meta)
               [:body
-               [:header {:itemscope "itemscope" :itemtype "https://schema.org/WPHeader"} (header-template global-meta)]
+               [:header (header-template global-meta)]
                [:main {:role "main"} content]
                [:footer.pv4.ph3.ph5-ns.tc {:itemscope "itemscope" :itemtype "https://schema.org/WPFooter"}
                 (footer-template)]
