@@ -104,7 +104,6 @@
    :review "Book Reviews"
    :clojure "Clojure Tutorials and Programs"})
 
-
 (defn render-tag-pages [{global-meta :meta tag :entry posts :entries}]
   (let [num-of-posts (count posts)
         first-half (+ (quot num-of-posts 2) (rem num-of-posts 2))

@@ -49,6 +49,9 @@
    ;; To use Aperture as your Microsub endpoint. Then use Monocle.p3k.io as a reader.
    [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
 
+   [:link {:rel "alternate" :type "application/rss+xml" :title "Beyond the Frame" :href "feed.rss"}]
+
+
    ;; Convert Kit "Grove Form"
    #_[:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
 
