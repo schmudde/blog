@@ -107,6 +107,7 @@
 (defn render-tag-pages [{global-meta :meta tag :entry posts :entries}]
   (let [num-of-posts (count posts)
         first-half (+ (quot num-of-posts 2) (rem num-of-posts 2))
+        tag (assoc tag :canonical-url (str (:base-url global-meta) "tags/" (:tag tag) ".html"))
         content [:div.cf
                  [:h1.tc (str "Posts Tagged As #" (:tag tag) )]
                  [:h2.tc ((keyword (:tag tag)) tag-definitions)]
