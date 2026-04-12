@@ -104,7 +104,10 @@
         (perun/rss :filterer (apply every-pred [post? published? #((comp not archive?) %)]))
         (perun/rss :site-title "Beyond the Frame: Clojure" :description "Essays about the Clojure programming language"
                    :filterer (apply every-pred [tagged-clojure? published?]) :filename "btf-clojure-feed.rss")
-        (target)))
+        ;; :no-clean true preserves timestamps on unchanged files so lftp only
+        ;; re-uploads content that actually changed. Trade-off: deleted content
+        ;; lingers in target/ until manually cleaned (`rm -rf target/`).
+        (target :no-clean true)))
 
 (deftask dev []
   (comp (watch)
