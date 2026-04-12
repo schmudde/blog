@@ -87,7 +87,6 @@
 
         (perun/render :renderer 'site.place/render-place-pages
                       :filterer (apply every-pred [place? published?])
-                      :out-dir "public/places"
                       :meta {:type "place"})
 
         (perun/render :renderer 'site.core/render-post-pages
