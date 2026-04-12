@@ -1,9 +1,6 @@
 /target
 *.jar
 *.class
-/resources/public/css/et-book/*
-/resources/public/css/tachyons.min.css
-/resources/public/css/tufte.min.css
 .nrepl-history
 .nrepl-port
 .lsp
