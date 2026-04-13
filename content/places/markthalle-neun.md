@@ -10,7 +10,7 @@ date-published: 2026-04-12
 in-language: en
 place-type: market
 address: Eisenbahnstraße 42/43
-locality: Berlin
+city: Berlin
 country: DE
 latitude: 52.4991
 longitude: 13.4343

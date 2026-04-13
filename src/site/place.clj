@@ -5,7 +5,7 @@
 
 (defn render-place-pages [{global-meta :meta place :entry}]
   (let [{:keys [title canonical-url date-published
-                address locality region country
+                address city country
                 latitude longitude
                 place-type opening-hours website
                 content]} place
@@ -24,14 +24,13 @@
 
       [:div.pl2
        ;; Address block
-       (when (or address locality country)
+       (when (or address city country)
          [:div.p-adr {:itemprop "address"
                       :itemscope "itemscope"
                       :itemtype "https://schema.org/PostalAddress"}
-          (when address  [:div.p-street-address {:itemprop "streetAddress"}  address])
-          (when locality [:div.p-locality        {:itemprop "addressLocality"} locality])
-          (when region   [:div.p-region          {:itemprop "addressRegion"}   region])
-          (when country  [:div.p-country-name    {:itemprop "addressCountry"}  country])])
+          (when address [:div.p-street-address {:itemprop "streetAddress"}   address])
+          (when city    [:div.p-locality        {:itemprop "addressLocality"} city])
+          (when country [:div.p-country-name    {:itemprop "addressCountry"}  country])])
 
        ;; Hidden lat/lon for mf2 parsers
        (when latitude
