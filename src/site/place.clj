@@ -5,7 +5,7 @@
 
 (defn render-place-pages [{global-meta :meta place :entry}]
   (let [{:keys [title canonical-url date-published
-                address city country
+                address city state country
                 latitude longitude
                 place-type notes website
                 content]} place
@@ -30,6 +30,7 @@
                       :itemtype "https://schema.org/PostalAddress"}
           (when address [:div.p-street-address {:itemprop "streetAddress"}   address])
           (when city    [:div.p-locality        {:itemprop "addressLocality"} city])
+          (when state   [:div.p-region          {:itemprop "addressRegion"}   state])
           (when country [:div.p-country-name    {:itemprop "addressCountry"}  country])])
 
        ;; Hidden lat/lon for mf2 parsers
