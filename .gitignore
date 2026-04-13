@@ -1,6 +1,7 @@
 /target
 *.jar
 *.class
+/server/
 .nrepl-history
 .nrepl-port
 .lsp

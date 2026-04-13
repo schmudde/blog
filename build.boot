@@ -1,5 +1,5 @@
 (set-env!
- :source-paths #{"src" "content"}
+ :source-paths #{"src" "content" "server"}
  :resource-paths #{"resources"}
  :dependencies '[[perun "0.4.3-SNAPSHOT" :scope "test"]
                  [nrepl "0.7.0" :scope "test"]
