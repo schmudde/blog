@@ -14,7 +14,7 @@ city: Berlin
 country: DE
 latitude: 52.4991
 longitude: 13.4343
-opening-hours: "Th 17:00-22:00, Sa 10:00-18:00"
+notes: Thursday street food market and Saturday farmers market.
 website: https://markthalleneun.de
 tags:
  - place

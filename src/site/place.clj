@@ -7,7 +7,7 @@
   (let [{:keys [title canonical-url date-published
                 address city country
                 latitude longitude
-                place-type opening-hours website
+                place-type notes website
                 content]} place
         osm-url (when (and latitude longitude)
                   (str "https://www.openstreetmap.org/?mlat=" latitude
@@ -49,10 +49,10 @@
          [:div.mt2
           [:span.f6.gray "Type: "] [:span place-type]])
 
-       ;; Opening hours
-       (when opening-hours
+       ;; Notes
+       (when notes
          [:div.mt2
-          [:span.f6.gray "Hours: "] [:span opening-hours]])
+          [:span.f6.gray "Notes: "] [:span notes]])
 
        ;; Website
        (when website
