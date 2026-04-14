@@ -92,6 +92,9 @@
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render
+                      :page "places.html"
+                      :meta {:type "page"})
         (perun/static :renderer 'site.cv/render
                       :page "cv.html"
                       :meta {:type "page"})
