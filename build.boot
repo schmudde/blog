@@ -20,13 +20,6 @@
     (.startsWith original-path "pages/")
     false))
 
-(defn place?
-  "In: {:original-path \"places/\"}"
-  [{:keys [original-path] :as meta}]
-  (if original-path
-    (.startsWith original-path "places/")
-    false))
-
 (defn post? [{:keys [original-path] :as meta}]
   (if original-path
     (.startsWith original-path "posts/")
@@ -84,10 +77,6 @@
         (perun/tags :renderer 'site.core/render-tag-pages
                     :filterer (apply every-pred [(some-fn book? post? program?) published?])
                     :out-dir "public/tags")
-
-        (perun/render :renderer 'site.place/render-place-pages
-                      :filterer (apply every-pred [place? published?])
-                      :meta {:type "place"})
 
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?

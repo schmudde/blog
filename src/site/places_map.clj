@@ -62,17 +62,21 @@
 ;; JS generation
 ;; ---------------------------------------------------------------------------
 
-(defn place->js [{:keys [place name latitude longitude city country
-                          visit-count last-visit]}]
-  (format "{name:%s,lat:%s,lon:%s,url:\"/places/%s.html\",city:%s,country:%s,visits:%d,last:%s}"
+(defn place->js [{:keys [name latitude longitude city country
+                          visit-count last-visit website notes rating osm-url map-url]}]
+  (format "{name:%s,lat:%s,lon:%s,city:%s,country:%s,visits:%d,last:%s,website:%s,notes:%s,rating:%s,osmUrl:%s,mapUrl:%s}"
           (pr-str (or name ""))
           (->double latitude)
           (->double longitude)
-          place
           (pr-str (or city ""))
           (pr-str (or country ""))
           (or visit-count 1)
-          (pr-str (or (some-> last-visit (subs 0 10)) ""))))
+          (pr-str (or (some-> last-visit (subs 0 10)) ""))
+          (pr-str (or website ""))
+          (pr-str (or notes ""))
+          (if rating (str rating) "null")
+          (pr-str (or osm-url ""))
+          (pr-str (or map-url ""))))
 
 (defn places-js [places]
   (str "var places=["
@@ -89,8 +93,16 @@
    "places.forEach(function(p){"
    "  if(!p.lat||!p.lon) return;"
    "  var visits=p.visits===1?'1 visit':p.visits+' visits';"
-   "  var popup='<strong><a href=\"'+p.url+'\">'+p.name+'</a></strong>"
-   "<br>'+p.city+(p.country?', '+p.country:'')+'<br>'+visits+(p.last?'<br><small>Last: '+p.last+'</small>':'');"
+   "  var title=p.website?'<strong><a href=\"'+p.website+'\">'+p.name+'</a></strong>':'<strong>'+p.name+'</strong>';"
+   "  var popup=title"
+   "+'<br>'+p.city+(p.country?', '+p.country:'')"
+   "+(p.notes?'<br><em>'+p.notes+'</em>':'')"
+   "+(p.rating?'<br>Rating: '+p.rating+'/5':'')"
+   "+'<br>'+visits"
+   "+(p.last?'<br><small>Last: '+p.last+'</small>':'')"
+   "+((p.osmUrl||p.mapUrl)?'<br>':'')"
+   "+(p.osmUrl?'<a href=\"'+p.osmUrl+'\">OSM</a>':'')"
+   "+(p.mapUrl?(p.osmUrl?' &middot; ':'')+' <a href=\"'+p.mapUrl+'\">Maps</a>':'');"
    "  L.marker([p.lat,p.lon]).addTo(map).bindPopup(popup);"
    "});"))
 
