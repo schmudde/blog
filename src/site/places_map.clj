@@ -25,6 +25,12 @@
       (edn/read-string (slurp f))
       [])))
 
+(defn load-turin []
+  (let [f (io/file blog-dir "server" "turin.edn")]
+    (if (.exists f)
+      (edn/read-string (slurp f))
+      [])))
+
 (defn ->double [v]
   (when v
     (try (Double/parseDouble (str v))
@@ -43,6 +49,14 @@
                        :last-visit  (:timestamp latest)))))
        (filter #(and (->double (:latitude %))
                      (->double (:longitude %))))))
+
+(defn normalize-turin
+  "Normalize turin.edn entries to the same shape expected by place->js."
+  [entries]
+  (->> entries
+       (filter #(and (->double (:latitude %))
+                     (->double (:longitude %))))
+       (map #(assoc % :visit-count 1 :last-visit nil))))
 
 ;; ---------------------------------------------------------------------------
 ;; JS generation
@@ -68,7 +82,7 @@
 (defn map-script [places]
   (str
    (places-js places)
-   "var map=L.map('map').setView([45.0703,7.6869],5);"
+   "var map=L.map('map').setView([45.0703,7.6869],13);"
    "L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',"
    "{attribution:'&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'}"
    ").addTo(map);"
@@ -85,7 +99,9 @@
 ;; ---------------------------------------------------------------------------
 
 (defn render [{global-meta :meta}]
-  (let [places (-> (load-checkins) dedupe-places)
+  (let [checkin-places (-> (load-checkins) dedupe-places)
+        turin-places   (-> (load-turin) normalize-turin)
+        places         (concat checkin-places turin-places)
         page   {:title        "Places"
                 :canonical-url (str (:base-url global-meta) "places.html")
                 :description  "Places I have visited"}]
