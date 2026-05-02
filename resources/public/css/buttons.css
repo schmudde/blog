@@ -1,0 +1,23 @@
+/* CSS-only radio/checkbox toggle buttons.
+   Pattern: hidden <input type="radio"> siblings drive visible <label> styling
+   via the general sibling combinator (~). */
+
+input[name="places-filter"] {
+  display: none;
+}
+
+.places-filter label {
+  cursor: pointer;
+  margin-right: 1em;
+  padding: 0.2em 0.6em;
+  border: 1px solid #800020;
+  border-radius: 3px;
+  color: #800020;
+}
+
+#filter-all:checked ~ .places-filter label[for="filter-all"],
+#filter-top:checked ~ .places-filter label[for="filter-top"] {
+  font-weight: bold;
+  background: #800020;
+  color: white;
+}

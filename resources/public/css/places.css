@@ -1,0 +1,23 @@
+/* Layout for the places.html Leaflet map page. */
+
+.places-filter {
+  margin-bottom: 1.5rem;
+}
+
+.map-wrap {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.map-wrap > div {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.2s;
+}
+
+#filter-all:checked ~ .map-wrap #map-top,
+#filter-top:checked ~ .map-wrap #map-all {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -12,7 +12,7 @@
 (defn head-template [{:keys [site-title base-url author] :as global-meta}
                      {:keys [title canonical-url content] :as page-meta}]
   [:head
-   [:title site-title (if title (str " | " title))]
+   [:title site-title (when title (str " | " title))]
    [:meta {:charset "utf-8"}]
    [:meta {:http-equiv "Content-Type" :content "text/html"}]
    [:link {:rel "icon" :href "/favicon.ico" :type "image/x-icon"}]
@@ -27,16 +27,17 @@
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
    [:meta {:property "og:image" :content (if-let [img-url (extract-image content)]
-                                           (str "http://schmud.de" img-url)
+                                             (str "http://schmud.de" img-url)
                                            "http://schmud.de/img/btf-logo.svg")}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
    (if title ; if there is a post title, this is an article, otherwise it is a website
-     [:meta {:property "og:type":content "article"}]
+       [:meta {:property "og:type":content "article"}]
      [:meta {:property "og:type":content "website"}])
    [:meta {:name "ahrefs-site-verification" :content "9f4e0e681ebce19d5f7a4a7ddbab899c9fbc893c04144bd69fc950c3ad555dd2"}]
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
    [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
    [:link {:rel "stylesheet" :href "/css/btf.css"}]
+   [:link {:rel "stylesheet" :href "/css/buttons.css"}]
 
    ;; Webmention
    [:link {:rel "webmention" :href "https://webmention.io/schmud.de/webmention"}]
@@ -54,7 +55,8 @@
 
    ;; Convert Kit "Grove Form"
    #_[:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
-
+   ;; Convert Kit "Powell Form"
+   [:script {:data-uid "0fd8364fa2" :src "https://schmudde.kit.com/0fd8364fa2/index.js" :async "async"}]
 
    ;; Twitter
    #_[:script {:src "/js/twitter-website-tag-code-snippet.js"}]
@@ -65,7 +67,7 @@
 
    ;; Matomo
    [:script
-      "var _paq = window._paq = window._paq || [];
+    "var _paq = window._paq = window._paq || [];
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {

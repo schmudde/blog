@@ -5,7 +5,7 @@
             [ring.mock.request :as mock]))
 
 (defn format-date [date]
-  (if date (.format (java.text.SimpleDateFormat. "MMMM dd, yyyy") date)))
+  (when date (.format (java.text.SimpleDateFormat. "MMMM dd, yyyy") date)))
 
 (defn tags->links [tags]
   [:ul.list.dib.ma0.pa0 {:class "tags"}

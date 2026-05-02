@@ -78,33 +78,50 @@
           (pr-str (or osm-url ""))
           (pr-str (or map-url ""))))
 
-(defn places-js [places]
-  (str "var places=["
-       (str/join "," (map place->js places))
-       "];"))
+(defn marker-js
+  "Emit a single JS statement adding a marker for `p` to `map-var`."
+  [map-var p]
+  (str "L.marker([" (->double (:latitude p)) ", " (->double (:longitude p)) "])"
+       ".addTo(" map-var ")"
+       ".bindPopup(makePopup(" (place->js p) "));"))
+
+(def popup-js
+  "function makePopup(p) {
+    var visits = p.visits === 1 ? '1 visit' : p.visits + ' visits';
+    var title  = p.website
+      ? '<strong><a href=\"' + p.website + '\">' + p.name + '</a></strong>'
+      : '<strong>' + p.name + '</strong>';
+    return title
+      + '<br>' + p.city + (p.country ? ', ' + p.country : '')
+      + (p.notes  ? '<br><em>'    + p.notes          + '</em>'   : '')
+      + (p.rating ? '<br>Rating: ' + p.rating + '/5'             : '')
+      + '<br>' + visits
+      + (p.last ? '<br><small>Last: ' + p.last + '</small>' : '')
+      + ((p.osmUrl || p.mapUrl) ? '<br>' : '')
+      + (p.osmUrl ? '<a href=\"' + p.osmUrl + '\">OSM</a>' : '')
+      + (p.mapUrl ? (p.osmUrl ? ' &middot; ' : '') + '<a href=\"' + p.mapUrl + '\">Maps</a>' : '');
+  }")
+
+(defn init-map-js
+  "Emit JS that creates a Leaflet map in `div-id`, populated from `places`."
+  [map-var div-id places]
+  (let [;; centre the map on Turin
+        init-map   (str "var " map-var " = L.map('" div-id "').setView([45.0703, 7.6869], 13);")
+
+        ;; add the OpenStreetMap tile layer
+        tile-layer (str "L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'
+  }).addTo(" map-var ");")
+
+        ;; one marker statement per place, built in Clojure
+        markers    (str/join "\n" (map #(marker-js map-var %) places))]
+    (str/join "\n" [init-map tile-layer markers])))
 
 (defn map-script [places]
-  (str
-   (places-js places)
-   "var map=L.map('map').setView([45.0703,7.6869],13);"
-   "L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',"
-   "{attribution:'&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'}"
-   ").addTo(map);"
-   "places.forEach(function(p){"
-   "  if(!p.lat||!p.lon) return;"
-   "  var visits=p.visits===1?'1 visit':p.visits+' visits';"
-   "  var title=p.website?'<strong><a href=\"'+p.website+'\">'+p.name+'</a></strong>':'<strong>'+p.name+'</strong>';"
-   "  var popup=title"
-   "+'<br>'+p.city+(p.country?', '+p.country:'')"
-   "+(p.notes?'<br><em>'+p.notes+'</em>':'')"
-   "+(p.rating?'<br>Rating: '+p.rating+'/5':'')"
-   "+'<br>'+visits"
-   "+(p.last?'<br><small>Last: '+p.last+'</small>':'')"
-   "+((p.osmUrl||p.mapUrl)?'<br>':'')"
-   "+(p.osmUrl?'<a href=\"'+p.osmUrl+'\">OSM</a>':'')"
-   "+(p.mapUrl?(p.osmUrl?' &middot; ':'')+' <a href=\"'+p.mapUrl+'\">Maps</a>':'');"
-   "  L.marker([p.lat,p.lon]).addTo(map).bindPopup(popup);"
-   "});"))
+  (let [top-places (filter #(= 5 (:rating %)) places)]
+    (str/join "\n" [popup-js
+                    (init-map-js "mapAll" "map-all" places)
+                    (init-map-js "mapTop" "map-top" top-places)])))
 
 ;; ---------------------------------------------------------------------------
 ;; Renderer
@@ -124,6 +141,15 @@
       [:h1 "Places"]
       [:link {:rel "stylesheet"
               :href "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"}]
-      [:div#map {:style "height:600px;width:100%;"}]
+      [:link {:rel "stylesheet" :href "/css/buttons.css"}]
+      [:link {:rel "stylesheet" :href "/css/places.css"}]
+      [:input {:type "radio" :id "filter-all" :name "places-filter" :checked true}]
+      [:input {:type "radio" :id "filter-top" :name "places-filter"}]
+      [:div.places-filter
+       [:label {:for "filter-all"} "All Places"]
+       [:label {:for "filter-top"} "5/5 Only"]]
+      [:div.map-wrap
+       [:div#map-all]
+       [:div#map-top]]
       [:script {:src "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"}]
       [:script (map-script places)]])))
