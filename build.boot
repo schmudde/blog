@@ -84,6 +84,9 @@
         (perun/static :renderer 'site.places-map/render
                       :page "places.html"
                       :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-embed
+                      :page "places-embed.html"
+                      :meta {:type "page"})
         (perun/static :renderer 'site.feeds/render
                       :page "pages/feeds.html"
                       :meta {:type "page"})

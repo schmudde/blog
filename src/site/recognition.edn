@@ -448,13 +448,16 @@
  [{:org "Ruca: A business co-operative"
    :title "Member"
    :date #time/year "2020"}
-  {:org "Ampled: An online artist co-operative"
-   :title "Community Member"
+  {:org "Torino Respira"
+   :title "Member"
    :date #time/year "2020"}
   {:org "Association for Computing Machinery"
    :title "Member"
-   :date-bgn #time/year "2019"
-   :date-end #time/year "2020"}
+   :date #time/year "2019"}
+  {:org "Ampled: An online artist co-operative"
+   :title "Community Member"
+   :date-bgn #time/year "2020"
+   :date-end #time/year "2023"}
   {:org "Society for the History of Technology"
    :title "Member"
    :date-bgn #time/year "2016"
@@ -547,7 +550,28 @@
 
  ;; TODO: add Movie Talk Show: https://movietalkshow.wixsite.com/movie-talk-show/video-reel
  :in-the-media
- [{:title "Software, Art, Augmented Intelligence & Functional Programming"
+ [{:title "The Cost Of Convenience In The Age Of AI"
+   :publication "Forbes"
+   :link "https://www.forbes.com/sites/garydrenik/2026/03/05/the-cost-of-convenience-in-the-age-of-ai/"
+   :date #time/date "2026-03-05"
+   :author "Gary Drenik"
+   :synopsis "&ldquo;David Schmudde, the CTO at Yorba commented on the trend: &lsquo;We're currently in the Wild West of AI. Solutions have been proposed: charging senders fractions of a cent to send an email, providing humans with an immutable &lsquo;heartbeat&lsquo; identifier, but no one is experimenting with rolling them out. Until we get serious about this, I'm afraid the problem is just going to get worse.&rsquo;&rdquo;"
+   :desc "expert commentary"}
+  {:title "Balancing Cybersecurity and Budget in Startups: 15 Real-Life Examples"
+   :publication "Startup Nation"
+   :link "https://startupnation.com/manage-your-business/protect-your-business/balancing-cybersecurity-and-budget-in-startups-15-real-life-examples/"
+   :date #time/date "2024-10-11"
+   :author "Brett Farmiloe"
+   :synopsis "David Schmudde, Co-Founder and CTO, Yorba: &ldquo;There is no way to do security cheaply. If you’re going to save money here, it means you’ll need to reconsider what data you store. At Yorba, we put ourselves in a win-win situation by following Lean Data Practices; we don’t hold onto a bunch of information we don’t need while implicitly respecting our customers’ privacy.<br/>The next place to save money upfront is to outsource things that aren’t a core business concern to a third-party service. Login credentials are an obvious place to start. Yorba pays a service monthly to free up precious capital as we bootstrap. SaaS commitments can bite you as you scale, so we make sure to design with an eye toward modularity.<br/> Getting lean and outsourcing concerns won’t solve security concerns for data in transit, but it at least starts to limit the attack surface. To account for what’s left, we follow the fundamentals (use TLS, pay attention to session management, etc.) and also put a lot of effort into culture. Most attackers get into systems through social hacking (such as phishing) or the careless handling of sensitive documents. The upside to investing in culture is that it pays countless dividends down the line.&rdquo;"
+   :desc "expert commentary"}
+  {:title "Scaling Tech Solutions: What Challenges Do Businesses Face?"
+   :publication "TechBullion"
+   :link "https://techbullion.com/scaling-tech-solutions-what-challenges-do-businesses-face/"
+   :date #time/date "2024-08-10"
+   :author "Brett Farmiloe"
+   :synopsis "David Schmudde, Co-Founder and CTO, Yorba: &ldquo;There is a constant tension between maintenance, the demands of the moment, and building what’s next. The only way to make sense of it all is to measure the impact of completing an improvement against the amount of work it requires. &lsquo;Impact&rsquo; is a fuzzy word, but it’s something that can be defined before committing to new work—both qualitatively and quantitatively. You know you understand the problem and the benefit of the work once you can successfully make the case to others on your team.&rdquo;"
+   :desc "expert commentary"}
+  {:title "Software, Art, Augmented Intelligence & Functional Programming"
    :publication "Mozaic Works"
    :synopsis "We had the chance to discuss with David Schmüdde, artist and programmer, passionate about functional programming, and tuned to the humanistic aspects of software development and computers' role in society. We spent one hour discussing many interesting topics: functional programming, the humanistic aspects of programming, creating art with code, augmented intelligence and the future of programming. "
    :link "https://mozaicworks.com/blog/david-schmudde-software-art-augmented-intelligence-functional-programming-with-alex-bolboaca/"

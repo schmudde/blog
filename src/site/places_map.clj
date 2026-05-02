@@ -1,5 +1,6 @@
 (ns site.places-map
   (:require [site.layout :refer [body-template]]
+            [hiccup.page :as page]
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]))
@@ -124,8 +125,33 @@
                     (init-map-js "mapTop" "map-top" top-places)])))
 
 ;; ---------------------------------------------------------------------------
-;; Renderer
+;; Renderers
 ;; ---------------------------------------------------------------------------
+
+(defn render-embed [_]
+  "Bare map page for embedding via <iframe> — no site header or footer."
+  (let [checkin-places (-> (load-checkins) dedupe-places)
+        turin-places   (-> (load-turin) normalize-turin)
+        places         (concat checkin-places turin-places)]
+    (page/html5 {:lang "en"}
+      [:head
+       [:meta {:charset "utf-8"}]
+       [:meta {:name "viewport" :content "width=device-width, initial-scale=1.0"}]
+       [:link {:rel "stylesheet"
+               :href "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"}]
+       [:link {:rel "stylesheet" :href "/css/buttons.css"}]
+       [:link {:rel "stylesheet" :href "/css/places.css"}]]
+      [:body {:style "margin:0;padding:0;"}
+       [:input {:type "radio" :id "filter-all" :name "places-filter" :checked true}]
+       [:input {:type "radio" :id "filter-top" :name "places-filter"}]
+       [:div.places-filter {:style "padding:0.5rem;"}
+        [:label {:for "filter-all"} "All Places"]
+        [:label {:for "filter-top"} "5/5 Only"]]
+       [:div.map-wrap {:style "height:calc(100vh - 3rem);"}
+        [:div#map-all]
+        [:div#map-top]]
+       [:script {:src "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"}]
+       [:script (map-script places)]])))
 
 (defn render [{global-meta :meta}]
   (let [checkin-places (-> (load-checkins) dedupe-places)
