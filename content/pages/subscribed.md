@@ -4,9 +4,9 @@ description: One more step to subscribe to Beyond the Frame
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
-date-created: 2025-01-01
-date-modified: 2025-01-01
-date-published: 2025-01-01
+date-created: 2026-05-02
+date-modified: 2026-05-02
+date-published: 2026-05-02
 in-language: en
 canonical-url: http://schmud.de/pages/subscribed.html
 ---

@@ -55,8 +55,7 @@
 
    ;; Convert Kit "Grove Form"
    #_[:script {:data-uid "3053fcf85a" :src "https://schmudde.ck.page/3053fcf85a/index.js" :async "async"}]
-   ;; Convert Kit "Powell Form"
-   [:script {:data-uid "0fd8364fa2" :src "https://schmudde.kit.com/0fd8364fa2/index.js" :async "async"}]
+
 
    ;; Twitter
    #_[:script {:src "/js/twitter-website-tag-code-snippet.js"}]
@@ -102,7 +101,10 @@
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://twitter.com/dschmudde" :title "Twitter Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-twitter"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://github.com/schmudde" :title "GitHub Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-github"}]]]
     [:li.dib.mr2 [:a.link.near-black.hover-silver.dib.h2.w2.mr3.no-tufte-underline {:href "https://www.wikidata.org/wiki/User:Schmudde" :title "Wikidata Profile" :rel "me" :class "u-url"} [:i {:class "fab fa-wikipedia-w"}]]]
-    ]])
+    ]
+      ;; Convert Kit "Powell Form"
+   [:script {:data-uid "0fd8364fa2" :src "https://schmudde.kit.com/0fd8364fa2/index.js" :async "async"}]
+   ])
 
 (defn header-template [global-meta]
   [:nav {:role "navigation" :itemscope "itemscope" :itemtype "https://schema.org/SiteNavigationElement"}

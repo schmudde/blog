@@ -23,7 +23,7 @@ I am now the proud owner of the domain <http://tegamino.pizza>! This is probably
 
 ## Yorba: Account Lifecycles
 
-I continue to do cool stuff with the team at [Yorba](https://yorba.co). I'm close to fully open-sourcing Eulogy, our textual representation of your data locked into other people's computers. It does this through a set of auditable claims that can be used to analyze your digital footprint and assert your legal right to digital privacy. Taken as a whole, Eulogy is both the representation of your locked-in data and its material inverse; because Eulogy carries the context needed to ensure that the data is meaningful to anyone, making it portable and ready-to-store on your personal device. It promises to be more resilient than the software that creates it.
+I continue to do cool stuff with the team at [Yorba](https://yorba.co). I'm close to fully open-sourcing **Eulogy**, our textual representation of your data locked into other people's computers. It does this through a set of auditable claims that can be used to analyze your digital footprint and assert your legal right to digital privacy. Taken as a whole, Eulogy is both the representation of your locked-in data and its material inverse; because Eulogy carries the context needed to ensure that the data is meaningful to anyone, making it portable and ready-to-store on your personal device. It promises to be more resilient than the software that creates it.
 
 Eulogy has also been a practical solution for Yorba in its earliest years. As a boot-strapped company with local-first ambitions, we couldn't afford to experiment with technology. Rather we took a pragmatic approach of building on popular open schemas to resolve the storage substrate in the future.
 

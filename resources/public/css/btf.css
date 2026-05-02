@@ -112,6 +112,13 @@ article {
     }
 }
 
+/* Images display at their natural size, capped at the container width.
+   Overrides tufte.min.css which sets img { width: 100% }. */
+img {
+  width: auto;
+  max-width: 100%;
+}
+
 /* CV */
 
 p.cv-item {
