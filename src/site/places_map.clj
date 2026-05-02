@@ -138,7 +138,7 @@
      global-meta
      page
      [:div
-      [:h1 "Places"]
+      [:h1.btf-font "Places"]
       [:link {:rel "stylesheet"
               :href "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"}]
       [:link {:rel "stylesheet" :href "/css/buttons.css"}]

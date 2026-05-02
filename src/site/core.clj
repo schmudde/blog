@@ -75,7 +75,7 @@
    [:meta {:itemprop "author" :content "David Schmudde"}]
    [:header
     [:a {:href (:permalink post) :title (:title post)}
-     [:h1 {:itemprop "headline"} (:title post)]]
+     [:h1.btf-font {:itemprop "headline"} (:title post)]]
     (when (= (:type post) "post")
       [:div
        [:i.mr2 {:class "fa fa-calendar"}] "&nbsp;"

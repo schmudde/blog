@@ -1,19 +1,10 @@
 (ns site.about
   (:require [hiccup.page :refer [html5]]
-            [site.layout :refer [body-template]]))
+            [site.layout :refer [body-template]]
+            [site.utils :refer [make-sidenote make-marginnote]]))
 
 
-(defn make-sidenote [content id]
-  [:span
-   [:label {:for id :class "margin-toggle sidenote-number"}]
-   [:input {:type "checkbox" :id id :class "margin-toggle"}]
-   [:span {:class "sidenote"} content]])
 
-(defn make-marginnote [content id]
-  [:span
-   [:label {:for id :class "margin-toggle"} "&#8853;"]
-   [:input {:type "checkbox" :id id :class "margin-toggle"}]
-   [:span {:class "marginnote"} content]])
 
 (def about-template
   [:article

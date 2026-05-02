@@ -19,7 +19,7 @@
 (defn make-previous-entries-page [posts]
   [:article
    [:header
-    [:h1 "Previous Entries"]
+    [:h1.btf-font "Previous Entries"]
     [:p "Previous entries in " [:a {:href "/" :title "home"} "Beyond the Frame"] "." ]]
    [:div.cf
     [:section.ph3.fl.w-100.w-50-ns
