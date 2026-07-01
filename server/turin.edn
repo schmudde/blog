@@ -458,16 +458,6 @@
   :website "http://www.miyabitorino.com/",
   :latitude "45.0894522",
   :country "Italy"}
- {:place "slurp",
-  :name "Slurp!",
-  :city "Turin",
-  :longitude "7.6804207",
-  :state "Piedmont",
-  :notes
-  "San Salvario. Brunch. Via Sant'Anselmo 30. Open daily 18:00-02:00, weekends from 11:00.",
-  :website "https://www.slurptorino.it/",
-  :latitude "45.0576686",
-  :country "Italy"}
  {:place "palto",
   :name "Paltò",
   :city "Turin",
@@ -599,6 +589,8 @@
 :notes "San Salvario. Indian.",
 :latitude "45.05611958341507",
 :longitude "7.683458968670746",
+:companions ["liza", "charlie", "corinna"],
+:rating 3,
 :website "https://beenapericena.it/",
 :map-url "https://maps.app.goo.gl/XbFoCBEn7rZs7FAT7"}
 {:place "Gennaro Esposito",
