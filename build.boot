@@ -87,6 +87,12 @@
         (perun/static :renderer 'site.places-map/render-embed
                       :page "places-embed.html"
                       :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-turin
+                      :page "turin.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-la
+                      :page "la.html"
+                      :meta {:type "page"})
         (perun/static :renderer 'site.feeds/render
                       :page "pages/feeds.html"
                       :meta {:type "page"})
