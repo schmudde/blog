@@ -28,6 +28,12 @@
   :link "/posts/2020-05-07-covid-tracking.html"
   :link-name "The State of COVID-19 Exposure Notifications"
   :image nil}
+ {:title "The Dead Internet Theory"
+  :date #time/date "2018-12-26"
+  :desc "Max Read penned one of the foundational texts of The Dead Internet theory in <em>The Atlantic</em>. He opines, &ldquo;What’s gone from the internet, after all, isn’t &lsquo;truth,&rsquo; but trust: the sense that the people and things we encounter are what they represent themselves to be. Years of metrics-driven growth, lucrative manipulative systems, and unregulated platform marketplaces, have created an environment where it makes more sense to be fake online — to be disingenuous and cynical, to lie and cheat, to misrepresent and distort — than it does to be real.&rdquo;"
+  :footer "<a href='https://nymag.com/intelligencer/2018/12/how-much-of-the-internet-is-fake.html'>How Much of the Internet Is Fake? Turns Out, a Lot of It, Actually.</a>"
+  :link "/posts/2026-08-10-cowboy-clothes.html"
+  :link-name "Cowboy Clothes and Sunday Best"}
  {:title "NotPetya Malware Appears"
   :geo "Ukraine"
   :date #time/date "2017-06-27"
@@ -40,7 +46,7 @@
   :geo "Myanmar"
   :date #time/year "2017"
  :desc "Anti-Rohingya hate speech spread unchecked on Facebook for months, helping to whip up a violent frenzy in the country. The UN described the campaign against the Rohingya as a &ldquo;textbook example of ethnic cleansing&rdquo; in August of 2017."
-  :footer "~ <a href='https://news.un.org/en/story/2017/09/564622-un-human-rights-chief-points-textbook-example-ethnic-cleansing-myanmar'>UN human rights chief points to 'textbook example of ethnic cleansing' in Myanmar </a>"
+  :footer "<a href='https://news.un.org/en/story/2017/09/564622-un-human-rights-chief-points-textbook-example-ethnic-cleansing-myanmar'>UN human rights chief points to 'textbook example of ethnic cleansing' in Myanmar </a>"
   :link "/posts/2025-09-18-signs-in-the-fire-kathmandu.html"
   :link-name "Signals in the Fire"}
  {:title "Bret Victor Publishes &ldquo;What Can a Technologist Do About Climate Change?&rdquo;"
@@ -99,11 +105,18 @@
   :desc "ArtByte was a glossy magazine dedicated to covering net.art and many other forms of digital art. It was distributed across the United States until it ceased publication in 2001."
   :link "/posts/2021-09-07-fix-my-code.html"
   :link-name "Fix My Code"}
+ #_{:title "Principles of Technorealism"
+  :date #time/date "1998-03-12"
+  :desc "&ldquo;Technorealism demands that we think critically about the role that tools and interfaces play in human evolution and everyday life. Integral to this perspective is our understanding that the current tide of technological transformation, while important and powerful, is actually a continuation of waves of change that have taken place throughout history. Looking, for example, at the history of the automobile, television, or the telephone -- not just the devices but the institutions they became -- we see profound benefits as well as substantial costs.&rdquo;"
+  :footer "Technorealism Overview"
+  :link "/posts/2026-06-15-program.html"
+  :link-name "Program"
+  :image nil}
  {:title "Framework for Global Electronic Commerce"
   :geo "Washington D.C., US"
   :date #time/date "1997-07-01"
   :desc "&ldquo;For electronic commerce to flourish, the private sector must continue to lead. Innovation, expanded services, broader participation, and lower prices will arise in a market-driven arena, not in an environment that operates as a regulated industry.&rdquo;"
-  :footer "~ <a href='https://clintonwhitehouse4.archives.gov/WH/New/Commerce/read.html'>A Presidental Directive</a> by Bill Clinton"
+  :footer "<a href='https://clintonwhitehouse4.archives.gov/WH/New/Commerce/read.html'>A Presidental Directive</a> by Bill Clinton"
   :link "/posts/2022-12-05-different-internet.html"
   :link-name "A Different Internet"
   :image nil}
@@ -135,7 +148,7 @@
   :desc "&ldquo;Section 230 exempts for-profit Social Media companies from liability for distributing user content that damages other individuals and editing or censuring user content in the spirit of a Good Samaritan.&rdquo;"
   :link "/posts/2025-09-18-signs-in-the-fire-kathmandu.html"
   :link-name "Signals in the Fire"
-  :footer "~ <a href='https://comradity.substack.com/p/understanding-section-230'>Understanding Section 230</a>"}
+  :footer "<a href='https://comradity.substack.com/p/understanding-section-230'>Understanding Section 230</a>"}
  {:title "Network Solutions Charges for Domain Names"
   :geo nil
   :date #time/year-month "1995-09"
@@ -168,7 +181,13 @@
   :link "/posts/2020-10-21-software-preservation-networked-art.html"
   :link-name "Software Preservation in Networked Art"
   :image nil}
-{:title "VDT"
+#_{:title "Haunted House for the Atari 2600"
+  :geo "Sunnyvale, CA, US"
+  :date #time/year-month "1982-02"
+  :desc "<em>Haunted House</em> (1982, Atari Inc.) is one of the earliest examples of the survival horror genre, which would not be well defined until <em>Alone in the Dark</em> (1992, Atari SA, née Infogrames) and <em>Alien vs. Predator</em> (1994, Atari Corp.). The scrolling playfield was innovative for its time and provided a sense that something could be lurking around the corner."
+  :link "/posts/2026-06-15-program.html"
+  :link-name "Program"}
+ {:title "VDT"
   :geo nil
   :date #time/year "1982"
   :desc "Tom Juravich sings about the toll of early data entry jobs, anticipating the rise of bossware and the invisible labor systems that now train LLMs in his song VDT (Video Display Terminal). The song calls for labor rights that would never come to fruition, &ldquo;If you ever spent hours behind a VDT, you'd know that no one needs a union more than me.&rdquo;"
