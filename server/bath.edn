@@ -21,4 +21,18 @@
    :website "https://www.thebellinnbath.co.uk/"
    :latitude "-2.359292917978954"
    :timestamp "2014-09-05T00:00:00Z"
-   :country "United Kingdom"}]
+   :country "United Kingdom"}
+  {:address "6-7 Queen St",
+  :place "the-raven-of-bath",
+  :name "The Raven of Bath",
+  :city "Bath",
+  :map-url
+  "https://maps.apple.com/?q=The%20Raven%20of%20Bath%0A6-7%20Queen%20St%0ABath%0AEngland%0ABA1%201HE%0AUnited%20Kingdom&ll=51.383101,-2.361921",
+  :companions ["charlie" "emma" "kit" "aubrey" "leo" "liza"],
+  :longitude "-2.3619211",
+  :state "England",
+  :notes "Great pies!",
+  :latitude "51.3831013",
+  :timestamp "2026-07-19T15:04:54.263877517Z",
+  :country "United Kingdom",
+  :rating 4}]
