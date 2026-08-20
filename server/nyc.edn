@@ -4,10 +4,10 @@
   :city "Hoboken"
   :map-url "https://maps.app.goo.gl/t7xf3g64BYa6WVHC8"
   :companions ["Brad"]
-  :longitude "40.742904115352246"
+  :latitude "40.742904115352246"
   :state "New Jersey"
   :notes "Calendar entries: Dinner w/ Brad."
   :website ""
-  :latitude "-74.02938030082034"
+  :longitude "-74.02938030082034"
   :timestamp "2018-04-10T21:30:00Z"
   :country "United States"}]

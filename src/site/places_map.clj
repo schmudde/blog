@@ -12,7 +12,9 @@
 (def blog-dir
   (or (System/getenv "BLOG_DIR") "."))
 
-(defn checkins-path []
+(defn checkins-path
+ "Add the checkins-2026.edn file. TODO: needs to be more robust in the future."
+ []
   (let [year (.getYear (java.time.LocalDate/now))]
     (io/file blog-dir "server" (str "checkins-" year ".edn"))))
 
@@ -61,16 +63,25 @@
                      (->double (:longitude %))))
        (map #(assoc % :visit-count 1 :last-visit nil))))
 
+(defn static-places
+  "Load and normalize a static EDN places file by filename."
+  [filename]
+  (-> (load-edn-places filename) normalize-static-places))
+
 (defn turin-places []
   (let [checkin-places (-> (load-checkins) dedupe-places)
-        static-places  (-> (load-edn-places "turin.edn") normalize-static-places)]
-    (concat checkin-places static-places)))
+        edn-places     (static-places "turin.edn")]
+    (concat checkin-places edn-places)))
 
-(defn la-places []
-  (-> (load-edn-places "la.edn") normalize-static-places))
+(defn la-places      [] (static-places "la.edn"))
+(defn chicago-places [] (static-places "chicago.edn"))
+(defn bath-places    [] (static-places "bath.edn"))
+(defn uk-places      [] (static-places "uk.edn"))
+(defn nyc-places     [] (static-places "nyc.edn"))
 
 (defn all-places []
-  (concat (turin-places) (la-places)))
+  (concat (turin-places) (la-places) (chicago-places)
+          (bath-places)  (uk-places) (nyc-places)))
 
 ;; ---------------------------------------------------------------------------
 ;; JS generation
@@ -118,9 +129,13 @@
 
 (def city-views
   "Default [lat lon zoom] for each named city page."
-  {:turin [45.0703  7.6869  13]
-   :la    [34.0522 -118.2437 11]
-   :world [20.0    0.0       2]})
+  {:turin   [45.0703   7.6869  13]
+   :la      [34.0522 -118.2437 11]
+   :chicago [41.8827  -87.6233 12]
+   :bath    [51.3811   -2.3590 14]
+   :uk      [54.5      -3.5    6]
+   :nyc     [40.7128  -74.0060 12]
+   :world   [20.0      0.0     2]})
 
 (defn init-map-js
   "Emit JS that creates a Leaflet map in `div-id`, populated from `places`.
@@ -182,7 +197,7 @@
             (map-ui view places [{:style "padding:0.5rem;"}])))))
 
 (defn render-city-page
-  "Render a full site page centred on `view` with the given `title` and `places`."
+ "Render a full site page centered on `view` with the given `title` and `places`."
   [global-meta slug title view places]
   (let [page {:title         title
               :canonical-url (str (:base-url global-meta) slug ".html")

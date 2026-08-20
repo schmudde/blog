@@ -81,6 +81,7 @@
         (perun/render :renderer 'site.core/render-post-pages
                       :filterer page?
                       :meta {:type "page"})
+      ;;; maps
         (perun/static :renderer 'site.places-map/render
                       :page "places.html"
                       :meta {:type "page"})
@@ -93,6 +94,7 @@
         (perun/static :renderer 'site.places-map/render-la
                       :page "la.html"
                       :meta {:type "page"})
+       ;;;
         (perun/static :renderer 'site.feeds/render
                       :page "pages/feeds.html"
                       :meta {:type "page"})

@@ -3,11 +3,11 @@
   :city "Bath"
   :map-url "https://maps.app.goo.gl/EWfd8yzAtg3Xvgcw9"
   :companions ["Kathryn"]
-  :longitude "51.3808518557137"
+  :latitude "51.3808518557137"
   :state "England"
   :notes "Calendar entries: Wedding itinerary: Bath Thermae Spa Cross Baths."
   :website "https://www.thermaebathspa.com/spa-sessions-cross-bath"
-  :latitude "-2.3613933865076793"
+  :longitude "-2.3613933865076793"
   :timestamp "2014-09-05T00:00:00Z"
   :country "United Kingdom"}
   {:place "the-bell-inn"
@@ -15,11 +15,11 @@
    :city "Bath"
    :map-url "https://maps.app.goo.gl/RGDynQbu2vV5tdZS6"
    :companions ["Kathryn"]
-   :longitude "51.387659979999874"
-   :state "England"
-   :notes "Calendar entries: Wedding itinerary: farewell drinks at The Bell."
-   :website "https://www.thebellinnbath.co.uk/"
-   :latitude "-2.359292917978954"
+     :latitude "51.387659979999874"
+     :state "England"
+     :notes "Calendar entries: Wedding itinerary: farewell drinks at The Bell."
+     :website "https://www.thebellinnbath.co.uk/"
+     :longitude "-2.359292917978954"
    :timestamp "2014-09-05T00:00:00Z"
    :country "United Kingdom"}
   {:address "6-7 Queen St",
