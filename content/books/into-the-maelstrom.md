@@ -1,6 +1,6 @@
 ---
 title: Into the Maelstrom
-description: Tracing homeostasis from Wiener's cybernetics through Caplan's crisis theory through certainty, love, and death - and asking whether the concept holds up under its own weight.
+description: We feel the maelstrom both around us and within us. What can we reach for to quel the chaos?
 author: David Schmudde
 author-email: d@schmud.de
 author-url: http://schmud.de
