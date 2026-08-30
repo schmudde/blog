@@ -342,6 +342,15 @@
   :link "/books/1984.html"
   :link-name "&ldquo;Nineteen Eighty-Four&rdquo;"
   :image nil}
+ {:title "Norbert Wiener Publishes &ldquo;Cybernetics: Or Control and Communication in the Animal and the Machine&rdquo;"
+  :geo "Cambridge, Massachusetts"
+  :date #time/year "1948"
+  :desc "<em>Cybernetics</em> claimed that a &ldquo;great group of cases in which some sort of feedback is not only exemplified in physiological phenomena but is absolutely essential for the continuation of life is found in what is known as homeostasis&rdquo; - implying that artificial systems could be designed to exhibit this same feedback mechanism and adapt to environmental pressures by autonomously discovering new homeostat states. The adoption of this language led to a proliferation of applications such as Gerald Caplan's 1964 paper, which suggested homeostasis as a psychological state, all the way to today's Decentralized Autonomous Organizations (DAOs). In almost all cases, homeostasis ends up embodying an undefinable state in a complex system while leaning on a supposedly empirical foundation."
+  :footer "Norbert Wiener. <em>Cybernetics: Or Control and Communication in the Animal and the Machine</em>, 2nd ed.
+(Cambridge, MA: The MIT Press, 1961), 114."
+  :link "/books/into-the-maelstrom.html"
+  :link-name "&ldquo;Into the Maelstrom: Toward a Theory of Chaos and Crisis&rdquo;"
+  :image nil}
  {:title "Bombing of the Amsterdam Population Registry"
   :geo "Amsterdam, Netherlands"
   :date #time/date "1943-03-27"
