@@ -1,0 +1,197 @@
+[
+    {
+      :address "Kurfürstendamm 90, 10709 Berlin, Germany"
+      :place "1000grad"
+      :name "1000grad"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.301462013356225"
+      :state "Berlin"
+      :notes "Calendar entries: Birthday Dinner 0.01."
+      :website ""
+      :latitude "52.49929851989327"
+      :timestamp "2021-08-10T17:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Am Wriezener bhf, 10243 Berlin, Germany"
+      :place "berghain-panorama-bar"
+      :name "Berghain / Panorama Bar"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.442962310843065"
+      :state "Berlin"
+      :notes "Calendar entries: LAS @ Berghain."
+      :website ""
+      :latitude "52.51122578354548"
+      :timestamp "2021-09-04T11:30:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Schöneberger Straße 16, 10963 Berlin, Germany"
+      :place "brlo-brwhouse"
+      :name "BRLO Brwhouse"
+      :city "Berlin"
+      :map-url "https://maps.apple.com/?q=BRLO%20Brwhouse%0ASch%C3%B6neberger%20Stra%C3%9Fe%2016%2C%2010963%20Berlin%2C%20Germany&ll=52.500108,13.373714"
+      :companions []
+      :longitude "13.373785828032773"
+      :state "Berlin"
+      :notes "Calendar entries: Dave Liepmann’s 37th birthday party."
+      :website ""
+      :latitude "52.50032719730676"
+      :timestamp "2021-07-30T15:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Hasenheide 16, 10967 Berlin, Germany"
+      :place "con-tho"
+      :name "Con Tho"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.420525053170799"
+      :state "Berlin"
+      :notes "Calendar entries: Dinner."
+      :website ""
+      :latitude "52.48782746696324"
+      :timestamp "2021-08-21T18:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Oranienstraße 161, 10969 Berlin, Germany"
+      :place "daadgalerie"
+      :name "daadgalerie"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.413813955020036"
+      :state "Berlin"
+      :notes "Calendar entries: Gallery Opening."
+      :website "http://www.daadgalerie.de/"
+      :latitude "52.50280188995459"
+      :timestamp "2019-01-18T18:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Seydelstraße 30, 10117 Berlin, Germany"
+      :place "dam-gallery"
+      :name "DAM GALLERY"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.41093670092873"
+      :state "Berlin"
+      :notes "Calendar entries: DAM."
+      :website "https://dam-gallery.de/veramolnar-1980s/"
+      :latitude "52.515437712299736"
+      :timestamp "2019-11-22T15:30:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Simon-Dach-Straße 41A, 10245 Berlin, Germany"
+      :place "fatoush"
+      :name "Fatoush"
+      :city "Berlin"
+      :map-url ""
+      :companions ["Anna-Marie"]
+      :longitude "13.456598497935053"
+      :state "Berlin"
+      :notes "Calendar entries: Dinner with Anna-Marie."
+      :website ""
+      :latitude "52.51684296640701"
+      :timestamp "2019-10-09T16:45:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Mariannenpl. 2, 10997 Berlin, Germany"
+      :place "freiluftkino-kreuzberg"
+      :name "Freiluftkino Kreuzberg"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.423825568513644"
+      :state "Berlin"
+      :notes "Calendar entries: Kreuzberg Cinema."
+      :website "http://www.freiluftkino-kreuzberg.de/freiluftkino_kreuzberg_english.php"
+      :latitude "52.50434400012513"
+      :timestamp "2018-07-13T19:30:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Fasanenstraße 26, 10719 Berlin, Germany"
+      :place "galerie-kornfeld-kunsthandel-gmbh-and-co-kg"
+      :name "Galerie Kornfeld Kunsthandel GmbH & Co KG"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.327070755019955"
+      :state "Berlin"
+      :notes "Calendar entries: Kornfeldgalerie."
+      :website "https://www.galeriekornfeld.com/text/pack-den-badeanzug-ein"
+      :latitude "52.50165284200176"
+      :timestamp "2019-06-27T16:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Hof V, Gerichtstraße 23, 13347 Berlin, Germany"
+      :place "panke-gallery"
+      :name "panke.gallery"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.374356283857948"
+      :state "Berlin"
+      :notes "Calendar entries: Panke Gallery Opening; panke.gallery; (If you knew me would you love me?)."
+      :website "https://www.panke.gallery/event/if-you-knew-me-would-you-love-me/"
+      :latitude "52.545210290119826"
+      :timestamp "2021-09-18T18:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Wiesenweg 1 - 4, 10365 Berlin, Germany"
+      :place "polygon-club-and-garden"
+      :name "Polygon Club and Garden"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.474771668513815"
+      :state "Berlin"
+      :notes "Calendar entries: Pauli Pocket; 180 Minutes w/ Pauli Pocket."
+      :website ""
+      :latitude "52.50798695682129"
+      :timestamp "2019-08-01T00:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Weserstr. 202, 12047 Berlin, Germany"
+      :place "thelonious-bar"
+      :name "Thelonious Bar"
+      :city "Berlin"
+      :map-url ""
+      :companions []
+      :longitude "13.431010855019192"
+      :state "Berlin"
+      :notes "Calendar entries: 7pm TBD: Veit."
+      :website ""
+      :latitude "52.48793356658509"
+      :timestamp "2020-02-23T00:00:00Z"
+      :country "Germany"
+    }
+    {
+      :address "Bergmannstraße 52, 10961 Berlin, Germany"
+      :place "two-trick-pony"
+      :name "Two Trick Pony"
+      :city "Berlin"
+      :map-url ""
+      :companions ["Jack"]
+      :longitude "13.404862655019274"
+      :state "Berlin"
+      :notes "Calendar entries: Lunch with Jack."
+      :website ""
+      :latitude "52.489111828271234"
+      :timestamp "2023-10-13T10:30:00Z"
+      :country "Germany"
+    }
+  ]

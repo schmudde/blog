@@ -75,13 +75,14 @@
 
 (defn la-places      [] (static-places "la.edn"))
 (defn chicago-places [] (static-places "chicago.edn"))
+(defn berlin-places  [] (static-places "berlin.edn"))
 (defn bath-places    [] (static-places "bath.edn"))
 (defn uk-places      [] (static-places "uk.edn"))
 (defn nyc-places     [] (static-places "nyc.edn"))
 
 (defn all-places []
   (concat (turin-places) (la-places) (chicago-places)
-          (bath-places)  (uk-places) (nyc-places)))
+          (berlin-places) (bath-places) (uk-places) (nyc-places)))
 
 ;; ---------------------------------------------------------------------------
 ;; JS generation
@@ -132,6 +133,7 @@
   {:turin   [45.0703   7.6869  13]
    :la      [34.0522 -118.2437 11]
    :chicago [41.8827  -87.6233 12]
+   :berlin  [52.5200  13.4050  12]
    :bath    [51.3811   -2.3590 14]
    :uk      [54.5      -3.5    6]
    :nyc     [40.7128  -74.0060 12]
@@ -212,11 +214,29 @@
             [:link {:rel "stylesheet" :href "/css/places.css"}]]
            (map-ui view places)))))
 
-(defn render [{global-meta :meta}]
-  (render-city-page global-meta "places" "Places" (:turin city-views) (all-places)))
+(def city-configs
+  "Ordered config for each city render fn: [slug title view-key places-fn]."
+  [["places"  "Places"      :turin   all-places]
+   ["turin"   "Turin"       :turin   turin-places]
+   ["la"      "Los Angeles" :la      la-places]
+   ["chicago" "Chicago"     :chicago chicago-places]
+   ["berlin"  "Berlin"      :berlin  berlin-places]
+   ["bath"    "Bath"        :bath    bath-places]
+   ["uk"      "UK"          :uk      uk-places]
+   ["nyc"     "New York"    :nyc     nyc-places]])
 
-(defn render-turin [{global-meta :meta}]
-  (render-city-page global-meta "turin" "Turin" (:turin city-views) (turin-places)))
+(defn render-city
+  "Generic renderer — looks up the config for `slug` and delegates to render-city-page."
+  [{global-meta :meta} slug]
+  (let [[_ title view-key places-fn]
+        (first (filter #(= slug (first %)) city-configs))]
+    (render-city-page global-meta slug title (get city-views view-key) (places-fn))))
 
-(defn render-la [{global-meta :meta}]
-  (render-city-page global-meta "la" "Los Angeles" (:la city-views) (la-places)))
+(defn render         [{global-meta :meta}] (render-city-page global-meta "places"  "Places"      (:turin   city-views) (all-places)))
+(defn render-turin   [data] (render-city data "turin"))
+(defn render-la      [data] (render-city data "la"))
+(defn render-chicago [data] (render-city data "chicago"))
+(defn render-berlin  [data] (render-city data "berlin"))
+(defn render-bath    [data] (render-city data "bath"))
+(defn render-uk      [data] (render-city data "uk"))
+(defn render-nyc     [data] (render-city data "nyc"))

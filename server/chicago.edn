@@ -1,4 +1,7 @@
-[{:place "the-block-museum-of-art"
+[
+ {:address ""
+  :companions []
+  :place "the-block-museum-of-art"
   :name "The Block Museum of Art"
   :city "Evanston"
   :map-url "https://maps.app.goo.gl/WLLi7kpfVpyDGC6h6"
@@ -8,4 +11,695 @@
   :website "http://www.blockmuseum.northwestern.edu/"
   :longitude "-87.67264602960363"
   :timestamp "2010-09-29T00:00:00Z"
-  :country "United States"}]
+  :country "United States"}
+    {
+      :address ""
+      :place "artopolis-bakery-cafe-and-agora"
+      :name "Artopolis Bakery, Cafe & Agora"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.64687401300192"
+      :state "Illinois"
+      :notes "Calendar entries: Brian @ Artopolis."
+      :website ""
+      :latitude "41.8780519618108"
+      :timestamp "2010-12-02T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "180 N Field Blvd, Chicago, IL 60601, USA"
+      :place "avli-on-the-park"
+      :name "Avli on The Park"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.61762842938563"
+      :state "Illinois"
+      :notes "Calendar entries: John Jacobson."
+      :website "https://avli.us/avlionthepark-location-1"
+      :latitude "41.885462995135576"
+      :timestamp "2021-06-16T22:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "bottom-lounge"
+      :name "Bottom Lounge"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.66176841775003"
+      :state "Illinois"
+      :notes "Calendar entries: Salsa at Bottom Lounge; Menu Tasting; Salsa at Bottom Lounge?."
+      :website ""
+      :latitude "41.88550778138303"
+      :timestamp "2012-01-07T02:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address "4432 N Kedzie Ave, Chicago, IL"
+      :place "brown-rice"
+      :name "Brown Rice"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.70848379951163"
+      :state "Illinois"
+      :notes "Calendar entries: Ryan Ing @ Brown Rice."
+      :website ""
+      :latitude "41.96237743850717"
+      :timestamp "2009-12-20T03:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "3184 N Milwaukee Ave, Chicago, IL"
+      :place "cafe-lura"
+      :name "Cafe Lura"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.72340110136123"
+      :state "Illinois"
+      :notes "Calendar entries: Cafe Lura."
+      :website ""
+      :latitude "41.938928154992595"
+      :timestamp "2009-03-13T01:30:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address ""
+      :place "cafe-moustache"
+      :name "Cafe Moustache"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.69783208971684"
+      :state "Illinois"
+      :notes "Calendar entries: I-Ching at Cafe Moustache."
+      :website ""
+      :latitude "41.923505437956"
+      :timestamp "2012-06-16T01:00:00Z"
+     :country "United States"
+     :rating 4
+    }
+    {
+      :address "3025 W Diversey Ave, Chicago, IL 60647, United States"
+      :place "cellar-door-provisions"
+      :name "Cellar Door Provisions"
+      :city "Chicago"
+      :map-url "https://maps.apple.com/?q=Cellar%20Door%20Provisions%0A3025%20W%20Diversey%20Ave%2C%20Chicago%2C%20IL%2060647%2C%20United%20States&ll=41.931816,-87.703516"
+      :companions ["Barret"]
+      :longitude "-87.703594160881"
+      :state "Illinois"
+      :notes "Calendar entries: Breakfast at CDP w/ Barret."
+      :website ""
+      :latitude "41.932104245546135"
+      :timestamp "2016-09-15T15:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address ""
+      :place "chicago-cultural-center"
+      :name "Chicago Cultural Center"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.62485494369287"
+      :state "Illinois"
+      :notes "Calendar entries: ANNUAL CREATIVE CHICAGO EXPO; AICP."
+      :website ""
+      :latitude "41.88387338554527"
+      :timestamp "2009-04-04T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "chicago-history-museum"
+      :name "Chicago History Museum"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.6316175590335"
+      :state "Illinois"
+      :notes "Calendar entries: Chicago History Museum + Dinner + Movie."
+      :website ""
+      :latitude "41.911872985406234"
+      :timestamp "2010-09-06T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "coles-bar"
+      :name "Cole's Bar"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.69881803204584"
+      :state "Illinois"
+      :notes "Calendar entries: Cinema Minima @ Cole's."
+      :website ""
+      :latitude "41.92387471943652"
+      :timestamp "2010-11-06T00:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address ""
+      :place "delilahs"
+      :name "Delilah's"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65803058971639"
+      :state "Illinois"
+      :notes "Calendar entries: Robbie @ Delilah's."
+      :website ""
+      :latitude "41.93247959434948"
+      :timestamp "2011-03-27T01:00:00Z"
+     :country "United States"
+          :rating 5
+    }
+    {
+      :address ""
+      :place "elastic-arts"
+      :name "Elastic Arts"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.71344065718415"
+      :state "Illinois"
+      :notes "Calendar entries: Performance @ The Elastic Arts."
+      :website ""
+      :latitude "41.932199050910405"
+      :timestamp "2011-10-29T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1035 N Western Ave, Chicago, IL"
+      :place "empty-bottle"
+      :name "Empty Bottle"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.68678017312641"
+      :state "Illinois"
+      :notes "Calendar entries: TyK @ Empty Bottle."
+      :website ""
+      :latitude "41.90055783190357"
+      :timestamp "2010-12-17T00:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address "536 W Erie St, Chicago, IL"
+      :place "erie-cafe"
+      :name "Erie Cafe"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.6427201743763"
+      :state "Illinois"
+      :notes "Calendar entries: Upscale TV @ Erie Cafe."
+      :website ""
+      :latitude "41.894312383920195"
+      :timestamp "2009-06-27T02:15:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "facets-cinematheque"
+      :name "Facets Cinémathèque"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.66649190321027"
+      :state "Illinois"
+      :notes "Calendar entries: Blank City @ Facet's."
+      :website ""
+      :latitude "41.92523952217523"
+      :timestamp "2011-05-07T00:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address "2020 N Oakley, Chicago, IL"
+      :place "gallery-cabaret"
+      :name "Gallery Cabaret"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.68517804738806"
+      :state "Illinois"
+      :notes "Calendar entries: Gallery Cabaret."
+      :website "http://www.gallerycabaret.com/"
+      :latitude "41.91849320356238"
+      :timestamp "2012-01-26T03:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "164 N State St, Chicago, IL 60601, United States"
+      :place "gene-siskel-film-center"
+      :name "Gene Siskel Film Center"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.62809590136384"
+      :state "Illinois"
+      :notes "Calendar entries: Film at Gene Siskel."
+      :website ""
+      :latitude "41.885032808407225"
+      :timestamp "2017-11-11T00:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address ""
+      :place "green-mill-lounge"
+      :name "Green Mill Lounge"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65996511855009"
+      :state "Illinois"
+      :notes "Calendar entries: Ryan Ing Performance."
+      :website ""
+      :latitude "41.96940219433224"
+      :timestamp "2010-05-29T19:00:00Z"
+     :country "United States"
+          :rating 5
+    }
+    {
+      :address "3315 W Armitage Ave, Chicago, IL 60647"
+      :place "ground-control"
+      :name "Ground Control"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Cahrowlyn"]
+      :longitude "-87.6599436608791"
+      :state "Illinois"
+      :notes "Calendar entries: Dinner with Cahrowlyn; Dinner with Carolyn."
+      :website ""
+      :latitude "41.969338379008065"
+      :timestamp "2014-12-31T01:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "harris-theater"
+      :name "Harris Theater"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65990074553716"
+      :state "Illinois"
+      :notes "Calendar entries: Fame; Dance and film at Harris."
+      :website ""
+      :latitude "41.969386240507184"
+      :timestamp "2010-03-10T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "haymarket-pub-and-brewery"
+      :name "Haymarket Pub & Brewery"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.64723293204776"
+      :state "Illinois"
+      :notes "Calendar entries: Brian @ Haymarket."
+      :website ""
+      :latitude "41.88437434788257"
+      :timestamp "2011-03-16T03:00:00Z"
+     :country "United States"
+          :rating 2
+    }
+    {
+      :address "1550 N. Milwaukee Ave., 2nd floor"
+      :place "heaven-gallery"
+      :name "Heaven Gallery"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.6765213338949"
+      :state "Illinois"
+      :notes "Calendar entries: Kick Fundraiser."
+      :website ""
+      :latitude "41.909744212190375"
+      :timestamp "2009-06-06T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "jerrys"
+      :name "Jerry's"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.68777218971476"
+      :state "Illinois"
+      :notes "Calendar entries: I-Ching @ Jerry's."
+      :website ""
+      :latitude "41.96785343641621"
+      :timestamp "2011-11-10T03:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "West Irving Park Road, Chicago, IL"
+      :place "laschets-inn-restaurant"
+      :name "Laschet's Inn Restaurant"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.681909272525"
+      :state "Illinois"
+      :notes "Calendar entries: #77 (Belmont) - #49 (Western) - Laschets."
+      :website ""
+      :latitude "41.95408146917893"
+      :timestamp "2012-06-02T23:58:00Z"
+     :country "United States"
+          :rating 5
+    }
+    {
+      :address ""
+      :place "lincoln-hall"
+      :name "Lincoln Hall"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.64988233389417"
+      :state "Illinois"
+      :notes "Calendar entries: Apparat @ Lincoln Hall."
+      :website ""
+      :latitude "41.92608928280423"
+      :timestamp "2012-05-28T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "linda-warren-gallery"
+      :name "Linda Warren Gallery"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65441358886288"
+      :state "Illinois"
+      :notes "Calendar entries: Zach Taylor and Aaron Williams."
+      :website "https://lindawarrenprojects.com/"
+      :latitude "41.88785530834488"
+      :timestamp "2010-10-29T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "maggie-daley-park"
+      :name "Maggie Daley Park"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.61927204369299"
+      :state "Illinois"
+      :notes "Calendar entries: Open Skate at Maggie Daley Park."
+      :website ""
+      :latitude "41.882589953682675"
+      :timestamp "2021-12-31T20:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "map-room"
+      :name "Map Room"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.67973060136225"
+      :state "Illinois"
+      :notes "Calendar entries: Drinks @ Map Room."
+      :website ""
+      :latitude "41.91776783891874"
+      :timestamp "2011-08-17T02:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "4129 W Lawrence Ave, Chicago, IL 60630, USA"
+      :place "maries-pizza-and-liquors"
+      :name "Marie's Pizza & Liquors"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.73156138971468"
+      :state "Illinois"
+      :notes "Calendar entries: Pizza and Pals."
+      :website ""
+      :latitude "41.96821765221223"
+      :timestamp "2017-12-31T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "museum-of-contemporary-art-chicago"
+      :name "Museum of Contemporary Art Chicago"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.62104184738907"
+      :state "Illinois"
+      :notes "Calendar entries: Jenny Holzer @ MCA."
+      :website ""
+      :latitude "41.897426991394"
+      :timestamp "2009-01-21T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "942 W Lake St, Chicago, IL"
+      :place "packer-schopf-gallery"
+      :name "Packer Schopf Gallery"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.6515574320477"
+      :state "Illinois"
+      :notes "Calendar entries: New Music in the Gallery; Packer Schopf Gallery."
+      :website ""
+      :latitude "41.88590261962189"
+      :timestamp "2009-02-10T03:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1806 W Cuyler St, 2nd Floor, Chicago, IL 60613"
+      :place "peter-jones-gallery"
+      :name "Peter Jones Gallery"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.67466521855073"
+      :state "Illinois"
+      :notes "Calendar entries: Ben @ Peter Jones Gallery."
+      :website ""
+      :latitude "41.95553800838354"
+      :timestamp "2009-03-27T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "rainbo-club"
+      :name "Rainbo Club"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.67739400136294"
+      :state "Illinois"
+      :notes "Calendar entries: Ray Pride @ Rainbo Club."
+      :website ""
+      :latitude "41.90296500219124"
+      :timestamp "2009-07-18T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "491 N Milwaukee Ave, Chicago, IL 60654, USA"
+      :place "richards-bar"
+      :name "Richard's Bar"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Ryan Singer"]
+      :longitude "-87.6469952897184"
+      :state "Illinois"
+      :notes ""
+      :website ""
+      :latitude "41.89117522577481"
+      :timestamp "2016-12-30T00:30:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address "1924 W. Chicago"
+      :place "roots-pizza"
+      :name "Roots Pizza"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.67552873019878"
+      :state "Illinois"
+      :notes "Calendar entries: Melissa's Going Away Party."
+      :website "https://www.rootspizza.com/"
+      :latitude "41.89622419281079"
+      :timestamp "2012-05-25T01:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "schubas-tavern"
+      :name "Schubas Tavern"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.66361656088054"
+      :state "Illinois"
+      :notes "Calendar entries: Mittens @ Schuba's."
+      :website ""
+      :latitude "41.939849544921614"
+      :timestamp "2009-11-11T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "960 W 18th St, Chicago IL 60608"
+      :place "simones-bar"
+      :name "Simone's Bar"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.65097550136511"
+      :state "Illinois"
+      :notes "Calendar entries: Pam's Bday Party."
+      :website ""
+      :latitude "41.85846261371947"
+      :timestamp "2012-06-02T02:00:00Z"
+     :country "United States"
+     :rating 5
+    }
+    {
+      :address ""
+      :place "subterranean"
+      :name "Subterranean"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.67792435903357"
+      :state "Illinois"
+      :notes "Calendar entries: Josh Show @ SubT."
+      :website ""
+      :latitude "41.91048801591439"
+      :timestamp "2010-06-09T01:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "the-metro"
+      :name "The Metro"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65873532834783"
+      :state "Illinois"
+      :notes "Calendar entries: The Faint @ The Metro."
+      :website ""
+      :latitude "41.949991287631015"
+      :timestamp "2010-07-24T02:00:00Z"
+     :country "United States"
+          :rating 5
+    }
+    {
+      :address ""
+      :place "the-vic-theatre"
+      :name "The Vic Theatre"
+      :city "Chicago"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-87.65378998786764"
+      :state "Illinois"
+      :notes "Calendar entries: Ladytron @ The Vic."
+      :website ""
+      :latitude "41.9396925453539"
+      :timestamp "2011-10-04T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "the-whistler"
+      :name "The Whistler"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.70112283389416"
+      :state "Illinois"
+      :notes "Calendar entries: Music at The Whistler."
+      :website ""
+      :latitude "41.92545679540807"
+      :timestamp "2011-12-04T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "3340 N. Halsted,"
+      :place "town-hall-pub"
+      :name "Town Hall Pub"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.64972146088039"
+      :state "Illinois"
+      :notes "Calendar entries: 8pm 'I Saw Yous.'"
+      :website ""
+      :latitude "41.94313783477186"
+      :timestamp "2009-05-07T02:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "tumans"
+      :name "Tuman's"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.68175897437621"
+      :state "Illinois"
+      :notes "Calendar entries: Carolyn @ Tuman's."
+      :website ""
+      :latitude "41.89589581042767"
+      :timestamp "2011-01-09T02:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "uncommon-ground"
+      :name "Uncommon Ground"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.65986974004953"
+      :state "Illinois"
+      :notes "Calendar entries: Hilesh @ Uncommon Ground."
+      :website ""
+      :latitude "41.95144476124614"
+      :timestamp "2009-06-11T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "wormhole-coffee"
+      :name "Wormhole Coffee"
+      :city "Chicago"
+      :map-url ""
+      :companions []
+      :longitude "-87.67453843019817"
+      :state "Illinois"
+      :notes "Calendar entries: Wormhole coffee party."
+      :website ""
+      :latitude "41.90862885356788"
+      :timestamp "2011-02-19T03:00:00Z"
+      :country "United States"
+    }
+  ]
