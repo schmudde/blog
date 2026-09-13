@@ -772,4 +772,50 @@ territory. Lunch/breakfast. Centre.",
 :latitude "45.065403437694414",
 :longitude "7.687045939835206",
 :website "https://www.magazzinioz.it/",
-:map-url "https://maps.app.goo.gl/FaS6S7ftVTZy6KU49"}]
+ :map-url "https://maps.app.goo.gl/FaS6S7ftVTZy6KU49"}
+ {
+    :address "Piazzale Mafalda di Savoia, 10098 Rivoli TO, Italy"
+    :place "castello-di-rivoli-museo-darte-contemporanea"
+    :name "Castello di Rivoli Museo d'Arte Contemporanea"
+    :city "Rivoli"
+    :map-url ""
+    :companions ["Liza"]
+    :longitude 7.510697
+    :state "Piedmont"
+    :notes "Calendar entries: ESPRESSIONI CON FRAZIONI."
+    :website "https://www.castellodirivoli.org/mostra/espressioni-frazioni-fractional-expressions/"
+    :latitude 45.070090
+    :timestamp "2022-04-24T12:00:00Z"
+    :country "Italy"
+  }
+  {
+    :address "Via Rosta, 23, 10098 Rivoli TO, Italy"
+    :place "circolo-della-musica"
+    :name "Circolo della Musica"
+    :city "Rivoli"
+    :map-url "https://maps.app.goo.gl/BZRYFtdYbwjzxXbr5"
+    :companions ["Liza"]
+    :longitude 7.500970
+    :state "Piedmont"
+    :notes "Calendar entries: CIRCOLO DELLA MUSICA: CALEXANDER HACKE e DANIELLE DE PICCIOTTO."
+    :website ""
+    :latitude 45.070984
+    :timestamp "2022-03-04T20:00:00Z"
+    :country "Italy"
+  }
+ {
+  :address "Via Madama Cristina, 66, 10125 Torino TO, Italy"
+  :place "ziggy-club"
+  :name "Ziggy Club"
+  :city "Turin"
+  :map-url "https://maps.apple.com/?q=Ziggy%20Club%0AVia%20Madama%20Cristina%2C%2066%2C%2010125%20Torino%20TO%2C%20Italy&ll=45.05175,7.678576"
+  :companions []
+  :longitude "7.678576"
+  :state "Piedmont"
+  :notes "Calendar entries: Noctva"
+  :website ""
+  :rating 5
+  :latitude "45.05175"
+  :timestamp "2022-11-18T20:00:00Z"
+  :country "Italy"}
+]

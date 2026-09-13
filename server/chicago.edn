@@ -354,21 +354,6 @@
       :country "United States"
     }
     {
-      :address ""
-      :place "jerrys"
-      :name "Jerry's"
-      :city "Chicago"
-      :map-url ""
-      :companions []
-      :longitude "-87.68777218971476"
-      :state "Illinois"
-      :notes "Calendar entries: I-Ching @ Jerry's."
-      :website ""
-      :latitude "41.96785343641621"
-      :timestamp "2011-11-10T03:00:00Z"
-      :country "United States"
-    }
-    {
       :address "West Irving Park Road, Chicago, IL"
       :place "laschets-inn-restaurant"
       :name "Laschet's Inn Restaurant"

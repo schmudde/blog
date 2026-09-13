@@ -1,0 +1,32 @@
+[
+  {
+    :address "7000 E Marginal Way S, Seattle, WA 98108, USA"
+    :place "connections-museum"
+    :name "Connections Museum"
+    :city "Seattle"
+    :map-url ""
+    :companions []
+    :longitude "-122.323206"
+    :state "Washington"
+    :notes "Calendar entries: Connections Museum."
+    :website "http://www.telcomhistory.org/connections-museum-seattle/"
+    :latitude "47.540868"
+    :timestamp "2019-03-25T17:00:00Z"
+    :country "United States"
+  }
+  {
+    :address "2208 Queen Anne Ave N, Seattle, WA 98109, USA"
+    :place "how-to-cook-a-wolf"
+    :name "How to Cook a Wolf"
+    :city "Seattle"
+    :map-url ""
+    :companions ["Travis"]
+    :longitude "-122.3568"
+    :state "Washington"
+    :notes "Calendar entries: Dinner at How to Cook a Wolf."
+    :website "https://howtocookawolf.com/"
+    :latitude "47.6388"
+    :timestamp "2019-03-18T00:15:00Z"
+    :country "United States"
+  }
+]

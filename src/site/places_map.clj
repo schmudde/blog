@@ -73,16 +73,19 @@
         edn-places     (static-places "turin.edn")]
     (concat checkin-places edn-places)))
 
-(defn la-places      [] (static-places "la.edn"))
-(defn chicago-places [] (static-places "chicago.edn"))
-(defn berlin-places  [] (static-places "berlin.edn"))
-(defn bath-places    [] (static-places "bath.edn"))
-(defn uk-places      [] (static-places "uk.edn"))
-(defn nyc-places     [] (static-places "nyc.edn"))
+(defn la-places          [] (static-places "la.edn"))
+(defn chicago-places     [] (static-places "chicago.edn"))
+(defn berlin-places      [] (static-places "berlin.edn"))
+(defn seattle-places     [] (static-places "seattle.edn"))
+(defn bath-places        [] (static-places "bath.edn"))
+(defn uk-places          [] (static-places "uk.edn"))
+(defn nyc-places         [] (static-places "nyc.edn"))
+(defn misc-places        [] (static-places "misc-places.edn"))
 
 (defn all-places []
   (concat (turin-places) (la-places) (chicago-places)
-          (berlin-places) (bath-places) (uk-places) (nyc-places)))
+          (berlin-places) (seattle-places) (bath-places)
+          (uk-places) (nyc-places) (misc-places)))
 
 ;; ---------------------------------------------------------------------------
 ;; JS generation
@@ -134,6 +137,7 @@
    :la      [34.0522 -118.2437 11]
    :chicago [41.8827  -87.6233 12]
    :berlin  [52.5200  13.4050  12]
+   :seattle [47.6062 -122.3321 12]
    :bath    [51.3811   -2.3590 14]
    :uk      [54.5      -3.5    6]
    :nyc     [40.7128  -74.0060 12]
@@ -221,9 +225,11 @@
    ["la"      "Los Angeles" :la      la-places]
    ["chicago" "Chicago"     :chicago chicago-places]
    ["berlin"  "Berlin"      :berlin  berlin-places]
+   ["seattle" "Seattle"     :seattle seattle-places]
    ["bath"    "Bath"        :bath    bath-places]
    ["uk"      "UK"          :uk      uk-places]
-   ["nyc"     "New York"    :nyc     nyc-places]])
+   ["nyc"     "New York"    :nyc     nyc-places]
+   ["misc"    "Misc"        :world   misc-places]])
 
 (defn render-city
   "Generic renderer — looks up the config for `slug` and delegates to render-city-page."
@@ -240,3 +246,5 @@
 (defn render-bath    [data] (render-city data "bath"))
 (defn render-uk      [data] (render-city data "uk"))
 (defn render-nyc     [data] (render-city data "nyc"))
+(defn render-seattle [data] (render-city data "seattle"))
+(defn render-misc    [data] (render-city data "misc"))

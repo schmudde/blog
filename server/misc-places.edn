@@ -1,0 +1,46 @@
+[
+ {
+  :address "San Sophia Station, Telluride, CO 81435, USA"
+  :place "allreds-restaurant"
+  :name "Allred's Restaurant"
+  :city "Telluride"
+  :map-url ""
+  :companions []
+  :longitude "-107.8203"
+  :state "Colorado"
+  :notes "Calendar entries: Cocktail Hour and Reception."
+  :website ""
+  :latitude "37.9364"
+  :timestamp "2022-03-14T00:00:00Z"
+  :country "United States"
+  }
+ {
+  :address "100 E Colorado Ave, Telluride, CO 81435, USA"
+  :place "last-dollar-saloon"
+  :name "Last Dollar Saloon"
+  :city "Telluride"
+  :map-url "https://maps.apple.com/place?address=100+E+Colorado+Ave%2C+Telluride%2C+CO++81435%2C+United+States&coordinate=37.936981%2C-107.8107236&name=Last+Dollar+Saloon&place-id=I50BDCED15D549C18&_provider=9902"
+  :companions []
+  :longitude "-107.8107236"
+  :state "Colorado"
+  :notes "Calendar entries: After Party!."
+  :website ""
+  :latitude "37.936981"
+  :timestamp "2022-03-14T05:45:00Z"
+  :country "United States"
+  }
+ {
+  :place "reinthalers-beisl"
+  :name "Reinthaler's Beisl"
+  :city "Vienna"
+  :map-url "https://maps.apple.com/?q=Reinthaler%27s%20Beisl&ll=48.2081081,16.3701332"
+  :companions ["Kathryn" "Stefan"]
+  :longitude "16.3701332"
+  :state "Vienna"
+  :notes "Calendar entries: Dinner in Vienna at Reinthaler Restaurant."
+  :website "http://reinthalersbeisl.stadtausstellung.at/start/"
+  :latitude "48.2081081"
+  :timestamp "2014-09-11T14:30:00Z"
+  :country "Austria"
+  }
+]
