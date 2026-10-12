@@ -94,6 +94,27 @@
         (perun/static :renderer 'site.places-map/render-la
                       :page "la.html"
                       :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-chicago
+                      :page "chicago.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-berlin
+                      :page "berlin.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-seattle
+                      :page "seattle.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-bath
+                      :page "bath.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-uk
+                      :page "uk.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-nyc
+                      :page "nyc.html"
+                      :meta {:type "page"})
+        (perun/static :renderer 'site.places-map/render-misc
+                      :page "misc.html"
+                      :meta {:type "page"})
        ;;;
         (perun/static :renderer 'site.feeds/render
                       :page "pages/feeds.html"

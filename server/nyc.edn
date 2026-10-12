@@ -10,4 +10,1641 @@
   :website ""
   :longitude "-74.02938030082034"
   :timestamp "2018-04-10T21:30:00Z"
-  :country "United States"}]
+  :country "United States"}
+    {
+      :address "158 Bleecker St, New York, NY 10012, USA"
+      :place "le-poisson-rouge"
+      :name "(Le) Poisson Rouge"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.99996740113195"
+      :state "New York"
+      :notes "Calendar entries: 4:30p Performance - Starts at 5PM."
+      :website ""
+      :latitude "40.72864038834522"
+      :timestamp "2017-04-09T20:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "510 E 11th St, New York, NY 10009, United States"
+      :place "11th-street-bar"
+      :name "11th Street Bar"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98124177383622"
+      :state "New York"
+      :notes "Calendar entries: Paul Walker B-Day; Paul Walker Cares (about his birthday); Paul's Birthday."
+      :website ""
+      :latitude "40.72816026744581"
+      :timestamp "2019-04-07T01:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "1941 Broadway, New York, NY 10023"
+      :place "alice-tully-hall"
+      :name "Alice Tully Hall"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98259758732678"
+      :state "New York"
+      :notes "Calendar entries: Poetry for Strings."
+      :website ""
+      :latitude "40.77388964364769"
+      :timestamp "2018-10-18T23:30:00Z"
+      :country "United States"
+    }
+
+    {
+      :address "247 Varet St, Brooklyn, NY 11206, USA"
+      :place "ange-noir-cafe"
+      :name "Ange Noir Cafe"
+      :city "New York"
+      :map-url ""
+      :companions ["Brittany"]
+      :longitude "-73.93413551647431"
+      :state "New York"
+      :notes "Calendar entries: Video Art!."
+      :website ""
+      :latitude "40.70436227214651"
+      :timestamp "2019-03-12T18:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "146 Broadway, Brooklyn, NY 11211, United States"
+      :place "babys-all-right"
+      :name "Baby's All Right"
+      :city "New York"
+      :map-url "https://maps.apple.com/?q=Baby%27s%20All%20Right%0A146%20Broadway%2C%20Brooklyn%2C%20NY%2011211%2C%20United%20States&ll=40.709985,-73.963476"
+      :companions []
+      :longitude "-73.963476"
+      :state "New York"
+      :notes "Calendar entries: Ticket: Disappears (Special Performance!)."
+      :website ""
+      :latitude "40.709985"
+      :timestamp "2016-02-21T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "East 11th Street, New York, NY, United States"
+      :place "bahai-center-and-library"
+      :name "Baha'i Center & Library"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.99341844396065"
+      :state "New York"
+      :notes "Calendar entries: Ridvan at The Manhattan Center; Commemoration of the Martydom of the Bab - Bahai center."
+      :website ""
+      :latitude "40.735829286464956"
+      :timestamp "2014-04-28T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "321 Ashland Pl, Brooklyn, NY 11217, USA"
+      :place "bam-fisher-space"
+      :name "BAM Fisher Space"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.97773617229844"
+      :state "New York"
+      :notes ""
+      :website ""
+      :latitude "40.68619268328785"
+      :timestamp "2018-04-28T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "651 Fulton St, Brooklyn, NY 11217, United States"
+      :place "bam-harvey-theater"
+      :name "BAM Harvey Theater"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.97907005852282"
+      :state "New York"
+      :notes "Calendar entries: Plexus @ BAM; Citizen @ BAM."
+      :website ""
+      :latitude "40.68850634792035"
+      :timestamp "2016-12-15T00:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "Peter Jay Sharp Building, 30 Lafayette Avenue, Brooklyn, NY 11217, USA"
+      :place "bam-howard-gilman-opera-house"
+      :name "BAM Howard Gilman Opera House"
+      :city "New York"
+      :map-url ""
+      :companions ["Kim" "Justin"]
+      :longitude "-73.97764135880436"
+      :state "New York"
+      :notes "Calendar entries: Kreatur."
+      :website ""
+      :latitude "40.68690284603676"
+      :timestamp "2018-11-02T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "bam-rose-cinemas"
+      :name "BAM Rose Cinemas"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.97768763181628"
+      :state "New York"
+      :notes "Calendar entries: The Brink's Job description."
+      :website ""
+      :latitude "40.68668654653852"
+      :timestamp "2013-05-07T20:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "132 Havemeyer St, Brooklyn, NY 11211, USA"
+      :place "banter-bar"
+      :name "Banter Bar"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.95726097045"
+      :state "New York"
+      :notes "Calendar entries: David / Cole."
+      :website ""
+      :latitude "40.71232875187026"
+      :timestamp "2021-06-07T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "781 Franklin Avenue, Brooklyn, NY 11238, United States"
+      :place "barboncino-pizza"
+      :name "Barboncino Pizza"
+      :city "New York"
+      :map-url ""
+      :companions ["Luke" "Rachel"]
+      :longitude "-73.9572296471582"
+      :state "New York"
+      :notes "Calendar entries: Barboncino."
+      :website ""
+      :latitude "40.67226899188949"
+      :timestamp "2015-08-28T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "76 Mott St, New York, NY 10013, USA"
+      :place "bassanova-ramen"
+      :name "Bassanova Ramen"
+      :city "New York"
+      :map-url ""
+      :companions ["Brad"]
+      :longitude "-73.99771025695583"
+      :state "New York"
+      :notes "Calendar entries: Late Lunch with Brad Fidler."
+      :website ""
+      :latitude "40.71665966398072"
+      :timestamp "2018-01-27T08:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "4 Berry St, Brooklyn, NY 11211"
+      :place "berry-park"
+      :name "Berry Park"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.95515818531014"
+      :state "New York"
+      :notes "Calendar entries: Brit's Birthday."
+      :website ""
+      :latitude "40.72269373426087"
+      :timestamp "2018-06-10T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1515 Broadway, New York City, NY 10036, United States"
+      :place "best-buy-theater"
+      :name "Best Buy Theater"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98617145880135"
+      :state "New York"
+      :notes "Calendar entries: SKINNY FOOKIN PUPPY."
+      :website ""
+      :latitude "40.757988981027914"
+      :timestamp "2014-12-03T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "131 Allen St, New York, NY 10002, USA"
+      :place "bitforms-gallery"
+      :name "bitforms gallery"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.990150872297"
+      :state "New York"
+      :notes "Calendar entries: Beryl Korot @ Bitforms; Bitforms; Bitforms Opening."
+      :website "https://mailchi.mp/bitforms/on-the-outskirts?e=7a19219fc7"
+      :latitude "40.72025566864618"
+      :timestamp "2018-10-27T22:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "19 East 26th Street, New York, NY, US, 10010"
+      :place "black-barn-tavern"
+      :name "Black Barn Tavern"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.9870932738357"
+      :state "New York"
+      :notes "Calendar entries: TechSuds II."
+      :website ""
+      :latitude "40.74323502939146"
+      :timestamp "2016-07-12T22:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "119 E 23rd St, New York, NY 10010, USA"
+      :place "bonmi-nyc-kitchen"
+      :name "BONMi NYC Kitchen"
+      :city "New York"
+      :map-url ""
+      :companions ["Travis"]
+      :longitude "-73.98521483362563"
+      :state "New York"
+      :notes "Calendar entries: Lunch with the T; Lunch With the T."
+      :website ""
+      :latitude "40.74014021940594"
+      :timestamp "2018-01-23T16:15:00Z"
+      :country "United States"
+    }
+    {
+      :address "1271 Myrtle Ave, Brooklyn, NY 11221, United States"
+      :place "bossa-nova-civic-club"
+      :name "Bossa Nova Civic Club"
+      :city "New York"
+      :map-url ""
+      :companions ["Ryan"]
+      :longitude "-73.92780388547847"
+      :state "New York"
+      :notes "Calendar entries: Memo Live Set; Bats reunite 🦇; Neud Photo at Bossa Nova."
+      :website ""
+      :latitude "40.69813095658098"
+      :timestamp "2018-04-08T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "61 Wythe Ave, Brooklyn, NY 11249, USA"
+      :place "brooklyn-bowl"
+      :name "Brooklyn Bowl"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.95744567568772"
+      :state "New York"
+      :notes "Calendar entries: Break Science @ Brooklyn Bowl."
+      :website ""
+      :latitude "40.72209065172258"
+      :timestamp "2016-12-16T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "317 Clermont Avenue #4, Brooklyn, NY 11205, United States"
+      :place "brooklyn-masonic-temple"
+      :name "Brooklyn Masonic Temple"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96946881616607"
+      :state "New York"
+      :notes "Calendar entries: Autechre."
+      :website ""
+      :latitude "40.68817340772842"
+      :timestamp "2015-10-04T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "brooklyn-museum"
+      :name "Brooklyn Museum"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96354477198727"
+      :state "New York"
+      :notes "Calendar entries: Brooklyn 63."
+      :website ""
+      :latitude "40.67140960643365"
+      :timestamp "2014-04-05T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "901 Broadway At, E 20th St, New York, NY 10003, USA"
+      :place "brooks-brothers-red-fleece-cafe"
+      :name "Brooks Brothers Red Fleece Cafe"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.99001073150765"
+      :state "New York"
+      :notes "Calendar entries: Paul."
+      :website ""
+      :latitude "40.73927234979263"
+      :timestamp "2019-12-17T20:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "618 Grand St, Brooklyn"
+      :place "bushwick-country-club"
+      :name "Bushwick Country Club"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.94777364500104"
+      :state "New York"
+      :notes "Calendar entries: Steph Going Away."
+      :website ""
+      :latitude "40.71130268466785"
+      :timestamp "2015-03-28T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1695 2nd Ave, New York, NY 10128, United States"
+      :place "cafe-dalsace"
+      :name "Cafe D'Alsace"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.95090844499828"
+      :state "New York"
+      :notes "Calendar entries: Brunch with T&A."
+      :website ""
+      :latitude "40.7796606757892"
+      :timestamp "2015-12-06T15:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "93 N 6th St., Brooklyn, NY 11211"
+      :place "cameo-gallery"
+      :name "Cameo Gallery"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96123226950175"
+      :state "New York"
+      :notes "Calendar entries: The Beehive."
+      :website "http://www.cameony.net/about/"
+      :latitude "40.725851975761856"
+      :timestamp "2013-10-19T17:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "7th Avenue, New York, NY, United States"
+      :place "carnegie-hall"
+      :name "Carnegie Hall"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.97986995880107"
+      :state "New York"
+      :notes "Calendar entries: Arvo Pärt Concert & Datish."
+      :website ""
+      :latitude "40.76531266777124"
+      :timestamp "2014-06-01T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "5-48 49th Ave, Long Island City, NY 11101, USA"
+      :place "casa-enrique"
+      :name "Casa Enrique"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.95446673366119"
+      :state "New York"
+      :notes "Calendar entries: Brunch."
+      :website "https://henrinyc.com/casa-enrique/"
+      :latitude "40.743609485985274"
+      :timestamp "2018-03-17T18:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "22 East 12th Street, New York City, NY 10003, United States"
+      :place "cinema-village"
+      :name "Cinema Village"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.99329299847844"
+      :state "New York"
+      :notes "Calendar entries: CTS Screening; Visitors."
+      :website "http://www.cinemavillage.com/chc/cv/show_movie.asp?movieid=3068"
+      :latitude "40.73419611620239"
+      :timestamp "2014-03-06T18:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "361 Manhattan Ave, Brooklyn, NY 11211, USA"
+      :place "cpr-center-for-performance-research"
+      :name "CPR - Center for Performance Research"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.94659827414446"
+      :state "New York"
+      :notes "Calendar entries: Nikki @ Mono No Aware."
+      :website ""
+      :latitude "40.71675915810173"
+      :timestamp "2017-11-20T00:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "101 E 15th St, New York, NY 10003, United States"
+      :place "daryl-roth-theatre"
+      :name "Daryl Roth Theatre"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98952241462564"
+      :state "New York"
+      :notes "Calendar entries: In & Of Itself; Fuerza Bruta."
+      :website ""
+      :latitude "40.73561141042179"
+      :timestamp "2014-10-23T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "87 Lafayette Street - New York, NY 10013"
+      :place "dctv-independent-media-arts-center"
+      :name "DCTV Independent Media Arts Center"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.00122270130285"
+      :state "New York"
+      :notes "Calendar entries: CryptoCreative Symposium at Creative Tech Week."
+      :website ""
+      :latitude "40.71800309345735"
+      :timestamp "2018-05-10T18:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "433 Park Ave, New York, NY 10016, USA"
+      :place "desmonds-tavern"
+      :name "Desmond's Tavern"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98331839133179"
+      :state "New York"
+      :notes "Calendar entries: Andrea Sears."
+      :website ""
+      :latitude "40.7443058702948"
+      :timestamp "2017-03-05T02:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "373 Park Ave S, New York, NY 10016, USA"
+      :place "dos-caminos"
+      :name "Dos Caminos"
+      :city "New York"
+      :map-url ""
+      :companions ["Travis"]
+      :longitude "-73.98411236774915"
+      :state "New York"
+      :notes "Calendar entries: Lunch with the T."
+      :website ""
+      :latitude "40.74279346824998"
+      :timestamp "2018-03-20T21:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "East 4th Street, New York, NY, United States"
+      :place "duo-theatre"
+      :name "Duo Theatre"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.99068123181465"
+      :state "New York"
+      :notes "Calendar entries: Little Man of Steel."
+      :website "http://tinyurl.com/m7zkfez"
+      :latitude "40.72672408428499"
+      :timestamp "2014-06-18T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "17 Ingraham St, Brooklyn, NY 11206, United States"
+      :place "el-cortez"
+      :name "El Cortez"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.93308149289668"
+      :state "New York"
+      :notes "Calendar entries: Brunch at El Cortez."
+      :website ""
+      :latitude "40.70716106422668"
+      :timestamp "2015-10-18T17:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "New York, New York, United States, 10003"
+      :place "ellen-stewart-theatre"
+      :name "Ellen Stewart Theatre"
+      :city "New York"
+      :map-url ""
+      :companions ["Kim"]
+      :longitude "-73.99039435915364"
+      :state "New York"
+      :notes "Calendar entries: La MaMa Meet Up 18: CultureHub."
+      :website ""
+      :latitude "40.72664906048259"
+      :timestamp "2018-05-02T20:15:00Z"
+      :country "United States"
+    }
+    {
+      :address "599 Johnson Avenue, Brooklyn, NY, US, 11237"
+      :place "elsewhere"
+      :name "Elsewhere"
+      :city "New York"
+      :map-url ""
+      :companions ["Ryan"]
+      :longitude "-73.92331127449778"
+      :state "New York"
+      :notes "Calendar entries: A Place To Bury Strangers (Album Release Party) @ Elsewhere (Hall); Washed Out DJ; BOUND w/ DJ Stingray, Volvox, Veronica Vasicka, Xeno & Oaklander, Becka Diamond, Katie Rex, Nick Bazzano, Soren Roi & Haruka @ Elsewhere."
+      :website ""
+      :latitude "40.70966915691317"
+      :timestamp "2018-09-23T03:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "209 W Houston St, New York, NY 10014, USA"
+      :place "film-forum"
+      :name "Film Forum"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-74.00420125730284"
+      :state "New York"
+      :notes "Calendar entries: Notes on Blindness: Feature Film (final day!)."
+      :website "http://filmforum.org/film/notes-on-blindness-film"
+      :latitude "40.728580410177024"
+      :timestamp "2016-11-30T02:10:00Z"
+      :country "United States"
+    }
+    {
+      :address "320 Atlantic Ave, Brooklyn, NY 11201, United States"
+      :place "french-louie"
+      :name "French Louie"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Roland" "Alexis"]
+      :longitude "-73.98820527449874"
+      :state "New York"
+      :notes "Calendar entries: Dinner with Roland & his wife Alexis."
+      :website ""
+      :latitude "40.688183413789176"
+      :timestamp "2016-01-31T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "542 W 27th St, New York, NY 10001, USA"
+      :place "gallow-green"
+      :name "Gallow Green"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-74.0040482033316"
+      :state "New York"
+      :notes "Calendar entries: Brunch."
+      :website ""
+      :latitude "40.751035935603596"
+      :timestamp "2018-05-13T16:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "44 Wilson Ave, Brooklyn, NY 11237, USA"
+      :place "gold-sounds"
+      :name "Gold Sounds"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Daniel" "Ryan"]
+      :longitude "-73.92952304566253"
+      :state "New York"
+      :notes "Calendar entries: Mike from Bushwick DJing; Jake Armstrong Going Away Party / Final Performance in Mission Drift."
+      :website ""
+      :latitude "40.702796508440365"
+      :timestamp "2016-07-02T02:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "98 Meserole Ave, Brooklyn, NY 11222, United States"
+      :place "good-room"
+      :name "Good Room"
+      :city "New York"
+      :map-url ""
+      :companions ["Matt" "Ryan"]
+      :longitude "-73.95297647634759"
+      :state "New York"
+      :notes "Calendar entries: Memo DJ set."
+      :website ""
+      :latitude "40.72715709746313"
+      :timestamp "2018-04-29T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "127 E 23rd St, New York, NY 10010, USA"
+      :place "gramercy-theatre"
+      :name "Gramercy Theatre"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98496250333197"
+      :state "New York"
+      :notes "Calendar entries: Revco."
+      :website ""
+      :latitude "40.74003785174678"
+      :timestamp "2017-11-19T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "grimm-gallery"
+      :name "GRIMM Gallery"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.00376998984058"
+      :state "New York"
+      :notes "Calendar entries: Paul @ Grimm."
+      :website ""
+      :latitude "40.718720172210055"
+      :timestamp "2019-02-17T21:00:00Z"
+      :country "United States"
+    }
+    {
+      :address ""
+      :place "home-sweet-home"
+      :name "Home Sweet Home"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.99378227882276"
+      :state "New York"
+      :notes "Calendar entries: Andres @ Home Sweet Home."
+      :website ""
+      :latitude "40.72207109148642"
+      :timestamp "2016-06-09T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "Hunter North Building / Enter at 69th Street between Lexington & Park Avenues, New York, NY, 10065, United States"
+      :place "hunter-college-black-box"
+      :name "Hunter College Black Box"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.96445098732694"
+      :state "New York"
+      :notes "Calendar entries: 8-channel Ambisonic Performance."
+      :website ""
+      :latitude "40.76839931592767"
+      :timestamp "2018-05-07T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "323 6th Ave, New York, NY 10014, USA"
+      :place "ifc-center"
+      :name "IFC Center"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.00169366100411"
+      :state "New York"
+      :notes "Calendar entries: Zama @ IFC Film Center."
+      :website ""
+      :latitude "40.73142508338312"
+      :timestamp "2018-05-27T21:10:00Z"
+      :country "United States"
+    }
+    {
+      :address "289 Kent Ave, Brooklyn, NY 11249"
+      :place "indiescreen"
+      :name "IndieScreen"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96642330888544"
+      :state "New York"
+      :notes "Calendar entries: Open Options - Beth's Film."
+      :website ""
+      :latitude "40.71519833312197"
+      :timestamp "2014-02-24T00:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "196 2nd Ave, New York, NY, United States"
+      :place "juke-bar"
+      :name "Juke Bar"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98565792513439"
+      :state "New York"
+      :notes "Calendar entries: Evan's Visit Party."
+      :website ""
+      :latitude "40.7312641804981"
+      :timestamp "2014-10-02T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "85 E 4th St, New York, NY 10003, USA"
+      :place "kgb-bar"
+      :name "KGB Bar"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98984563798939"
+      :state "New York"
+      :notes "Calendar entries: StoryCode NYC + KitSplit Winter Social."
+      :website "https://secure.meetupstatic.com/photos/event/9/5/1/b/600_466838171.jpeg"
+      :latitude "40.72668077637501"
+      :timestamp "2018-01-10T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "52-19 Flushing Ave, Maspeth, NY 11378, USA"
+      :place "knockdown-center"
+      :name "Knockdown Center"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.91431581312433"
+      :state "New York"
+      :notes "Calendar entries: Machines in Music."
+      :website ""
+      :latitude "40.71577637139319"
+      :timestamp "2016-10-08T15:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "East 4th Street, NYC, NY, United States"
+      :place "kraine-theater"
+      :name "Kraine Theater"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98990529169083"
+      :state "New York"
+      :notes "Calendar entries: The Protagonist, http://www.theprotagonistplay.com/."
+      :website ""
+      :latitude "40.726666439164354"
+      :timestamp "2014-03-15T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1115 Flushing Ave, Brooklyn, NY, United States"
+      :place "lightspace-studios-new-york"
+      :name "LightSpace Studios New York"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.92659909017387"
+      :state "New York"
+      :notes "Calendar entries: Bushwick Film Festival VIP. Now 718 Studios"
+      :website ""
+      :latitude "40.70566666402058,"
+      :timestamp "2014-10-02T22:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "10 Lincoln Center Plaza, New York, NY 10023, United States"
+      :place "lincoln-center-for-the-performing-arts"
+      :name "Lincoln Center for the Performing Arts"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98348890333045"
+      :state "New York"
+      :notes "Calendar entries: Jonas & Yumiko - Early Lunch."
+      :website ""
+      :latitude "40.77265907215253"
+      :timestamp "2015-09-20T15:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "136 10th Ave, New York, NY 10011, USA"
+      :place "lisson-gallery"
+      :name "Lisson Gallery"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Kim"]
+      :longitude "-74.0044864438093"
+      :state "New York"
+      :notes "Calendar entries: Channaing."
+      :website "https://www.lissongallery.com/exhibitions/channa-horwitz"
+      :latitude "40.748779577855174"
+      :timestamp "2018-02-08T17:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "85 Driggs Ave, Brooklyn, NY 11222, USA"
+      :place "little-dokebi"
+      :name "Little Dokebi"
+      :city "New York"
+      :map-url ""
+      :companions ["Alex" "Laura"]
+      :longitude "-73.94232311682539"
+      :state "New York"
+      :notes "Calendar entries: Dinner w/ Alex and Laura."
+      :website ""
+      :latitude "40.723320599394825"
+      :timestamp "2016-08-23T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "299 Grand St, New York, NY 10002, United States"
+      :place "marc-straus-gallery"
+      :name "Marc Straus Gallery"
+      :city "New York"
+      :map-url "https://maps.apple.com/?q=Marc%20Straus%20Gallery%0A299%20Grand%20St%2C%20New%20York%2C%20NY%2010002%2C%20United%20States&ll=40.717355,-73.991964"
+      :companions ["Kathryn"]
+      :longitude "-73.99202534557544"
+      :state "New York"
+      :notes "Calendar entries: Marc Strauss organ; Performance."
+      :website ""
+      :latitude "40.71782582098214"
+      :timestamp "2016-11-20T21:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "217 East Houston Street, New York, NY 10002, United States"
+      :place "mercury-lounge"
+      :name "Mercury Lounge"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Ryan"]
+      :longitude "-73.98673517449708"
+      :state "New York"
+      :notes "Calendar entries: Feathers @ Mercury Lounge; PRF NYC; Joe Marson."
+      :website "http://www.mercuryloungenyc.com/event/433533-feathers-new-york"
+      :latitude "40.72232206384949"
+      :timestamp "2014-01-07T14:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "7 Ludlow St, New York, NY 10002, USA"
+      :place "metrograph"
+      :name "Metrograph"
+      :city "New York"
+      :map-url ""
+      :companions ["Michael"]
+      :longitude "-73.99121107634822"
+      :state "New York"
+      :notes "Calendar entries: Safe Screening."
+      :website ""
+      :latitude "40.715321876241475"
+      :timestamp "2017-06-18T01:15:00Z"
+      :country "United States"
+    }
+    {
+      :address "30 Lincoln Center Plaza, New York, NY 10023, USA"
+      :place "metropolitan-opera"
+      :name "Metropolitan Opera"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.9838116438081"
+      :state "New York"
+      :notes "Calendar entries: Parsifal @ the Metropolitan Opera."
+      :website "http://www.metopera.org/__Redesign/Views/Pages/Season/ProductionRouter.aspx?sn=14328"
+      :latitude "40.77288632145509"
+      :timestamp "2018-02-20T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "36-01 35th Ave, New York, NY 11106, United States"
+      :place "museum-of-the-moving-image"
+      :name "Museum of the Moving Image"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.92398178983869"
+      :state "New York"
+      :notes "Calendar entries: Museum of the Moving Image; Theorizing the Web; Keynotes 3 & 4."
+      :website "http://www.movingimage.us/exhibitions/2012/12/15/detail/spacewar-video-games-blast-off/"
+      :latitude "40.75654041945381"
+      :timestamp "2016-04-16T16:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "66 North 6th Street, Brooklyn, NY 11211, United States"
+      :place "music-hall-of-williamsburg"
+      :name "Music Hall of Williamsburg"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96179011867626"
+      :state "New York"
+      :notes "Calendar entries: Industrial Accident: The Story Of Wax Trax! Records w/Ministry & Cold Cave; Filmshop - End of the Season Event."
+      :website "http://www.musichallofwilliamsburg.com/event/874935-filmshop-strange-bedfellows-brooklyn"
+      :latitude "40.71933989700239"
+      :timestamp "2015-07-18T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "15 Gramercy Park South, New York City, NY 10003, United States"
+      :place "national-arts-club"
+      :name "National Arts Club"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98666757264569"
+      :state "New York"
+      :notes "Calendar entries: Codebreaker."
+      :website "http://www.nationalartsclub.org/"
+      :latitude "40.737842315707354"
+      :timestamp "2014-05-09T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "11 E 26th St, New York, NY 10010, USA"
+      :place "national-museum-of-mathematics"
+      :name "National Museum of Mathematics"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.9946480168245"
+      :state "New York"
+      :notes "Calendar entries: The Man Who Loved Only Numbers; Game Night at Math Museum."
+      :website ""
+      :latitude "40.74081704984207"
+      :timestamp "2018-03-08T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "1048 5th Avenue, New York, NY 10028, United States"
+      :place "neue-galerie-new-york"
+      :name "Neue Galerie New York"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.96029451682246"
+      :state "New York"
+      :notes "Calendar entries: Neue Gallerie."
+      :website ""
+      :latitude "40.78145894632229"
+      :timestamp "2015-04-04T19:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "235 Bowery, New York, NY 10002"
+      :place "new-museum"
+      :name "New Museum"
+      :city "New York"
+      :map-url ""
+      :companions ["Kim"]
+      :longitude "-73.99295487634778"
+      :state "New York"
+      :notes "Calendar entries: Broad Band: The Untold History of the Women Who Made the Internet; All Our Visited Links; Physical Tactics for Digital Colonialism."
+      :website "https://www.newmuseum.org/calendar/view/1477/all-our-visited-links"
+      :latitude "40.722435145368394"
+      :timestamp "2018-04-19T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "Boerum Pl & Schermerhorn St, Brooklyn, NY 11201, USA"
+      :place "new-york-transit-museum"
+      :name "New York Transit Museum"
+      :city "New York"
+      :map-url ""
+      :companions ["Travis" "Kathryn"]
+      :longitude "-73.98999270148381"
+      :state "New York"
+      :notes "Calendar entries: Transit Musem."
+      :website ""
+      :latitude "40.69072453717164"
+      :timestamp "2016-07-16T15:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "170 Central Park West, New York, NY 10024, United States"
+      :place "new-york-historical-society"
+      :name "New-York Historical Society"
+      :city "New York"
+      :map-url "https://maps.apple.com/?q=New-York%20Historical%20Society%0A170%20Central%20Park%20West%2C%20New%20York%2C%20NY%2010024%2C%20United%20States&ll=40.779292,-73.974502"
+      :companions []
+      :longitude "-73.9739186321659"
+      :state "New York"
+      :notes "Calendar entries: Silicon City: Computer History Made in New York."
+      :website ""
+      :latitude "40.779462410113666"
+      :timestamp "2016-02-07T16:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "136 Metropolitan Ave, Brooklyn, NY 11249, United States"
+      :place "nitehawk-cinema"
+      :name "Nitehawk Cinema"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Manna"]
+      :longitude "-73.9624033403559"
+      :state "New York"
+      :notes "Calendar entries: The Theory of Everything."
+      :website ""
+      :latitude "40.7187044785258"
+      :timestamp "2014-12-15T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "56-06 Cooper Ave, Queens, NY 11385, USA"
+      :place "nowadays"
+      :name "Nowadays"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.90162163402096"
+      :state "New York"
+      :notes "Calendar entries: Erin's BDay party."
+      :website "http://nowadays.nyc/"
+      :latitude "40.69264897197629"
+      :timestamp "2016-05-30T19:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "171 Lafayette Ave, Brooklyn, NY 11238, USA"
+      :place "olea"
+      :name "Olea"
+      :city "New York"
+      :map-url ""
+      :companions ["Jiefei"]
+      :longitude "-73.9706767475137"
+      :state "New York"
+      :notes "Calendar entries: Pre-Bird Dinner."
+      :website ""
+      :latitude "40.687901025207225"
+      :timestamp "2018-01-13T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "643 PARK AVENUE, New York, NY 10065"
+      :place "park-avenue-armory"
+      :name "Park Avenue Armory"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Ryan"]
+      :longitude "-73.96559911682327"
+      :state "New York"
+      :notes "Calendar entries: Massive Attack v Adam Curtis."
+      :website ""
+      :latitude "40.76745788470574"
+      :timestamp "2013-10-03T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "145 Bleecker Street,New York, NY 10012"
+      :place "peculier-pub"
+      :name "Peculier Pub"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.99905224314914"
+      :state "New York"
+      :notes "Calendar entries: Peculier Pub w/Laura."
+      :website ""
+      :latitude "40.72845081050975"
+      :timestamp "2013-06-08T21:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "158 Ludlow Street, New York, NY 10002, United States"
+      :place "pianos"
+      :name "Pianos"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98771757383653"
+      :state "New York"
+      :notes "Calendar entries: Fantastic Plastics Album Release Party."
+      :website ""
+      :latitude "40.72116954120385"
+      :timestamp "2015-09-13T00:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "138 West 29th Street - New York"
+      :place "pioneers-bar"
+      :name "Pioneers Bar"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.99195909103037"
+      :state "New York"
+      :notes "Calendar entries: NYTVF TV Tuesdays - January."
+      :website ""
+      :latitude "40.74742934618416"
+      :timestamp "2014-01-14T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "195 Avenue A, New York, NY 10009, United States"
+      :place "raclette"
+      :name "Raclette"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98155286219507"
+      :state "New York"
+      :notes "Calendar entries: Dinner."
+      :website ""
+      :latitude "40.729466238225186"
+      :timestamp "2016-04-26T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "125 1st Ave, New York"
+      :place "ravagh-persian-grill"
+      :name "Ravagh Persian Grill"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.96064623757411"
+      :state "New York"
+      :notes "Calendar entries: Dinner w/ Ruhi group. address (125 1st Ave, East Village) conflicts with coords (Upper East Side); coords are probably right, address probably wrong"
+      :website ""
+      :latitude "40.76258031453149"
+      :timestamp "2015-03-18T22:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "196 Allen St, New York, NY 10002, United States"
+      :place "rockwood-music-hall"
+      :name "Rockwood Music Hall"
+      :city "New York"
+      :map-url "https://maps.apple.com/?q=Rockwood%20Music%20Hall%0A196%20Allen%20St%2C%20New%20York%2C%20NY%2010002%2C%20United%20States&ll=40.722224,-73.98857"
+      :companions []
+      :longitude "-73.98857"
+      :state "New York"
+      :notes "Calendar entries: Joe Marson @ Rockwood Music Hall; Joe Marson at Rockwood Hall; Joe Marson."
+      :website ""
+      :latitude "40.72249961929837"
+      :timestamp "2016-03-20T02:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "435 Halsey Street, Brooklyn, NY 11233, United States"
+      :place "saraghina"
+      :name "Saraghina"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.93551343521233"
+      :state "New York"
+      :notes "Calendar entries: Dinner w/ Beth & Andrew; Dinner @ Saraghina."
+      :website ""
+      :latitude "40.68378206867953"
+      :timestamp "2015-07-28T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "515 Malcolm X Blvd, Harlem, NY 10037, United States"
+      :place "schomburg-center-library"
+      :name "Schomburg Center Library"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.94094016322553"
+      :state "New York"
+      :notes "Calendar entries: Women’s Jazz Festival: Meshell Nedegeocello."
+      :website ""
+      :latitude "40.814668617232634"
+      :timestamp "2014-03-24T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "18 whitwell place, park slope, NY"
+      :place "shapeshifter-lab"
+      :name "ShapeShifter Lab"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.976029160346"
+      :state "New York"
+      :notes "Calendar entries: Intermedia @ ShapeShifter."
+      :website ""
+      :latitude "40.67518666881682"
+      :timestamp "2012-10-12T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "353 Flatbush Ave, Brooklyn, NY 11238"
+      :place "sharlenes"
+      :name "Sharlene's"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.97206604500232"
+      :state "New York"
+      :notes "Calendar entries: Alex Bday Party; Alex bday party."
+      :website ""
+      :latitude "40.67723797854712"
+      :timestamp "2016-11-27T02:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "20 Meadow Street, Brooklyn, NY 11206, United States"
+      :place "shea-stadium-bk"
+      :name "Shea Stadium BK"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.94034659103139"
+      :state "New York"
+      :notes "Calendar entries: Suuns."
+      :website ""
+      :latitude "40.71916774487232"
+      :timestamp "2014-02-23T01:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "157 Montague St, Brooklyn, NY 11201, USA"
+      :place "st-ann-and-the-holy-trinity-church"
+      :name "St. Ann & the Holy Trinity Church"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.99252747568879"
+      :state "New York"
+      :notes "Calendar entries: Ambient Church New York: 25th Anniversary of Kranky."
+      :website "https://ambient.church/work/new-york-kranky25"
+      :latitude "40.694690766242445"
+      :timestamp "2018-12-16T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "1058 Bedford Ave, Brooklyn, NY 11205, USA"
+      :place "stonefruit-espresso-kitchen"
+      :name "Stonefruit Espresso + Kitchen"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Lindsey"]
+      :longitude "-73.95514537383784"
+      :state "New York"
+      :notes "Calendar entries: Breakfast with David Precht & Lindsey."
+      :website ""
+      :latitude "40.68905318785288"
+      :timestamp "2018-05-31T12:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "37-11 30th Ave, Long Island City, NY 11103, USA"
+      :place "sugar-freak"
+      :name "Sugar Freak"
+      :city "New York"
+      :map-url ""
+      :companions ["Carolynn" "Rachel" "Kathryn"]
+      :longitude "-73.91598943150657"
+      :state "New York"
+      :notes "Calendar entries: Brunch at Sugar Freak."
+      :website ""
+      :latitude "40.76473240933102"
+      :timestamp "2018-05-27T15:45:00Z"
+      :country "United States"
+    }
+    {
+      :address "Central Park, E 72nd & 5th Avenue, New York, NY 10021, USA"
+      :place "summerstage"
+      :name "SummerStage"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.96914423411627"
+      :state "New York"
+      :notes "Calendar entries: Bob Moses."
+      :website ""
+      :latitude "40.77465925622356"
+      :timestamp "2017-07-02T22:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "460 Bergen St, Brooklyn, NY 11217, United States"
+      :place "sun-in-bloom"
+      :name "Sun In Bloom"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Roland" "Alexis"]
+      :longitude "-73.97608874100695"
+      :state "New York"
+      :notes "Calendar entries: Brunch with Roland & Alexis; Post-Ruhi Brunch."
+      :website "http://suninbloom.wordpress.com/"
+      :latitude "40.68110699892349"
+      :timestamp "2014-12-14T18:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "333 W 23rd St, New York, NY 10011"
+      :place "sva-theatre"
+      :name "SVA Theatre"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.99978063335861"
+      :state "New York"
+      :notes "Calendar entries: After the Movie: The Lottery; After the Movie: Ultrasuede; After the Movie: The Arbor."
+      :website ""
+      :latitude "40.74608091274783"
+      :timestamp "2010-04-25T18:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "253 W 125th St, New York, NY 10027"
+      :place "the-apollo-theater"
+      :name "The Apollo Theater"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.95018844684834"
+      :state "New York"
+      :notes "Calendar entries: TFI/Pov: Homegoings Reception; TFI/POV Homegoings Screening; Martin Luther @ Apollo Theater."
+      :website ""
+      :latitude "40.810008475938524"
+      :timestamp "2013-06-21T22:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "6 Wyckoff Ave, Brooklyn, NY 11237, USA"
+      :place "the-cobra-club"
+      :name "The Cobra Club"
+      :city "New York"
+      :map-url ""
+      :companions ["Ryan"]
+      :longitude "-73.92354764685244"
+      :state "New York"
+      :notes "Calendar entries: Codie."
+      :website ""
+      :latitude "40.70688016508849"
+      :timestamp "2018-11-22T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "302 Bowery, New York, NY 10012, United States"
+      :place "the-interdependence-project"
+      :name "The Interdependence Project"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.98956665789025"
+      :state "New York"
+      :notes "Calendar entries: Lovingkindness Meditation (LKM) Group - moved"
+      :website ""
+      :latitude "40.74493853828794"
+      :timestamp "2015-11-06T23:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "372 Lafayette Ave, Brooklyn, NY 11238, United States"
+      :place "the-market"
+      :name "The Market"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn" "Eric"]
+      :longitude "-73.9606084045249"
+      :state "New York"
+      :notes "Calendar entries: Eric / Schmudde - Jack & the Machine Lunch Convo."
+      :website ""
+      :latitude "40.68886030621883"
+      :timestamp "2015-12-08T18:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "82nd Street at 5th Avenue, New York, New York 10028"
+      :place "the-metropolitan-museum-of-art"
+      :name "The Metropolitan Museum of Art"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.96316890081887"
+      :state "New York"
+      :notes "Calendar entries: Downloaded the Movie; Downloaded the Movie at the Met."
+      :website ""
+      :latitude "40.779599055009164"
+      :timestamp "2013-03-22T22:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "11 W 53rd St, New York, NY 10019, USA"
+      :place "the-museum-of-modern-art"
+      :name "The Museum of Modern Art"
+      :city "New York"
+      :map-url ""
+      :companions ["Matthias"]
+      :longitude "-73.9775357719837"
+      :state "New York"
+      :notes "Calendar entries: Tony Oursler's Imponderable."
+      :website ""
+      :latitude "40.761587072669414"
+      :timestamp "2016-09-30T21:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "514 Union St, Brooklyn, NY 11215, United States"
+      :place "the-royal-palms-shuffleboard-club"
+      :name "The Royal Palms Shuffleboard Club"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.9868883450023"
+      :state "New York"
+      :notes "Calendar entries: Zach Timm BDay."
+      :website ""
+      :latitude "40.67881657430794"
+      :timestamp "2015-12-12T00:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "545 W 30th St, New York, NY 10001, USA"
+      :place "the-shed"
+      :name "The Shed"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.00133204671756"
+      :state "New York"
+      :notes "Calendar entries: Art Day."
+      :website ""
+      :latitude "40.75849340188151"
+      :timestamp "2019-12-18T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "25 W 51st St, New York, NY 10019, USA"
+      :place "the-terrace-club"
+      :name "The Terrace Club"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.97808952947719"
+      :state "New York"
+      :notes "Calendar entries: 'Cats Connect 2017: New York City."
+      :website ""
+      :latitude "40.76110400087338"
+      :timestamp "2017-07-20T22:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "588 Broadway #1108, New York, NY 10012, USA"
+      :place "the-village-zendo"
+      :name "The Village Zendo"
+      :city "New York"
+      :map-url "https://maps.apple.com/?q=The%20Village%20Zendo%0A588%20Broadway%20%231108%2C%20New%20York%2C%20NY%2010012%2C%20USA&ll=40.724765,-73.997074"
+      :companions []
+      :longitude "-74.00572860267245"
+      :state "New York"
+      :notes "Calendar entries: Meditation @ Village Zendo; Zen Meditation; Movie Night."
+      :website "https://villagezendo.org/directions/"
+      :latitude "40.72065547353735"
+      :timestamp "2016-10-11T21:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "333 Douglass St, Brooklyn, NY"
+      :place "threes-brewing"
+      :name "Threes Brewing"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98238332678253"
+      :state "New York"
+      :notes "Calendar entries: Erica + Patrick Prenuptial Drinks."
+      :website ""
+      :latitude "40.68082499474429"
+      :timestamp "2017-10-08T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "Broadway and Wall Street, New York"
+      :place "trinity-church"
+      :name "Trinity Church"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.01180856733859"
+      :state "New York"
+      :notes "Calendar entries: Concerts at One."
+      :website "http://www.trinitywallstreet.org/concertsatone"
+      :latitude "40.70809036392558"
+      :timestamp "2014-03-27T17:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "484 Union Ave, Brooklyn, NY 11211, USA"
+      :place "union-pool"
+      :name "Union Pool"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.95165765055468"
+      :state "New York"
+      :notes "Calendar entries: Aaron Frazer - Durand Jones & The Indications in NY."
+      :website ""
+      :latitude "40.715085020282515"
+      :timestamp "2017-02-22T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "322 Union Ave, Brooklyn, NY 11211, USA"
+      :place "uniondocs"
+      :name "UnionDocs"
+      :city "New York"
+      :map-url ""
+      :companions ["Carmelle" "Kathryn"]
+      :longitude "-73.91499206034477"
+      :state "New York"
+      :notes "Calendar entries: Film Shop; Rachel's Film Shop Presentation; Film Shop Opening 30 - starts at 7:30. Moved"
+      :website ""
+      :latitude "40.70843893029883"
+      :timestamp "2016-08-22T23:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "20 1st Ave, New York, NY 10003, United States"
+      :place "v-nam-cafe"
+      :name "V-Nam Cafe"
+      :city "New York"
+      :map-url ""
+      :companions ["Kathryn"]
+      :longitude "-73.98807753150827"
+      :state "New York"
+      :notes "Calendar entries: Pho and gallery walk with Pina & Daniel."
+      :website ""
+      :latitude "40.7236479056371"
+      :timestamp "2016-07-29T19:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "146 Wyckoff Ave, Brooklyn, NY 11237, USA"
+      :place "variety-coffee-roasters"
+      :name "Variety Coffee Roasters"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.91750775373139"
+      :state "New York"
+      :notes "Calendar entries: Pick up keys."
+      :website ""
+      :latitude "40.70352931749269"
+      :timestamp "2019-05-19T16:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "55 Bethune St, New York, NY"
+      :place "westbeth-center-for-the-arts"
+      :name "Westbeth Center for the Arts"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-73.9963366865816"
+      :state "New York"
+      :notes "Calendar entries: Annie @ Westbeth."
+      :website ""
+      :latitude "40.73991430970262"
+      :timestamp "2016-04-29T00:00:00Z"
+      :country "United States"
+    }
+    {
+      :address "99 Gansevoort St, New York, NY 10014, USA"
+      :place "whitney-museum-of-american-art"
+      :name "Whitney Museum of American Art"
+      :city "New York"
+      :map-url ""
+      :companions []
+      :longitude "-74.00884144499993"
+      :state "New York"
+      :notes "Calendar entries: Whitney."
+      :website ""
+      :latitude "40.73971773626941"
+      :timestamp "2019-02-04T19:30:00Z"
+      :country "United States"
+    }
+    {
+      :address "552 Grandview Ave, Ridgewood, NY 11385, USA"
+      :place "windjammer-bar"
+      :name "Windjammer Bar"
+      :city "New York"
+      :map-url ""
+      :companions ["Ryan"]
+      :longitude "-73.90683341431397"
+      :state "New York"
+      :notes "Calendar entries: Dave Nolen and Clint."
+      :website ""
+      :latitude "40.7093178595931"
+      :timestamp "2019-02-16T22:00:00Z"
+      :country "United States"
+    }
+  ]
