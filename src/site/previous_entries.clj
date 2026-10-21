@@ -40,4 +40,8 @@
 (defn render [{global-meta :meta collection-meta :entry posts :entries}]
   (let [page-title "Previous Entries"
         content (make-previous-entries-page posts)]
-    (body-template global-meta page-title content)))
+    (body-template global-meta
+                   {:title page-title
+                    :canonical-url (str (:base-url global-meta) "previous-entries.html")
+                    :og-type "website"}
+                   content)))

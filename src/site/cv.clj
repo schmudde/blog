@@ -251,7 +251,11 @@
 (defn render [{global-meta :meta :as meta}]
   (let [page-title "Curriculum Vitae"
         content (make-cv)]
-    (body-template global-meta page-title content)))
+    (body-template global-meta
+                   {:title page-title
+                    :canonical-url (str (:base-url global-meta) "cv.html")
+                    :og-type "website"}
+                   content)))
 
 #_(print-cv)
 

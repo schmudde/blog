@@ -24,15 +24,18 @@
    [:meta {:name "twitter:card" :content "summary_large_image"}]
    [:meta {:name "twitter:creator" :content "@dschmudde"}]
    [:meta {:property "og:url" :content (or canonical-url base-url)}]
+   (when canonical-url
+     [:link {:rel "canonical" :href canonical-url}])
    [:meta {:property "og:title" :content (or title site-title)}]
    [:meta {:property "og:author" :content author}]
    [:meta {:property "og:image" :content (if-let [img-url (extract-image content)]
-                                             (str "http://schmud.de" img-url)
-                                           "http://schmud.de/img/btf-logo.svg")}]
+                                             (str base-url (subs img-url 1)) ; img-url starts with "/"
+                                           (str base-url "img/btf-logo.svg"))}]
    [:meta {:property "og:description" :content (or (:description page-meta) (:description global-meta))}]
-   (if title ; if there is a post title, this is an article, otherwise it is a website
-       [:meta {:property "og:type":content "article"}]
-     [:meta {:property "og:type":content "website"}])
+   (cond ; a page can set its own type; otherwise a post title means article
+     (:og-type page-meta) [:meta {:property "og:type" :content (:og-type page-meta)}]
+     title [:meta {:property "og:type":content "article"}]
+     :else [:meta {:property "og:type":content "website"}])
    [:meta {:name "ahrefs-site-verification" :content "9f4e0e681ebce19d5f7a4a7ddbab899c9fbc893c04144bd69fc950c3ad555dd2"}]
    [:link {:rel "stylesheet" :href "/css/tachyons.min.css"}]
    [:link {:rel "stylesheet" :href "/css/tufte.min.css"}]
@@ -50,7 +53,7 @@
    ;; To use Aperture as your Microsub endpoint. Then use Monocle.p3k.io as a reader.
    [:link {:rel "microsub" :href "https://aperture.p3k.io/microsub/560"}]
 
-   [:link {:rel "alternate" :type "application/rss+xml" :title "Beyond the Frame" :href "feed.rss"}]
+   [:link {:rel "alternate" :type "application/rss+xml" :title "Beyond the Frame" :href "/feed.rss"}]
 
 
    ;; Convert Kit "Grove Form"

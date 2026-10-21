@@ -54,6 +54,39 @@
   [{:keys [date-published] :as meta}]
   (if date-published true false))
 
+(defn sitemap-page?
+  "Published pages with a canonical URL. Leaves out unpublished posts, books and
+  programs, source files that aren't written to public/, and the map embed."
+  [{:keys [canonical-url path] :as meta}]
+  (and canonical-url
+       path (.startsWith path "public/")
+       (not (.endsWith canonical-url "places-embed.html"))
+       (not (and ((some-fn post? book? program?) meta)
+                 (not (published? meta))))))
+
+(deftask write-sitemap
+  "Writes public/sitemap.xml from the pages' canonical URLs.
+  (perun/sitemap's dependency fails to load on current Clojure.)"
+  []
+  (let [tmp (tmp-dir!)
+        iso-date #(.format (java.text.SimpleDateFormat. "yyyy-MM-dd") %)
+        escape #(clojure.string/escape % {\& "&amp;" \< "&lt;" \> "&gt;"})
+        url-entry (fn [{:keys [canonical-url date-modified]}]
+                    (str "  <url><loc>" (escape canonical-url) "</loc>"
+                         (when (instance? java.util.Date date-modified)
+                           (str "<lastmod>" (iso-date date-modified) "</lastmod>"))
+                         "</url>\n"))]
+    (with-pre-wrap fileset
+      (let [pages (->> (perun/filter-meta-by-ext fileset {:filterer sitemap-page? :extensions [".html"]})
+                       (sort-by :canonical-url))
+            out (clojure.java.io/file tmp "public" "sitemap.xml")]
+        (clojure.java.io/make-parents out)
+        (spit out (str "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                       "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+                       (apply str (map url-entry pages))
+                       "</urlset>\n"))
+        (-> fileset (add-resource tmp) commit!)))))
+
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
@@ -134,6 +167,7 @@
         ;; :no-clean true preserves timestamps on unchanged files so lftp only
         ;; re-uploads content that actually changed. Trade-off: deleted content
         ;; lingers in target/ until manually cleaned (`rm -rf target/`).
+        (write-sitemap)
         (target :no-clean true)))
 
 (deftask dev []
