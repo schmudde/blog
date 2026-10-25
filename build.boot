@@ -9,9 +9,11 @@
                  [deraen/boot-livereload "0.2.1"]
                  [time-literals "0.1.4"]
                  [ring/ring-mock "0.4.0"]
-                 [cljc.java-time "0.1.11"]])
+                 [cljc.java-time "0.1.11"]
+                 [org.jsoup/jsoup "1.17.2"]]) ;; link cards (src/site/link_card.clj)
 
 (require '[io.perun :as perun]
+         '[io.perun.meta :as pm]
          '[pandeiro.boot-http :refer [serve]]
          '[deraen.boot-livereload :refer [livereload]])
 
@@ -87,9 +89,33 @@
                        "</urlset>\n"))
         (-> fileset (add-resource tmp) commit!)))))
 
+(deftask link-cards
+  "Replaces link-card placeholders in Pandoc's HTML output with preview cards
+  (see src/site/link_card.clj), before any page, snippet or feed is rendered."
+  []
+  (require 'site.link-card)
+  (let [tmp (tmp-dir!)
+        expand (resolve 'site.link-card/expand)]
+    (with-pre-wrap fileset
+      (empty-dir! tmp)
+      (let [entries (perun/filter-meta-by-ext fileset {:filterer identity :extensions [".html"]})
+            changed (doall
+                     (for [{:keys [path]} entries
+                           :let [content (slurp (tmp-file (tmp-get fileset path)))
+                                 expanded (expand content)]
+                           :when (not= content expanded)]
+                       (let [out (clojure.java.io/file tmp path)]
+                         (clojure.java.io/make-parents out)
+                         (spit out expanded))))]
+        (if (seq changed)
+          ;; Replacing a file drops its Perun metadata, so put it back.
+          (-> fileset (add-resource tmp) commit! (pm/set-meta entries))
+          fileset)))))
+
 (deftask build []
   (comp (perun/global-metadata :filename "site.base.edn")
         (perun/pandoc :cmd-opts ["--from" "markdown" "--to" "html5" "--filter" "pandoc-sidenote"])
+        (link-cards)
         (perun/collection :renderer 'site.core/render-index-page :page "index.html"
                           :filterer (apply every-pred [post? published?]))
         (perun/collection :renderer 'site.core/render-index-page :page "books.html"

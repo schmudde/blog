@@ -126,3 +126,52 @@ p.cv-item {
     margin-bottom: 0.5rem;
     line-height: 1.3em;
 }
+
+/* Link cards: a static preview of an external page, like a Twitter/Mastodon card.
+   Sits inside the paragraph column (section > p is 55% wide in tufte.min.css). */
+
+a.link-card {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    color: #111;
+    line-height: 1.3;
+}
+
+a.link-card:hover {
+    border-color: #999;
+}
+
+a.link-card img.link-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.91 / 1;
+    object-fit: cover;
+}
+
+a.link-card .link-card-body {
+    display: block;
+    padding: 0.8rem 1rem 1rem;
+    font-family: 'btf-font', sans-serif;
+}
+
+a.link-card .link-card-site {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+a.link-card .link-card-title {
+    display: block;
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a.link-card .link-card-desc {
+    display: block;
+    font-size: 1rem;
+    color: #444;
+}
